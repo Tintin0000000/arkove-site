@@ -1,0 +1,13 @@
+{
+  "name": "arkove-motion",
+  "private": true,
+  "type": "module",
+  "description": "Séquences de motion design (finance) codées en HTML et exportées en MP4.",
+  "scripts": {
+    "render": "node render.mjs scenes/*.html",
+    "preview": "npx serve ."
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motion finance</title>
+  <style>
+    @font-face { font-family: 'Inter Tight'; src: url(fonts/InterTight-Variable.woff2) format('woff2'); font-weight: 100 900; }
+    @font-face { font-family: 'Instrument Serif'; src: url(fonts/InstrumentSerif-Regular.woff2) format('woff2'); }
+    @font-face { font-family: 'Instrument Serif'; src: url(fonts/InstrumentSerif-Italic.woff2) format('woff2'); font-style: italic; }
+    @font-face { font-family: 'JetBrains Mono'; src: url(fonts/JetBrainsMono-Variable.woff2) format('woff2'); font-weight: 100 800; }
+    :root { --bg: #0d0c0a; --surface: #161411; --ink: #f3eee4; --soft: #a79c88; --gold: #ce9b4c; --gold-soft: #e8c27a; --line: #2e2a22; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Inter Tight', Arial, sans-serif; line-height: 1.5; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 72px 16px 96px; }
+    .eyebrow { font: 700 13px 'JetBrains Mono', monospace; letter-spacing: 0.22em; color: var(--gold); text-transform: uppercase; margin: 0 0 14px; }
+    h1 { font: 400 clamp(44px, 7vw, 84px)/1 'Instrument Serif', Georgia, serif; margin: 0 0 18px; letter-spacing: -0.01em; }
+    h1 em { color: var(--gold-soft); }
+    .lead { color: var(--soft); max-width: 62ch; font-size: 18px; margin: 0 0 56px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; }
+    .card.wide { grid-column: 1 / -1; }
+    video { display: block; width: 100%; background: #000; aspect-ratio: 9 / 16; object-fit: cover; }
+    .wide video { aspect-ratio: 16 / 9; }
+    .meta { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+    .meta h2 { font: 700 19px/1.25 'Inter Tight', sans-serif; margin: 0; }
+    .meta p { margin: 0; color: var(--soft); font-size: 15px; }
+    .tags { font: 500 12px 'JetBrains Mono', monospace; color: var(--soft); letter-spacing: 0.04em; }
+    .links { display: flex; gap: 16px; margin-top: auto; padding-top: 10px; font-size: 14px; font-weight: 600; }
+    .links a { color: var(--gold-soft); text-decoration: none; }
+    .links a:hover { text-decoration: underline; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="eyebrow">Motion design · finance</p>
+    <h1>Des séquences animées, <em>écrites en code.</em></h1>
+    <p class="lead">Une intro YouTube et trois formats verticaux pour TikTok, Reels et Shorts. Chaque scène est une page HTML : ouvre-la pour la jouer et la parcourir image par image, puis exporte-la en MP4 avec <code>node render.mjs</code>.</p>
+
+    <div class="grid">
+      <article class="card wide">
+        <video src="videos/01-intro-youtube.mp4" poster="videos/posters/01-intro-youtube.jpg" preload="metadata" autoplay muted loop playsinline></video>
+        <div class="meta">
+          <h2>Intro YouTube : « Faire travailler son argent »</h2>
+          <p>Courbe boursière tracée en direct, bougies, compteur de performance, titre en cascade, bandeau de cotations et logo final.</p>
+          <span class="tags">16:9 · 1920×1080 · 7 s</span>
+          <div class="links"><a href="scenes/01-intro-youtube.html">Ouvrir la scène</a><a href="videos/01-intro-youtube.mp4" download>Télécharger le MP4</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <video src="videos/02-interets-composes.mp4" poster="videos/posters/02-interets-composes.jpg" preload="metadata" autoplay muted loop playsinline></video>
+        <div class="meta">
+          <h2>Intérêts composés</h2>
+          <p>1 000 € à 7 % sur 30 ans : compteur, barres capital/intérêts et tampon « ×7,6 ».</p>
+          <span class="tags">9:16 · 1080×1920 · 9,5 s</span>
+          <div class="links"><a href="scenes/02-interets-composes.html">Ouvrir</a><a href="videos/02-interets-composes.mp4" download>MP4</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <video src="videos/03-budget-50-30-20.mp4" poster="videos/posters/03-budget-50-30-20.jpg" preload="metadata" autoplay muted loop playsinline></video>
+        <div class="meta">
+          <h2>Budget 50/30/20</h2>
+          <p>Donut animé, part par part, puis mise en avant de l’épargne annuelle.</p>
+          <span class="tags">9:16 · 1080×1920 · 9 s</span>
+          <div class="links"><a href="scenes/03-budget-50-30-20.html">Ouvrir</a><a href="videos/03-budget-50-30-20.mp4" download>MP4</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <video src="videos/04-hook-3-erreurs.mp4" poster="videos/posters/04-hook-3-erreurs.jpg" preload="metadata" autoplay muted loop playsinline></video>
+        <div class="meta">
+          <h2>Hook « 3 erreurs »</h2>
+          <p>Sous-titres façon TikTok, secousse caméra, cartes qui glissent et bouton d’abonnement.</p>
+          <span class="tags">9:16 · 1080×1920 · 10 s</span>
+          <div class="links"><a href="scenes/04-hook-3-erreurs.html">Ouvrir</a><a href="videos/04-hook-3-erreurs.mp4" download>MP4</a></div>
+        </div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

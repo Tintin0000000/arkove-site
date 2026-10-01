@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hook 3 erreurs</title>
+  <link rel="stylesheet" href="../motion.css">
+  <style>
+    #cam { position: absolute; inset: 0; }
+    .alarm { inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(255, 90, 95, 0.35), transparent 65%); }
+    .hook {
+      left: 0; top: 0; width: 1080px; height: 1920px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+      transform-origin: 50% 50%;
+    }
+    .line { font: 900 150px/1 var(--sans); letter-spacing: -0.04em; text-transform: uppercase; white-space: nowrap; }
+    .word { display: inline-block; position: relative; padding: 4px 22px 14px; margin: 0 -6px; }
+    .word .hl { position: absolute; inset: 0; border-radius: 22px; background: var(--down); transform-origin: 0 50%; z-index: -1; }
+    .word span { position: relative; }
+    .word.gold { color: var(--gold-soft); }
+    .card {
+      position: absolute; left: 60px; width: 960px; min-height: 300px;
+      padding: 40px 46px 40px 200px; border-radius: 40px;
+      background: linear-gradient(160deg, #1d1a16, #13110f);
+      border: 1px solid rgba(243, 238, 228, 0.1);
+      box-shadow: 0 40px 80px -40px #000;
+    }
+    .card .num { position: absolute; left: 44px; top: 34px; font: 400 130px/1 var(--serif); font-style: italic; color: var(--gold); }
+    #stage .card h2 { font: 800 58px/1.08 var(--sans); letter-spacing: -0.02em; padding-right: 90px; margin-bottom: 16px; }
+    .card p { font: 500 38px/1.3 var(--sans); color: var(--ink-soft); }
+    .card p b { color: var(--ink); }
+    .card svg { position: absolute; right: 36px; top: 36px; width: 72px; height: 72px; }
+    .cta {
+      left: 140px; width: 800px; top: 1600px; height: 150px; border-radius: 999px;
+      background: var(--gold); color: #171310; overflow: hidden;
+      display: flex; align-items: center; justify-content: center; gap: 18px;
+      font: 800 52px var(--sans); letter-spacing: -0.02em;
+      box-shadow: 0 30px 80px -20px rgba(206, 155, 76, 0.9);
+    }
+    .cta .shine { position: absolute; top: -20px; bottom: -20px; width: 140px; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.7), transparent); transform: skewX(-20deg); }
+  </style>
+</head>
+<body>
+  <div class="frame"><div id="stage">
+    <div class="gridbg"></div>
+    <div class="abs alarm" id="alarm"></div>
+    <div id="cam">
+      <div class="abs hook" id="hook">
+        <div class="line"><span class="word gold" data-at="0.15"><span>3</span></span><span class="word" data-at="0.45"><span>erreurs</span></span></div>
+        <div class="line"><span class="word" data-at="0.8"><span>qui</span></span><span class="word" data-at="1.0" data-hl="1"><i class="hl"></i><span>ruinent</span></span></div>
+        <div class="line"><span class="word" data-at="1.45"><span>ton</span></span><span class="word gold" data-at="1.65"><span>épargne</span></span></div>
+      </div>
+      <div id="cards"></div>
+    </div>
+    <div class="abs cta" id="cta"><span class="shine" id="shine"></span>Abonne-toi pour la suite →</div>
+    <div class="grain"></div>
+    <div class="vignette"></div>
+  </div></div>
+
+  <script src="../engine.js"></script>
+  <script>
+    const { prog, ease, clamp, lerp } = M;
+    const CARDS = [
+      { h: 'Laisser dormir son argent', p: 'Sur un compte courant, l’inflation grignote <b>2&nbsp;à&nbsp;3&nbsp;% par&nbsp;an</b> de pouvoir d’achat.', at: 2.9 },
+      { h: 'Vouloir deviner le bon moment', p: 'Rater <b>quelques-uns des meilleurs jours</b> de bourse suffit à plomber la performance.', at: 4.5 },
+      { h: 'Ignorer les frais', p: '<b>1&nbsp;% de frais en plus</b>, c’est environ un quart de capital en moins sur 30&nbsp;ans.', at: 6.1 },
+    ];
+    const COLLAPSE = 2.35, CTA = 8.0;
+
+    M.scene({
+      width: 1080, height: 1920, duration: 10,
+      setup() {
+        document.getElementById('cards').innerHTML = CARDS.map((c, i) => `
+          <div class="card" id="card${i}" style="top:${470 + i * 365}px">
+            <div class="num">0${i + 1}</div>
+            <h2>${c.h}</h2>
+            <p>${c.p}</p>
+            <svg viewBox="0 0 72 72"><circle cx="36" cy="36" r="33" fill="none" stroke="#ff5a5f" stroke-width="5" stroke-dasharray="208" id="xc${i}"/>
+              <path d="M25 25 L47 47 M47 25 L25 47" fill="none" stroke="#ff5a5f" stroke-width="6" stroke-linecap="round" stroke-dasharray="32" id="xx${i}"/></svg>
+          </div>`).join('');
+        return { words: [...document.querySelectorAll('.word')].map((el) => ({ el, at: +el.dataset.at, hl: el.querySelector('.hl') })) };
+      },
+      render(t, c) {
+        // Mots du hook : apparition « pop » façon sous-titres TikTok.
+        c.words.forEach(({ el, at, hl }) => {
+          const p = prog(t, at, 0.45, ease.outBack);
+          el.style.opacity = clamp(p * 3);
+          el.style.transform = `scale(${lerp(1.6, 1, p)}) rotate(${(1 - p) * -6}deg)`;
+          if (hl) hl.style.transform = `scaleX(${prog(t, at + 0.1, 0.3, ease.outExpo)}) rotate(-2deg)`;
+        });
+
+        // Secousse sur « RUINENT »
+        const s = t > 1.05 && t < 1.5 ? (1 - (t - 1.05) / 0.45) * 22 : 0;
+        document.getElementById('cam').style.transform = `translate(${Math.sin(t * 95) * s}px, ${Math.cos(t * 83) * s}px)`;
+        document.getElementById('alarm').style.opacity = prog(t, 1.0, 0.15) * (1 - prog(t, 1.3, 1.2)) + 0.12;
+
+        // Le hook se replie en en-tête
+        const k = prog(t, COLLAPSE, 0.7, ease.inOutExpo);
+        document.getElementById('hook').style.transform = `translateY(${k * -740}px) scale(${1 - k * 0.55})`;
+
+        // Cartes
+        const dim = prog(t, CTA, 0.6, ease.inOutCubic);
+        CARDS.forEach((cd, i) => {
+          const p = prog(t, cd.at, 0.9, ease.outExpo);
+          const card = document.getElementById('card' + i);
+          card.style.transform = `translateX(${(1 - p) * 1150}px) rotate(${(1 - p) * 8}deg) scale(${1 - dim * 0.06})`;
+          card.style.opacity = (p > 0 ? 1 : 0) * (1 - dim * 0.65);
+          document.getElementById('xc' + i).style.strokeDashoffset = 208 * (1 - prog(t, cd.at + 0.5, 0.5, ease.inOutCubic));
+          document.getElementById('xx' + i).style.strokeDashoffset = 32 * (1 - prog(t, cd.at + 0.85, 0.3));
+        });
+        document.getElementById('cards').style.transform = `translateY(${dim * -60}px)`;
+
+        // CTA final : pop, respiration, reflet
+        const cp = prog(t, CTA + 0.2, 0.8, ease.outElastic);
+        const breathe = t > CTA + 1 ? Math.sin((t - CTA - 1) * 6) * 0.025 : 0;
+        const cta = document.getElementById('cta');
+        cta.style.transform = `scale(${cp + breathe})`;
+        cta.style.opacity = clamp(cp * 3);
+        document.getElementById('shine').style.left = `${lerp(-200, 900, prog(t, CTA + 0.9, 0.8, ease.inOutCubic))}px`;
+      },
+    });
+  </script>
+</body>
+</html>

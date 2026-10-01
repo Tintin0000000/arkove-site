@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intérêts composés</title>
+  <link rel="stylesheet" href="../motion.css">
+  <style>
+    .glow { width: 1400px; height: 1400px; left: -160px; top: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(206, 155, 76, 0.22), transparent 60%); }
+    .pill {
+      left: 80px; top: 190px; padding: 14px 26px; border-radius: 999px;
+      border: 2px solid rgba(206, 155, 76, 0.5); color: var(--gold);
+      font: 700 28px var(--mono); letter-spacing: 0.22em;
+    }
+    .title { left: 72px; top: 280px; width: 940px; font: 400 128px/1 var(--serif); letter-spacing: -0.01em; }
+    .title .gold { font-style: italic; color: var(--gold-soft); }
+    .big { left: 76px; top: 610px; font: 900 190px/1 var(--sans); letter-spacing: -0.035em; word-spacing: 0.1em; font-variant-numeric: tabular-nums; }
+    .years { left: 86px; top: 822px; font: 500 36px var(--mono); color: var(--ink-soft); }
+    .years b { color: var(--ink); }
+    .chart { left: 60px; top: 900px; width: 960px; height: 560px; }
+    .bar { position: absolute; bottom: 0; width: 24px; transform-origin: 50% 100%; display: flex; flex-direction: column; justify-content: flex-end; }
+    .bar .i { background: linear-gradient(180deg, var(--gold-soft), var(--gold)); border-radius: 6px 6px 0 0; }
+    .bar .c { background: #4a4337; }
+    .axis { left: 60px; top: 1475px; width: 960px; height: 40px; font: 500 28px var(--mono); color: var(--ink-mute); }
+    .axis span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+    .baseline { left: 60px; top: 1460px; width: 960px; height: 2px; background: #2e2a22; transform-origin: 0 50%; }
+    .legend { left: 80px; top: 1540px; display: flex; gap: 40px; font: 600 32px var(--sans); color: var(--ink-soft); }
+    .legend i { display: inline-block; width: 22px; height: 22px; border-radius: 6px; margin-right: 12px; vertical-align: -2px; }
+    .badge {
+      left: 90px; top: 960px; padding: 26px 40px; border-radius: 28px;
+      background: var(--gold); color: #171310; text-align: center;
+      font: 900 120px/1 var(--sans); letter-spacing: -0.04em;
+      box-shadow: 0 30px 80px -20px rgba(206, 155, 76, 0.8);
+    }
+    .badge small { display: block; font: 700 26px var(--mono); letter-spacing: 0.1em; margin-top: 8px; }
+    .punch { left: 80px; width: 920px; top: 1610px; font: 400 80px/1.05 var(--serif); }
+    .punch .em { color: var(--gold-soft); font-style: italic; }
+    .disclaimer { left: 80px; top: 1730px; font: 500 22px var(--mono); color: var(--ink-mute); }
+  </style>
+</head>
+<body>
+  <div class="frame"><div id="stage">
+    <div class="gridbg"></div>
+    <div class="abs glow" id="glow"></div>
+
+    <div class="abs pill" id="pill">INTÉRÊTS COMPOSÉS</div>
+    <h1 class="abs title" id="title">1&nbsp;000&nbsp;€ placés à 7&nbsp;% par an</h1>
+
+    <div class="abs big" id="big">1 000 €</div>
+    <div class="abs years" id="years">après <b id="yr">0</b> an</div>
+
+    <div class="abs chart" id="chart"></div>
+    <div class="abs baseline" id="baseline"></div>
+    <div class="abs axis" id="axis"></div>
+    <div class="abs legend" id="legend">
+      <span><i style="background:#4a4337"></i>Capital</span>
+      <span><i style="background:var(--gold)"></i>Intérêts</span>
+    </div>
+
+    <div class="abs badge" id="badge">×7,6<small>EN 30 ANS</small></div>
+    <p class="abs punch" id="punch">Sans ajouter <em>un seul centime.</em></p>
+    <p class="abs disclaimer" id="disc">Exemple illustratif · rendement non garanti</p>
+
+    <div class="grain"></div>
+    <div class="vignette"></div>
+  </div></div>
+
+  <script src="../engine.js"></script>
+  <script>
+    const { prog, ease, clamp, euro, splitWords } = M;
+    const YEARS = 30, RATE = 0.07, START = 1000, MAX_H = 540;
+    const value = (y) => START * Math.pow(1 + RATE, y);
+    const GROW_START = 1.9, GROW_DUR = 4.3;
+
+    M.scene({
+      width: 1080, height: 1920, duration: 9.5,
+      setup() {
+        const chart = document.getElementById('chart');
+        const top = value(YEARS);
+        const step = 960 / (YEARS + 1);
+        const bars = [];
+        for (let y = 0; y <= YEARS; y++) {
+          const el = document.createElement('div');
+          el.className = 'bar';
+          el.style.left = y * step + (step - 24) / 2 + 'px';
+          const h = (value(y) / top) * MAX_H;
+          const hc = (START / top) * MAX_H;
+          el.innerHTML = `<div class="i" style="height:${h - hc}px"></div><div class="c" style="height:${hc}px"></div>`;
+          chart.appendChild(el);
+          bars.push(el);
+        }
+        document.getElementById('axis').innerHTML = [0, 10, 20, 30]
+          .map((y) => `<span style="left:${y * step + step / 2}px">${y === 30 ? '30 ans' : y}</span>`).join('');
+
+        const title = document.getElementById('title');
+        const words = splitWords(title);
+        words.slice(2).forEach((w) => w.classList.add('gold'));
+        const punch = splitWords(document.getElementById('punch'));
+        punch.slice(2).forEach((w) => w.classList.add('em'));
+        return { bars, words, punch };
+      },
+      render(t, c) {
+        document.getElementById('glow').style.transform = `translate(${Math.sin(t * 0.7) * 40}px, ${-t * 20}px)`;
+
+        // Intro du titre
+        const pill = document.getElementById('pill');
+        const pp = prog(t, 0.1, 0.6, ease.outBack);
+        pill.style.transform = `scale(${pp})`;
+        pill.style.opacity = pp;
+        c.words.forEach((w, i) => {
+          const p = prog(t, 0.3 + i * 0.08, 0.8, ease.outExpo);
+          w.style.transform = `translateY(${(1 - p) * 110}%)`;
+        });
+
+        // Croissance année par année
+        const yf = ease.inOutCubic(clamp((t - GROW_START) / GROW_DUR)) * YEARS;
+        const big = document.getElementById('big');
+        const bp = prog(t, 1.1, 0.7, ease.outExpo);
+        big.style.opacity = bp;
+        big.style.transform = `translateY(${(1 - bp) * 60}px)`;
+        big.textContent = euro(Math.round(value(yf)));
+        const years = Math.floor(yf);
+        document.getElementById('yr').textContent = years;
+        document.getElementById('years').lastChild.textContent = years > 1 ? ' ans' : ' an';
+        document.getElementById('years').style.opacity = bp;
+
+        c.bars.forEach((b, y) => {
+          const p = clamp((yf - y + 1) / 1.5);
+          b.style.transform = `scaleY(${y === 0 ? prog(t, 1.4, 0.5, ease.outBack) : ease.outBack(p)})`;
+        });
+        document.getElementById('baseline').style.transform = `scaleX(${prog(t, 1.2, 0.8, ease.inOutCubic)})`;
+        const ap = prog(t, 1.5, 0.6);
+        document.getElementById('axis').style.opacity = ap;
+        document.getElementById('legend').style.opacity = ap;
+
+        // Coup de tampon final
+        const kp = prog(t, 6.4, 0.9, ease.outElastic);
+        const badge = document.getElementById('badge');
+        badge.style.transform = `scale(${kp}) rotate(${-8 + (1 - kp) * 30}deg)`;
+        badge.style.opacity = clamp(kp * 3);
+        // petit tremblement de la caméra à l'impact
+        const shake = t > 6.4 && t < 6.75 ? (1 - (t - 6.4) / 0.35) * 10 : 0;
+        document.getElementById('stage').style.translate = `${Math.sin(t * 90) * shake}px ${Math.cos(t * 70) * shake}px`;
+
+        c.punch.forEach((w, i) => {
+          const p = prog(t, 7.0 + i * 0.09, 0.7, ease.outExpo);
+          w.style.transform = `translateY(${(1 - p) * 110}%)`;
+        });
+        document.getElementById('disc').style.opacity = prog(t, 7.6, 0.6) * 0.9;
+      },
+    });
+  </script>
+</body>
+</html>

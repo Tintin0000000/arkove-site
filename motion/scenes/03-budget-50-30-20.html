@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget 50/30/20</title>
+  <link rel="stylesheet" href="../motion.css">
+  <style>
+    .glow { width: 1300px; height: 1300px; left: -110px; top: 240px; border-radius: 50%; background: radial-gradient(circle, rgba(63, 214, 139, 0.16), transparent 60%); }
+    .pill {
+      left: 80px; top: 170px; padding: 14px 26px; border-radius: 999px;
+      border: 2px solid rgba(206, 155, 76, 0.5); color: var(--gold);
+      font: 700 28px var(--mono); letter-spacing: 0.22em;
+    }
+    .title { left: 72px; top: 250px; width: 960px; font: 400 132px/1 var(--serif); letter-spacing: -0.01em; }
+    .title .gold { font-style: italic; color: var(--gold-soft); }
+    .salary { left: 80px; top: 400px; font: 600 40px var(--sans); color: var(--ink-soft); }
+    .salary b { color: var(--ink); font-weight: 800; font-variant-numeric: tabular-nums; }
+    .donut { left: 190px; top: 520px; width: 700px; height: 700px; }
+    .center { left: 190px; top: 520px; width: 700px; height: 700px; display: flex; align-items: center; justify-content: center; }
+    .slot { position: absolute; text-align: center; }
+    .slot .pct { font: 900 150px/1 var(--sans); letter-spacing: -0.04em; }
+    .slot .amt { font: 700 44px var(--mono); color: var(--ink-soft); margin-top: 10px; }
+    .slot.final .pct { font-size: 100px; color: var(--up); word-spacing: 0.1em; }
+    .slot.final .amt { font: 400 54px var(--serif); font-style: italic; color: var(--ink); }
+    .rows { left: 70px; top: 1290px; width: 940px; }
+    .row {
+      position: absolute; left: 0; width: 940px; height: 116px;
+      display: flex; align-items: center; gap: 26px;
+      padding: 0 30px; border-radius: 26px;
+      background: rgba(243, 238, 228, 0.04); border: 1px solid var(--line);
+    }
+    .row .dot { width: 30px; height: 30px; border-radius: 50%; flex: none; }
+    .row .txt { flex: 1; }
+    .row .lbl { font: 800 44px/1.1 var(--sans); }
+    .row .sub { font: 500 28px var(--sans); color: var(--ink-soft); }
+    .row .val { font: 700 46px var(--mono); }
+  </style>
+</head>
+<body>
+  <div class="frame"><div id="stage">
+    <div class="gridbg"></div>
+    <div class="abs glow" id="glow"></div>
+
+    <div class="abs pill" id="pill">BUDGET MALIN</div>
+    <h1 class="abs title" id="title">La règle 50/30/20</h1>
+    <p class="abs salary" id="salary">Salaire net : <b id="sal">0 €</b> / mois</p>
+
+    <svg class="abs donut" id="donut" viewBox="0 0 700 700"></svg>
+    <div class="abs center" id="center"></div>
+
+    <div class="abs rows" id="rows"></div>
+
+    <div class="grain"></div>
+    <div class="vignette"></div>
+  </div></div>
+
+  <script src="../engine.js"></script>
+  <script>
+    const { prog, ease, clamp, euro, splitWords } = M;
+    const SALARY = 2000;
+    const PARTS = [
+      { pct: 50, label: 'Besoins', sub: 'loyer, courses, factures', color: '#f3eee4', at: 1.9 },
+      { pct: 30, label: 'Envies', sub: 'sorties, voyages, abonnements', color: '#ce9b4c', at: 3.0 },
+      { pct: 20, label: 'Épargne', sub: 'placements, coussin de sécurité', color: '#3fd68b', at: 4.1 },
+    ];
+    const R = 270, SW = 92, CIRC = 2 * Math.PI * R, GAP = 10; // GAP en px le long du cercle
+    const FINAL = 5.5;
+
+    M.scene({
+      width: 1080, height: 1920, duration: 9,
+      setup() {
+        const svg = document.getElementById('donut');
+        let acc = 0;
+        svg.innerHTML = `<circle cx="350" cy="350" r="${R}" fill="none" stroke="rgba(243,238,228,0.06)" stroke-width="${SW}"/>`;
+        PARTS.forEach((p, i) => {
+          p.offset = acc;
+          p.len = (p.pct / 100) * CIRC - GAP;
+          acc += (p.pct / 100) * CIRC;
+          svg.insertAdjacentHTML('beforeend',
+            `<circle id="arc${i}" cx="350" cy="350" r="${R}" fill="none" stroke="${p.color}" stroke-width="${SW}"
+               transform="rotate(-90 350 350)" stroke-dasharray="0 ${CIRC}" stroke-dashoffset="${-p.offset}"/>`);
+        });
+
+        document.getElementById('center').innerHTML = PARTS.map((p, i) =>
+          `<div class="slot" id="slot${i}"><div class="pct" style="color:${p.color}">${p.pct}&nbsp;%</div><div class="amt">${euro(SALARY * p.pct / 100)}</div></div>`).join('') +
+          `<div class="slot final" id="slotF"><div class="pct">${euro(SALARY * 0.2 * 12)}</div><div class="amt">épargnés par an</div></div>`;
+
+        document.getElementById('rows').innerHTML = PARTS.map((p, i) => `
+          <div class="row" id="row${i}" style="top:${i * 136}px">
+            <span class="dot" style="background:${p.color}"></span>
+            <div class="txt"><div class="lbl">${p.label}</div><div class="sub">${p.sub}</div></div>
+            <div class="val" style="color:${p.color}">${euro(SALARY * p.pct / 100)}</div>
+          </div>`).join('');
+
+        const words = splitWords(document.getElementById('title'));
+        words.slice(2).forEach((w) => w.classList.add('gold'));
+        return { words };
+      },
+      render(t, c) {
+        document.getElementById('glow').style.transform = `scale(${1 + Math.sin(t * 1.2) * 0.04})`;
+
+        const pp = prog(t, 0.1, 0.6, ease.outBack);
+        const pill = document.getElementById('pill');
+        pill.style.transform = `scale(${pp})`;
+        pill.style.opacity = pp;
+        c.words.forEach((w, i) => {
+          const p = prog(t, 0.3 + i * 0.1, 0.8, ease.outExpo);
+          w.style.transform = `translateY(${(1 - p) * 110}%)`;
+        });
+
+        // Salaire qui monte
+        const sp = prog(t, 0.8, 0.9, ease.outCubic);
+        const salary = document.getElementById('salary');
+        salary.style.opacity = prog(t, 0.7, 0.4);
+        document.getElementById('sal').textContent = euro(Math.round(sp * SALARY / 10) * 10);
+
+        // Le donut entre en tournant
+        const dp = prog(t, 1.2, 1.2, ease.outExpo);
+        document.getElementById('donut').style.transform = `rotate(${(1 - dp) * -120}deg) scale(${0.7 + dp * 0.3})`;
+        document.getElementById('donut').style.opacity = dp;
+
+        const done = prog(t, FINAL, 0.6, ease.inOutCubic);
+        PARTS.forEach((p, i) => {
+          const ap = prog(t, p.at, 0.9, ease.inOutCubic);
+          const arc = document.getElementById('arc' + i);
+          arc.setAttribute('stroke-dasharray', `${Math.max(0, p.len * ap)} ${CIRC}`);
+          // À la fin, l'épargne s'épaissit, le reste s'efface.
+          const isSave = i === 2;
+          arc.setAttribute('stroke-width', SW + (isSave ? done * 34 : 0));
+          arc.style.opacity = isSave ? 1 : 1 - done * 0.75;
+
+          // Contenu central : chaque part s'affiche pendant son tracé.
+          const next = PARTS[i + 1] ? PARTS[i + 1].at : FINAL;
+          const inP = prog(t, p.at + 0.1, 0.5, ease.outBack);
+          const outP = prog(t, next - 0.25, 0.3, ease.inCubic);
+          const slot = document.getElementById('slot' + i);
+          slot.style.opacity = Math.min(clamp(inP * 2), 1 - outP);
+          slot.style.transform = `scale(${0.6 + inP * 0.4 - outP * 0.3})`;
+
+          // Lignes de légende
+          const rp = prog(t, p.at + 0.15, 0.8, ease.outExpo);
+          const row = document.getElementById('row' + i);
+          row.style.transform = `translateX(${(1 - rp) * -1100}px) scale(${isSave ? 1 + done * 0.04 : 1})`;
+          row.style.opacity = isSave ? 1 : 1 - done * 0.6;
+          row.style.borderColor = isSave ? `rgba(63,214,139,${done * 0.8})` : '';
+          row.style.boxShadow = isSave ? `0 20px 60px -20px rgba(63,214,139,${done * 0.6})` : '';
+        });
+
+        const fp = prog(t, FINAL + 0.3, 0.7, ease.outBack);
+        const final = document.getElementById('slotF');
+        final.style.opacity = clamp(fp * 2);
+        final.style.transform = `scale(${0.5 + fp * 0.5})`;
+      },
+    });
+  </script>
+</body>
+</html>
