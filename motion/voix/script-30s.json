@@ -1,0 +1,23 @@
+{
+  "_doc": "Script de la voix off. Chaque phrase est découpée en morceaux [texte affiché, texte prononcé]. Un « * » devant le texte affiché le met en doré. 'segment' indique la partie de la vidéo, 'sfx' le bruitage joué au début de la phrase.",
+  "voice": "siwis-medium",
+  "speed": 1.08,
+  "lead": 0.35,
+  "gap": 0.2,
+  "duration": 30,
+  "sentences": [
+    { "segment": "hook", "sfx": "boom", "chunks": [["3 ERREURS", "Trois erreurs"], ["PEUVENT RUINER", "peuvent ruiner"], ["TON ÉPARGNE", "ton épargne."]] },
+    { "segment": "hook", "chunks": [["ET LA DERNIÈRE,", "Et la dernière,"], ["PRESQUE PERSONNE", "presque personne"], ["NE LA VOIT", "ne la voit."]] },
+
+    { "segment": "err1", "sfx": "whoosh", "pause": 0.15, "chunks": [["ERREUR N°1", "Erreur numéro un :"], ["LAISSER DORMIR", "laisser dormir"], ["TON ARGENT", "ton argent."]] },
+    { "segment": "err1", "chunks": [["AVEC L'INFLATION,", "Avec l'inflation,"], ["*1 000 €", "mille euros"], ["PERDENT PRÈS DE", "perdent près de"], ["*20 %", "vingt pour cent"], ["DE LEUR VALEUR", "de leur valeur"], ["EN 10 ANS", "en dix ans."]] },
+
+    { "segment": "err2", "sfx": "whoosh", "pause": 0.15, "chunks": [["ERREUR N°2", "Erreur numéro deux :"], ["ATTENDRE", "attendre"], ["LE BON MOMENT", "le bon moment."]] },
+    { "segment": "err2", "chunks": [["À 7 % PAR AN,", "À sept pour cent par an,"], ["*1 000 €", "mille euros"], ["DEVIENNENT", "deviennent"], ["*+ DE 7 600 €", "plus de sept mille six cents euros"], ["EN 30 ANS", "en trente ans."]] },
+
+    { "segment": "err3", "sfx": "whoosh", "pause": 0.15, "chunks": [["ERREUR N°3", "Erreur numéro trois :"], ["IGNORER", "ignorer"], ["LES FRAIS", "les frais."]] },
+    { "segment": "err3", "chunks": [["*1 % DE FRAIS", "Un pour cent de frais"], ["EN PLUS,", "en plus,"], ["ET C'EST", "et c'est"], ["*UN QUART", "un quart"], ["DE TON CAPITAL", "de ton capital"], ["QUI S'ENVOLE", "qui s'envole."]] },
+
+    { "segment": "cta", "sfx": "whoosh", "pause": 0.15, "chunks": [["ABONNE-TOI", "Abonne-toi"], ["POUR LA PARTIE 2 :", "pour la partie deux :"], ["INVESTIR AVEC", "investir avec"], ["*100 € PAR MOIS", "cent euros par mois."]] }
+  ]
+}

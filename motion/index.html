@@ -20,6 +20,11 @@
     .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
     .card { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; }
     .card.wide { grid-column: 1 / -1; }
+    .card.feature { grid-column: 1 / -1; flex-direction: row; align-items: stretch; }
+    .card.feature video { width: min(360px, 45%); flex: none; }
+    .card.feature .meta { justify-content: center; padding: 28px 32px; }
+    .card.feature h2 { font-size: 26px; }
+    @media (max-width: 560px) { .card.feature { flex-direction: column; } .card.feature video { width: 100%; } }
     video { display: block; width: 100%; background: #000; aspect-ratio: 9 / 16; object-fit: cover; }
     .wide video { aspect-ratio: 16 / 9; }
     .meta { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
@@ -40,6 +45,15 @@
     <p class="lead">Une intro YouTube et trois formats verticaux pour TikTok, Reels et Shorts. Chaque scène est une page HTML : ouvre-la pour la jouer et la parcourir image par image, puis exporte-la en MP4 avec <code>node render.mjs</code>.</p>
 
     <div class="grid">
+      <article class="card feature">
+        <video src="videos/05-short-30s.mp4" poster="videos/posters/05-short-30s.jpg" preload="metadata" controls playsinline></video>
+        <div class="meta">
+          <h2>Short complet, 30 s avec voix off</h2>
+          <p>Hook, 3 erreurs (inflation, timing, frais) et appel à s’abonner. Sous-titres calés sur la voix, musique et bruitages.</p>
+          <span class="tags">9:16 · 1080×1920 · 30 s · son</span>
+          <div class="links"><a href="scenes/05-short-30s.html">Ouvrir la scène</a><a href="videos/05-short-30s.mp4" download>Télécharger le MP4</a></div>
+        </div>
+      </article>
       <article class="card wide">
         <video src="videos/01-intro-youtube.mp4" poster="videos/posters/01-intro-youtube.jpg" preload="metadata" autoplay muted loop playsinline></video>
         <div class="meta">

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Short 30 s avec voix off</title>
+  <link rel="stylesheet" href="../motion.css">
+  <style>
+    /* Mise en page 1080×1920 : en-tête (y 150–470), visuel (y 500–1180),
+       sous-titres centrés sur y 1330, bas de l'écran laissé libre pour l'interface TikTok. */
+    .seg { position: absolute; inset: 0; }
+    .glow { position: absolute; width: 1500px; height: 1500px; left: -210px; top: 200px; border-radius: 50%; }
+    .glow.red { background: radial-gradient(circle, rgba(255, 90, 95, 0.22), transparent 62%); }
+    .glow.gold { background: radial-gradient(circle, rgba(206, 155, 76, 0.24), transparent 62%); }
+    .glow.green { background: radial-gradient(circle, rgba(63, 214, 139, 0.18), transparent 62%); }
+
+    .progress { left: 0; top: 0; height: 12px; width: 1080px; background: var(--gold); transform-origin: 0 50%; z-index: 5; }
+
+    /* --- Hook --- */
+    .hook { left: 0; width: 1080px; top: 290px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+    .hw { font: 900 150px/1 var(--sans); letter-spacing: -0.045em; text-transform: uppercase; position: relative; padding: 6px 26px 16px; }
+    .hw.xl { font-size: 200px; }
+    .hw.gold { color: var(--gold-soft); }
+    .hw .hl { position: absolute; inset: 0; border-radius: 26px; background: var(--down); transform-origin: 0 50%; z-index: -1; }
+    .hw span { position: relative; }
+    .slots { left: 0; width: 1080px; top: 1040px; display: flex; justify-content: center; gap: 40px; }
+    .slot {
+      width: 150px; height: 150px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font: 400 96px/1 var(--serif); font-style: italic; color: var(--gold);
+      border: 3px solid rgba(206, 155, 76, 0.45); background: #13110f;
+    }
+    .slot.mystery { color: #fff; border-color: var(--down); background: rgba(255, 90, 95, 0.18); font-family: var(--sans); font-style: normal; font-weight: 900; }
+
+    /* --- En-tête commun des erreurs --- */
+    .chip {
+      left: 80px; top: 170px; padding: 14px 28px; border-radius: 999px;
+      font: 700 30px var(--mono); letter-spacing: 0.2em; color: var(--down);
+      border: 2px solid rgba(255, 90, 95, 0.6); background: rgba(255, 90, 95, 0.08);
+    }
+    .title { left: 72px; top: 250px; width: 940px; font: 400 116px/1 var(--serif); letter-spacing: -0.01em; }
+    .title .gold { font-style: italic; color: var(--gold-soft); }
+
+    /* --- Cartes de visuel --- */
+    .panel {
+      left: 60px; top: 530px; width: 960px; height: 640px; border-radius: 40px;
+      background: linear-gradient(165deg, #1b1814, #110f0d);
+      border: 1px solid rgba(243, 238, 228, 0.09);
+      box-shadow: 0 50px 100px -50px #000;
+      overflow: hidden;
+    }
+    .panel .lbl { position: absolute; left: 50px; top: 44px; font: 700 26px var(--mono); letter-spacing: 0.16em; color: var(--ink-soft); text-transform: uppercase; }
+    .panel .big { position: absolute; left: 46px; top: 90px; font: 900 170px/1 var(--sans); letter-spacing: -0.04em; word-spacing: 0.1em; font-variant-numeric: tabular-nums; }
+    .panel .yr { position: absolute; right: 50px; top: 44px; font: 700 30px var(--mono); color: var(--ink-soft); }
+    .panel svg { position: absolute; left: 0; top: 0; }
+    .badge {
+      position: absolute; padding: 18px 30px; border-radius: 24px;
+      font: 900 84px/1 var(--sans); letter-spacing: -0.03em;
+      box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.8);
+    }
+    .badge.red { background: var(--down); color: #fff; }
+    .badge.gold { background: var(--gold); color: #171310; }
+    .badge small { display: block; font: 700 22px var(--mono); letter-spacing: 0.12em; margin-top: 6px; }
+    .bars { position: absolute; left: 50px; right: 50px; bottom: 60px; height: 330px; }
+    .bar { position: absolute; bottom: 0; width: 18px; transform-origin: 50% 100%; display: flex; flex-direction: column; justify-content: flex-end; }
+    .bar .i { background: linear-gradient(180deg, var(--gold-soft), var(--gold)); border-radius: 5px 5px 0 0; }
+    .bar .c { background: #4a4337; }
+    .endlbl { position: absolute; font: 700 34px var(--mono); white-space: nowrap; }
+
+    /* --- CTA --- */
+    .teaser { left: 60px; top: 300px; width: 960px; padding: 50px; border-radius: 40px; background: linear-gradient(165deg, #1b1814, #110f0d); border: 1px solid rgba(206, 155, 76, 0.35); }
+    .teaser .k { font: 700 28px var(--mono); letter-spacing: 0.2em; color: var(--gold); }
+    .teaser h2 { font: 400 112px/1 var(--serif); margin: 20px 0 0; letter-spacing: -0.01em; }
+    .teaser h2 em { color: var(--gold-soft); }
+    .sub {
+      left: 190px; width: 700px; top: 860px; height: 150px; border-radius: 999px;
+      background: var(--down); color: #fff;
+      display: flex; align-items: center; justify-content: center; gap: 22px;
+      font: 900 60px var(--sans); letter-spacing: -0.02em;
+      box-shadow: 0 30px 80px -20px rgba(255, 90, 95, 0.8);
+    }
+    .sub.done { background: #2a2622; color: var(--ink-soft); box-shadow: none; }
+    .sub svg { width: 56px; height: 56px; }
+    .handle { left: 0; width: 1080px; top: 1050px; text-align: center; font: 600 52px var(--sans); }
+    .handle span { color: var(--gold-soft); }
+    .finger { left: 0; top: 0; width: 110px; height: 110px; border-radius: 50%; background: rgba(255, 255, 255, 0.9); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5); }
+    .ripple { width: 120px; height: 120px; border-radius: 50%; border: 6px solid #fff; }
+
+    /* --- Sous-titres façon TikTok --- */
+    .cap {
+      left: 40px; width: 1000px; top: 1265px; height: 130px;
+      display: flex; align-items: center; justify-content: center; text-align: center;
+      font: 900 92px/1 var(--sans); letter-spacing: -0.03em; text-transform: uppercase; white-space: nowrap;
+      color: #fff; -webkit-text-stroke: 4px #0d0c0a; paint-order: stroke fill;
+      text-shadow: 0 8px 0 #0d0c0a, 0 0 40px rgba(0, 0, 0, 0.9);
+      z-index: 4;
+    }
+    .cap.gold { color: var(--gold-soft); }
+    .disc { left: 0; width: 1080px; top: 1430px; text-align: center; font: 500 24px var(--mono); color: var(--ink-mute); z-index: 4; }
+  </style>
+</head>
+<body>
+  <div class="frame"><div id="stage">
+    <div class="gridbg"></div>
+
+    <!-- HOOK -->
+    <div class="seg" id="seg-hook">
+      <div class="glow red"></div>
+      <div class="abs hook" id="hookWords">
+        <div class="hw xl gold" data-c="0,0"><span>3 erreurs</span></div>
+        <div class="hw" data-c="0,1"><span>peuvent</span></div>
+        <div class="hw xl" data-c="0,1" data-d="0.25" data-hl="1"><i class="hl"></i><span>ruiner</span></div>
+        <div class="hw" data-c="0,2"><span>ton épargne</span></div>
+      </div>
+      <div class="abs slots" id="slots">
+        <div class="slot">1</div><div class="slot">2</div><div class="slot mystery">?</div>
+      </div>
+    </div>
+
+    <!-- ERREUR 1 : inflation -->
+    <div class="seg" id="seg-err1">
+      <div class="glow red"></div>
+      <div class="abs chip">ERREUR N°1</div>
+      <h1 class="abs title">Laisser dormir son argent</h1>
+      <div class="abs panel">
+        <div class="lbl">Pouvoir d'achat</div>
+        <div class="yr" id="infYr">an 0</div>
+        <div class="big" id="infVal">1 000 €</div>
+        <svg width="960" height="640" viewBox="0 0 960 640">
+          <defs>
+            <linearGradient id="infArea" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ff5a5f" stop-opacity="0.35"/><stop offset="1" stop-color="#ff5a5f" stop-opacity="0"/>
+            </linearGradient>
+            <clipPath id="infClip"><rect id="infClipRect" x="0" y="0" width="0" height="640"/></clipPath>
+          </defs>
+          <line x1="50" x2="910" y1="330" y2="330" stroke="rgba(243,238,228,0.18)" stroke-width="2" stroke-dasharray="8 10"/>
+          <path id="infArea" fill="url(#infArea)" clip-path="url(#infClip)"/>
+          <path id="infLine" fill="none" stroke="#ff5a5f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle id="infDot" r="14" fill="#fff"/>
+        </svg>
+        <div class="badge red" id="infBadge" style="right:50px; top:150px">−20&nbsp;%<small>EN 10 ANS</small></div>
+      </div>
+    </div>
+
+    <!-- ERREUR 2 : attendre -->
+    <div class="seg" id="seg-err2">
+      <div class="glow gold"></div>
+      <div class="abs chip">ERREUR N°2</div>
+      <h1 class="abs title">Attendre le bon moment</h1>
+      <div class="abs panel">
+        <div class="lbl">1 000 € placés à 7 %</div>
+        <div class="yr" id="ciYr">an 0</div>
+        <div class="big" id="ciVal">1 000 €</div>
+        <div class="bars" id="bars"></div>
+        <div class="badge gold" id="ciBadge" style="left:50px; top:300px">×7,6<small>EN 30 ANS</small></div>
+      </div>
+    </div>
+
+    <!-- ERREUR 3 : frais -->
+    <div class="seg" id="seg-err3">
+      <div class="glow red"></div>
+      <div class="abs chip">ERREUR N°3</div>
+      <h1 class="abs title">Ignorer les frais</h1>
+      <div class="abs panel">
+        <div class="lbl" style="top:150px">1 000 € · 30 ans</div>
+        <svg width="960" height="640" viewBox="0 0 960 640">
+          <defs><clipPath id="feeClip"><rect id="feeClipRect" x="0" y="0" width="0" height="640"/></clipPath></defs>
+          <path id="feeGap" fill="rgba(255,90,95,0.22)" clip-path="url(#feeClip)"/>
+          <path id="feeA" fill="none" stroke="#e8c27a" stroke-width="8" stroke-linecap="round" clip-path="url(#feeClip)"/>
+          <path id="feeB" fill="none" stroke="#ff5a5f" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 16" clip-path="url(#feeClip)"/>
+        </svg>
+        <div class="endlbl" id="feeLA" style="right:50px; top:36px; color:var(--gold-soft)">7 612 € <span style="color:var(--ink-soft)">à 7 %/an</span></div>
+        <div class="endlbl" id="feeLB" style="right:50px; top:84px; color:var(--down)">5 743 € <span style="color:var(--ink-soft)">avec 1 % de frais</span></div>
+        <div class="badge red" id="feeBadge" style="left:50px; top:250px">−25&nbsp;%<small>DE CAPITAL</small></div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="seg" id="seg-cta">
+      <div class="glow gold"></div>
+      <div class="abs teaser">
+        <div class="k">PARTIE 2 · BIENTÔT</div>
+        <h2>Investir avec <em>100&nbsp;€</em> par mois</h2>
+      </div>
+      <div class="abs sub" id="sub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1l-2-2Z"/></svg>
+        <span id="subTxt">S'ABONNER</span>
+      </div>
+      <div class="abs ripple" id="ripple"></div>
+      <div class="abs finger" id="finger"></div>
+      <div class="abs handle" id="handle">@ta<span>chaine</span></div>
+    </div>
+
+    <div class="abs progress" id="progress"></div>
+    <div class="abs cap" id="cap"></div>
+    <div class="abs disc" id="disc">Chiffres illustratifs · pas un conseil en investissement</div>
+    <div class="grain"></div>
+    <div class="vignette"></div>
+  </div></div>
+
+  <script src="../voix/30s-timeline.js"></script>
+  <script src="../engine.js"></script>
+  <script>
+    const { prog, ease, clamp, lerp, euro, splitWords } = M;
+    const VO = window.VO;
+    const S = VO.sentences;
+    const C = (i, j) => S[i].chunks[j];
+    const SEG = Object.fromEntries(VO.segments.map((s) => [s.name, s]));
+    const W = 960, H = 640;
+
+    // Courbe SVG à partir d'une fonction f(x ∈ [0,1]) → valeur.
+    const curve = (f, n, x0, x1, y) => Array.from({ length: n + 1 }, (_, i) => {
+      const u = i / n;
+      return [lerp(x0, x1, u), y(f(u))];
+    });
+    const toPath = (pts) => pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
+
+    // Les parties sont des méthodes de `def`, appelées depuis render().
+    const def = {
+      width: 1080, height: 1920, duration: VO.duration,
+      setup() {
+        // Sous-titres : tous les morceaux sauf la 1re phrase (le hook l'affiche en grand).
+        const caps = [];
+        S.forEach((s, i) => s.chunks.forEach((c, j) => {
+          const next = s.chunks[j + 1];
+          caps.push({ ...c, until: next ? next.start : s.end + 0.3, hidden: i === 0 });
+        }));
+
+        // Titres découpés en mots ; les derniers mots en italique doré.
+        const titles = {};
+        for (const name of ['err1', 'err2', 'err3']) {
+          const el = document.querySelector(`#seg-${name} .title`);
+          const words = splitWords(el);
+          words.slice(-2).forEach((w) => w.classList.add('gold'));
+          titles[name] = words;
+        }
+
+        // Inflation : 1 000 € / 1,022^an sur 10 ans.
+        const inf = (u) => 1000 / Math.pow(1.022, u * 10);
+        const infY = (v) => lerp(330, 590, (1000 - v) / 220);
+        const infPts = curve(inf, 60, 50, 910, infY);
+        document.getElementById('infLine').setAttribute('d', toPath(infPts));
+        document.getElementById('infArea').setAttribute('d', toPath(infPts) + ' L910 640 L50 640 Z');
+
+        // Intérêts composés : 31 barres.
+        const top = 1000 * Math.pow(1.07, 30);
+        const bars = [];
+        const barsEl = document.getElementById('bars');
+        for (let y = 0; y <= 30; y++) {
+          const v = 1000 * Math.pow(1.07, y);
+          const h = (v / top) * 330, hc = (1000 / top) * 330;
+          const b = document.createElement('div');
+          b.className = 'bar';
+          b.style.left = (y / 30) * (860 - 18) + 'px';
+          b.innerHTML = `<div class="i" style="height:${h - hc}px"></div><div class="c" style="height:${hc}px"></div>`;
+          barsEl.appendChild(b);
+          bars.push(b);
+        }
+
+        // Frais : 7 % contre 6 % sur 30 ans.
+        const fy = (v) => lerp(560, 200, (v - 1000) / (top - 1000));
+        const A = curve((u) => 1000 * Math.pow(1.07, u * 30), 60, 50, 860, fy);
+        const B = curve((u) => 1000 * Math.pow(1.06, u * 30), 60, 50, 860, fy);
+        document.getElementById('feeA').setAttribute('d', toPath(A));
+        document.getElementById('feeB').setAttribute('d', toPath(B));
+        document.getElementById('feeGap').setAttribute('d', toPath(A) + ' ' + toPath([...B].reverse()).replace('M', 'L') + ' Z');
+
+        return {
+          caps, titles, bars, infPts,
+          hook: [...document.querySelectorAll('.hw')].map((el) => {
+            const [i, j] = el.dataset.c.split(',').map(Number);
+            return { el, at: C(i, j).start + Number(el.dataset.d || 0), hl: el.querySelector('.hl') };
+          }),
+          slots: [...document.querySelectorAll('.slot')],
+        };
+      },
+      render(t, c) {
+        document.getElementById('progress').style.transform = `scaleX(${t / VO.duration})`;
+
+        // Transitions entre parties : arrivée par la droite, sortie vers la gauche avec flou.
+        VO.segments.forEach((s, k) => {
+          const el = document.getElementById('seg-' + s.name);
+          const enter = k === 0 ? 1 : prog(t, s.start - 0.1, 0.5, ease.outExpo);
+          const exit = k === VO.segments.length - 1 ? 0 : prog(t, s.end - 0.12, 0.35, ease.inCubic);
+          el.style.visibility = enter > 0 && exit < 1 ? 'visible' : 'hidden';
+          el.style.transform = `translateX(${(1 - enter) * 1000 - exit * 500}px) scale(${1 - exit * 0.08})`;
+          el.style.opacity = 1 - exit;
+          el.style.filter = `blur(${(1 - enter) * 18 + exit * 18}px)`;
+        });
+
+        // Secousse globale sur « RUINER »
+        const shakeAt = c.hook[2].at;
+        const sh = t > shakeAt && t < shakeAt + 0.45 ? (1 - (t - shakeAt) / 0.45) * 24 : 0;
+        document.getElementById('stage').style.translate = `${Math.sin(t * 95) * sh}px ${Math.cos(t * 83) * sh}px`;
+
+        def.hook(t, c);
+        def.err1(t, c);
+        def.err2(t, c);
+        def.err3(t, c);
+        def.cta(t, c);
+        def.captions(t, c);
+      },
+      hook(t, c) {
+        c.hook.forEach(({ el, at, hl }) => {
+          const p = prog(t, at, 0.4, ease.outBack);
+          el.style.opacity = clamp(p * 3);
+          el.style.transform = `scale(${lerp(1.7, 1, p)}) rotate(${(1 - p) * -5}deg)`;
+          if (hl) hl.style.transform = `scaleX(${prog(t, at + 0.08, 0.3, ease.outExpo)}) rotate(-2deg)`;
+        });
+        // Les mots remontent pour laisser place aux 3 pastilles.
+        const up = prog(t, C(1, 0).start, 0.6, ease.inOutCubic);
+        document.getElementById('hookWords').style.transform = `translateY(${-up * 60}px) scale(${1 - up * 0.1})`;
+        c.slots.forEach((s, i) => {
+          const p = prog(t, C(1, 0).start + i * 0.15, 0.5, ease.outBack);
+          let sc = p;
+          if (i === 2) sc *= 1 + Math.max(0, Math.sin((t - C(1, 1).start) * 9)) * 0.12 * (t > C(1, 1).start ? 1 : 0);
+          s.style.transform = `scale(${sc})`;
+          s.style.opacity = clamp(p * 2) * (i < 2 ? 1 - prog(t, C(1, 1).start, 0.4) * 0.6 : 1);
+        });
+      },
+      header(name, si, t, c) {
+        const seg = document.getElementById('seg-' + name);
+        const chip = seg.querySelector('.chip');
+        const cp = prog(t, C(si, 0).start, 0.45, ease.outBack);
+        chip.style.transform = `scale(${cp})`;
+        chip.style.opacity = clamp(cp * 2);
+        c.titles[name].forEach((w, i) => {
+          const p = prog(t, C(si, 1).start - 0.1 + i * 0.08, 0.7, ease.outExpo);
+          w.style.transform = `translateY(${(1 - p) * 110}%)`;
+        });
+        const panel = seg.querySelector('.panel');
+        const pp = prog(t, C(si, 1).start + 0.2, 0.7, ease.outExpo);
+        panel.style.transform = `translateY(${(1 - pp) * 140}px)`;
+        panel.style.opacity = pp;
+      },
+      err1(t, c) {
+        def.header('err1', 2, t, c);
+        // La valeur fond entre « 1 000 € » et la fin de « en 10 ans ».
+        const u = prog(t, C(3, 1).start, C(3, 3).start + 0.3 - C(3, 1).start, ease.inOutCubic);
+        const v = 1000 / Math.pow(1.022, u * 10);
+        document.getElementById('infVal').textContent = euro(Math.round(v));
+        document.getElementById('infVal').style.color = u > 0.02 ? 'var(--down)' : 'var(--ink)';
+        document.getElementById('infYr').textContent = `an ${Math.round(u * 10)}`;
+        const line = document.getElementById('infLine');
+        const len = line.getTotalLength();
+        line.style.strokeDasharray = len;
+        line.style.strokeDashoffset = len * (1 - u);
+        const head = line.getPointAtLength(Math.max(0.001, len * u));
+        document.getElementById('infClipRect').setAttribute('width', head.x);
+        const dot = document.getElementById('infDot');
+        dot.setAttribute('cx', head.x); dot.setAttribute('cy', head.y);
+        dot.style.opacity = clamp(u * 20);
+        const b = prog(t, C(3, 3).start + 0.3, 0.7, ease.outElastic);
+        const badge = document.getElementById('infBadge');
+        badge.style.transform = `scale(${b}) rotate(${-6 + (1 - b) * 25}deg)`;
+        badge.style.opacity = clamp(b * 3);
+      },
+      err2(t, c) {
+        def.header('err2', 4, t, c);
+        const u = prog(t, C(5, 1).start, C(5, 3).start + 0.6 - C(5, 1).start, ease.inOutCubic);
+        const yf = u * 30;
+        document.getElementById('ciVal').textContent = euro(Math.round(1000 * Math.pow(1.07, yf)));
+        document.getElementById('ciVal').style.color = u > 0.02 ? 'var(--gold-soft)' : 'var(--ink)';
+        document.getElementById('ciYr').textContent = `an ${Math.floor(yf)}`;
+        c.bars.forEach((b, y) => {
+          const p = y === 0 ? prog(t, C(4, 1).start + 0.4, 0.5, ease.outBack) : ease.outBack(clamp((yf - y + 1) / 1.5));
+          b.style.transform = `scaleY(${p})`;
+        });
+        const b = prog(t, C(5, 4).start, 0.7, ease.outElastic);
+        const badge = document.getElementById('ciBadge');
+        badge.style.transform = `scale(${b}) rotate(${-6 + (1 - b) * 25}deg)`;
+        badge.style.opacity = clamp(b * 3);
+      },
+      err3(t, c) {
+        def.header('err3', 6, t, c);
+        const u = prog(t, C(7, 0).start, C(7, 3).start - C(7, 0).start, ease.inOutCubic);
+        document.getElementById('feeClipRect').setAttribute('width', lerp(40, 880, u));
+        document.getElementById('feeGap').style.opacity = prog(t, C(7, 2).start, 0.5);
+        const lp = prog(t, C(7, 3).start - 0.2, 0.5);
+        document.getElementById('feeLA').style.opacity = lp;
+        document.getElementById('feeLB').style.opacity = lp;
+        const b = prog(t, C(7, 3).start, 0.7, ease.outElastic);
+        const badge = document.getElementById('feeBadge');
+        badge.style.transform = `scale(${b}) rotate(${-6 + (1 - b) * 25}deg)`;
+        badge.style.opacity = clamp(b * 3);
+      },
+      cta(t) {
+        const s = C(8, 0).start;
+        const tp = prog(t, C(8, 1).start - 0.1, 0.7, ease.outExpo);
+        const teaser = document.querySelector('.teaser');
+        teaser.style.transform = `translateY(${(1 - tp) * -120}px)`;
+        teaser.style.opacity = tp;
+        // Bouton : apparition, puis « tap » du doigt et passage à « ABONNÉ ✓ ».
+        const bp = prog(t, s, 0.6, ease.outElastic);
+        const tap = C(8, 3).start + 0.5;
+        const press = t > tap && t < tap + 0.25 ? Math.sin(((t - tap) / 0.25) * Math.PI) * 0.08 : 0;
+        const breathe = t > s + 0.8 && t < tap ? Math.sin((t - s) * 7) * 0.03 : 0;
+        const sub = document.getElementById('sub');
+        sub.style.transform = `scale(${bp + breathe - press})`;
+        sub.style.opacity = clamp(bp * 3);
+        const done = t >= tap + 0.12;
+        sub.classList.toggle('done', done);
+        document.getElementById('subTxt').textContent = done ? 'ABONNÉ ✓' : "S'ABONNER";
+
+        const fp = prog(t, tap - 0.9, 0.8, ease.inOutCubic);
+        const finger = document.getElementById('finger');
+        finger.style.transform = `translate(${lerp(1100, 610, fp)}px, ${lerp(1250, 900, fp)}px) scale(${1 - press * 2})`;
+        finger.style.opacity = fp > 0 ? 1 - prog(t, tap + 0.6, 0.4) : 0;
+        const rp = prog(t, tap, 0.6, ease.outCubic);
+        const ripple = document.getElementById('ripple');
+        ripple.style.transform = `translate(${605}px, ${895}px) scale(${0.3 + rp * 2.2})`;
+        ripple.style.opacity = t > tap ? 1 - rp : 0;
+
+        const hp = prog(t, C(8, 2).start, 0.6, ease.outExpo);
+        const handle = document.getElementById('handle');
+        handle.style.opacity = hp;
+        handle.style.transform = `translateY(${(1 - hp) * 30}px)`;
+      },
+      captions(t, c) {
+        document.getElementById('disc').style.opacity = prog(t, SEG.err1.start, 0.5) * (1 - prog(t, SEG.cta.start, 0.4)) * 0.8;
+        const cap = document.getElementById('cap');
+        const cur = c.caps.find((k) => !k.hidden && t >= k.start && t < k.until);
+        if (!cur) { cap.style.opacity = 0; return; }
+        if (cap.dataset.k !== String(cur.start)) {
+          cap.dataset.k = cur.start;
+          cap.textContent = cur.text;
+          cap.classList.toggle('gold', cur.gold);
+        }
+        const p = prog(t, cur.start, 0.22, ease.outBack);
+        const tilt = (Math.round(cur.start * 10) % 2 ? 1 : -1) * 1.5;
+        cap.style.opacity = clamp(p * 4);
+        cap.style.transform = `scale(${lerp(1.35, cur.gold ? 1.12 : 1, p)}) rotate(${tilt * (1 - p)}deg)`;
+      },
+    };
+    M.scene(def);
+  </script>
+</body>
+</html>

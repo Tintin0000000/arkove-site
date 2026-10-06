@@ -6,6 +6,7 @@
  *   node render.mjs scenes/*.html                            → toutes les scènes
  *   node render.mjs scenes/02-interets-composes.html --still 4.5   → PNG à t = 4,5 s
  *   node render.mjs scenes/03-budget-50-30-20.html --fps 60
+ *   node render.mjs scenes/05-short-30s.html --audio voix/30s-mix.wav   → MP4 avec le son
  *
  * Prérequis : Node 18+, ffmpeg dans le PATH, `npm install` dans ce dossier.
  */
@@ -25,11 +26,12 @@ const opt = (name) => {
 };
 const still = opt('--still');
 const fpsArg = opt('--fps');
+const audio = opt('--audio');
 const outDir = resolve(opt('--out') ?? join(here, 'videos'));
 const files = args;
 
 if (!files.length) {
-  console.error('Usage : node render.mjs <scene.html> [...] [--fps 30] [--still <secondes>] [--out <dossier>]');
+  console.error('Usage : node render.mjs <scene.html> [...] [--fps 30] [--still <secondes>] [--audio <fichier.wav>] [--out <dossier>]');
   process.exit(1);
 }
 mkdirSync(outDir, { recursive: true });
@@ -64,6 +66,7 @@ for (const file of files) {
   const ffmpeg = spawn('ffmpeg', [
     '-y', '-loglevel', 'error',
     '-f', 'image2pipe', '-framerate', String(fps), '-c:v', 'png', '-i', '-',
+    ...(audio ? ['-i', resolve(audio), '-c:a', 'aac', '-b:a', '192k', '-shortest'] : []),
     '-c:v', 'libx264', '-preset', 'slow', '-crf', '18',
     '-pix_fmt', 'yuv420p', '-movflags', '+faststart',
     out,

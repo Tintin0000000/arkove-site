@@ -8,6 +8,7 @@ Quatre séquences animées sur le thème de la finance, prêtes à monter dans u
 | `02-interets-composes` | 9:16 · 1080×1920 | 9,5 s | TikTok / Reels / Shorts |
 | `03-budget-50-30-20` | 9:16 · 1080×1920 | 9 s | TikTok / Reels / Shorts |
 | `04-hook-3-erreurs` | 9:16 · 1080×1920 | 10 s | Hook d'ouverture d'un short |
+| **`05-short-30s`** | 9:16 · 1080×1920 | **30 s, avec voix off** | Short complet, prêt à publier |
 
 Les MP4 déjà exportés sont dans `videos/`. La galerie `index.html` les montre tous.
 
@@ -27,6 +28,45 @@ Chaque scène est une simple page HTML. Il n'y a ni After Effects ni logiciel pa
 Les polices (Inter Tight, Instrument Serif, JetBrains Mono, licence SIL OFL) sont incluses dans
 `fonts/`. L'export fonctionne donc hors ligne.
 
+## Le short de 30 s avec voix off
+
+`05-short-30s` est une vidéo complète : un hook, trois erreurs qui ruinent l'épargne
+(inflation, attendre le bon moment, frais), puis un appel à s'abonner. Elle a une voix off,
+des sous-titres façon TikTok calés mot à mot sur la voix, une musique de fond qui baisse quand
+la voix parle, et des bruitages (impact, whoosh, pop).
+
+Tout part du fichier `voix/script-30s.json`. Chaque phrase y est découpée en morceaux
+`[texte affiché, texte prononcé]` :
+
+```json
+{ "segment": "err1", "chunks": [["AVEC L'INFLATION,", "Avec l'inflation,"], ["*1 000 €", "mille euros"]] }
+```
+
+- Le texte prononcé écrit les nombres en toutes lettres pour que la voix les lise bien.
+- Un `*` devant le texte affiché le met en doré, avec un petit « pop » sonore.
+- `segment` choisit la partie de la vidéo (`hook`, `err1`, `err2`, `err3`, `cta`).
+
+Pour régénérer la voix puis la vidéo :
+
+```bash
+pip install sherpa-onnx numpy scipy soundfile
+python3 voix/voiceover.py voix/script-30s.json      # voix + musique + minutage
+node render.mjs scenes/05-short-30s.html --audio voix/30s-mix.wav
+```
+
+`voiceover.py` synthétise la voix en local avec [Piper](https://github.com/rhasspy/piper),
+sans compte ni abonnement. La voix française « siwis » (~60 Mo) se télécharge au premier
+lancement. Le script écrit aussi `voix/30s-timeline.js`, le minutage de chaque morceau de
+phrase : la scène le lit pour caler les sous-titres et les animations sur la voix. Si tu
+changes le texte, tout se recale tout seul.
+
+La synthèse varie un peu à chaque lancement. Si un mot sonne mal, relance la commande ou
+reformule la phrase. Par exemple, « Trois erreurs ruinent ton épargne » était souvent mal
+prononcé, alors que « Trois erreurs peuvent ruiner ton épargne » passe à tous les coups.
+
+**Crédit à mettre dans la description de la vidéo :** voix de synthèse Piper `fr_FR-siwis-medium`,
+entraînée sur le corpus SIWIS (licence CC-BY 4.0).
+
 ## Reproduire chez toi
 
 Prérequis : [Node.js](https://nodejs.org) 18 ou plus récent, et [ffmpeg](https://ffmpeg.org/download.html)
@@ -44,8 +84,9 @@ node render.mjs scenes/02-interets-composes.html --still 7   # une image PNG à 
 node render.mjs scenes/01-intro-youtube.html --fps 60        # en 60 i/s
 ```
 
-Le MP4 s'importe ensuite tel quel dans CapCut, Premiere ou DaVinci Resolve, où l'on ajoute la
-voix off et la musique.
+Le MP4 s'importe ensuite tel quel dans CapCut, Premiere ou DaVinci Resolve. Sur TikTok, tu peux
+aussi remplacer la musique générée par un son tendance : garde la voix seule (`voix/30s-voix.wav`)
+et ajoute le son dans l'application.
 
 ## Créer ta propre scène
 
