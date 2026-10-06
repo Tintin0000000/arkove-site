@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fonds d'urgence</title>
+  <link rel="stylesheet" href="../motion.css">
+  <style>
+    /* 1080×1920. Bandeau série (y 60–140), visuel (y 180–1180), sous-titres centrés sur y 1330,
+       bas de l'écran libre pour l'interface TikTok / Reels. */
+    .seg { position: absolute; inset: 0; }
+    .glow { position: absolute; width: 1500px; height: 1500px; left: -210px; top: 150px; border-radius: 50%; }
+    .glow.red { background: radial-gradient(circle, rgba(255, 90, 95, 0.22), transparent 62%); }
+    .glow.gold { background: radial-gradient(circle, rgba(206, 155, 76, 0.24), transparent 62%); }
+    .glow.green { background: radial-gradient(circle, rgba(63, 214, 139, 0.18), transparent 62%); }
+
+    .topbar { left: 60px; right: 60px; top: 64px; display: flex; justify-content: space-between; font: 700 24px var(--mono); letter-spacing: 0.2em; color: var(--ink-soft); z-index: 5; }
+    .topbar b { color: var(--gold); font-weight: 700; }
+    .track { left: 60px; right: 60px; top: 112px; height: 6px; border-radius: 3px; background: rgba(243, 238, 228, 0.1); z-index: 5; overflow: hidden; }
+    .track i { position: absolute; inset: 0; background: var(--gold); transform-origin: 0 50%; }
+
+    /* --- Hook : la panne --- */
+    .sky { position: absolute; left: 0; top: 0; width: 1080px; height: 1100px; }
+    .road { position: absolute; left: 0; width: 1080px; top: 900px; height: 250px; background: #191612; border-top: 4px solid #2e2a22; }
+    .dashes { position: absolute; left: 0; top: 66px; height: 10px; width: 2400px; background: repeating-linear-gradient(90deg, rgba(243, 238, 228, 0.5) 0 90px, transparent 90px 170px); }
+    .car { position: absolute; left: 130px; top: 612px; width: 820px; height: 335px; transform-origin: 50% 100%; }
+    .smoke { position: absolute; border-radius: 50%; background: radial-gradient(circle, rgba(200, 192, 180, 0.55), rgba(200, 192, 180, 0)); }
+    .hazard { position: absolute; left: 760px; top: 430px; width: 150px; height: 135px; }
+    .dim { inset: 0; background: #0d0c0a; }
+    .invoice {
+      left: 190px; top: 250px; width: 700px; padding: 46px 50px 40px; border-radius: 22px;
+      background: #f3eee4; color: #171310;
+      box-shadow: 0 60px 120px -30px rgba(0, 0, 0, 0.9);
+    }
+    .invoice .hd { display: flex; justify-content: space-between; font: 700 24px var(--mono); letter-spacing: 0.14em; color: #6b6255; }
+    .invoice h3 { font: 400 72px/1 var(--serif); margin: 18px 0 26px; }
+    .invoice .ln { display: flex; justify-content: space-between; font: 500 32px var(--mono); padding: 14px 0; border-bottom: 2px dashed #cfc6b6; }
+    .invoice .tot { display: flex; justify-content: space-between; align-items: baseline; margin-top: 22px; font: 800 40px var(--sans); }
+    .invoice .tot b { font: 900 110px/1 var(--sans); letter-spacing: -0.04em; color: #d8383e; word-spacing: 0.1em; }
+    .stamp {
+      position: absolute; right: 40px; top: 120px; padding: 12px 26px; border: 8px solid #d8383e; border-radius: 16px;
+      color: #d8383e; font: 900 54px var(--sans); letter-spacing: 0.04em; transform-origin: 50% 50%; background: rgba(243, 238, 228, 0.6);
+    }
+    .qmark { left: 760px; top: 560px; font: 400 420px/1 var(--serif); font-style: italic; color: var(--gold-soft); text-shadow: 0 20px 60px rgba(0, 0, 0, 0.8); }
+
+    /* --- Bouclier --- */
+    .cushion { left: 140px; top: 220px; width: 800px; height: 800px; border-radius: 50%; background: radial-gradient(circle at 45% 40%, rgba(243, 238, 228, 0.22), rgba(243, 238, 228, 0.05) 60%, transparent 70%); border: 3px solid rgba(243, 238, 228, 0.12); }
+    .shield { left: 290px; top: 300px; width: 500px; height: 600px; }
+    .mini { left: 0; top: 0; width: 230px; padding: 18px 20px; border-radius: 12px; background: #f3eee4; color: #171310; font: 700 20px var(--mono); }
+    .mini b { display: block; font: 900 48px var(--sans); color: #d8383e; margin-top: 6px; letter-spacing: -0.03em; }
+    .spark { position: absolute; width: 22px; height: 22px; border-radius: 50%; background: var(--gold-soft); left: 529px; top: 589px; }
+    .shtitle { left: 0; width: 1080px; top: 960px; text-align: center; font: 400 116px/1 var(--serif); }
+    .shtitle em { color: var(--gold-soft); }
+
+    /* --- La règle --- */
+    .chip {
+      left: 80px; top: 180px; padding: 12px 26px; border-radius: 999px;
+      font: 700 28px var(--mono); letter-spacing: 0.2em; color: var(--gold);
+      border: 2px solid rgba(206, 155, 76, 0.55); background: rgba(206, 155, 76, 0.08);
+    }
+    .head { left: 74px; top: 250px; font: 400 170px/1 var(--serif); letter-spacing: -0.015em; white-space: nowrap; }
+    .head em { color: var(--gold-soft); }
+    .month {
+      position: absolute; width: 290px; height: 230px; border-radius: 28px; overflow: hidden;
+      background: #15130f; border: 3px solid rgba(243, 238, 228, 0.12);
+    }
+    .month .fill { position: absolute; left: 0; right: 0; bottom: 0; height: 100%; transform-origin: 50% 100%; background: repeating-linear-gradient(180deg, #e8c27a 0 18px, #ce9b4c 18px 22px); }
+    .month .m { position: absolute; left: 22px; top: 18px; font: 700 24px var(--mono); letter-spacing: 0.12em; color: var(--ink-soft); z-index: 1; }
+    .month .v { z-index: 1; }
+    .month .v { position: absolute; left: 0; right: 0; bottom: 24px; text-align: center; font: 700 44px var(--mono); }
+    .goal { left: 80px; top: 1010px; width: 920px; display: flex; align-items: center; justify-content: space-between; }
+    .goal .lbl { font: 700 24px var(--mono); letter-spacing: 0.18em; color: var(--ink-soft); }
+    .goal .amt { font: 900 136px/1 var(--sans); letter-spacing: -0.04em; word-spacing: 0.1em; font-variant-numeric: tabular-nums; }
+    .tag { padding: 14px 26px; border-radius: 999px; font: 800 34px var(--sans); letter-spacing: 0.04em; }
+    .tag.min { background: var(--up); color: #0d0c0a; }
+    .tag.max { background: var(--gold); color: #171310; }
+
+    /* --- Le livret à part --- */
+    .acct {
+      left: 90px; width: 900px; height: 240px; border-radius: 34px; padding: 0 44px;
+      display: flex; align-items: center; gap: 30px;
+      background: linear-gradient(165deg, #1d1a16, #13110f); border: 2px solid rgba(243, 238, 228, 0.12);
+    }
+    .acct.safe { border-color: rgba(63, 214, 139, 0.55); }
+    .acct svg { width: 96px; height: 96px; flex: none; }
+    .acct .txt { flex: 1; }
+    .acct .nm { font: 800 50px/1.1 var(--sans); }
+    .acct .ds { font: 500 30px var(--sans); color: var(--ink-soft); }
+    .acct .bal { font: 700 54px var(--mono); }
+    .coin {
+      position: absolute; left: 0; top: 0; width: 84px; height: 84px; border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, #f6dca0, #ce9b4c 70%); border: 4px solid #a87a35;
+      display: flex; align-items: center; justify-content: center; font: 400 52px var(--serif); color: #5a3f14;
+    }
+    .pill { left: 90px; top: 1046px; display: flex; justify-content: center; }
+    .pill span { padding: 18px 34px; border-radius: 999px; background: var(--up); color: #0d0c0a; font: 800 40px var(--sans); }
+    .btn { right: 90px; top: 1046px; padding: 14px 30px; border-radius: 999px; background: rgba(63, 214, 139, 0.15); border: 2px solid var(--up); color: var(--up); font: 800 30px var(--sans); }
+    .finger { left: 0; top: 0; width: 100px; height: 100px; border-radius: 50%; background: rgba(255, 255, 255, 0.9); }
+    .ripple { left: 0; top: 0; width: 120px; height: 120px; border-radius: 50%; border: 6px solid #fff; }
+
+    /* --- Commencer petit --- */
+    .jar { left: 240px; top: 380px; width: 600px; height: 700px; }
+    .jcount { left: 0; width: 1080px; top: 190px; text-align: center; }
+    .jcount .amt { font: 900 150px/1 var(--sans); letter-spacing: -0.04em; word-spacing: 0.1em; color: var(--gold-soft); font-variant-numeric: tabular-nums; }
+    .jcount .mo { font: 700 30px var(--mono); letter-spacing: 0.16em; color: var(--ink-soft); margin-top: 10px; }
+    .jbadge { right: 70px; top: 760px; padding: 16px 26px; border-radius: 22px; background: var(--gold); color: #171310; font: 900 56px/1 var(--sans); letter-spacing: -0.02em; box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.8); }
+    .jbadge small { display: block; font: 700 22px var(--mono); letter-spacing: 0.12em; margin-top: 6px; }
+
+    /* --- CTA --- */
+    .ctaShield { left: 440px; top: 210px; width: 200px; height: 240px; }
+    .ctaTitle { left: 0; width: 1080px; top: 490px; text-align: center; font: 400 170px/1 var(--serif); }
+    .ctaSub { left: 0; width: 1080px; top: 690px; text-align: center; font: 600 52px var(--sans); color: var(--ink-soft); }
+    .sub {
+      left: 190px; width: 700px; top: 820px; height: 150px; border-radius: 999px;
+      background: var(--down); color: #fff;
+      display: flex; align-items: center; justify-content: center; gap: 22px;
+      font: 900 60px var(--sans); letter-spacing: -0.02em;
+      box-shadow: 0 30px 80px -20px rgba(255, 90, 95, 0.8);
+    }
+    .sub.done { background: #2a2622; color: var(--ink-soft); box-shadow: none; }
+    .sub svg { width: 56px; height: 56px; }
+    .handle { left: 0; width: 1080px; top: 1010px; text-align: center; font: 600 52px var(--sans); }
+    .handle span { color: var(--gold-soft); }
+    .next { left: 140px; width: 800px; top: 1270px; padding: 26px 34px; border-radius: 26px; border: 2px solid rgba(206, 155, 76, 0.4); background: #15130f; text-align: center; }
+    .next .k { font: 700 24px var(--mono); letter-spacing: 0.2em; color: var(--gold); }
+    .next .t { font: 400 56px/1.1 var(--serif); margin-top: 10px; }
+
+    /* --- Sous-titres --- */
+    .cap {
+      left: 40px; width: 1000px; top: 1265px; height: 130px;
+      display: flex; align-items: center; justify-content: center; text-align: center;
+      font: 900 92px/1 var(--sans); letter-spacing: -0.03em; text-transform: uppercase; white-space: nowrap;
+      color: #fff; -webkit-text-stroke: 4px #0d0c0a; paint-order: stroke fill;
+      text-shadow: 0 8px 0 #0d0c0a, 0 0 40px rgba(0, 0, 0, 0.9);
+      z-index: 4;
+    }
+    .cap.gold { color: var(--gold-soft); }
+  </style>
+</head>
+<body>
+  <div class="frame"><div id="stage">
+    <div class="gridbg"></div>
+
+    <!-- HOOK : la panne -->
+    <div class="seg" id="seg-hook">
+      <div class="glow red" id="hookGlow"></div>
+      <svg class="sky" id="sky" viewBox="0 0 1080 1100"></svg>
+      <div class="road"><div class="dashes" id="dashes"></div></div>
+      <div id="smokes"></div>
+      <svg class="car" id="car" viewBox="0 0 700 286">
+        <defs>
+          <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0c77c"/><stop offset="1" stop-color="#c48d3d"/></linearGradient>
+        </defs>
+        <ellipse cx="350" cy="276" rx="320" ry="10" fill="rgba(0,0,0,0.5)"/>
+        <path d="M30 210 L30 160 Q30 136 56 130 L170 116 L262 52 Q280 40 304 40 L452 40 Q478 40 494 56 L568 116 L640 128 Q668 134 668 162 L668 210 Q668 222 656 222 L42 222 Q30 222 30 210 Z" fill="url(#body)" stroke="#171310" stroke-width="6"/>
+        <path d="M282 62 L344 62 L344 116 L204 116 Z" fill="#2b2620" stroke="#171310" stroke-width="5"/>
+        <path d="M360 62 L448 62 Q462 62 474 74 L520 116 L360 116 Z" fill="#2b2620" stroke="#171310" stroke-width="5"/>
+        <line x1="352" y1="124" x2="352" y2="210" stroke="#171310" stroke-width="4" opacity="0.5"/>
+        <rect id="headlight" x="646" y="146" width="22" height="18" rx="4" fill="#fff6c8"/>
+        <rect x="30" y="146" width="18" height="20" rx="4" fill="#ff5a5f"/>
+        <g id="wheelA" transform="translate(170 222)"><circle r="56" fill="#171310"/><circle r="30" fill="#5d5548"/><g stroke="#a79c88" stroke-width="6"><line x1="-26" y1="0" x2="26" y2="0"/><line x1="0" y1="-26" x2="0" y2="26"/></g></g>
+        <g id="wheelB" transform="translate(530 222)"><circle r="56" fill="#171310"/><circle r="30" fill="#5d5548"/><g stroke="#a79c88" stroke-width="6"><line x1="-26" y1="0" x2="26" y2="0"/><line x1="0" y1="-26" x2="0" y2="26"/></g></g>
+      </svg>
+      <svg class="hazard abs" id="hazard" viewBox="0 0 150 135"><path d="M75 8 L142 126 L8 126 Z" fill="#ff5a5f" stroke="#171310" stroke-width="6" stroke-linejoin="round"/><rect x="69" y="46" width="12" height="46" rx="5" fill="#fff"/><circle cx="75" cy="108" r="8" fill="#fff"/></svg>
+      <div class="abs dim" id="dim"></div>
+      <div class="abs invoice" id="invoice">
+        <div class="hd"><span>GARAGE · FACTURE</span><span>N° 0418</span></div>
+        <h3>Réparation</h3>
+        <div class="ln"><span>Embrayage</span><span>860 €</span></div>
+        <div class="ln"><span>Main-d'œuvre</span><span>340 €</span></div>
+        <div class="tot"><span>Total</span><b>1 200 €</b></div>
+        <div class="stamp" id="stampEl">À PAYER</div>
+      </div>
+      <div class="abs qmark" id="qmark">?</div>
+    </div>
+
+    <!-- BOUCLIER -->
+    <div class="seg" id="seg-shield">
+      <div class="glow green"></div>
+      <div class="abs cushion" id="cushion"></div>
+      <svg class="abs shield" id="shield" viewBox="0 0 500 600">
+        <defs><linearGradient id="shg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0c77c"/><stop offset="1" stop-color="#b98436"/></linearGradient></defs>
+        <path id="shPath" d="M250 30 L460 100 V290 Q460 480 250 570 Q40 480 40 290 V100 Z" fill="url(#shg)" fill-opacity="0" stroke="#e8c27a" stroke-width="16" stroke-linejoin="round"/>
+        <path id="shCheck" d="M150 300 L225 375 L360 230" fill="none" stroke="#171310" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div id="sparks"></div>
+      <div class="abs mini" id="mini">FACTURE<b>1 200 €</b></div>
+      <h1 class="abs shtitle" id="shTitle">Fonds <em>d'urgence</em></h1>
+    </div>
+
+    <!-- LA RÈGLE -->
+    <div class="seg" id="seg-rule">
+      <div class="glow gold"></div>
+      <div class="abs chip" id="ruleChip">LA RÈGLE</div>
+      <h1 class="abs head" id="ruleHead">3 à 6 <em>mois</em></h1>
+      <div id="months"></div>
+      <div class="abs goal" id="goal">
+        <div><div class="lbl">TON OBJECTIF</div><div class="amt" id="goalAmt">0 €</div></div>
+        <span class="tag min" id="tagMin">MINIMUM</span>
+      </div>
+    </div>
+
+    <!-- LIVRET À PART -->
+    <div class="seg" id="seg-account">
+      <div class="glow green"></div>
+      <div class="abs acct" id="acctA" style="top:300px">
+        <svg viewBox="0 0 96 96"><rect x="6" y="18" width="84" height="60" rx="10" fill="none" stroke="#a79c88" stroke-width="6"/><rect x="6" y="34" width="84" height="10" fill="#a79c88"/><rect x="18" y="56" width="20" height="10" rx="3" fill="#ce9b4c"/></svg>
+        <div class="txt"><div class="nm">Compte courant</div><div class="ds">les dépenses du quotidien</div></div>
+        <div class="bal" id="balA">6 080 €</div>
+      </div>
+      <div class="abs acct safe" id="acctB" style="top:780px">
+        <svg viewBox="0 0 96 96"><path d="M48 6 L86 20 V46 Q86 76 48 90 Q10 76 10 46 V20 Z" fill="none" stroke="#3fd68b" stroke-width="6" stroke-linejoin="round"/><path d="M32 48 L44 60 L66 36" fill="none" stroke="#3fd68b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="txt"><div class="nm">Livret d'épargne</div><div class="ds">ton fonds d'urgence</div></div>
+        <div class="bal" id="balB" style="color:var(--up)">0 €</div>
+      </div>
+      <div id="coins"></div>
+      <div class="abs btn" id="btnOut">Retirer</div>
+      <div class="abs ripple" id="ripA"></div>
+      <div class="abs finger" id="fingerA"></div>
+      <div class="abs pill" id="pillA"><span>✓ Disponible en 1 clic</span></div>
+    </div>
+
+    <!-- COMMENCER PETIT -->
+    <div class="seg" id="seg-start">
+      <div class="glow gold"></div>
+      <div class="abs jcount" id="jcount"><div class="amt" id="jAmt">0 €</div><div class="mo" id="jMo">50 € PAR MOIS</div></div>
+      <svg class="abs jar" id="jar" viewBox="0 0 600 700">
+        <defs>
+          <clipPath id="jarIn"><path d="M110 140 Q70 160 70 220 V610 Q70 670 130 670 H470 Q530 670 530 610 V220 Q530 160 490 140 Z"/></clipPath>
+          <linearGradient id="jfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0c77c"/><stop offset="1" stop-color="#b98436"/></linearGradient>
+        </defs>
+        <g clip-path="url(#jarIn)">
+          <rect x="60" y="0" width="480" height="700" fill="rgba(243,238,228,0.04)"/>
+          <rect id="jLevel" x="60" y="670" width="480" height="0" fill="url(#jfill)"/>
+          <g id="jStack"></g>
+        </g>
+        <path d="M110 140 Q70 160 70 220 V610 Q70 670 130 670 H470 Q530 670 530 610 V220 Q530 160 490 140 Z" fill="none" stroke="rgba(243,238,228,0.55)" stroke-width="7"/>
+        <path d="M120 230 V560" stroke="rgba(255,255,255,0.18)" stroke-width="14" stroke-linecap="round"/>
+        <line x1="80" y1="215" x2="520" y2="215" stroke="rgba(243,238,228,0.4)" stroke-width="3" stroke-dasharray="10 12"/>
+        <text x="300" y="200" text-anchor="middle" fill="#a79c88" font-family="JetBrains Mono, monospace" font-weight="700" font-size="24" letter-spacing="3">OBJECTIF 3 600 €</text>
+      </svg>
+      <div id="drops"></div>
+      <div class="abs jbadge" id="jBadge">600 €<small>EN 1 AN</small></div>
+    </div>
+
+    <!-- CTA -->
+    <div class="seg" id="seg-cta">
+      <div class="glow gold"></div>
+      <svg class="abs ctaShield" id="ctaShield" viewBox="0 0 500 600"><path d="M250 30 L460 100 V290 Q460 480 250 570 Q40 480 40 290 V100 Z" fill="url(#shg)" stroke="#e8c27a" stroke-width="16" stroke-linejoin="round"/><path d="M150 300 L225 375 L360 230" fill="none" stroke="#171310" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h1 class="abs ctaTitle" id="ctaTitle">Abonne-<em style="color:var(--gold-soft)">toi</em></h1>
+      <p class="abs ctaSub" id="ctaSub">pour ne rien rater</p>
+      <div class="abs sub" id="sub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1l-2-2Z"/></svg>
+        <span id="subTxt">S'ABONNER</span>
+      </div>
+      <div class="abs ripple" id="ripC"></div>
+      <div class="abs finger" id="fingerC"></div>
+      <div class="abs handle" id="handle">@ta<span>chaine</span></div>
+      <div class="abs next" id="next"><div class="k">ÉPISODE 02</div><div class="t">Où placer ton fonds d'urgence ?</div></div>
+    </div>
+
+    <div class="abs topbar"><span><b>ÉPARGNE</b> · ÉP. 01</span><span>FONDS D'URGENCE</span></div>
+    <div class="abs track"><i id="progress"></i></div>
+    <div class="abs cap" id="cap"></div>
+    <div class="grain"></div>
+    <div class="vignette"></div>
+  </div></div>
+
+  <script src="../voix/fonds-urgence-timeline.js"></script>
+  <script src="../engine.js"></script>
+  <script>
+    const { prog, ease, clamp, lerp, euro, rng } = M;
+    const VO = window.VO;
+    const S = VO.sentences;
+    const C = (i, j) => S[i].chunks[j];
+    const SEG = Object.fromEntries(VO.segments.map((s) => [s.name, s]));
+    const PANNE = C(0, 1).start;           // « tombe en panne »
+    const $ = (id) => document.getElementById(id);
+    const pop = (el, p, rot = 0) => {      // apparition élastique standard
+      el.style.opacity = clamp(p * 3);
+      el.style.transform = `scale(${p}) rotate(${rot * (1 - p)}deg)`;
+    };
+    // Distance parcourue par la voiture : vitesse 1 puis freinage sec à la panne.
+    const speed = (t) => (t < PANNE ? 1 : 1 - ease.outCubic(clamp((t - PANNE) / 0.55)));
+    const dist = (t) => {
+      let d = 0;
+      const n = 90, h = t / n;
+      for (let i = 0; i < n; i++) d += speed((i + 0.5) * h) * h;
+      return d;
+    };
+
+    const def = {
+      width: 1080, height: 1920, duration: VO.duration,
+      setup() {
+        // Ville en silhouette, fenêtres allumées.
+        const r = rng(11);
+        let sky = '';
+        for (let x = -40; x < 2200; ) {
+          const w = 90 + r() * 120, h = 220 + r() * 420;
+          sky += `<rect x="${x}" y="${900 - h}" width="${w}" height="${h}" fill="#17140f"/>`;
+          for (let wy = 900 - h + 30; wy < 870; wy += 46)
+            for (let wx = x + 18; wx < x + w - 24; wx += 36)
+              if (r() > 0.62) sky += `<rect x="${wx}" y="${wy}" width="14" height="20" fill="#ce9b4c" opacity="${0.15 + r() * 0.35}"/>`;
+          x += w + 14;
+        }
+        $('sky').innerHTML = `<g id="city">${sky}</g>`;
+
+        $('smokes').innerHTML = Array.from({ length: 9 }, (_, i) => `<div class="smoke" id="sm${i}"></div>`).join('');
+        $('sparks').innerHTML = Array.from({ length: 16 }, (_, i) => `<div class="spark" id="sp${i}"></div>`).join('');
+        $('coins').innerHTML = Array.from({ length: 7 }, (_, i) => `<div class="coin" id="co${i}">€</div>`).join('');
+        $('drops').innerHTML = Array.from({ length: 12 }, (_, i) => `<div class="coin" id="dr${i}" style="width:64px;height:64px;font-size:38px">€</div>`).join('');
+
+        // Les 6 mois de dépenses.
+        $('months').innerHTML = Array.from({ length: 6 }, (_, i) => {
+          const x = 75 + (i % 3) * 315, y = 470 + Math.floor(i / 3) * 260;
+          return `<div class="month" id="mo${i}" style="left:${x}px; top:${y}px">
+            <div class="fill" id="mf${i}"></div><div class="m">MOIS ${i + 1}</div><div class="v" id="mv${i}">1 200 €</div></div>`;
+        }).join('');
+
+        const sh = $('shPath');
+        const len = sh.getTotalLength();
+        sh.style.strokeDasharray = len;
+        const ck = $('shCheck');
+        const cl = ck.getTotalLength();
+        ck.style.strokeDasharray = cl;
+
+        // Pièces empilées dans le bocal (une par mois).
+        $('jStack').innerHTML = Array.from({ length: 12 }, (_, i) =>
+          `<ellipse id="js${i}" cx="${150 + (i % 4) * 100 + (Math.floor(i / 4) % 2) * 50}" cy="${650 - Math.floor(i / 4) * 34}" rx="46" ry="16" fill="#e8c27a" stroke="#a87a35" stroke-width="4"/>`).join('');
+
+        const caps = [];
+        S.forEach((s) => s.chunks.forEach((c, j) => {
+          const next = s.chunks[j + 1];
+          caps.push({ ...c, until: next ? next.start : s.end + 0.3 });
+        }));
+        return { len, cl, caps };
+      },
+      render(t, c) {
+        $('progress').style.transform = `scaleX(${t / VO.duration})`;
+        VO.segments.forEach((s, k) => {
+          const el = $('seg-' + s.name);
+          const enter = k === 0 ? 1 : prog(t, s.start - 0.1, 0.5, ease.outExpo);
+          const exit = k === VO.segments.length - 1 ? 0 : prog(t, s.end - 0.12, 0.35, ease.inCubic);
+          const on = enter > 0 && exit < 1;
+          el.style.visibility = on ? 'visible' : 'hidden';
+          if (!on) return;
+          el.style.transform = `translateX(${(1 - enter) * 1000 - exit * 500}px) scale(${1 - exit * 0.08})`;
+          el.style.opacity = 1 - exit;
+          el.style.filter = enter < 1 || exit > 0 ? `blur(${(1 - enter) * 18 + exit * 18}px)` : 'none';
+          def[s.name](t, c);
+        });
+        // Secousses : panne, facture, bouclier.
+        const shake = [[PANNE, 26], [C(1, 0).start, 16]].reduce((a, [at, amp]) =>
+          a + (t > at && t < at + 0.45 ? (1 - (t - at) / 0.45) * amp : 0), 0);
+        $('stage').style.translate = `${Math.sin(t * 95) * shake}px ${Math.cos(t * 83) * shake}px`;
+        def.captions(t, c);
+      },
+      hook(t) {
+        const d = dist(t), v = speed(t);
+        $('dashes').style.transform = `translateX(${-((d * 900) % 170)}px)`;
+        $('city').setAttribute('transform', `translate(${-d * 180} 0)`);
+        const car = $('car');
+        const jolt = prog(t, PANNE, 0.6, ease.outElastic);
+        const tilt = t > PANNE ? (1 - jolt) * 4 : 0;
+        car.style.transform = `translate(${t > PANNE ? (1 - jolt) * 30 : 0}px, ${Math.sin(t * 22) * 4 * v}px) rotate(${tilt}deg)`;
+        const ang = d * 900 / 56 * 57.3;
+        $('wheelA').setAttribute('transform', `translate(170 222) rotate(${ang})`);
+        $('wheelB').setAttribute('transform', `translate(530 222) rotate(${ang})`);
+        $('headlight').style.opacity = t > PANNE ? (Math.floor(t * 12) % 2 ? 0.2 : 0.9) * (1 - prog(t, PANNE + 0.8, 0.3)) : 1;
+        // Fumée qui s'échappe du capot après la panne.
+        for (let i = 0; i < 9; i++) {
+          const sm = $('sm' + i);
+          const life = 1.4, born = PANNE + 0.1 + i * 0.16;
+          const a = t < born ? -1 : ((t - born) % life) / life;
+          if (a < 0) { sm.style.opacity = 0; continue; }
+          const size = 90 + a * 220;
+          sm.style.width = sm.style.height = size + 'px';
+          sm.style.left = 820 - a * 160 - size / 2 + 'px';
+          sm.style.top = 700 - a * 420 - size / 2 + 'px';
+          sm.style.opacity = Math.sin(a * Math.PI) * 0.9;
+        }
+        const hz = prog(t, PANNE + 0.15, 0.5, ease.outBack);
+        const hazard = $('hazard');
+        hazard.style.opacity = clamp(hz * 3) * (Math.floor(t * 4) % 2 ? 1 : 0.55);
+        hazard.style.transform = `scale(${hz}) translateY(${Math.sin(t * 6) * 6}px)`;
+        $('hookGlow').style.opacity = 0.4 + prog(t, PANNE, 0.2) * 0.6;
+
+        // La facture tombe.
+        const inv = prog(t, C(1, 0).start - 0.15, 0.45, ease.outBack);
+        const invoice = $('invoice');
+        invoice.style.opacity = clamp(inv * 4);
+        invoice.style.transform = `translateY(${(1 - inv) * -900}px) rotate(${-4 + (1 - inv) * 20}deg) scale(${1 + (1 - inv) * 0.3})`;
+        $('dim').style.opacity = prog(t, C(1, 0).start - 0.1, 0.4) * 0.6;
+        const st = prog(t, C(1, 1).start - 0.2, 0.35, ease.outBack);
+        const stamp = $('stampEl');
+        stamp.style.opacity = clamp(st * 4);
+        stamp.style.transform = `rotate(-12deg) scale(${lerp(2.4, 1, st)})`;
+        const q = prog(t, C(2, 1).start, 0.6, ease.outElastic);
+        $('qmark').style.opacity = clamp(q * 3);
+        $('qmark').style.transform = `scale(${q}) rotate(${(1 - q) * 30 + Math.sin(t * 5) * 4}deg)`;
+      },
+      shield(t, c) {
+        const draw = prog(t, C(3, 0).start, 0.8, ease.inOutCubic);
+        $('shPath').style.strokeDashoffset = c.len * (1 - draw);
+        const fillP = prog(t, C(3, 1).start, 0.4);
+        $('shPath').setAttribute('fill-opacity', fillP);
+        $('shCheck').style.strokeDashoffset = c.cl * (1 - prog(t, C(3, 1).start + 0.2, 0.4, ease.outCubic));
+        const hit = C(3, 1).start + 0.35;
+        const bump = t > hit && t < hit + 0.4 ? Math.sin(((t - hit) / 0.4) * Math.PI) * 0.06 : 0;
+        $('shield').style.transform = `scale(${0.85 + prog(t, C(3, 0).start, 0.8, ease.outBack) * 0.15 + bump})`;
+        // La facture fonce sur le bouclier et rebondit.
+        const mini = $('mini');
+        const a = prog(t, C(3, 1).start - 0.2, 0.55, ease.inCubic);
+        const b = prog(t, hit, 0.9, ease.outCubic);
+        const x = t < hit ? lerp(-280, 230, a) : lerp(230, -420, b);
+        const y = t < hit ? lerp(120, 380, a) : lerp(380, 1100, b) - Math.sin(b * Math.PI) * 300;
+        mini.style.transform = `translate(${x}px, ${y}px) rotate(${t < hit ? 12 : 12 - b * 220}deg)`;
+        mini.style.opacity = a > 0 ? 1 - b : 0;
+        // Gerbe d'étincelles à l'impact.
+        for (let i = 0; i < 16; i++) {
+          const p = prog(t, hit, 0.8, ease.outCubic);
+          const ang = (i / 16) * Math.PI * 2;
+          const sp = $('sp' + i);
+          sp.style.transform = `translate(${Math.cos(ang) * p * 380}px, ${Math.sin(ang) * p * 380}px) scale(${1 - p * 0.6})`;
+          sp.style.opacity = t > hit ? 1 - p : 0;
+        }
+        // L'airbag se gonfle.
+        const cu = prog(t, C(4, 0).start, 0.9, ease.outElastic);
+        $('cushion').style.transform = `scale(${cu})`;
+        $('cushion').style.opacity = clamp(cu * 2);
+        const tp = prog(t, C(3, 1).start + 0.3, 0.6, ease.outExpo);
+        $('shTitle').style.opacity = tp;
+        $('shTitle').style.transform = `translateY(${(1 - tp) * 60}px)`;
+      },
+      rule(t) {
+        pop($('ruleChip'), prog(t, C(5, 0).start, 0.45, ease.outBack));
+        const hp = prog(t, C(5, 2).start, 0.6, ease.outExpo);
+        $('ruleHead').style.opacity = hp;
+        $('ruleHead').style.transform = `translateY(${(1 - hp) * 80}px)`;
+        const fillAt = (i) => (i < 3 ? C(6, 3).start + i * 0.22 : C(6, 4).start + (i - 3) * 0.22);
+        let total = 0;
+        for (let i = 0; i < 6; i++) {
+          const mo = $('mo' + i);
+          const ap = prog(t, C(5, 1).start + i * 0.08, 0.5, ease.outBack);
+          mo.style.opacity = clamp(ap * 3);
+          mo.style.transform = `scale(${ap})`;
+          const f = prog(t, fillAt(i), 0.45, ease.outCubic);
+          total += f;
+          $('mf' + i).style.transform = `scaleY(${f})`;
+          mo.style.borderColor = f > 0.99 ? (i < 3 ? 'var(--up)' : 'var(--gold)') : '';
+          const vp = prog(t, C(6, 1).start + i * 0.07, 0.4, ease.outBack);
+          const mv = $('mv' + i);
+          mv.style.opacity = clamp(vp * 3);
+          mv.style.transform = `scale(${vp})`;
+          mv.style.color = f > 0.5 ? '#171310' : 'var(--ink)';
+          mo.querySelector('.m').style.color = f > 0.9 ? '#5a3f14' : '';
+        }
+        const goal = $('goal');
+        const gp = prog(t, C(6, 2).start, 0.5, ease.outExpo);
+        goal.style.opacity = gp;
+        goal.style.transform = `translateY(${(1 - gp) * 40}px)`;
+        $('goalAmt').textContent = euro(Math.round(total * 1200 / 10) * 10);
+        $('goalAmt').style.color = total >= 5.99 ? 'var(--gold-soft)' : total >= 2.99 ? 'var(--up)' : 'var(--ink)';
+        const tag = $('tagMin');
+        const isMax = total >= 5.99;
+        tag.textContent = isMax ? 'CONFORT' : 'MINIMUM';
+        tag.className = 'tag ' + (isMax ? 'max' : 'min');
+        // L'étiquette apparaît à 3 mois remplis (MINIMUM), puis rebondit à 6 (CONFORT).
+        const tg = isMax ? prog(t, fillAt(5) + 0.45, 0.4, ease.outBack) : prog(t, fillAt(2) + 0.45, 0.4, ease.outBack);
+        tag.style.opacity = clamp(tg * 3);
+        tag.style.transform = `scale(${tg})`;
+      },
+      account(t) {
+        const a = prog(t, C(7, 0).start - 0.1, 0.5, ease.outExpo);
+        const b = prog(t, C(7, 1).start - 0.1, 0.5, ease.outExpo);
+        $('acctA').style.transform = `translateY(${(1 - a) * -80}px)`; $('acctA').style.opacity = a;
+        $('acctB').style.transform = `translateY(${(1 - b) * 80}px)`; $('acctB').style.opacity = b;
+        // 7 pièces glissent d'un compte à l'autre.
+        let moved = 0;
+        for (let i = 0; i < 7; i++) {
+          const p = prog(t, C(7, 1).start + 0.1 + i * 0.13, 0.55, ease.inOutCubic);
+          const co = $('co' + i);
+          const x = lerp(820, 820, p) + Math.sin(p * Math.PI) * 140 - 42;
+          const y = lerp(470, 820, p) - 42;
+          co.style.transform = `translate(${x}px, ${y}px) scale(${0.6 + Math.sin(p * Math.PI) * 0.5})`;
+          co.style.opacity = p > 0 && p < 1 ? 1 : 0;
+          moved += p >= 1 ? 1 : 0;
+        }
+        const tr = moved / 7;
+        $('balA').textContent = euro(Math.round((6080 - 3600 * tr) / 10) * 10);
+        $('balB').textContent = euro(Math.round(3600 * tr / 10) * 10);
+        // « Disponible en un clic » : un doigt tape sur « Retirer ».
+        pop($('btnOut'), prog(t, C(7, 2).start, 0.4, ease.outBack));
+        const tap = C(7, 3).start + 0.15;
+        const fp = prog(t, tap - 0.6, 0.55, ease.inOutCubic);
+        const press = t > tap && t < tap + 0.25 ? Math.sin(((t - tap) / 0.25) * Math.PI) : 0;
+        $('fingerA').style.transform = `translate(${lerp(1100, 820, fp)}px, ${lerp(1300, 1040, fp)}px) scale(${1 - press * 0.2})`;
+        $('fingerA').style.opacity = fp > 0 ? 1 - prog(t, tap + 0.5, 0.3) : 0;
+        const rp = prog(t, tap, 0.6);
+        $('ripA').style.transform = `translate(${810}px, ${1030}px) scale(${0.3 + rp * 2})`;
+        $('ripA').style.opacity = t > tap ? 1 - rp : 0;
+        $('btnOut').style.background = t > tap ? 'var(--up)' : '';
+        $('btnOut').style.color = t > tap ? '#0d0c0a' : '';
+        const pl = prog(t, tap + 0.1, 0.5, ease.outBack);
+        $('pillA').style.opacity = clamp(pl * 3);
+        $('pillA').style.transform = `scale(${pl})`;
+      },
+      start(t) {
+        const jp = prog(t, C(8, 0).start - 0.1, 0.6, ease.outExpo);
+        $('jar').style.opacity = jp;
+        $('jar').style.transform = `translateY(${(1 - jp) * 100}px)`;
+        $('jcount').style.opacity = prog(t, C(8, 1).start - 0.2, 0.4);
+        // 12 pièces, une par mois, de plus en plus vite.
+        const t0 = C(8, 1).start, t1 = C(8, 3).start;
+        let landed = 0;
+        for (let i = 0; i < 12; i++) {
+          const at = t0 + (t1 - t0) * Math.pow(i / 12, 0.8);
+          const p = prog(t, at, 0.35, ease.inCubic);
+          const dr = $('dr' + i);
+          const tx = 240 + 150 + (i % 4) * 100 + (Math.floor(i / 4) % 2) * 50 - 32;
+          const ty = lerp(430, 380 + 650 - Math.floor(i / 4) * 34 - 32, p);
+          dr.style.transform = `translate(${tx}px, ${ty}px) rotate(${p * 200}deg)`;
+          dr.style.opacity = p > 0 && p < 1 ? 1 : 0;
+          const inJar = p >= 1;
+          $('js' + i).style.opacity = inJar ? 1 : 0;
+          landed += inJar;
+        }
+        $('jAmt').textContent = euro(landed * 50);
+        $('jMo').textContent = landed ? `MOIS ${landed} · 50 € PAR MOIS` : '50 € PAR MOIS';
+        const lvl = (landed / 12) * (600 / 3600) * 455;
+        $('jLevel').setAttribute('y', 670 - lvl);
+        $('jLevel').setAttribute('height', lvl);
+        const bp = prog(t, C(8, 3).start + 0.1, 0.6, ease.outElastic);
+        $('jBadge').style.opacity = clamp(bp * 3);
+        $('jBadge').style.transform = `scale(${bp}) rotate(${-6 + (1 - bp) * 25}deg)`;
+      },
+      cta(t) {
+        const s = C(9, 0).start;
+        pop($('ctaShield'), prog(t, s - 0.2, 0.6, ease.outBack), -30);
+        const tp = prog(t, s, 0.6, ease.outExpo);
+        $('ctaTitle').style.opacity = tp;
+        $('ctaTitle').style.transform = `translateY(${(1 - tp) * 60}px)`;
+        $('ctaSub').style.opacity = prog(t, C(9, 1).start, 0.5);
+        const bp = prog(t, s + 0.3, 0.6, ease.outElastic);
+        const tap = S[9].end + 0.5;
+        const press = t > tap && t < tap + 0.25 ? Math.sin(((t - tap) / 0.25) * Math.PI) * 0.08 : 0;
+        const breathe = t > s + 1 && t < tap ? Math.sin((t - s) * 7) * 0.03 : 0;
+        const sub = $('sub');
+        sub.style.transform = `scale(${bp + breathe - press})`;
+        sub.style.opacity = clamp(bp * 3);
+        const done = t >= tap + 0.12;
+        sub.classList.toggle('done', done);
+        $('subTxt').textContent = done ? 'ABONNÉ ✓' : "S'ABONNER";
+        const fp = prog(t, tap - 0.9, 0.8, ease.inOutCubic);
+        $('fingerC').style.transform = `translate(${lerp(1100, 610, fp)}px, ${lerp(1250, 860, fp)}px) scale(${1 - press * 2})`;
+        $('fingerC').style.opacity = fp > 0 ? 1 - prog(t, tap + 0.6, 0.4) : 0;
+        const rp = prog(t, tap, 0.6);
+        $('ripC').style.transform = `translate(${600}px, ${850}px) scale(${0.3 + rp * 2.2})`;
+        $('ripC').style.opacity = t > tap ? 1 - rp : 0;
+        const hp = prog(t, s + 0.8, 0.6, ease.outExpo);
+        $('handle').style.opacity = hp;
+        $('handle').style.transform = `translateY(${(1 - hp) * 30}px)`;
+        const np = prog(t, S[9].end + 0.4, 0.7, ease.outExpo);
+        $('next').style.opacity = np;
+        $('next').style.transform = `translateY(${(1 - np) * 80}px)`;
+      },
+      captions(t, c) {
+        const cap = $('cap');
+        const cur = c.caps.find((k) => t >= k.start && t < k.until);
+        if (!cur) { cap.style.opacity = 0; return; }
+        if (cap.dataset.k !== String(cur.start)) {
+          cap.dataset.k = cur.start;
+          cap.textContent = cur.text;
+          cap.classList.toggle('gold', cur.gold);
+        }
+        const p = prog(t, cur.start, 0.22, ease.outBack);
+        const tilt = (Math.round(cur.start * 10) % 2 ? 1 : -1) * 1.5;
+        cap.style.opacity = clamp(p * 4);
+        cap.style.transform = `scale(${lerp(1.35, cur.gold ? 1.12 : 1, p)}) rotate(${tilt * (1 - p)}deg)`;
+      },
+    };
+    M.scene(def);
+  </script>
+</body>
+</html>

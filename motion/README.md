@@ -9,6 +9,7 @@ Quatre séquences animées sur le thème de la finance, prêtes à monter dans u
 | `03-budget-50-30-20` | 9:16 · 1080×1920 | 9 s | TikTok / Reels / Shorts |
 | `04-hook-3-erreurs` | 9:16 · 1080×1920 | 10 s | Hook d'ouverture d'un short |
 | **`05-short-30s`** | 9:16 · 1080×1920 | **30 s, avec voix off** | Short complet, prêt à publier |
+| **`06-fonds-urgence`** | 9:16 · 1080×1920 | **30 s, avec voix off** | Short « Fonds d'urgence », illustré (voiture, facture, bouclier, livret, bocal) |
 
 Les MP4 déjà exportés sont dans `videos/`. La galerie `index.html` les montre tous.
 
@@ -50,9 +51,17 @@ Pour régénérer la voix puis la vidéo :
 
 ```bash
 pip install sherpa-onnx numpy scipy soundfile
-python3 voix/voiceover.py voix/script-30s.json      # voix + musique + minutage
+python3 voix/voiceover.py voix/script-30s.json --prises 5   # voix + musique + minutage
 node render.mjs scenes/05-short-30s.html --audio voix/30s-mix.wav
+
+# Même chose pour le short « Fonds d'urgence »
+python3 voix/voiceover.py voix/script-fonds-urgence.json --prises 5
+node render.mjs scenes/06-fonds-urgence.html --audio voix/fonds-urgence-mix.wav
 ```
+
+Un morceau de phrase peut porter un 3e élément, un bruitage joué pile à ce moment-là :
+`["*1 200 €", "Mille deux cents euros", "stamp"]`. Bruitages disponibles : `whoosh`, `boom`,
+`stamp` (coup de tampon), `coin` (pièce).
 
 `voiceover.py` synthétise la voix en local avec [Piper](https://github.com/rhasspy/piper),
 sans compte ni abonnement. La voix française « siwis » (~60 Mo) se télécharge au premier
@@ -60,8 +69,9 @@ lancement. Le script écrit aussi `voix/30s-timeline.js`, le minutage de chaque 
 phrase : la scène le lit pour caler les sous-titres et les animations sur la voix. Si tu
 changes le texte, tout se recale tout seul.
 
-La synthèse varie un peu à chaque lancement. Si un mot sonne mal, relance la commande ou
-reformule la phrase. Par exemple, « Trois erreurs ruinent ton épargne » était souvent mal
+La synthèse varie un peu à chaque lancement. Ajoute `--prises 5` : chaque phrase est alors
+générée jusqu'à 5 fois, réécoutée par Whisper (reconnaissance vocale locale) et la prise la plus
+fidèle au texte est gardée. Si un mot reste mal prononcé, reformule la phrase. Par exemple, « Trois erreurs ruinent ton épargne » était souvent mal
 prononcé, alors que « Trois erreurs peuvent ruiner ton épargne » passe à tous les coups.
 
 **Crédit à mettre dans la description de la vidéo :** voix de synthèse Piper `fr_FR-siwis-medium`,

@@ -1,0 +1,25 @@
+{
+  "_doc": "Short « Fonds d'urgence ». Chaque morceau : [texte affiché, texte prononcé, bruitage optionnel]. « * » = doré.",
+  "voice": "siwis-medium",
+  "speed": 1.02,
+  "lead": 0.3,
+  "gap": 0.18,
+  "duration": 30,
+  "sentences": [
+    { "segment": "hook", "sfx": "whoosh", "chunks": [["TA VOITURE", "Ta voiture"], ["TOMBE EN PANNE", "tombe en panne", "boom"], ["DEMAIN.", "demain."]] },
+    { "segment": "hook", "chunks": [["*1 200 €", "Mille deux cents euros", "stamp"], ["DE RÉPARATION.", "de réparation."]] },
+    { "segment": "hook", "chunks": [["TU PAIES", "Tu paies"], ["COMMENT ?", "comment ?"]] },
+
+    { "segment": "shield", "sfx": "whoosh", "pause": 0.15, "chunks": [["LA RÉPONSE ?", "La réponse ?"], ["*UN FONDS D'URGENCE.", "Un fonds d'urgence."]] },
+    { "segment": "shield", "chunks": [["TON AIRBAG", "Ton airbag"], ["*FINANCIER.", "financier."]] },
+
+    { "segment": "rule", "sfx": "whoosh", "pause": 0.1, "chunks": [["LA RÈGLE :", "La règle :"], ["GARDER DE CÔTÉ", "garder de côté"], ["*3 À 6 MOIS", "trois à six mois"], ["DE DÉPENSES.", "de dépenses."]] },
+    { "segment": "rule", "chunks": [["TU DÉPENSES", "Tu dépenses"], ["*1 200 € PAR MOIS ?", "mille deux cents euros par mois ?"], ["VISE ENTRE", "Vise entre"], ["*3 600 €", "trois mille six cents", "coin"], ["*ET 7 200 €", "et sept mille deux cents euros.", "coin"]] },
+
+    { "segment": "account", "sfx": "whoosh", "pause": 0.1, "chunks": [["RANGE-LE", "Range-le"], ["SUR UN LIVRET À PART,", "sur un livret à part,"], ["DISPONIBLE", "disponible"], ["*EN UN CLIC", "en un clic."]] },
+
+    { "segment": "start", "sfx": "whoosh", "pause": 0.1, "chunks": [["ET COMMENCE PETIT :", "Et commence petit :"], ["*50 € PAR MOIS,", "cinquante euros par mois,"], ["C'EST", "c'est"], ["*600 €", "six cents euros", "coin"], ["DANS UN AN.", "dans un an."]] },
+
+    { "segment": "cta", "sfx": "whoosh", "pause": 0.1, "chunks": [["ABONNE-TOI", "Abonne-toi"], ["POUR NE RIEN RATER.", "pour ne rien rater."]] }
+  ]
+}

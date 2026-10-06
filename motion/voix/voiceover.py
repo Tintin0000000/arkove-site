@@ -12,6 +12,11 @@ Produit, à côté du script :
 
 La voix est synthétisée en local avec Piper (via sherpa-onnx), sans compte ni abonnement.
 Le modèle (~60 Mo) est téléchargé au premier lancement dans voix/models/.
+
+Option --prises N : la synthèse varie un peu à chaque fois. Avec --prises 4, chaque phrase est
+générée 4 fois, transcrite par Whisper (modèle « small », ~370 Mo téléchargés au premier usage)
+et on garde la prise la plus proche du texte. Plus lent, mais évite les mots mâchés.
+
 Dépendances : pip install sherpa-onnx numpy scipy soundfile, et ffmpeg dans le PATH.
 """
 import json
@@ -31,21 +36,27 @@ SR = 44100
 HERE = Path(__file__).resolve().parent
 MODELS = HERE / "models"
 MODEL_URL = "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-fr_FR-{voice}.tar.bz2"
+WHISPER_URL = "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-small.tar.bz2"
 
 
 # ---------------------------------------------------------------- voix
+
+def download(url, d, label):
+    if d.exists():
+        return
+    MODELS.mkdir(exist_ok=True)
+    print(f"Téléchargement de {label}…")
+    with tempfile.NamedTemporaryFile(suffix=".tar.bz2") as tmp:
+        urllib.request.urlretrieve(url, tmp.name)
+        with tarfile.open(tmp.name) as tar:
+            tar.extractall(MODELS, filter="data")
+
 
 def load_tts(voice, speed):
     import sherpa_onnx
 
     d = MODELS / f"vits-piper-fr_FR-{voice}"
-    if not d.exists():
-        MODELS.mkdir(exist_ok=True)
-        print(f"Téléchargement de la voix {voice}…")
-        with tempfile.NamedTemporaryFile(suffix=".tar.bz2") as tmp:
-            urllib.request.urlretrieve(MODEL_URL.format(voice=voice), tmp.name)
-            with tarfile.open(tmp.name) as tar:
-                tar.extractall(MODELS, filter="data")
+    download(MODEL_URL.format(voice=voice), d, f"la voix {voice}")
     vits = sherpa_onnx.OfflineTtsVitsModelConfig(
         model=str(d / f"fr_FR-{voice}.onnx"),
         tokens=str(d / "tokens.txt"),
@@ -65,6 +76,35 @@ def _synth(tts, text, speed):
     env = np.abs(x)
     idx = np.where(env > env.max() * 0.02)[0]
     return x[max(0, idx[0] - int(0.03 * SR)): idx[-1] + int(0.08 * SR)]
+
+
+def load_checker():
+    """Renvoie une fonction score(audio, texte) entre 0 et 1, via Whisper."""
+    import difflib
+    import unicodedata
+
+    import sherpa_onnx
+
+    d = MODELS / "sherpa-onnx-whisper-small"
+    download(WHISPER_URL, d, "Whisper (vérification de la voix)")
+    rec = sherpa_onnx.OfflineRecognizer.from_whisper(
+        encoder=str(d / "small-encoder.int8.onnx"), decoder=str(d / "small-decoder.int8.onnx"),
+        tokens=str(d / "small-tokens.txt"), language="fr", task="transcribe", num_threads=4)
+
+    def norm(text):
+        text = unicodedata.normalize("NFD", text.lower())
+        return re.sub(r"[^a-z0-9 ]", "", "".join(ch for ch in text if not unicodedata.combining(ch)))
+
+    def score(audio, text):
+        x = resample_poly(audio, 16000, SR).astype(np.float32)
+        x = np.concatenate([np.zeros(1600, np.float32), x, np.zeros(4000, np.float32)])
+        st = rec.create_stream()
+        st.accept_waveform(16000, x)
+        rec.decode_stream(st)
+        heard = st.result.text.strip()
+        return difflib.SequenceMatcher(None, norm(heard), norm(text)).ratio(), heard
+
+    return score
 
 
 def weight(say):
@@ -102,6 +142,23 @@ def sfx_boom():
     body = np.sin(2 * np.pi * np.cumsum(freq) / SR) * env_exp(n, 0.35)
     click = np.random.default_rng(2).standard_normal(n) * env_exp(n, 0.008) * 0.4
     return (body + click) * 0.9
+
+
+def sfx_stamp():
+    n = int(0.5 * SR)
+    t = np.arange(n) / SR
+    freq = 70 + 160 * np.exp(-t * 40)
+    body = np.sin(2 * np.pi * np.cumsum(freq) / SR) * env_exp(n, 0.09)
+    slap = np.random.default_rng(4).standard_normal(n) * env_exp(n, 0.02)
+    slap = sosfilt(butter(2, [400, 3000], btype="band", fs=SR, output="sos"), slap)
+    return (body * 0.8 + slap * 0.5) * 0.8
+
+
+def sfx_coin():
+    n = int(0.6 * SR)
+    t = np.arange(n) / SR
+    ping = lambda f, d: np.sin(2 * np.pi * f * t) * np.exp(-np.maximum(t - d, 0) / 0.12) * (t >= d)
+    return (ping(1975, 0) * 0.6 + ping(2637, 0.07) * 0.5 + ping(3951, 0.07) * 0.15) * 0.18
 
 
 def sfx_pop():
@@ -176,24 +233,36 @@ def add(buf, sig, at):
 
 # ---------------------------------------------------------------- assemblage
 
-def main(script_path):
+def main(script_path, takes=1):
     script_path = Path(script_path).resolve()
     cfg = json.loads(script_path.read_text(encoding="utf-8"))
     stem = script_path.stem.replace("script-", "")
     out_dir = script_path.parent
     synth = load_tts(cfg.get("voice", "siwis-medium"), cfg.get("speed", 1.0))
+    check = load_checker() if takes > 1 else None
 
     duration = cfg["duration"]
     voice = np.zeros(int(duration * SR))
     sfx = np.zeros_like(voice)
     sentences, cursor = [], cfg.get("lead", 0.3)
-    sounds = {"whoosh": sfx_whoosh(), "boom": sfx_boom()}
+    sounds = {"whoosh": sfx_whoosh(), "boom": sfx_boom(), "stamp": sfx_stamp(), "coin": sfx_coin()}
     pop = sfx_pop()
 
     for s in cfg["sentences"]:
         cursor += s.get("pause", 0)
         say = " ".join(c[1] for c in s["chunks"])
         audio = synth(say)
+        if check:
+            best = (*check(audio, say), audio)
+            for _ in range(takes - 1):
+                if best[0] > 0.97:
+                    break
+                a = synth(say)
+                cand = (*check(a, say), a)
+                if cand[0] > best[0]:
+                    best = cand
+            print(f"  {best[0]:.2f}  « {best[1]} »")
+            audio = best[2]
         start, dur = cursor, len(audio) / SR
         add(voice, audio, start)
         if s.get("sfx"):
@@ -201,11 +270,14 @@ def main(script_path):
 
         ws = [weight(c[1]) for c in s["chunks"]]
         t, chunks = start, []
-        for (show, _), w in zip(s["chunks"], ws):
+        for chunk, w in zip(s["chunks"], ws):
+            show, extra = chunk[0], chunk[2] if len(chunk) > 2 else None
             d = dur * w / sum(ws)
             gold = show.startswith("*")
             chunks.append({"text": show.lstrip("*"), "gold": gold, "start": round(t, 3), "end": round(t + d, 3)})
-            if gold:
+            if extra:  # bruitage propre à ce morceau (3e élément), à la place du « pop »
+                add(sfx, sounds[extra], t)
+            elif gold:
                 add(sfx, pop, t)
             t += d
         sentences.append({"segment": s["segment"], "start": round(start, 3), "end": round(start + dur, 3), "chunks": chunks})
@@ -253,4 +325,10 @@ def main(script_path):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else HERE / "script-30s.json")
+    args = sys.argv[1:]
+    takes = 1
+    if "--prises" in args:
+        i = args.index("--prises")
+        takes = int(args[i + 1])
+        del args[i:i + 2]
+    main(args[0] if args else HERE / "script-30s.json", takes)
