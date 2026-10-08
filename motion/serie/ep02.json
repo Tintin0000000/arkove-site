@@ -1,0 +1,309 @@
+{
+ "_doc": "Épisode de la série Épargne malin. Voir serie/README.md.",
+ "ep": 2,
+ "voice": "siwis-medium",
+ "speed": 1.0,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 3.2,
+ "handle": "@epargne.malin",
+ "title": "La règle 50/30/20",
+ "short": "RÈGLE 50/30/20",
+ "next": "Paie-toi en premier",
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "TON SALAIRE",
+     "Ton salaire"
+    ],
+    [
+     "DISPARAÎT",
+     "disparaît",
+     "boom"
+    ],
+    [
+     "AVANT LA FIN DU MOIS ?",
+     "avant la fin du mois ?"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "TESTE",
+     "Teste"
+    ],
+    [
+     "*LA RÈGLE 50/30/20.",
+     "la règle cinquante, trente, vingt."
+    ]
+   ]
+  },
+  {
+   "segment": "donut",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "*50 %",
+     "Cinquante pour cent"
+    ],
+    [
+     "POUR LES BESOINS :",
+     "pour les besoins :"
+    ],
+    [
+     "LOYER, COURSES,",
+     "loyer, courses,"
+    ],
+    [
+     "FACTURES.",
+     "factures."
+    ]
+   ]
+  },
+  {
+   "segment": "donut",
+   "chunks": [
+    [
+     "*30 %",
+     "Trente pour cent"
+    ],
+    [
+     "POUR LES ENVIES.",
+     "pour les envies."
+    ]
+   ]
+  },
+  {
+   "segment": "donut",
+   "chunks": [
+    [
+     "*20 %",
+     "Vingt pour cent"
+    ],
+    [
+     "POUR L'ÉPARGNE.",
+     "pour l'épargne."
+    ]
+   ]
+  },
+  {
+   "segment": "counter",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "SUR 2 000 €,",
+     "Sur deux mille euros,"
+    ],
+    [
+     "ÇA FAIT",
+     "ça fait"
+    ],
+    [
+     "*400 €",
+     "quatre cents euros",
+     "coin"
+    ],
+    [
+     "PAR MOIS.",
+     "par mois."
+    ]
+   ]
+  },
+  {
+   "segment": "counter",
+   "chunks": [
+    [
+     "SOIT",
+     "Soit"
+    ],
+    [
+     "*4 800 € PAR AN.",
+     "quatre mille huit cents euros par an.",
+     "coin"
+    ]
+   ]
+  },
+  {
+   "segment": "tip",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PAS ENCORE 20 % ?",
+     "Pas encore vingt pour cent ?"
+    ],
+    [
+     "*COMMENCE PAR 10.",
+     "Commence par dix."
+    ]
+   ]
+  },
+  {
+   "segment": "tip",
+   "chunks": [
+    [
+     "CE QUI COMPTE,",
+     "Ce qui compte,"
+    ],
+    [
+     "*C'EST LA RÉGULARITÉ.",
+     "c'est la régularité."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "ABONNE-TOI",
+     "Abonne-toi"
+    ],
+    [
+     "POUR LA SUITE.",
+     "pour la suite."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:1"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "red",
+   "icon": "wallet",
+   "lines": [
+    {
+     "text": "Ton salaire",
+     "at": "0:0"
+    },
+    {
+     "text": "disparaît",
+     "at": "0:1",
+     "size": "xl",
+     "hl": true
+    },
+    {
+     "text": "avant la fin",
+     "at": "0:2",
+     "size": "m"
+    },
+    {
+     "text": "du mois ?",
+     "at": "0:2+0.3",
+     "size": "m"
+    }
+   ],
+   "reveal": {
+    "html": "La règle <em>50/30/20</em>",
+    "at": "1:1"
+   }
+  },
+  "donut": {
+   "type": "donut",
+   "glow": "gold",
+   "chip": {
+    "text": "TON BUDGET",
+    "at": "2:0"
+   },
+   "parts": [
+    {
+     "pct": 50,
+     "label": "Besoins",
+     "amount": "1 000 €",
+     "color": "ink",
+     "at": "2:0"
+    },
+    {
+     "pct": 30,
+     "label": "Envies",
+     "amount": "600 €",
+     "color": "gold",
+     "at": "3:0"
+    },
+    {
+     "pct": 20,
+     "label": "Épargne",
+     "amount": "400 €",
+     "color": "up",
+     "at": "4:0"
+    }
+   ],
+   "final": {
+    "big": "20 %",
+    "small": "pour toi",
+    "color": "up",
+    "at": "4:1",
+    "highlight": 2
+   }
+  },
+  "counter": {
+   "type": "counter",
+   "glow": "green",
+   "title": {
+    "html": "Sur <em>2 000 €</em> net",
+    "at": "5:0"
+   },
+   "label": "Ton épargne",
+   "color": "up",
+   "stages": [
+    {
+     "to": 400,
+     "at": "5:2",
+     "label": "PAR MOIS"
+    },
+    {
+     "to": 4800,
+     "at": "6:1",
+     "label": "PAR AN",
+     "dur": 1.1
+    }
+   ],
+   "badge": {
+    "text": "×12",
+    "small": "EN 1 AN",
+    "at": "6:1+0.6",
+    "color": "green"
+   }
+  },
+  "tip": {
+   "type": "icon",
+   "glow": "green",
+   "icon": "check",
+   "color": "up",
+   "at": "7:0",
+   "text": "Commence par <em>10 %</em>",
+   "textAt": "7:1",
+   "sub": "La régularité compte plus que le montant",
+   "subAt": "8:0"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold"
+  }
+ },
+ "post": {
+  "caption": "Ton salaire part trop vite ? Teste la règle 50/30/20 : 50 % besoins, 30 % envies, 20 % épargne. Tu es à combien en ce moment ? 👇",
+  "hashtags": [
+   "#regle503020",
+   "#gestionbudget",
+   "#epargne",
+   "#argent",
+   "#financepersonnelle",
+   "#budget",
+   "#astuceargent",
+   "#apprendresurtiktok"
+  ]
+ }
+}

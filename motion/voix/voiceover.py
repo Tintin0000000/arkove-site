@@ -95,14 +95,16 @@ def load_checker():
         text = unicodedata.normalize("NFD", text.lower())
         return re.sub(r"[^a-z0-9 ]", "", "".join(ch for ch in text if not unicodedata.combining(ch)))
 
-    def score(audio, text):
+    def score(audio, text, shown=""):
         x = resample_poly(audio, 16000, SR).astype(np.float32)
         x = np.concatenate([np.zeros(1600, np.float32), x, np.zeros(4000, np.float32)])
         st = rec.create_stream()
         st.accept_waveform(16000, x)
         rec.decode_stream(st)
         heard = st.result.text.strip()
-        return difflib.SequenceMatcher(None, norm(heard), norm(text)).ratio(), heard
+        # Whisper écrit les nombres en chiffres : on compare aussi au texte affiché (« 1 200 € »).
+        r = max(difflib.SequenceMatcher(None, norm(heard), norm(ref)).ratio() for ref in (text, shown) if ref)
+        return r, heard
 
     return score
 
@@ -241,8 +243,10 @@ def main(script_path, takes=1):
     synth = load_tts(cfg.get("voice", "siwis-medium"), cfg.get("speed", 1.0))
     check = load_checker() if takes > 1 else None
 
+    # "duration": "auto" → la vidéo dure le temps de la voix + "tail" secondes (3 par défaut).
     duration = cfg["duration"]
-    voice = np.zeros(int(duration * SR))
+    auto = duration == "auto"
+    voice = np.zeros(int((90 if auto else duration) * SR))
     sfx = np.zeros_like(voice)
     sentences, cursor = [], cfg.get("lead", 0.3)
     sounds = {"whoosh": sfx_whoosh(), "boom": sfx_boom(), "stamp": sfx_stamp(), "coin": sfx_coin()}
@@ -251,14 +255,15 @@ def main(script_path, takes=1):
     for s in cfg["sentences"]:
         cursor += s.get("pause", 0)
         say = " ".join(c[1] for c in s["chunks"])
+        shown = " ".join(c[0].lstrip("*") for c in s["chunks"])
         audio = synth(say)
         if check:
-            best = (*check(audio, say), audio)
+            best = (*check(audio, say, shown), audio)
             for _ in range(takes - 1):
                 if best[0] > 0.97:
                     break
                 a = synth(say)
-                cand = (*check(a, say), a)
+                cand = (*check(a, say, shown), a)
                 if cand[0] > best[0]:
                     best = cand
             print(f"  {best[0]:.2f}  « {best[1]} »")
@@ -283,6 +288,9 @@ def main(script_path, takes=1):
         sentences.append({"segment": s["segment"], "start": round(start, 3), "end": round(start + dur, 3), "chunks": chunks})
         cursor = start + dur + cfg.get("gap", 0.2)
 
+    if auto:
+        duration = round(cursor - cfg.get("gap", 0.2) + cfg.get("tail", 3.0), 1)
+        voice, sfx = voice[: int(duration * SR)], sfx[: int(duration * SR)]
     if cursor > duration:
         sys.exit(f"La voix dure {cursor:.1f} s, plus que les {duration} s prévues : raccourcis le texte ou augmente 'speed'.")
 

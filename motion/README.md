@@ -13,6 +13,11 @@ Quatre séquences animées sur le thème de la finance, prêtes à monter dans u
 
 Les MP4 déjà exportés sont dans `videos/`. La galerie `index.html` les montre tous.
 
+## La série TikTok « Épargne malin »
+
+10 vidéos prêtes à publier, avec leurs légendes et hashtags : voir [`serie/README.md`](serie/README.md)
+et [`serie/PUBLICATION.md`](serie/PUBLICATION.md).
+
 ## Le principe
 
 Chaque scène est une simple page HTML. Il n'y a ni After Effects ni logiciel payant :

@@ -1,3 +1,5 @@
 node_modules/
 voix/models
 __pycache__/
+serie/*-voix.wav
+serie/*-mix.wav

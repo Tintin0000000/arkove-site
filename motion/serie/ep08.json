@@ -1,0 +1,225 @@
+{
+ "_doc": "Épisode de la série Épargne malin. Voir serie/README.md.",
+ "ep": 8,
+ "voice": "siwis-medium",
+ "speed": 1.0,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 3.2,
+ "handle": "@epargne.malin",
+ "title": "L'inflation et ton épargne",
+ "short": "INFLATION",
+ "next": "Pourquoi commencer tôt",
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "TON ARGENT",
+     "Ton argent"
+    ],
+    [
+     "*PERD DE LA VALEUR",
+     "perd de la valeur",
+     "boom"
+    ],
+    [
+     "EN DORMANT.",
+     "en dormant."
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "LA FAUTE À",
+     "La faute à"
+    ],
+    [
+     "*L'INFLATION.",
+     "l'inflation."
+    ]
+   ]
+  },
+  {
+   "segment": "counter",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "AVEC 2 % PAR AN,",
+     "Avec deux pour cent par an,"
+    ],
+    [
+     "*1 000 €",
+     "mille euros"
+    ],
+    [
+     "D'AUJOURD'HUI",
+     "d'aujourd'hui"
+    ]
+   ]
+  },
+  {
+   "segment": "counter",
+   "chunks": [
+    [
+     "N'ACHÈTERONT PLUS",
+     "n'achèteront plus"
+    ],
+    [
+     "*QUE POUR 820 €",
+     "que pour huit cent vingt euros"
+    ],
+    [
+     "DANS 10 ANS.",
+     "dans dix ans."
+    ]
+   ]
+  },
+  {
+   "segment": "icon",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "LA PARADE ?",
+     "La parade ?"
+    ],
+    [
+     "UNE ÉPARGNE",
+     "Une épargne"
+    ],
+    [
+     "*QUI RAPPORTE",
+     "qui rapporte"
+    ],
+    [
+     "AU MOINS L'INFLATION.",
+     "au moins autant que l'inflation."
+    ]
+   ]
+  },
+  {
+   "segment": "icon",
+   "chunks": [
+    [
+     "COMPARE LE TAUX",
+     "Compare le taux"
+    ],
+    [
+     "DE TON LIVRET",
+     "de ton livret"
+    ],
+    [
+     "*À L'INFLATION.",
+     "à l'inflation."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "ABONNE-TOI",
+     "Abonne-toi"
+    ],
+    [
+     "POUR LA SUITE.",
+     "pour la suite."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:1"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "red",
+   "icon": "moon",
+   "lines": [
+    {
+     "text": "Ton argent",
+     "at": "0:0",
+     "size": "m"
+    },
+    {
+     "text": "fond",
+     "at": "0:1",
+     "size": "xl",
+     "hl": true
+    },
+    {
+     "text": "en dormant",
+     "at": "0:2",
+     "size": "m"
+    }
+   ],
+   "reveal": {
+    "html": "La faute à <em>l'inflation</em>",
+    "at": "1:1"
+   }
+  },
+  "counter": {
+   "type": "counter",
+   "glow": "red",
+   "title": {
+    "html": "<em>2 %</em> d'inflation par an",
+    "at": "2:0"
+   },
+   "label": "Pouvoir d'achat de 1 000 €",
+   "color": "down",
+   "from": 1000,
+   "fromLabel": "AUJOURD'HUI",
+   "stages": [
+    {
+     "to": 820,
+     "at": "3:0",
+     "label": "DANS 10 ANS",
+     "dur": 1.6
+    }
+   ],
+   "badge": {
+    "text": "−18 %",
+    "small": "EN 10 ANS",
+    "at": "3:1+0.3",
+    "color": "red"
+   }
+  },
+  "icon": {
+   "type": "icon",
+   "glow": "green",
+   "icon": "shield",
+   "color": "up",
+   "at": "4:0",
+   "text": "Fais-le <em>travailler</em>",
+   "textAt": "4:2",
+   "sub": "Compare le taux de ton livret à l'inflation",
+   "subAt": "5:0"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold"
+  }
+ },
+ "post": {
+  "caption": "Laisser son argent dormir, c'est perdre du pouvoir d'achat : avec 2 % d'inflation par an, 1 000 € n'en valent plus que 820 dans 10 ans. Ton épargne rapporte combien ?",
+  "hashtags": [
+   "#inflation",
+   "#pouvoirdachat",
+   "#epargne",
+   "#argent",
+   "#financepersonnelle",
+   "#budget",
+   "#astuceargent",
+   "#apprendresurtiktok"
+  ]
+ }
+}

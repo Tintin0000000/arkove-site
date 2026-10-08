@@ -1,0 +1,232 @@
+{
+ "_doc": "Épisode de la série Épargne malin. Voir serie/README.md.",
+ "ep": 7,
+ "voice": "siwis-medium",
+ "speed": 1.0,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 3.2,
+ "handle": "@epargne.malin",
+ "title": "La règle des 72 heures",
+ "short": "RÈGLE DES 72 H",
+ "next": "L'inflation et ton épargne",
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "TU CRAQUES SOUVENT",
+     "Tu craques souvent"
+    ],
+    [
+     "*SUR DES ACHATS ?",
+     "sur des achats ?",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "TESTE",
+     "Teste"
+    ],
+    [
+     "*LA RÈGLE DES 72 HEURES.",
+     "la règle des soixante-douze heures."
+    ]
+   ]
+  },
+  {
+   "segment": "timer",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "UNE ENVIE D'ACHAT ?",
+     "Une envie d'achat ?"
+    ],
+    [
+     "METS-LA AU PANIER",
+     "Mets-la au panier,"
+    ],
+    [
+     "*ET ATTENDS 3 JOURS.",
+     "et attends trois jours."
+    ]
+   ]
+  },
+  {
+   "segment": "timer",
+   "chunks": [
+    [
+     "LA PLUPART DU TEMPS,",
+     "La plupart du temps,"
+    ],
+    [
+     "*L'ENVIE PASSE.",
+     "l'envie passe."
+    ]
+   ]
+  },
+  {
+   "segment": "counter",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "UN ACHAT DE 40 €",
+     "Un achat de quarante euros"
+    ],
+    [
+     "ÉVITÉ PAR SEMAINE,",
+     "évité par semaine,"
+    ],
+    [
+     "C'EST",
+     "c'est"
+    ],
+    [
+     "*2 080 € PAR AN.",
+     "deux mille quatre-vingts euros par an.",
+     "coin"
+    ]
+   ]
+  },
+  {
+   "segment": "tip",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "ET SI L'ENVIE",
+     "Et si l'envie"
+    ],
+    [
+     "EST TOUJOURS LÀ ?",
+     "est toujours là ?"
+    ],
+    [
+     "*ACHÈTE,",
+     "Achète,"
+    ],
+    [
+     "SANS CULPABILISER.",
+     "sans culpabiliser."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "ABONNE-TOI",
+     "Abonne-toi"
+    ],
+    [
+     "POUR LA SUITE.",
+     "pour la suite."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:1"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "red",
+   "icon": "cart",
+   "lines": [
+    {
+     "text": "Tu craques",
+     "at": "0:0"
+    },
+    {
+     "text": "souvent ?",
+     "at": "0:1",
+     "size": "xl",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "La règle des <em>72 heures</em>",
+    "at": "1:1"
+   }
+  },
+  "timer": {
+   "type": "timer",
+   "glow": "gold",
+   "chip": {
+    "text": "ATTENDS 72 H",
+    "at": "2:0"
+   },
+   "icon": "cart",
+   "hours": 72,
+   "start": "2:2",
+   "end": "3:1",
+   "done": {
+    "text": "✓ L'envie est passée",
+    "at": "3:1"
+   }
+  },
+  "counter": {
+   "type": "counter",
+   "glow": "green",
+   "title": {
+    "html": "<em>40 €</em> évités par semaine",
+    "at": "4:0"
+   },
+   "label": "Économisé",
+   "color": "up",
+   "stages": [
+    {
+     "to": 2080,
+     "at": "4:2",
+     "label": "PAR AN",
+     "dur": 1.3
+    }
+   ],
+   "badge": {
+    "text": "×52",
+    "small": "SEMAINES",
+    "at": "4:3+0.4",
+    "color": "green"
+   }
+  },
+  "tip": {
+   "type": "icon",
+   "glow": "green",
+   "icon": "check",
+   "color": "up",
+   "at": "5:0",
+   "text": "Toujours envie ? <em>Achète.</em>",
+   "textAt": "5:2",
+   "sub": "sans culpabiliser",
+   "subAt": "5:3"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold"
+  }
+ },
+ "post": {
+  "caption": "Avant d'acheter : panier, puis 72 heures d'attente. Dans la plupart des cas, l'envie passe et l'argent reste. Tu as déjà testé ? 🛒",
+  "hashtags": [
+   "#achatimpulsif",
+   "#consommerresponsable",
+   "#epargne",
+   "#argent",
+   "#financepersonnelle",
+   "#budget",
+   "#astuceargent",
+   "#apprendresurtiktok"
+  ]
+ }
+}

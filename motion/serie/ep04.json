@@ -1,0 +1,276 @@
+{
+ "_doc": "Épisode de la série Épargne malin. Voir serie/README.md.",
+ "ep": 4,
+ "voice": "siwis-medium",
+ "speed": 1.0,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 3.2,
+ "handle": "@epargne.malin",
+ "title": "Les abonnements fantômes",
+ "short": "ABONNEMENTS",
+ "next": "Le vrai prix de ton café",
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "TU PAIES",
+     "Tu paies"
+    ],
+    [
+     "COMBIEN D'ABONNEMENTS",
+     "combien d'abonnements"
+    ],
+    [
+     "*POUR RIEN ?",
+     "pour rien ?"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "FAISONS",
+     "Faisons"
+    ],
+    [
+     "*LE COMPTE.",
+     "le compte."
+    ]
+   ]
+  },
+  {
+   "segment": "list",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "STREAMING :",
+     "Streaming :"
+    ],
+    [
+     "*14 €.",
+     "quatorze euros."
+    ]
+   ]
+  },
+  {
+   "segment": "list",
+   "chunks": [
+    [
+     "SALLE DE SPORT :",
+     "Salle de sport :"
+    ],
+    [
+     "*30 €.",
+     "trente euros."
+    ]
+   ]
+  },
+  {
+   "segment": "list",
+   "chunks": [
+    [
+     "LES APPLIS :",
+     "Les applis :"
+    ],
+    [
+     "*8 €.",
+     "huit euros."
+    ]
+   ]
+  },
+  {
+   "segment": "list",
+   "chunks": [
+    [
+     "*52 € PAR MOIS,",
+     "Cinquante-deux euros par mois,",
+     "coin"
+    ],
+    [
+     "SOIT",
+     "soit"
+    ],
+    [
+     "*624 € PAR AN.",
+     "six cent vingt-quatre euros par an.",
+     "coin"
+    ]
+   ]
+  },
+  {
+   "segment": "icon",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "CE SOIR,",
+     "Ce soir,"
+    ],
+    [
+     "REGARDE TES RELEVÉS",
+     "regarde tes relevés bancaires"
+    ],
+    [
+     "*ET RÉSILIE.",
+     "et résilie.",
+     "stamp"
+    ]
+   ]
+  },
+  {
+   "segment": "icon",
+   "chunks": [
+    [
+     "GARDE SEULEMENT",
+     "Garde seulement"
+    ],
+    [
+     "CE QUE TU UTILISES",
+     "ce que tu utilises"
+    ],
+    [
+     "*CHAQUE SEMAINE.",
+     "chaque semaine."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "ABONNE-TOI",
+     "Abonne-toi"
+    ],
+    [
+     "POUR LA SUITE.",
+     "pour la suite."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "6:2"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "red",
+   "icon": "phone",
+   "lines": [
+    {
+     "text": "Tu paies",
+     "at": "0:0",
+     "size": "m"
+    },
+    {
+     "text": "combien",
+     "at": "0:1",
+     "size": "m"
+    },
+    {
+     "text": "d'abonnements",
+     "at": "0:1+0.4"
+    },
+    {
+     "text": "pour rien ?",
+     "at": "0:2",
+     "size": "xl",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "Faisons le <em>compte</em>",
+    "at": "1:0"
+   }
+  },
+  "list": {
+   "type": "list",
+   "glow": "red",
+   "chip": {
+    "text": "CHAQUE MOIS",
+    "at": "2:0",
+    "color": "red"
+   },
+   "top": 270,
+   "items": [
+    {
+     "icon": "play",
+     "label": "Streaming",
+     "sub": "regardé 2 fois",
+     "value": "14 €",
+     "at": "2:0",
+     "color": "ink"
+    },
+    {
+     "icon": "dumbbell",
+     "label": "Salle de sport",
+     "sub": "pas mis les pieds",
+     "value": "30 €",
+     "at": "3:0",
+     "color": "ink"
+    },
+    {
+     "icon": "gamepad",
+     "label": "Applis",
+     "sub": "oubliées",
+     "value": "8 €",
+     "at": "4:0",
+     "color": "ink"
+    }
+   ],
+   "total": {
+    "label": "PAR MOIS",
+    "color": "down",
+    "stages": [
+     {
+      "to": 52,
+      "at": "5:0",
+      "label": "PAR MOIS"
+     },
+     {
+      "to": 624,
+      "at": "5:2",
+      "label": "PAR AN",
+      "dur": 1.0
+     }
+    ]
+   }
+  },
+  "icon": {
+   "type": "icon",
+   "glow": "green",
+   "icon": "cut",
+   "color": "up",
+   "at": "6:0",
+   "text": "Ce soir, <em>résilie.</em>",
+   "textAt": "6:2",
+   "sub": "Garde seulement ce que tu utilises chaque semaine",
+   "subAt": "7:0"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold"
+  }
+ },
+ "post": {
+  "caption": "Streaming, salle de sport, applis… 52 € par mois partent sans que tu t'en rendes compte : 624 € par an. Lequel tu résilies ce soir ?",
+  "hashtags": [
+   "#abonnements",
+   "#economiser",
+   "#epargne",
+   "#argent",
+   "#financepersonnelle",
+   "#budget",
+   "#astuceargent",
+   "#apprendresurtiktok"
+  ]
+ }
+}

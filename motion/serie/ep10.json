@@ -1,0 +1,252 @@
+{
+ "_doc": "Épisode de la série Épargne malin. Voir serie/README.md.",
+ "ep": 10,
+ "voice": "siwis-medium",
+ "speed": 1.0,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 3.2,
+ "handle": "@epargne.malin",
+ "title": "La méthode des enveloppes",
+ "short": "ENVELOPPES",
+ "next": null,
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "TU NE SAIS JAMAIS",
+     "Tu ne sais jamais"
+    ],
+    [
+     "*OÙ PASSE",
+     "où passe",
+     "boom"
+    ],
+    [
+     "TON ARGENT ?",
+     "ton argent ?"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "TESTE",
+     "Teste"
+    ],
+    [
+     "*LA MÉTHODE DES ENVELOPPES.",
+     "la méthode des enveloppes."
+    ]
+   ]
+  },
+  {
+   "segment": "list",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "CHAQUE MOIS,",
+     "Chaque mois,"
+    ],
+    [
+     "UN BUDGET",
+     "tu fixes un budget"
+    ],
+    [
+     "POUR CHAQUE DÉPENSE.",
+     "pour chaque dépense."
+    ]
+   ]
+  },
+  {
+   "segment": "list",
+   "chunks": [
+    [
+     "COURSES :",
+     "Courses :"
+    ],
+    [
+     "*350 €.",
+     "trois cent cinquante euros."
+    ]
+   ]
+  },
+  {
+   "segment": "list",
+   "chunks": [
+    [
+     "SORTIES :",
+     "Sorties :"
+    ],
+    [
+     "*150 €.",
+     "cent cinquante euros."
+    ]
+   ]
+  },
+  {
+   "segment": "list",
+   "chunks": [
+    [
+     "TRANSPORT :",
+     "Transport :"
+    ],
+    [
+     "*120 €.",
+     "cent vingt euros."
+    ]
+   ]
+  },
+  {
+   "segment": "icon",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "ENVELOPPE VIDE ?",
+     "Enveloppe vide ?"
+    ],
+    [
+     "*ON ARRÊTE.",
+     "On arrête.",
+     "stamp"
+    ],
+    [
+     "CE QUI RESTE",
+     "Ce qui reste"
+    ],
+    [
+     "*VA SUR TON ÉPARGNE.",
+     "va sur ton épargne.",
+     "coin"
+    ]
+   ]
+  },
+  {
+   "segment": "icon",
+   "chunks": [
+    [
+     "ÇA MARCHE AUSSI",
+     "Ça marche aussi"
+    ],
+    [
+     "*AVEC PLUSIEURS COMPTES.",
+     "avec plusieurs comptes."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "ABONNE-TOI",
+     "Abonne-toi"
+    ],
+    [
+     "POUR TOUTE LA SÉRIE.",
+     "pour toute la série."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:1",
+  "6:1"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "red",
+   "icon": "envelope",
+   "lines": [
+    {
+     "text": "Tu ne sais pas",
+     "at": "0:0",
+     "size": "m"
+    },
+    {
+     "text": "où passe",
+     "at": "0:1",
+     "size": "m"
+    },
+    {
+     "text": "ton argent ?",
+     "at": "0:2",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "La méthode des <em>enveloppes</em>",
+    "at": "1:1"
+   }
+  },
+  "list": {
+   "type": "list",
+   "glow": "gold",
+   "title": {
+    "html": "1 enveloppe = <em>1 budget</em>",
+    "at": "2:0"
+   },
+   "top": 500,
+   "items": [
+    {
+     "icon": "basket",
+     "label": "Courses",
+     "value": "350 €",
+     "at": "3:0",
+     "color": "gold"
+    },
+    {
+     "icon": "party",
+     "label": "Sorties",
+     "value": "150 €",
+     "at": "4:0",
+     "color": "gold"
+    },
+    {
+     "icon": "bus",
+     "label": "Transport",
+     "value": "120 €",
+     "at": "5:0",
+     "color": "gold"
+    }
+   ]
+  },
+  "icon": {
+   "type": "icon",
+   "glow": "green",
+   "icon": "piggy",
+   "color": "up",
+   "at": "6:0",
+   "text": "Le reste → <em>épargne</em>",
+   "textAt": "6:2",
+   "sub": "Ça marche aussi avec plusieurs comptes",
+   "subAt": "7:0"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold",
+   "sub": "pour toute la série"
+  }
+ },
+ "post": {
+  "caption": "La méthode des enveloppes : un budget par type de dépense. Enveloppe vide, on arrête. Ce qui reste part en épargne. Simple, et ça marche. Tu utilises quelle méthode ?",
+  "hashtags": [
+   "#methodedesenveloppes",
+   "#gestionbudget",
+   "#epargne",
+   "#argent",
+   "#financepersonnelle",
+   "#budget",
+   "#astuceargent",
+   "#apprendresurtiktok"
+  ]
+ }
+}
