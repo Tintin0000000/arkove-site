@@ -6,6 +6,7 @@ Typographie : Instrument Serif (SIL Open Font License), la même que dans les vi
 | Fichier | Usage |
 |---|---|
 | `avatar-or.png` (+ `-400`, `-200`) | **photo de profil TikTok recommandée** : fond or, se voit en mode clair comme sombre |
+| `avatar-nom-or.png`, `avatar-nom.png`, `avatar-nom-creme.png` | photo de profil avec le nom « épargne malin » sous le é (or, noir, crème) |
 | `avatar.png`, `avatar-creme.png` | variantes noir et or, crème (`apercu-tiktok.png` compare les trois) |
 | `icone.png` / `icone.svg` | icône seule, fond transparent |
 | `logo-horizontal.png` / `.svg` | bannières, miniatures, fond sombre |

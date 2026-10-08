@@ -116,6 +116,28 @@ def avatar_flat(fill, ink, ring):
             f'<circle cx="{cx}" cy="{cy}" r="{r - r * 0.022:.1f}" fill="none" stroke="{ring}" stroke-width="{r * 0.03:.1f}"/>' + e)
 
 
+def avatar_named(face, ring, glyph, ink, accent):
+    """Avatar avec le nom : é-flèche en haut, « épargne / malin » dessous, le tout dans le cercle."""
+    cx = cy = 512
+    r = 468
+    # é-flèche, plus petit, dans le haut de la pièce
+    size = 420
+    _, _, (x0, y0, x1, y1) = e_with_arrow(ITALIC, size, 0, 0, glyph, glyph)
+    e, _, _ = e_with_arrow(ITALIC, size, cx - (x0 + x1) / 2, 315 - (y0 + y1) / 2, glyph, glyph)
+    # « épargne » centré, puis « malin » en italique
+    s1, s2 = 172, 182
+    _, w_e, _ = e_with_arrow(SERIF, s1, 0, 0, ink, accent)
+    _, w_p, _ = SERIF.path("pargne", s1, 0, 0)
+    x = cx - (w_e + w_p) / 2
+    e1, adv, _ = e_with_arrow(SERIF, s1, x, 680, ink, accent)
+    d1, _, _ = SERIF.path("pargne", s1, x + adv, 680)
+    _, w_m, _ = ITALIC.path("malin", s2, 0, 0)
+    d2, _, _ = ITALIC.path("malin", s2, cx - w_m / 2, 835)
+    return (f'<rect width="1024" height="1024" fill="{face}"/>'
+            f'<circle cx="{cx}" cy="{cy}" r="{r - r * 0.022:.1f}" fill="none" stroke="{ring}" stroke-width="{r * 0.03:.1f}"/>'
+            + e + e1 + f'<path d="{d1}" fill="{ink}"/><path d="{d2}" fill="{accent}"/>')
+
+
 def defs():
     return f"""<defs>
     {GOLD_DEFS}
@@ -146,6 +168,10 @@ def build():
     # Variantes à fond plein : se détachent mieux dans le mode sombre de TikTok.
     out["avatar-or.svg"] = svg(1024, 1024, avatar_flat("url(#gold)", "#171310", "#171310"))
     out["avatar-creme.svg"] = svg(1024, 1024, avatar_flat("#f3eee4", "#171310", "#b98436"))
+    # Avec le nom « épargne malin » sous le é.
+    out["avatar-nom-or.svg"] = svg(1024, 1024, avatar_named("url(#gold)", "#171310", "#171310", "#171310", "#171310"))
+    out["avatar-nom.svg"] = svg(1024, 1024, avatar_named(BG, "url(#gold)", "url(#gold)", INK, "url(#gold)"))
+    out["avatar-nom-creme.svg"] = svg(1024, 1024, avatar_named("#f3eee4", "#b98436", "#171310", "#171310", "#9a6a24"))
     # 2. Icône seule, fond transparent.
     out["icone.svg"] = svg(1024, 1024, coin(512, 512, 500))
     # 3. Logo horizontal (fond sombre et fond clair).
