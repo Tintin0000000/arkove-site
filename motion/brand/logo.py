@@ -104,6 +104,18 @@ def coin(cx, cy, r, glyph_color="url(#gold)", bg=True):
     {e}"""
 
 
+def avatar_flat(fill, ink, ring):
+    """Avatar à fond plein (or ou crème) : é-flèche et anneau d'une seule couleur, très lisible en petit."""
+    cx = cy = 512
+    r = 468
+    size = r * 2.05
+    _, _, (x0, y0, x1, y1) = e_with_arrow(ITALIC, size, 0, 0, ink, ink)
+    dx, dy = cx - (x0 + x1) / 2, cy - (y0 + y1) / 2 + r * 0.02
+    e, _, _ = e_with_arrow(ITALIC, size, dx, dy, ink, ink)
+    return (f'<rect width="1024" height="1024" fill="{fill}"/>'
+            f'<circle cx="{cx}" cy="{cy}" r="{r - r * 0.022:.1f}" fill="none" stroke="{ring}" stroke-width="{r * 0.03:.1f}"/>' + e)
+
+
 def defs():
     return f"""<defs>
     {GOLD_DEFS}
@@ -131,6 +143,9 @@ def build():
     out = {}
     # 1. Avatar TikTok / Instagram : carré plein, la pièce au centre (l'appli recadre en rond).
     out["avatar.svg"] = svg(1024, 1024, coin(512, 512, 468), bg=BG)
+    # Variantes à fond plein : se détachent mieux dans le mode sombre de TikTok.
+    out["avatar-or.svg"] = svg(1024, 1024, avatar_flat("url(#gold)", "#171310", "#171310"))
+    out["avatar-creme.svg"] = svg(1024, 1024, avatar_flat("#f3eee4", "#171310", "#b98436"))
     # 2. Icône seule, fond transparent.
     out["icone.svg"] = svg(1024, 1024, coin(512, 512, 500))
     # 3. Logo horizontal (fond sombre et fond clair).

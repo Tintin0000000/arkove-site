@@ -5,7 +5,8 @@ Typographie : Instrument Serif (SIL Open Font License), la même que dans les vi
 
 | Fichier | Usage |
 |---|---|
-| `avatar.png` (+ `-400`, `-200`) | photo de profil TikTok / Instagram / YouTube (carré, l'appli recadre en rond) |
+| `avatar-or.png` (+ `-400`, `-200`) | **photo de profil TikTok recommandée** : fond or, se voit en mode clair comme sombre |
+| `avatar.png`, `avatar-creme.png` | variantes noir et or, crème (`apercu-tiktok.png` compare les trois) |
 | `icone.png` / `icone.svg` | icône seule, fond transparent |
 | `logo-horizontal.png` / `.svg` | bannières, miniatures, fond sombre |
 | `logo-horizontal-clair.png` / `.svg` | fond clair (documents, site) |

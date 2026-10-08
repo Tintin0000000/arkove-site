@@ -7,7 +7,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const sizes = { 'avatar.svg': [1024, 400, 200], 'icone.svg': [1024, 512] };
+const sizes = { 'avatar.svg': [1024, 400, 200], 'avatar-or.svg': [1024, 400, 200], 'avatar-creme.svg': [1024, 400, 200], 'icone.svg': [1024, 512] };
 
 const browser = await chromium.launch();
 const page = await browser.newPage();
