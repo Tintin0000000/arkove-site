@@ -1,0 +1,365 @@
+{
+ "_doc": "Semaine 2 : voir serie/semaine.py.",
+ "ep": 14,
+ "voice": "siwis-medium",
+ "speed": 0.97,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
+ "title": "Les formations IA",
+ "series": "RENTABLE OU ARNAQUE ? · #2",
+ "short": "FORMATIONS IA",
+ "next": "Comment gagnent les applis gratuites ?",
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "« 5 000 € PAR MOIS",
+     "Cinq mille euros par mois"
+    ],
+    [
+     "AVEC L'IA » ?",
+     "avec l'IA ?"
+    ],
+    [
+     "SOUVENT, LE SEUL QUI GAGNE,",
+     "Souvent, le seul qui gagne,"
+    ],
+    [
+     "*C'EST LE VENDEUR.",
+     "c'est le vendeur.",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "*3 SIGNAUX",
+     "Trois signaux"
+    ],
+    [
+     "POUR REPÉRER L'ARNAQUE.",
+     "pour repérer l'arnaque."
+    ]
+   ]
+  },
+  {
+   "segment": "s1",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "SIGNAL NUMÉRO 1 :",
+     "Signal numéro un :"
+    ],
+    [
+     "*DES REVENUS SANS PREUVE.",
+     "des revenus sans preuve."
+    ]
+   ]
+  },
+  {
+   "segment": "s1",
+   "chunks": [
+    [
+     "CAPTURES D'ÉCRAN,",
+     "Captures d'écran,"
+    ],
+    [
+     "VOITURES DE LUXE…",
+     "voitures de luxe…"
+    ],
+    [
+     "*JAMAIS DE FACTURES.",
+     "mais jamais de factures."
+    ]
+   ]
+  },
+  {
+   "segment": "s1",
+   "chunks": [
+    [
+     "DEMANDE TOUJOURS :",
+     "Demande toujours :"
+    ],
+    [
+     "*COMBIEN DE CLIENTS,",
+     "combien de clients,"
+    ],
+    [
+     "ET QUEL CHIFFRE D'AFFAIRES ?",
+     "et quel chiffre d'affaires ?"
+    ]
+   ]
+  },
+  {
+   "segment": "s2",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "SIGNAL NUMÉRO 2 :",
+     "Signal numéro deux :"
+    ],
+    [
+     "*L'URGENCE.",
+     "l'urgence."
+    ]
+   ]
+  },
+  {
+   "segment": "s2",
+   "chunks": [
+    [
+     "« PLUS QUE 3 PLACES »,",
+     "Plus que trois places,"
+    ],
+    [
+     "*« LE PRIX DOUBLE CE SOIR ».",
+     "le prix double ce soir."
+    ]
+   ]
+  },
+  {
+   "segment": "s2",
+   "chunks": [
+    [
+     "UNE VRAIE OFFRE",
+     "Une vraie offre"
+    ],
+    [
+     "*PEUT ATTENDRE DEMAIN.",
+     "peut attendre demain."
+    ]
+   ]
+  },
+  {
+   "segment": "s3",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "SIGNAL NUMÉRO 3 :",
+     "Signal numéro trois :"
+    ],
+    [
+     "*LE VRAI BUSINESS,",
+     "le vrai business,"
+    ],
+    [
+     "C'EST LA FORMATION.",
+     "c'est la formation."
+    ]
+   ]
+  },
+  {
+   "segment": "s3",
+   "chunks": [
+    [
+     "1 000 ÉLÈVES À 500 €,",
+     "Mille élèves à cinq cents euros,"
+    ],
+    [
+     "*C'EST 500 000 €",
+     "c'est cinq cent mille euros"
+    ],
+    [
+     "POUR LE VENDEUR.",
+     "pour le vendeur.",
+     "coin"
+    ]
+   ]
+  },
+  {
+   "segment": "s3",
+   "chunks": [
+    [
+     "LES ÉLÈVES, EUX,",
+     "Les élèves, eux,"
+    ],
+    [
+     "*N'ONT AUCUNE GARANTIE.",
+     "n'ont aucune garantie."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "CE QUI MARCHE VRAIMENT :",
+     "Ce qui marche vraiment :"
+    ],
+    [
+     "*UNE COMPÉTENCE",
+     "une compétence"
+    ],
+    [
+     "QUE DES CLIENTS PAIENT.",
+     "que des clients paient."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "*SAUVEGARDE CETTE VIDÉO",
+     "Sauvegarde cette vidéo"
+    ],
+    [
+     "AVANT D'ACHETER UNE FORMATION.",
+     "avant d'acheter une formation."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "chunks": [
+    [
+     "ET TOI,",
+     "Et toi,"
+    ],
+    [
+     "ON T'EN A DÉJÀ PROPOSÉ ?",
+     "on t'en a déjà proposé une ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:3"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "red",
+   "icon": "robot",
+   "lines": [
+    {
+     "text": "5 000 €/mois",
+     "at": "0:0-0.6",
+     "size": "xl",
+     "color": "gold"
+    },
+    {
+     "text": "avec l'IA ?",
+     "at": "0:1",
+     "size": "m"
+    },
+    {
+     "text": "pour le vendeur",
+     "at": "0:3",
+     "size": "m",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "<em>3 signaux</em> d'arnaque",
+    "at": "1:0"
+   }
+  },
+  "s1": {
+   "type": "icon",
+   "glow": "red",
+   "chip": {
+    "text": "SIGNAL 1 / 3",
+    "at": "2:0",
+    "color": "red"
+   },
+   "icon": "cross",
+   "color": "down",
+   "at": "2:0",
+   "text": "Des revenus <em>sans preuve</em>",
+   "textAt": "2:1",
+   "sub": "Captures, voitures… jamais de factures",
+   "subAt": "3:0"
+  },
+  "s2": {
+   "type": "icon",
+   "glow": "red",
+   "chip": {
+    "text": "SIGNAL 2 / 3",
+    "at": "5:0",
+    "color": "red"
+   },
+   "icon": "clock",
+   "color": "down",
+   "at": "5:0",
+   "text": "L'<em>urgence</em> artificielle",
+   "textAt": "5:1",
+   "sub": "« Plus que 3 places », « le prix double ce soir »",
+   "subAt": "6:0"
+  },
+  "s3": {
+   "type": "counter",
+   "glow": "gold",
+   "chip": {
+    "text": "SIGNAL 3 / 3",
+    "at": "8:0",
+    "color": "red"
+   },
+   "title": {
+    "html": "Le business, <em>c'est la formation</em>",
+    "at": "8:1"
+   },
+   "label": "1 000 élèves × 500 € (exemple)",
+   "color": "gold",
+   "bigSize": 140,
+   "stages": [
+    {
+     "to": 500000,
+     "at": "9:1",
+     "label": "POUR LE VENDEUR",
+     "dur": 1.3
+    }
+   ]
+  },
+  "verdict": {
+   "type": "icon",
+   "glow": "green",
+   "icon": "check",
+   "color": "up",
+   "at": "11:0",
+   "text": "Une compétence, <em>des clients</em>",
+   "textAt": "11:1",
+   "sub": "pas une formation miracle",
+   "subAt": "11:2"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold",
+   "save": true,
+   "heading": "<em>Sauvegarde</em>-la",
+   "sub": "avant d'acheter une formation"
+  }
+ },
+ "post": {
+  "caption": "« 5 000 € par mois avec l'IA » ? 3 signaux pour repérer une formation douteuse : des revenus sans preuve, l'urgence, et un business qui vit… de la formation. Sauvegarde cette vidéo avant d'acheter. Et toi, on t'en a déjà proposé une ?",
+  "hashtags": [
+   "#ia",
+   "#arnaque",
+   "#formation",
+   "#argent"
+  ]
+ },
+ "cover": {
+  "chip": "RENTABLE OU ARNAQUE ? · #2",
+  "kicker": "Formations IA : rentable ou arnaque ?",
+  "icon": "robot"
+ }
+}

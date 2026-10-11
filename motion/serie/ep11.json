@@ -1,0 +1,458 @@
+{
+ "_doc": "Semaine 2 : voir serie/semaine.py.",
+ "ep": 11,
+ "voice": "siwis-medium",
+ "speed": 0.97,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
+ "title": "Les abonnements IA",
+ "series": "1 ERREUR QUI TE COÛTE · #1",
+ "short": "ABONNEMENTS IA",
+ "next": "Comment gagne vraiment ta banque ?",
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "*720 € PAR AN",
+     "Sept cent vingt euros par an"
+    ],
+    [
+     "POUR DES IA",
+     "pour des IA"
+    ],
+    [
+     "QUE TU UTILISES À PEINE.",
+     "que tu utilises à peine.",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "C'EST L'ERREUR :",
+     "C'est l'erreur :"
+    ],
+    [
+     "*CUMULER LES ABONNEMENTS IA.",
+     "cumuler les abonnements d'intelligence artificielle."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 1 :",
+     "Preuve numéro un :"
+    ],
+    [
+     "*LE PRIX.",
+     "le prix."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "UN ABONNEMENT IA,",
+     "Un abonnement IA,"
+    ],
+    [
+     "C'EST SOUVENT",
+     "c'est souvent"
+    ],
+    [
+     "*ENVIRON 20 € PAR MOIS.",
+     "environ vingt euros par mois."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "TROIS ABONNEMENTS :",
+     "Trois abonnements :"
+    ],
+    [
+     "*60 € PAR MOIS.",
+     "soixante euros par mois."
+    ],
+    [
+     "*720 € SUR UN AN.",
+     "Et sur un an : sept cent vingt euros.",
+     "coin"
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "PLUS CHER QUE",
+     "C'est plus cher que"
+    ],
+    [
+     "*STREAMING ET MUSIQUE",
+     "le streaming et la musique"
+    ],
+    [
+     "RÉUNIS.",
+     "réunis."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 2 :",
+     "Preuve numéro deux :"
+    ],
+    [
+     "*TON USAGE RÉEL.",
+     "ton usage réel."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "REGARDE TON HISTORIQUE :",
+     "Regarde ton historique :"
+    ],
+    [
+     "TU UTILISES VRAIMENT",
+     "tu utilises vraiment"
+    ],
+    [
+     "*LES TROIS CHAQUE SEMAINE ?",
+     "les trois chaque semaine ?"
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "SI DEUX NE SERVENT PAS,",
+     "Si deux ne servent pas,"
+    ],
+    [
+     "*480 € PAR AN",
+     "ça fait quatre cent quatre-vingts euros par an",
+     "stamp"
+    ],
+    [
+     "POUR RIEN.",
+     "pour rien."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 3 :",
+     "Preuve numéro trois :"
+    ],
+    [
+     "LES VERSIONS GRATUITES",
+     "les versions gratuites"
+    ],
+    [
+     "*SUFFISENT SOUVENT.",
+     "suffisent souvent."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "GARDE UN SEUL ABONNEMENT,",
+     "Garde un seul abonnement,"
+    ],
+    [
+     "*ET PAIE LES AUTRES",
+     "et paie les autres"
+    ],
+    [
+     "UN MOIS, SI BESOIN.",
+     "un mois, seulement si besoin."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "ASTUCE :",
+     "Astuce :"
+    ],
+    [
+     "*NOTE LA DATE",
+     "note la date"
+    ],
+    [
+     "DE RENOUVELLEMENT.",
+     "de renouvellement."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "VERDICT :",
+     "Verdict :"
+    ],
+    [
+     "*UN SEUL ABONNEMENT",
+     "un seul abonnement"
+    ],
+    [
+     "SUFFIT LA PLUPART DU TEMPS.",
+     "suffit la plupart du temps."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "*SAUVEGARDE CETTE VIDÉO",
+     "Sauvegarde cette vidéo"
+    ],
+    [
+     "AVANT DE T'ABONNER.",
+     "avant de t'abonner."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "chunks": [
+    [
+     "ET TOI,",
+     "Et toi,"
+    ],
+    [
+     "TU PAIES COMBIEN D'IA ?",
+     "tu paies combien d'IA ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:2",
+  "8:1"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "red",
+   "icon": "robot",
+   "lines": [
+    {
+     "text": "720 €",
+     "at": "0:0-0.6",
+     "size": "xl",
+     "color": "gold"
+    },
+    {
+     "text": "par an",
+     "at": "0:0+0.3",
+     "size": "m"
+    },
+    {
+     "text": "pour des IA",
+     "at": "0:1",
+     "size": "m"
+    },
+    {
+     "text": "inutiles ?",
+     "at": "0:2",
+     "size": "xl",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "Cumuler les <em>abonnements IA</em>",
+    "at": "1:1"
+   }
+  },
+  "p1": {
+   "type": "counter",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 1 / 3",
+    "at": "2:0"
+   },
+   "title": {
+    "html": "Le <em>prix</em>",
+    "at": "2:1"
+   },
+   "label": "Abonnements IA",
+   "color": "down",
+   "stages": [
+    {
+     "to": 20,
+     "at": "3:2",
+     "label": "PAR MOIS · 1 IA"
+    },
+    {
+     "to": 60,
+     "at": "4:1",
+     "label": "PAR MOIS · 3 IA"
+    },
+    {
+     "to": 720,
+     "at": "4:2",
+     "label": "PAR AN · 3 IA",
+     "dur": 1.1
+    }
+   ],
+   "disclaimer": "Prix indicatifs : vérifie le tarif de chaque service"
+  },
+  "p2": {
+   "type": "list",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 2 / 3",
+    "at": "6:0"
+   },
+   "title": {
+    "html": "Ton <em>usage réel</em>",
+    "at": "6:1"
+   },
+   "top": 500,
+   "items": [
+    {
+     "icon": "robot",
+     "label": "IA n°1",
+     "sub": "tous les jours",
+     "value": "20 €/mois",
+     "at": "7:0",
+     "color": "up"
+    },
+    {
+     "icon": "robot",
+     "label": "IA n°2",
+     "sub": "une fois par mois",
+     "value": "20 €/mois",
+     "at": "7:1",
+     "color": "down"
+    },
+    {
+     "icon": "robot",
+     "label": "IA n°3",
+     "sub": "oubliée",
+     "value": "20 €/mois",
+     "at": "7:2",
+     "color": "down"
+    }
+   ],
+   "total": {
+    "label": "POUR RIEN",
+    "color": "down",
+    "stages": [
+     {
+      "to": 480,
+      "at": "8:1",
+      "label": "PAR AN · POUR RIEN"
+     }
+    ]
+   }
+  },
+  "p3": {
+   "type": "steps",
+   "glow": "green",
+   "chip": {
+    "text": "PREUVE 3 / 3",
+    "at": "9:0"
+   },
+   "title": {
+    "html": "Le <em>bon réflexe</em>",
+    "at": "9:1"
+   },
+   "top": 500,
+   "items": [
+    {
+     "icon": "check",
+     "label": "1 seule IA payante",
+     "sub": "celle que tu utilises vraiment",
+     "at": "10:0",
+     "color": "up"
+    },
+    {
+     "icon": "bolt",
+     "label": "Les autres en gratuit",
+     "sub": "elles suffisent souvent",
+     "at": "10:1"
+    },
+    {
+     "icon": "calendar",
+     "label": "1 mois payant",
+     "sub": "seulement si besoin",
+     "at": "10:2"
+    }
+   ]
+  },
+  "verdict": {
+   "type": "icon",
+   "glow": "green",
+   "icon": "check",
+   "color": "up",
+   "at": "12:0",
+   "text": "<em>Un seul</em> abonnement IA",
+   "textAt": "12:1",
+   "sub": "suffit la plupart du temps",
+   "subAt": "12:2"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold",
+   "save": true,
+   "heading": "<em>Sauvegarde</em>-la",
+   "sub": "avant de t'abonner"
+  }
+ },
+ "post": {
+  "caption": "Cumuler les abonnements IA, c'est vite 720 € par an. Garde un seul abonnement, celui que tu utilises vraiment, et passe les autres en version gratuite. Sauvegarde cette vidéo avant de t'abonner. Et toi, tu paies combien d'IA ?",
+  "hashtags": [
+   "#ia",
+   "#abonnements",
+   "#economiser",
+   "#argent"
+  ]
+ },
+ "cover": {
+  "chip": "1 ERREUR · #1",
+  "kicker": "720 € par an d'IA",
+  "icon": "robot"
+ }
+}

@@ -130,6 +130,8 @@
 .cta-title { left: 0; width: 1080px; top: 470px; text-align: center; font: 400 170px/1 var(--serif); }
 .cta-sub { left: 0; width: 1080px; top: 670px; text-align: center; font: 600 52px var(--sans); color: var(--ink-soft); }
 .sub-btn { left: 190px; width: 700px; top: 800px; height: 150px; border-radius: 999px; background: var(--down); color: #fff; display: flex; align-items: center; justify-content: center; gap: 22px; font: 900 60px var(--sans); letter-spacing: -0.02em; box-shadow: 0 30px 80px -20px rgba(255, 90, 95, 0.8); }
+.sub-btn.save { background: var(--gold); color: #171310; box-shadow: 0 30px 80px -20px rgba(206, 155, 76, 0.8); }
+.tm-done.red span { background: var(--down); color: #fff; }
 .sub-btn.done { background: #2a2622; color: var(--ink-soft); box-shadow: none; }
 .sub-btn svg { width: 56px; height: 56px; }
 .handle { left: 0; width: 1080px; top: 1000px; text-align: center; font: 700 56px var(--sans); }

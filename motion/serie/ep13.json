@@ -1,0 +1,429 @@
+{
+ "_doc": "Semaine 2 : voir serie/semaine.py.",
+ "ep": 13,
+ "voice": "siwis-medium",
+ "speed": 0.97,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
+ "title": "Le dropshipping",
+ "series": "RENTABLE OU ARNAQUE ? · #1",
+ "short": "DROPSHIPPING",
+ "next": "Formations IA : rentable ou arnaque ?",
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "LE DROPSHIPPING",
+     "Le dropshipping"
+    ],
+    [
+     "N'EST PAS UNE ARNAQUE…",
+     "n'est pas une arnaque…"
+    ],
+    [
+     "*MAIS BEAUCOUP PERDENT DE L'ARGENT.",
+     "mais beaucoup perdent de l'argent.",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "ALORS, RENTABLE OU ARNAQUE ?",
+     "Alors, rentable ou arnaque ?"
+    ],
+    [
+     "*VOICI 3 PREUVES.",
+     "Voici trois preuves."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 1 :",
+     "Preuve numéro un :"
+    ],
+    [
+     "*LE VRAI CALCUL.",
+     "le vrai calcul."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "PRIX DE VENTE :",
+     "Prix de vente :"
+    ],
+    [
+     "*30 €.",
+     "trente euros."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "PRODUIT ET LIVRAISON :",
+     "Produit et livraison :"
+    ],
+    [
+     "*12 €.",
+     "douze euros."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "PUBLICITÉ PAR VENTE :",
+     "Publicité par vente :"
+    ],
+    [
+     "*15 €.",
+     "quinze euros."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "IL TE RESTE",
+     "Il te reste"
+    ],
+    [
+     "*3 €,",
+     "trois euros,",
+     "stamp"
+    ],
+    [
+     "AVANT LES RETOURS.",
+     "avant les retours."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "ET AVEC 10 % DE RETOURS,",
+     "Et avec dix pour cent de retours,"
+    ],
+    [
+     "*TU PERDS DE L'ARGENT.",
+     "tu perds de l'argent.",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 2 :",
+     "Preuve numéro deux :"
+    ],
+    [
+     "*LE SERVICE CLIENT.",
+     "le service client."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "RETARDS DE LIVRAISON,",
+     "Retards de livraison,"
+    ],
+    [
+     "CLIENTS MÉCONTENTS,",
+     "clients mécontents,"
+    ],
+    [
+     "*REMBOURSEMENTS.",
+     "remboursements."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "ET C'EST TA BOUTIQUE",
+     "Et c'est ta boutique"
+    ],
+    [
+     "*QUI PREND LES AVIS NÉGATIFS.",
+     "qui prend les avis négatifs."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 3 :",
+     "Preuve numéro trois :"
+    ],
+    [
+     "*LA CONCURRENCE.",
+     "la concurrence."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "LE MÊME PRODUIT",
+     "Le même produit"
+    ],
+    [
+     "EST VENDU",
+     "est vendu"
+    ],
+    [
+     "*PAR DES DIZAINES DE BOUTIQUES.",
+     "par des dizaines d'autres boutiques."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "VERDICT :",
+     "Verdict :"
+    ],
+    [
+     "*PAS UNE ARNAQUE,",
+     "pas une arnaque,"
+    ],
+    [
+     "MAIS PAS DE L'ARGENT FACILE.",
+     "mais pas de l'argent facile."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "*SAUVEGARDE CETTE VIDÉO",
+     "Sauvegarde cette vidéo"
+    ],
+    [
+     "AVANT DE TE LANCER.",
+     "avant de te lancer."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "chunks": [
+    [
+     "ET TOI,",
+     "Et toi,"
+    ],
+    [
+     "TU AS DÉJÀ ESSAYÉ ?",
+     "tu as déjà essayé ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:2",
+  "6:1"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "red",
+   "icon": "box",
+   "lines": [
+    {
+     "text": "Dropshipping",
+     "at": "0:0-0.6",
+     "size": "m"
+    },
+    {
+     "text": "pas une arnaque…",
+     "at": "0:1",
+     "size": "m"
+    },
+    {
+     "text": "mais beaucoup",
+     "at": "0:2",
+     "size": "m"
+    },
+    {
+     "text": "perdent",
+     "at": "0:2+0.35",
+     "size": "xl",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "Rentable ou <em>arnaque</em> ?",
+    "at": "1:0"
+   }
+  },
+  "p1": {
+   "type": "list",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 1 / 3",
+    "at": "2:0"
+   },
+   "title": {
+    "html": "Le <em>vrai calcul</em>",
+    "at": "2:1"
+   },
+   "top": 500,
+   "items": [
+    {
+     "icon": "basket",
+     "label": "Prix de vente",
+     "sub": "exemple",
+     "value": "+30 €",
+     "at": "3:1",
+     "color": "up"
+    },
+    {
+     "icon": "box",
+     "label": "Produit + livraison",
+     "value": "−12 €",
+     "at": "4:0",
+     "color": "down"
+    },
+    {
+     "icon": "phone",
+     "label": "Publicité par vente",
+     "value": "−15 €",
+     "at": "5:0",
+     "color": "down"
+    }
+   ],
+   "total": {
+    "label": "IL TE RESTE",
+    "color": "gold",
+    "stages": [
+     {
+      "to": 3,
+      "at": "6:1",
+      "label": "IL TE RESTE"
+     }
+    ]
+   }
+  },
+  "p2": {
+   "type": "icon",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 2 / 3",
+    "at": "8:0"
+   },
+   "icon": "box",
+   "color": "down",
+   "at": "8:0",
+   "text": "Le <em>service client</em>",
+   "textAt": "8:1",
+   "sub": "Délais, retours, remboursements : c'est toi qui gères",
+   "subAt": "9:0"
+  },
+  "p3": {
+   "type": "grid",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 3 / 3",
+    "at": "11:0"
+   },
+   "title": {
+    "html": "La <em>concurrence</em>",
+    "at": "11:1"
+   },
+   "top": 480,
+   "cells": 40,
+   "cols": 10,
+   "format": "n",
+   "fill": [
+    [
+     40,
+     "12:0",
+     "12:end"
+    ]
+   ],
+   "counter": {
+    "label": "Boutiques, même produit",
+    "mode": "count"
+   },
+   "badge": {
+    "text": "×40",
+    "small": "MÊME PRODUIT",
+    "at": "12:2",
+    "color": "red"
+   }
+  },
+  "verdict": {
+   "type": "icon",
+   "glow": "gold",
+   "icon": "alert",
+   "color": "gold",
+   "at": "13:0",
+   "text": "Pas une arnaque, <em>pas facile</em>",
+   "textAt": "13:1",
+   "sub": "Méfie-toi surtout des formations qui le vendent",
+   "subAt": "13:2"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold",
+   "save": true,
+   "heading": "<em>Sauvegarde</em>-la",
+   "sub": "avant de te lancer"
+  }
+ },
+ "post": {
+  "caption": "Dropshipping : business rentable ou arnaque ? Pas une arnaque, mais le calcul est souvent serré : pub, livraison, retours, concurrence. Sauvegarde cette vidéo avant de te lancer. Et toi, tu as déjà essayé ?",
+  "hashtags": [
+   "#dropshipping",
+   "#sidehustle",
+   "#business",
+   "#argent"
+  ]
+ },
+ "cover": {
+  "chip": "RENTABLE OU ARNAQUE ? · #1",
+  "kicker": "Dropshipping : rentable ou arnaque ?",
+  "icon": "box"
+ }
+}

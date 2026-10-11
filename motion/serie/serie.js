@@ -28,7 +28,7 @@
   };
   const fmt = (v, kind = 'euro') => {
     const n = Math.round(v).toLocaleString('fr-FR').replace(/[  ]/g, ' ');
-    return kind === 'euro' ? n + ' €' : kind === 'pct' ? n + ' %' : kind === 'h' ? n + ' h' : n;
+    return kind === 'euro' ? n + ' €' : kind === 'pct' ? n + ' %' : kind === 'h' ? n + ' h' : kind === 'j' ? n + ' j' : n;
   };
   const html = (strings) => { const d = document.createElement('div'); d.innerHTML = strings.trim(); return d.firstElementChild; };
   const popIn = (el, p, rot = 0) => {
@@ -67,6 +67,11 @@
     check: '<circle cx="50" cy="50" r="40"/><path d="M30 52 L44 66 L72 36"/>',
     cross: '<circle cx="50" cy="50" r="40"/><path d="M34 34 L66 66 M66 34 L34 66"/>',
     coin: '<circle cx="50" cy="50" r="40"/><path d="M62 32 a20 20 0 1 0 0 36 M30 46 H58 M30 56 H58"/>',
+    robot: '<rect x="18" y="30" width="64" height="50" rx="12"/><path d="M50 30 V16"/><circle cx="50" cy="12" r="4"/><circle cx="37" cy="52" r="5" fill="currentColor"/><circle cx="63" cy="52" r="5" fill="currentColor"/><path d="M38 68 H62"/><path d="M10 50 V62 M90 50 V62"/>',
+    box: '<path d="M50 8 L88 26 V72 L50 92 L12 72 V26Z"/><path d="M12 26 L50 44 L88 26 M50 44 V92"/><path d="M31 17 L69 35"/>',
+    alert: '<path d="M50 10 L92 86 H8Z"/><path d="M50 38 V60"/><circle cx="50" cy="72" r="3" fill="currentColor"/>',
+    bookmark: '<path d="M24 10 H76 V92 L50 72 L24 92Z"/>',
+    card: '<rect x="8" y="22" width="84" height="58" rx="10"/><path d="M8 38 H92"/><path d="M20 62 H42"/>',
     moon: '<path d="M64 10 a40 40 0 1 0 26 66 a32 32 0 1 1-26-66Z"/><path d="M20 20 l4 8 l8 4 l-8 4 l-4 8 l-4-8 l-8-4 l8-4Z"/>',
   };
   const icon = (name, cls = '') => `<svg class="ic ${cls}" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">${ICONS[name] || ''}</svg>`;
@@ -142,7 +147,7 @@
       el.insertAdjacentHTML('beforeend', `
         <div class="abs panel" style="top:${b.top || 470}px">
           <div class="pl-lbl">${b.label || ''}</div>
-          <div class="ct-big">0</div>
+          <div class="ct-big"${b.bigSize ? ` style="font-size:${b.bigSize}px"` : ''}>0</div>
           <div class="ct-sub"></div>
           <svg class="ct-line" viewBox="0 0 960 300" preserveAspectRatio="none"><path fill="none" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle r="13" fill="#fff"/></svg>
           ${b.badge ? `<div class="badge ${b.badge.color || 'gold'}">${b.badge.text}<small>${b.badge.small || ''}</small></div>` : ''}
@@ -409,9 +414,9 @@
       el.insertAdjacentHTML('beforeend', `
         <svg class="abs tm" viewBox="0 0 520 520"><circle cx="260" cy="260" r="${R}" fill="none" stroke="rgba(243,238,228,0.08)" stroke-width="34"/>
           <circle class="tm-arc" cx="260" cy="260" r="${R}" fill="none" stroke="var(--gold)" stroke-width="34" stroke-linecap="round" transform="rotate(-90 260 260)" stroke-dasharray="${C}" stroke-dashoffset="0"/></svg>
-        <div class="abs tm-c"><div class="tm-ic">${icon(b.icon || 'cart')}</div><div class="tm-h">${b.hours} h</div></div>
+        <div class="abs tm-c"><div class="tm-ic">${icon(b.icon || 'cart')}</div><div class="tm-h">${fmt(b.hours, b.unit || 'h')}</div></div>
         <div class="abs tm-meter"><div class="pl-lbl" style="position:static">${b.meterLabel || 'ENVIE D’ACHETER'}</div><div class="tm-track"><div class="tm-fill"></div></div></div>
-        ${b.done ? `<div class="abs tm-done"><span>${b.done.text}</span></div>` : ''}`);
+        ${b.done ? `<div class="abs tm-done ${b.done.color || ''}"><span>${b.done.text}</span></div>` : ''}`);
       return { svg: $('.tm', el), arc: $('.tm-arc', el), C, h: $('.tm-h', el), c: $('.tm-c', el), fill: $('.tm-fill', el), meter: $('.tm-meter', el), done: $('.tm-done', el) };
     },
     render(t, b, st) {
@@ -420,10 +425,12 @@
       rise(st.meter, prog(t, at(b.start) - 0.3, 0.5, ease.outExpo), 40);
       const p = prog(t, at(b.start), at(b.end) - at(b.start), ease.inOutCubic);
       st.arc.setAttribute('stroke-dashoffset', st.C * p);
-      st.h.textContent = fmt(b.hours * (1 - p), 'h');
+      st.h.textContent = fmt(b.hours * (1 - p), b.unit || 'h');
       const envie = lerp(1, 0.12, p);
       st.fill.style.transform = `scaleX(${envie})`;
-      st.fill.style.background = envie > 0.5 ? 'var(--down)' : 'var(--up)';
+      // Par défaut la jauge passe du rouge au vert ; « alarm » fait l'inverse (le temps qui manque).
+      const good = b.alarm ? envie > 0.5 : envie <= 0.5;
+      st.fill.style.background = good ? 'var(--up)' : 'var(--down)';
       if (st.done) popIn(st.done, prog(t, at(b.done.at), 0.6, ease.outBack));
     },
   };
@@ -459,10 +466,12 @@
   BLOCKS.cta = {
     build(el, b) {
       el.insertAdjacentHTML('beforeend', `
-        <div class="abs cta-ic">${icon('piggy')}</div>
+        <div class="abs cta-ic">${icon(b.save ? 'bookmark' : 'piggy')}</div>
         <h1 class="abs cta-title">${b.heading || 'Abonne-<em>toi</em>'}</h1>
         <p class="abs cta-sub">${b.sub || 'pour ne rien rater'}</p>
-        <div class="abs sub-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1l-2-2Z"/></svg><span>S'ABONNER</span></div>
+        <div class="abs sub-btn${b.save ? ' save' : ''}">${b.save
+          ? '<svg viewBox="0 0 100 100" fill="currentColor"><path d="M24 8 H76 V94 L50 72 L24 94Z"/></svg><span>SAUVEGARDER</span>'
+          : `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1l-2-2Z"/></svg><span>S'ABONNER</span>`}</div>
         <div class="abs ripple"></div><div class="abs finger"></div>
         <div class="abs handle">${EP.handle.replace(/^(@[^.]+)(\..*)?$/, '$1<span>$2</span>')}</div>
         ${EP.next ? `<div class="abs next"><div class="k">ÉPISODE ${String(EP.ep + 1).padStart(2, '0')}</div><div class="t">${EP.next}</div></div>` : ''}`);
@@ -475,7 +484,7 @@
     },
     render(t, b, st) {
       const last = S[S.length - 1];
-      const s = last.start;
+      const s = (S.find((x) => x.segment === 'cta') || last).start;
       popIn(st.ic, prog(t, s - 0.2, 0.6, ease.outBack), -30);
       rise(st.title, prog(t, s, 0.6, ease.outExpo));
       st.sub.style.opacity = prog(t, s + 0.5, 0.5);
@@ -487,7 +496,7 @@
       st.btn.style.opacity = clamp(bp * 3);
       const done = t >= tap + 0.12;
       st.btn.classList.toggle('done', done);
-      st.txt.textContent = done ? 'ABONNÉ ✓' : "S'ABONNER";
+      st.txt.textContent = b.save ? (done ? 'ENREGISTRÉ ✓' : 'SAUVEGARDER') : (done ? 'ABONNÉ ✓' : "S'ABONNER");
       const fp = prog(t, tap - 0.9, 0.8, ease.inOutCubic);
       st.finger.style.transform = `translate(${lerp(1100, 610, fp)}px, ${lerp(1250, 860, fp)}px) scale(${1 - press * 2})`;
       st.finger.style.opacity = fp > 0 ? 1 - prog(t, tap + 0.6, 0.4) : 0;
@@ -504,7 +513,7 @@
   const segs = VO.segments.map((s) => ({ ...s, block: EP.blocks[s.name] }));
   const stage = document.getElementById('stage');
   stage.insertAdjacentHTML('beforeend', `
-    <div class="abs topbar"><span><b>ÉPARGNE MALIN</b> · ÉP. ${String(EP.ep).padStart(2, '0')}</span><span>${EP.short || ''}</span></div>
+    <div class="abs topbar"><span>${EP.series ? `<b>${EP.series}</b>` : `<b>ÉPARGNE MALIN</b> · ÉP. ${String(EP.ep).padStart(2, '0')}`}</span><span>${EP.short || ''}</span></div>
     <div class="abs track"><i id="progress"></i></div>`);
   const capsLayer = html('<div class="abs cap" id="cap"></div>');
 

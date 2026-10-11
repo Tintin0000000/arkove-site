@@ -9,6 +9,7 @@ Un épisode = serie/epNN.json : script de la voix off (« sentences »), visuels
 (« blocks », un par segment) et texte de publication (« post »).
 """
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -44,7 +45,10 @@ def build():
     posts = []
     for path in episodes():
         e = json.loads(path.read_text(encoding="utf-8"))
-        visual = {k: e.get(k) for k in ("ep", "title", "short", "handle", "next", "blocks", "shakes")}
+        visual = {k: e.get(k) for k in ("ep", "title", "short", "handle", "next", "blocks", "shakes", "series")}
+        if visual["next"]:
+            # espace insécable devant la ponctuation haute : le « ? » ne part jamais seul à la ligne
+            visual["next"] = re.sub(r" ([?!:;])", "\u00a0\\1", visual["next"])
         (HERE / f"{path.stem}.html").write_text(PAGE.format(
             num=f"{e['ep']:02d}", title=e["title"], stem=path.stem,
             ep=json.dumps(visual, ensure_ascii=False)), encoding="utf-8")

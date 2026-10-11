@@ -35,7 +35,7 @@ const page = (e) => `<!DOCTYPE html><html><head><meta charset="utf-8"><style>
   .t { font: italic 400 96px/1 'Instrument Serif', serif; color: #e8c27a; text-wrap: balance; }
   .h { position: absolute; left: 0; right: 0; bottom: 320px; text-align: center; font: 700 34px 'JetBrains Mono', monospace; letter-spacing: 0.16em; color: #a79c88; }
 </style></head><body><div class="bg"></div>
-  <div class="wrap"><div class="ep">ÉPISODE ${String(e.ep).padStart(2, '0')}</div><div class="ic">${icon(e.cover.icon)}</div>
+  <div class="wrap"><div class="ep">${e.cover.chip || 'ÉPISODE ' + String(e.ep).padStart(2, '0')}</div><div class="ic">${icon(e.cover.icon)}</div>
   <div class="k" id="k">${e.cover.kicker.replace(/ ([:?!;])/g, "\u00a0$1")}</div><div class="t">${e.title}</div></div>
   <div class="h">${(e.handle || "@epargne.malin7").toUpperCase()}</div></body></html>`;
 

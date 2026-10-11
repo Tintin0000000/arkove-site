@@ -127,3 +127,53 @@ Marre du découvert en fin de mois ? La méthode des enveloppes : un budget par 
 
 #methodedesenveloppes #budget #epargne #decouvert
 ```
+
+## Épisode 11 · Les abonnements IA
+
+Jour 11 · vidéo : `serie/videos/ep11.mp4`
+
+```
+Cumuler les abonnements IA, c'est vite 720 € par an. Garde un seul abonnement, celui que tu utilises vraiment, et passe les autres en version gratuite. Sauvegarde cette vidéo avant de t'abonner. Et toi, tu paies combien d'IA ?
+
+#ia #abonnements #economiser #argent
+```
+
+## Épisode 12 · Ta banque
+
+Jour 12 · vidéo : `serie/videos/ep12.mp4`
+
+```
+Comment gagne vraiment ta banque ? La marge d'intérêts, les frais, et une commission à chaque paiement par carte. Sauvegarde cette vidéo avant de choisir ta banque. Et toi, tu paies combien de frais par an ?
+
+#banque #fraisbancaires #argent #financepersonnelle
+```
+
+## Épisode 13 · Le dropshipping
+
+Jour 13 · vidéo : `serie/videos/ep13.mp4`
+
+```
+Dropshipping : business rentable ou arnaque ? Pas une arnaque, mais le calcul est souvent serré : pub, livraison, retours, concurrence. Sauvegarde cette vidéo avant de te lancer. Et toi, tu as déjà essayé ?
+
+#dropshipping #sidehustle #business #argent
+```
+
+## Épisode 14 · Les formations IA
+
+Jour 14 · vidéo : `serie/videos/ep14.mp4`
+
+```
+« 5 000 € par mois avec l'IA » ? 3 signaux pour repérer une formation douteuse : des revenus sans preuve, l'urgence, et un business qui vit… de la formation. Sauvegarde cette vidéo avant d'acheter. Et toi, on t'en a déjà proposé une ?
+
+#ia #arnaque #formation #argent
+```
+
+## Épisode 15 · Les applis gratuites
+
+Jour 15 · vidéo : `serie/videos/ep15.mp4`
+
+```
+Comment gagnent vraiment les applis gratuites ? La pub ciblée, le freemium, et l'essai gratuit qui se transforme en abonnement. Sauvegarde cette vidéo avant d'installer une appli. Et toi, tu as déjà oublié un essai gratuit ?
+
+#applis #abonnements #argent #astuceargent
+```

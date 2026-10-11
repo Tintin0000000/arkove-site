@@ -1,0 +1,401 @@
+{
+ "_doc": "Semaine 2 : voir serie/semaine.py.",
+ "ep": 15,
+ "voice": "siwis-medium",
+ "speed": 0.97,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
+ "title": "Les applis gratuites",
+ "series": "COMMENT GAGNE VRAIMENT… · #2",
+ "short": "APPLIS GRATUITES",
+ "next": null,
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "SI C'EST GRATUIT,",
+     "Si c'est gratuit,"
+    ],
+    [
+     "*C'EST TOI",
+     "c'est toi"
+    ],
+    [
+     "LE PRODUIT.",
+     "le produit.",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "VOICI COMMENT",
+     "Voici comment"
+    ],
+    [
+     "*LES APPLIS GRATUITES",
+     "les applications gratuites"
+    ],
+    [
+     "GAGNENT DE L'ARGENT.",
+     "gagnent de l'argent."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 1 :",
+     "Preuve numéro un :"
+    ],
+    [
+     "*LA PUBLICITÉ CIBLÉE.",
+     "la publicité ciblée."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "CE QUE TU REGARDES,",
+     "Ce que tu regardes,"
+    ],
+    [
+     "CE QUE TU CLIQUES :",
+     "ce que tu cliques :"
+    ],
+    [
+     "*ÇA SERT À CIBLER LES PUBS.",
+     "ça sert à cibler les pubs."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "TU NE PAIES PAS EN EUROS :",
+     "Tu ne paies pas en euros :"
+    ],
+    [
+     "*TU PAIES EN ATTENTION.",
+     "tu paies en attention."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 2 :",
+     "Preuve numéro deux :"
+    ],
+    [
+     "*LA VERSION PREMIUM.",
+     "la version premium."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "LA PLUPART RESTENT",
+     "La plupart restent"
+    ],
+    [
+     "EN VERSION GRATUITE ;",
+     "en version gratuite ;"
+    ],
+    [
+     "*UNE PETITE MINORITÉ PAIE",
+     "une petite minorité paie"
+    ],
+    [
+     "POUR TOUS LES AUTRES.",
+     "pour tous les autres."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "POUR TE FAIRE PASSER EN PREMIUM :",
+     "Pour te faire passer en premium :"
+    ],
+    [
+     "*PUBS, LIMITES,",
+     "pubs, limites,"
+    ],
+    [
+     "FONCTIONS BLOQUÉES.",
+     "fonctions bloquées."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 3 :",
+     "Preuve numéro trois :"
+    ],
+    [
+     "*L'ESSAI GRATUIT.",
+     "l'essai gratuit."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "7 JOURS OFFERTS,",
+     "Sept jours offerts,"
+    ],
+    [
+     "PUIS TU PAIES L'ABONNEMENT",
+     "puis tu paies l'abonnement"
+    ],
+    [
+     "*SI TU OUBLIES D'ANNULER.",
+     "si tu oublies d'annuler.",
+     "stamp"
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "ASTUCE :",
+     "Astuce :"
+    ],
+    [
+     "*ARRÊTE L'ABONNEMENT DÈS LE 1ER JOUR :",
+     "arrête l'abonnement dès le premier jour :"
+    ],
+    [
+     "L'ESSAI CONTINUE SOUVENT.",
+     "l'essai continue souvent jusqu'au bout."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "VERDICT :",
+     "Verdict :"
+    ],
+    [
+     "*RIEN N'EST",
+     "rien n'est"
+    ],
+    [
+     "VRAIMENT GRATUIT.",
+     "vraiment gratuit."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "*SAUVEGARDE CETTE VIDÉO",
+     "Sauvegarde cette vidéo"
+    ],
+    [
+     "AVANT D'INSTALLER UNE APPLI.",
+     "avant d'installer une application gratuite."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "chunks": [
+    [
+     "ET TOI,",
+     "Et toi,"
+    ],
+    [
+     "UN ESSAI OUBLIÉ ?",
+     "tu as déjà oublié un essai gratuit ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:2",
+  "9:2"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "gold",
+   "icon": "phone",
+   "lines": [
+    {
+     "text": "Gratuit ?",
+     "at": "0:0-0.6",
+     "size": "xl",
+     "color": "gold"
+    },
+    {
+     "text": "c'est toi",
+     "at": "0:1",
+     "size": "m"
+    },
+    {
+     "text": "le produit",
+     "at": "0:2",
+     "size": "xl",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "Comment gagnent les <em>applis gratuites</em>",
+    "at": "1:1"
+   }
+  },
+  "p1": {
+   "type": "steps",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 1 / 3",
+    "at": "2:0"
+   },
+   "title": {
+    "html": "La pub <em>ciblée</em>",
+    "at": "2:1"
+   },
+   "top": 520,
+   "items": [
+    {
+     "icon": "phone",
+     "label": "Tu utilises l'appli",
+     "sub": "gratuitement",
+     "at": "3:0"
+    },
+    {
+     "icon": "bolt",
+     "label": "Tes clics, tes goûts",
+     "sub": "analysés",
+     "at": "3:1"
+    },
+    {
+     "icon": "coin",
+     "label": "Des pubs ciblées",
+     "sub": "vendues aux annonceurs",
+     "at": "3:2",
+     "color": "gold"
+    }
+   ]
+  },
+  "p2": {
+   "type": "donut",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 2 / 3 · EXEMPLE",
+    "at": "5:0"
+   },
+   "parts": [
+    {
+     "pct": 95,
+     "label": "Gratuit",
+     "color": "ink",
+     "at": "6:0"
+    },
+    {
+     "pct": 5,
+     "label": "Payant",
+     "color": "gold",
+     "at": "6:2"
+    }
+   ],
+   "final": {
+    "big": "5 %",
+    "small": "paient pour tous",
+    "color": "gold",
+    "at": "6:3",
+    "highlight": 1
+   }
+  },
+  "p3": {
+   "type": "timer",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 3 / 3",
+    "at": "8:0"
+   },
+   "icon": "phone",
+   "hours": 7,
+   "unit": "j",
+   "alarm": true,
+   "start": "9:0",
+   "end": "9:2",
+   "meterLabel": "ESSAI GRATUIT RESTANT",
+   "done": {
+    "text": "Abonnement lancé automatiquement",
+    "at": "9:2",
+    "color": "red"
+   }
+  },
+  "verdict": {
+   "type": "icon",
+   "glow": "gold",
+   "icon": "phone",
+   "color": "gold",
+   "at": "11:0",
+   "text": "Rien n'est <em>vraiment gratuit</em>",
+   "textAt": "11:1",
+   "sub": "pub, données ou abonnement",
+   "subAt": "11:2"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold",
+   "save": true,
+   "heading": "<em>Sauvegarde</em>-la",
+   "sub": "avant d'installer une appli"
+  }
+ },
+ "post": {
+  "caption": "Comment gagnent vraiment les applis gratuites ? La pub ciblée, le freemium, et l'essai gratuit qui se transforme en abonnement. Sauvegarde cette vidéo avant d'installer une appli. Et toi, tu as déjà oublié un essai gratuit ?",
+  "hashtags": [
+   "#applis",
+   "#abonnements",
+   "#argent",
+   "#astuceargent"
+  ]
+ },
+ "cover": {
+  "chip": "COMMENT GAGNE… · #2",
+  "kicker": "Comment gagnent les applis gratuites ?",
+  "icon": "phone"
+ }
+}

@@ -1,0 +1,466 @@
+{
+ "_doc": "Semaine 2 : voir serie/semaine.py.",
+ "ep": 12,
+ "voice": "siwis-medium",
+ "speed": 0.97,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
+ "title": "Ta banque",
+ "series": "COMMENT GAGNE VRAIMENT… · #1",
+ "short": "TA BANQUE",
+ "next": "Dropshipping : rentable ou arnaque ?",
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "TON COMPTE EST GRATUIT ?",
+     "Ton compte est gratuit ?"
+    ],
+    [
+     "*TA BANQUE GAGNE",
+     "Ta banque gagne"
+    ],
+    [
+     "QUAND MÊME SUR TOI.",
+     "quand même de l'argent sur toi.",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "VOICI",
+     "Voici"
+    ],
+    [
+     "*SES 3 SOURCES DE REVENUS.",
+     "ses trois sources de revenus."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 1 :",
+     "Preuve numéro un :"
+    ],
+    [
+     "*LA MARGE D'INTÉRÊTS.",
+     "la marge d'intérêts."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "TON COMPTE COURANT",
+     "Ton compte courant"
+    ],
+    [
+     "TE RAPPORTE 0 %.",
+     "te rapporte zéro pour cent."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "ELLE, ELLE PRÊTE",
+     "Elle, elle prête"
+    ],
+    [
+     "*AVEC INTÉRÊTS.",
+     "avec intérêts."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "LA DIFFÉRENCE ?",
+     "La différence ?"
+    ],
+    [
+     "*C'EST POUR ELLE.",
+     "C'est pour elle.",
+     "coin"
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "SUR DES MILLIONS DE COMPTES,",
+     "Sur des millions de comptes,"
+    ],
+    [
+     "*ÇA FAIT DES MILLIARDS.",
+     "ça fait des milliards.",
+     "coin"
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 2 :",
+     "Preuve numéro deux :"
+    ],
+    [
+     "*LES FRAIS.",
+     "les frais."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "CARTE,",
+     "Carte,"
+    ],
+    [
+     "TENUE DE COMPTE,",
+     "tenue de compte,"
+    ],
+    [
+     "*INCIDENTS :",
+     "incidents :"
+    ],
+    [
+     "LA FACTURE GRIMPE.",
+     "la facture grimpe."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "BON RÉFLEXE :",
+     "Bon réflexe :"
+    ],
+    [
+     "*COMPARE LES GRILLES",
+     "compare les grilles"
+    ],
+    [
+     "DE TARIFS DES BANQUES.",
+     "de tarifs des banques."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 3 :",
+     "Preuve numéro trois :"
+    ],
+    [
+     "*CHAQUE PAIEMENT PAR CARTE.",
+     "chaque paiement par carte."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "LE COMMERÇANT PAIE",
+     "Le commerçant paie"
+    ],
+    [
+     "UNE COMMISSION,",
+     "une commission,"
+    ],
+    [
+     "*ET UNE PART",
+     "et une part"
+    ],
+    [
+     "REVIENT À TA BANQUE.",
+     "revient à ta banque."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "SUR 50 € DE COURSES,",
+     "Sur cinquante euros de courses,"
+    ],
+    [
+     "*QUELQUES CENTIMES…",
+     "quelques centimes…"
+    ],
+    [
+     "MAIS À CHAQUE PAIEMENT.",
+     "mais à chaque paiement."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "VERDICT :",
+     "Verdict :"
+    ],
+    [
+     "*GRATUIT",
+     "gratuit"
+    ],
+    [
+     "NE VEUT PAS DIRE SANS PROFIT.",
+     "ne veut pas dire sans profit."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "*SAUVEGARDE CETTE VIDÉO",
+     "Sauvegarde cette vidéo"
+    ],
+    [
+     "AVANT DE CHOISIR TA BANQUE.",
+     "avant de choisir ta banque."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "chunks": [
+    [
+     "ET TOI,",
+     "Et toi,"
+    ],
+    [
+     "COMBIEN DE FRAIS PAR AN ?",
+     "tu paies combien de frais par an ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:2"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "gold",
+   "icon": "bank",
+   "lines": [
+    {
+     "text": "Compte gratuit ?",
+     "at": "0:0-0.6",
+     "size": "m"
+    },
+    {
+     "text": "ta banque",
+     "at": "0:1",
+     "size": "m"
+    },
+    {
+     "text": "gagne",
+     "at": "0:1+0.3",
+     "size": "xl",
+     "hl": true
+    },
+    {
+     "text": "quand même",
+     "at": "0:2",
+     "size": "m"
+    }
+   ],
+   "reveal": {
+    "html": "Ses <em>3 sources</em> de revenus",
+    "at": "1:1"
+   }
+  },
+  "p1": {
+   "type": "bars",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 1 / 3",
+    "at": "2:0"
+   },
+   "title": {
+    "html": "La marge <em>d'intérêts</em>",
+    "at": "2:1"
+   },
+   "label": "Exemple",
+   "format": "pct",
+   "top": 520,
+   "max": 5,
+   "items": [
+    {
+     "label": "Ton compte courant",
+     "sub": "ce qu'il te rapporte",
+     "value": 0,
+     "color": "down",
+     "at": "3:0"
+    },
+    {
+     "label": "Un crédit",
+     "sub": "ce qu'elle facture",
+     "value": 4,
+     "color": "gold",
+     "at": "4:1"
+    }
+   ],
+   "badge": {
+    "text": "MARGE",
+    "small": "POUR LA BANQUE",
+    "at": "5:1",
+    "color": "gold"
+   }
+  },
+  "p2": {
+   "type": "list",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 2 / 3",
+    "at": "7:0"
+   },
+   "title": {
+    "html": "Les <em>frais</em>",
+    "at": "7:1"
+   },
+   "top": 500,
+   "items": [
+    {
+     "icon": "card",
+     "label": "Cotisation carte",
+     "sub": "exemple",
+     "value": "45 €/an",
+     "at": "8:0",
+     "color": "down"
+    },
+    {
+     "icon": "bank",
+     "label": "Tenue de compte",
+     "sub": "exemple",
+     "value": "24 €/an",
+     "at": "8:1",
+     "color": "down"
+    },
+    {
+     "icon": "alert",
+     "label": "Rejet de prélèvement",
+     "sub": "jusqu'à 20 € chacun",
+     "value": "20 €",
+     "at": "8:2",
+     "color": "down"
+    }
+   ],
+   "total": {
+    "label": "PAR AN",
+    "color": "down",
+    "stages": [
+     {
+      "to": 89,
+      "at": "8:3",
+      "label": "PAR AN · EXEMPLE"
+     }
+    ]
+   }
+  },
+  "p3": {
+   "type": "steps",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 3 / 3",
+    "at": "10:0"
+   },
+   "title": {
+    "html": "La commission <em>d'interchange</em>",
+    "at": "10:1"
+   },
+   "top": 520,
+   "items": [
+    {
+     "icon": "card",
+     "label": "Tu paies 50 € par carte",
+     "sub": "chez un commerçant",
+     "at": "11:0"
+    },
+    {
+     "icon": "basket",
+     "label": "Commission du commerçant",
+     "sub": "sur chaque paiement",
+     "at": "11:1"
+    },
+    {
+     "icon": "bank",
+     "label": "Une part pour ta banque",
+     "sub": "0,2 à 0,3 % max. en Europe",
+     "at": "11:2",
+     "color": "gold"
+    }
+   ]
+  },
+  "verdict": {
+   "type": "icon",
+   "glow": "gold",
+   "icon": "bank",
+   "color": "gold",
+   "at": "13:0",
+   "text": "Gratuit ≠ <em>sans profit</em>",
+   "textAt": "13:1",
+   "sub": "compare les grilles de tarifs",
+   "subAt": "13:2"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold",
+   "save": true,
+   "heading": "<em>Sauvegarde</em>-la",
+   "sub": "avant de choisir ta banque"
+  }
+ },
+ "post": {
+  "caption": "Comment gagne vraiment ta banque ? La marge d'intérêts, les frais, et une commission à chaque paiement par carte. Sauvegarde cette vidéo avant de choisir ta banque. Et toi, tu paies combien de frais par an ?",
+  "hashtags": [
+   "#banque",
+   "#fraisbancaires",
+   "#argent",
+   "#financepersonnelle"
+  ]
+ },
+ "cover": {
+  "chip": "COMMENT GAGNE… · #1",
+  "kicker": "Comment gagne vraiment ta banque ?",
+  "icon": "bank"
+ }
+}
