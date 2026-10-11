@@ -395,7 +395,7 @@
     })(t0);
   };
 
-  /* ---------- Horaires (à confirmer avec Pierre-Loup) ---------- */
+  /* ---------- Horaires (à confirmer avec Pierre-Lou) ---------- */
   // Index 0 = dimanche. Plages en heures décimales.
   PL.HOURS = [
     [],

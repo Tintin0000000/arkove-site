@@ -1,6 +1,6 @@
 /* ==========================================================================
    Stock de véhicules — EXEMPLES pour la maquette.
-   À remplacer par le stock réel de Pierre-Loup.
+   À remplacer par le stock réel de Pierre-Lou.
 
    Photos : déposer les fichiers dans assets/photos/vehicules/
    en les nommant  <id>-1.jpg, <id>-2.jpg … <id>-6.jpg

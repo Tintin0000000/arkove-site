@@ -72,7 +72,7 @@
     input.setAttribute('aria-invalid', !!msg);
   }
   var rules = {
-    nom: function (v) { return v.trim().length < 2 ? 'Indiquez votre nom pour que Pierre-Loup sache qui rappeler.' : ''; },
+    nom: function (v) { return v.trim().length < 2 ? 'Indiquez votre nom pour que Pierre-Lou sache qui rappeler.' : ''; },
     tel: function (v) { return v.replace(/\D/g, '').length < 10 ? 'Indiquez un numéro à 10 chiffres, par exemple 06 12 34 56 78.' : ''; },
     email: function (v) { return v && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? 'Cette adresse e-mail semble incomplète.' : ''; }
   };
@@ -100,12 +100,12 @@
 
     // Maquette : aucun envoi réel. Brancher ici un service (Formspree, Brevo, e-mail…)
     var texts = {
-      achat: 'Pierre-Loup vous rappelle dans la journée pour organiser la visite.',
-      reprise: 'Pierre-Loup vous rappelle sous 24 h avec une estimation de reprise.',
-      depot: 'Pierre-Loup vous rappelle pour convenir du dépôt de votre voiture.',
-      financement: 'Pierre-Loup vous rappelle avec une proposition de financement.',
-      recherche: 'Pierre-Loup lance la recherche et vous tient au courant.',
-      autre: 'Pierre-Loup vous répond dans la journée.'
+      achat: 'Pierre-Lou vous rappelle dans la journée pour organiser la visite.',
+      reprise: 'Pierre-Lou vous rappelle sous 24 h avec une estimation de reprise.',
+      depot: 'Pierre-Lou vous rappelle pour convenir du dépôt de votre voiture.',
+      financement: 'Pierre-Lou vous rappelle avec une proposition de financement.',
+      recherche: 'Pierre-Lou lance la recherche et vous tient au courant.',
+      autre: 'Pierre-Lou vous répond dans la journée.'
     };
     document.getElementById('done-text').textContent = texts[currentDemande()];
     done.classList.add('is-on');

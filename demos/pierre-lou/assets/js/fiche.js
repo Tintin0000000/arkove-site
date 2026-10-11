@@ -12,13 +12,13 @@
 
   if (!v) {
     root.innerHTML = '<section class="notfound"><div class="wrap"><h1 class="h2">Ce véhicule n\'est plus en ligne.</h1>' +
-      '<p class="lead" style="margin-top:20px">Il a peut-être été vendu. Parcourez le stock actuel ou demandez à Pierre-Loup de vous trouver un modèle équivalent.</p>' +
+      '<p class="lead" style="margin-top:20px">Il a peut-être été vendu. Parcourez le stock actuel ou demandez à Pierre-Lou de vous trouver un modèle équivalent.</p>' +
       '<p style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="vehicules.html">Voir les véhicules ' + ARROW + '</a>' +
       '<a class="btn btn--ghost" href="contact.html?demande=recherche">Lancer une recherche</a></p></div></section>';
     return;
   }
 
-  document.title = v.marque + ' ' + v.modele + ' ' + v.annee + ' · Pierre-Loup Automobiles';
+  document.title = v.marque + ' ' + v.modele + ' ' + v.annee + ' · Pierre-Lou Automobiles';
 
   var VIEWS = ['Vue 3/4 avant', 'Profil', 'Vue 3/4 arrière', 'Intérieur, poste de conduite', 'Sièges arrière', 'Coffre'];
   var slides = VIEWS.map(function (label, i) {

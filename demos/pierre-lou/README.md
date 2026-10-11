@@ -1,6 +1,6 @@
-# Pierre-Loup Automobiles — maquette V1
+# Pierre-Lou Automobiles — maquette V1
 
-Premier jet du site vitrine pour Pierre-Loup (achat-revente de véhicules d'occasion, Rennes).
+Premier jet du site vitrine pour Pierre-Lou (achat-revente de véhicules d'occasion, Rennes).
 Site statique : HTML, CSS et JavaScript, sans dépendance ni étape de build. Seule la police Archivo est chargée depuis Google Fonts.
 
 ## Pages
@@ -8,7 +8,7 @@ Site statique : HTML, CSS et JavaScript, sans dépendance ni étape de build. Se
 | Fichier | Contenu |
 |---|---|
 | `index.html` | Accueil : intro rideau métallique + plaque animée, titre qui s'étire au survol, vitrine glissable, services, présentation, avis, estimation de reprise par plaque |
-| `garage.html` | Présentation : Pierre-Loup, histoire, méthode en 4 étapes (défilement horizontal), engagements, galerie |
+| `garage.html` | Présentation : Pierre-Lou, histoire, méthode en 4 étapes (défilement horizontal), engagements, galerie |
 | `vehicules.html` | Tout le stock : recherche, filtres (marque, énergie, boîte, budget, km, année), tri, réarrangement animé |
 | `vehicule.html?id=…` | Fiche véhicule : galerie 6 photos, caractéristiques, équipements, simulateur de mensualité, véhicules similaires |
 | `contact.html` | Formulaire qui s'adapte à la demande (achat, reprise, dépôt-vente, financement, recherche), horaires avec statut ouvert/fermé en direct, carte |
@@ -18,7 +18,7 @@ Les liens se pré-remplissent : `contact.html?demande=reprise&immat=AB-123-CD`, 
 ## Voir le site en local
 
 ```bash
-cd demos/pierre-loup
+cd demos/pierre-lou
 npx http-server -p 8080 .
 # puis ouvrir http://localhost:8080
 ```
@@ -37,16 +37,16 @@ Chaque emplacement photo affiche son nom de fichier. Il suffit de déposer le fi
 | Fichier | Où |
 |---|---|
 | `accueil-vedette.jpg` | Grande photo de l'accueil (paysage 16:9) |
-| `garage/portrait-pierre-loup.jpg` | Accueil, présentation (vertical 4:5) |
+| `garage/portrait-pierre-lou.jpg` | Accueil, présentation (vertical 4:5) |
 | `garage/service-achat.jpg`, `service-reprise.jpg`, `service-depot.jpg`, `service-financement.jpg`, `service-recherche.jpg` | Aperçus au survol des services (4:3) |
-| `garage/garage-facade.jpg`, `garage-pierre-loup.jpg`, `garage-parc.jpg` | En-tête de la page Le garage |
+| `garage/garage-facade.jpg`, `garage-pierre-lou.jpg`, `garage-parc.jpg` | En-tête de la page Le garage |
 | `garage/methode-1-selection.jpg` à `methode-4-livraison.jpg` | Les 4 étapes de la méthode (16:9) |
 | `garage/galerie-1.jpg` à `galerie-5.jpg` | Galerie « Le garage en images » |
 
-## À récupérer auprès de Pierre-Loup
+## À récupérer auprès de Pierre-Lou
 
 - [ ] Nom commercial exact et logo éventuel (la plaque `PL-035-RN` sert de logo provisoire)
-- [ ] Adresse, téléphone, e-mail (actuellement fictifs : `02 99 00 00 00`, `contact@pierreloup-auto.fr`)
+- [ ] Adresse, téléphone, e-mail (actuellement fictifs : `02 99 00 00 00`, `contact@pierrelou-auto.fr`)
 - [ ] Horaires (dans `assets/js/main.js`, tableau `PL.HOURS`)
 - [ ] Stock réel (dans `assets/js/data.js` : les 12 véhicules actuels sont des exemples)
 - [ ] Durées de garantie, services proposés (dépôt-vente, LOA…), taux de financement indicatif (`PL.TAUX`)
