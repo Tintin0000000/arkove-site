@@ -131,6 +131,22 @@
     }
   }
 
+  /* ---------- Paramètres de page ----------
+     Certains hébergeurs (aperçus, iframes) retirent la query string :
+     on la mémorise au clic et on la relit en secours. */
+  function pageKey(path) { return 'pl-q:' + (path.split('/').pop() || 'index.html'); }
+  PL.rememberQuery = function (url) {
+    try {
+      if (url.search) sessionStorage.setItem(pageKey(url.pathname), url.search);
+      else sessionStorage.removeItem(pageKey(url.pathname));
+    } catch (e) {}
+  };
+  PL.params = function () {
+    var s = location.search;
+    if (!s || s.length < 2) { try { s = sessionStorage.getItem(pageKey(location.pathname)) || ''; } catch (e) {} }
+    return new URLSearchParams(s);
+  };
+
   /* ---------- Rideau métallique : sortie ---------- */
   document.addEventListener('click', function (e) {
     if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
@@ -138,6 +154,7 @@
     if (!a || a.target || a.hasAttribute('download')) return;
     var url = new URL(a.href, location.href);
     if (url.origin !== location.origin || !/^https?:|^file:/.test(url.protocol)) return;
+    PL.rememberQuery(url);
     if (url.pathname === location.pathname && url.search === location.search) return; // ancre interne
     if (!shutter || reduced) return;
     e.preventDefault();

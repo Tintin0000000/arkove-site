@@ -3,7 +3,7 @@
   var PL = window.PL, e = PL.esc;
   var root = document.getElementById('fiche');
   if (!root) return;
-  var id = new URLSearchParams(location.search).get('id');
+  var id = PL.params().get('id');
   var v = PL.byId(id) || (id ? null : PL.vehicles[0]);
 
   var ARROW = '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>';

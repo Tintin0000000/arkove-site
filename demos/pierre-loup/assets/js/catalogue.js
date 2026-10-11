@@ -187,7 +187,7 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && panel.classList.contains('is-open')) drawer(false); });
 
   /* ---------- Filtres reçus par l'URL (?carburant=Hybride&marque=Peugeot&q=…) ---------- */
-  var params = new URLSearchParams(location.search);
+  var params = PL.params();
   if (params.get('q')) $('q').value = params.get('q');
   if (params.get('marque')) $('marque').value = params.get('marque');
   ['carburant', 'boite'].forEach(function (k) {

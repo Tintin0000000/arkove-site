@@ -142,6 +142,7 @@
       }
       err.textContent = '';
       var url = 'contact.html?demande=reprise&immat=' + encodeURIComponent(input.value);
+      PL.rememberQuery(new URL(url, location.href));
       if (PL.reduced) { location.href = url; return; }
       try { sessionStorage.setItem('pl-nav', '1'); } catch (x) {}
       document.documentElement.classList.add('is-leaving');

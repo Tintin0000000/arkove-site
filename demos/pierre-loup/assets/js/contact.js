@@ -3,7 +3,7 @@
   var PL = window.PL;
   var form = document.getElementById('contact-form');
   if (!form) return;
-  var params = new URLSearchParams(location.search);
+  var params = PL.params();
 
   /* ---------- Horaires ---------- */
   var DAYS = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
