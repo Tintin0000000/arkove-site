@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr" data-page="fiche">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fiche véhicule · Pierre-Loup Automobiles</title>
+  <meta name="description" content="Photos, caractéristiques, équipements et simulation de financement.">
+  <meta name="theme-color" content="#16213F">
+  <meta property="og:title" content="Fiche véhicule · Pierre-Loup Automobiles">
+  <meta property="og:description" content="Photos, caractéristiques, équipements et simulation de financement.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='1' y='7' width='30' height='18' rx='3' fill='%23FAFBFC' stroke='%23121A2E' stroke-width='2'/%3E%3Crect x='2' y='8' width='6' height='16' fill='%231D43B8'/%3E%3Ctext x='19.5' y='21' font-family='Arial' font-weight='700' font-size='11' fill='%23121A2E' text-anchor='middle'%3EPL%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function (d) {
+      var h = d.documentElement; h.classList.add('js');
+      try {
+        if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        var s = sessionStorage;
+        if (s.getItem('pl-nav') || (h.dataset.page === 'home' && !s.getItem('pl-intro'))) h.classList.add('is-entering');
+      } catch (e) {}
+    })(document);
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <div class="shutter" id="shutter" aria-hidden="true">
+    <span class="plate"><span class="plate-band"><svg viewBox="0 0 20 20" fill="#F4BE1A" aria-hidden="true"><circle cx="17" cy="10" r="1.25"/><circle cx="16.06" cy="13.5" r="1.25"/><circle cx="13.5" cy="16.06" r="1.25"/><circle cx="10" cy="17" r="1.25"/><circle cx="6.5" cy="16.06" r="1.25"/><circle cx="3.94" cy="13.5" r="1.25"/><circle cx="3" cy="10" r="1.25"/><circle cx="3.94" cy="6.5" r="1.25"/><circle cx="6.5" cy="3.94" r="1.25"/><circle cx="10" cy="3" r="1.25"/><circle cx="13.5" cy="3.94" r="1.25"/><circle cx="16.06" cy="6.5" r="1.25"/></svg><b>F</b></span><span class="plate-num" data-flap="PL-035-RN">PL-035-RN</span><span class="plate-band plate-band--r"><i></i><b>35</b></span></span>
+    <p class="shutter-sub">Pierre-Loup Automobiles, Rennes</p>
+    <span class="shutter-handle"></span>
+  </div>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Pierre-Loup Automobiles, retour à l'accueil">
+        <span class="plate"><span class="plate-band"><svg viewBox="0 0 20 20" fill="#F4BE1A" aria-hidden="true"><circle cx="17" cy="10" r="1.25"/><circle cx="16.06" cy="13.5" r="1.25"/><circle cx="13.5" cy="16.06" r="1.25"/><circle cx="10" cy="17" r="1.25"/><circle cx="6.5" cy="16.06" r="1.25"/><circle cx="3.94" cy="13.5" r="1.25"/><circle cx="3" cy="10" r="1.25"/><circle cx="3.94" cy="6.5" r="1.25"/><circle cx="6.5" cy="3.94" r="1.25"/><circle cx="10" cy="3" r="1.25"/><circle cx="13.5" cy="3.94" r="1.25"/><circle cx="16.06" cy="6.5" r="1.25"/></svg><b>F</b></span><span class="plate-num">PL-035-RN</span><span class="plate-band plate-band--r"><i></i><b>35</b></span></span>
+        <span class="brand-name">Pierre-Loup Automobiles<small>Occasions à Rennes</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="garage.html">Le garage</a><a href="vehicules.html">Véhicules</a><a href="contact.html">Contact</a></nav>
+      <div class="nav-phone">
+        <a class="btn btn--sm magnetic" href="tel:+33299000000"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 2.5h3l1.5 4-2 1.3a9 9 0 0 0 4.7 4.7l1.3-2 4 1.5v3a2 2 0 0 1-2 2A14.5 14.5 0 0 1 3 4.5a2 2 0 0 1 2-2z" stroke-linejoin="round"/></svg>02 99 00 00 00</a>
+        <button class="nav-burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="road" aria-hidden="true"><i></i></div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Navigation mobile"><a class="big" href="index.html">Accueil</a><a class="big" href="garage.html">Le garage</a><a class="big" href="vehicules.html">Véhicules</a><a class="big" href="contact.html">Contact</a></nav>
+    <div class="mobile-menu-foot">
+      <p><span data-open></span></p>
+      <a href="tel:+33299000000">02 99 00 00 00</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div id="fiche">
+      <section class="notfound">
+        <div class="wrap">
+          <h1 class="h2">Chargement de la fiche…</h1>
+          <p class="lead">Si rien ne s'affiche, <a class="link" href="vehicules.html">revenez à la liste des véhicules</a>.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer on-dark">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-cta">
+          <p class="h3">Une voiture vous plaît&nbsp;? Venez l'essayer.</p>
+          <a class="btn magnetic" href="contact.html?demande=achat">Réserver un essai <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div>
+          <h4>Le garage</h4>
+          <ul>
+            <li>[Adresse à confirmer]<br>35000 Rennes</li>
+            <li><span data-open></span></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="garage.html">Le garage</a></li>
+            <li><a href="vehicules.html">Véhicules</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nous joindre</h4>
+          <ul>
+            <li><a href="tel:+33299000000">02 99 00 00 00</a></li>
+            <li><a href="mailto:contact@pierreloup-auto.fr">contact@pierreloup-auto.fr</a></li>
+            <li><a href="contact.html?demande=reprise">Faire estimer ma voiture</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-giant" aria-hidden="true">Pierre-Loup</p>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Pierre-Loup Automobiles. <a href="#">Mentions légales</a></span>
+        <span class="badge-v1">Maquette V1 : textes, photos et coordonnées à valider</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/fiche.js"></script>
+</body>
+</html>
