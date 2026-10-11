@@ -6,8 +6,8 @@
  "lead": 0.3,
  "gap": 0.18,
  "duration": "auto",
- "tail": 3.2,
- "handle": "@epargne.malin",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
  "title": "Le défi des 52 semaines",
  "short": "DÉFI 52 SEMAINES",
  "next": "La règle des 72 heures",
@@ -22,12 +22,12 @@
      "stamp"
     ],
     [
-     "EN UN AN,",
-     "en un an,"
+     "DE CÔTÉ EN UN AN,",
+     "de côté en un an,"
     ],
     [
-     "SANS TE PRIVER.",
-     "sans te priver."
+     "SANS LE SENTIR.",
+     "sans le sentir."
     ]
    ]
   },
@@ -139,12 +139,16 @@
    "pause": 0.1,
    "chunks": [
     [
-     "ABONNE-TOI",
-     "Abonne-toi"
+     "ON LE COMMENCE",
+     "On le commence"
     ],
     [
-     "POUR RELEVER LE DÉFI.",
-     "pour relever le défi."
+     "*LUNDI ENSEMBLE ?",
+     "lundi ensemble ?"
+    ],
+    [
+     "DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
     ]
    ]
   }
@@ -157,7 +161,7 @@
    "lines": [
     {
      "text": "1 378 €",
-     "at": "0:0",
+     "at": "0:0-0.6",
      "size": "xl",
      "color": "gold"
     },
@@ -167,9 +171,10 @@
      "size": "m"
     },
     {
-     "text": "sans te priver",
+     "text": "sans le sentir",
      "at": "0:2",
-     "size": "m"
+     "size": "m",
+     "hl": true
     }
    ],
    "reveal": {
@@ -229,20 +234,22 @@
   "cta": {
    "type": "cta",
    "glow": "gold",
-   "sub": "pour relever le défi"
+   "heading": "Lundi, <em>on commence</em> ?",
+   "sub": "Dis-le en commentaire"
   }
  },
  "post": {
-  "caption": "Le défi des 52 semaines : 1 € la semaine 1, 2 € la semaine 2… jusqu'à 52 €. Résultat : 1 378 € en un an. Qui le commence avec moi lundi ? 💪",
+  "caption": "Le défi des 52 semaines : 1 € la première semaine, 2 € la deuxième… 52 € la dernière. Résultat : 1 378 € de côté en un an. On le commence lundi ensemble ? 💪",
   "hashtags": [
    "#defi52semaines",
-   "#challengeepargne",
+   "#challenge",
    "#epargne",
-   "#argent",
-   "#financepersonnelle",
-   "#budget",
-   "#astuceargent",
-   "#apprendresurtiktok"
+   "#economiser"
   ]
- }
+ },
+ "cover": {
+  "kicker": "1 378 € en un an",
+  "icon": "calendar"
+ },
+ "shakes": []
 }

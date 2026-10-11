@@ -16,7 +16,7 @@ def post(caption, extra):
     return {"caption": caption, "hashtags": extra + BASE}
 
 COMMON = {"voice": "siwis-medium", "speed": 1.04, "lead": 0.3, "gap": 0.18, "duration": "auto", "tail": 3.2,
-          "handle": "@epargne.malin"}
+          "handle": "@epargne.malin7"}
 CTA = lambda sub="pour la suite": {"segment": "cta", "sfx": "whoosh", "pause": 0.1,
     "chunks": [["ABONNE-TOI", "Abonne-toi"], [sub.upper() + ".", sub + "."]]}
 
@@ -307,7 +307,7 @@ insert_before_cta(e, [
 
 # 07 : toujours envie ? achète
 e = eps[7]; k = n_cta(e)
-insert_before_cta(e, [{"segment": "tip", "sfx": "whoosh", "pause": 0.1, "chunks": [["ET SI L'ENVIE", "Et si l'envie"], ["EST TOUJOURS LÀ ?", "est toujours là ?"], ["*ACHÈTE,", "Achète,"], ["SANS CULPABILISER.", "sans culpabiliser."]]}],
+insert_before_cta(e, [{"segment": "tip", "sfx": "whoosh", "pause": 0.1, "chunks": [["TOUJOURS ENVIE", "Toujours envie"], ["APRÈS 3 JOURS ?", "après trois jours ?"], ["*ACHÈTE,", "Achète,"], ["SANS CULPABILISER.", "sans culpabiliser."]]}],
   "tip", {"type": "icon", "glow": "green", "icon": "check", "color": "up", "at": f"{k}:0", "text": "Toujours envie ? <em>Achète.</em>", "textAt": f"{k}:2", "sub": "sans culpabiliser", "subAt": f"{k}:3"})
 
 # 08 : comparer le taux de son livret
@@ -320,7 +320,7 @@ e["blocks"]["icon"]["subAt"] = f"{k}:0"
 e = eps[9]
 e["sentences"][1]["chunks"] = [["EMMA COMMENCE", "Emma commence"], ["*À 25 ANS.", "à vingt-cinq ans."]]
 e["sentences"][2]["chunks"] = [["LUCAS", "Lucas"], ["À 35 ANS.", "à trente-cinq ans."]]
-e["sentences"][3]["chunks"] = [["TOUS LES DEUX", "Tous les deux"], ["INVESTISSENT À 5 %", "investissent à cinq pour cent par an,"], ["JUSQU'À 65 ANS.", "jusqu'à soixante-cinq ans."]]
+e["sentences"][3]["chunks"] = [["MÊME RENDEMENT :", "Même rendement :"], ["*5 % PAR AN,", "cinq pour cent par an,"], ["JUSQU'À 65 ANS.", "jusqu'à soixante-cinq ans."]]
 e["sentences"][4]["chunks"] = [["EMMA :", "Emma :"], ["*152 000 €.", "cent cinquante-deux mille euros.", "coin"]]
 e["sentences"][5]["chunks"] = [["LUCAS :", "Lucas :"], ["83 000 €.", "quatre-vingt-trois mille euros."]]
 k = n_cta(e)
@@ -341,6 +341,126 @@ k = n_cta(e)
 insert_before_cta(e, [{"segment": "icon", "chunks": [["ÇA MARCHE AUSSI", "Ça marche aussi"], ["*AVEC PLUSIEURS COMPTES.", "avec plusieurs comptes."]]}])
 e["blocks"]["icon"]["sub"] = "Ça marche aussi avec plusieurs comptes"
 e["blocks"]["icon"]["subAt"] = f"{k}:0"
+
+# ---------------------------------------------------------------- V2 : refonte pour la rétention
+# - le choc (chiffre ou situation) est à l'écran dès la 1re image ;
+# - fin courte : une question pour faire commenter, au lieu de 4 s d'écran fixe ;
+# - mots-clés de recherche dans la voix et la légende, 4 hashtags ciblés ;
+# - « cover » : ce qu'affiche la couverture du profil.
+COMMON["tail"] = 1.6
+QUESTION = lambda q_show, q_say: {"segment": "cta", "sfx": "whoosh", "pause": 0.1, "chunks": [
+    ["ET TOI,", "Et toi,"], [q_show, q_say], ["*DIS-LE EN COMMENTAIRE.", "Dis-le en commentaire."]]}
+CTA_Q = {"type": "cta", "glow": "gold", "heading": "Et <em>toi</em> ?", "sub": "Dis-le en commentaire"}
+
+def v2(n, hook0, hook1, lines, reveal, question, caption, tags, cover, cta=None):
+    e = eps[n]
+    e["sentences"][0] = hook0
+    if hook1 is not None:
+        e["sentences"][1] = hook1
+    e["sentences"][-1] = question
+    hk = e["blocks"]["hook"]
+    hk["lines"] = lines
+    if reveal:
+        hk["reveal"] = reveal
+    else:
+        hk.pop("reveal", None)
+    e["blocks"]["cta"] = cta or CTA_Q
+    e["post"] = {"caption": caption, "hashtags": tags}
+    e["cover"] = cover
+    e["shakes"] = [s for s in e.get("shakes", []) if not s.startswith("0:")] + [next(f"0:{i}" for i, c in enumerate(hook0["chunks"]) if len(c) > 2 and c[2] == "boom")] if any(len(c) > 2 and c[2] == "boom" for c in hook0["chunks"]) else e.get("shakes", [])
+
+v2(2,
+   {"segment": "hook", "sfx": "whoosh", "chunks": [["2 000 € DE SALAIRE", "Deux mille euros de salaire,"], ["*ET PLUS RIEN LE 30 ?", "et plus rien le trente ?", "boom"]]},
+   {"segment": "hook", "chunks": [["VOICI OÙ DOIT ALLER", "Voici où doit aller"], ["*CHAQUE EURO.", "chaque euro."]]},
+   [{"text": "2 000 €", "at": "0:0-0.6", "size": "xl", "color": "gold"}, {"text": "de salaire", "at": "0:0+0.6", "size": "m"},
+    {"text": "plus rien", "at": "0:1", "size": "xl", "hl": True}, {"text": "le 30 ?", "at": "0:1+0.4", "size": "m"}],
+   {"html": "La règle <em>50/30/20</em>", "at": "1:0"},
+   QUESTION("TU ÉPARGNES COMBIEN ?", "tu épargnes combien ?"),
+   "Comment répartir son salaire ? La règle 50/30/20 en 20 secondes : 50 % besoins, 30 % envies, 20 % épargne. Et toi, tu épargnes combien par mois ?",
+   ["#budget", "#epargne", "#regle503020", "#financepersonnelle"],
+   {"kicker": "Où va ton salaire ?", "icon": "wallet"})
+
+v2(3,
+   {"segment": "hook", "sfx": "whoosh", "chunks": [["TU ATTENDS", "Tu attends"], ["LA FIN DU MOIS", "la fin du mois"], ["*POUR ÉPARGNER ?", "pour épargner ?"]]},
+   {"segment": "hook", "chunks": [["*VOILÀ POURQUOI", "Voilà pourquoi"], ["TU N'Y ARRIVES JAMAIS.", "tu n'y arrives jamais.", "boom"]]},
+   [{"text": "Tu attends", "at": "0:0-0.6", "size": "m"}, {"text": "la fin du mois", "at": "0:0-0.3"}, {"text": "pour épargner ?", "at": "0:0+0.1", "size": "m", "hl": True}],
+   {"html": "Tu n'y arrives <em>jamais.</em>", "at": "1:1"},
+   QUESTION("TU AS UN VIREMENT AUTO ?", "tu as un virement automatique ?"),
+   "Comment épargner chaque mois sans y penser : paie-toi en premier, avec un virement automatique le jour de la paie. Et toi, tu l'as déjà mis en place ?",
+   ["#epargne", "#budget", "#astuceargent", "#financepersonnelle"],
+   {"kicker": "+2 400 € par an, sans effort", "icon": "bolt"})
+eps[3]["shakes"] = ["1:1"]
+
+v2(4,
+   {"segment": "hook", "sfx": "whoosh", "chunks": [["TU PAIES PEUT-ÊTRE", "Tu paies peut-être"], ["*624 € PAR AN", "six cent vingt-quatre euros par an"], ["POUR RIEN.", "pour rien.", "boom"]]},
+   None,
+   [{"text": "624 €", "at": "0:0-0.6", "size": "xl", "color": "gold"}, {"text": "par an", "at": "0:1", "size": "m"}, {"text": "pour rien ?", "at": "0:2", "size": "xl", "hl": True}],
+   {"html": "Tes abonnements <em>oubliés</em>", "at": "1:0"},
+   QUESTION("TU EN AS COMBIEN ?", "tu en as combien ?"),
+   "Les abonnements oubliés, c'est vite 50 € par mois qui partent sans que tu le voies : 624 € par an. Fais le tri ce soir. Et toi, tu paies combien d'abonnements ?",
+   ["#abonnements", "#economiser", "#budget", "#epargne"],
+   {"kicker": "624 € par an pour rien", "icon": "phone"})
+
+v2(5,
+   {"segment": "hook", "sfx": "whoosh", "chunks": [["CE CAFÉ", "Ce café"], ["TE COÛTE", "te coûte"], ["*10 000 €.", "dix mille euros.", "boom"]]},
+   None,
+   [{"text": "Ce café", "at": "0:0-0.6", "size": "m"}, {"text": "te coûte", "at": "0:0-0.3", "size": "m"}, {"text": "10 000 €", "at": "0:0+0.1", "size": "xl", "hl": True}],
+   None,
+   QUESTION("COMBIEN DE CAFÉS PAR JOUR ?", "combien de cafés par jour ?"),
+   "3 € par jour, c'est plus de 10 000 € en 10 ans. Pas besoin d'arrêter le café : un sur deux à la maison suffit. Et toi, tu en bois combien par jour ? ☕",
+   ["#economiser", "#budget", "#astuceargent", "#epargne"],
+   {"kicker": "10 000 € de café", "icon": "coffee"})
+
+v2(6,
+   {"segment": "hook", "sfx": "whoosh", "chunks": [["*1 378 €", "Mille trois cent soixante-dix-huit euros", "stamp"], ["DE CÔTÉ EN UN AN,", "de côté en un an,"], ["SANS LE SENTIR.", "sans le sentir."]]},
+   None,
+   [{"text": "1 378 €", "at": "0:0-0.6", "size": "xl", "color": "gold"}, {"text": "en un an", "at": "0:1", "size": "m"}, {"text": "sans le sentir", "at": "0:2", "size": "m", "hl": True}],
+   {"html": "Le défi des <em>52 semaines</em>", "at": "1:1"},
+   {"segment": "cta", "sfx": "whoosh", "pause": 0.1, "chunks": [["ON LE COMMENCE", "On le commence"], ["*LUNDI ENSEMBLE ?", "lundi ensemble ?"], ["DIS-LE EN COMMENTAIRE.", "Dis-le en commentaire."]]},
+   "Le défi des 52 semaines : 1 € la première semaine, 2 € la deuxième… 52 € la dernière. Résultat : 1 378 € de côté en un an. On le commence lundi ensemble ? 💪",
+   ["#defi52semaines", "#challenge", "#epargne", "#economiser"],
+   {"kicker": "1 378 € en un an", "icon": "calendar"},
+   cta={"type": "cta", "glow": "gold", "heading": "Lundi, <em>on commence</em> ?", "sub": "Dis-le en commentaire"})
+
+v2(7,
+   {"segment": "hook", "sfx": "whoosh", "chunks": [["CE PETIT TRUC", "Ce petit truc"], ["ÉVITE", "évite"], ["*LES ACHATS INUTILES.", "les achats inutiles.", "boom"]]},
+   {"segment": "hook", "chunks": [["*LA RÈGLE DES 72 HEURES.", "La règle des soixante-douze heures."]]},
+   [{"text": "Ce petit truc", "at": "0:0-0.6", "size": "m"}, {"text": "évite", "at": "0:0-0.35", "size": "m"}, {"text": "les achats", "at": "0:0-0.1", "hl": True}, {"text": "inutiles", "at": "0:0+0.2", "size": "xl"}],
+   {"html": "La règle des <em>72 heures</em>", "at": "1:0"},
+   QUESTION("TON DERNIER ACHAT INUTILE ?", "c'est quoi ton dernier achat inutile ?"),
+   "Comment arrêter les achats impulsifs : la règle des 72 heures. Mets au panier, attends 3 jours : souvent, l'envie passe. Et toi, c'est quoi ton dernier achat inutile ? 🛒",
+   ["#achatimpulsif", "#economiser", "#budget", "#epargne"],
+   {"kicker": "Stop aux achats inutiles", "icon": "cart"})
+
+v2(8,
+   {"segment": "hook", "sfx": "whoosh", "chunks": [["TON ARGENT QUI DORT", "Ton argent qui dort"], ["*PERD 18 %", "perd dix-huit pour cent", "boom"], ["EN 10 ANS.", "en dix ans."]]},
+   None,
+   [{"text": "−18 %", "at": "0:0-0.6", "size": "xl", "hl": True}, {"text": "ton argent qui dort", "at": "0:0+0.3", "size": "m"}, {"text": "en 10 ans", "at": "0:2", "size": "m"}],
+   {"html": "La faute à <em>l'inflation</em>", "at": "1:1"},
+   QUESTION("TON ARGENT DORT OÙ ?", "ton argent dort où ?"),
+   "Avec 2 % d'inflation par an, 1 000 € qui dorment perdent 18 % de pouvoir d'achat en 10 ans. Compare le taux de ton livret à l'inflation. Et toi, ton épargne rapporte combien ?",
+   ["#inflation", "#epargne", "#argent", "#financepersonnelle"],
+   {"kicker": "−18 % en 10 ans", "icon": "chartDown"})
+
+v2(9,
+   {"segment": "hook", "sfx": "whoosh", "chunks": [["MÊME ARGENT,", "Même argent,"], ["MÊME PLACEMENT,", "même placement,"], ["*69 000 € D'ÉCART.", "soixante-neuf mille euros d'écart.", "boom"]]},
+   None,
+   [{"text": "69 000 €", "at": "0:0-0.6", "size": "xl", "color": "gold"}, {"text": "d'écart", "at": "0:0+0.3", "size": "m"}, {"text": "même argent ?", "at": "0:2", "size": "m", "hl": True}],
+   None,
+   QUESTION("TU AS COMMENCÉ À QUEL ÂGE ?", "tu as commencé à quel âge ?"),
+   "100 € par mois, même placement, mais 10 ans d'écart : 152 000 € contre 83 000 € à 65 ans (5 %/an, exemple illustratif). Le temps compte plus que le montant. Et toi, tu as commencé à quel âge ?",
+   ["#interetscomposes", "#investir", "#epargne", "#financepersonnelle"],
+   {"kicker": "69 000 € d'écart", "icon": "clock"})
+
+v2(10,
+   {"segment": "hook", "sfx": "whoosh", "chunks": [["MARRE DU DÉCOUVERT", "Marre du découvert"], ["*EN FIN DE MOIS ?", "en fin de mois ?", "boom"]]},
+   None,
+   [{"text": "Marre", "at": "0:0-0.6", "size": "xl", "hl": True}, {"text": "du découvert", "at": "0:0+0.3"}, {"text": "en fin de mois ?", "at": "0:1", "size": "m"}],
+   {"html": "La méthode des <em>enveloppes</em>", "at": "1:1"},
+   QUESTION("TU AS UNE MÉTHODE ?", "tu as une méthode ?"),
+   "Marre du découvert en fin de mois ? La méthode des enveloppes : un budget par dépense, enveloppe vide on arrête, le reste va en épargne. Et toi, tu utilises quelle méthode ?",
+   ["#methodedesenveloppes", "#budget", "#epargne", "#decouvert"],
+   {"kicker": "Marre du découvert ?", "icon": "envelope"})
 
 for n, e in eps.items():
     data = {"_doc": "Épisode de la série Épargne malin. Voir serie/README.md.", "ep": n, **COMMON, **e}

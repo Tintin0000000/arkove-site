@@ -1,204 +1,210 @@
 // Généré par voix/voiceover.py : ne pas modifier à la main.
 window.VO = {
- "duration": 24.2,
+ "duration": 24.6,
  "segments": [
   {
    "name": "hook",
    "start": 0,
-   "end": 3.658
+   "end": 3.754
   },
   {
    "name": "curves",
-   "start": 3.658,
-   "end": 19.558
+   "start": 3.754,
+   "end": 19.388
   },
   {
    "name": "cta",
-   "start": 19.558,
-   "end": 24.2
+   "start": 19.388,
+   "end": 24.6
   }
  ],
  "sentences": [
   {
    "segment": "hook",
    "start": 0.3,
-   "end": 3.678,
+   "end": 3.774,
    "chunks": [
     {
-     "text": "100 € PAR MOIS.",
-     "gold": true,
-     "start": 0.3,
-     "end": 1.36
-    },
-    {
-     "text": "MÊME SOMME,",
+     "text": "MÊME ARGENT,",
      "gold": false,
-     "start": 1.36,
-     "end": 2.287
+     "start": 0.3,
+     "end": 1.154
     },
     {
-     "text": "RÉSULTAT PRESQUE DOUBLÉ ?",
+     "text": "MÊME PLACEMENT,",
+     "gold": false,
+     "start": 1.154,
+     "end": 2.179
+    },
+    {
+     "text": "69 000 € D'ÉCART.",
      "gold": true,
-     "start": 2.287,
-     "end": 3.678
+     "start": 2.179,
+     "end": 3.774
     }
    ]
   },
   {
    "segment": "curves",
-   "start": 3.958,
-   "end": 5.568,
+   "start": 4.054,
+   "end": 5.705,
    "chunks": [
     {
      "text": "EMMA COMMENCE",
      "gold": false,
-     "start": 3.958,
-     "end": 4.731
+     "start": 4.054,
+     "end": 4.847
     },
     {
      "text": "À 25 ANS.",
      "gold": true,
-     "start": 4.731,
-     "end": 5.568
+     "start": 4.847,
+     "end": 5.705
     }
    ]
   },
   {
    "segment": "curves",
-   "start": 5.748,
-   "end": 7.087,
+   "start": 5.885,
+   "end": 7.215,
    "chunks": [
     {
      "text": "LUCAS",
      "gold": false,
-     "start": 5.748,
-     "end": 6.1
+     "start": 5.885,
+     "end": 6.235
     },
     {
      "text": "À 35 ANS.",
      "gold": false,
-     "start": 6.1,
-     "end": 7.087
+     "start": 6.235,
+     "end": 7.215
     }
    ]
   },
   {
    "segment": "curves",
-   "start": 7.267,
-   "end": 10.695,
+   "start": 7.395,
+   "end": 10.717,
    "chunks": [
     {
-     "text": "TOUS LES DEUX",
+     "text": "MÊME RENDEMENT :",
      "gold": false,
-     "start": 7.267,
-     "end": 7.83
+     "start": 7.395,
+     "end": 8.375
     },
     {
-     "text": "INVESTISSENT À 5 %",
-     "gold": false,
-     "start": 7.83,
-     "end": 9.62
+     "text": "5 % PAR AN,",
+     "gold": true,
+     "start": 8.375,
+     "end": 9.573
     },
     {
      "text": "JUSQU'À 65 ANS.",
      "gold": false,
-     "start": 9.62,
-     "end": 10.695
+     "start": 9.573,
+     "end": 10.717
     }
    ]
   },
   {
    "segment": "curves",
-   "start": 10.875,
-   "end": 12.706,
+   "start": 10.897,
+   "end": 12.656,
    "chunks": [
     {
      "text": "EMMA :",
      "gold": false,
-     "start": 10.875,
-     "end": 11.332
+     "start": 10.897,
+     "end": 11.337
     },
     {
      "text": "152 000 €.",
      "gold": true,
-     "start": 11.332,
-     "end": 12.706
+     "start": 11.337,
+     "end": 12.656
     }
    ]
   },
   {
    "segment": "curves",
-   "start": 12.886,
-   "end": 14.82,
+   "start": 12.836,
+   "end": 14.774,
    "chunks": [
     {
      "text": "LUCAS :",
      "gold": false,
-     "start": 12.886,
-     "end": 13.423
+     "start": 12.836,
+     "end": 13.374
     },
     {
      "text": "83 000 €.",
      "gold": false,
-     "start": 13.423,
-     "end": 14.82
+     "start": 13.374,
+     "end": 14.774
     }
    ]
   },
   {
    "segment": "curves",
-   "start": 15.0,
-   "end": 17.828,
+   "start": 14.954,
+   "end": 17.696,
    "chunks": [
     {
      "text": "10 ANS D'AVANCE",
      "gold": false,
-     "start": 15.0,
-     "end": 16.107
+     "start": 14.954,
+     "end": 16.027
     },
     {
      "text": "= 69 000 € DE PLUS.",
      "gold": true,
-     "start": 16.107,
-     "end": 17.828
+     "start": 16.027,
+     "end": 17.696
     }
    ]
   },
   {
    "segment": "curves",
-   "start": 18.008,
-   "end": 19.578,
+   "start": 17.876,
+   "end": 19.408,
    "chunks": [
     {
      "text": "LE TEMPS COMPTE",
      "gold": false,
-     "start": 18.008,
-     "end": 18.712
+     "start": 17.876,
+     "end": 18.563
     },
     {
      "text": "PLUS QUE LE MONTANT.",
      "gold": true,
-     "start": 18.712,
-     "end": 19.578
+     "start": 18.563,
+     "end": 19.408
     }
    ]
   },
   {
    "segment": "cta",
-   "start": 19.858,
-   "end": 20.96,
+   "start": 19.688,
+   "end": 23.019,
    "chunks": [
     {
-     "text": "ABONNE-TOI",
+     "text": "ET TOI,",
      "gold": false,
-     "start": 19.858,
-     "end": 20.354
+     "start": 19.688,
+     "end": 20.382
     },
     {
-     "text": "POUR LA SUITE.",
+     "text": "TU AS COMMENCÉ À QUEL ÂGE ?",
      "gold": false,
-     "start": 20.354,
-     "end": 20.96
+     "start": 20.382,
+     "end": 21.77
+    },
+    {
+     "text": "DIS-LE EN COMMENTAIRE.",
+     "gold": true,
+     "start": 21.77,
+     "end": 23.019
     }
    ]
   }

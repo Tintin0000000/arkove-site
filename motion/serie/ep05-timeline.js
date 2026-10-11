@@ -1,213 +1,219 @@
 // Généré par voix/voiceover.py : ne pas modifier à la main.
 window.VO = {
- "duration": 23.0,
+ "duration": 22.7,
  "segments": [
   {
    "name": "hook",
    "start": 0,
-   "end": 3.062
+   "end": 2.136
   },
   {
    "name": "counter",
-   "start": 3.062,
-   "end": 9.591
+   "start": 2.136,
+   "end": 8.773
   },
   {
    "name": "bars",
-   "start": 9.591,
-   "end": 14.966
+   "start": 8.773,
+   "end": 14.275
   },
   {
    "name": "tip",
-   "start": 14.966,
-   "end": 18.489
+   "start": 14.275,
+   "end": 17.628
   },
   {
    "name": "cta",
-   "start": 18.489,
-   "end": 23.0
+   "start": 17.628,
+   "end": 22.7
   }
  ],
  "sentences": [
   {
    "segment": "hook",
    "start": 0.3,
-   "end": 3.082,
+   "end": 2.156,
    "chunks": [
     {
-     "text": "TON CAFÉ À 3 €",
+     "text": "CE CAFÉ",
      "gold": false,
      "start": 0.3,
-     "end": 1.465
+     "end": 0.728
     },
     {
-     "text": "COÛTE PLUS CHER",
-     "gold": true,
-     "start": 1.465,
-     "end": 2.306
-    },
-    {
-     "text": "QUE TU NE CROIS.",
+     "text": "TE COÛTE",
      "gold": false,
-     "start": 2.306,
-     "end": 3.082
+     "start": 0.728,
+     "end": 1.228
+    },
+    {
+     "text": "10 000 €.",
+     "gold": true,
+     "start": 1.228,
+     "end": 2.156
     }
    ]
   },
   {
    "segment": "counter",
-   "start": 3.362,
-   "end": 6.078,
+   "start": 2.436,
+   "end": 5.184,
    "chunks": [
     {
      "text": "3 € PAR JOUR,",
      "gold": true,
-     "start": 3.362,
-     "end": 4.411
+     "start": 2.436,
+     "end": 3.496
     },
     {
      "text": "C'EST",
      "gold": false,
-     "start": 4.411,
-     "end": 4.601
+     "start": 3.496,
+     "end": 3.689
     },
     {
      "text": "90 € PAR MOIS,",
      "gold": true,
-     "start": 4.601,
-     "end": 6.078
+     "start": 3.689,
+     "end": 5.184
     }
    ]
   },
   {
    "segment": "counter",
-   "start": 6.258,
-   "end": 7.669,
+   "start": 5.364,
+   "end": 6.823,
    "chunks": [
     {
      "text": "ET",
      "gold": false,
-     "start": 6.258,
-     "end": 6.381
+     "start": 5.364,
+     "end": 5.491
     },
     {
      "text": "+ DE 1 000 € PAR AN.",
      "gold": true,
-     "start": 6.381,
-     "end": 7.669
+     "start": 5.491,
+     "end": 6.823
     }
    ]
   },
   {
    "segment": "counter",
-   "start": 7.849,
-   "end": 9.611,
+   "start": 7.003,
+   "end": 8.793,
    "chunks": [
     {
      "text": "EN 10 ANS :",
      "gold": false,
-     "start": 7.849,
-     "end": 8.565
+     "start": 7.003,
+     "end": 7.73
     },
     {
      "text": "PLUS DE 10 000 €.",
      "gold": true,
-     "start": 8.565,
-     "end": 9.611
+     "start": 7.73,
+     "end": 8.793
     }
    ]
   },
   {
    "segment": "bars",
-   "start": 9.891,
-   "end": 11.166,
+   "start": 9.073,
+   "end": 10.412,
    "chunks": [
     {
      "text": "PAS BESOIN",
      "gold": false,
-     "start": 9.891,
-     "end": 10.316
+     "start": 9.073,
+     "end": 9.519
     },
     {
      "text": "DE TOUT ARRÊTER :",
      "gold": false,
-     "start": 10.316,
-     "end": 11.166
+     "start": 9.519,
+     "end": 10.412
     }
    ]
   },
   {
    "segment": "bars",
-   "start": 11.346,
-   "end": 14.986,
+   "start": 10.592,
+   "end": 14.295,
    "chunks": [
     {
      "text": "UN CAFÉ SUR DEUX",
      "gold": false,
-     "start": 11.346,
-     "end": 12.052
+     "start": 10.592,
+     "end": 11.311
     },
     {
      "text": "À LA MAISON,",
      "gold": false,
-     "start": 12.052,
-     "end": 12.813
+     "start": 11.311,
+     "end": 12.084
     },
     {
      "text": "ET TU GARDES",
      "gold": false,
-     "start": 12.813,
-     "end": 13.356
+     "start": 12.084,
+     "end": 12.637
     },
     {
      "text": "547 € PAR AN.",
      "gold": true,
-     "start": 13.356,
-     "end": 14.986
+     "start": 12.637,
+     "end": 14.295
     }
    ]
   },
   {
    "segment": "tip",
-   "start": 15.266,
-   "end": 18.509,
+   "start": 14.575,
+   "end": 17.648,
    "chunks": [
     {
      "text": "PAREIL POUR",
      "gold": false,
-     "start": 15.266,
-     "end": 15.867
+     "start": 14.575,
+     "end": 15.144
     },
     {
      "text": "LES LIVRAISONS DE REPAS",
      "gold": true,
-     "start": 15.867,
-     "end": 17.068
+     "start": 15.144,
+     "end": 16.282
     },
     {
      "text": "ET LES PETITS ACHATS.",
      "gold": false,
-     "start": 17.068,
-     "end": 18.509
+     "start": 16.282,
+     "end": 17.648
     }
    ]
   },
   {
    "segment": "cta",
-   "start": 18.789,
-   "end": 19.841,
+   "start": 17.928,
+   "end": 21.092,
    "chunks": [
     {
-     "text": "ABONNE-TOI",
+     "text": "ET TOI,",
      "gold": false,
-     "start": 18.789,
-     "end": 19.262
+     "start": 17.928,
+     "end": 18.574
     },
     {
-     "text": "POUR LA SUITE.",
+     "text": "COMBIEN DE CAFÉS PAR JOUR ?",
      "gold": false,
-     "start": 19.262,
-     "end": 19.841
+     "start": 18.574,
+     "end": 19.93
+    },
+    {
+     "text": "DIS-LE EN COMMENTAIRE.",
+     "gold": true,
+     "start": 19.93,
+     "end": 21.092
     }
    ]
   }

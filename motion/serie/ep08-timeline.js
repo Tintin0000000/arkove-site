@@ -1,195 +1,201 @@
 // Généré par voix/voiceover.py : ne pas modifier à la main.
 window.VO = {
- "duration": 21.6,
+ "duration": 21.7,
  "segments": [
   {
    "name": "hook",
    "start": 0,
-   "end": 3.983
+   "end": 4.368
   },
   {
    "name": "counter",
-   "start": 3.983,
-   "end": 10.264
+   "start": 4.368,
+   "end": 10.21
   },
   {
    "name": "icon",
-   "start": 10.264,
-   "end": 17.07
+   "start": 10.21,
+   "end": 16.88
   },
   {
    "name": "cta",
-   "start": 17.07,
-   "end": 21.6
+   "start": 16.88,
+   "end": 21.7
   }
  ],
  "sentences": [
   {
    "segment": "hook",
    "start": 0.3,
-   "end": 2.618,
+   "end": 2.893,
    "chunks": [
     {
-     "text": "TON ARGENT",
+     "text": "TON ARGENT QUI DORT",
      "gold": false,
      "start": 0.3,
-     "end": 0.952
+     "end": 1.265
     },
     {
-     "text": "PERD DE LA VALEUR",
+     "text": "PERD 18 %",
      "gold": true,
-     "start": 0.952,
-     "end": 1.966
+     "start": 1.265,
+     "end": 2.411
     },
     {
-     "text": "EN DORMANT.",
+     "text": "EN 10 ANS.",
      "gold": false,
-     "start": 1.966,
-     "end": 2.618
+     "start": 2.411,
+     "end": 2.893
     }
    ]
   },
   {
    "segment": "hook",
-   "start": 2.798,
-   "end": 4.003,
+   "start": 3.073,
+   "end": 4.388,
    "chunks": [
     {
      "text": "LA FAUTE À",
      "gold": false,
-     "start": 2.798,
-     "end": 3.333
+     "start": 3.073,
+     "end": 3.657
     },
     {
      "text": "L'INFLATION.",
      "gold": true,
-     "start": 3.333,
-     "end": 4.003
+     "start": 3.657,
+     "end": 4.388
     }
    ]
   },
   {
    "segment": "counter",
-   "start": 4.283,
-   "end": 6.71,
+   "start": 4.668,
+   "end": 7.09,
    "chunks": [
     {
      "text": "AVEC 2 % PAR AN,",
      "gold": false,
-     "start": 4.283,
-     "end": 5.626
+     "start": 4.668,
+     "end": 6.008
     },
     {
      "text": "1 000 €",
      "gold": true,
-     "start": 5.626,
-     "end": 6.142
+     "start": 6.008,
+     "end": 6.523
     },
     {
      "text": "D'AUJOURD'HUI",
      "gold": false,
-     "start": 6.142,
-     "end": 6.71
+     "start": 6.523,
+     "end": 7.09
     }
    ]
   },
   {
    "segment": "counter",
-   "start": 6.89,
-   "end": 10.284,
+   "start": 7.27,
+   "end": 10.23,
    "chunks": [
     {
      "text": "N'ACHÈTERONT PLUS",
      "gold": false,
-     "start": 6.89,
-     "end": 7.908
+     "start": 7.27,
+     "end": 8.158
     },
     {
      "text": "QUE POUR 820 €",
      "gold": true,
-     "start": 7.908,
-     "end": 9.605
+     "start": 8.158,
+     "end": 9.638
     },
     {
      "text": "DANS 10 ANS.",
      "gold": false,
-     "start": 9.605,
-     "end": 10.284
+     "start": 9.638,
+     "end": 10.23
     }
    ]
   },
   {
    "segment": "icon",
-   "start": 10.564,
-   "end": 14.535,
+   "start": 10.51,
+   "end": 14.401,
    "chunks": [
     {
      "text": "LA PARADE ?",
      "gold": false,
-     "start": 10.564,
-     "end": 11.141
+     "start": 10.51,
+     "end": 11.076
     },
     {
      "text": "UNE ÉPARGNE",
      "gold": false,
-     "start": 11.141,
-     "end": 11.863
+     "start": 11.076,
+     "end": 11.784
     },
     {
      "text": "QUI RAPPORTE",
      "gold": true,
-     "start": 11.863,
-     "end": 12.658
+     "start": 11.784,
+     "end": 12.562
     },
     {
      "text": "AU MOINS L'INFLATION.",
      "gold": false,
-     "start": 12.658,
-     "end": 14.535
+     "start": 12.562,
+     "end": 14.401
     }
    ]
   },
   {
    "segment": "icon",
-   "start": 14.715,
-   "end": 17.09,
+   "start": 14.581,
+   "end": 16.9,
    "chunks": [
     {
      "text": "COMPARE LE TAUX",
      "gold": false,
-     "start": 14.715,
-     "end": 15.597
+     "start": 14.581,
+     "end": 15.442
     },
     {
      "text": "DE TON LIVRET",
      "gold": false,
-     "start": 15.597,
-     "end": 16.343
+     "start": 15.442,
+     "end": 16.171
     },
     {
      "text": "À L'INFLATION.",
      "gold": true,
-     "start": 16.343,
-     "end": 17.09
+     "start": 16.171,
+     "end": 16.9
     }
    ]
   },
   {
    "segment": "cta",
-   "start": 17.37,
-   "end": 18.439,
+   "start": 17.18,
+   "end": 20.113,
    "chunks": [
     {
-     "text": "ABONNE-TOI",
+     "text": "ET TOI,",
      "gold": false,
-     "start": 17.37,
-     "end": 17.851
+     "start": 17.18,
+     "end": 17.862
     },
     {
-     "text": "POUR LA SUITE.",
+     "text": "TON ARGENT DORT OÙ ?",
      "gold": false,
-     "start": 17.851,
-     "end": 18.439
+     "start": 17.862,
+     "end": 18.885
+    },
+    {
+     "text": "DIS-LE EN COMMENTAIRE.",
+     "gold": true,
+     "start": 18.885,
+     "end": 20.113
     }
    ]
   }

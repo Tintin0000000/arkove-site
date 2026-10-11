@@ -6,8 +6,8 @@
  "lead": 0.3,
  "gap": 0.18,
  "duration": "auto",
- "tail": 3.2,
- "handle": "@epargne.malin",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
  "title": "Paie-toi en premier",
  "short": "PAIE-TOI D'ABORD",
  "next": "Les abonnements fantômes",
@@ -17,16 +17,16 @@
    "sfx": "whoosh",
    "chunks": [
     [
-     "TU ÉPARGNES",
-     "Tu épargnes"
+     "TU ATTENDS",
+     "Tu attends"
     ],
     [
-     "CE QUI RESTE",
-     "ce qui reste"
+     "LA FIN DU MOIS",
+     "la fin du mois"
     ],
     [
-     "À LA FIN DU MOIS ?",
-     "à la fin du mois ?"
+     "*POUR ÉPARGNER ?",
+     "pour épargner ?"
     ]
    ]
   },
@@ -34,17 +34,13 @@
    "segment": "hook",
    "chunks": [
     [
-     "*ERREUR :",
-     "Erreur :",
+     "*VOILÀ POURQUOI",
+     "Voilà pourquoi"
+    ],
+    [
+     "TU N'Y ARRIVES JAMAIS.",
+     "tu n'y arrives jamais.",
      "boom"
-    ],
-    [
-     "IL NE RESTE",
-     "il ne reste"
-    ],
-    [
-     "*JAMAIS RIEN.",
-     "jamais rien."
     ]
    ]
   },
@@ -143,18 +139,22 @@
    "pause": 0.1,
    "chunks": [
     [
-     "ABONNE-TOI",
-     "Abonne-toi"
+     "ET TOI,",
+     "Et toi,"
     ],
     [
-     "POUR LA SUITE.",
-     "pour la suite."
+     "TU AS UN VIREMENT AUTO ?",
+     "tu as un virement automatique ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
     ]
    ]
   }
  ],
  "shakes": [
-  "1:0"
+  "1:1"
  ],
  "blocks": {
   "hook": {
@@ -163,23 +163,23 @@
    "icon": "wallet",
    "lines": [
     {
-     "text": "Tu épargnes",
-     "at": "0:0"
-    },
-    {
-     "text": "ce qui reste",
-     "at": "0:1",
+     "text": "Tu attends",
+     "at": "0:0-0.6",
      "size": "m"
     },
     {
-     "text": "?",
-     "at": "0:2",
-     "size": "xl",
-     "color": "gold"
+     "text": "la fin du mois",
+     "at": "0:0-0.3"
+    },
+    {
+     "text": "pour épargner ?",
+     "at": "0:0+0.1",
+     "size": "m",
+     "hl": true
     }
    ],
    "reveal": {
-    "html": "Il ne reste <em>jamais rien.</em>",
+    "html": "Tu n'y arrives <em>jamais.</em>",
     "at": "1:1"
    }
   },
@@ -255,20 +255,22 @@
   },
   "cta": {
    "type": "cta",
-   "glow": "gold"
+   "glow": "gold",
+   "heading": "Et <em>toi</em> ?",
+   "sub": "Dis-le en commentaire"
   }
  },
  "post": {
-  "caption": "La règle d'or : on se paie en premier. Un virement automatique le jour de la paie, et l'épargne se fait toute seule. Tu l'as déjà mis en place ?",
+  "caption": "Comment épargner chaque mois sans y penser : paie-toi en premier, avec un virement automatique le jour de la paie. Et toi, tu l'as déjà mis en place ?",
   "hashtags": [
-   "#paietoienpremier",
-   "#virementautomatique",
    "#epargne",
-   "#argent",
-   "#financepersonnelle",
    "#budget",
    "#astuceargent",
-   "#apprendresurtiktok"
+   "#financepersonnelle"
   ]
+ },
+ "cover": {
+  "kicker": "+2 400 € par an, sans effort",
+  "icon": "bolt"
  }
 }

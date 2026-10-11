@@ -6,8 +6,8 @@
  "lead": 0.3,
  "gap": 0.18,
  "duration": "auto",
- "tail": 3.2,
- "handle": "@epargne.malin",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
  "title": "La règle 50/30/20",
  "short": "RÈGLE 50/30/20",
  "next": "Paie-toi en premier",
@@ -17,17 +17,13 @@
    "sfx": "whoosh",
    "chunks": [
     [
-     "TON SALAIRE",
-     "Ton salaire"
+     "2 000 € DE SALAIRE",
+     "Deux mille euros de salaire,"
     ],
     [
-     "DISPARAÎT",
-     "disparaît",
+     "*ET PLUS RIEN LE 30 ?",
+     "et plus rien le trente ?",
      "boom"
-    ],
-    [
-     "AVANT LA FIN DU MOIS ?",
-     "avant la fin du mois ?"
     ]
    ]
   },
@@ -35,12 +31,12 @@
    "segment": "hook",
    "chunks": [
     [
-     "TESTE",
-     "Teste"
+     "VOICI OÙ DOIT ALLER",
+     "Voici où doit aller"
     ],
     [
-     "*LA RÈGLE 50/30/20.",
-     "la règle cinquante, trente, vingt."
+     "*CHAQUE EURO.",
+     "chaque euro."
     ]
    ]
   },
@@ -165,12 +161,16 @@
    "pause": 0.1,
    "chunks": [
     [
-     "ABONNE-TOI",
-     "Abonne-toi"
+     "ET TOI,",
+     "Et toi,"
     ],
     [
-     "POUR LA SUITE.",
-     "pour la suite."
+     "TU ÉPARGNES COMBIEN ?",
+     "tu épargnes combien ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
     ]
    ]
   }
@@ -185,29 +185,31 @@
    "icon": "wallet",
    "lines": [
     {
-     "text": "Ton salaire",
-     "at": "0:0"
+     "text": "2 000 €",
+     "at": "0:0-0.6",
+     "size": "xl",
+     "color": "gold"
     },
     {
-     "text": "disparaît",
+     "text": "de salaire",
+     "at": "0:0+0.6",
+     "size": "m"
+    },
+    {
+     "text": "plus rien",
      "at": "0:1",
      "size": "xl",
      "hl": true
     },
     {
-     "text": "avant la fin",
-     "at": "0:2",
-     "size": "m"
-    },
-    {
-     "text": "du mois ?",
-     "at": "0:2+0.3",
+     "text": "le 30 ?",
+     "at": "0:1+0.4",
      "size": "m"
     }
    ],
    "reveal": {
     "html": "La règle <em>50/30/20</em>",
-    "at": "1:1"
+    "at": "1:0"
    }
   },
   "donut": {
@@ -290,20 +292,22 @@
   },
   "cta": {
    "type": "cta",
-   "glow": "gold"
+   "glow": "gold",
+   "heading": "Et <em>toi</em> ?",
+   "sub": "Dis-le en commentaire"
   }
  },
  "post": {
-  "caption": "Ton salaire part trop vite ? Teste la règle 50/30/20 : 50 % besoins, 30 % envies, 20 % épargne. Tu es à combien en ce moment ? 👇",
+  "caption": "Comment répartir son salaire ? La règle 50/30/20 en 20 secondes : 50 % besoins, 30 % envies, 20 % épargne. Et toi, tu épargnes combien par mois ?",
   "hashtags": [
-   "#regle503020",
-   "#gestionbudget",
-   "#epargne",
-   "#argent",
-   "#financepersonnelle",
    "#budget",
-   "#astuceargent",
-   "#apprendresurtiktok"
+   "#epargne",
+   "#regle503020",
+   "#financepersonnelle"
   ]
+ },
+ "cover": {
+  "kicker": "Où va ton salaire ?",
+  "icon": "wallet"
  }
 }

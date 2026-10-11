@@ -3,3 +3,4 @@ voix/models
 __pycache__/
 serie/*-voix.wav
 serie/*-mix.wav
+serie/couvertures/.tmp.html

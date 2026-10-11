@@ -1,221 +1,221 @@
 // Généré par voix/voiceover.py : ne pas modifier à la main.
 window.VO = {
- "duration": 23.8,
+ "duration": 22.9,
  "segments": [
   {
    "name": "hook",
    "start": 0,
-   "end": 4.084
+   "end": 3.527
   },
   {
    "name": "list",
-   "start": 4.084,
-   "end": 12.461
+   "start": 3.527,
+   "end": 11.753
   },
   {
    "name": "icon",
-   "start": 12.461,
-   "end": 18.821
+   "start": 11.753,
+   "end": 17.884
   },
   {
    "name": "cta",
-   "start": 18.821,
-   "end": 23.8
+   "start": 17.884,
+   "end": 22.9
   }
  ],
  "sentences": [
   {
    "segment": "hook",
    "start": 0.3,
-   "end": 2.44,
+   "end": 1.923,
    "chunks": [
     {
-     "text": "TU NE SAIS JAMAIS",
+     "text": "MARRE DU DÉCOUVERT",
      "gold": false,
      "start": 0.3,
-     "end": 1.299
+     "end": 1.262
     },
     {
-     "text": "OÙ PASSE",
+     "text": "EN FIN DE MOIS ?",
      "gold": true,
-     "start": 1.299,
-     "end": 1.798
-    },
-    {
-     "text": "TON ARGENT ?",
-     "gold": false,
-     "start": 1.798,
-     "end": 2.44
+     "start": 1.262,
+     "end": 1.923
     }
    ]
   },
   {
    "segment": "hook",
-   "start": 2.62,
-   "end": 4.104,
+   "start": 2.103,
+   "end": 3.547,
    "chunks": [
     {
      "text": "TESTE",
      "gold": false,
-     "start": 2.62,
-     "end": 2.895
+     "start": 2.103,
+     "end": 2.37
     },
     {
      "text": "LA MÉTHODE DES ENVELOPPES.",
      "gold": true,
-     "start": 2.895,
-     "end": 4.104
+     "start": 2.37,
+     "end": 3.547
     }
    ]
   },
   {
    "segment": "list",
-   "start": 4.384,
-   "end": 7.006,
+   "start": 3.827,
+   "end": 6.389,
    "chunks": [
     {
      "text": "CHAQUE MOIS,",
      "gold": false,
-     "start": 4.384,
-     "end": 5.221
+     "start": 3.827,
+     "end": 4.644
     },
     {
      "text": "UN BUDGET",
      "gold": false,
-     "start": 5.221,
-     "end": 6.058
+     "start": 4.644,
+     "end": 5.462
     },
     {
      "text": "POUR CHAQUE DÉPENSE.",
      "gold": false,
-     "start": 6.058,
-     "end": 7.006
+     "start": 5.462,
+     "end": 6.389
     }
    ]
   },
   {
    "segment": "list",
-   "start": 7.186,
-   "end": 8.832,
+   "start": 6.569,
+   "end": 8.232,
    "chunks": [
     {
      "text": "COURSES :",
      "gold": false,
-     "start": 7.186,
-     "end": 7.75
+     "start": 6.569,
+     "end": 7.14
     },
     {
      "text": "350 €.",
      "gold": true,
-     "start": 7.75,
-     "end": 8.832
+     "start": 7.14,
+     "end": 8.232
     }
    ]
   },
   {
    "segment": "list",
-   "start": 9.012,
-   "end": 10.618,
+   "start": 8.412,
+   "end": 9.993,
    "chunks": [
     {
      "text": "SORTIES :",
      "gold": false,
-     "start": 9.012,
-     "end": 9.654
+     "start": 8.412,
+     "end": 9.044
     },
     {
      "text": "150 €.",
      "gold": true,
-     "start": 9.654,
-     "end": 10.618
+     "start": 9.044,
+     "end": 9.993
     }
    ]
   },
   {
    "segment": "list",
-   "start": 10.798,
-   "end": 12.481,
+   "start": 10.173,
+   "end": 11.773,
    "chunks": [
     {
      "text": "TRANSPORT :",
      "gold": false,
-     "start": 10.798,
-     "end": 11.639
+     "start": 10.173,
+     "end": 10.973
     },
     {
      "text": "120 €.",
      "gold": true,
-     "start": 11.639,
-     "end": 12.481
+     "start": 10.973,
+     "end": 11.773
     }
    ]
   },
   {
    "segment": "icon",
-   "start": 12.761,
-   "end": 16.735,
+   "start": 12.053,
+   "end": 15.815,
    "chunks": [
     {
      "text": "ENVELOPPE VIDE ?",
      "gold": false,
-     "start": 12.761,
-     "end": 13.884
+     "start": 12.053,
+     "end": 13.116
     },
     {
      "text": "ON ARRÊTE.",
      "gold": true,
-     "start": 13.884,
-     "end": 14.575
+     "start": 13.116,
+     "end": 13.771
     },
     {
      "text": "CE QUI RESTE",
      "gold": false,
-     "start": 14.575,
-     "end": 15.439
+     "start": 13.771,
+     "end": 14.588
     },
     {
      "text": "VA SUR TON ÉPARGNE.",
      "gold": true,
-     "start": 15.439,
-     "end": 16.735
+     "start": 14.588,
+     "end": 15.815
     }
    ]
   },
   {
    "segment": "icon",
-   "start": 16.915,
-   "end": 18.841,
+   "start": 15.995,
+   "end": 17.904,
    "chunks": [
     {
      "text": "ÇA MARCHE AUSSI",
      "gold": false,
-     "start": 16.915,
-     "end": 17.674
+     "start": 15.995,
+     "end": 16.747
     },
     {
      "text": "AVEC PLUSIEURS COMPTES.",
      "gold": true,
-     "start": 17.674,
-     "end": 18.841
+     "start": 16.747,
+     "end": 17.904
     }
    ]
   },
   {
    "segment": "cta",
-   "start": 19.121,
-   "end": 20.606,
+   "start": 18.184,
+   "end": 21.303,
    "chunks": [
     {
-     "text": "ABONNE-TOI",
+     "text": "ET TOI,",
      "gold": false,
-     "start": 19.121,
-     "end": 19.655
+     "start": 18.184,
+     "end": 18.927
     },
     {
-     "text": "POUR TOUTE LA SÉRIE.",
+     "text": "TU AS UNE MÉTHODE ?",
      "gold": false,
-     "start": 19.655,
-     "end": 20.606
+     "start": 18.927,
+     "end": 19.966
+    },
+    {
+     "text": "DIS-LE EN COMMENTAIRE.",
+     "gold": true,
+     "start": 19.966,
+     "end": 21.303
     }
    ]
   }

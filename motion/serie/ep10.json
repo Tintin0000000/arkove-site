@@ -6,8 +6,8 @@
  "lead": 0.3,
  "gap": 0.18,
  "duration": "auto",
- "tail": 3.2,
- "handle": "@epargne.malin",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
  "title": "La méthode des enveloppes",
  "short": "ENVELOPPES",
  "next": null,
@@ -17,17 +17,13 @@
    "sfx": "whoosh",
    "chunks": [
     [
-     "TU NE SAIS JAMAIS",
-     "Tu ne sais jamais"
+     "MARRE DU DÉCOUVERT",
+     "Marre du découvert"
     ],
     [
-     "*OÙ PASSE",
-     "où passe",
+     "*EN FIN DE MOIS ?",
+     "en fin de mois ?",
      "boom"
-    ],
-    [
-     "TON ARGENT ?",
-     "ton argent ?"
     ]
    ]
   },
@@ -146,19 +142,23 @@
    "pause": 0.1,
    "chunks": [
     [
-     "ABONNE-TOI",
-     "Abonne-toi"
+     "ET TOI,",
+     "Et toi,"
     ],
     [
-     "POUR TOUTE LA SÉRIE.",
-     "pour toute la série."
+     "TU AS UNE MÉTHODE ?",
+     "tu as une méthode ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
     ]
    ]
   }
  ],
  "shakes": [
-  "0:1",
-  "6:1"
+  "6:1",
+  "0:1"
  ],
  "blocks": {
   "hook": {
@@ -167,19 +167,19 @@
    "icon": "envelope",
    "lines": [
     {
-     "text": "Tu ne sais pas",
-     "at": "0:0",
-     "size": "m"
+     "text": "Marre",
+     "at": "0:0-0.6",
+     "size": "xl",
+     "hl": true
     },
     {
-     "text": "où passe",
+     "text": "du découvert",
+     "at": "0:0+0.3"
+    },
+    {
+     "text": "en fin de mois ?",
      "at": "0:1",
      "size": "m"
-    },
-    {
-     "text": "ton argent ?",
-     "at": "0:2",
-     "hl": true
     }
    ],
    "reveal": {
@@ -233,20 +233,21 @@
   "cta": {
    "type": "cta",
    "glow": "gold",
-   "sub": "pour toute la série"
+   "heading": "Et <em>toi</em> ?",
+   "sub": "Dis-le en commentaire"
   }
  },
  "post": {
-  "caption": "La méthode des enveloppes : un budget par type de dépense. Enveloppe vide, on arrête. Ce qui reste part en épargne. Simple, et ça marche. Tu utilises quelle méthode ?",
+  "caption": "Marre du découvert en fin de mois ? La méthode des enveloppes : un budget par dépense, enveloppe vide on arrête, le reste va en épargne. Et toi, tu utilises quelle méthode ?",
   "hashtags": [
    "#methodedesenveloppes",
-   "#gestionbudget",
-   "#epargne",
-   "#argent",
-   "#financepersonnelle",
    "#budget",
-   "#astuceargent",
-   "#apprendresurtiktok"
+   "#epargne",
+   "#decouvert"
   ]
+ },
+ "cover": {
+  "kicker": "Marre du découvert ?",
+  "icon": "envelope"
  }
 }

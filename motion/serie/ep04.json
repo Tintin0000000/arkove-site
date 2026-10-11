@@ -6,8 +6,8 @@
  "lead": 0.3,
  "gap": 0.18,
  "duration": "auto",
- "tail": 3.2,
- "handle": "@epargne.malin",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
  "title": "Les abonnements fantômes",
  "short": "ABONNEMENTS",
  "next": "Le vrai prix de ton café",
@@ -17,16 +17,17 @@
    "sfx": "whoosh",
    "chunks": [
     [
-     "TU PAIES",
-     "Tu paies"
+     "TU PAIES PEUT-ÊTRE",
+     "Tu paies peut-être"
     ],
     [
-     "COMBIEN D'ABONNEMENTS",
-     "combien d'abonnements"
+     "*624 € PAR AN",
+     "six cent vingt-quatre euros par an"
     ],
     [
-     "*POUR RIEN ?",
-     "pour rien ?"
+     "POUR RIEN.",
+     "pour rien.",
+     "boom"
     ]
    ]
   },
@@ -146,18 +147,23 @@
    "pause": 0.1,
    "chunks": [
     [
-     "ABONNE-TOI",
-     "Abonne-toi"
+     "ET TOI,",
+     "Et toi,"
     ],
     [
-     "POUR LA SUITE.",
-     "pour la suite."
+     "TU EN AS COMBIEN ?",
+     "tu en as combien ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
     ]
    ]
   }
  ],
  "shakes": [
-  "6:2"
+  "6:2",
+  "0:2"
  ],
  "blocks": {
   "hook": {
@@ -166,18 +172,15 @@
    "icon": "phone",
    "lines": [
     {
-     "text": "Tu paies",
-     "at": "0:0",
-     "size": "m"
+     "text": "624 €",
+     "at": "0:0-0.6",
+     "size": "xl",
+     "color": "gold"
     },
     {
-     "text": "combien",
+     "text": "par an",
      "at": "0:1",
      "size": "m"
-    },
-    {
-     "text": "d'abonnements",
-     "at": "0:1+0.4"
     },
     {
      "text": "pour rien ?",
@@ -187,7 +190,7 @@
     }
    ],
    "reveal": {
-    "html": "Faisons le <em>compte</em>",
+    "html": "Tes abonnements <em>oubliés</em>",
     "at": "1:0"
    }
   },
@@ -257,20 +260,22 @@
   },
   "cta": {
    "type": "cta",
-   "glow": "gold"
+   "glow": "gold",
+   "heading": "Et <em>toi</em> ?",
+   "sub": "Dis-le en commentaire"
   }
  },
  "post": {
-  "caption": "Streaming, salle de sport, applis… 52 € par mois partent sans que tu t'en rendes compte : 624 € par an. Lequel tu résilies ce soir ?",
+  "caption": "Les abonnements oubliés, c'est vite 50 € par mois qui partent sans que tu le voies : 624 € par an. Fais le tri ce soir. Et toi, tu paies combien d'abonnements ?",
   "hashtags": [
    "#abonnements",
    "#economiser",
-   "#epargne",
-   "#argent",
-   "#financepersonnelle",
    "#budget",
-   "#astuceargent",
-   "#apprendresurtiktok"
+   "#epargne"
   ]
+ },
+ "cover": {
+  "kicker": "624 € par an pour rien",
+  "icon": "phone"
  }
 }

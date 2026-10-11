@@ -1,209 +1,215 @@
 // Généré par voix/voiceover.py : ne pas modifier à la main.
 window.VO = {
- "duration": 26.9,
+ "duration": 27.1,
  "segments": [
   {
    "name": "hook",
    "start": 0,
-   "end": 5.714
+   "end": 6.147
   },
   {
    "name": "grid",
-   "start": 5.714,
-   "end": 16.333
+   "start": 6.147,
+   "end": 16.756
   },
   {
    "name": "tip",
-   "start": 16.333,
-   "end": 21.899
+   "start": 16.756,
+   "end": 22.201
   },
   {
    "name": "cta",
-   "start": 21.899,
-   "end": 26.9
+   "start": 22.201,
+   "end": 27.1
   }
  ],
  "sentences": [
   {
    "segment": "hook",
    "start": 0.3,
-   "end": 3.636,
+   "end": 4.032,
    "chunks": [
     {
      "text": "1 378 €",
      "gold": true,
      "start": 0.3,
-     "end": 2.29
+     "end": 2.314
     },
     {
-     "text": "EN UN AN,",
+     "text": "DE CÔTÉ EN UN AN,",
      "gold": false,
-     "start": 2.29,
-     "end": 2.934
+     "start": 2.314,
+     "end": 3.321
     },
     {
-     "text": "SANS TE PRIVER.",
+     "text": "SANS LE SENTIR.",
      "gold": false,
-     "start": 2.934,
-     "end": 3.636
+     "start": 3.321,
+     "end": 4.032
     }
    ]
   },
   {
    "segment": "hook",
-   "start": 3.816,
-   "end": 5.734,
+   "start": 4.212,
+   "end": 6.167,
    "chunks": [
     {
      "text": "C'EST",
      "gold": false,
-     "start": 3.816,
-     "end": 4.042
+     "start": 4.212,
+     "end": 4.442
     },
     {
      "text": "LE DÉFI DES 52 SEMAINES.",
      "gold": true,
-     "start": 4.042,
-     "end": 5.734
+     "start": 4.442,
+     "end": 6.167
     }
    ]
   },
   {
    "segment": "grid",
-   "start": 6.014,
-   "end": 8.088,
+   "start": 6.447,
+   "end": 8.669,
    "chunks": [
     {
      "text": "LA 1RE SEMAINE,",
      "gold": false,
-     "start": 6.014,
-     "end": 7.356
+     "start": 6.447,
+     "end": 7.885
     },
     {
      "text": "TU METS 1 €.",
      "gold": true,
-     "start": 7.356,
-     "end": 8.088
+     "start": 7.885,
+     "end": 8.669
     }
    ]
   },
   {
    "segment": "grid",
-   "start": 8.268,
-   "end": 9.892,
+   "start": 8.849,
+   "end": 10.336,
    "chunks": [
     {
      "text": "LA 2E,",
      "gold": false,
-     "start": 8.268,
-     "end": 9.283
+     "start": 8.849,
+     "end": 9.778
     },
     {
      "text": "2 €.",
      "gold": true,
-     "start": 9.283,
-     "end": 9.892
+     "start": 9.778,
+     "end": 10.336
     }
    ]
   },
   {
    "segment": "grid",
-   "start": 10.072,
-   "end": 12.56,
+   "start": 10.516,
+   "end": 12.95,
    "chunks": [
     {
      "text": "ET AINSI DE SUITE",
      "gold": false,
-     "start": 10.072,
-     "end": 11.171
+     "start": 10.516,
+     "end": 11.592
     },
     {
      "text": "JUSQU'À 52 €.",
      "gold": false,
-     "start": 11.171,
-     "end": 12.56
+     "start": 11.592,
+     "end": 12.95
     }
    ]
   },
   {
    "segment": "grid",
-   "start": 12.74,
-   "end": 16.353,
+   "start": 13.13,
+   "end": 16.776,
    "chunks": [
     {
      "text": "À LA FIN DE L'ANNÉE :",
      "gold": false,
-     "start": 12.74,
-     "end": 13.903
+     "start": 13.13,
+     "end": 14.304
     },
     {
      "text": "1 378 € DE CÔTÉ.",
      "gold": true,
-     "start": 13.903,
-     "end": 16.353
+     "start": 14.304,
+     "end": 16.776
     }
    ]
   },
   {
    "segment": "tip",
-   "start": 16.633,
-   "end": 19.845,
+   "start": 17.056,
+   "end": 20.198,
    "chunks": [
     {
      "text": "ASTUCE :",
      "gold": false,
-     "start": 16.633,
-     "end": 17.369
+     "start": 17.056,
+     "end": 17.776
     },
     {
      "text": "FAIS-LE À L'ENVERS,",
      "gold": true,
-     "start": 17.369,
-     "end": 18.641
+     "start": 17.776,
+     "end": 19.02
     },
     {
      "text": "DE 52 À 1.",
      "gold": false,
-     "start": 18.641,
-     "end": 19.845
+     "start": 19.02,
+     "end": 20.198
     }
    ]
   },
   {
    "segment": "tip",
-   "start": 20.025,
-   "end": 21.919,
+   "start": 20.378,
+   "end": 22.221,
    "chunks": [
     {
      "text": "DÉCEMBRE",
      "gold": false,
-     "start": 20.025,
-     "end": 20.498
+     "start": 20.378,
+     "end": 20.839
     },
     {
      "text": "DEVIENT LE MOIS LE PLUS LÉGER.",
      "gold": true,
-     "start": 20.498,
-     "end": 21.919
+     "start": 20.839,
+     "end": 22.221
     }
    ]
   },
   {
    "segment": "cta",
-   "start": 22.199,
-   "end": 23.695,
+   "start": 22.501,
+   "end": 25.473,
    "chunks": [
     {
-     "text": "ABONNE-TOI",
+     "text": "ON LE COMMENCE",
      "gold": false,
-     "start": 22.199,
-     "end": 22.716
+     "start": 22.501,
+     "end": 23.33
     },
     {
-     "text": "POUR RELEVER LE DÉFI.",
+     "text": "LUNDI ENSEMBLE ?",
+     "gold": true,
+     "start": 23.33,
+     "end": 24.229
+    },
+    {
+     "text": "DIS-LE EN COMMENTAIRE.",
      "gold": false,
-     "start": 22.716,
-     "end": 23.695
+     "start": 24.229,
+     "end": 25.473
     }
    ]
   }

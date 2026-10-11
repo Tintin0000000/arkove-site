@@ -18,12 +18,12 @@
 
 ## Les hashtags
 
-Chaque vidéo a 8 hashtags : 2 propres au sujet, puis 6 communs à la série
-(#epargne #argent #financepersonnelle #budget #astuceargent #apprendresurtiktok).
-Les hashtags aident TikTok à classer la vidéo, mais ce sont surtout les 2 premières
-secondes et le taux de visionnage complet qui la rendent virale. Avant de publier, tape
-chaque hashtag dans la recherche TikTok pour vérifier qu'il est actif, et remplace-le si
-un hashtag proche a beaucoup plus de vues. Évite #fyp / #pourtoi : ils n'aident pas.
+Les épisodes 02 à 10 ont 4 hashtags ciblés (le sujet + #budget / #epargne). Les
+hashtags aident TikTok à classer la vidéo, mais ce sont surtout les 2 premières secondes
+et le visionnage complet qui la rendent virale. Avant de publier, tape chaque hashtag dans
+la recherche TikTok pour vérifier qu'il est actif. Évite #fyp / #pourtoi : ils n'aident pas.
+
+Le profil (nom, bio, photo, épingles, calendrier) : voir `PROFIL.md`.
 
 Ces vidéos donnent des informations générales sur l'épargne. Ce ne sont pas des conseils
 en investissement personnalisés : les chiffres sont des exemples.
@@ -43,9 +43,9 @@ Ta voiture tombe en panne demain : 1 200 € de réparation. Tu paies comment ? 
 Jour 2 · vidéo : `serie/videos/ep02.mp4`
 
 ```
-Ton salaire part trop vite ? Teste la règle 50/30/20 : 50 % besoins, 30 % envies, 20 % épargne. Tu es à combien en ce moment ? 👇
+Comment répartir son salaire ? La règle 50/30/20 en 20 secondes : 50 % besoins, 30 % envies, 20 % épargne. Et toi, tu épargnes combien par mois ?
 
-#regle503020 #gestionbudget #epargne #argent #financepersonnelle #budget #astuceargent #apprendresurtiktok
+#budget #epargne #regle503020 #financepersonnelle
 ```
 
 ## Épisode 03 · Paie-toi en premier
@@ -53,9 +53,9 @@ Ton salaire part trop vite ? Teste la règle 50/30/20 : 50 % besoins, 30 % envie
 Jour 3 · vidéo : `serie/videos/ep03.mp4`
 
 ```
-La règle d'or : on se paie en premier. Un virement automatique le jour de la paie, et l'épargne se fait toute seule. Tu l'as déjà mis en place ?
+Comment épargner chaque mois sans y penser : paie-toi en premier, avec un virement automatique le jour de la paie. Et toi, tu l'as déjà mis en place ?
 
-#paietoienpremier #virementautomatique #epargne #argent #financepersonnelle #budget #astuceargent #apprendresurtiktok
+#epargne #budget #astuceargent #financepersonnelle
 ```
 
 ## Épisode 04 · Les abonnements fantômes
@@ -63,9 +63,9 @@ La règle d'or : on se paie en premier. Un virement automatique le jour de la pa
 Jour 4 · vidéo : `serie/videos/ep04.mp4`
 
 ```
-Streaming, salle de sport, applis… 52 € par mois partent sans que tu t'en rendes compte : 624 € par an. Lequel tu résilies ce soir ?
+Les abonnements oubliés, c'est vite 50 € par mois qui partent sans que tu le voies : 624 € par an. Fais le tri ce soir. Et toi, tu paies combien d'abonnements ?
 
-#abonnements #economiser #epargne #argent #financepersonnelle #budget #astuceargent #apprendresurtiktok
+#abonnements #economiser #budget #epargne
 ```
 
 ## Épisode 05 · Le vrai prix de ton café
@@ -73,9 +73,9 @@ Streaming, salle de sport, applis… 52 € par mois partent sans que tu t'en re
 Jour 5 · vidéo : `serie/videos/ep05.mp4`
 
 ```
-3 € par jour, ça paraît rien… jusqu'à ce que tu fasses le calcul sur un an. Pas besoin d'arrêter, juste de réduire. Tu dépenses combien en café ? ☕
+3 € par jour, c'est plus de 10 000 € en 10 ans. Pas besoin d'arrêter le café : un sur deux à la maison suffit. Et toi, tu en bois combien par jour ? ☕
 
-#petitesdepenses #cafe #epargne #argent #financepersonnelle #budget #astuceargent #apprendresurtiktok
+#economiser #budget #astuceargent #epargne
 ```
 
 ## Épisode 06 · Le défi des 52 semaines
@@ -83,9 +83,9 @@ Jour 5 · vidéo : `serie/videos/ep05.mp4`
 Jour 6 · vidéo : `serie/videos/ep06.mp4`
 
 ```
-Le défi des 52 semaines : 1 € la semaine 1, 2 € la semaine 2… jusqu'à 52 €. Résultat : 1 378 € en un an. Qui le commence avec moi lundi ? 💪
+Le défi des 52 semaines : 1 € la première semaine, 2 € la deuxième… 52 € la dernière. Résultat : 1 378 € de côté en un an. On le commence lundi ensemble ? 💪
 
-#defi52semaines #challengeepargne #epargne #argent #financepersonnelle #budget #astuceargent #apprendresurtiktok
+#defi52semaines #challenge #epargne #economiser
 ```
 
 ## Épisode 07 · La règle des 72 heures
@@ -93,9 +93,9 @@ Le défi des 52 semaines : 1 € la semaine 1, 2 € la semaine 2… jusqu'à 52
 Jour 7 · vidéo : `serie/videos/ep07.mp4`
 
 ```
-Avant d'acheter : panier, puis 72 heures d'attente. Dans la plupart des cas, l'envie passe et l'argent reste. Tu as déjà testé ? 🛒
+Comment arrêter les achats impulsifs : la règle des 72 heures. Mets au panier, attends 3 jours : souvent, l'envie passe. Et toi, c'est quoi ton dernier achat inutile ? 🛒
 
-#achatimpulsif #consommerresponsable #epargne #argent #financepersonnelle #budget #astuceargent #apprendresurtiktok
+#achatimpulsif #economiser #budget #epargne
 ```
 
 ## Épisode 08 · L'inflation et ton épargne
@@ -103,9 +103,9 @@ Avant d'acheter : panier, puis 72 heures d'attente. Dans la plupart des cas, l'e
 Jour 8 · vidéo : `serie/videos/ep08.mp4`
 
 ```
-Laisser son argent dormir, c'est perdre du pouvoir d'achat : avec 2 % d'inflation par an, 1 000 € n'en valent plus que 820 dans 10 ans. Ton épargne rapporte combien ?
+Avec 2 % d'inflation par an, 1 000 € qui dorment perdent 18 % de pouvoir d'achat en 10 ans. Compare le taux de ton livret à l'inflation. Et toi, ton épargne rapporte combien ?
 
-#inflation #pouvoirdachat #epargne #argent #financepersonnelle #budget #astuceargent #apprendresurtiktok
+#inflation #epargne #argent #financepersonnelle
 ```
 
 ## Épisode 09 · Pourquoi commencer tôt
@@ -113,9 +113,9 @@ Laisser son argent dormir, c'est perdre du pouvoir d'achat : avec 2 % d'inflatio
 Jour 9 · vidéo : `serie/videos/ep09.mp4`
 
 ```
-Même effort, 100 € par mois, mais 10 ans d'écart : 152 000 € contre 83 000 € à 65 ans (à 5 %/an, exemple illustratif). Le meilleur moment pour commencer, c'est maintenant. Tu as commencé à quel âge ?
+100 € par mois, même placement, mais 10 ans d'écart : 152 000 € contre 83 000 € à 65 ans (5 %/an, exemple illustratif). Le temps compte plus que le montant. Et toi, tu as commencé à quel âge ?
 
-#interetscomposes #investir #epargne #argent #financepersonnelle #budget #astuceargent #apprendresurtiktok
+#interetscomposes #investir #epargne #financepersonnelle
 ```
 
 ## Épisode 10 · La méthode des enveloppes
@@ -123,7 +123,7 @@ Même effort, 100 € par mois, mais 10 ans d'écart : 152 000 € contre 83 000
 Jour 10 · vidéo : `serie/videos/ep10.mp4`
 
 ```
-La méthode des enveloppes : un budget par type de dépense. Enveloppe vide, on arrête. Ce qui reste part en épargne. Simple, et ça marche. Tu utilises quelle méthode ?
+Marre du découvert en fin de mois ? La méthode des enveloppes : un budget par dépense, enveloppe vide on arrête, le reste va en épargne. Et toi, tu utilises quelle méthode ?
 
-#methodedesenveloppes #gestionbudget #epargne #argent #financepersonnelle #budget #astuceargent #apprendresurtiktok
+#methodedesenveloppes #budget #epargne #decouvert
 ```

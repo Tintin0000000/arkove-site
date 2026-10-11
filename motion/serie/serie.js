@@ -84,6 +84,10 @@
           <div class="hw ${l.size || ''}" style="color:${l.color ? col(l.color) : 'var(--ink)'}">${l.hl ? '<i class="hl"></i>' : ''}<span>${l.text}</span></div>`).join('')}
         </div>
         ${b.reveal ? `<div class="abs hk-reveal">${b.reveal.html}</div>` : ''}`);
+      // Une ligne trop longue est réduite pour tenir dans 1 000 px.
+      el.querySelectorAll('.hw').forEach((w) => {
+        if (w.offsetWidth > 1000) w.style.fontSize = Math.floor(parseFloat(getComputedStyle(w).fontSize) * 1000 / w.offsetWidth) + 'px';
+      });
       return { icon: $('.hk-icon', el), lines: [...el.querySelectorAll('.hw')], box: $('.hk-lines', el), reveal: $('.hk-reveal', el) };
     },
     render(t, b, st) {
@@ -456,12 +460,17 @@
     build(el, b) {
       el.insertAdjacentHTML('beforeend', `
         <div class="abs cta-ic">${icon('piggy')}</div>
-        <h1 class="abs cta-title">${b.title || 'Abonne-<em>toi</em>'}</h1>
+        <h1 class="abs cta-title">${b.heading || 'Abonne-<em>toi</em>'}</h1>
         <p class="abs cta-sub">${b.sub || 'pour ne rien rater'}</p>
         <div class="abs sub-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1l-2-2Z"/></svg><span>S'ABONNER</span></div>
         <div class="abs ripple"></div><div class="abs finger"></div>
         <div class="abs handle">${EP.handle.replace(/^(@[^.]+)(\..*)?$/, '$1<span>$2</span>')}</div>
         ${EP.next ? `<div class="abs next"><div class="k">ÉPISODE ${String(EP.ep + 1).padStart(2, '0')}</div><div class="t">${EP.next}</div></div>` : ''}`);
+      // Titre long : on réduit la taille pour qu'il tienne sur une ligne.
+      const ttl = $('.cta-title', el);
+      let fs = 170;
+      while (ttl.scrollWidth > 1000 || ttl.offsetHeight > 190) { fs -= 6; ttl.style.fontSize = fs + 'px'; if (fs < 80) break; }
+      ttl.style.whiteSpace = 'nowrap';
       return { ic: $('.cta-ic', el), title: $('.cta-title', el), sub: $('.cta-sub', el), btn: $('.sub-btn', el), txt: $('.sub-btn span', el), rip: $('.ripple', el), finger: $('.finger', el), handle: $('.handle', el), next: $('.next', el) };
     },
     render(t, b, st) {

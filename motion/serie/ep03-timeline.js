@@ -1,219 +1,219 @@
 // Généré par voix/voiceover.py : ne pas modifier à la main.
 window.VO = {
- "duration": 23.1,
+ "duration": 23.0,
  "segments": [
   {
    "name": "hook",
    "start": 0,
-   "end": 4.392
+   "end": 3.863
   },
   {
    "name": "steps",
-   "start": 4.392,
-   "end": 9.431
+   "start": 3.863,
+   "end": 8.858
   },
   {
    "name": "counter",
-   "start": 9.431,
-   "end": 15.321
+   "start": 8.858,
+   "end": 14.783
   },
   {
    "name": "tip",
-   "start": 15.321,
-   "end": 18.352
+   "start": 14.783,
+   "end": 17.768
   },
   {
    "name": "cta",
-   "start": 18.352,
-   "end": 23.1
+   "start": 17.768,
+   "end": 23.0
   }
  ],
  "sentences": [
   {
    "segment": "hook",
    "start": 0.3,
-   "end": 2.45,
+   "end": 2.047,
    "chunks": [
     {
-     "text": "TU ÉPARGNES",
+     "text": "TU ATTENDS",
      "gold": false,
      "start": 0.3,
-     "end": 0.972
+     "end": 0.791
     },
     {
-     "text": "CE QUI RESTE",
+     "text": "LA FIN DU MOIS",
      "gold": false,
-     "start": 0.972,
-     "end": 1.644
+     "start": 0.791,
+     "end": 1.392
     },
     {
-     "text": "À LA FIN DU MOIS ?",
-     "gold": false,
-     "start": 1.644,
-     "end": 2.45
+     "text": "POUR ÉPARGNER ?",
+     "gold": true,
+     "start": 1.392,
+     "end": 2.047
     }
    ]
   },
   {
    "segment": "hook",
-   "start": 2.63,
-   "end": 4.412,
+   "start": 2.227,
+   "end": 3.883,
    "chunks": [
     {
-     "text": "ERREUR :",
+     "text": "VOILÀ POURQUOI",
      "gold": true,
-     "start": 2.63,
-     "end": 3.283
+     "start": 2.227,
+     "end": 2.944
     },
     {
-     "text": "IL NE RESTE",
+     "text": "TU N'Y ARRIVES JAMAIS.",
      "gold": false,
-     "start": 3.283,
-     "end": 3.818
-    },
-    {
-     "text": "JAMAIS RIEN.",
-     "gold": true,
-     "start": 3.818,
-     "end": 4.412
+     "start": 2.944,
+     "end": 3.883
     }
    ]
   },
   {
    "segment": "steps",
-   "start": 4.692,
-   "end": 5.666,
+   "start": 4.163,
+   "end": 5.119,
    "chunks": [
     {
      "text": "PAIE-TOI",
      "gold": false,
-     "start": 4.692,
-     "end": 5.118
+     "start": 4.163,
+     "end": 4.581
     },
     {
      "text": "EN PREMIER.",
      "gold": true,
-     "start": 5.118,
-     "end": 5.666
+     "start": 4.581,
+     "end": 5.119
     }
    ]
   },
   {
    "segment": "steps",
-   "start": 5.846,
-   "end": 9.451,
+   "start": 5.299,
+   "end": 8.878,
    "chunks": [
     {
      "text": "LE JOUR DE LA PAIE,",
      "gold": false,
-     "start": 5.846,
-     "end": 6.933
+     "start": 5.299,
+     "end": 6.378
     },
     {
      "text": "PROGRAMME UN VIREMENT",
      "gold": false,
-     "start": 6.933,
-     "end": 8.02
+     "start": 6.378,
+     "end": 7.458
     },
     {
      "text": "AUTOMATIQUE",
      "gold": true,
-     "start": 8.02,
-     "end": 8.65
+     "start": 7.458,
+     "end": 8.083
     },
     {
      "text": "VERS TON ÉPARGNE.",
      "gold": false,
-     "start": 8.65,
-     "end": 9.451
+     "start": 8.083,
+     "end": 8.878
     }
    ]
   },
   {
    "segment": "counter",
-   "start": 9.731,
-   "end": 12.643,
+   "start": 9.158,
+   "end": 11.943,
    "chunks": [
     {
      "text": "10 %",
      "gold": true,
-     "start": 9.731,
-     "end": 10.293
+     "start": 9.158,
+     "end": 9.696
     },
     {
      "text": "DE 2 000 €,",
      "gold": false,
-     "start": 10.293,
-     "end": 11.366
+     "start": 9.696,
+     "end": 10.721
     },
     {
      "text": "200 € PAR MOIS.",
      "gold": true,
-     "start": 11.366,
-     "end": 12.643
+     "start": 10.721,
+     "end": 11.943
     }
    ]
   },
   {
    "segment": "counter",
-   "start": 12.823,
-   "end": 15.341,
+   "start": 12.123,
+   "end": 14.803,
    "chunks": [
     {
      "text": "2 400 € PAR AN,",
      "gold": true,
-     "start": 12.823,
-     "end": 14.739
+     "start": 12.123,
+     "end": 14.162
     },
     {
      "text": "SANS Y PENSER.",
      "gold": false,
-     "start": 14.739,
-     "end": 15.341
+     "start": 14.162,
+     "end": 14.803
     }
    ]
   },
   {
    "segment": "tip",
-   "start": 15.621,
-   "end": 18.372,
+   "start": 15.083,
+   "end": 17.788,
    "chunks": [
     {
      "text": "FAIS-LE AUJOURD'HUI :",
      "gold": false,
-     "start": 15.621,
-     "end": 16.732
+     "start": 15.083,
+     "end": 16.175
     },
     {
      "text": "DEUX MINUTES",
      "gold": true,
-     "start": 16.732,
-     "end": 17.314
+     "start": 16.175,
+     "end": 16.747
     },
     {
      "text": "DANS TON APPLI BANCAIRE.",
      "gold": false,
-     "start": 17.314,
-     "end": 18.372
+     "start": 16.747,
+     "end": 17.788
     }
    ]
   },
   {
    "segment": "cta",
-   "start": 18.652,
-   "end": 19.925,
+   "start": 18.068,
+   "end": 21.408,
    "chunks": [
     {
-     "text": "ABONNE-TOI",
+     "text": "ET TOI,",
      "gold": false,
-     "start": 18.652,
-     "end": 19.225
+     "start": 18.068,
+     "end": 18.698
     },
     {
-     "text": "POUR LA SUITE.",
+     "text": "TU AS UN VIREMENT AUTO ?",
      "gold": false,
-     "start": 19.225,
-     "end": 19.925
+     "start": 18.698,
+     "end": 20.273
+    },
+    {
+     "text": "DIS-LE EN COMMENTAIRE.",
+     "gold": true,
+     "start": 20.273,
+     "end": 21.408
     }
    ]
   }

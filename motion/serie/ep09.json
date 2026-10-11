@@ -6,8 +6,8 @@
  "lead": 0.3,
  "gap": 0.18,
  "duration": "auto",
- "tail": 3.2,
- "handle": "@epargne.malin",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
  "title": "Pourquoi commencer tôt",
  "short": "COMMENCER TÔT",
  "next": "La méthode des enveloppes",
@@ -17,16 +17,16 @@
    "sfx": "whoosh",
    "chunks": [
     [
-     "*100 € PAR MOIS.",
-     "Cent euros par mois."
+     "MÊME ARGENT,",
+     "Même argent,"
     ],
     [
-     "MÊME SOMME,",
-     "Même somme,"
+     "MÊME PLACEMENT,",
+     "même placement,"
     ],
     [
-     "*RÉSULTAT PRESQUE DOUBLÉ ?",
-     "résultat presque doublé ?",
+     "*69 000 € D'ÉCART.",
+     "soixante-neuf mille euros d'écart.",
      "boom"
     ]
    ]
@@ -63,12 +63,12 @@
    "segment": "curves",
    "chunks": [
     [
-     "TOUS LES DEUX",
-     "Tous les deux"
+     "MÊME RENDEMENT :",
+     "Même rendement :"
     ],
     [
-     "INVESTISSENT À 5 %",
-     "investissent à cinq pour cent par an,"
+     "*5 % PAR AN,",
+     "cinq pour cent par an,"
     ],
     [
      "JUSQU'À 65 ANS.",
@@ -136,12 +136,16 @@
    "pause": 0.1,
    "chunks": [
     [
-     "ABONNE-TOI",
-     "Abonne-toi"
+     "ET TOI,",
+     "Et toi,"
     ],
     [
-     "POUR LA SUITE.",
-     "pour la suite."
+     "TU AS COMMENCÉ À QUEL ÂGE ?",
+     "tu as commencé à quel âge ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
     ]
    ]
   }
@@ -156,20 +160,20 @@
    "icon": "clock",
    "lines": [
     {
-     "text": "100 €/mois",
-     "at": "0:0",
+     "text": "69 000 €",
+     "at": "0:0-0.6",
      "size": "xl",
      "color": "gold"
     },
     {
-     "text": "même somme",
-     "at": "0:1",
+     "text": "d'écart",
+     "at": "0:0+0.3",
      "size": "m"
     },
     {
-     "text": "×2 ?",
+     "text": "même argent ?",
      "at": "0:2",
-     "size": "xl",
+     "size": "m",
      "hl": true
     }
    ]
@@ -315,20 +319,22 @@
   },
   "cta": {
    "type": "cta",
-   "glow": "gold"
+   "glow": "gold",
+   "heading": "Et <em>toi</em> ?",
+   "sub": "Dis-le en commentaire"
   }
  },
  "post": {
-  "caption": "Même effort, 100 € par mois, mais 10 ans d'écart : 152 000 € contre 83 000 € à 65 ans (à 5 %/an, exemple illustratif). Le meilleur moment pour commencer, c'est maintenant. Tu as commencé à quel âge ?",
+  "caption": "100 € par mois, même placement, mais 10 ans d'écart : 152 000 € contre 83 000 € à 65 ans (5 %/an, exemple illustratif). Le temps compte plus que le montant. Et toi, tu as commencé à quel âge ?",
   "hashtags": [
    "#interetscomposes",
    "#investir",
    "#epargne",
-   "#argent",
-   "#financepersonnelle",
-   "#budget",
-   "#astuceargent",
-   "#apprendresurtiktok"
+   "#financepersonnelle"
   ]
+ },
+ "cover": {
+  "kicker": "69 000 € d'écart",
+  "icon": "clock"
  }
 }

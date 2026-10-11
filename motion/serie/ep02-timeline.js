@@ -1,251 +1,251 @@
 // Généré par voix/voiceover.py : ne pas modifier à la main.
 window.VO = {
- "duration": 26.7,
+ "duration": 26.6,
  "segments": [
   {
    "name": "hook",
    "start": 0,
-   "end": 4.841
+   "end": 4.633
   },
   {
    "name": "donut",
-   "start": 4.841,
-   "end": 11.821
+   "start": 4.633,
+   "end": 11.73
   },
   {
    "name": "counter",
-   "start": 11.821,
-   "end": 16.927
+   "start": 11.73,
+   "end": 16.55
   },
   {
    "name": "tip",
-   "start": 16.927,
-   "end": 21.916
+   "start": 16.55,
+   "end": 21.614
   },
   {
    "name": "cta",
-   "start": 21.916,
-   "end": 26.7
+   "start": 21.614,
+   "end": 26.6
   }
  ],
  "sentences": [
   {
    "segment": "hook",
    "start": 0.3,
-   "end": 2.324,
+   "end": 2.841,
    "chunks": [
     {
-     "text": "TON SALAIRE",
+     "text": "2 000 € DE SALAIRE",
      "gold": false,
      "start": 0.3,
-     "end": 0.878
+     "end": 1.847
     },
     {
-     "text": "DISPARAÎT",
-     "gold": false,
-     "start": 0.878,
-     "end": 1.399
-    },
-    {
-     "text": "AVANT LA FIN DU MOIS ?",
-     "gold": false,
-     "start": 1.399,
-     "end": 2.324
+     "text": "ET PLUS RIEN LE 30 ?",
+     "gold": true,
+     "start": 1.847,
+     "end": 2.841
     }
    ]
   },
   {
    "segment": "hook",
-   "start": 2.504,
-   "end": 4.861,
+   "start": 3.021,
+   "end": 4.653,
    "chunks": [
     {
-     "text": "TESTE",
+     "text": "VOICI OÙ DOIT ALLER",
      "gold": false,
-     "start": 2.504,
-     "end": 2.872
+     "start": 3.021,
+     "end": 4.026
     },
     {
-     "text": "LA RÈGLE 50/30/20.",
+     "text": "CHAQUE EURO.",
      "gold": true,
-     "start": 2.872,
-     "end": 4.861
+     "start": 4.026,
+     "end": 4.653
     }
    ]
   },
   {
    "segment": "donut",
-   "start": 5.141,
-   "end": 8.552,
+   "start": 4.933,
+   "end": 8.572,
    "chunks": [
     {
      "text": "50 %",
      "gold": true,
-     "start": 5.141,
-     "end": 6.091
+     "start": 4.933,
+     "end": 5.947
     },
     {
      "text": "POUR LES BESOINS :",
      "gold": false,
-     "start": 6.091,
-     "end": 7.154
+     "start": 5.947,
+     "end": 7.081
     },
     {
      "text": "LOYER, COURSES,",
      "gold": false,
-     "start": 7.154,
-     "end": 8.104
+     "start": 7.081,
+     "end": 8.095
     },
     {
      "text": "FACTURES.",
      "gold": false,
-     "start": 8.104,
-     "end": 8.552
+     "start": 8.095,
+     "end": 8.572
     }
    ]
   },
   {
    "segment": "donut",
-   "start": 8.732,
-   "end": 10.128,
+   "start": 8.752,
+   "end": 10.082,
    "chunks": [
     {
      "text": "30 %",
      "gold": true,
-     "start": 8.732,
-     "end": 9.456
+     "start": 8.752,
+     "end": 9.442
     },
     {
      "text": "POUR LES ENVIES.",
      "gold": false,
-     "start": 9.456,
-     "end": 10.128
+     "start": 9.442,
+     "end": 10.082
     }
    ]
   },
   {
    "segment": "donut",
-   "start": 10.308,
-   "end": 11.841,
+   "start": 10.262,
+   "end": 11.75,
    "chunks": [
     {
      "text": "20 %",
      "gold": true,
-     "start": 10.308,
-     "end": 11.105
+     "start": 10.262,
+     "end": 11.036
     },
     {
      "text": "POUR L'ÉPARGNE.",
      "gold": false,
-     "start": 11.105,
-     "end": 11.841
+     "start": 11.036,
+     "end": 11.75
     }
    ]
   },
   {
    "segment": "counter",
-   "start": 12.121,
-   "end": 14.712,
+   "start": 12.03,
+   "end": 14.604,
    "chunks": [
     {
      "text": "SUR 2 000 €,",
      "gold": false,
-     "start": 12.121,
-     "end": 13.239
+     "start": 12.03,
+     "end": 13.14
     },
     {
      "text": "ÇA FAIT",
      "gold": false,
-     "start": 13.239,
-     "end": 13.543
+     "start": 13.14,
+     "end": 13.443
     },
     {
      "text": "400 €",
      "gold": true,
-     "start": 13.543,
-     "end": 14.356
+     "start": 13.443,
+     "end": 14.251
     },
     {
      "text": "PAR MOIS.",
      "gold": false,
-     "start": 14.356,
-     "end": 14.712
+     "start": 14.251,
+     "end": 14.604
     }
    ]
   },
   {
    "segment": "counter",
-   "start": 14.892,
-   "end": 16.947,
+   "start": 14.784,
+   "end": 16.57,
    "chunks": [
     {
      "text": "SOIT",
      "gold": false,
-     "start": 14.892,
-     "end": 15.134
+     "start": 14.784,
+     "end": 14.994
     },
     {
      "text": "4 800 € PAR AN.",
      "gold": true,
-     "start": 15.134,
-     "end": 16.947
+     "start": 14.994,
+     "end": 16.57
     }
    ]
   },
   {
    "segment": "tip",
-   "start": 17.227,
-   "end": 19.679,
+   "start": 16.85,
+   "end": 19.391,
    "chunks": [
     {
      "text": "PAS ENCORE 20 % ?",
      "gold": false,
-     "start": 17.227,
-     "end": 18.725
+     "start": 16.85,
+     "end": 18.403
     },
     {
      "text": "COMMENCE PAR 10.",
      "gold": true,
-     "start": 18.725,
-     "end": 19.679
+     "start": 18.403,
+     "end": 19.391
     }
    ]
   },
   {
    "segment": "tip",
-   "start": 19.859,
-   "end": 21.936,
+   "start": 19.571,
+   "end": 21.634,
    "chunks": [
     {
      "text": "CE QUI COMPTE,",
      "gold": false,
-     "start": 19.859,
-     "end": 20.898
+     "start": 19.571,
+     "end": 20.602
     },
     {
      "text": "C'EST LA RÉGULARITÉ.",
      "gold": true,
-     "start": 20.898,
-     "end": 21.936
+     "start": 20.602,
+     "end": 21.634
     }
    ]
   },
   {
    "segment": "cta",
-   "start": 22.216,
-   "end": 23.472,
+   "start": 21.914,
+   "end": 24.994,
    "chunks": [
     {
-     "text": "ABONNE-TOI",
+     "text": "ET TOI,",
      "gold": false,
-     "start": 22.216,
-     "end": 22.781
+     "start": 21.914,
+     "end": 22.598
     },
     {
-     "text": "POUR LA SUITE.",
+     "text": "TU ÉPARGNES COMBIEN ?",
      "gold": false,
-     "start": 22.781,
-     "end": 23.472
+     "start": 22.598,
+     "end": 23.762
+    },
+    {
+     "text": "DIS-LE EN COMMENTAIRE.",
+     "gold": true,
+     "start": 23.762,
+     "end": 24.994
     }
    ]
   }

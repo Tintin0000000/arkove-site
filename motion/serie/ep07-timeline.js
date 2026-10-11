@@ -1,194 +1,200 @@
 // Généré par voix/voiceover.py : ne pas modifier à la main.
 window.VO = {
- "duration": 22.2,
+ "duration": 23.6,
  "segments": [
   {
    "name": "hook",
    "start": 0,
-   "end": 4.05
+   "end": 4.51
   },
   {
    "name": "timer",
-   "start": 4.05,
-   "end": 9.578
+   "start": 4.51,
+   "end": 10.078
   },
   {
    "name": "counter",
-   "start": 9.578,
-   "end": 13.906
+   "start": 10.078,
+   "end": 14.298
   },
   {
    "name": "tip",
-   "start": 13.906,
-   "end": 17.566
+   "start": 14.298,
+   "end": 17.893
   },
   {
    "name": "cta",
-   "start": 17.566,
-   "end": 22.2
+   "start": 17.893,
+   "end": 23.6
   }
  ],
  "sentences": [
   {
    "segment": "hook",
    "start": 0.3,
-   "end": 1.958,
+   "end": 2.61,
    "chunks": [
     {
-     "text": "TU CRAQUES SOUVENT",
+     "text": "CE PETIT TRUC",
      "gold": false,
      "start": 0.3,
-     "end": 1.248
+     "end": 1.07
     },
     {
-     "text": "SUR DES ACHATS ?",
+     "text": "ÉVITE",
+     "gold": false,
+     "start": 1.07,
+     "end": 1.42
+    },
+    {
+     "text": "LES ACHATS INUTILES.",
      "gold": true,
-     "start": 1.248,
-     "end": 1.958
+     "start": 1.42,
+     "end": 2.61
     }
    ]
   },
   {
    "segment": "hook",
-   "start": 2.138,
-   "end": 4.07,
+   "start": 2.79,
+   "end": 4.53,
    "chunks": [
-    {
-     "text": "TESTE",
-     "gold": false,
-     "start": 2.138,
-     "end": 2.422
-    },
     {
      "text": "LA RÈGLE DES 72 HEURES.",
      "gold": true,
-     "start": 2.422,
-     "end": 4.07
+     "start": 2.79,
+     "end": 4.53
     }
    ]
   },
   {
    "segment": "timer",
-   "start": 4.35,
-   "end": 7.415,
+   "start": 4.81,
+   "end": 8.029,
    "chunks": [
     {
      "text": "UNE ENVIE D'ACHAT ?",
      "gold": false,
-     "start": 4.35,
-     "end": 5.175
+     "start": 4.81,
+     "end": 5.676
     },
     {
      "text": "METS-LA AU PANIER",
      "gold": false,
-     "start": 5.175,
-     "end": 6.295
+     "start": 5.676,
+     "end": 6.853
     },
     {
      "text": "ET ATTENDS 3 JOURS.",
      "gold": true,
-     "start": 6.295,
-     "end": 7.415
+     "start": 6.853,
+     "end": 8.029
     }
    ]
   },
   {
    "segment": "timer",
-   "start": 7.595,
-   "end": 9.598,
+   "start": 8.209,
+   "end": 10.098,
    "chunks": [
     {
      "text": "LA PLUPART DU TEMPS,",
      "gold": false,
-     "start": 7.595,
-     "end": 8.909
+     "start": 8.209,
+     "end": 9.449
     },
     {
      "text": "L'ENVIE PASSE.",
      "gold": true,
-     "start": 8.909,
-     "end": 9.598
+     "start": 9.449,
+     "end": 10.098
     }
    ]
   },
   {
    "segment": "counter",
-   "start": 9.878,
-   "end": 13.926,
+   "start": 10.378,
+   "end": 14.318,
    "chunks": [
     {
      "text": "UN ACHAT DE 40 €",
      "gold": false,
-     "start": 9.878,
-     "end": 11.035
+     "start": 10.378,
+     "end": 11.504
     },
     {
      "text": "ÉVITÉ PAR SEMAINE,",
      "gold": false,
-     "start": 11.035,
-     "end": 12.086
+     "start": 11.504,
+     "end": 12.527
     },
     {
      "text": "C'EST",
      "gold": false,
-     "start": 12.086,
-     "end": 12.297
+     "start": 12.527,
+     "end": 12.732
     },
     {
      "text": "2 080 € PAR AN.",
      "gold": true,
-     "start": 12.297,
-     "end": 13.926
+     "start": 12.732,
+     "end": 14.318
     }
    ]
   },
   {
    "segment": "tip",
-   "start": 14.206,
-   "end": 17.586,
+   "start": 14.598,
+   "end": 17.913,
    "chunks": [
     {
-     "text": "ET SI L'ENVIE",
+     "text": "TOUJOURS ENVIE",
      "gold": false,
-     "start": 14.206,
-     "end": 14.882
+     "start": 14.598,
+     "end": 15.382
     },
     {
-     "text": "EST TOUJOURS LÀ ?",
+     "text": "APRÈS 3 JOURS ?",
      "gold": false,
-     "start": 14.882,
-     "end": 15.761
+     "start": 15.382,
+     "end": 16.286
     },
     {
      "text": "ACHÈTE,",
      "gold": true,
-     "start": 15.761,
-     "end": 16.504
+     "start": 16.286,
+     "end": 16.949
     },
     {
      "text": "SANS CULPABILISER.",
      "gold": false,
-     "start": 16.504,
-     "end": 17.586
+     "start": 16.949,
+     "end": 17.913
     }
    ]
   },
   {
    "segment": "cta",
-   "start": 17.866,
-   "end": 18.989,
+   "start": 18.193,
+   "end": 21.955,
    "chunks": [
     {
-     "text": "ABONNE-TOI",
+     "text": "ET TOI,",
      "gold": false,
-     "start": 17.866,
-     "end": 18.371
+     "start": 18.193,
+     "end": 18.842
     },
     {
-     "text": "POUR LA SUITE.",
+     "text": "TON DERNIER ACHAT INUTILE ?",
      "gold": false,
-     "start": 18.371,
-     "end": 18.989
+     "start": 18.842,
+     "end": 20.787
+    },
+    {
+     "text": "DIS-LE EN COMMENTAIRE.",
+     "gold": true,
+     "start": 20.787,
+     "end": 21.955
     }
    ]
   }

@@ -6,8 +6,8 @@
  "lead": 0.3,
  "gap": 0.18,
  "duration": "auto",
- "tail": 3.2,
- "handle": "@epargne.malin",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
  "title": "L'inflation et ton épargne",
  "short": "INFLATION",
  "next": "Pourquoi commencer tôt",
@@ -17,17 +17,17 @@
    "sfx": "whoosh",
    "chunks": [
     [
-     "TON ARGENT",
-     "Ton argent"
+     "TON ARGENT QUI DORT",
+     "Ton argent qui dort"
     ],
     [
-     "*PERD DE LA VALEUR",
-     "perd de la valeur",
+     "*PERD 18 %",
+     "perd dix-huit pour cent",
      "boom"
     ],
     [
-     "EN DORMANT.",
-     "en dormant."
+     "EN 10 ANS.",
+     "en dix ans."
     ]
    ]
   },
@@ -126,12 +126,16 @@
    "pause": 0.1,
    "chunks": [
     [
-     "ABONNE-TOI",
-     "Abonne-toi"
+     "ET TOI,",
+     "Et toi,"
     ],
     [
-     "POUR LA SUITE.",
-     "pour la suite."
+     "TON ARGENT DORT OÙ ?",
+     "ton argent dort où ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
     ]
    ]
   }
@@ -146,18 +150,18 @@
    "icon": "moon",
    "lines": [
     {
-     "text": "Ton argent",
-     "at": "0:0",
-     "size": "m"
-    },
-    {
-     "text": "fond",
-     "at": "0:1",
+     "text": "−18 %",
+     "at": "0:0-0.6",
      "size": "xl",
      "hl": true
     },
     {
-     "text": "en dormant",
+     "text": "ton argent qui dort",
+     "at": "0:0+0.3",
+     "size": "m"
+    },
+    {
+     "text": "en 10 ans",
      "at": "0:2",
      "size": "m"
     }
@@ -206,20 +210,22 @@
   },
   "cta": {
    "type": "cta",
-   "glow": "gold"
+   "glow": "gold",
+   "heading": "Et <em>toi</em> ?",
+   "sub": "Dis-le en commentaire"
   }
  },
  "post": {
-  "caption": "Laisser son argent dormir, c'est perdre du pouvoir d'achat : avec 2 % d'inflation par an, 1 000 € n'en valent plus que 820 dans 10 ans. Ton épargne rapporte combien ?",
+  "caption": "Avec 2 % d'inflation par an, 1 000 € qui dorment perdent 18 % de pouvoir d'achat en 10 ans. Compare le taux de ton livret à l'inflation. Et toi, ton épargne rapporte combien ?",
   "hashtags": [
    "#inflation",
-   "#pouvoirdachat",
    "#epargne",
    "#argent",
-   "#financepersonnelle",
-   "#budget",
-   "#astuceargent",
-   "#apprendresurtiktok"
+   "#financepersonnelle"
   ]
+ },
+ "cover": {
+  "kicker": "−18 % en 10 ans",
+  "icon": "chartDown"
  }
 }

@@ -6,8 +6,8 @@
  "lead": 0.3,
  "gap": 0.18,
  "duration": "auto",
- "tail": 3.2,
- "handle": "@epargne.malin",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
  "title": "La règle des 72 heures",
  "short": "RÈGLE DES 72 H",
  "next": "L'inflation et ton épargne",
@@ -17,12 +17,16 @@
    "sfx": "whoosh",
    "chunks": [
     [
-     "TU CRAQUES SOUVENT",
-     "Tu craques souvent"
+     "CE PETIT TRUC",
+     "Ce petit truc"
     ],
     [
-     "*SUR DES ACHATS ?",
-     "sur des achats ?",
+     "ÉVITE",
+     "évite"
+    ],
+    [
+     "*LES ACHATS INUTILES.",
+     "les achats inutiles.",
      "boom"
     ]
    ]
@@ -31,12 +35,8 @@
    "segment": "hook",
    "chunks": [
     [
-     "TESTE",
-     "Teste"
-    ],
-    [
      "*LA RÈGLE DES 72 HEURES.",
-     "la règle des soixante-douze heures."
+     "La règle des soixante-douze heures."
     ]
    ]
   },
@@ -102,12 +102,12 @@
    "pause": 0.1,
    "chunks": [
     [
-     "ET SI L'ENVIE",
-     "Et si l'envie"
+     "TOUJOURS ENVIE",
+     "Toujours envie"
     ],
     [
-     "EST TOUJOURS LÀ ?",
-     "est toujours là ?"
+     "APRÈS 3 JOURS ?",
+     "après trois jours ?"
     ],
     [
      "*ACHÈTE,",
@@ -125,18 +125,22 @@
    "pause": 0.1,
    "chunks": [
     [
-     "ABONNE-TOI",
-     "Abonne-toi"
+     "ET TOI,",
+     "Et toi,"
     ],
     [
-     "POUR LA SUITE.",
-     "pour la suite."
+     "TON DERNIER ACHAT INUTILE ?",
+     "c'est quoi ton dernier achat inutile ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
     ]
    ]
   }
  ],
  "shakes": [
-  "0:1"
+  "0:2"
  ],
  "blocks": {
   "hook": {
@@ -145,19 +149,29 @@
    "icon": "cart",
    "lines": [
     {
-     "text": "Tu craques",
-     "at": "0:0"
+     "text": "Ce petit truc",
+     "at": "0:0-0.6",
+     "size": "m"
     },
     {
-     "text": "souvent ?",
-     "at": "0:1",
-     "size": "xl",
+     "text": "évite",
+     "at": "0:0-0.35",
+     "size": "m"
+    },
+    {
+     "text": "les achats",
+     "at": "0:0-0.1",
      "hl": true
+    },
+    {
+     "text": "inutiles",
+     "at": "0:0+0.2",
+     "size": "xl"
     }
    ],
    "reveal": {
     "html": "La règle des <em>72 heures</em>",
-    "at": "1:1"
+    "at": "1:0"
    }
   },
   "timer": {
@@ -213,20 +227,22 @@
   },
   "cta": {
    "type": "cta",
-   "glow": "gold"
+   "glow": "gold",
+   "heading": "Et <em>toi</em> ?",
+   "sub": "Dis-le en commentaire"
   }
  },
  "post": {
-  "caption": "Avant d'acheter : panier, puis 72 heures d'attente. Dans la plupart des cas, l'envie passe et l'argent reste. Tu as déjà testé ? 🛒",
+  "caption": "Comment arrêter les achats impulsifs : la règle des 72 heures. Mets au panier, attends 3 jours : souvent, l'envie passe. Et toi, c'est quoi ton dernier achat inutile ? 🛒",
   "hashtags": [
    "#achatimpulsif",
-   "#consommerresponsable",
-   "#epargne",
-   "#argent",
-   "#financepersonnelle",
+   "#economiser",
    "#budget",
-   "#astuceargent",
-   "#apprendresurtiktok"
+   "#epargne"
   ]
+ },
+ "cover": {
+  "kicker": "Stop aux achats inutiles",
+  "icon": "cart"
  }
 }
