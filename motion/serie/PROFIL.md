@@ -5,8 +5,17 @@
 | Élément | À mettre | Pourquoi |
 |---|---|---|
 | **Nom** | `Épargne Malin · Budget` | Le nom compte pour la recherche TikTok : « budget » est un mot très cherché. |
-| **Photo** | `brand/avatar-or.png` (pièce or, sans texte) | Ton nom est déjà écrit à côté. L'or ressort en mode clair comme en mode sombre et reste lisible en tout petit dans le fil. |
+| **Photo** | `brand/avatar.png` (é or sur fond noir, sans texte) | Mêmes couleurs que les vidéos et les couvertures (noir et or) : le profil forme un ensemble. Ton nom est déjà écrit à côté, et le é reste lisible en tout petit dans le fil. |
 | **Bio** | `1 astuce par jour pour épargner sans te priver 💰 Commence par l'épisode 1 ⬇️` | Dit en une ligne ce qu'on gagne à s'abonner, et où commencer. |
+
+### Mettre la photo
+
+1. Sur ton téléphone, enregistre `brand/avatar.png` dans ta galerie.
+2. TikTok → *Profil* → *Modifier le profil* → *Changer la photo* → *Importer*.
+3. Choisis l'image. TikTok la découpe en rond : centre le é et garde le cercle doré tout entier dans le rond, sans zoomer.
+4. *Enregistrer*.
+
+Aperçu du résultat : `brand/apercu-profil-sombre.png`.
 
 ## 2. La grille de vidéos
 
