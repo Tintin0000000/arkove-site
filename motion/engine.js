@@ -74,6 +74,9 @@
       'italic 400 10px "Instrument Serif"', '700 10px "JetBrains Mono"'];
     const whenReady = Promise.all(fonts.map((f) => document.fonts.load(f))).catch(() => {}).then(() => {
       ctx = (setup && setup(stage)) || {};
+      // Les images (logo…) doivent être décodées avant la première image capturée.
+      return Promise.all([...stage.querySelectorAll('img')].map((img) => img.decode().catch(() => {})));
+    }).then(() => {
       ready = true;
       seek(t);
     });

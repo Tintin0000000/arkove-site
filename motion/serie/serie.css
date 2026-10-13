@@ -9,6 +9,10 @@
 
 .topbar { left: 60px; right: 60px; top: 64px; display: flex; justify-content: space-between; font: 700 24px var(--mono); letter-spacing: 0.2em; color: var(--ink-soft); z-index: 5; }
 .topbar b { color: var(--gold); font-weight: 700; }
+.topbar { align-items: center; top: 46px; z-index: 7; }
+.topbar span:first-child { display: flex; align-items: center; gap: 16px; }
+/* Logo de la chaîne, le même que la photo de profil : il signe chaque image de la vidéo. */
+.tb-logo { width: 56px; height: 56px; border-radius: 50%; box-shadow: 0 0 0 2px rgba(206, 155, 76, 0.35); }
 .track { left: 60px; right: 60px; top: 112px; height: 6px; border-radius: 3px; background: rgba(243, 238, 228, 0.1); z-index: 5; overflow: hidden; }
 .track i { position: absolute; inset: 0; background: var(--gold); transform-origin: 0 50%; }
 
@@ -136,6 +140,9 @@
 .sub-btn svg { width: 56px; height: 56px; }
 .handle { left: 0; width: 1080px; top: 1000px; text-align: center; font: 700 56px var(--sans); }
 .handle span { color: var(--gold-soft); }
+.handle { display: flex; justify-content: center; align-items: center; gap: 22px; }
+.handle b { font-weight: 700; }
+.h-logo { width: 96px; height: 96px; border-radius: 50%; }
 .finger { left: 0; top: 0; width: 100px; height: 100px; border-radius: 50%; background: rgba(255, 255, 255, 0.9); }
 .ripple { left: 0; top: 0; width: 120px; height: 120px; border-radius: 50%; border: 6px solid #fff; }
 .next { left: 140px; width: 800px; top: 1270px; padding: 26px 34px; border-radius: 26px; border: 2px solid rgba(206, 155, 76, 0.4); background: #15130f; text-align: center; }

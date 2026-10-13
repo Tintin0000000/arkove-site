@@ -473,7 +473,7 @@
           ? '<svg viewBox="0 0 100 100" fill="currentColor"><path d="M24 8 H76 V94 L50 72 L24 94Z"/></svg><span>SAUVEGARDER</span>'
           : `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1l-2-2Z"/></svg><span>S'ABONNER</span>`}</div>
         <div class="abs ripple"></div><div class="abs finger"></div>
-        <div class="abs handle">${EP.handle.replace(/^(@[^.]+)(\..*)?$/, '$1<span>$2</span>')}</div>
+        <div class="abs handle"><img class="h-logo" src="../brand/avatar-200.png" alt=""><b>${EP.handle.replace(/^(@[^.]+)(\..*)?$/, '$1<span>$2</span>')}</b></div>
         ${EP.next ? `<div class="abs next"><div class="k">ÉPISODE ${String(EP.ep + 1).padStart(2, '0')}</div><div class="t">${EP.next}</div></div>` : ''}`);
       // Titre long : on réduit la taille pour qu'il tienne sur une ligne.
       const ttl = $('.cta-title', el);
@@ -513,7 +513,7 @@
   const segs = VO.segments.map((s) => ({ ...s, block: EP.blocks[s.name] }));
   const stage = document.getElementById('stage');
   stage.insertAdjacentHTML('beforeend', `
-    <div class="abs topbar"><span>${EP.series ? `<b>${EP.series}</b>` : `<b>ÉPARGNE MALIN</b> · ÉP. ${String(EP.ep).padStart(2, '0')}`}</span><span>${EP.short || ''}</span></div>
+    <div class="abs topbar"><span><img class="tb-logo" src="../brand/avatar-200.png" alt="">${EP.series ? `<b>${EP.series}</b>` : `<b>ÉPARGNE MALIN</b> · ÉP. ${String(EP.ep).padStart(2, '0')}`}</span><span>${EP.short || ''}</span></div>
     <div class="abs track"><i id="progress"></i></div>`);
   const capsLayer = html('<div class="abs cap" id="cap"></div>');
 
