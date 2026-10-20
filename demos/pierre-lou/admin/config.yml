@@ -1,0 +1,91 @@
+# Configuration de l'espace d'administration (Decap CMS)
+locale: fr
+site_url: https://pierrelou-auto.fr
+display_url: https://pierrelou-auto.fr
+logo:
+  src: logo.svg
+
+# --- Connexion -------------------------------------------------------------
+# À remplacer par le bloc « backend » que DecapBridge affiche quand on y ajoute
+# le site (connexion par e-mail et mot de passe, Google ou Microsoft).
+# En dehors du site en ligne, admin.js bascule en mode démonstration.
+backend:
+  name: git-gateway
+  repo: COMPTE-GITHUB/pierrelou-site
+  branch: main
+
+media_folder: assets/photos/uploads
+public_folder: /assets/photos/uploads
+
+collections:
+  - name: stock
+    label: Véhicules
+    description: Le stock affiché sur le site. Une voiture vendue passe en statut « Vendu » et disparaît du site.
+    editor: { preview: false }
+    files:
+      - name: vehicules
+        label: Stock de véhicules
+        file: content/vehicules.json
+        fields:
+          - name: vehicules
+            label: Véhicules
+            label_singular: véhicule
+            widget: list
+            add_to_top: true
+            collapsed: true
+            summary: "{{fields.marque}} {{fields.modele}}, {{fields.annee}}, {{fields.prix}} €, {{fields.statut}}"
+            fields:
+              - label: Photos
+                name: photos
+                label_singular: photo
+                widget: list
+                required: false
+                hint: La première photo sert de vignette. Glissez les photos pour changer l'ordre.
+                field: { label: Photo, name: image, widget: image, choose_url: false }
+              - { label: Marque, name: marque, widget: string }
+              - { label: Modèle, name: modele, widget: string }
+              - { label: Finition / motorisation, name: version, widget: string, required: false, hint: "Ex. 1.2 PureTech 100 Allure" }
+              - { label: Prix (€), name: prix, widget: number, value_type: int, min: 0 }
+              - { label: Année, name: annee, widget: number, value_type: int, min: 1950, max: 2100 }
+              - { label: Kilométrage, name: km, widget: number, value_type: int, min: 0 }
+              - { label: Énergie, name: carburant, widget: select, options: [Essence, Diesel, Hybride, Électrique], default: Essence }
+              - { label: Boîte de vitesses, name: boite, widget: select, options: [Manuelle, Automatique], default: Manuelle }
+              - { label: Statut, name: statut, widget: select, default: Disponible, options: [Disponible, Nouveauté, Réservé, Vendu], hint: "« Vendu » retire la voiture du site sans la supprimer." }
+              - { label: Mettre en vitrine sur l'accueil, name: vitrine, widget: boolean, default: false, required: false }
+              - { label: Puissance (ch), name: puissance, widget: number, value_type: int, required: false }
+              - { label: Couleur, name: couleur, widget: string, required: false }
+              - { label: Portes, name: portes, widget: number, value_type: int, default: 5, required: false }
+              - { label: Places, name: places, widget: number, value_type: int, default: 5, required: false }
+              - { label: "Crit'Air", name: critair, widget: select, default: "1", options: ["0", "1", "2", "3", "4", "5"], required: false, hint: "0 = électrique" }
+              - { label: Garantie (mois), name: garantie, widget: select, default: "12", options: ["3", "6", "12", "24"], required: false }
+              - { label: Équipements, name: options, widget: list, required: false, field: { label: Équipement, name: option, widget: string } }
+              - { label: Référence, name: ref, widget: string, required: false, hint: "Ex. PL-013. Laissez vide pour une numérotation automatique." }
+
+  - name: photos
+    label: Photos du site
+    description: Les photos de l'accueil et de la page Le garage. Laissez un emplacement vide pour garder le cadre provisoire.
+    editor: { preview: false }
+    files:
+      - name: photos
+        label: Photos de l'accueil et du garage
+        file: content/photos.json
+        fields:
+          - { label: "Accueil : grande photo de la voiture vedette", name: accueil_vedette, widget: image, required: false, choose_url: false, hint: "Format paysage, idéalement devant le garage" }
+          - { label: "Accueil : portrait de Pierre-Lou", name: portrait_pierre_lou, widget: image, required: false, choose_url: false, hint: "Format vertical" }
+          - { label: "Accueil : aperçu du service « Acheter »", name: service_achat, widget: image, required: false, choose_url: false }
+          - { label: "Accueil : aperçu du service « Reprise »", name: service_reprise, widget: image, required: false, choose_url: false }
+          - { label: "Accueil : aperçu du service « Dépôt-vente »", name: service_depot, widget: image, required: false, choose_url: false }
+          - { label: "Accueil : aperçu du service « Financement »", name: service_financement, widget: image, required: false, choose_url: false }
+          - { label: "Accueil : aperçu du service « Recherche »", name: service_recherche, widget: image, required: false, choose_url: false }
+          - { label: "Le garage : façade", name: garage_facade, widget: image, required: false, choose_url: false, hint: "Format vertical" }
+          - { label: "Le garage : Pierre-Lou", name: garage_pierre_lou, widget: image, required: false, choose_url: false }
+          - { label: "Le garage : le parc de véhicules", name: garage_parc, widget: image, required: false, choose_url: false }
+          - { label: "Méthode, étape 1 : sélection", name: methode_1_selection, widget: image, required: false, choose_url: false }
+          - { label: "Méthode, étape 2 : contrôle", name: methode_2_controle, widget: image, required: false, choose_url: false }
+          - { label: "Méthode, étape 3 : préparation", name: methode_3_preparation, widget: image, required: false, choose_url: false }
+          - { label: "Méthode, étape 4 : remise des clés", name: methode_4_livraison, widget: image, required: false, choose_url: false }
+          - { label: "Galerie : grande photo", name: galerie_1, widget: image, required: false, choose_url: false, hint: "Format paysage" }
+          - { label: "Galerie : photo 2", name: galerie_2, widget: image, required: false, choose_url: false }
+          - { label: "Galerie : photo 3", name: galerie_3, widget: image, required: false, choose_url: false }
+          - { label: "Galerie : photo 4", name: galerie_4, widget: image, required: false, choose_url: false }
+          - { label: "Galerie : photo 5", name: galerie_5, widget: image, required: false, choose_url: false }

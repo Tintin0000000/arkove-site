@@ -1,5 +1,5 @@
 /* Contact : formulaire adaptatif + horaires */
-(function () {
+window.PL.dataReady.then(function () {
   var PL = window.PL;
   var form = document.getElementById('contact-form');
   if (!form) return;
@@ -115,4 +115,4 @@
     form.reset(); syncBoxes(); picked.innerHTML = '';
     done.classList.remove('is-on');
   });
-})();
+});

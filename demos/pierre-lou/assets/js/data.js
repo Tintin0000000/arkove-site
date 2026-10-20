@@ -1,5 +1,10 @@
 /* ==========================================================================
-   Stock de véhicules — EXEMPLES pour la maquette.
+   Stock de véhicules.
+   En ligne, le stock vient de content/vehicules.json, que Pierre-Lou modifie
+   depuis l'espace d'administration (/admin). La liste ci-dessous ne sert
+   que de secours (ouverture du site en local, fichier absent).
+
+   EXEMPLES pour la maquette.
    À remplacer par le stock réel de Pierre-Lou.
 
    Photos : déposer les fichiers dans assets/photos/vehicules/
@@ -103,11 +108,54 @@ PL.vehicles = [
 PL.fmtNum = function (n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '\u00a0'); };
 PL.fmtPrice = function (n) { return PL.fmtNum(n) + '\u00a0€'; };
 PL.fmtKm = function (n) { return PL.fmtNum(n) + '\u00a0km'; };
-PL.photo = function (v, i) { return 'assets/photos/vehicules/' + v.id + '-' + (i || 1) + '.jpg'; };
+PL.photo = function (v, i) {
+  var p = v.photos && v.photos[(i || 1) - 1];
+  if (p) return String(p).replace(/^\//, '');
+  return 'assets/photos/vehicules/' + v.id + '-' + (i || 1) + '.jpg';
+};
 PL.byId = function (id) {
   for (var i = 0; i < PL.vehicles.length; i++) if (PL.vehicles[i].id === id) return PL.vehicles[i];
   return null;
 };
+
+/* ---------- Données gérées depuis /admin ---------- */
+PL.slug = function (s) {
+  return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+};
+PL.photoMap = {};
+PL.setVehicles = function (list) {
+  var seen = {};
+  PL.vehicles = list.filter(function (v) { return v && v.marque && v.statut !== 'Vendu'; }).map(function (v, i) {
+    var id = PL.slug(v.marque + '-' + v.modele + '-' + v.annee), base = id, n = 2;
+    while (seen[id]) id = base + '-' + n++;
+    seen[id] = true;
+    return {
+      id: id, ref: v.ref || 'PL-' + ('00' + (i + 1)).slice(-3),
+      marque: v.marque, modele: v.modele || '', version: v.version || '',
+      annee: +v.annee || 0, km: +v.km || 0, prix: +v.prix || 0, puissance: +v.puissance || 0,
+      carburant: v.carburant || 'Essence', boite: v.boite || 'Manuelle', couleur: v.couleur || '',
+      portes: +v.portes || 5, places: +v.places || 5, critair: v.critair == null ? 1 : +v.critair,
+      garantie: +v.garantie || 12, statut: v.statut || 'Disponible', vitrine: !!v.vitrine,
+      options: (v.options || []).filter(Boolean),
+      photos: (v.photos || []).map(function (p) { return typeof p === 'string' ? p : p && p.image; }).filter(Boolean)
+    };
+  });
+};
+(function () {
+  function getJSON(url) {
+    return fetch(url, { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error(url); return r.json(); });
+  }
+  var fallback = PL.vehicles;
+  PL.dataReady = Promise.all([
+    getJSON('content/vehicules.json')
+      .then(function (d) { PL.setVehicles(d.vehicules || []); })
+      .catch(function () { PL.setVehicles(fallback); }),
+    getJSON('content/photos.json')
+      .then(function (d) { PL.photoMap = d || {}; })
+      .catch(function () {})
+  ]);
+})();
 
 // Mensualité indicative (crédit classique)
 PL.TAUX = 0.059;
@@ -131,7 +179,7 @@ PL.cardHTML = function (v) {
   return '' +
     '<a class="car" href="vehicule.html?id=' + e(v.id) + '" data-cursor="Voir la fiche" data-id="' + e(v.id) + '">' +
       '<div class="car-media">' +
-        '<div class="ph" data-ph="car" data-label="Photo principale" data-hint="' + e(v.id) + '-1.jpg" data-src="' + PL.photo(v, 1) + '"></div>' +
+        '<div class="ph" data-ph="car" data-label="Photo principale" data-hint="À ajouter depuis l\'espace Pierre-Lou" data-src="' + PL.photo(v, 1) + '"></div>' +
         badge +
       '</div>' +
       '<div class="car-body">' +

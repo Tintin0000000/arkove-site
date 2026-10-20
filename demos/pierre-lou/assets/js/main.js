@@ -54,6 +54,9 @@
 
       // Si le fichier existe, il remplace automatiquement l'emplacement.
       var src = el.getAttribute('data-src');
+      // Photo ajoutée depuis l'espace d'administration (content/photos.json)
+      var key = src ? src.split('/').pop().replace(/\.\w+$/, '').replace(/-/g, '_') : '';
+      if (key && PL.photoMap && PL.photoMap[key]) src = PL.photoMap[key].replace(/^\//, '');
       if (src) {
         var img = new Image();
         img.alt = el.getAttribute('data-alt') || label || '';
@@ -443,7 +446,6 @@
   };
   /* ---------- Divers ---------- */
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
-  document.querySelectorAll('[data-stock]').forEach(function (el) { el.textContent = PL.vehicles ? PL.vehicles.length : ''; });
 
   // Footer : le grand nom réagit aussi au survol
   var giant = document.querySelector('.footer-giant');
@@ -452,7 +454,10 @@
     g.enable();
   }
 
-  PL.initPh();
+  PL.dataReady.then(function () {
+    document.querySelectorAll('[data-stock]').forEach(function (el) { el.textContent = PL.vehicles.length; });
+    PL.initPh();
+  });
   PL.observeReveals();
   PL.magnetic();
   PL.tilt();

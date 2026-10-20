@@ -36,7 +36,7 @@
 
   /* ---------- Vitrine : rail glissable ---------- */
   var rail = document.getElementById('rail');
-  if (rail) {
+  if (rail) PL.dataReady.then(function () {
     rail.innerHTML = PL.vehicles.filter(function (v) { return v.vitrine; }).map(PL.cardHTML).join('');
     PL.initPh(rail);
     PL.tilt(rail);
@@ -92,7 +92,7 @@
       })();
     });
     rail.addEventListener('click', function (e) { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
-  }
+  });
 
   /* ---------- Services : aperçu photo qui suit le curseur ---------- */
   var list = document.querySelector('.svc-list');

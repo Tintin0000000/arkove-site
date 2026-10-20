@@ -1,5 +1,5 @@
 /* Fiche véhicule : vehicule.html?id=<id> */
-(function () {
+window.PL.dataReady.then(function () {
   var PL = window.PL, e = PL.esc;
   var root = document.getElementById('fiche');
   if (!root) return;
@@ -20,7 +20,10 @@
 
   document.title = v.marque + ' ' + v.modele + ' ' + v.annee + ' · Pierre-Lou Automobiles';
 
-  var VIEWS = ['Vue 3/4 avant', 'Profil', 'Vue 3/4 arrière', 'Intérieur, poste de conduite', 'Sièges arrière', 'Coffre'];
+  // Photos ajoutées depuis /admin, sinon 6 emplacements à remplir
+  var VIEWS = v.photos.length
+    ? v.photos.map(function (p, i) { return 'Photo ' + (i + 1); })
+    : ['Vue 3/4 avant', 'Profil', 'Vue 3/4 arrière', 'Intérieur, poste de conduite', 'Sièges arrière', 'Coffre'];
   var slides = VIEWS.map(function (label, i) {
     return '<div class="ph' + (i === 0 ? ' is-active' : '') + '" data-ph="' + (i < 3 ? 'car' : 'photo') + '" data-label="' + label + '" data-hint="' + v.id + '-' + (i + 1) + '.jpg" data-src="' + PL.photo(v, i + 1) + '"></div>';
   }).join('');
@@ -47,7 +50,7 @@
           '<div class="gallery-main wipe" data-hero>' + slides +
             '<button class="gal-nav gal-prev" type="button" aria-label="Photo précédente"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 10H4M9 5l-5 5 5 5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>' +
             '<button class="gal-nav gal-next" type="button" aria-label="Photo suivante">' + ARROW + '</button>' +
-            '<span class="gal-count" aria-live="polite">1 / 6</span>' +
+            '<span class="gal-count" aria-live="polite">1 / ' + VIEWS.length + '</span>' +
           '</div>' +
           '<div class="thumbs">' + thumbs + '</div>' +
           '<div class="specs">' + specs + '</div>' +
@@ -162,4 +165,4 @@
   new IntersectionObserver(function (en) {
     bar.classList.toggle('is-on', !en[0].isIntersecting && en[0].boundingClientRect.top < 0);
   }).observe(priceCard);
-})();
+});

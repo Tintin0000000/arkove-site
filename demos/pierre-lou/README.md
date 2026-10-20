@@ -25,30 +25,40 @@ npx http-server -p 8080 .
 
 L'intro complète (rideau + plaque) ne se joue qu'à la première visite de l'accueil dans l'onglet. Pour la revoir : nouvel onglet, ou `sessionStorage.clear()` dans la console.
 
-## Ajouter les photos
+## Espace d'administration (`/admin`)
 
-Chaque emplacement photo affiche son nom de fichier. Il suffit de déposer le fichier au bon endroit avec ce nom : la photo remplace automatiquement l'emplacement, sans toucher au code.
+Pierre-Lou gère lui-même son stock et ses photos depuis `pierrelou-auto.fr/admin`, sur téléphone ou ordinateur :
 
-**Véhicules** — `assets/photos/vehicules/<id>-1.jpg` à `<id>-6.jpg`
-(1 = 3/4 avant, utilisée en vignette ; 2 = profil ; 3 = 3/4 arrière ; 4 = poste de conduite ; 5 = places arrière ; 6 = coffre). Format paysage, 1600 × 1000 px conseillé.
+- **Véhicules** : ajouter une voiture, modifier prix, kilométrage, équipements, ajouter les photos depuis la galerie du téléphone (la 1re sert de vignette), cocher « vitrine » pour l'accueil. Une voiture vendue passe en statut « Vendu » et disparaît du site.
+- **Photos du site** : les 19 emplacements de l'accueil et de la page Le garage. Un emplacement laissé vide garde son cadre provisoire.
 
-**Garage** — `assets/photos/` et `assets/photos/garage/` :
+Chaque enregistrement met à jour `content/vehicules.json` ou `content/photos.json` dans le dépôt GitHub, et l'hébergeur republie le site en 1 à 2 minutes. Les photos sont rangées dans `assets/photos/uploads/`.
 
-| Fichier | Où |
-|---|---|
-| `accueil-vedette.jpg` | Grande photo de l'accueil (paysage 16:9) |
-| `garage/portrait-pierre-lou.jpg` | Accueil, présentation (vertical 4:5) |
-| `garage/service-achat.jpg`, `service-reprise.jpg`, `service-depot.jpg`, `service-financement.jpg`, `service-recherche.jpg` | Aperçus au survol des services (4:3) |
-| `garage/garage-facade.jpg`, `garage-pierre-lou.jpg`, `garage-parc.jpg` | En-tête de la page Le garage |
-| `garage/methode-1-selection.jpg` à `methode-4-livraison.jpg` | Les 4 étapes de la méthode (16:9) |
-| `garage/galerie-1.jpg` à `galerie-5.jpg` | Galerie « Le garage en images » |
+L'outil est [Decap CMS](https://decapcms.org) (gratuit, open source), chargé depuis `admin/index.html`, configuré dans `admin/config.yml`.
+
+**Mode démonstration** : en dehors du domaine déclaré dans `admin/index.html` (`PL_PROD_HOSTS`), l'espace s'ouvre sans mot de passe avec le contenu actuel du site chargé en mémoire. On peut tout essayer, rien n'est enregistré. C'est ce mode qui tourne sur la maquette.
+
+### Mise en ligne (à faire une fois)
+
+1. Mettre le contenu de ce dossier dans un dépôt GitHub dédié au client (par ex. `pierrelou-site`).
+2. Relier ce dépôt à un hébergeur qui republie à chaque modification : Netlify, Cloudflare Pages ou Vercel (offres gratuites suffisantes). Brancher le domaine `pierrelou-auto.fr`.
+3. Créer un compte sur [DecapBridge](https://decapbridge.com) (connexion des éditeurs par e-mail et mot de passe, Google ou Microsoft, sans compte GitHub ; offre gratuite annoncée : 3 sites, 10 personnes par site), y ajouter le site, puis **remplacer le bloc `backend:` de `admin/config.yml`** par celui que DecapBridge fournit.
+4. Vérifier que le domaine réel figure dans `PL_PROD_HOSTS` (`admin/index.html`).
+5. Inviter Pierre-Lou depuis DecapBridge avec son e-mail. Il reçoit un lien, choisit son mot de passe, puis se connecte sur `/admin`.
+
+### Sans l'espace d'administration
+
+Les emplacements fonctionnent aussi « à la main » : un fichier déposé avec le nom indiqué dans l'emplacement le remplace automatiquement.
+
+- Véhicules : `assets/photos/vehicules/<id>-1.jpg` à `-6.jpg` (l'id est `marque-modele-annee`, ex. `peugeot-208-2021`).
+- Garage et accueil : `assets/photos/accueil-vedette.jpg` et `assets/photos/garage/<nom>.jpg` (noms affichés dans chaque emplacement).
 
 ## À récupérer auprès de Pierre-Lou
 
 - [ ] Nom commercial exact et logo éventuel (la plaque `PL-035-RN` sert de logo provisoire)
 - [ ] Adresse, téléphone, e-mail (actuellement fictifs : `02 99 00 00 00`, `contact@pierrelou-auto.fr`)
 - [ ] Horaires (dans `assets/js/main.js`, tableau `PL.HOURS`)
-- [ ] Stock réel (dans `assets/js/data.js` : les 12 véhicules actuels sont des exemples)
+- [ ] Stock réel (les 12 véhicules de `content/vehicules.json` sont des exemples ; il pourra les remplacer lui-même depuis `/admin`)
 - [ ] Durées de garantie, services proposés (dépôt-vente, LOA…), taux de financement indicatif (`PL.TAUX`)
 - [ ] Son parcours pour la page Le garage, et 3 vrais avis Google
 - [ ] Les photos listées ci-dessus

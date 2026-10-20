@@ -1,5 +1,5 @@
 /* Catalogue : filtres, tri et réarrangement animé (FLIP) */
-(function () {
+window.PL.dataReady.then(function () {
   var PL = window.PL;
   var V = PL.vehicles;
   var $ = function (id) { return document.getElementById(id); };
@@ -196,4 +196,4 @@
   });
 
   render(false);
-})();
+});
