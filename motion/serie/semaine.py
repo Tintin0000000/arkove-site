@@ -173,7 +173,7 @@ eps[14] = {"title": "Les formations IA", "series": "RENTABLE OU ARNAQUE ? · #2"
   "cover": {"chip": "RENTABLE OU ARNAQUE ? · #2", "kicker": "Formations IA : rentable ou arnaque ?", "icon": "robot"}}
 
 # ---------------------------------------------------------------- 15 · Comment gagnent les applis gratuites
-eps[15] = {"title": "Les applis gratuites", "series": "COMMENT GAGNE VRAIMENT… · #2", "short": "APPLIS GRATUITES", "next": None,
+eps[15] = {"title": "Les applis gratuites", "series": "COMMENT GAGNE VRAIMENT… · #2", "short": "APPLIS GRATUITES", "next": "Payer en 4 fois tes petits achats ?",
   "sentences": [
     {"segment": "hook", "sfx": "whoosh", "chunks": [["SI C'EST GRATUIT,", "Si c'est gratuit,"], ["*C'EST TOI", "c'est toi"], ["LE PRODUIT.", "le produit.", "boom"]]},
     {"segment": "hook", "chunks": [["VOICI COMMENT", "Voici comment"], ["*LES APPLIS GRATUITES", "les applications gratuites"], ["GAGNENT DE L'ARGENT.", "gagnent de l'argent."]]},

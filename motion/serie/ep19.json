@@ -1,0 +1,444 @@
+{
+ "_doc": "Semaine 3 : voir serie/semaine3.py.",
+ "ep": 19,
+ "voice": "siwis-medium",
+ "speed": 0.97,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
+ "title": "La carte premium",
+ "series": "1 ERREUR QUI TE COÛTE · #3",
+ "short": "CARTE PREMIUM",
+ "next": "Comptes faceless : rentable ou arnaque ?",
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "TA CARTE BANCAIRE",
+     "Ta carte bancaire"
+    ],
+    [
+     "*TE COÛTE PEUT-ÊTRE 150 € PAR AN",
+     "te coûte peut-être cent cinquante euros par an"
+    ],
+    [
+     "POUR RIEN.",
+     "pour rien.",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "C'EST L'ERREUR :",
+     "C'est l'erreur :"
+    ],
+    [
+     "*GARDER UNE CARTE PREMIUM",
+     "garder une carte haut de gamme"
+    ],
+    [
+     "SANS T'EN SERVIR.",
+     "sans t'en servir."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 1 :",
+     "Preuve numéro un :"
+    ],
+    [
+     "*LE PRIX.",
+     "le prix."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "CARTE HAUT DE GAMME :",
+     "Carte haut de gamme :"
+    ],
+    [
+     "*130 À 150 € PAR AN.",
+     "entre cent trente et cent cinquante euros par an."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "CARTE CLASSIQUE :",
+     "Carte classique :"
+    ],
+    [
+     "*ENVIRON 40 €.",
+     "environ quarante euros."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "ET DANS CERTAINES BANQUES EN LIGNE,",
+     "Et dans certaines banques en ligne,"
+    ],
+    [
+     "*0 €.",
+     "zéro euro.",
+     "coin"
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 2 :",
+     "Preuve numéro deux :"
+    ],
+    [
+     "*LES ASSURANCES.",
+     "les assurances."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "VOYAGE, LOCATION DE VOITURE…",
+     "Voyage, location de voiture…"
+    ],
+    [
+     "*SOUVENT, ELLES NE MARCHENT QUE SI",
+     "souvent, elles ne marchent que si"
+    ],
+    [
+     "TU AS PAYÉ AVEC LA CARTE.",
+     "tu as payé avec la carte."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "ET TU ES PEUT-ÊTRE DÉJÀ COUVERT",
+     "Et tu es peut-être déjà couvert"
+    ],
+    [
+     "*PAR TON ASSURANCE HABITATION",
+     "par ton assurance habitation"
+    ],
+    [
+     "OU TA MUTUELLE.",
+     "ou ta mutuelle."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 3 :",
+     "Preuve numéro trois :"
+    ],
+    [
+     "*LES PLAFONDS.",
+     "les plafonds."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "DES PLAFONDS PLUS HAUTS :",
+     "Des plafonds plus hauts :"
+    ],
+    [
+     "*UTILE SEULEMENT",
+     "utile seulement"
+    ],
+    [
+     "SI TU DÉPENSES BEAUCOUP.",
+     "si tu dépenses beaucoup."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "SINON, TU PAIES",
+     "Sinon, tu paies"
+    ],
+    [
+     "*POUR UN SERVICE QUE TU N'UTILISES PAS.",
+     "pour un service que tu n'utilises pas."
+    ]
+   ]
+  },
+  {
+   "segment": "astuce",
+   "chunks": [
+    [
+     "ASTUCE :",
+     "Astuce :"
+    ],
+    [
+     "*DEMANDE À TA BANQUE",
+     "demande à ta banque"
+    ],
+    [
+     "DE PASSER À LA CARTE CLASSIQUE.",
+     "de passer à la carte classique."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "VERDICT :",
+     "Verdict :"
+    ],
+    [
+     "*JUSQU'À 110 € D'ÉCONOMIE",
+     "jusqu'à cent dix euros d'économie"
+    ],
+    [
+     "PAR AN.",
+     "par an."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "*SAUVEGARDE CETTE VIDÉO",
+     "Sauvegarde cette vidéo"
+    ],
+    [
+     "AVANT TON RENDEZ-VOUS À LA BANQUE.",
+     "avant ton prochain rendez-vous à la banque."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "chunks": [
+    [
+     "ET TOI,",
+     "Et toi,"
+    ],
+    [
+     "CLASSIQUE OU HAUT DE GAMME ?",
+     "tu as quelle carte, classique ou haut de gamme ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:2"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "red",
+   "icon": "card",
+   "lines": [
+    {
+     "text": "150 €",
+     "at": "0:0-0.6",
+     "size": "xl",
+     "color": "gold"
+    },
+    {
+     "text": "par an",
+     "at": "0:0+0.3",
+     "size": "m"
+    },
+    {
+     "text": "ta carte",
+     "at": "0:1",
+     "size": "m"
+    },
+    {
+     "text": "pour rien ?",
+     "at": "0:2",
+     "size": "xl",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "Garder une <em>carte premium</em>",
+    "at": "1:1"
+   }
+  },
+  "p1": {
+   "type": "bars",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 1 / 3",
+    "at": "2:0"
+   },
+   "title": {
+    "html": "Le <em>prix</em>",
+    "at": "2:1"
+   },
+   "label": "Par an · prix indicatifs",
+   "top": 520,
+   "items": [
+    {
+     "label": "Haut de gamme",
+     "sub": "130 à 150 €",
+     "value": 150,
+     "color": "down",
+     "at": "3:1"
+    },
+    {
+     "label": "Classique",
+     "sub": "environ",
+     "value": 40,
+     "color": "gold",
+     "at": "4:1"
+    },
+    {
+     "label": "Banque en ligne",
+     "sub": "sous conditions",
+     "value": 0,
+     "color": "up",
+     "at": "5:1"
+    }
+   ]
+  },
+  "p2": {
+   "type": "steps",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 2 / 3",
+    "at": "6:0"
+   },
+   "title": {
+    "html": "Les <em>assurances</em>",
+    "at": "6:1"
+   },
+   "top": 520,
+   "items": [
+    {
+     "icon": "bus",
+     "label": "Voyage, location",
+     "sub": "couverts si payés avec la carte",
+     "at": "7:0"
+    },
+    {
+     "icon": "alert",
+     "label": "Conditions strictes",
+     "sub": "lis les garanties",
+     "at": "7:1",
+     "color": "down"
+    },
+    {
+     "icon": "house",
+     "label": "Déjà couvert ?",
+     "sub": "habitation ou mutuelle",
+     "at": "8:1",
+     "color": "up"
+    }
+   ]
+  },
+  "p3": {
+   "type": "icon",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 3 / 3",
+    "at": "9:0"
+   },
+   "icon": "card",
+   "color": "down",
+   "at": "9:0",
+   "text": "Des plafonds <em>plus hauts</em>",
+   "textAt": "10:0",
+   "sub": "utile seulement si tu dépenses beaucoup",
+   "subAt": "10:1"
+  },
+  "astuce": {
+   "type": "icon",
+   "glow": "green",
+   "icon": "check",
+   "color": "up",
+   "at": "12:0",
+   "text": "Passe à la <em>carte classique</em>",
+   "textAt": "12:1",
+   "sub": "demande-le simplement à ta banque",
+   "subAt": "12:2"
+  },
+  "verdict": {
+   "type": "counter",
+   "glow": "green",
+   "title": {
+    "html": "Ton <em>économie</em>",
+    "at": "13:0"
+   },
+   "label": "Premium → classique · exemple",
+   "color": "up",
+   "stages": [
+    {
+     "to": 110,
+     "at": "13:1",
+     "label": "PAR AN"
+    }
+   ]
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold",
+   "save": true,
+   "heading": "<em>Sauvegarde</em>-la",
+   "sub": "avant ton rendez-vous à la banque"
+  }
+ },
+ "post": {
+  "caption": "Ta carte bancaire haut de gamme te coûte peut-être 150 € par an. Ses assurances ne marchent souvent que si tu paies avec, et tu es peut-être déjà couvert par ton assurance habitation ou ta mutuelle. Sauvegarde cette vidéo avant ton prochain rendez-vous à la banque. Et toi, carte classique ou haut de gamme ?",
+  "hashtags": [
+   "#banque",
+   "#cartebancaire",
+   "#fraisbancaires",
+   "#economiser"
+  ]
+ },
+ "cover": {
+  "chip": "1 ERREUR · #3",
+  "kicker": "Ta carte te coûte 150 € par an ?",
+  "icon": "card"
+ }
+}

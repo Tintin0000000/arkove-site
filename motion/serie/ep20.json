@@ -1,0 +1,437 @@
+{
+ "_doc": "Semaine 3 : voir serie/semaine3.py.",
+ "ep": 20,
+ "voice": "siwis-medium",
+ "speed": 0.97,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
+ "title": "Les comptes faceless",
+ "series": "RENTABLE OU ARNAQUE ? · #4",
+ "short": "FACELESS IA",
+ "next": null,
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "100 VIDÉOS PAR JOUR",
+     "Cent vidéos par jour"
+    ],
+    [
+     "AVEC L'IA,",
+     "avec l'intelligence artificielle,"
+    ],
+    [
+     "*SANS MONTRER TON VISAGE ?",
+     "sans montrer ton visage ?",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "LES COMPTES FACELESS :",
+     "Les comptes sans visage :"
+    ],
+    [
+     "*RENTABLE OU ARNAQUE ?",
+     "rentable ou arnaque ?"
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 1 :",
+     "Preuve numéro un :"
+    ],
+    [
+     "*LES VUES NE PAIENT PAS TOUT DE SUITE.",
+     "les vues ne paient pas tout de suite."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "POUR ÊTRE PAYÉ PAR TIKTOK,",
+     "Pour être payé par TikTok,"
+    ],
+    [
+     "*IL FAUT AU MOINS 10 000 ABONNÉS",
+     "il faut au moins dix mille abonnés"
+    ],
+    [
+     "ET 100 000 VUES EN 30 JOURS.",
+     "et cent mille vues en trente jours."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "ET SEULES COMPTENT",
+     "Et seules comptent"
+    ],
+    [
+     "*LES VIDÉOS DE PLUS D'UNE MINUTE.",
+     "les vidéos de plus d'une minute."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 2 :",
+     "Preuve numéro deux :"
+    ],
+    [
+     "*LE COPIÉ-COLLÉ.",
+     "le copié-collé."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "LES CONTENUS PAS ORIGINAUX",
+     "Les contenus pas originaux"
+    ],
+    [
+     "*NE SONT PAS RÉMUNÉRÉS,",
+     "ne sont pas rémunérés,"
+    ],
+    [
+     "ET SONT MOINS MONTRÉS.",
+     "et sont moins montrés."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "100 VIDÉOS À LA CHAÎNE ?",
+     "Cent vidéos à la chaîne ?"
+    ],
+    [
+     "*SOUVENT, PRESQUE PERSONNE",
+     "Souvent, presque personne"
+    ],
+    [
+     "NE LES VOIT.",
+     "ne les voit."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "ET LES CONTENUS RÉALISTES FAITS PAR IA",
+     "Et les contenus réalistes faits par l'intelligence artificielle"
+    ],
+    [
+     "*DOIVENT ÊTRE SIGNALÉS.",
+     "doivent être signalés."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 3 :",
+     "Preuve numéro trois :"
+    ],
+    [
+     "*QUI GAGNE VRAIMENT ?",
+     "qui gagne vraiment ?"
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "CEUX QUI VENDENT",
+     "Ceux qui vendent"
+    ],
+    [
+     "*LES OUTILS ET LES FORMATIONS",
+     "les outils et les formations"
+    ],
+    [
+     "POUR CRÉER CES COMPTES.",
+     "pour créer ces comptes."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "UN ABONNEMENT À 30 € PAR MOIS,",
+     "Un abonnement à trente euros par mois,"
+    ],
+    [
+     "*QUE TU GAGNES DE L'ARGENT OU PAS.",
+     "que tu gagnes de l'argent ou pas.",
+     "stamp"
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "VERDICT :",
+     "Verdict :"
+    ],
+    [
+     "*PAS UNE ARNAQUE,",
+     "pas une arnaque,"
+    ],
+    [
+     "MAIS L'IA NE FAIT PAS TOUT.",
+     "mais l'intelligence artificielle ne fait pas tout."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "chunks": [
+    [
+     "CE QUI MARCHE :",
+     "Ce qui marche :"
+    ],
+    [
+     "*DES VIDÉOS ORIGINALES ET UTILES,",
+     "des vidéos originales et utiles,"
+    ],
+    [
+     "PUBLIÉES RÉGULIÈREMENT.",
+     "publiées régulièrement."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "*SAUVEGARDE CETTE VIDÉO",
+     "Sauvegarde cette vidéo"
+    ],
+    [
+     "AVANT D'ACHETER UN OUTIL FACELESS.",
+     "avant d'acheter un outil pour comptes sans visage."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "chunks": [
+    [
+     "ET TOI,",
+     "Et toi,"
+    ],
+    [
+     "TU SUIS DES COMPTES FACELESS ?",
+     "tu suis des comptes sans visage ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:2",
+  "11:1"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "red",
+   "icon": "play",
+   "lines": [
+    {
+     "text": "100 vidéos",
+     "at": "0:0-0.6",
+     "size": "xl",
+     "color": "gold"
+    },
+    {
+     "text": "par jour avec l'IA",
+     "at": "0:1",
+     "size": "m"
+    },
+    {
+     "text": "sans visage ?",
+     "at": "0:2",
+     "size": "xl",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "Comptes faceless : <em>rentable</em> ?",
+    "at": "1:1"
+   }
+  },
+  "p1": {
+   "type": "list",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 1 / 3",
+    "at": "2:0"
+   },
+   "title": {
+    "html": "Les vues <em>ne paient pas</em>",
+    "at": "2:1"
+   },
+   "top": 500,
+   "items": [
+    {
+     "icon": "check",
+     "label": "10 000 abonnés",
+     "sub": "minimum",
+     "value": "1",
+     "at": "3:1",
+     "color": "gold"
+    },
+    {
+     "icon": "play",
+     "label": "100 000 vues",
+     "sub": "en 30 jours",
+     "value": "2",
+     "at": "3:2",
+     "color": "gold"
+    },
+    {
+     "icon": "clock",
+     "label": "Plus d'1 minute",
+     "sub": "seules ces vidéos comptent",
+     "value": "3",
+     "at": "4:1",
+     "color": "gold"
+    }
+   ]
+  },
+  "p2": {
+   "type": "steps",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 2 / 3",
+    "at": "5:0"
+   },
+   "title": {
+    "html": "Le <em>copié-collé</em>",
+    "at": "5:1"
+   },
+   "top": 520,
+   "items": [
+    {
+     "icon": "cross",
+     "label": "Pas original",
+     "sub": "pas rémunéré, moins montré",
+     "at": "6:1",
+     "color": "down"
+    },
+    {
+     "icon": "play",
+     "label": "100 vidéos à la chaîne",
+     "sub": "presque personne ne les voit",
+     "at": "7:1",
+     "color": "down"
+    },
+    {
+     "icon": "robot",
+     "label": "IA réaliste",
+     "sub": "à signaler comme telle",
+     "at": "8:1"
+    }
+   ]
+  },
+  "p3": {
+   "type": "counter",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 3 / 3",
+    "at": "9:0"
+   },
+   "title": {
+    "html": "Qui gagne <em>vraiment</em> ?",
+    "at": "9:1"
+   },
+   "label": "Outil faceless · exemple",
+   "color": "down",
+   "stages": [
+    {
+     "to": 30,
+     "at": "11:0",
+     "label": "PAR MOIS"
+    },
+    {
+     "to": 360,
+     "at": "11:1",
+     "label": "PAR AN, GAGNANT OU PAS",
+     "dur": 1.1
+    }
+   ]
+  },
+  "verdict": {
+   "type": "icon",
+   "glow": "green",
+   "icon": "check",
+   "color": "up",
+   "at": "12:0",
+   "text": "Pas une arnaque, <em>pas magique</em>",
+   "textAt": "12:1",
+   "sub": "des vidéos originales et utiles, publiées régulièrement",
+   "subAt": "13:1"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold",
+   "save": true,
+   "heading": "<em>Sauvegarde</em>-la",
+   "sub": "avant d'acheter un outil faceless"
+  }
+ },
+ "post": {
+  "caption": "100 vidéos par jour avec l'IA sans montrer ton visage : rentable ou arnaque ? Pour être payé par TikTok, il faut 10 000 abonnés, 100 000 vues en 30 jours et des vidéos de plus d'une minute. Le copié-collé n'est pas rémunéré. Sauvegarde cette vidéo avant d'acheter un outil faceless. Et toi, tu suis des comptes sans visage ?",
+  "hashtags": [
+   "#faceless",
+   "#ia",
+   "#sidehustle",
+   "#tiktok"
+  ]
+ },
+ "cover": {
+  "chip": "RENTABLE OU ARNAQUE ? · #4",
+  "kicker": "Comptes faceless : rentable ou arnaque ?",
+  "icon": "play"
+ }
+}
