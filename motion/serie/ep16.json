@@ -94,7 +94,7 @@
     ],
     [
      "*8 € DE PLUS.",
-     "huit euros de plus.",
+     "soit huit euros en plus.",
      "coin"
     ]
    ]
@@ -110,6 +110,19 @@
      "*DES FRAIS S'AJOUTENT.",
      "des frais s'ajoutent.",
      "stamp"
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "LIS LES CONDITIONS",
+     "Lis les conditions"
+    ],
+    [
+     "*AVANT DE CLIQUER.",
+     "avant de cliquer sur payer en quatre fois."
     ]
    ]
   },
@@ -254,6 +267,23 @@
    ]
   },
   {
+   "segment": "verdict",
+   "chunks": [
+    [
+     "SINON,",
+     "Sinon,"
+    ],
+    [
+     "*METS DE CÔTÉ D'ABORD,",
+     "mets de côté d'abord,"
+    ],
+    [
+     "ACHÈTE ENSUITE.",
+     "et achète ensuite."
+    ]
+   ]
+  },
+  {
    "segment": "cta",
    "sfx": "whoosh",
    "pause": 0.1,
@@ -288,7 +318,7 @@
  ],
  "shakes": [
   "0:2",
-  "8:1"
+  "9:1"
  ],
  "blocks": {
   "hook": {
@@ -357,11 +387,11 @@
    "glow": "red",
    "chip": {
     "text": "PREUVE 2 / 3",
-    "at": "6:0"
+    "at": "7:0"
    },
    "title": {
     "html": "L'effet <em>boule de neige</em>",
-    "at": "6:1"
+    "at": "7:1"
    },
    "top": 500,
    "items": [
@@ -370,21 +400,21 @@
      "label": "Casque",
      "sub": "120 € en 4 fois",
      "value": "30 €/mois",
-     "at": "7:0"
+     "at": "8:0"
     },
     {
      "icon": "basket",
      "label": "Baskets",
      "sub": "160 € en 4 fois",
      "value": "40 €/mois",
-     "at": "7:0+0.6"
+     "at": "8:0+0.6"
     },
     {
      "icon": "phone",
      "label": "Téléphone",
      "sub": "220 € en 4 fois",
      "value": "55 €/mois",
-     "at": "7:1"
+     "at": "8:1"
     }
    ],
    "total": {
@@ -393,7 +423,7 @@
     "stages": [
      {
       "to": 125,
-      "at": "8:1",
+      "at": "9:1",
       "label": "PRÉLEVÉS CHAQUE MOIS"
      }
     ]
@@ -404,11 +434,11 @@
    "glow": "gold",
    "chip": {
     "text": "PREUVE 3 / 3",
-    "at": "10:0"
+    "at": "11:0"
    },
    "title": {
     "html": "Le magasin <em>y gagne</em>",
-    "at": "10:1"
+    "at": "11:1"
    },
    "label": "Le même achat · exemple",
    "top": 520,
@@ -418,20 +448,20 @@
      "sub": "par mois",
      "value": 40,
      "color": "gold",
-     "at": "12:0"
+     "at": "13:0"
     },
     {
      "label": "En 1 fois",
      "sub": "d'un coup",
      "value": 160,
      "color": "down",
-     "at": "12:2"
+     "at": "13:2"
     }
    ],
    "badge": {
     "text": "Même prix",
     "small": "IMPRESSION DIFFÉRENTE",
-    "at": "13:1",
+    "at": "14:1",
     "color": "gold"
    }
   },
@@ -440,11 +470,11 @@
    "glow": "green",
    "icon": "check",
    "color": "up",
-   "at": "14:0",
+   "at": "15:0",
    "text": "Gros achat <em>prévu</em> : oui",
-   "textAt": "14:1",
+   "textAt": "15:1",
    "sub": "petits plaisirs : paie en une fois",
-   "subAt": "14:2"
+   "subAt": "15:2"
   },
   "cta": {
    "type": "cta",

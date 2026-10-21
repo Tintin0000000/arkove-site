@@ -199,6 +199,19 @@
    ]
   },
   {
+   "segment": "p3",
+   "chunks": [
+    [
+     "SI ÇA RAPPORTAIT AUTANT,",
+     "Si ça rapportait autant,"
+    ],
+    [
+     "*POURQUOI VENDRE LA MÉTHODE ?",
+     "pourquoi vendre la méthode ?"
+    ]
+   ]
+  },
+  {
    "segment": "verdict",
    "sfx": "whoosh",
    "pause": 0.1,
@@ -406,11 +419,11 @@
    "glow": "green",
    "icon": "check",
    "color": "up",
-   "at": "12:0",
+   "at": "13:0",
    "text": "Pas une arnaque, <em>pas magique</em>",
-   "textAt": "12:1",
+   "textAt": "13:1",
    "sub": "des vidéos originales et utiles, publiées régulièrement",
-   "subAt": "13:1"
+   "subAt": "14:1"
   },
   "cta": {
    "type": "cta",

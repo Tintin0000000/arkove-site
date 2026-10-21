@@ -36,7 +36,7 @@ eps[16] = {"title": "Le paiement en 4 fois", "series": "1 ERREUR QUI TE COÛTE �
     S("hook", ["C'EST L'ERREUR :", "C'est l'erreur :"], ["*FRACTIONNER CE QUE TU PEUX", "fractionner ce que tu peux"], ["PAYER EN UNE FOIS.", "payer en une seule fois."]),
     PROOF("p1", 1, "*LES FRAIS.", "les frais."),
     S("p1", ["SELON LE MAGASIN,", "Selon le magasin,"], ["LE PAIEMENT EN PLUSIEURS FOIS", "le paiement en plusieurs fois"], ["*N'EST PAS TOUJOURS GRATUIT.", "n'est pas toujours gratuit."]),
-    S("p1", ["EXEMPLE : 400 € EN 4 FOIS,", "Exemple : quatre cents euros en quatre fois,"], ["AVEC 2 % DE FRAIS :", "avec deux pour cent de frais :"], ["*8 € DE PLUS.", "huit euros de plus.", "coin"]),
+    S("p1", ["EXEMPLE : 400 € EN 4 FOIS,", "Exemple : quatre cents euros en quatre fois,"], ["AVEC 2 % DE FRAIS :", "avec deux pour cent de frais :"], ["*8 € DE PLUS.", "soit huit euros en plus.", "coin"]),
     S("p1", ["ET EN CAS DE RETARD,", "Et en cas de retard,"], ["*DES FRAIS S'AJOUTENT.", "des frais s'ajoutent.", "stamp"]),
     PROOF("p2", 2, "*L'EFFET BOULE DE NEIGE.", "l'effet boule de neige."),
     S("p2", ["UN CASQUE, DES BASKETS,", "Un casque, des baskets,"], ["UN TÉLÉPHONE :", "un téléphone :"], ["*3 ACHATS EN 4 FOIS.", "trois achats en quatre fois."]),
@@ -80,7 +80,7 @@ eps[17] = {"title": "L'achat-revente", "series": "RENTABLE OU ARNAQUE ? · #3", 
   "next": "Les IA gratuites : qui paie ?",
   "sentences": [
     {"segment": "hook", "sfx": "whoosh", "chunks": [["ACHETER 5 €,", "Acheter cinq euros,"], ["REVENDRE 25 €…", "revendre vingt-cinq euros…"], ["*LE CALCUL QUE PERSONNE NE MONTRE.", "voici le calcul que personne ne montre.", "boom"]]},
-    S("hook", ["L'ACHAT-REVENTE EN LIGNE :", "L'achat-revente en ligne :"], ["*RENTABLE OU ARNAQUE ?", "rentable ou arnaque ?"]),
+    S("hook", ["ACHETER POUR REVENDRE EN LIGNE :", "Acheter pour revendre en ligne :"], ["*RENTABLE OU ARNAQUE ?", "rentable ou arnaque ?"]),
     PROOF("p1", 1, "*LE VRAI CALCUL.", "le vrai calcul."),
     S("p1", ["TU ACHÈTES UN PULL 5 €.", "Tu achètes un pull cinq euros."], ["*AVEC LES FRAIS ET LA LIVRAISON :", "Avec les frais et la livraison :"], ["ENVIRON 10 €.", "environ dix euros."]),
     S("p1", ["TU LE REVENDS", "Tu le revends"], ["*25 €.", "vingt-cinq euros."]),
@@ -94,7 +94,7 @@ eps[17] = {"title": "L'achat-revente", "series": "RENTABLE OU ARNAQUE ? · #3", 
     S("p3", ["MAIS ACHETER POUR REVENDRE,", "Mais acheter pour revendre,"], ["*C'EST UNE ACTIVITÉ COMMERCIALE", "c'est une activité commerciale"], ["À DÉCLARER.", "à déclarer."]),
     S("p3", ["DÈS 30 VENTES OU 2 000 € PAR AN,", "Et dès trente ventes, ou deux mille euros par an,"], ["*LA PLATEFORME TRANSMET TES VENTES", "la plateforme transmet tes ventes"], ["AUX IMPÔTS.", "aux impôts."]),
     VERDICT(["*RENTABLE EN PETIT,", "rentable en petit,"], ["MAIS C'EST UN VRAI TRAVAIL.", "mais c'est un vrai travail."]),
-    SAVE("AVANT DE TE LANCER.", "avant de te lancer dans l'achat-revente."),
+    SAVE("AVANT DE TE LANCER.", "avant de te lancer dans la revente."),
     ASK("DÉJÀ REVENDU PLUS CHER ?", "tu as déjà revendu un article plus cher ?")],
   "shakes": ["0:2", "9:1"],
   "blocks": {
@@ -252,6 +252,24 @@ eps[20] = {"title": "Les comptes faceless", "series": "RENTABLE OU ARNAQUE ? · 
   "post": {"caption": "100 vidéos par jour avec l'IA sans montrer ton visage : rentable ou arnaque ? Pour être payé par TikTok, il faut 10 000 abonnés, 100 000 vues en 30 jours et des vidéos de plus d'une minute. Le copié-collé n'est pas rémunéré. Sauvegarde cette vidéo avant d'acheter un outil faceless. Et toi, tu suis des comptes sans visage ?",
            "hashtags": ["#faceless", "#ia", "#sidehustle", "#tiktok"]},
   "cover": {"chip": "RENTABLE OU ARNAQUE ? · #4", "kicker": "Comptes faceless : rentable ou arnaque ?", "icon": "play"}}
+
+# ---------------------------------------------------------------- allongement au-delà d'une minute
+import re as _re
+
+def insert_after(e, idx, sentence):
+    """Insère une phrase après la phrase idx et décale tous les instants « n:… » qui suivent."""
+    e["sentences"].insert(idx + 1, sentence)
+    shift = lambda m: f'"{int(m.group(1)) + (1 if int(m.group(1)) > idx else 0)}:'
+    e["blocks"] = json.loads(_re.sub(r'"(\d+):', shift, json.dumps(e["blocks"], ensure_ascii=False)))
+    e["shakes"] = [f"{int(x.split(':')[0]) + (1 if int(x.split(':')[0]) > idx else 0)}:{x.split(':', 1)[1]}" for x in e["shakes"]]
+
+insert_after(eps[16], 5, S("p1", ["LIS LES CONDITIONS", "Lis les conditions"], ["*AVANT DE CLIQUER.", "avant de cliquer sur payer en quatre fois."]))
+insert_after(eps[16], 15, S("verdict", ["SINON,", "Sinon,"], ["*METS DE CÔTÉ D'ABORD,", "mets de côté d'abord,"], ["ACHÈTE ENSUITE.", "et achète ensuite."]))
+insert_after(eps[17], 14, S("verdict", ["ET COMMENCE", "Et commence"], ["*PAR VENDRE CE QUE TU AS DÉJÀ.", "par vendre ce que tu as déjà."]))
+insert_after(eps[18], 4, S("p1", ["ET LA PETITE PARTIE QUI PAIE", "Et la petite partie qui paie"], ["*FINANCE TOUS LES AUTRES.", "finance tous les autres."]))
+insert_after(eps[19], 8, S("p2", ["DEMANDE LE DÉTAIL", "Demande le détail"], ["*DE TES GARANTIES", "de tes garanties"], ["AVANT DE PAYER POUR ÇA.", "avant de payer pour ça."]))
+insert_after(eps[19], 13, S("astuce", ["TU GARDES TON COMPTE,", "Tu gardes ton compte,"], ["*TU CHANGES JUSTE DE CARTE.", "tu changes juste de carte."]))
+insert_after(eps[20], 11, S("p3", ["SI ÇA RAPPORTAIT AUTANT,", "Si ça rapportait autant,"], ["*POURQUOI VENDRE LA MÉTHODE ?", "pourquoi vendre la méthode ?"]))
 
 (OUT / "scripts").mkdir(exist_ok=True)
 (OUT / "descriptions").mkdir(exist_ok=True)

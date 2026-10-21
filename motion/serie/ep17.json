@@ -36,8 +36,8 @@
    "segment": "hook",
    "chunks": [
     [
-     "L'ACHAT-REVENTE EN LIGNE :",
-     "L'achat-revente en ligne :"
+     "ACHETER POUR REVENDRE EN LIGNE :",
+     "Acheter pour revendre en ligne :"
     ],
     [
      "*RENTABLE OU ARNAQUE ?",
@@ -245,6 +245,19 @@
    ]
   },
   {
+   "segment": "verdict",
+   "chunks": [
+    [
+     "ET COMMENCE",
+     "Et commence"
+    ],
+    [
+     "*PAR VENDRE CE QUE TU AS DÉJÀ.",
+     "par vendre ce que tu as déjà."
+    ]
+   ]
+  },
+  {
    "segment": "cta",
    "sfx": "whoosh",
    "pause": 0.1,
@@ -255,7 +268,7 @@
     ],
     [
      "AVANT DE TE LANCER.",
-     "avant de te lancer dans l'achat-revente."
+     "avant de te lancer dans la revente."
     ]
    ]
   },

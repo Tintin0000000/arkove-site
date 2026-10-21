@@ -100,6 +100,19 @@
    ]
   },
   {
+   "segment": "p1",
+   "chunks": [
+    [
+     "ET LA PETITE PARTIE QUI PAIE",
+     "Et la petite partie qui paie"
+    ],
+    [
+     "*FINANCE TOUS LES AUTRES.",
+     "finance tous les autres."
+    ]
+   ]
+  },
+  {
    "segment": "p2",
    "sfx": "whoosh",
    "pause": 0.1,
@@ -344,11 +357,11 @@
    "glow": "gold",
    "chip": {
     "text": "PREUVE 2 / 3",
-    "at": "5:0"
+    "at": "6:0"
    },
    "title": {
     "html": "Les <em>entreprises</em>",
-    "at": "5:1"
+    "at": "6:1"
    },
    "top": 520,
    "items": [
@@ -356,20 +369,20 @@
      "icon": "phone",
      "label": "Une appli, un site",
      "sub": "intègre l'IA",
-     "at": "6:0"
+     "at": "7:0"
     },
     {
      "icon": "coin",
      "label": "Payée à l'usage",
      "sub": "à chaque utilisation",
-     "at": "6:1",
+     "at": "7:1",
      "color": "gold"
     },
     {
      "icon": "envelope",
      "label": "Ex. : le chat du SAV",
      "sub": "souvent une IA",
-     "at": "7:1"
+     "at": "8:1"
     }
    ]
   },
@@ -378,37 +391,37 @@
    "glow": "gold",
    "chip": {
     "text": "PREUVE 3 / 3",
-    "at": "8:0"
+    "at": "9:0"
    },
    "icon": "bank",
    "color": "gold",
-   "at": "8:0",
+   "at": "9:0",
    "text": "Les <em>investisseurs</em>",
-   "textAt": "8:1",
+   "textAt": "9:1",
    "sub": "des serveurs très chers, financés en pariant sur demain",
-   "subAt": "9:1"
+   "subAt": "10:1"
   },
   "astuce": {
    "type": "icon",
    "glow": "red",
    "icon": "alert",
    "color": "gold",
-   "at": "11:0",
+   "at": "12:0",
    "text": "Tes <em>conversations</em>",
-   "textAt": "11:1",
+   "textAt": "12:1",
    "sub": "selon tes réglages : vérifie-les",
-   "subAt": "12:1"
+   "subAt": "13:1"
   },
   "verdict": {
    "type": "icon",
    "glow": "gold",
    "icon": "robot",
    "color": "gold",
-   "at": "13:0",
+   "at": "14:0",
    "text": "Gratuit <em>pour toi</em>",
-   "textAt": "13:1",
+   "textAt": "14:1",
    "sub": "payé par les abonnés, les entreprises et les investisseurs",
-   "subAt": "13:2"
+   "subAt": "14:2"
   },
   "cta": {
    "type": "cta",

@@ -154,6 +154,23 @@
    ]
   },
   {
+   "segment": "p2",
+   "chunks": [
+    [
+     "DEMANDE LE DÉTAIL",
+     "Demande le détail"
+    ],
+    [
+     "*DE TES GARANTIES",
+     "de tes garanties"
+    ],
+    [
+     "AVANT DE PAYER POUR ÇA.",
+     "avant de payer pour ça."
+    ]
+   ]
+  },
+  {
    "segment": "p3",
    "sfx": "whoosh",
    "pause": 0.1,
@@ -212,6 +229,19 @@
     [
      "DE PASSER À LA CARTE CLASSIQUE.",
      "de passer à la carte classique."
+    ]
+   ]
+  },
+  {
+   "segment": "astuce",
+   "chunks": [
+    [
+     "TU GARDES TON COMPTE,",
+     "Tu gardes ton compte,"
+    ],
+    [
+     "*TU CHANGES JUSTE DE CARTE.",
+     "tu changes juste de carte."
     ]
    ]
   },
@@ -381,40 +411,40 @@
    "glow": "red",
    "chip": {
     "text": "PREUVE 3 / 3",
-    "at": "9:0"
+    "at": "10:0"
    },
    "icon": "card",
    "color": "down",
-   "at": "9:0",
+   "at": "10:0",
    "text": "Des plafonds <em>plus hauts</em>",
-   "textAt": "10:0",
+   "textAt": "11:0",
    "sub": "utile seulement si tu dépenses beaucoup",
-   "subAt": "10:1"
+   "subAt": "11:1"
   },
   "astuce": {
    "type": "icon",
    "glow": "green",
    "icon": "check",
    "color": "up",
-   "at": "12:0",
+   "at": "13:0",
    "text": "Passe à la <em>carte classique</em>",
-   "textAt": "12:1",
+   "textAt": "13:1",
    "sub": "demande-le simplement à ta banque",
-   "subAt": "12:2"
+   "subAt": "13:2"
   },
   "verdict": {
    "type": "counter",
    "glow": "green",
    "title": {
     "html": "Ton <em>économie</em>",
-    "at": "13:0"
+    "at": "15:0"
    },
    "label": "Premium → classique · exemple",
    "color": "up",
    "stages": [
     {
      "to": 110,
-     "at": "13:1",
+     "at": "15:1",
      "label": "PAR AN"
     }
    ]
