@@ -271,6 +271,8 @@ insert_after(eps[19], 8, S("p2", ["DEMANDE LE DÉTAIL", "Demande le détail"], [
 insert_after(eps[19], 13, S("astuce", ["TU GARDES TON COMPTE,", "Tu gardes ton compte,"], ["*TU CHANGES JUSTE DE CARTE.", "tu changes juste de carte."]))
 insert_after(eps[20], 11, S("p3", ["SI ÇA RAPPORTAIT AUTANT,", "Si ça rapportait autant,"], ["*POURQUOI VENDRE LA MÉTHODE ?", "pourquoi vendre la méthode ?"]))
 
+eps[19]["tail"] = 2.4  # garde la vidéo nettement au-dessus d'une minute
+
 (OUT / "scripts").mkdir(exist_ok=True)
 (OUT / "descriptions").mkdir(exist_ok=True)
 for n, e in eps.items():

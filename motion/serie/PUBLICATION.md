@@ -177,3 +177,53 @@ Comment gagnent vraiment les applis gratuites ? La pub ciblée, le freemium, et 
 
 #applis #abonnements #argent #astuceargent
 ```
+
+## Épisode 16 · Le paiement en 4 fois
+
+Jour 16 · vidéo : `serie/videos/ep16.mp4`
+
+```
+Payer en 4 fois tes petits achats, ça peut coûter cher : frais selon le magasin, frais de retard, et des prélèvements qui s'empilent sans que tu le voies. Sauvegarde cette vidéo avant ton prochain achat en 4 fois. Et toi, tu as combien de paiements en cours ?
+
+#paiementen4fois #budget #argent #economiser
+```
+
+## Épisode 17 · L'achat-revente
+
+Jour 17 · vidéo : `serie/videos/ep17.mp4`
+
+```
+Acheter 5 €, revendre 25 € : le vrai calcul de l'achat-revente. Frais, temps passé, invendus… et dès 30 ventes ou 2 000 € par an, la plateforme transmet tes ventes aux impôts. Sauvegarde cette vidéo avant de te lancer. Et toi, tu as déjà revendu un article plus cher ?
+
+#vinted #achatrevente #sidehustle #argent
+```
+
+## Épisode 18 · Les IA gratuites
+
+Jour 18 · vidéo : `serie/videos/ep18.mp4`
+
+```
+Comment gagnent vraiment les IA gratuites ? Les abonnements payants, les entreprises qui paient à l'usage, et les investisseurs qui financent les serveurs. Et selon tes réglages, tes conversations peuvent servir à entraîner les modèles. Sauvegarde cette vidéo avant de payer une IA. Et toi, version gratuite ou payante ?
+
+#ia #intelligenceartificielle #argent #tech
+```
+
+## Épisode 19 · La carte premium
+
+Jour 19 · vidéo : `serie/videos/ep19.mp4`
+
+```
+Ta carte bancaire haut de gamme te coûte peut-être 150 € par an. Ses assurances ne marchent souvent que si tu paies avec, et tu es peut-être déjà couvert par ton assurance habitation ou ta mutuelle. Sauvegarde cette vidéo avant ton prochain rendez-vous à la banque. Et toi, carte classique ou haut de gamme ?
+
+#banque #cartebancaire #fraisbancaires #economiser
+```
+
+## Épisode 20 · Les comptes faceless
+
+Jour 20 · vidéo : `serie/videos/ep20.mp4`
+
+```
+100 vidéos par jour avec l'IA sans montrer ton visage : rentable ou arnaque ? Pour être payé par TikTok, il faut 10 000 abonnés, 100 000 vues en 30 jours et des vidéos de plus d'une minute. Le copié-collé n'est pas rémunéré. Sauvegarde cette vidéo avant d'acheter un outil faceless. Et toi, tu suis des comptes sans visage ?
+
+#faceless #ia #sidehustle #tiktok
+```
