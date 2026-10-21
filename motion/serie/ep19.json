@@ -206,6 +206,19 @@
    "segment": "p3",
    "chunks": [
     [
+     "ET SOUVENT,",
+     "Et souvent,"
+    ],
+    [
+     "*TU NE LES ATTEINS JAMAIS.",
+     "tu ne les atteins jamais."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
      "SINON, TU PAIES",
      "Sinon, tu paies"
     ],
@@ -426,25 +439,25 @@
    "glow": "green",
    "icon": "check",
    "color": "up",
-   "at": "13:0",
+   "at": "14:0",
    "text": "Passe à la <em>carte classique</em>",
-   "textAt": "13:1",
+   "textAt": "14:1",
    "sub": "demande-le simplement à ta banque",
-   "subAt": "13:2"
+   "subAt": "14:2"
   },
   "verdict": {
    "type": "counter",
    "glow": "green",
    "title": {
     "html": "Ton <em>économie</em>",
-    "at": "15:0"
+    "at": "16:0"
    },
    "label": "Premium → classique · exemple",
    "color": "up",
    "stages": [
     {
      "to": 110,
-     "at": "15:1",
+     "at": "16:1",
      "label": "PAR AN"
     }
    ]
