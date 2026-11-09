@@ -278,6 +278,19 @@
    ]
   },
   {
+   "segment": "verdict",
+   "chunks": [
+    [
+     "CONSTRUIS D'ABORD",
+     "Construis d'abord"
+    ],
+    [
+     "*UNE AUDIENCE FIDÈLE.",
+     "une audience fidèle."
+    ]
+   ]
+  },
+  {
    "segment": "cta",
    "sfx": "whoosh",
    "pause": 0.1,

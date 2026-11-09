@@ -32,7 +32,7 @@ eps = {}
 eps[21] = {"title": "Comparer sa banque", "series": "1 ERREUR QUI TE COÛTE · #4", "short": "COMPARER SA BANQUE",
   "next": "Les néobanques : comment elles gagnent ?",
   "sentences": [
-    {"segment": "hook", "sfx": "whoosh", "chunks": [["10 ANS", "Dix ans"], ["DANS LA MÊME BANQUE", "dans la même banque"], ["*PEUT TE COÛTER PRÈS DE 1 000 €.", "peut te coûter près de mille euros.", "boom"]]},
+    {"segment": "hook", "sfx": "whoosh", "chunks": [["10 ANS", "Dix ans"], ["DANS LA MÊME BANQUE", "dans la même banque"], ["*PEUT TE COÛTER PRESQUE 1 000 €.", "peut te coûter presque mille euros.", "boom"]]},
     S("hook", ["C'EST L'ERREUR :", "C'est l'erreur :"], ["*NE JAMAIS COMPARER SA BANQUE.", "ne jamais comparer sa banque."]),
     PROOF("p1", 1, "*LES FRAIS QUI S'ADDITIONNENT.", "les frais qui s'additionnent."),
     S("p1", ["TENUE DE COMPTE :", "Tenue de compte :"], ["*ENVIRON 25 € PAR AN.", "environ vingt-cinq euros par an."]),
@@ -277,10 +277,11 @@ def insert_after(e, idx, sentence):
 
 insert_after(eps[21], 16, S("verdict", ["COMMENCE PAR TON RELEVÉ", "Commence par ton relevé"], ["*DE FRAIS ANNUEL.", "de frais annuel : ta banque te l'envoie chaque année."]))
 insert_after(eps[24], 5, S("p1", ["IL FAUT AUSSI", "Il faut aussi"], ["*10 000 ABONNÉS MINIMUM.", "au moins dix mille abonnés."]))
-insert_after(eps[25], 8, S("p2", ["EN 5 ANS,", "En cinq ans,"], ["*PRÈS DE 470 € EN MOINS.", "près de quatre cent soixante-dix euros de pouvoir d'achat en moins.", "stamp"]))
+insert_after(eps[25], 8, S("p2", ["EN 5 ANS,", "En cinq ans,"], ["*PRÈS DE 470 € PERDUS.", "près de quatre cent soixante-dix euros de pouvoir d'achat perdus.", "stamp"]))
 eps[25]["blocks"]["p2"]["badge"]["at"] = "9:1"
 eps[25]["blocks"]["p2"]["items"][2]["at"] = "9:0"
 insert_after(eps[25], 15, S("astuce", ["C'EST AUSSI", "C'est aussi"], ["*TON FONDS D'URGENCE.", "ton fonds d'urgence, comme dans l'épisode un."]))
+insert_after(eps[24], 16, S("verdict", ["CONSTRUIS D'ABORD", "Construis d'abord"], ["*UNE AUDIENCE FIDÈLE.", "une audience fidèle."]))
 for n in (21, 24, 25):
     eps[n]["tail"] = 2.4  # garde la vidéo nettement au-dessus d'une minute
 
