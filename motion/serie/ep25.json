@@ -351,30 +351,19 @@
    }
   },
   "p1": {
-   "type": "counter",
+   "type": "icon",
    "glow": "red",
    "chip": {
     "text": "PREUVE 1 / 3",
     "at": "2:0"
    },
-   "title": {
-    "html": "<em>0 %</em> d'intérêts",
-    "at": "2:1"
-   },
-   "label": "Compte courant · exemple",
+   "icon": "piggy",
    "color": "gold",
-   "stages": [
-    {
-     "to": 5000,
-     "at": "4:0",
-     "label": "AUJOURD'HUI"
-    },
-    {
-     "to": 5000,
-     "at": "4:1",
-     "label": "DANS UN AN"
-    }
-   ]
+   "at": "2:0",
+   "text": "5 000 € → <em>5 000 €</em>",
+   "textAt": "4:0",
+   "sub": "un an plus tard, sur un compte à 0 % (exemple)",
+   "subAt": "4:1"
   },
   "p2": {
    "type": "bars",
@@ -387,7 +376,7 @@
     "html": "L'<em>inflation</em>",
     "at": "5:1"
    },
-   "label": "Ce que tes 5 000 € achètent · 2 %/an (exemple)",
+   "label": "Pouvoir d'achat · inflation 2 %/an (exemple)",
    "top": 520,
    "items": [
     {
@@ -408,13 +397,7 @@
      "color": "down",
      "at": "9:0"
     }
-   ],
-   "badge": {
-    "text": "−470 €",
-    "small": "EN 5 ANS",
-    "at": "9:1",
-    "color": "red"
-   }
+   ]
   },
   "p3": {
    "type": "counter",

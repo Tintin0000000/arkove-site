@@ -246,13 +246,12 @@ eps[25] = {"title": "L'épargne qui dort", "series": "1 ERREUR QUI TE COÛTE · 
       "lines": [{"text": "0 %", "at": "0:0-0.6", "size": "xl", "color": "gold"}, {"text": "sur ton compte", "at": "0:1", "size": "m"},
                 {"text": "elle fond", "at": "0:2", "size": "xl", "hl": True}],
       "reveal": {"html": "Laisser <em>dormir</em> son argent", "at": "1:1"}},
-    "p1": {"type": "counter", "glow": "red", "chip": CHIP(1, "2:0"), "title": {"html": "<em>0 %</em> d'intérêts", "at": "2:1"}, "label": "Compte courant · exemple", "color": "gold",
-      "stages": [{"to": 5000, "at": "4:0", "label": "AUJOURD'HUI"}, {"to": 5000, "at": "4:1", "label": "DANS UN AN"}]},
-    "p2": {"type": "bars", "glow": "red", "chip": CHIP(2, "5:0"), "title": {"html": "L'<em>inflation</em>", "at": "5:1"}, "label": "Ce que tes 5 000 € achètent · 2 %/an (exemple)", "top": 520,
+    "p1": {"type": "icon", "glow": "red", "chip": CHIP(1, "2:0"), "icon": "piggy", "color": "gold", "at": "2:0", "text": "5 000 € → <em>5 000 €</em>", "textAt": "4:0",
+      "sub": "un an plus tard, sur un compte à 0 % (exemple)", "subAt": "4:1"},
+    "p2": {"type": "bars", "glow": "red", "chip": CHIP(2, "5:0"), "title": {"html": "L'<em>inflation</em>", "at": "5:1"}, "label": "Pouvoir d'achat · inflation 2 %/an (exemple)", "top": 520,
       "items": [{"label": "Aujourd'hui", "value": 5000, "color": "gold", "at": "6:1"},
                 {"label": "Dans 1 an", "value": 4900, "color": "down", "at": "7:2"},
-                {"label": "Dans 5 ans", "value": 4530, "color": "down", "at": "8:1"}],
-      "badge": {"text": "−470 €", "small": "EN 5 ANS", "at": "8:1", "color": "red"}},
+                {"label": "Dans 5 ans", "value": 4530, "color": "down", "at": "8:1"}]},
     "p3": {"type": "counter", "glow": "green", "chip": CHIP(3, "9:0"), "title": {"html": "Le <em>livret</em>", "at": "9:1"}, "label": "5 000 € à 1,5 % · exemple", "color": "up",
       "stages": [{"to": 75, "at": "11:1", "label": "D'INTÉRÊTS PAR AN"}],
       "disclaimer": "Taux d'exemple : vérifie le taux actuel du Livret A"},
@@ -278,7 +277,6 @@ def insert_after(e, idx, sentence):
 insert_after(eps[21], 16, S("verdict", ["COMMENCE PAR TON RELEVÉ", "Commence par ton relevé"], ["*DE FRAIS ANNUEL.", "de frais annuel : ta banque te l'envoie chaque année."]))
 insert_after(eps[24], 5, S("p1", ["IL FAUT AUSSI", "Il faut aussi"], ["*10 000 ABONNÉS MINIMUM.", "au moins dix mille abonnés."]))
 insert_after(eps[25], 8, S("p2", ["EN 5 ANS,", "En cinq ans,"], ["*PRÈS DE 470 € PERDUS.", "près de quatre cent soixante-dix euros de pouvoir d'achat perdus.", "stamp"]))
-eps[25]["blocks"]["p2"]["badge"]["at"] = "9:1"
 eps[25]["blocks"]["p2"]["items"][2]["at"] = "9:0"
 insert_after(eps[25], 15, S("astuce", ["C'EST AUSSI", "C'est aussi"], ["*TON FONDS D'URGENCE.", "ton fonds d'urgence, comme dans l'épisode un."]))
 insert_after(eps[24], 16, S("verdict", ["CONSTRUIS D'ABORD", "Construis d'abord"], ["*UNE AUDIENCE FIDÈLE.", "une audience fidèle."]))

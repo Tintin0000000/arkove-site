@@ -1,463 +1,463 @@
 // Généré par voix/voiceover.py : ne pas modifier à la main.
 window.VO = {
- "duration": 63.9,
+ "duration": 63.5,
  "segments": [
   {
    "name": "hook",
    "start": 0,
-   "end": 6.432
+   "end": 6.352
   },
   {
    "name": "p1",
-   "start": 6.432,
-   "end": 15.333
+   "start": 6.352,
+   "end": 15.01
   },
   {
    "name": "p2",
-   "start": 15.333,
-   "end": 29.721
+   "start": 15.01,
+   "end": 29.53
   },
   {
    "name": "p3",
-   "start": 29.721,
-   "end": 42.655
+   "start": 29.53,
+   "end": 42.601
   },
   {
    "name": "astuce",
-   "start": 42.655,
-   "end": 51.19
+   "start": 42.601,
+   "end": 50.876
   },
   {
    "name": "verdict",
-   "start": 51.19,
-   "end": 54.625
+   "start": 50.876,
+   "end": 54.322
   },
   {
    "name": "cta",
-   "start": 54.625,
-   "end": 63.9
+   "start": 54.322,
+   "end": 63.5
   }
  ],
  "sentences": [
   {
    "segment": "hook",
    "start": 0.3,
-   "end": 4.128,
+   "end": 4.092,
    "chunks": [
     {
      "text": "TON ÉPARGNE DORT",
      "gold": false,
      "start": 0.3,
-     "end": 1.164
+     "end": 1.156
     },
     {
      "text": "SUR TON COMPTE COURANT ?",
      "gold": false,
-     "start": 1.164,
-     "end": 2.337
+     "start": 1.156,
+     "end": 2.318
     },
     {
      "text": "ELLE PERD DE LA VALEUR.",
      "gold": true,
-     "start": 2.337,
-     "end": 4.128
+     "start": 2.318,
+     "end": 4.092
     }
    ]
   },
   {
    "segment": "hook",
-   "start": 4.308,
-   "end": 6.452,
+   "start": 4.272,
+   "end": 6.372,
    "chunks": [
     {
      "text": "C'EST L'ERREUR :",
      "gold": false,
-     "start": 4.308,
-     "end": 5.21
+     "start": 4.272,
+     "end": 5.156
     },
     {
      "text": "LAISSER DORMIR SON ARGENT.",
      "gold": true,
-     "start": 5.21,
-     "end": 6.452
+     "start": 5.156,
+     "end": 6.372
     }
    ]
   },
   {
    "segment": "p1",
-   "start": 6.732,
-   "end": 9.109,
+   "start": 6.652,
+   "end": 9.072,
    "chunks": [
     {
      "text": "PREUVE NUMÉRO 1 :",
      "gold": false,
-     "start": 6.732,
-     "end": 7.861
+     "start": 6.652,
+     "end": 7.802
     },
     {
      "text": "0 % D'INTÉRÊTS.",
      "gold": true,
-     "start": 7.861,
-     "end": 9.109
+     "start": 7.802,
+     "end": 9.072
     }
    ]
   },
   {
    "segment": "p1",
-   "start": 9.289,
-   "end": 11.877,
+   "start": 9.252,
+   "end": 11.761,
    "chunks": [
     {
      "text": "SUR UN COMPTE COURANT,",
      "gold": false,
-     "start": 9.289,
-     "end": 10.583
+     "start": 9.252,
+     "end": 10.507
     },
     {
      "text": "TON ARGENT NE RAPPORTE RIEN.",
      "gold": true,
-     "start": 10.583,
-     "end": 11.877
+     "start": 10.507,
+     "end": 11.761
     }
    ]
   },
   {
    "segment": "p1",
-   "start": 12.057,
-   "end": 15.353,
+   "start": 11.941,
+   "end": 15.03,
    "chunks": [
     {
      "text": "5 000 € AUJOURD'HUI,",
      "gold": false,
-     "start": 12.057,
-     "end": 13.931
+     "start": 11.941,
+     "end": 13.697
     },
     {
      "text": "5 000 € DANS UN AN.",
      "gold": true,
-     "start": 13.931,
-     "end": 15.353
+     "start": 13.697,
+     "end": 15.03
     }
    ]
   },
   {
    "segment": "p2",
-   "start": 15.633,
-   "end": 17.487,
+   "start": 15.31,
+   "end": 17.156,
    "chunks": [
     {
      "text": "PREUVE NUMÉRO 2 :",
      "gold": false,
-     "start": 15.633,
-     "end": 16.889
+     "start": 15.31,
+     "end": 16.56
     },
     {
      "text": "L'INFLATION.",
      "gold": true,
-     "start": 16.889,
-     "end": 17.487
+     "start": 16.56,
+     "end": 17.156
     }
    ]
   },
   {
    "segment": "p2",
-   "start": 17.667,
-   "end": 19.423,
+   "start": 17.336,
+   "end": 19.271,
    "chunks": [
     {
      "text": "LES PRIX MONTENT",
      "gold": false,
-     "start": 17.667,
-     "end": 18.435
+     "start": 17.336,
+     "end": 18.183
     },
     {
      "text": "PRESQUE CHAQUE ANNÉE.",
      "gold": true,
-     "start": 18.435,
-     "end": 19.423
+     "start": 18.183,
+     "end": 19.271
     }
    ]
   },
   {
    "segment": "p2",
-   "start": 19.603,
-   "end": 23.848,
+   "start": 19.451,
+   "end": 23.753,
    "chunks": [
     {
      "text": "AVEC 2 % D'INFLATION,",
      "gold": false,
-     "start": 19.603,
-     "end": 21.269
+     "start": 19.451,
+     "end": 21.139
     },
     {
      "text": "TES 5 000 €",
      "gold": true,
-     "start": 21.269,
-     "end": 22.183
+     "start": 21.139,
+     "end": 22.065
     },
     {
      "text": "ACHÈTENT 100 € DE MOINS.",
      "gold": false,
-     "start": 22.183,
-     "end": 23.848
+     "start": 22.065,
+     "end": 23.753
     }
    ]
   },
   {
    "segment": "p2",
-   "start": 24.028,
-   "end": 25.878,
+   "start": 23.933,
+   "end": 25.767,
    "chunks": [
     {
      "text": "ET CHAQUE ANNÉE,",
      "gold": false,
-     "start": 24.028,
-     "end": 25.138
+     "start": 23.933,
+     "end": 25.033
     },
     {
      "text": "ÇA RECOMMENCE.",
      "gold": true,
-     "start": 25.138,
-     "end": 25.878
+     "start": 25.033,
+     "end": 25.767
     }
    ]
   },
   {
    "segment": "p2",
-   "start": 26.058,
-   "end": 29.741,
+   "start": 25.947,
+   "end": 29.55,
    "chunks": [
     {
      "text": "EN 5 ANS,",
      "gold": false,
-     "start": 26.058,
-     "end": 26.816
+     "start": 25.947,
+     "end": 26.7
     },
     {
-     "text": "PRÈS DE 470 € EN MOINS.",
+     "text": "PRÈS DE 470 € PERDUS.",
      "gold": true,
-     "start": 26.816,
-     "end": 29.741
+     "start": 26.7,
+     "end": 29.55
     }
    ]
   },
   {
    "segment": "p3",
-   "start": 30.021,
-   "end": 31.803,
+   "start": 29.83,
+   "end": 31.577,
    "chunks": [
     {
      "text": "PREUVE NUMÉRO 3 :",
      "gold": false,
-     "start": 30.021,
-     "end": 31.328
+     "start": 29.83,
+     "end": 31.111
     },
     {
      "text": "LE LIVRET.",
      "gold": true,
-     "start": 31.328,
-     "end": 31.803
+     "start": 31.111,
+     "end": 31.577
     }
    ]
   },
   {
    "segment": "p3",
-   "start": 31.983,
-   "end": 35.28,
+   "start": 31.757,
+   "end": 35.026,
    "chunks": [
     {
      "text": "UN LIVRET A",
      "gold": false,
-     "start": 31.983,
-     "end": 32.513
+     "start": 31.757,
+     "end": 32.282
     },
     {
      "text": "SE RETIRE QUAND TU VEUX,",
      "gold": true,
-     "start": 32.513,
-     "end": 33.926
+     "start": 32.282,
+     "end": 33.683
     },
     {
      "text": "SANS IMPÔT SUR LES INTÉRÊTS.",
      "gold": false,
-     "start": 33.926,
-     "end": 35.28
+     "start": 33.683,
+     "end": 35.026
     }
    ]
   },
   {
    "segment": "p3",
-   "start": 35.46,
-   "end": 40.094,
+   "start": 35.206,
+   "end": 39.944,
    "chunks": [
     {
      "text": "EXEMPLE À 1,5 % :",
      "gold": false,
-     "start": 35.46,
-     "end": 37.838
+     "start": 35.206,
+     "end": 37.637
     },
     {
      "text": "75 € PAR AN",
      "gold": true,
-     "start": 37.838,
-     "end": 39.301
+     "start": 37.637,
+     "end": 39.134
     },
     {
      "text": "SANS RIEN FAIRE.",
      "gold": false,
-     "start": 39.301,
-     "end": 40.094
+     "start": 39.134,
+     "end": 39.944
     }
    ]
   },
   {
    "segment": "p3",
-   "start": 40.274,
-   "end": 42.775,
+   "start": 40.124,
+   "end": 42.721,
    "chunks": [
     {
      "text": "LE TAUX CHANGE :",
      "gold": false,
-     "start": 40.274,
-     "end": 41.455
+     "start": 40.124,
+     "end": 41.35
     },
     {
      "text": "VÉRIFIE LE TAUX ACTUEL.",
      "gold": true,
-     "start": 41.455,
-     "end": 42.775
+     "start": 41.35,
+     "end": 42.721
     }
    ]
   },
   {
    "segment": "astuce",
-   "start": 42.955,
-   "end": 45.821,
+   "start": 42.901,
+   "end": 45.663,
    "chunks": [
     {
      "text": "ASTUCE :",
      "gold": false,
-     "start": 42.955,
-     "end": 43.573
+     "start": 42.901,
+     "end": 43.496
     },
     {
      "text": "GARDE UN MOIS DE DÉPENSES",
      "gold": true,
-     "start": 43.573,
-     "end": 44.753
+     "start": 43.496,
+     "end": 44.634
     },
     {
      "text": "SUR TON COMPTE COURANT.",
      "gold": false,
-     "start": 44.753,
-     "end": 45.821
+     "start": 44.634,
+     "end": 45.663
     }
    ]
   },
   {
    "segment": "astuce",
-   "start": 46.001,
-   "end": 48.462,
+   "start": 45.843,
+   "end": 48.231,
    "chunks": [
     {
      "text": "LE RESTE DE TON ÉPARGNE",
      "gold": false,
-     "start": 46.001,
-     "end": 47.462
+     "start": 45.843,
+     "end": 47.261
     },
     {
      "text": "VA SUR UN LIVRET.",
      "gold": true,
-     "start": 47.462,
-     "end": 48.462
+     "start": 47.261,
+     "end": 48.231
     }
    ]
   },
   {
    "segment": "astuce",
-   "start": 48.642,
-   "end": 51.21,
+   "start": 48.411,
+   "end": 50.896,
    "chunks": [
     {
      "text": "C'EST AUSSI",
      "gold": false,
-     "start": 48.642,
-     "end": 49.167
+     "start": 48.411,
+     "end": 48.919
     },
     {
      "text": "TON FONDS D'URGENCE.",
      "gold": true,
-     "start": 49.167,
-     "end": 51.21
+     "start": 48.919,
+     "end": 50.896
     }
    ]
   },
   {
    "segment": "verdict",
-   "start": 51.49,
-   "end": 54.645,
+   "start": 51.176,
+   "end": 54.342,
    "chunks": [
     {
      "text": "VERDICT :",
      "gold": false,
-     "start": 51.49,
-     "end": 52.204
+     "start": 51.176,
+     "end": 51.893
     },
     {
      "text": "UN SIMPLE VIREMENT,",
      "gold": true,
-     "start": 52.204,
-     "end": 53.454
+     "start": 51.893,
+     "end": 53.148
     },
     {
      "text": "ET TON ARGENT TRAVAILLE.",
      "gold": false,
-     "start": 53.454,
-     "end": 54.645
+     "start": 53.148,
+     "end": 54.342
     }
    ]
   },
   {
    "segment": "cta",
-   "start": 54.925,
-   "end": 57.824,
+   "start": 54.622,
+   "end": 57.492,
    "chunks": [
     {
      "text": "SAUVEGARDE CETTE VIDÉO",
      "gold": true,
-     "start": 54.925,
-     "end": 56.273
+     "start": 54.622,
+     "end": 55.957
     },
     {
      "text": "AVANT TON PROCHAIN SALAIRE.",
      "gold": false,
-     "start": 56.273,
-     "end": 57.824
+     "start": 55.957,
+     "end": 57.492
     }
    ]
   },
   {
    "segment": "cta",
-   "start": 58.004,
-   "end": 61.476,
+   "start": 57.672,
+   "end": 61.072,
    "chunks": [
     {
      "text": "ET TOI,",
      "gold": false,
-     "start": 58.004,
-     "end": 58.647
+     "start": 57.672,
+     "end": 58.302
     },
     {
      "text": "TON ÉPARGNE EST OÙ ?",
      "gold": false,
-     "start": 58.647,
-     "end": 60.319
+     "start": 58.302,
+     "end": 59.939
     },
     {
      "text": "DIS-LE EN COMMENTAIRE.",
      "gold": true,
-     "start": 60.319,
-     "end": 61.476
+     "start": 59.939,
+     "end": 61.072
     }
    ]
   }

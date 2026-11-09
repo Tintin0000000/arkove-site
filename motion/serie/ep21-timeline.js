@@ -1,458 +1,458 @@
 // Généré par voix/voiceover.py : ne pas modifier à la main.
 window.VO = {
- "duration": 62.9,
+ "duration": 63.2,
  "segments": [
   {
    "name": "hook",
    "start": 0,
-   "end": 5.627
+   "end": 5.734
   },
   {
    "name": "p1",
-   "start": 5.627,
-   "end": 22.504
+   "start": 5.734,
+   "end": 22.549
   },
   {
    "name": "p2",
-   "start": 22.504,
-   "end": 34.115
+   "start": 22.549,
+   "end": 34.351
   },
   {
    "name": "p3",
-   "start": 34.115,
-   "end": 45.858
+   "start": 34.351,
+   "end": 46.07
   },
   {
    "name": "verdict",
-   "start": 45.858,
-   "end": 53.222
+   "start": 46.07,
+   "end": 53.597
   },
   {
    "name": "cta",
-   "start": 53.222,
-   "end": 62.9
+   "start": 53.597,
+   "end": 63.2
   }
  ],
  "sentences": [
   {
    "segment": "hook",
    "start": 0.3,
-   "end": 3.105,
+   "end": 3.307,
    "chunks": [
     {
      "text": "10 ANS",
      "gold": false,
      "start": 0.3,
-     "end": 0.637
+     "end": 0.654
     },
     {
      "text": "DANS LA MÊME BANQUE",
      "gold": false,
-     "start": 0.637,
-     "end": 1.534
+     "start": 0.654,
+     "end": 1.597
     },
     {
-     "text": "PEUT TE COÛTER PRÈS DE 1 000 €.",
+     "text": "PEUT TE COÛTER PRESQUE 1 000 €.",
      "gold": true,
-     "start": 1.534,
-     "end": 3.105
+     "start": 1.597,
+     "end": 3.307
     }
    ]
   },
   {
    "segment": "hook",
-   "start": 3.285,
-   "end": 5.647,
+   "start": 3.487,
+   "end": 5.754,
    "chunks": [
     {
      "text": "C'EST L'ERREUR :",
      "gold": false,
-     "start": 3.285,
-     "end": 4.23
+     "start": 3.487,
+     "end": 4.394
     },
     {
      "text": "NE JAMAIS COMPARER SA BANQUE.",
      "gold": true,
-     "start": 4.23,
-     "end": 5.647
+     "start": 4.394,
+     "end": 5.754
     }
    ]
   },
   {
    "segment": "p1",
-   "start": 5.927,
-   "end": 8.318,
+   "start": 6.034,
+   "end": 8.444,
    "chunks": [
     {
      "text": "PREUVE NUMÉRO 1 :",
      "gold": false,
-     "start": 5.927,
-     "end": 6.984
+     "start": 6.034,
+     "end": 7.099
     },
     {
      "text": "LES FRAIS QUI S'ADDITIONNENT.",
      "gold": true,
-     "start": 6.984,
-     "end": 8.318
+     "start": 7.099,
+     "end": 8.444
     }
    ]
   },
   {
    "segment": "p1",
-   "start": 8.498,
-   "end": 11.142,
+   "start": 8.624,
+   "end": 11.025,
    "chunks": [
     {
      "text": "TENUE DE COMPTE :",
      "gold": false,
-     "start": 8.498,
-     "end": 9.58
+     "start": 8.624,
+     "end": 9.606
     },
     {
      "text": "ENVIRON 25 € PAR AN.",
      "gold": true,
-     "start": 9.58,
-     "end": 11.142
+     "start": 9.606,
+     "end": 11.025
     }
    ]
   },
   {
    "segment": "p1",
-   "start": 11.322,
-   "end": 13.684,
+   "start": 11.205,
+   "end": 13.66,
    "chunks": [
     {
      "text": "CARTE BANCAIRE :",
      "gold": false,
-     "start": 11.322,
-     "end": 12.335
+     "start": 11.205,
+     "end": 12.257
     },
     {
      "text": "ENVIRON 45 €.",
      "gold": true,
-     "start": 12.335,
-     "end": 13.684
+     "start": 12.257,
+     "end": 13.66
     }
    ]
   },
   {
    "segment": "p1",
-   "start": 13.864,
-   "end": 16.712,
+   "start": 13.84,
+   "end": 16.669,
    "chunks": [
     {
      "text": "ASSURANCE DES MOYENS DE PAIEMENT :",
      "gold": false,
-     "start": 13.864,
-     "end": 15.638
+     "start": 13.84,
+     "end": 15.601
     },
     {
      "text": "ENCORE 25 €.",
      "gold": true,
-     "start": 15.638,
-     "end": 16.712
+     "start": 15.601,
+     "end": 16.669
     }
    ]
   },
   {
    "segment": "p1",
-   "start": 16.892,
-   "end": 20.509,
+   "start": 16.849,
+   "end": 20.562,
    "chunks": [
     {
      "text": "PRESQUE 100 € PAR AN,",
      "gold": true,
-     "start": 16.892,
-     "end": 18.787
+     "start": 16.849,
+     "end": 18.794
     },
     {
      "text": "950 € EN 10 ANS.",
      "gold": false,
-     "start": 18.787,
-     "end": 20.509
+     "start": 18.794,
+     "end": 20.562
     }
    ]
   },
   {
    "segment": "p1",
-   "start": 20.689,
-   "end": 22.524,
+   "start": 20.742,
+   "end": 22.569,
    "chunks": [
     {
      "text": "ET C'EST SANS COMPTER",
      "gold": false,
-     "start": 20.689,
-     "end": 21.606
+     "start": 20.742,
+     "end": 21.655
     },
     {
      "text": "LES FRAIS D'INCIDENT.",
      "gold": true,
-     "start": 21.606,
-     "end": 22.524
+     "start": 21.655,
+     "end": 22.569
     }
    ]
   },
   {
    "segment": "p2",
-   "start": 22.804,
-   "end": 24.969,
+   "start": 22.849,
+   "end": 24.964,
    "chunks": [
     {
      "text": "PREUVE NUMÉRO 2 :",
      "gold": false,
-     "start": 22.804,
-     "end": 24.0
+     "start": 22.849,
+     "end": 24.018
     },
     {
      "text": "LES BANQUES EN LIGNE.",
      "gold": true,
-     "start": 24.0,
-     "end": 24.969
+     "start": 24.018,
+     "end": 24.964
     }
    ]
   },
   {
    "segment": "p2",
-   "start": 25.149,
-   "end": 28.487,
+   "start": 25.144,
+   "end": 28.623,
    "chunks": [
     {
      "text": "BEAUCOUP PROPOSENT",
      "gold": false,
-     "start": 25.149,
-     "end": 26.064
+     "start": 25.144,
+     "end": 26.098
     },
     {
      "text": "UN COMPTE ET UNE CARTE GRATUITS,",
      "gold": true,
-     "start": 26.064,
-     "end": 27.733
+     "start": 26.098,
+     "end": 27.837
     },
     {
      "text": "SOUS CONDITIONS.",
      "gold": false,
-     "start": 27.733,
-     "end": 28.487
+     "start": 27.837,
+     "end": 28.623
     }
    ]
   },
   {
    "segment": "p2",
-   "start": 28.667,
-   "end": 31.571,
+   "start": 28.803,
+   "end": 31.677,
    "chunks": [
     {
      "text": "CONDITION DE REVENUS,",
      "gold": false,
-     "start": 28.667,
-     "end": 29.977
+     "start": 28.803,
+     "end": 30.099
     },
     {
      "text": "OU D'UTILISER LA CARTE",
      "gold": false,
-     "start": 29.977,
-     "end": 31.002
+     "start": 30.099,
+     "end": 31.113
     },
     {
      "text": "CHAQUE MOIS.",
      "gold": true,
-     "start": 31.002,
-     "end": 31.571
+     "start": 31.113,
+     "end": 31.677
     }
    ]
   },
   {
    "segment": "p2",
-   "start": 31.751,
-   "end": 34.135,
+   "start": 31.857,
+   "end": 34.371,
    "chunks": [
     {
      "text": "LIS-LES AVANT DE CHANGER,",
      "gold": false,
-     "start": 31.751,
-     "end": 33.076
+     "start": 31.857,
+     "end": 33.254
     },
     {
      "text": "SINON DES FRAIS TOMBENT.",
      "gold": true,
-     "start": 33.076,
-     "end": 34.135
+     "start": 33.254,
+     "end": 34.371
     }
    ]
   },
   {
    "segment": "p3",
-   "start": 34.415,
-   "end": 36.833,
+   "start": 34.651,
+   "end": 36.953,
    "chunks": [
     {
      "text": "PREUVE NUMÉRO 3 :",
      "gold": false,
-     "start": 34.415,
-     "end": 35.815
+     "start": 34.651,
+     "end": 35.984
     },
     {
      "text": "CHANGER EST FACILE.",
      "gold": true,
-     "start": 35.815,
-     "end": 36.833
+     "start": 35.984,
+     "end": 36.953
     }
    ]
   },
   {
    "segment": "p3",
-   "start": 37.013,
-   "end": 40.692,
+   "start": 37.133,
+   "end": 40.821,
    "chunks": [
     {
      "text": "AVEC LA MOBILITÉ BANCAIRE,",
      "gold": false,
-     "start": 37.013,
-     "end": 38.518
+     "start": 37.133,
+     "end": 38.641
     },
     {
      "text": "TA NOUVELLE BANQUE S'OCCUPE",
      "gold": true,
-     "start": 38.518,
-     "end": 39.8
+     "start": 38.641,
+     "end": 39.927
     },
     {
      "text": "DE TOUT TRANSFÉRER.",
      "gold": false,
-     "start": 39.8,
-     "end": 40.692
+     "start": 39.927,
+     "end": 40.821
     }
    ]
   },
   {
    "segment": "p3",
-   "start": 40.872,
-   "end": 42.926,
+   "start": 41.001,
+   "end": 43.171,
    "chunks": [
     {
      "text": "PRÉLÈVEMENTS ET VIREMENTS :",
      "gold": false,
-     "start": 40.872,
-     "end": 42.347
+     "start": 41.001,
+     "end": 42.559
     },
     {
      "text": "C'EST GRATUIT.",
      "gold": true,
-     "start": 42.347,
-     "end": 42.926
+     "start": 42.559,
+     "end": 43.171
     }
    ]
   },
   {
    "segment": "p3",
-   "start": 43.106,
-   "end": 45.878,
+   "start": 43.351,
+   "end": 46.09,
    "chunks": [
     {
      "text": "ET TU PEUX GARDER",
      "gold": false,
-     "start": 43.106,
-     "end": 43.95
+     "start": 43.351,
+     "end": 44.185
     },
     {
      "text": "TON ANCIEN COMPTE",
      "gold": true,
-     "start": 43.95,
-     "end": 44.853
+     "start": 44.185,
+     "end": 45.078
     },
     {
      "text": "LE TEMPS DE VÉRIFIER.",
      "gold": false,
-     "start": 44.853,
-     "end": 45.878
+     "start": 45.078,
+     "end": 46.09
     }
    ]
   },
   {
    "segment": "verdict",
-   "start": 46.158,
-   "end": 49.46,
+   "start": 46.37,
+   "end": 49.879,
    "chunks": [
     {
      "text": "VERDICT :",
      "gold": false,
-     "start": 46.158,
-     "end": 46.95
+     "start": 46.37,
+     "end": 47.212
     },
     {
      "text": "COMPARE UNE FOIS PAR AN.",
      "gold": true,
-     "start": 46.95,
-     "end": 48.205
+     "start": 47.212,
+     "end": 48.546
     },
     {
      "text": "10 MINUTES SUFFISENT.",
      "gold": false,
-     "start": 48.205,
-     "end": 49.46
+     "start": 48.546,
+     "end": 49.879
     }
    ]
   },
   {
    "segment": "verdict",
-   "start": 49.64,
-   "end": 53.242,
+   "start": 50.059,
+   "end": 53.617,
    "chunks": [
     {
      "text": "COMMENCE PAR TON RELEVÉ",
      "gold": false,
-     "start": 49.64,
-     "end": 50.821
+     "start": 50.059,
+     "end": 51.226
     },
     {
      "text": "DE FRAIS ANNUEL.",
      "gold": true,
-     "start": 50.821,
-     "end": 53.242
+     "start": 51.226,
+     "end": 53.617
     }
    ]
   },
   {
    "segment": "cta",
-   "start": 53.522,
-   "end": 56.848,
+   "start": 53.897,
+   "end": 57.17,
    "chunks": [
     {
      "text": "SAUVEGARDE CETTE VIDÉO",
      "gold": true,
-     "start": 53.522,
-     "end": 54.879
+     "start": 53.897,
+     "end": 55.233
     },
     {
      "text": "AVANT TON PROCHAIN RELEVÉ DE FRAIS.",
      "gold": false,
-     "start": 54.879,
-     "end": 56.848
+     "start": 55.233,
+     "end": 57.17
     }
    ]
   },
   {
    "segment": "cta",
-   "start": 57.028,
-   "end": 60.522,
+   "start": 57.35,
+   "end": 60.792,
    "chunks": [
     {
      "text": "ET TOI,",
      "gold": false,
-     "start": 57.028,
-     "end": 57.583
+     "start": 57.35,
+     "end": 57.896
     },
     {
      "text": "COMBIEN DE FRAIS PAR AN ?",
      "gold": false,
-     "start": 57.583,
-     "end": 59.524
+     "start": 57.896,
+     "end": 59.808
     },
     {
      "text": "DIS-LE EN COMMENTAIRE.",
      "gold": true,
-     "start": 59.524,
-     "end": 60.522
+     "start": 59.808,
+     "end": 60.792
     }
    ]
   }
