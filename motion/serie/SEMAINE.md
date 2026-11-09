@@ -19,10 +19,10 @@ Durées : ep11 50 s · ep12 46 s · ep13 46 s · ep14 45 s · ep15 47 s.
 | # | Idée | Affirmation d'ouverture |
 |---|---|---|
 | ✅ ep11 | Cumuler les abonnements IA | « 720 € par an pour des IA que tu utilises à peine. » |
-| 2 | Laisser un essai gratuit se renouveler | « 7 jours gratuits… puis 60 € prélevés sans prévenir. » |
+| ✅ ep25 | Laisser dormir son épargne sur le compte courant | « Ton épargne dort sur ton compte courant ? Elle perd de la valeur. » |
 | ✅ ep16 | Payer en 3 ou 4 fois les petits achats | « Ce paiement en 4 fois peut te coûter plus cher que prévu. » |
 | ✅ ep19 | Garder une carte bancaire « premium » | « Ta carte te coûte peut-être 150 € par an pour des options que tu n'utilises jamais. » |
-| 5 | Ne jamais comparer sa banque | « Rester dans la même banque depuis 10 ans, ça se paie. » |
+| ✅ ep21 | Ne jamais comparer sa banque | « Rester dans la même banque depuis 10 ans, ça se paie. » |
 
 ### Série 2 · « Comment gagne vraiment X ? »
 
@@ -31,8 +31,8 @@ Durées : ep11 50 s · ep12 46 s · ep13 46 s · ep14 45 s · ep15 47 s.
 | ✅ ep12 | Ta banque | « Ton compte est gratuit ? Ta banque gagne quand même sur toi. » |
 | ✅ ep15 | Les applis gratuites | « Si c'est gratuit, c'est toi le produit. » |
 | ✅ ep18 | ChatGPT et les IA | « Des millions de gens l'utilisent gratuitement. Alors qui paie ? » |
-| 4 | Les néobanques | « Une banque sans frais… qui gagne quand même de l'argent. » |
-| 5 | Les créateurs TikTok | « 1 million de vues ne rapporte pas ce que tu crois. » |
+| ✅ ep22 | Les néobanques | « Une banque sans frais… qui gagne quand même de l'argent. » |
+| ✅ ep24 | Les créateurs TikTok | « 1 million de vues ne rapporte pas ce que tu crois. » |
 
 ### Série 3 · « Business rentable ou arnaque ? »
 
@@ -42,7 +42,7 @@ Durées : ep11 50 s · ep12 46 s · ep13 46 s · ep14 45 s · ep15 47 s.
 | ✅ ep14 | Les formations « gagne de l'argent avec l'IA » | « Souvent, le seul qui gagne, c'est le vendeur. » |
 | ✅ ep17 | L'achat-revente sur Vinted | « Acheter 5 €, revendre 25 € : le calcul que personne ne montre. » |
 | ✅ ep20 | Les comptes « faceless » automatisés par IA | « 100 vidéos par jour avec l'IA : rentable ou arnaque ? » |
-| 5 | Le copy trading | « Copier les trades d'un pro : ce qu'on ne te dit pas. » |
+| ✅ ep23 | Le copy trading | « Copier les trades d'un pro : ce qu'on ne te dit pas. » |
 
 ## Calendrier conseillé
 
@@ -72,8 +72,21 @@ et 100 000 vues sur 30 jours).
 | 9 | ep19 · La carte bancaire premium (série 1) |
 | 10 | ep20 · Comptes faceless : rentable ou arnaque ? (série 3) |
 
-Il reste 5 idées pour la suite : l'essai gratuit qui se renouvelle et ne jamais comparer sa banque
-(série 1), les néobanques et les créateurs TikTok (série 2), le copy trading (série 3).
+## Semaine 4 : la fin des 15 idées (ep21 à ep25)
+
+Toujours un peu plus d'une minute par vidéo. L'essai gratuit qui se renouvelle était déjà traité
+dans l'ep15 : il est remplacé par « laisser dormir son épargne ».
+
+| Jour | Vidéo |
+|---|---|
+| 11 | ep21 · 10 ans dans la même banque ? (série 1) |
+| 12 | ep22 · Les néobanques : comment elles gagnent ? (série 2) |
+| 13 | ep23 · Copy trading : rentable ou arnaque ? (série 3) |
+| 14 | ep24 · 1 million de vues = combien ? (série 2) |
+| 15 | ep25 · Ton épargne dort sur ton compte ? (série 1) |
+
+Les 15 idées sont faites. Avant d'en écrire 15 nouvelles, regarde dans *TikTok Studio* quelle série
+fait le plus de replays, de partages et de commentaires (voir plus bas) : la suite partira de celle-là.
 
 **Voix de synthèse :** au moment de publier, active le réglage « Contenu généré par l'IA »
 (*Plus d'options*) : TikTok demande de signaler les contenus réalistes faits par IA, et la voix l'est.

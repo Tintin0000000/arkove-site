@@ -17,7 +17,7 @@ Option --prises N : la synthèse varie un peu à chaque fois. Avec --prises 4, c
 générée 4 fois, transcrite par Whisper (modèle « small », ~370 Mo téléchargés au premier usage)
 et on garde la prise la plus proche du texte. Plus lent, mais évite les mots mâchés.
 
-Dépendances : pip install sherpa-onnx numpy scipy soundfile, et ffmpeg dans le PATH.
+Dépendances : pip install "sherpa-onnx==1.12.40" numpy scipy soundfile (la 2.x ne lit plus les voix Piper), et ffmpeg dans le PATH.
 """
 import json
 import re
