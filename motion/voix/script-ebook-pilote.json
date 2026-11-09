@@ -1,0 +1,35 @@
+{
+  "_doc": "Pilote « style dossier » pour l'e-book : 100 €/mois, calcul année par année, 3 scénarios, CTA e-book. Chaque morceau : [texte affiché, texte prononcé, bruitage optionnel]. « * » = mis en avant.",
+  "voice": "siwis-medium",
+  "speed": 0.97,
+  "lead": 0.3,
+  "gap": 0.2,
+  "duration": "auto",
+  "tail": 2.4,
+  "sentences": [
+    { "segment": "hook", "sfx": "whoosh", "chunks": [["Avec 100 € par mois,", "Avec cent euros par mois,"], ["tu pourrais avoir", "tu pourrais avoir"], ["*plus de 150 000 €", "plus de cent cinquante mille euros", "boom"], ["à la retraite.", "à la retraite."]] },
+    { "segment": "hook", "chunks": [["Alors pourquoi", "Alors pourquoi"], ["*presque personne ne le fait ?", "presque personne ne le fait ?"]] },
+    { "segment": "intro", "sfx": "whoosh", "pause": 0.1, "chunks": [["On fait le calcul ensemble,", "On fait le calcul ensemble,"], ["*en deux étapes.", "en deux étapes."]] },
+
+    { "segment": "calc", "sfx": "whoosh", "pause": 0.15, "chunks": [["Premier calcul :", "Premier calcul :"], ["tu mets 100 € de côté", "tu mets cent euros de côté"], ["*chaque mois,", "chaque mois,"], ["de 25 à 65 ans.", "de vingt-cinq à soixante-cinq ans."]] },
+    { "segment": "calc", "chunks": [["Tu les places.", "Tu les places."], ["Rendement d'exemple :", "Rendement d'exemple :"], ["*5 % par an.", "cinq pour cent par an."]] },
+    { "segment": "calc", "chunks": [["Regarde.", "Regarde."], ["La première année, tu as versé", "La première année, tu as versé"], ["1 200 €.", "mille deux cents euros."], ["Tes intérêts ?", "Tes intérêts ?"], ["*Presque rien.", "Presque rien."]] },
+    { "segment": "calc", "chunks": [["Mais l'année suivante,", "Mais l'année suivante,"], ["ces intérêts rapportent à leur tour :", "ces intérêts rapportent à leur tour :"], ["*les intérêts composés.", "ce sont les intérêts composés."]] },
+    { "segment": "calc", "chunks": [["Au bout de 26 ans,", "Au bout de vingt-six ans,"], ["tes intérêts dépassent", "tes intérêts dépassent"], ["*tout ce que tu as versé.", "tout ce que tu as versé.", "stamp"]] },
+    { "segment": "calc", "chunks": [["Et à 65 ans :", "Et à soixante-cinq ans :"], ["*152 600 €.", "cent cinquante-deux mille six cents euros.", "coin"]] },
+    { "segment": "calc", "chunks": [["Retiens bien ça :", "Retiens bien ça :"], ["48 000 € versés.", "quarante-huit mille euros versés."], ["*Le reste, c'est ton argent qui a travaillé.", "Le reste, c'est ton argent qui a travaillé."]] },
+
+    { "segment": "scen", "sfx": "whoosh", "pause": 0.15, "chunks": [["Deuxième calcul :", "Deuxième calcul :"], ["les mêmes 100 € par mois,", "les mêmes cent euros par mois,"], ["*à trois endroits différents.", "à trois endroits différents."]] },
+    { "segment": "scen", "chunks": [["Sur ton compte courant, à 0 % :", "Sur ton compte courant, à zéro pour cent :"], ["*48 000 €.", "quarante-huit mille euros."]] },
+    { "segment": "scen", "chunks": [["Sur un livret à 2 % :", "Sur un livret à deux pour cent :"], ["*environ 73 000 €.", "environ soixante-treize mille euros."]] },
+    { "segment": "scen", "chunks": [["Placés à 5 % :", "Placés à cinq pour cent :"], ["*plus de 150 000 €.", "plus de cent cinquante mille euros.", "coin"]] },
+    { "segment": "scen", "chunks": [["Même effort.", "Même effort."], ["*Trois fois plus d'argent.", "Trois fois plus d'argent.", "boom"]] },
+
+    { "segment": "why", "sfx": "whoosh", "pause": 0.15, "chunks": [["Alors pourquoi personne ne le fait ?", "Alors pourquoi personne ne le fait ?"], ["*Parce que personne ne nous l'apprend.", "Parce que personne ne nous l'apprend."]] },
+    { "segment": "why", "chunks": [["Et chaque année d'attente coûte cher :", "Et chaque année d'attente coûte cher :"], ["commencer à 35 ans,", "commencer à trente-cinq ans,"], ["*c'est 83 000 €.", "c'est quatre-vingt-trois mille euros."]] },
+    { "segment": "why", "chunks": [["*Presque la moitié en moins.", "Presque la moitié en moins.", "stamp"]] },
+
+    { "segment": "cta", "sfx": "whoosh", "pause": 0.15, "chunks": [["Dans mon e-book,", "Dans mon livre numérique,"], ["je t'explique étape par étape", "je t'explique étape par étape"], ["*comment commencer,", "comment commencer,"], ["même avec 100 € par mois.", "même avec cent euros par mois."]] },
+    { "segment": "cta", "chunks": [["*Le lien est dans ma bio.", "Le lien est dans ma bio."]] }
+  ]
+}

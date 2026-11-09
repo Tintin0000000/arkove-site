@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-book · pilote « dossier »</title>
+  <link rel="stylesheet" href="../motion.css">
+  <style>
+    /* Style « dossier chiffré » : fond noir, titres à barre verticale, chiffres en mono rouge/vert,
+       panneaux à filet fin, sources en petit sous les visuels. 1080×1920 ; contenu entre y 60 et 1260,
+       sous-titres sur y 1330, bas de l'écran libre pour l'interface TikTok. */
+    :root { --red: #ff3b3b; --green: #2fe07a; --wire: rgba(255, 255, 255, 0.22); }
+    #stage { background: #040404; }
+    .seg { position: absolute; inset: 0; }
+
+    .meta { left: 60px; right: 60px; top: 60px; display: flex; justify-content: space-between; font: 600 20px var(--mono); letter-spacing: 0.12em; color: #6d6d6d; z-index: 5; }
+    .meta i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: var(--red); margin-right: 10px; vertical-align: 1px; }
+
+    .h { left: 60px; right: 60px; top: 150px; padding-left: 22px; border-left: 7px solid #fff; font: 800 40px/1.1 var(--sans); text-transform: uppercase; letter-spacing: -0.01em; }
+    .h em { font-style: normal; color: var(--green); }
+    .h.red em { color: var(--red); }
+    .tag { padding: 6px 14px; font: 800 24px var(--sans); text-transform: uppercase; color: #fff; background: var(--red); letter-spacing: 0.01em; white-space: nowrap; }
+    .tag.green { background: var(--green); color: #031a0c; }
+    .tag.white { background: #fff; color: #050505; }
+
+    .big { font: 700 120px/1 var(--mono); letter-spacing: -0.02em; white-space: nowrap; }
+    .panel { border: 3px solid var(--wire); background: rgba(10, 10, 10, 0.92); }
+    .panel.on { border-color: var(--green); box-shadow: 0 0 40px rgba(47, 224, 122, 0.25), inset 0 0 30px rgba(47, 224, 122, 0.06); }
+    .panel.bad { border-color: var(--red); box-shadow: 0 0 40px rgba(255, 59, 59, 0.22); }
+    .plbl { position: absolute; left: -3px; top: -3px; padding: 5px 12px; font: 800 20px var(--sans); text-transform: uppercase; }
+    .note { left: 60px; right: 60px; top: 1178px; font: 500 17px/1.45 var(--mono); color: #5c5c5c; letter-spacing: 0.02em; }
+
+    /* Personnage sous le projecteur */
+    .spot { width: 520px; height: 760px; }
+    .beam { position: absolute; left: 0; top: 0; width: 520px; height: 760px; background: linear-gradient(180deg, rgba(255,255,255,0.0), rgba(255,255,255,0.10)); clip-path: polygon(40% 0, 60% 0, 100% 100%, 0 100%); }
+    .floor { position: absolute; left: 60px; top: 690px; width: 400px; height: 70px; border-radius: 50%; background: radial-gradient(ellipse, rgba(255,255,255,0.28), rgba(255,255,255,0) 70%); }
+    .guy { position: absolute; left: 160px; top: 380px; width: 200px; height: 360px; }
+
+    /* Narrateur : le logo dans un cadre de visée */
+    .host { width: 230px; height: 230px; }
+    .host img { position: absolute; left: 25px; top: 25px; width: 180px; height: 180px; border-radius: 50%; }
+    .host .c { position: absolute; width: 46px; height: 46px; border: 5px solid var(--red); }
+    .host .c1 { left: 0; top: 0; border-right: 0; border-bottom: 0; } .host .c2 { right: 0; top: 0; border-left: 0; border-bottom: 0; }
+    .host .c3 { left: 0; bottom: 0; border-right: 0; border-top: 0; } .host .c4 { right: 0; bottom: 0; border-left: 0; border-top: 0; }
+    .host .tag { position: absolute; left: 50%; bottom: -34px; transform: translateX(-50%); font-size: 20px; }
+
+    /* Graphique année par année */
+    .legend { left: 60px; top: 236px; display: flex; gap: 26px; font: 700 22px var(--sans); text-transform: uppercase; }
+    .legend span::before { content: ''; display: inline-block; width: 18px; height: 18px; margin-right: 10px; vertical-align: -2px; background: var(--c); }
+    .acct { left: 60px; right: 60px; top: 300px; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--wire); padding-bottom: 12px; }
+    .acct .l { font: 700 26px var(--mono); color: #9a9a9a; letter-spacing: 0.06em; }
+    .acct .v { font: 700 64px var(--mono); color: var(--green); }
+    .chart { left: 150px; top: 430px; width: 870px; height: 600px; }
+    .bar { position: absolute; bottom: 0; width: 17px; }
+    .bar .d { position: absolute; left: 0; right: 0; bottom: 0; background: #e9e9e9; }
+    .bar .i { position: absolute; left: 0; right: 0; background: var(--green); }
+    .axis { position: absolute; left: -96px; width: 80px; text-align: right; font: 600 20px var(--mono); color: #6d6d6d; }
+    .grid { position: absolute; left: 0; right: 0; height: 1px; background: rgba(255,255,255,0.08); }
+    .xl { position: absolute; top: 612px; font: 600 20px var(--mono); color: #6d6d6d; transform: translateX(-50%); white-space: nowrap; }
+    .mark { position: absolute; top: -40px; bottom: 0; width: 3px; background: var(--red); }
+    .mark .tag { position: absolute; top: -10px; right: 12px; font-size: 20px; }
+    .call { font: 800 26px var(--sans); }
+
+    /* Scénarios */
+    .row { left: 60px; right: 60px; height: 190px; }
+    .row .k { position: absolute; left: 26px; top: 26px; font: 800 28px var(--sans); text-transform: uppercase; }
+    .row .r { position: absolute; left: 26px; top: 66px; font: 700 22px var(--mono); color: #8a8a8a; }
+    .row .trk { position: absolute; left: 26px; right: 26px; bottom: 30px; height: 26px; background: rgba(255,255,255,0.07); }
+    .row .fill { position: absolute; left: 0; top: 0; bottom: 0; transform-origin: 0 50%; }
+    .row .v { position: absolute; right: 26px; top: 22px; font: 700 64px var(--mono); }
+
+    /* E-book */
+    .book { left: 290px; top: 300px; width: 500px; height: 680px; transform-origin: 50% 100%; }
+    .cover { position: absolute; inset: 0; background: linear-gradient(160deg, #141414, #050505); border: 3px solid rgba(232, 194, 122, 0.6); box-shadow: 30px 40px 90px rgba(0,0,0,0.9), 0 0 60px rgba(232, 194, 122, 0.15); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; padding: 50px; text-align: center; }
+    .cover img { width: 190px; height: 190px; border-radius: 50%; }
+    .cover .k { font: 700 22px var(--mono); letter-spacing: 0.24em; color: #e8c27a; }
+    .cover .t { font: 400 64px/1.02 var(--serif); }
+    .cover .t em { color: #e8c27a; }
+    .spine { position: absolute; left: -26px; top: 10px; bottom: -10px; width: 26px; background: #0c0b09; border: 3px solid rgba(232, 194, 122, 0.35); border-right: 0; }
+    .btn { left: 240px; width: 600px; top: 1050px; padding: 26px 0; text-align: center; font: 900 46px var(--sans); text-transform: uppercase; background: var(--green); color: #031a0c; }
+    .handle { left: 0; width: 1080px; top: 1180px; text-align: center; font: 700 40px var(--sans); }
+    .handle span { color: #e8c27a; }
+
+    .cap { left: 70px; right: 70px; top: 1300px; text-align: center; font: 700 48px/1.15 var(--sans); color: #fff; text-shadow: 0 4px 18px rgba(0,0,0,0.9); }
+    .cap.hi { color: var(--green); }
+  </style>
+</head>
+<body>
+  <div class="frame"><div id="stage">
+
+    <!-- ACCROCHE -->
+    <div class="seg" id="seg-hook">
+      <div class="abs h" id="hH1">Toi : <em>100 € par mois</em></div>
+      <div class="abs h red" id="hH2">Pourquoi personne <em>ne le fait ?</em></div>
+      <div class="abs spot" id="hSpot" style="left:280px; top:250px"><div class="beam"></div><div class="floor"></div><svg class="guy" viewBox="0 0 200 360" id="hGuy"></svg></div>
+      <div class="abs big" id="hMonth" style="left:60px; top:240px; color:#fff">100 € / mois</div>
+      <div class="abs panel on" id="hBox" style="left:60px; right:60px; top:930px; height:200px">
+        <div class="plbl tag green">Placés à ton nom · exemple</div>
+        <div class="abs big" id="hCap" style="left:30px; top:62px; color:var(--green)">0 €</div>
+      </div>
+      <div class="abs host" id="hHost"><img src="../brand/avatar-400.png" alt=""><i class="c c1"></i><i class="c c2"></i><i class="c c3"></i><i class="c c4"></i><span class="tag">Épargne malin</span></div>
+    </div>
+
+    <!-- DEUX CALCULS -->
+    <div class="seg" id="seg-intro">
+      <div class="abs h">Deux calculs · <em>100 € par mois</em></div>
+      <div class="abs panel on" id="iA" style="left:60px; right:60px; top:330px; height:300px">
+        <div class="plbl tag green">1 · Le calcul</div>
+        <div class="abs" style="left:30px; top:90px; font:800 52px/1.1 var(--sans)">100 € placés<br>chaque mois, 40 ans</div>
+      </div>
+      <div class="abs panel" id="iB" style="left:60px; right:60px; top:690px; height:300px">
+        <div class="plbl tag white">2 · Les 3 scénarios</div>
+        <div class="abs" style="left:30px; top:90px; font:800 52px/1.1 var(--sans)">Compte courant,<br>livret, placement</div>
+      </div>
+      <div class="abs host" id="iHost" style="left:790px; top:1000px"><img src="../brand/avatar-400.png" alt=""><i class="c c1"></i><i class="c c2"></i><i class="c c3"></i><i class="c c4"></i></div>
+    </div>
+
+    <!-- CALCUL ANNÉE PAR ANNÉE -->
+    <div class="seg" id="seg-calc">
+      <div class="abs h">1 · Le <em>calcul</em></div>
+      <div class="abs legend"><span style="--c:#e9e9e9">Ce que tu as versé</span><span style="--c:var(--green)">Les intérêts</span></div>
+      <div class="abs acct"><span class="l" id="cYear">TON COMPTE · ÂGE 25</span><span class="v" id="cVal">0 €</span></div>
+      <div class="abs chart" id="chart"></div>
+      <div class="abs tag" id="cRate" style="left:60px; top:1092px; background:#ffd84a; color:#1a1500">Rendement d'exemple : 5 %/an</div>
+      <div class="abs call tag white" id="cTiny" style="left:150px; top:880px">An 1 : 28 € d'intérêts</div>
+      <div class="abs tag green" id="cCompo" style="left:200px; top:560px; font-size:28px">Des intérêts qui font des intérêts</div>
+      <div class="abs tag white" id="cPaid" style="left:60px; top:1092px">Versé : 48 000 €</div>
+      <div class="abs tag green" id="cInt" style="left:420px; top:1092px">Intérêts : 104 600 €</div>
+      <div class="abs note">100 €/MOIS DE 25 À 65 ANS · INTÉRÊTS MENSUELS · RENDEMENT D'EXEMPLE 5 %/AN, NON GARANTI · CALCUL @EPARGNE.MALIN7 · PAS UN CONSEIL EN INVESTISSEMENT</div>
+    </div>
+
+    <!-- TROIS SCÉNARIOS -->
+    <div class="seg" id="seg-scen">
+      <div class="abs h">2 · Les mêmes 100 €, <em>3 endroits</em></div>
+      <div class="abs panel row" id="r0" style="top:300px"><div class="k">Compte courant</div><div class="r">0 % · 40 ANS</div><div class="v" id="v0" style="color:#e9e9e9">0 €</div><div class="trk"><div class="fill" id="f0" style="background:#e9e9e9"></div></div></div>
+      <div class="abs panel row" id="r1" style="top:530px"><div class="k">Livret</div><div class="r">2 % · 40 ANS</div><div class="v" id="v1" style="color:#e8c27a">0 €</div><div class="trk"><div class="fill" id="f1" style="background:#e8c27a"></div></div></div>
+      <div class="abs panel row" id="r2" style="top:760px"><div class="k">Placement</div><div class="r">5 % · 40 ANS · EXEMPLE</div><div class="v" id="v2" style="color:var(--green)">0 €</div><div class="trk"><div class="fill" id="f2" style="background:var(--green)"></div></div></div>
+      <div class="abs tag green" id="sX3" style="left:610px; top:1000px; font-size:64px; padding:10px 30px">× 3</div>
+      <div class="abs tag white" id="sSame" style="left:60px; top:1020px; font-size:34px">Même effort</div>
+      <div class="abs note">MÊMES VERSEMENTS : 100 €/MOIS PENDANT 40 ANS · TAUX D'EXEMPLE, NON GARANTIS · VÉRIFIE LE TAUX ACTUEL DES LIVRETS · PAS UN CONSEIL EN INVESTISSEMENT</div>
+    </div>
+
+    <!-- POURQUOI -->
+    <div class="seg" id="seg-why">
+      <div class="abs h red">Pourquoi personne <em>ne le fait ?</em></div>
+      <div class="abs spot" id="wSpot" style="left:280px; top:200px"><div class="beam"></div><div class="floor"></div><svg class="guy" viewBox="0 0 200 360" id="wGuy"></svg></div>
+      <div class="abs" id="wQ" style="left:600px; top:330px; font:400 260px/1 var(--serif); color:var(--red)">?</div>
+      <div class="abs tag" id="wTag" style="left:60px; top:930px; font-size:34px">Personne ne nous l'apprend</div>
+      <div class="abs panel on" id="w25" style="left:60px; right:60px; top:300px; height:170px"><div class="plbl tag green">Commencer à 25 ans</div><div class="abs big" style="left:30px; top:58px; font-size:90px; color:var(--green)">152 600 €</div></div>
+      <div class="abs panel bad" id="w35" style="left:60px; right:60px; top:520px; height:170px"><div class="plbl tag">Commencer à 35 ans</div><div class="abs big" id="w35v" style="left:30px; top:58px; font-size:90px; color:var(--red)">0 €</div></div>
+      <div class="abs tag" id="wHalf" style="left:560px; top:740px; font-size:70px; padding:10px 30px">− 45 %</div>
+    </div>
+
+    <!-- E-BOOK -->
+    <div class="seg" id="seg-cta">
+      <div class="abs h">Le plan <em>étape par étape</em></div>
+      <div class="abs book" id="book"><div class="spine"></div><div class="cover"><img src="../brand/avatar-400.png" alt=""><div class="k">E-BOOK</div><div class="t">Mon plan<br><em>épargne malin</em></div></div></div>
+      <div class="abs btn" id="btn">Lien en bio ↓</div>
+      <div class="abs handle" id="cHandle">@epargne<span>.malin7</span></div>
+    </div>
+
+    <div class="abs meta"><span><i id="rec"></i>DOSSIER · LE CALCUL</span><span>@EPARGNE.MALIN7</span></div>
+    <div class="abs cap" id="cap"></div>
+    <div class="grain" style="z-index:6"></div>
+    <div class="vignette" style="z-index:6"></div>
+  </div></div>
+
+  <script src="../voix/ebook-pilote-timeline.js"></script>
+  <script src="../engine.js"></script>
+  <script>
+    const { prog, ease, clamp, lerp, euro } = M;
+    const VO = window.VO;
+    const S = VO.sentences;
+    const C = (i, j) => S[i].chunks[j];
+    const $ = (id) => document.getElementById(id);
+    const fv = (r, years) => (r === 0 ? 1200 * years : 100 * ((1 + r / 12) ** (12 * years) - 1) / (r / 12));
+    const show = (el, p, dy = 40) => { el.style.opacity = clamp(p * 1.5); el.style.transform = `translateY(${(1 - p) * dy}px)`; };
+    const pop = (el, p, rot = 0) => { el.style.opacity = clamp(p * 3); el.style.transform = `scale(${p}) rotate(${rot * (1 - p)}deg)`; };
+    const stamp = (el, p, rot = -5) => { el.style.opacity = clamp(p * 4); el.style.transform = `scale(${lerp(2.2, 1, p)}) rotate(${rot}deg)`; };
+    const MAX = fv(0.05, 40);
+
+    // Le personnage : silhouette simple, sweat doré, sous le projecteur.
+    const GUY = `
+      <ellipse cx="100" cy="350" rx="70" ry="9" fill="rgba(0,0,0,0.6)"/>
+      <rect x="66" y="240" width="28" height="108" rx="12" fill="#1d1d1d"/><rect x="106" y="240" width="28" height="108" rx="12" fill="#1d1d1d"/>
+      <path d="M48 250 Q46 150 100 140 Q154 150 152 250 Z" fill="#e8c27a"/>
+      <path d="M82 150 L100 182 L118 150" fill="none" stroke="#b98436" stroke-width="6"/>
+      <rect x="30" y="160" width="26" height="92" rx="13" fill="#e8c27a" transform="rotate(10 43 160)"/><rect x="144" y="160" width="26" height="92" rx="13" fill="#e8c27a" transform="rotate(-10 157 160)"/>
+      <circle cx="100" cy="98" r="42" fill="#e9d6bf"/><path d="M58 92 Q60 50 100 52 Q142 50 142 92 Q124 70 100 74 Q78 70 58 92 Z" fill="#2b2420"/>
+      <circle cx="86" cy="100" r="5" fill="#171310"/><circle cx="114" cy="100" r="5" fill="#171310"/><path d="M90 120 Q100 126 110 120" fill="none" stroke="#171310" stroke-width="4" stroke-linecap="round"/>`;
+
+    const def = {
+      width: 1080, height: 1920, duration: VO.duration,
+      setup() {
+        $('hGuy').innerHTML = GUY;
+        $('wGuy').innerHTML = GUY;
+        // 40 barres empilées (versé / intérêts), axe en milliers d'euros.
+        const W = 870, H = 600, bw = 17, step = (W - bw) / 39;
+        let html = '';
+        for (const k of [0, 50000, 100000, 150000]) {
+          const y = H - (k / MAX) * H;
+          html += `<div class="grid" style="top:${y}px"></div><div class="axis" style="top:${y - 12}px">${k ? k / 1000 + ' k' : '0'}</div>`;
+        }
+        for (let i = 0; i < 40; i++) html += `<div class="bar" id="b${i}" style="left:${i * step}px"><div class="d"></div><div class="i"></div></div>`;
+        [[0, '25 ans'], [10, '35'], [20, '45'], [30, '55'], [39, '65 ans']].forEach(([i, l]) => { html += `<div class="xl" style="left:${i * step + bw / 2}px">${l}</div>`; });
+        html += `<div class="mark" id="mark" style="left:${25 * step + bw / 2}px"><span class="tag">An 26 : intérêts &gt; versé</span></div>`;
+        $('chart').innerHTML = html;
+        const caps = [];
+        S.forEach((s) => s.chunks.forEach((c, j) => {
+          const next = s.chunks[j + 1];
+          caps.push({ ...c, until: next ? next.start : s.end + 0.3 });
+        }));
+        return { caps, step, H };
+      },
+      render(t, c) {
+        VO.segments.forEach((s, k) => {
+          const el = $('seg-' + s.name);
+          const enter = k === 0 ? 1 : prog(t, s.start - 0.1, 0.4, ease.outExpo);
+          const exit = k === VO.segments.length - 1 ? 0 : prog(t, s.end - 0.1, 0.3, ease.inCubic);
+          const on = enter > 0 && exit < 1;
+          el.style.visibility = on ? 'visible' : 'hidden';
+          if (!on) return;
+          // Transition « coupe sèche » : léger glissement vertical et fondu, comme un montage d'info.
+          el.style.transform = `translateY(${(1 - enter) * 60 - exit * 40}px)`;
+          el.style.opacity = Math.min(enter, 1 - exit);
+          def[s.name](t, c);
+        });
+        $('rec').style.opacity = Math.floor(t * 1.6) % 2 ? 0.25 : 1;
+        const shakes = [[C(0, 2).start, 18], [C(7, 2).start, 10], [C(14, 1).start, 16], [C(17, 0).start, 14]];
+        const sh = shakes.reduce((a, [at, amp]) => a + (t > at && t < at + 0.4 ? (1 - (t - at) / 0.4) * amp : 0), 0);
+        $('stage').style.translate = `${Math.sin(t * 95) * sh}px ${Math.cos(t * 83) * sh}px`;
+        def.captions(t, c);
+      },
+      hook(t) {
+        const h2 = prog(t, S[1].start - 0.1, 0.35, ease.outExpo);
+        show($('hH1'), prog(t, 0, 0.4, ease.outExpo) * (1 - h2), 20);
+        show($('hH2'), h2, 20);
+        show($('hMonth'), prog(t, 0.05, 0.5, ease.outExpo) * (1 - h2));
+        const sp = prog(t, 0.2, 0.8, ease.outCubic);
+        $('hSpot').style.opacity = sp;
+        $('hGuy').style.transform = `translateY(${Math.sin(t * 2.4) * 4}px)`;
+        const bx = prog(t, C(0, 2).start - 0.1, 0.4, ease.outBack);
+        show($('hBox'), bx, 80);
+        const cnt = prog(t, C(0, 2).start, 1.4, ease.outCubic);
+        $('hCap').textContent = euro(Math.round(MAX * cnt / 100) * 100);
+        const hp = prog(t, S[1].start, 0.5, ease.outBack);
+        const host = $('hHost');
+        host.style.left = '790px'; host.style.top = '640px';
+        pop(host, hp);
+      },
+      intro(t) {
+        show($('iA'), prog(t, C(2, 0).start, 0.5, ease.outExpo), 80);
+        show($('iB'), prog(t, C(2, 1).start, 0.5, ease.outExpo), 80);
+        pop($('iHost'), prog(t, S[2].start, 0.5, ease.outBack));
+      },
+      calc(t, c) {
+        // Avancée des années : 1 an pendant « la première année », puis 1 → 10 → 26 → 40.
+        let y = 0;
+        if (t >= C(5, 1).start) y = prog(t, C(5, 1).start, 0.6, ease.outCubic);
+        if (t >= S[6].start) y = lerp(1, 10, prog(t, S[6].start, S[6].end - S[6].start, ease.inOutCubic));
+        if (t >= S[7].start) y = lerp(10, 26, prog(t, S[7].start, C(7, 2).start - S[7].start + 0.2, ease.inOutCubic));
+        if (t >= S[8].start) y = lerp(26, 40, prog(t, S[8].start, C(8, 1).start - S[8].start + 0.6, ease.inOutCubic));
+        for (let i = 0; i < 40; i++) {
+          const b = $('b' + i);
+          const g = clamp(y - i);                      // la barre i pousse pendant l'année i
+          const yr = i + 1;
+          const tot = fv(0.05, yr), dep = 1200 * yr;
+          const hd = (dep / MAX) * c.H * g, hi = ((tot - dep) / MAX) * c.H * g;
+          b.style.height = hd + hi + 'px';
+          b.firstElementChild.style.height = hd + 'px';
+          b.lastElementChild.style.bottom = hd + 'px';
+          b.lastElementChild.style.height = hi + 'px';
+          b.style.opacity = g > 0 ? 1 : 0;
+        }
+        $('cYear').textContent = `TON COMPTE · ÂGE ${25 + Math.floor(y)}`;
+        const v = fv(0.05, y);
+        $('cVal').textContent = euro(v < 10000 ? Math.round(v) : Math.round(v / 100) * 100);
+        const rate = prog(t, C(4, 1).start, 0.4, ease.outBack) * (1 - prog(t, S[9].start - 0.2, 0.3));
+        pop($('cRate'), rate);
+        pop($('cTiny'), prog(t, C(5, 4).start - 0.2, 0.4, ease.outBack) * (1 - prog(t, S[6].start + 0.4, 0.3)));
+        stamp($('cCompo'), prog(t, C(6, 2).start, 0.35, ease.outCubic) * (1 - prog(t, S[7].start, 0.3)), -3);
+        const mk = prog(t, C(7, 2).start - 0.1, 0.4, ease.outExpo);
+        $('mark').style.opacity = mk;
+        $('mark').style.transform = `scaleY(${mk})`;
+        $('mark').style.transformOrigin = '50% 100%';
+        pop($('cPaid'), prog(t, C(9, 1).start, 0.4, ease.outBack));
+        pop($('cInt'), prog(t, C(9, 2).start, 0.4, ease.outBack));
+      },
+      scen(t) {
+        const vals = [fv(0, 40), fv(0.02, 40), fv(0.05, 40)];
+        [11, 12, 13].forEach((si, k) => {
+          const p = prog(t, S[si].start - 0.1, 0.4, ease.outExpo);
+          show($('r' + k), p, 60);
+          const f = prog(t, C(si, 1).start - 0.1, 1.0, ease.outCubic);
+          $('f' + k).style.width = '100%';
+          $('f' + k).style.transform = `scaleX(${(vals[k] / vals[2]) * f})`;
+          $('v' + k).textContent = euro(Math.round((vals[k] * f) / 100) * 100);
+        });
+        $('r2').classList.toggle('on', t > C(13, 1).start);
+        pop($('sSame'), prog(t, C(14, 0).start, 0.4, ease.outBack));
+        stamp($('sX3'), prog(t, C(14, 1).start, 0.35, ease.outCubic), -6);
+      },
+      why(t) {
+        const cmp = prog(t, S[16].start - 0.1, 0.4, ease.outExpo);
+        $('wSpot').style.opacity = prog(t, S[15].start, 0.6) * (1 - cmp);
+        $('wGuy').style.transform = `translateY(${Math.sin(t * 2.4) * 4}px) rotate(${Math.sin(t * 1.3) * 2}deg)`;
+        pop($('wQ'), prog(t, S[15].start + 0.3, 0.6, ease.outElastic) * (1 - cmp), 20);
+        stamp($('wTag'), prog(t, C(15, 1).start, 0.35, ease.outCubic) * (1 - cmp), -2);
+        show($('w25'), prog(t, C(16, 1).start - 0.2, 0.4, ease.outExpo), 60);
+        show($('w35'), prog(t, C(16, 1).start + 0.2, 0.4, ease.outExpo), 60);
+        const v = prog(t, C(16, 2).start, 1.0, ease.outCubic);
+        $('w35v').textContent = euro(Math.round((fv(0.05, 30) * v) / 100) * 100);
+        stamp($('wHalf'), prog(t, C(17, 0).start, 0.35, ease.outCubic), -6);
+      },
+      cta(t) {
+        const s = S[18].start;
+        const b = prog(t, s, 0.8, ease.outBack);
+        const book = $('book');
+        book.style.opacity = clamp(b * 2);
+        book.style.transform = `perspective(1400px) rotateY(${lerp(-40, -14, b) + Math.sin(t * 1.5) * 3}deg) translateY(${(1 - b) * 200}px)`;
+        const bp = prog(t, S[19].start - 0.1, 0.5, ease.outElastic);
+        const press = Math.sin(t * 6) * 0.03 * (t > S[19].start + 0.6);
+        $('btn').style.opacity = clamp(bp * 3);
+        $('btn').style.transform = `scale(${bp + press})`;
+        show($('cHandle'), prog(t, S[19].start + 0.3, 0.5, ease.outExpo), 20);
+      },
+      captions(t, c) {
+        const cap = $('cap');
+        const cur = c.caps.find((k) => t >= k.start && t < k.until);
+        if (!cur) { cap.style.opacity = 0; return; }
+        if (cap.dataset.k !== String(cur.start)) {
+          cap.dataset.k = cur.start;
+          cap.textContent = cur.text;
+          cap.classList.toggle('hi', !!cur.gold);
+        }
+        const p = prog(t, cur.start, 0.18, ease.outCubic);
+        cap.style.opacity = p;
+        cap.style.transform = `translateY(${(1 - p) * 14}px)`;
+      },
+    };
+    M.scene(def);
+  </script>
+</body>
+</html>
