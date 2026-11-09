@@ -1,0 +1,469 @@
+{
+ "_doc": "Semaine 4 : voir serie/semaine4.py.",
+ "ep": 25,
+ "voice": "siwis-medium",
+ "speed": 0.97,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
+ "title": "L'épargne qui dort",
+ "series": "1 ERREUR QUI TE COÛTE · #5",
+ "short": "ÉPARGNE QUI DORT",
+ "next": null,
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "TON ÉPARGNE DORT",
+     "Ton épargne dort"
+    ],
+    [
+     "SUR TON COMPTE COURANT ?",
+     "sur ton compte courant ?"
+    ],
+    [
+     "*ELLE PERD DE LA VALEUR.",
+     "Elle perd de la valeur chaque année.",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "C'EST L'ERREUR :",
+     "C'est l'erreur :"
+    ],
+    [
+     "*LAISSER DORMIR SON ARGENT.",
+     "laisser dormir son argent."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 1 :",
+     "Preuve numéro un :"
+    ],
+    [
+     "*0 % D'INTÉRÊTS.",
+     "zéro pour cent d'intérêts."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "SUR UN COMPTE COURANT,",
+     "Sur un compte courant,"
+    ],
+    [
+     "*TON ARGENT NE RAPPORTE RIEN.",
+     "ton argent ne rapporte rien."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "5 000 € AUJOURD'HUI,",
+     "Cinq mille euros aujourd'hui,"
+    ],
+    [
+     "*5 000 € DANS UN AN.",
+     "cinq mille euros dans un an."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 2 :",
+     "Preuve numéro deux :"
+    ],
+    [
+     "*L'INFLATION.",
+     "l'inflation."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "LES PRIX MONTENT",
+     "Les prix montent"
+    ],
+    [
+     "*PRESQUE CHAQUE ANNÉE.",
+     "presque chaque année."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "AVEC 2 % D'INFLATION,",
+     "Avec deux pour cent d'inflation,"
+    ],
+    [
+     "*TES 5 000 €",
+     "tes cinq mille euros"
+    ],
+    [
+     "ACHÈTENT 100 € DE MOINS.",
+     "achètent environ cent euros de moins."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "ET CHAQUE ANNÉE,",
+     "Et chaque année,"
+    ],
+    [
+     "*ÇA RECOMMENCE.",
+     "ça recommence.",
+     "stamp"
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 3 :",
+     "Preuve numéro trois :"
+    ],
+    [
+     "*LE LIVRET.",
+     "le livret."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "UN LIVRET A",
+     "Un Livret A"
+    ],
+    [
+     "*SE RETIRE QUAND TU VEUX,",
+     "se retire quand tu veux,"
+    ],
+    [
+     "SANS IMPÔT SUR LES INTÉRÊTS.",
+     "sans impôt sur les intérêts."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "EXEMPLE À 1,5 % :",
+     "Exemple, avec un taux d'un et demi pour cent :"
+    ],
+    [
+     "*75 € PAR AN",
+     "soixante-quinze euros par an"
+    ],
+    [
+     "SANS RIEN FAIRE.",
+     "sans rien faire.",
+     "coin"
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "LE TAUX CHANGE :",
+     "Le taux change :"
+    ],
+    [
+     "*VÉRIFIE LE TAUX ACTUEL.",
+     "vérifie le taux actuel."
+    ]
+   ]
+  },
+  {
+   "segment": "astuce",
+   "chunks": [
+    [
+     "ASTUCE :",
+     "Astuce :"
+    ],
+    [
+     "*GARDE UN MOIS DE DÉPENSES",
+     "garde un mois de dépenses"
+    ],
+    [
+     "SUR TON COMPTE COURANT.",
+     "sur ton compte courant."
+    ]
+   ]
+  },
+  {
+   "segment": "astuce",
+   "chunks": [
+    [
+     "LE RESTE DE TON ÉPARGNE",
+     "Le reste de ton épargne"
+    ],
+    [
+     "*VA SUR UN LIVRET.",
+     "va sur un livret."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "VERDICT :",
+     "Verdict :"
+    ],
+    [
+     "*UN VIREMENT,",
+     "un virement,"
+    ],
+    [
+     "ET TON ARGENT TRAVAILLE.",
+     "et ton argent travaille."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "*SAUVEGARDE CETTE VIDÉO",
+     "Sauvegarde cette vidéo"
+    ],
+    [
+     "AVANT TON PROCHAIN SALAIRE.",
+     "avant ton prochain salaire."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "chunks": [
+    [
+     "ET TOI,",
+     "Et toi,"
+    ],
+    [
+     "TON ÉPARGNE EST OÙ ?",
+     "ton épargne est sur quel compte ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:2",
+  "8:1"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "red",
+   "icon": "piggy",
+   "lines": [
+    {
+     "text": "0 %",
+     "at": "0:0-0.6",
+     "size": "xl",
+     "color": "gold"
+    },
+    {
+     "text": "sur ton compte",
+     "at": "0:1",
+     "size": "m"
+    },
+    {
+     "text": "elle fond",
+     "at": "0:2",
+     "size": "xl",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "Laisser <em>dormir</em> son argent",
+    "at": "1:1"
+   }
+  },
+  "p1": {
+   "type": "counter",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 1 / 3",
+    "at": "2:0"
+   },
+   "title": {
+    "html": "<em>0 %</em> d'intérêts",
+    "at": "2:1"
+   },
+   "label": "Compte courant · exemple",
+   "color": "gold",
+   "stages": [
+    {
+     "to": 5000,
+     "at": "4:0",
+     "label": "AUJOURD'HUI"
+    },
+    {
+     "to": 5000,
+     "at": "4:1",
+     "label": "DANS UN AN"
+    }
+   ]
+  },
+  "p2": {
+   "type": "bars",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 2 / 3",
+    "at": "5:0"
+   },
+   "title": {
+    "html": "L'<em>inflation</em>",
+    "at": "5:1"
+   },
+   "label": "Ce que tes 5 000 € achètent · 2 %/an (exemple)",
+   "top": 520,
+   "items": [
+    {
+     "label": "Aujourd'hui",
+     "value": 5000,
+     "color": "gold",
+     "at": "6:1"
+    },
+    {
+     "label": "Dans 1 an",
+     "value": 4900,
+     "color": "down",
+     "at": "7:2"
+    },
+    {
+     "label": "Dans 5 ans",
+     "value": 4530,
+     "color": "down",
+     "at": "8:1"
+    }
+   ],
+   "badge": {
+    "text": "−470 €",
+    "small": "EN 5 ANS",
+    "at": "8:1",
+    "color": "red"
+   }
+  },
+  "p3": {
+   "type": "counter",
+   "glow": "green",
+   "chip": {
+    "text": "PREUVE 3 / 3",
+    "at": "9:0"
+   },
+   "title": {
+    "html": "Le <em>livret</em>",
+    "at": "9:1"
+   },
+   "label": "5 000 € à 1,5 % · exemple",
+   "color": "up",
+   "stages": [
+    {
+     "to": 75,
+     "at": "11:1",
+     "label": "D'INTÉRÊTS PAR AN"
+    }
+   ],
+   "disclaimer": "Taux d'exemple : vérifie le taux actuel du Livret A"
+  },
+  "astuce": {
+   "type": "steps",
+   "glow": "green",
+   "title": {
+    "html": "Le bon <em>réglage</em>",
+    "at": "13:0"
+   },
+   "top": 560,
+   "items": [
+    {
+     "icon": "wallet",
+     "label": "1 mois de dépenses",
+     "sub": "sur le compte courant",
+     "at": "13:1"
+    },
+    {
+     "icon": "piggy",
+     "label": "Le reste",
+     "sub": "sur un livret",
+     "at": "14:1",
+     "color": "up"
+    }
+   ]
+  },
+  "verdict": {
+   "type": "icon",
+   "glow": "green",
+   "icon": "check",
+   "color": "up",
+   "at": "15:0",
+   "text": "Un virement, <em>ton argent travaille</em>",
+   "textAt": "15:1"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold",
+   "save": true,
+   "heading": "<em>Sauvegarde</em>-la",
+   "sub": "avant ton prochain salaire"
+  }
+ },
+ "post": {
+  "caption": "Ton épargne dort sur ton compte courant ? À 0 %, elle perd de la valeur chaque année avec l'inflation. Garde un mois de dépenses sur ton compte courant et mets le reste sur un livret. Sauvegarde cette vidéo avant ton prochain salaire. Et toi, ton épargne est sur quel compte ?",
+  "hashtags": [
+   "#epargne",
+   "#livretA",
+   "#inflation",
+   "#argent"
+  ]
+ },
+ "cover": {
+  "chip": "1 ERREUR · #5",
+  "kicker": "Ton épargne dort sur ton compte ?",
+  "icon": "piggy"
+ }
+}

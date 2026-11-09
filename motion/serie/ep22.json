@@ -1,0 +1,482 @@
+{
+ "_doc": "Semaine 4 : voir serie/semaine4.py.",
+ "ep": 22,
+ "voice": "siwis-medium",
+ "speed": 0.97,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
+ "title": "Les néobanques",
+ "series": "COMMENT GAGNE VRAIMENT… · #4",
+ "short": "NÉOBANQUES",
+ "next": "Copy trading : rentable ou arnaque ?",
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "UNE BANQUE SANS FRAIS…",
+     "Une banque sans frais…"
+    ],
+    [
+     "*QUI GAGNE QUAND MÊME DE L'ARGENT.",
+     "qui gagne quand même de l'argent.",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "VOICI COMMENT",
+     "Voici comment"
+    ],
+    [
+     "*LES NÉOBANQUES",
+     "les néobanques"
+    ],
+    [
+     "GAGNENT VRAIMENT LEUR VIE.",
+     "gagnent vraiment leur vie."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 1 :",
+     "Preuve numéro un :"
+    ],
+    [
+     "*CHAQUE PAIEMENT PAR CARTE.",
+     "chaque paiement par carte."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "À CHAQUE PAIEMENT,",
+     "À chaque paiement,"
+    ],
+    [
+     "LE COMMERÇANT PAIE UNE COMMISSION,",
+     "le commerçant paie une commission,"
+    ],
+    [
+     "*ET LA BANQUE EN TOUCHE UNE PART.",
+     "et la banque en touche une part."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "EN EUROPE, ELLE EST PLAFONNÉE",
+     "En Europe, elle est plafonnée"
+    ],
+    [
+     "*À 0,2 % POUR UNE CARTE DE DÉBIT.",
+     "à zéro virgule deux pour cent pour une carte de débit."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "C'EST PETIT PAR PAIEMENT,",
+     "C'est petit par paiement,"
+    ],
+    [
+     "*MAIS ÉNORME SUR DES MILLIONS DE CLIENTS.",
+     "mais énorme sur des millions de clients.",
+     "coin"
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 2 :",
+     "Preuve numéro deux :"
+    ],
+    [
+     "*LES OFFRES PAYANTES.",
+     "les offres payantes."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "CARTE EN MÉTAL, ASSURANCES,",
+     "Carte en métal, assurances,"
+    ],
+    [
+     "*RETRAITS EN PLUS :",
+     "retraits en plus :"
+    ],
+    [
+     "JUSQU'À PLUS DE 15 € PAR MOIS.",
+     "jusqu'à plus de quinze euros par mois."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "L'OFFRE GRATUITE",
+     "L'offre gratuite"
+    ],
+    [
+     "*SERT AUSSI À TE FAIRE MONTER EN GAMME.",
+     "sert aussi à te faire monter en gamme."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "ET LES CLIENTS QUI PAIENT",
+     "Et les clients qui paient"
+    ],
+    [
+     "*FINANCENT EN PARTIE LES AUTRES.",
+     "financent en partie les autres."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 3 :",
+     "Preuve numéro trois :"
+    ],
+    [
+     "*LES PETITES LIGNES.",
+     "les petites lignes."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "RETRAITS AU-DELÀ D'UN QUOTA,",
+     "Retraits au-delà d'un quota,"
+    ],
+    [
+     "PAIEMENTS EN DEVISES,",
+     "paiements en devises,"
+    ],
+    [
+     "*CARTE PERDUE À REMPLACER.",
+     "carte perdue à remplacer."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "CHACUN NE COÛTE PAS GRAND-CHOSE,",
+     "Chacun ne coûte pas grand-chose,"
+    ],
+    [
+     "*MAIS ILS S'ADDITIONNENT.",
+     "mais ils s'additionnent.",
+     "stamp"
+    ]
+   ]
+  },
+  {
+   "segment": "astuce",
+   "chunks": [
+    [
+     "ET L'ARGENT QUI DORT SUR TON COMPTE ?",
+     "Et l'argent qui dort sur ton compte ?"
+    ],
+    [
+     "*LA BANQUE PEUT EN TIRER DES INTÉRÊTS.",
+     "La banque peut en tirer des intérêts."
+    ]
+   ]
+  },
+  {
+   "segment": "astuce",
+   "chunks": [
+    [
+     "ASTUCE :",
+     "Astuce :"
+    ],
+    [
+     "*LIS LA GRILLE TARIFAIRE",
+     "lis la grille tarifaire"
+    ],
+    [
+     "AVANT D'OUVRIR TON COMPTE.",
+     "avant d'ouvrir ton compte."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "VERDICT :",
+     "Verdict :"
+    ],
+    [
+     "*GRATUIT,",
+     "gratuit,"
+    ],
+    [
+     "SI TU RESTES DANS LES CLOUS.",
+     "si tu restes dans les clous."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "*SAUVEGARDE CETTE VIDÉO",
+     "Sauvegarde cette vidéo"
+    ],
+    [
+     "AVANT D'OUVRIR UN COMPTE.",
+     "avant d'ouvrir un compte en ligne."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "chunks": [
+    [
+     "ET TOI,",
+     "Et toi,"
+    ],
+    [
+     "TU ES DANS UNE NÉOBANQUE ?",
+     "tu as un compte dans une néobanque ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:1",
+  "12:1"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "gold",
+   "icon": "phone",
+   "lines": [
+    {
+     "text": "Sans frais…",
+     "at": "0:0-0.6",
+     "size": "xl",
+     "color": "gold"
+    },
+    {
+     "text": "et pourtant",
+     "at": "0:1",
+     "size": "m"
+    },
+    {
+     "text": "elle gagne",
+     "at": "0:1+0.4",
+     "size": "xl",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "Comment gagnent les <em>néobanques</em>",
+    "at": "1:1"
+   }
+  },
+  "p1": {
+   "type": "steps",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 1 / 3",
+    "at": "2:0"
+   },
+   "title": {
+    "html": "Chaque <em>paiement</em>",
+    "at": "2:1"
+   },
+   "top": 520,
+   "items": [
+    {
+     "icon": "card",
+     "label": "Tu paies par carte",
+     "sub": "chez un commerçant",
+     "at": "3:0"
+    },
+    {
+     "icon": "basket",
+     "label": "Commission du commerçant",
+     "sub": "0,2 % max. (carte de débit, UE)",
+     "at": "4:1",
+     "color": "gold"
+    },
+    {
+     "icon": "bank",
+     "label": "Une part pour la banque",
+     "sub": "× des millions de paiements",
+     "at": "5:1"
+    }
+   ]
+  },
+  "p2": {
+   "type": "bars",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 2 / 3",
+    "at": "6:0"
+   },
+   "title": {
+    "html": "Les offres <em>payantes</em>",
+    "at": "6:1"
+   },
+   "label": "Par mois · ordres de grandeur",
+   "top": 520,
+   "items": [
+    {
+     "label": "Offre gratuite",
+     "value": 0,
+     "color": "up",
+     "at": "7:0"
+    },
+    {
+     "label": "Intermédiaire",
+     "sub": "assurances",
+     "value": 8,
+     "color": "gold",
+     "at": "7:1"
+    },
+    {
+     "label": "Haut de gamme",
+     "sub": "carte en métal",
+     "value": 16,
+     "color": "down",
+     "at": "7:2"
+    }
+   ],
+   "badge": {
+    "text": "Monte en gamme",
+    "small": "LE BUT DU GRATUIT",
+    "at": "8:1",
+    "color": "gold"
+   }
+  },
+  "p3": {
+   "type": "list",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 3 / 3",
+    "at": "10:0"
+   },
+   "title": {
+    "html": "Les <em>petites lignes</em>",
+    "at": "10:1"
+   },
+   "top": 500,
+   "items": [
+    {
+     "icon": "bank",
+     "label": "Retrait au-delà du quota",
+     "value": "frais",
+     "at": "11:0",
+     "color": "down"
+    },
+    {
+     "icon": "coin",
+     "label": "Paiement en devises",
+     "value": "frais",
+     "at": "11:1",
+     "color": "down"
+    },
+    {
+     "icon": "card",
+     "label": "Carte à remplacer",
+     "value": "frais",
+     "at": "11:2",
+     "color": "down"
+    }
+   ]
+  },
+  "astuce": {
+   "type": "icon",
+   "glow": "gold",
+   "icon": "bank",
+   "color": "gold",
+   "at": "13:0",
+   "text": "Ton argent qui dort <em>rapporte… à elle</em>",
+   "textAt": "13:1",
+   "sub": "Astuce : lis la grille tarifaire avant d'ouvrir",
+   "subAt": "14:1"
+  },
+  "verdict": {
+   "type": "icon",
+   "glow": "green",
+   "icon": "check",
+   "color": "up",
+   "at": "15:0",
+   "text": "Gratuit, <em>dans les clous</em>",
+   "textAt": "15:1",
+   "sub": "quota de retraits, devises, options",
+   "subAt": "15:2"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold",
+   "save": true,
+   "heading": "<em>Sauvegarde</em>-la",
+   "sub": "avant d'ouvrir un compte"
+  }
+ },
+ "post": {
+  "caption": "Comment gagnent vraiment les néobanques ? Une commission sur chaque paiement par carte, des offres payantes, et des frais dans les petites lignes : retraits au-delà du quota, paiements en devises… Sauvegarde cette vidéo avant d'ouvrir un compte. Et toi, tu as un compte dans une néobanque ?",
+  "hashtags": [
+   "#neobanque",
+   "#banque",
+   "#argent",
+   "#financepersonnelle"
+  ]
+ },
+ "cover": {
+  "chip": "COMMENT GAGNE… · #4",
+  "kicker": "Les néobanques : comment elles gagnent ?",
+  "icon": "phone"
+ }
+}

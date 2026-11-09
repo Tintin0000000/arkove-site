@@ -1,0 +1,456 @@
+{
+ "_doc": "Semaine 4 : voir serie/semaine4.py.",
+ "ep": 24,
+ "voice": "siwis-medium",
+ "speed": 0.97,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
+ "title": "Les créateurs TikTok",
+ "series": "COMMENT GAGNE VRAIMENT… · #5",
+ "short": "CRÉATEURS TIKTOK",
+ "next": "Ton épargne dort sur ton compte ?",
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "1 MILLION DE VUES",
+     "Un million de vues"
+    ],
+    [
+     "*NE RAPPORTE PAS CE QUE TU CROIS.",
+     "ne rapporte pas ce que tu crois.",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "VOICI COMMENT",
+     "Voici comment"
+    ],
+    [
+     "*LES CRÉATEURS TIKTOK",
+     "les créateurs TikTok"
+    ],
+    [
+     "GAGNENT VRAIMENT DE L'ARGENT.",
+     "gagnent vraiment de l'argent."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 1 :",
+     "Preuve numéro un :"
+    ],
+    [
+     "*LES VUES.",
+     "les vues."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "TIKTOK PAIE SEULEMENT",
+     "TikTok paie seulement"
+    ],
+    [
+     "*LES VIDÉOS DE PLUS D'UNE MINUTE,",
+     "les vidéos de plus d'une minute,"
+    ],
+    [
+     "ET PAS TOUTES LES VUES.",
+     "et pas toutes les vues."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "UN MILLION DE VUES,",
+     "Un million de vues,"
+    ],
+    [
+     "*C'EST SOUVENT QUELQUES CENTAINES D'EUROS.",
+     "c'est souvent quelques centaines d'euros."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "ET ÇA VARIE BEAUCOUP",
+     "Et ça varie beaucoup"
+    ],
+    [
+     "*SELON LE PAYS ET LE SUJET.",
+     "selon le pays et le sujet."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 2 :",
+     "Preuve numéro deux :"
+    ],
+    [
+     "*LES MARQUES.",
+     "les marques."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "UNE MARQUE PAIE",
+     "Une marque paie"
+    ],
+    [
+     "*POUR APPARAÎTRE DANS UNE VIDÉO.",
+     "pour apparaître dans une vidéo."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "POUR BEAUCOUP DE CRÉATEURS,",
+     "Pour beaucoup de créateurs,"
+    ],
+    [
+     "*C'EST LA PLUS GROSSE SOURCE",
+     "c'est la plus grosse source"
+    ],
+    [
+     "DE REVENUS.",
+     "de revenus.",
+     "coin"
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "ET LA LOI IMPOSE",
+     "Et la loi impose"
+    ],
+    [
+     "*DE LE SIGNALER :",
+     "de le signaler :"
+    ],
+    [
+     "« COLLABORATION COMMERCIALE ».",
+     "collaboration commerciale."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 3 :",
+     "Preuve numéro trois :"
+    ],
+    [
+     "*LES LIVES ET LA VENTE.",
+     "les directs et la vente."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "EN LIVE, LES CADEAUX VIRTUELS",
+     "En direct, les cadeaux virtuels"
+    ],
+    [
+     "*SE TRANSFORMENT EN ARGENT,",
+     "se transforment en argent,"
+    ],
+    [
+     "MOINS LA PART DE TIKTOK.",
+     "moins la part de TikTok."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "ET AVEC L'AFFILIATION,",
+     "Et avec l'affiliation,"
+    ],
+    [
+     "*LE CRÉATEUR TOUCHE UNE COMMISSION",
+     "le créateur touche une commission"
+    ],
+    [
+     "SUR CHAQUE VENTE.",
+     "sur chaque vente."
+    ]
+   ]
+  },
+  {
+   "segment": "astuce",
+   "chunks": [
+    [
+     "LE VRAI CAPITAL :",
+     "Le vrai capital :"
+    ],
+    [
+     "*UNE AUDIENCE QUI TE FAIT CONFIANCE.",
+     "une audience qui te fait confiance."
+    ]
+   ]
+  },
+  {
+   "segment": "astuce",
+   "chunks": [
+    [
+     "C'EST POUR ÇA QUE DES PETITS COMPTES",
+     "C'est pour ça que des petits comptes"
+    ],
+    [
+     "*GAGNENT PARFOIS PLUS",
+     "gagnent parfois plus"
+    ],
+    [
+     "QUE DES GROS.",
+     "que des gros."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "VERDICT :",
+     "Verdict :"
+    ],
+    [
+     "*LES VUES PAIENT PEU,",
+     "les vues paient peu,"
+    ],
+    [
+     "LA CONFIANCE PAIE BEAUCOUP.",
+     "la confiance paie beaucoup."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "*SAUVEGARDE CETTE VIDÉO",
+     "Sauvegarde cette vidéo"
+    ],
+    [
+     "AVANT DE RÊVER DE MILLIONS DE VUES.",
+     "avant de rêver de millions de vues."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "chunks": [
+    [
+     "ET TOI,",
+     "Et toi,"
+    ],
+    [
+     "TU CROYAIS QUE ÇA RAPPORTAIT COMBIEN ?",
+     "tu croyais que ça rapportait combien ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:1"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "gold",
+   "icon": "play",
+   "lines": [
+    {
+     "text": "1 million",
+     "at": "0:0-0.6",
+     "size": "xl",
+     "color": "gold"
+    },
+    {
+     "text": "de vues",
+     "at": "0:0+0.3",
+     "size": "m"
+    },
+    {
+     "text": "= combien ?",
+     "at": "0:1",
+     "size": "xl",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "Comment gagnent les <em>créateurs TikTok</em>",
+    "at": "1:1"
+   }
+  },
+  "p1": {
+   "type": "icon",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 1 / 3",
+    "at": "2:0"
+   },
+   "icon": "play",
+   "color": "gold",
+   "at": "2:0",
+   "text": "1 million de vues : <em>quelques centaines d'€</em>",
+   "textAt": "4:1",
+   "sub": "vidéos de plus d'1 minute seulement · varie selon le pays et le sujet",
+   "subAt": "5:1"
+  },
+  "p2": {
+   "type": "steps",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 2 / 3",
+    "at": "6:0"
+   },
+   "title": {
+    "html": "Les <em>marques</em>",
+    "at": "6:1"
+   },
+   "top": 520,
+   "items": [
+    {
+     "icon": "basket",
+     "label": "Une marque paie",
+     "sub": "pour apparaître dans la vidéo",
+     "at": "7:1"
+    },
+    {
+     "icon": "coin",
+     "label": "La plus grosse source",
+     "sub": "pour beaucoup de créateurs",
+     "at": "8:1",
+     "color": "gold"
+    },
+    {
+     "icon": "alert",
+     "label": "À signaler",
+     "sub": "« collaboration commerciale »",
+     "at": "9:1"
+    }
+   ]
+  },
+  "p3": {
+   "type": "list",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 3 / 3",
+    "at": "10:0"
+   },
+   "title": {
+    "html": "Les lives et <em>la vente</em>",
+    "at": "10:1"
+   },
+   "top": 500,
+   "items": [
+    {
+     "icon": "party",
+     "label": "Cadeaux en live",
+     "sub": "moins la part de TikTok",
+     "value": "€",
+     "at": "11:1",
+     "color": "gold"
+    },
+    {
+     "icon": "cart",
+     "label": "Affiliation",
+     "sub": "commission sur chaque vente",
+     "value": "%",
+     "at": "12:1",
+     "color": "gold"
+    }
+   ]
+  },
+  "astuce": {
+   "type": "icon",
+   "glow": "green",
+   "icon": "check",
+   "color": "up",
+   "at": "13:0",
+   "text": "Une audience qui te <em>fait confiance</em>",
+   "textAt": "13:1",
+   "sub": "des petits comptes gagnent parfois plus que des gros",
+   "subAt": "14:1"
+  },
+  "verdict": {
+   "type": "icon",
+   "glow": "gold",
+   "icon": "coin",
+   "color": "gold",
+   "at": "15:0",
+   "text": "Les vues paient <em>peu</em>",
+   "textAt": "15:1",
+   "sub": "la confiance paie beaucoup",
+   "subAt": "15:2"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold",
+   "save": true,
+   "heading": "<em>Sauvegarde</em>-la",
+   "sub": "avant de rêver de millions de vues"
+  }
+ },
+ "post": {
+  "caption": "1 million de vues ne rapporte pas ce que tu crois : souvent quelques centaines d'euros seulement. Le vrai argent des créateurs vient des marques, des lives et de l'affiliation, grâce à une audience qui leur fait confiance. Sauvegarde cette vidéo avant de rêver de millions de vues. Et toi, tu croyais que ça rapportait combien ?",
+  "hashtags": [
+   "#createurdecontenu",
+   "#tiktok",
+   "#argent",
+   "#sidehustle"
+  ]
+ },
+ "cover": {
+  "chip": "COMMENT GAGNE… · #5",
+  "kicker": "1 million de vues = combien ?",
+  "icon": "play"
+ }
+}

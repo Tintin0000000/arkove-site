@@ -1,0 +1,497 @@
+{
+ "_doc": "Semaine 4 : voir serie/semaine4.py.",
+ "ep": 21,
+ "voice": "siwis-medium",
+ "speed": 0.97,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
+ "title": "Comparer sa banque",
+ "series": "1 ERREUR QUI TE COÛTE · #4",
+ "short": "COMPARER SA BANQUE",
+ "next": "Les néobanques : comment elles gagnent ?",
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "RESTER 10 ANS",
+     "Rester dix ans"
+    ],
+    [
+     "DANS LA MÊME BANQUE",
+     "dans la même banque"
+    ],
+    [
+     "*PEUT TE COÛTER PRÈS DE 1 000 €.",
+     "peut te coûter près de mille euros.",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "C'EST L'ERREUR :",
+     "C'est l'erreur :"
+    ],
+    [
+     "*NE JAMAIS COMPARER SA BANQUE.",
+     "ne jamais comparer sa banque."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 1 :",
+     "Preuve numéro un :"
+    ],
+    [
+     "*LES FRAIS QUI S'ADDITIONNENT.",
+     "les frais qui s'additionnent."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "TENUE DE COMPTE :",
+     "Tenue de compte :"
+    ],
+    [
+     "*ENVIRON 25 € PAR AN.",
+     "environ vingt-cinq euros par an."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "CARTE BANCAIRE :",
+     "Carte bancaire :"
+    ],
+    [
+     "*ENVIRON 45 €.",
+     "environ quarante-cinq euros."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "ASSURANCE DES MOYENS DE PAIEMENT :",
+     "Assurance des moyens de paiement :"
+    ],
+    [
+     "*ENCORE 25 €.",
+     "encore vingt-cinq euros."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "*95 € PAR AN,",
+     "Quatre-vingt-quinze euros par an,",
+     "coin"
+    ],
+    [
+     "950 € EN 10 ANS.",
+     "neuf cent cinquante euros en dix ans."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "ET C'EST SANS COMPTER",
+     "Et c'est sans compter"
+    ],
+    [
+     "*LES FRAIS D'INCIDENT.",
+     "les frais d'incident."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 2 :",
+     "Preuve numéro deux :"
+    ],
+    [
+     "*LES BANQUES EN LIGNE.",
+     "les banques en ligne."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "BEAUCOUP PROPOSENT",
+     "Beaucoup proposent"
+    ],
+    [
+     "*UN COMPTE ET UNE CARTE GRATUITS,",
+     "un compte et une carte gratuits,"
+    ],
+    [
+     "SOUS CONDITIONS.",
+     "sous conditions."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "CONDITION DE REVENUS,",
+     "Condition de revenus,"
+    ],
+    [
+     "OU D'UTILISER LA CARTE",
+     "ou d'utiliser la carte"
+    ],
+    [
+     "*CHAQUE MOIS.",
+     "chaque mois."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "LIS-LES AVANT DE CHANGER,",
+     "Lis-les avant de changer,"
+    ],
+    [
+     "*SINON DES FRAIS TOMBENT.",
+     "sinon des frais tombent.",
+     "stamp"
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 3 :",
+     "Preuve numéro trois :"
+    ],
+    [
+     "*CHANGER EST FACILE.",
+     "changer est facile."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "AVEC LA MOBILITÉ BANCAIRE,",
+     "Avec la mobilité bancaire,"
+    ],
+    [
+     "*TA NOUVELLE BANQUE S'OCCUPE",
+     "ta nouvelle banque s'occupe"
+    ],
+    [
+     "DE TOUT TRANSFÉRER.",
+     "de tout transférer."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "PRÉLÈVEMENTS ET VIREMENTS :",
+     "Prélèvements et virements :"
+    ],
+    [
+     "*C'EST GRATUIT.",
+     "c'est gratuit."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "ET TU PEUX GARDER",
+     "Et tu peux garder"
+    ],
+    [
+     "*TON ANCIEN COMPTE",
+     "ton ancien compte"
+    ],
+    [
+     "LE TEMPS DE VÉRIFIER.",
+     "le temps de vérifier."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "VERDICT :",
+     "Verdict :"
+    ],
+    [
+     "*COMPARE UNE FOIS PAR AN.",
+     "compare une fois par an."
+    ],
+    [
+     "10 MINUTES SUFFISENT.",
+     "Dix minutes suffisent."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "*SAUVEGARDE CETTE VIDÉO",
+     "Sauvegarde cette vidéo"
+    ],
+    [
+     "AVANT TON PROCHAIN RELEVÉ DE FRAIS.",
+     "avant ton prochain relevé de frais."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "chunks": [
+    [
+     "ET TOI,",
+     "Et toi,"
+    ],
+    [
+     "COMBIEN DE FRAIS PAR AN ?",
+     "tu paies combien de frais bancaires par an ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:2",
+  "6:0"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "red",
+   "icon": "bank",
+   "lines": [
+    {
+     "text": "10 ans",
+     "at": "0:0-0.6",
+     "size": "xl",
+     "color": "gold"
+    },
+    {
+     "text": "même banque",
+     "at": "0:1",
+     "size": "m"
+    },
+    {
+     "text": "≈ 1 000 €",
+     "at": "0:2",
+     "size": "xl",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "Ne jamais <em>comparer</em> sa banque",
+    "at": "1:1"
+   }
+  },
+  "p1": {
+   "type": "list",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 1 / 3",
+    "at": "2:0"
+   },
+   "title": {
+    "html": "Les frais qui <em>s'additionnent</em>",
+    "at": "2:1"
+   },
+   "top": 500,
+   "items": [
+    {
+     "icon": "bank",
+     "label": "Tenue de compte",
+     "sub": "exemple",
+     "value": "25 €/an",
+     "at": "3:0",
+     "color": "down"
+    },
+    {
+     "icon": "card",
+     "label": "Carte bancaire",
+     "sub": "exemple",
+     "value": "45 €/an",
+     "at": "4:0",
+     "color": "down"
+    },
+    {
+     "icon": "shield",
+     "label": "Assurance",
+     "sub": "moyens de paiement",
+     "value": "25 €/an",
+     "at": "5:0",
+     "color": "down"
+    }
+   ],
+   "total": {
+    "label": "PAR AN",
+    "color": "down",
+    "stages": [
+     {
+      "to": 95,
+      "at": "6:0",
+      "label": "PAR AN"
+     },
+     {
+      "to": 950,
+      "at": "6:1",
+      "label": "EN 10 ANS"
+     }
+    ]
+   }
+  },
+  "p2": {
+   "type": "steps",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 2 / 3",
+    "at": "8:0"
+   },
+   "title": {
+    "html": "Les banques <em>en ligne</em>",
+    "at": "8:1"
+   },
+   "top": 520,
+   "items": [
+    {
+     "icon": "phone",
+     "label": "Compte + carte",
+     "sub": "souvent gratuits",
+     "at": "9:1",
+     "color": "up"
+    },
+    {
+     "icon": "alert",
+     "label": "Sous conditions",
+     "sub": "revenus, usage de la carte",
+     "at": "10:0"
+    },
+    {
+     "icon": "cross",
+     "label": "Condition ratée",
+     "sub": "des frais tombent",
+     "at": "11:1",
+     "color": "down"
+    }
+   ]
+  },
+  "p3": {
+   "type": "steps",
+   "glow": "green",
+   "chip": {
+    "text": "PREUVE 3 / 3",
+    "at": "12:0"
+   },
+   "title": {
+    "html": "Changer est <em>facile</em>",
+    "at": "12:1"
+   },
+   "top": 520,
+   "items": [
+    {
+     "icon": "bank",
+     "label": "Nouvelle banque",
+     "sub": "elle s'occupe du transfert",
+     "at": "13:1"
+    },
+    {
+     "icon": "envelope",
+     "label": "Prélèvements, virements",
+     "sub": "transférés gratuitement",
+     "at": "14:1",
+     "color": "up"
+    },
+    {
+     "icon": "check",
+     "label": "Ancien compte",
+     "sub": "gardé le temps de vérifier",
+     "at": "15:1",
+     "color": "up"
+    }
+   ]
+  },
+  "verdict": {
+   "type": "icon",
+   "glow": "green",
+   "icon": "calendar",
+   "color": "up",
+   "at": "16:0",
+   "text": "Compare <em>1 fois par an</em>",
+   "textAt": "16:1",
+   "sub": "10 minutes suffisent",
+   "subAt": "16:2"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold",
+   "save": true,
+   "heading": "<em>Sauvegarde</em>-la",
+   "sub": "avant ton prochain relevé de frais"
+  }
+ },
+ "post": {
+  "caption": "Rester 10 ans dans la même banque sans comparer, ça peut coûter près de 1 000 € de frais. Les banques en ligne sont souvent gratuites sous conditions, et avec la mobilité bancaire, ta nouvelle banque transfère tout gratuitement. Sauvegarde cette vidéo avant ton prochain relevé de frais. Et toi, tu paies combien de frais bancaires par an ?",
+  "hashtags": [
+   "#banque",
+   "#fraisbancaires",
+   "#economiser",
+   "#budget"
+  ]
+ },
+ "cover": {
+  "chip": "1 ERREUR · #4",
+  "kicker": "10 ans dans la même banque ?",
+  "icon": "bank"
+ }
+}

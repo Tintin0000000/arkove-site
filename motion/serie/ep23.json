@@ -1,0 +1,474 @@
+{
+ "_doc": "Semaine 4 : voir serie/semaine4.py.",
+ "ep": 23,
+ "voice": "siwis-medium",
+ "speed": 0.97,
+ "lead": 0.3,
+ "gap": 0.18,
+ "duration": "auto",
+ "tail": 1.6,
+ "handle": "@epargne.malin7",
+ "title": "Le copy trading",
+ "series": "RENTABLE OU ARNAQUE ? · #5",
+ "short": "COPY TRADING",
+ "next": "1 million de vues = combien ?",
+ "sentences": [
+  {
+   "segment": "hook",
+   "sfx": "whoosh",
+   "chunks": [
+    [
+     "COPIER UN PRO",
+     "Copier les investissements d'un pro"
+    ],
+    [
+     "ET GAGNER COMME LUI ?",
+     "et gagner comme lui ?"
+    ],
+    [
+     "*CE QU'ON NE TE DIT PAS.",
+     "Voici ce qu'on ne te dit pas.",
+     "boom"
+    ]
+   ]
+  },
+  {
+   "segment": "hook",
+   "chunks": [
+    [
+     "LE COPY TRADING :",
+     "La copie d'investissements :"
+    ],
+    [
+     "*RENTABLE OU ARNAQUE ?",
+     "rentable ou arnaque ?"
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 1 :",
+     "Preuve numéro un :"
+    ],
+    [
+     "*L'AVERTISSEMENT OBLIGATOIRE.",
+     "l'avertissement obligatoire."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "SUR BEAUCOUP DE PLATEFORMES,",
+     "Sur beaucoup de plateformes,"
+    ],
+    [
+     "*UN MESSAGE INDIQUE",
+     "un message indique"
+    ],
+    [
+     "LA PART DES COMPTES QUI PERDENT.",
+     "la part des comptes qui perdent de l'argent."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "SOUVENT,",
+     "Souvent,"
+    ],
+    [
+     "*PLUS DE LA MOITIÉ.",
+     "c'est plus de la moitié.",
+     "stamp"
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "LIS-LE AVANT DE COMMENCER :",
+     "Lis-le avant de commencer :"
+    ],
+    [
+     "*IL EST LÀ POUR UNE RAISON.",
+     "il est là pour une raison."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 2 :",
+     "Preuve numéro deux :"
+    ],
+    [
+     "*LE PASSÉ NE GARANTIT RIEN.",
+     "le passé ne garantit rien."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "+50 % L'AN DERNIER",
+     "Plus cinquante pour cent l'an dernier"
+    ],
+    [
+     "*PEUT DEVENIR UNE GROSSE PERTE",
+     "peut devenir une grosse perte"
+    ],
+    [
+     "CETTE ANNÉE.",
+     "cette année."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "PLUS IL PREND DE RISQUES,",
+     "Plus il prend de risques,"
+    ],
+    [
+     "*PLUS SES GAINS AFFICHÉS",
+     "plus ses gains affichés"
+    ],
+    [
+     "PEUVENT ÊTRE BEAUX.",
+     "peuvent être beaux."
+    ]
+   ]
+  },
+  {
+   "segment": "p2",
+   "chunks": [
+    [
+     "ET TU COPIES",
+     "Et tu copies"
+    ],
+    [
+     "*SES PERTES AUSSI.",
+     "ses pertes aussi.",
+     "stamp"
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "PREUVE NUMÉRO 3 :",
+     "Preuve numéro trois :"
+    ],
+    [
+     "*QUI GAGNE À COUP SÛR ?",
+     "qui gagne à coup sûr ?"
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "LA PLATEFORME :",
+     "La plateforme :"
+    ],
+    [
+     "*FRAIS, ÉCARTS DE PRIX,",
+     "frais, écarts de prix,"
+    ],
+    [
+     "À CHAQUE OPÉRATION.",
+     "à chaque opération."
+    ]
+   ]
+  },
+  {
+   "segment": "p3",
+   "chunks": [
+    [
+     "ET LE TRADER COPIÉ",
+     "Et l'investisseur copié"
+    ],
+    [
+     "*EST SOUVENT PAYÉ",
+     "est souvent payé"
+    ],
+    [
+     "SELON LE NOMBRE DE COPIEURS.",
+     "selon le nombre de copieurs."
+    ]
+   ]
+  },
+  {
+   "segment": "astuce",
+   "chunks": [
+    [
+     "MÉFIE-TOI DES GROUPES",
+     "Méfie-toi des groupes"
+    ],
+    [
+     "*QUI VENDENT DES « SIGNAUX »",
+     "qui vendent des signaux"
+    ],
+    [
+     "SUR LES RÉSEAUX.",
+     "sur les réseaux."
+    ]
+   ]
+  },
+  {
+   "segment": "astuce",
+   "chunks": [
+    [
+     "VÉRIFIE TOUJOURS",
+     "Vérifie toujours"
+    ],
+    [
+     "*LES LISTES NOIRES DE L'AMF.",
+     "les listes noires de l'Autorité des marchés financiers."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "VERDICT :",
+     "Verdict :"
+    ],
+    [
+     "*PAS FORCÉMENT UNE ARNAQUE,",
+     "pas forcément une arnaque,"
+    ],
+    [
+     "MAIS TRÈS RISQUÉ.",
+     "mais très risqué."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "chunks": [
+    [
+     "N'Y METS JAMAIS",
+     "N'y mets jamais"
+    ],
+    [
+     "*L'ARGENT DONT TU AS BESOIN.",
+     "l'argent dont tu as besoin."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "sfx": "whoosh",
+   "pause": 0.1,
+   "chunks": [
+    [
+     "*SAUVEGARDE CETTE VIDÉO",
+     "Sauvegarde cette vidéo"
+    ],
+    [
+     "AVANT DE COPIER QUELQU'UN.",
+     "avant de copier quelqu'un."
+    ]
+   ]
+  },
+  {
+   "segment": "cta",
+   "chunks": [
+    [
+     "ET TOI,",
+     "Et toi,"
+    ],
+    [
+     "TU AS DÉJÀ ESSAYÉ ?",
+     "tu as déjà essayé ?"
+    ],
+    [
+     "*DIS-LE EN COMMENTAIRE.",
+     "Dis-le en commentaire."
+    ]
+   ]
+  }
+ ],
+ "shakes": [
+  "0:2",
+  "9:1"
+ ],
+ "blocks": {
+  "hook": {
+   "type": "hook",
+   "glow": "red",
+   "icon": "bolt",
+   "lines": [
+    {
+     "text": "Copier",
+     "at": "0:0-0.6",
+     "size": "xl",
+     "color": "gold"
+    },
+    {
+     "text": "un pro ?",
+     "at": "0:0+0.3",
+     "size": "m"
+    },
+    {
+     "text": "ce qu'on ne dit pas",
+     "at": "0:2",
+     "size": "m",
+     "hl": true
+    }
+   ],
+   "reveal": {
+    "html": "Copy trading : <em>rentable</em> ?",
+    "at": "1:1"
+   }
+  },
+  "p1": {
+   "type": "donut",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 1 / 3 · EXEMPLE",
+    "at": "2:0"
+   },
+   "parts": [
+    {
+     "pct": 70,
+     "label": "Perdent",
+     "color": "down",
+     "at": "4:1"
+    },
+    {
+     "pct": 30,
+     "label": "Gagnent",
+     "color": "ink",
+     "at": "4:1"
+    }
+   ],
+   "final": {
+    "big": "+ de 50 %",
+    "small": "des comptes perdent",
+    "color": "down",
+    "at": "5:0",
+    "highlight": 0
+   }
+  },
+  "p2": {
+   "type": "icon",
+   "glow": "red",
+   "chip": {
+    "text": "PREUVE 2 / 3",
+    "at": "6:0"
+   },
+   "icon": "alert",
+   "color": "down",
+   "at": "6:0",
+   "text": "+50 %… puis <em>la chute</em>",
+   "textAt": "7:1",
+   "sub": "plus de risque = plus beaux gains affichés… et tu copies les pertes",
+   "subAt": "8:1"
+  },
+  "p3": {
+   "type": "list",
+   "glow": "gold",
+   "chip": {
+    "text": "PREUVE 3 / 3",
+    "at": "10:0"
+   },
+   "title": {
+    "html": "Qui gagne <em>à coup sûr</em> ?",
+    "at": "10:1"
+   },
+   "top": 500,
+   "items": [
+    {
+     "icon": "bank",
+     "label": "La plateforme",
+     "sub": "frais, écarts de prix",
+     "value": "gagne",
+     "at": "11:0",
+     "color": "up"
+    },
+    {
+     "icon": "party",
+     "label": "Le trader copié",
+     "sub": "payé selon les copieurs",
+     "value": "gagne",
+     "at": "12:1",
+     "color": "up"
+    },
+    {
+     "icon": "wallet",
+     "label": "Toi",
+     "sub": "seulement si ça monte",
+     "value": "?",
+     "at": "12:2",
+     "color": "down"
+    }
+   ]
+  },
+  "astuce": {
+   "type": "icon",
+   "glow": "red",
+   "icon": "alert",
+   "color": "gold",
+   "at": "13:0",
+   "text": "Méfie-toi des <em>« signaux »</em>",
+   "textAt": "13:1",
+   "sub": "vérifie les listes noires de l'AMF",
+   "subAt": "14:1"
+  },
+  "verdict": {
+   "type": "icon",
+   "glow": "gold",
+   "icon": "shield",
+   "color": "gold",
+   "at": "15:0",
+   "text": "Pas une arnaque, <em>très risqué</em>",
+   "textAt": "15:1",
+   "sub": "jamais l'argent dont tu as besoin",
+   "subAt": "16:1"
+  },
+  "cta": {
+   "type": "cta",
+   "glow": "gold",
+   "save": true,
+   "heading": "<em>Sauvegarde</em>-la",
+   "sub": "avant de copier quelqu'un"
+  }
+ },
+ "post": {
+  "caption": "Copier les trades d'un pro : rentable ou arnaque ? Sur beaucoup de plateformes, plus de la moitié des comptes perdent de l'argent, et les performances passées ne garantissent rien. Vérifie toujours les listes noires de l'AMF. Sauvegarde cette vidéo avant de copier quelqu'un. Et toi, tu as déjà essayé ?",
+  "hashtags": [
+   "#copytrading",
+   "#trading",
+   "#arnaque",
+   "#argent"
+  ]
+ },
+ "cover": {
+  "chip": "RENTABLE OU ARNAQUE ? · #5",
+  "kicker": "Copy trading : rentable ou arnaque ?",
+  "icon": "bolt"
+ }
+}
