@@ -391,13 +391,7 @@
      "color": "down",
      "at": "7:2"
     }
-   ],
-   "badge": {
-    "text": "Monte en gamme",
-    "small": "LE BUT DU GRATUIT",
-    "at": "8:1",
-    "color": "gold"
-   }
+   ]
   },
   "p3": {
    "type": "list",

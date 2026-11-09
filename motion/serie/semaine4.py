@@ -32,13 +32,13 @@ eps = {}
 eps[21] = {"title": "Comparer sa banque", "series": "1 ERREUR QUI TE COÛTE · #4", "short": "COMPARER SA BANQUE",
   "next": "Les néobanques : comment elles gagnent ?",
   "sentences": [
-    {"segment": "hook", "sfx": "whoosh", "chunks": [["RESTER 10 ANS", "Rester dix ans"], ["DANS LA MÊME BANQUE", "dans la même banque"], ["*PEUT TE COÛTER PRÈS DE 1 000 €.", "peut te coûter près de mille euros.", "boom"]]},
+    {"segment": "hook", "sfx": "whoosh", "chunks": [["10 ANS", "Dix ans"], ["DANS LA MÊME BANQUE", "dans la même banque"], ["*PEUT TE COÛTER PRÈS DE 1 000 €.", "peut te coûter près de mille euros.", "boom"]]},
     S("hook", ["C'EST L'ERREUR :", "C'est l'erreur :"], ["*NE JAMAIS COMPARER SA BANQUE.", "ne jamais comparer sa banque."]),
     PROOF("p1", 1, "*LES FRAIS QUI S'ADDITIONNENT.", "les frais qui s'additionnent."),
     S("p1", ["TENUE DE COMPTE :", "Tenue de compte :"], ["*ENVIRON 25 € PAR AN.", "environ vingt-cinq euros par an."]),
     S("p1", ["CARTE BANCAIRE :", "Carte bancaire :"], ["*ENVIRON 45 €.", "environ quarante-cinq euros."]),
     S("p1", ["ASSURANCE DES MOYENS DE PAIEMENT :", "Assurance des moyens de paiement :"], ["*ENCORE 25 €.", "encore vingt-cinq euros."]),
-    S("p1", ["*95 € PAR AN,", "Quatre-vingt-quinze euros par an,", "coin"], ["950 € EN 10 ANS.", "neuf cent cinquante euros en dix ans."]),
+    S("p1", ["*PRESQUE 100 € PAR AN,", "Au total, presque cent euros par an,", "coin"], ["950 € EN 10 ANS.", "neuf cent cinquante euros en dix ans."]),
     S("p1", ["ET C'EST SANS COMPTER", "Et c'est sans compter"], ["*LES FRAIS D'INCIDENT.", "les frais d'incident."]),
     PROOF("p2", 2, "*LES BANQUES EN LIGNE.", "les banques en ligne."),
     S("p2", ["BEAUCOUP PROPOSENT", "Beaucoup proposent"], ["*UN COMPTE ET UNE CARTE GRATUITS,", "un compte et une carte gratuits,"], ["SOUS CONDITIONS.", "sous conditions."]),
@@ -112,8 +112,7 @@ eps[22] = {"title": "Les néobanques", "series": "COMMENT GAGNE VRAIMENT… · #
     "p2": {"type": "bars", "glow": "gold", "chip": CHIP(2, "6:0"), "title": {"html": "Les offres <em>payantes</em>", "at": "6:1"}, "label": "Par mois · ordres de grandeur", "top": 520,
       "items": [{"label": "Offre gratuite", "value": 0, "color": "up", "at": "7:0"},
                 {"label": "Intermédiaire", "sub": "assurances", "value": 8, "color": "gold", "at": "7:1"},
-                {"label": "Haut de gamme", "sub": "carte en métal", "value": 16, "color": "down", "at": "7:2"}],
-      "badge": {"text": "Monte en gamme", "small": "LE BUT DU GRATUIT", "at": "8:1", "color": "gold"}},
+                {"label": "Haut de gamme", "sub": "carte en métal", "value": 16, "color": "down", "at": "7:2"}]},
     "p3": {"type": "list", "glow": "red", "chip": CHIP(3, "10:0"), "title": {"html": "Les <em>petites lignes</em>", "at": "10:1"}, "top": 500,
       "items": [{"icon": "bank", "label": "Retrait au-delà du quota", "value": "frais", "at": "11:0", "color": "down"},
                 {"icon": "coin", "label": "Paiement en devises", "value": "frais", "at": "11:1", "color": "down"},
@@ -158,7 +157,7 @@ eps[23] = {"title": "Le copy trading", "series": "RENTABLE OU ARNAQUE ? · #5", 
       "reveal": {"html": "Copy trading : <em>rentable</em> ?", "at": "1:1"}},
     "p1": {"type": "donut", "glow": "red", "chip": {"text": "PREUVE 1 / 3 · EXEMPLE", "at": "2:0"},
       "parts": [{"pct": 70, "label": "Perdent", "color": "down", "at": "4:1"}, {"pct": 30, "label": "Gagnent", "color": "ink", "at": "4:1"}],
-      "final": {"big": "+ de 50 %", "small": "des comptes perdent", "color": "down", "at": "5:0", "highlight": 0}},
+      "final": {"big": "+50 %", "small": "des comptes perdent", "color": "down", "at": "5:0", "highlight": 0}},
     "p2": {"type": "icon", "glow": "red", "chip": CHIP(2, "6:0"), "icon": "alert", "color": "down", "at": "6:0", "text": "+50 %… puis <em>la chute</em>", "textAt": "7:1",
       "sub": "plus de risque = plus beaux gains affichés… et tu copies les pertes", "subAt": "8:1"},
     "p3": {"type": "list", "glow": "gold", "chip": CHIP(3, "10:0"), "title": {"html": "Qui gagne <em>à coup sûr</em> ?", "at": "10:1"}, "top": 500,
@@ -238,7 +237,7 @@ eps[25] = {"title": "L'épargne qui dort", "series": "1 ERREUR QUI TE COÛTE · 
     S("p3", ["LE TAUX CHANGE :", "Le taux change :"], ["*VÉRIFIE LE TAUX ACTUEL.", "vérifie le taux actuel."]),
     S("astuce", ["ASTUCE :", "Astuce :"], ["*GARDE UN MOIS DE DÉPENSES", "garde un mois de dépenses"], ["SUR TON COMPTE COURANT.", "sur ton compte courant."]),
     S("astuce", ["LE RESTE DE TON ÉPARGNE", "Le reste de ton épargne"], ["*VA SUR UN LIVRET.", "va sur un livret."]),
-    VERDICT(["*UN VIREMENT,", "un virement,"], ["ET TON ARGENT TRAVAILLE.", "et ton argent travaille."]),
+    VERDICT(["*UN SIMPLE VIREMENT,", "un simple virement,"], ["ET TON ARGENT TRAVAILLE.", "et ton argent travaille."]),
     SAVE("AVANT TON PROCHAIN SALAIRE.", "avant ton prochain salaire."),
     ASK("TON ÉPARGNE EST OÙ ?", "ton épargne est sur quel compte ?")],
   "shakes": ["0:2", "8:1"],
@@ -265,6 +264,25 @@ eps[25] = {"title": "L'épargne qui dort", "series": "1 ERREUR QUI TE COÛTE · 
   "post": {"caption": "Ton épargne dort sur ton compte courant ? À 0 %, elle perd de la valeur chaque année avec l'inflation. Garde un mois de dépenses sur ton compte courant et mets le reste sur un livret. Sauvegarde cette vidéo avant ton prochain salaire. Et toi, ton épargne est sur quel compte ?",
            "hashtags": ["#epargne", "#livretA", "#inflation", "#argent"]},
   "cover": {"chip": "1 ERREUR · #5", "kicker": "Ton épargne dort sur ton compte ?", "icon": "piggy"}}
+
+# ---------------------------------------------------------------- au-delà d'une minute
+import re as _re
+
+def insert_after(e, idx, sentence):
+    """Insère une phrase après la phrase idx et décale tous les instants « n:… » qui suivent."""
+    e["sentences"].insert(idx + 1, sentence)
+    shift = lambda m: f'"{int(m.group(1)) + (1 if int(m.group(1)) > idx else 0)}:'
+    e["blocks"] = json.loads(_re.sub(r'"(\d+):', shift, json.dumps(e["blocks"], ensure_ascii=False)))
+    e["shakes"] = [f"{int(x.split(':')[0]) + (1 if int(x.split(':')[0]) > idx else 0)}:{x.split(':', 1)[1]}" for x in e["shakes"]]
+
+insert_after(eps[21], 16, S("verdict", ["COMMENCE PAR TON RELEVÉ", "Commence par ton relevé"], ["*DE FRAIS ANNUEL.", "de frais annuel : ta banque te l'envoie chaque année."]))
+insert_after(eps[24], 5, S("p1", ["IL FAUT AUSSI", "Il faut aussi"], ["*10 000 ABONNÉS MINIMUM.", "au moins dix mille abonnés."]))
+insert_after(eps[25], 8, S("p2", ["EN 5 ANS,", "En cinq ans,"], ["*PRÈS DE 470 € EN MOINS.", "près de quatre cent soixante-dix euros de pouvoir d'achat en moins.", "stamp"]))
+eps[25]["blocks"]["p2"]["badge"]["at"] = "9:1"
+eps[25]["blocks"]["p2"]["items"][2]["at"] = "9:0"
+insert_after(eps[25], 15, S("astuce", ["C'EST AUSSI", "C'est aussi"], ["*TON FONDS D'URGENCE.", "ton fonds d'urgence, comme dans l'épisode un."]))
+for n in (21, 24, 25):
+    eps[n]["tail"] = 2.4  # garde la vidéo nettement au-dessus d'une minute
 
 (OUT / "scripts").mkdir(exist_ok=True)
 (OUT / "descriptions").mkdir(exist_ok=True)

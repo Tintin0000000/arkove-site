@@ -6,7 +6,7 @@
  "lead": 0.3,
  "gap": 0.18,
  "duration": "auto",
- "tail": 1.6,
+ "tail": 2.4,
  "handle": "@epargne.malin7",
  "title": "Comparer sa banque",
  "series": "1 ERREUR QUI TE COÛTE · #4",
@@ -18,8 +18,8 @@
    "sfx": "whoosh",
    "chunks": [
     [
-     "RESTER 10 ANS",
-     "Rester dix ans"
+     "10 ANS",
+     "Dix ans"
     ],
     [
      "DANS LA MÊME BANQUE",
@@ -103,8 +103,8 @@
    "segment": "p1",
    "chunks": [
     [
-     "*95 € PAR AN,",
-     "Quatre-vingt-quinze euros par an,",
+     "*PRESQUE 100 € PAR AN,",
+     "Au total, presque cent euros par an,",
      "coin"
     ],
     [
@@ -267,6 +267,19 @@
     [
      "10 MINUTES SUFFISENT.",
      "Dix minutes suffisent."
+    ]
+   ]
+  },
+  {
+   "segment": "verdict",
+   "chunks": [
+    [
+     "COMMENCE PAR TON RELEVÉ",
+     "Commence par ton relevé"
+    ],
+    [
+     "*DE FRAIS ANNUEL.",
+     "de frais annuel : ta banque te l'envoie chaque année."
     ]
    ]
   },

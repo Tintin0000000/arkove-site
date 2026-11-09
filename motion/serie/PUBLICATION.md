@@ -227,3 +227,53 @@ Jour 20 · vidéo : `serie/videos/ep20.mp4`
 
 #faceless #ia #sidehustle #tiktok
 ```
+
+## Épisode 21 · Comparer sa banque
+
+Jour 21 · vidéo : `serie/videos/ep21.mp4`
+
+```
+Rester 10 ans dans la même banque sans comparer, ça peut coûter près de 1 000 € de frais. Les banques en ligne sont souvent gratuites sous conditions, et avec la mobilité bancaire, ta nouvelle banque transfère tout gratuitement. Sauvegarde cette vidéo avant ton prochain relevé de frais. Et toi, tu paies combien de frais bancaires par an ?
+
+#banque #fraisbancaires #economiser #budget
+```
+
+## Épisode 22 · Les néobanques
+
+Jour 22 · vidéo : `serie/videos/ep22.mp4`
+
+```
+Comment gagnent vraiment les néobanques ? Une commission sur chaque paiement par carte, des offres payantes, et des frais dans les petites lignes : retraits au-delà du quota, paiements en devises… Sauvegarde cette vidéo avant d'ouvrir un compte. Et toi, tu as un compte dans une néobanque ?
+
+#neobanque #banque #argent #financepersonnelle
+```
+
+## Épisode 23 · Le copy trading
+
+Jour 23 · vidéo : `serie/videos/ep23.mp4`
+
+```
+Copier les trades d'un pro : rentable ou arnaque ? Sur beaucoup de plateformes, plus de la moitié des comptes perdent de l'argent, et les performances passées ne garantissent rien. Vérifie toujours les listes noires de l'AMF. Sauvegarde cette vidéo avant de copier quelqu'un. Et toi, tu as déjà essayé ?
+
+#copytrading #trading #arnaque #argent
+```
+
+## Épisode 24 · Les créateurs TikTok
+
+Jour 24 · vidéo : `serie/videos/ep24.mp4`
+
+```
+1 million de vues ne rapporte pas ce que tu crois : souvent quelques centaines d'euros seulement. Le vrai argent des créateurs vient des marques, des lives et de l'affiliation, grâce à une audience qui leur fait confiance. Sauvegarde cette vidéo avant de rêver de millions de vues. Et toi, tu croyais que ça rapportait combien ?
+
+#createurdecontenu #tiktok #argent #sidehustle
+```
+
+## Épisode 25 · L'épargne qui dort
+
+Jour 25 · vidéo : `serie/videos/ep25.mp4`
+
+```
+Ton épargne dort sur ton compte courant ? À 0 %, elle perd de la valeur chaque année avec l'inflation. Garde un mois de dépenses sur ton compte courant et mets le reste sur un livret. Sauvegarde cette vidéo avant ton prochain salaire. Et toi, ton épargne est sur quel compte ?
+
+#epargne #livretA #inflation #argent
+```

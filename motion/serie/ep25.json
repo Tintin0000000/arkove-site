@@ -6,7 +6,7 @@
  "lead": 0.3,
  "gap": 0.18,
  "duration": "auto",
- "tail": 1.6,
+ "tail": 2.4,
  "handle": "@epargne.malin7",
  "title": "L'épargne qui dort",
  "series": "1 ERREUR QUI TE COÛTE · #5",
@@ -146,6 +146,20 @@
    ]
   },
   {
+   "segment": "p2",
+   "chunks": [
+    [
+     "EN 5 ANS,",
+     "En cinq ans,"
+    ],
+    [
+     "*PRÈS DE 470 € EN MOINS.",
+     "près de quatre cent soixante-dix euros de pouvoir d'achat en moins.",
+     "stamp"
+    ]
+   ]
+  },
+  {
    "segment": "p3",
    "sfx": "whoosh",
    "pause": 0.1,
@@ -239,6 +253,19 @@
    ]
   },
   {
+   "segment": "astuce",
+   "chunks": [
+    [
+     "C'EST AUSSI",
+     "C'est aussi"
+    ],
+    [
+     "*TON FONDS D'URGENCE.",
+     "ton fonds d'urgence, comme dans l'épisode un."
+    ]
+   ]
+  },
+  {
    "segment": "verdict",
    "sfx": "whoosh",
    "pause": 0.1,
@@ -248,8 +275,8 @@
      "Verdict :"
     ],
     [
-     "*UN VIREMENT,",
-     "un virement,"
+     "*UN SIMPLE VIREMENT,",
+     "un simple virement,"
     ],
     [
      "ET TON ARGENT TRAVAILLE.",
@@ -379,13 +406,13 @@
      "label": "Dans 5 ans",
      "value": 4530,
      "color": "down",
-     "at": "8:1"
+     "at": "9:0"
     }
    ],
    "badge": {
     "text": "−470 €",
     "small": "EN 5 ANS",
-    "at": "8:1",
+    "at": "9:1",
     "color": "red"
    }
   },
@@ -394,18 +421,18 @@
    "glow": "green",
    "chip": {
     "text": "PREUVE 3 / 3",
-    "at": "9:0"
+    "at": "10:0"
    },
    "title": {
     "html": "Le <em>livret</em>",
-    "at": "9:1"
+    "at": "10:1"
    },
    "label": "5 000 € à 1,5 % · exemple",
    "color": "up",
    "stages": [
     {
      "to": 75,
-     "at": "11:1",
+     "at": "12:1",
      "label": "D'INTÉRÊTS PAR AN"
     }
    ],
@@ -416,7 +443,7 @@
    "glow": "green",
    "title": {
     "html": "Le bon <em>réglage</em>",
-    "at": "13:0"
+    "at": "14:0"
    },
    "top": 560,
    "items": [
@@ -424,13 +451,13 @@
      "icon": "wallet",
      "label": "1 mois de dépenses",
      "sub": "sur le compte courant",
-     "at": "13:1"
+     "at": "14:1"
     },
     {
      "icon": "piggy",
      "label": "Le reste",
      "sub": "sur un livret",
-     "at": "14:1",
+     "at": "15:1",
      "color": "up"
     }
    ]
@@ -440,9 +467,9 @@
    "glow": "green",
    "icon": "check",
    "color": "up",
-   "at": "15:0",
+   "at": "17:0",
    "text": "Un virement, <em>ton argent travaille</em>",
-   "textAt": "15:1"
+   "textAt": "17:1"
   },
   "cta": {
    "type": "cta",

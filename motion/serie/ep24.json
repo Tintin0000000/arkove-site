@@ -6,7 +6,7 @@
  "lead": 0.3,
  "gap": 0.18,
  "duration": "auto",
- "tail": 1.6,
+ "tail": 2.4,
  "handle": "@epargne.malin7",
  "title": "Les créateurs TikTok",
  "series": "COMMENT GAGNE VRAIMENT… · #5",
@@ -100,6 +100,19 @@
     [
      "*SELON LE PAYS ET LE SUJET.",
      "selon le pays et le sujet."
+    ]
+   ]
+  },
+  {
+   "segment": "p1",
+   "chunks": [
+    [
+     "IL FAUT AUSSI",
+     "Il faut aussi"
+    ],
+    [
+     "*10 000 ABONNÉS MINIMUM.",
+     "au moins dix mille abonnés."
     ]
    ]
   },
@@ -349,11 +362,11 @@
    "glow": "gold",
    "chip": {
     "text": "PREUVE 2 / 3",
-    "at": "6:0"
+    "at": "7:0"
    },
    "title": {
     "html": "Les <em>marques</em>",
-    "at": "6:1"
+    "at": "7:1"
    },
    "top": 520,
    "items": [
@@ -361,20 +374,20 @@
      "icon": "basket",
      "label": "Une marque paie",
      "sub": "pour apparaître dans la vidéo",
-     "at": "7:1"
+     "at": "8:1"
     },
     {
      "icon": "coin",
      "label": "La plus grosse source",
      "sub": "pour beaucoup de créateurs",
-     "at": "8:1",
+     "at": "9:1",
      "color": "gold"
     },
     {
      "icon": "alert",
      "label": "À signaler",
      "sub": "« collaboration commerciale »",
-     "at": "9:1"
+     "at": "10:1"
     }
    ]
   },
@@ -383,11 +396,11 @@
    "glow": "gold",
    "chip": {
     "text": "PREUVE 3 / 3",
-    "at": "10:0"
+    "at": "11:0"
    },
    "title": {
     "html": "Les lives et <em>la vente</em>",
-    "at": "10:1"
+    "at": "11:1"
    },
    "top": 500,
    "items": [
@@ -396,7 +409,7 @@
      "label": "Cadeaux en live",
      "sub": "moins la part de TikTok",
      "value": "€",
-     "at": "11:1",
+     "at": "12:1",
      "color": "gold"
     },
     {
@@ -404,7 +417,7 @@
      "label": "Affiliation",
      "sub": "commission sur chaque vente",
      "value": "%",
-     "at": "12:1",
+     "at": "13:1",
      "color": "gold"
     }
    ]
@@ -414,22 +427,22 @@
    "glow": "green",
    "icon": "check",
    "color": "up",
-   "at": "13:0",
+   "at": "14:0",
    "text": "Une audience qui te <em>fait confiance</em>",
-   "textAt": "13:1",
+   "textAt": "14:1",
    "sub": "des petits comptes gagnent parfois plus que des gros",
-   "subAt": "14:1"
+   "subAt": "15:1"
   },
   "verdict": {
    "type": "icon",
    "glow": "gold",
    "icon": "coin",
    "color": "gold",
-   "at": "15:0",
+   "at": "16:0",
    "text": "Les vues paient <em>peu</em>",
-   "textAt": "15:1",
+   "textAt": "16:1",
    "sub": "la confiance paie beaucoup",
-   "subAt": "15:2"
+   "subAt": "16:2"
   },
   "cta": {
    "type": "cta",
