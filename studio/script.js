@@ -396,6 +396,25 @@
     paint();
   }
 
+  /* ───────── 16 bis. QUESTIONS FRÉQUENTES ───────── */
+  $$('.faq-i').forEach(function (item, i) {
+    var btn = $('.faq-q', item), panel = $('.faq-a', item);
+    if (!btn || !panel) return;
+    panel.id = 'faq-a-' + i;
+    btn.setAttribute('aria-controls', panel.id);
+    btn.addEventListener('click', function () {
+      var open = !item.classList.contains('open');
+      // une seule réponse ouverte à la fois
+      $$('.faq-i.open').forEach(function (o) {
+        if (o === item) return;
+        o.classList.remove('open');
+        var b = $('.faq-q', o); if (b) b.setAttribute('aria-expanded', 'false');
+      });
+      item.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open);
+    });
+  });
+
   /* ───────── 17. FORMULAIRE ───────── */
   var form = $('form[name="studio"]');
   if (form) form.addEventListener('submit', function (e) {
