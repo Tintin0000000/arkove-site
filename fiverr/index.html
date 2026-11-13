@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arkove — Pages web animées, codées à la main</title>
+<meta name="description" content="Landing pages animées écrites à la main : intégration Figma, animations au scroll, micro-interactions. Sans WordPress, sans constructeur de pages, sans librairie d'animation.">
+<meta name="theme-color" content="#0B0A09">
+<meta property="og:title" content="Arkove — Pages web animées, codées à la main">
+<meta property="og:description" content="Landing pages animées écrites à la main. Sans constructeur de pages, sans thème, sans librairie d'animation.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B0A09'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='18' fill='%23CE9B4C' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../studio/style.css">
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-mark">
+      <svg viewBox="0 0 120 120" width="88" height="88" aria-hidden="true">
+        <circle class="lo-track" cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="1" opacity=".18"/>
+        <circle class="lo-arc" id="loArc" cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+        <text x="60" y="67" text-anchor="middle" class="lo-a">A</text>
+      </svg>
+    </div>
+    <div class="loader-meta">
+      <span class="loader-label">Arkove</span>
+      <span class="loader-num"><span id="loNum">0</span><i>%</i></span>
+    </div>
+  </div>
+  <div class="loader-bars"><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cur-dot"></span><span class="cur-ring"></span><span class="cur-label"></span></div>
+
+<a href="#main" class="skip">Aller au contenu</a>
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a href="#hero" class="brand" data-cursor="Haut">
+      <span class="brand-mk"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M3 20 12 4l9 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M7.5 15h9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+      <span class="brand-txt">Arkove<i>Studio</i></span>
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#services" data-scramble>Prestations</a>
+      <a href="#travaux" data-scramble>Travaux</a>
+      <a href="#savoirfaire" data-scramble>Savoir-faire</a>
+      <a href="#lab" data-scramble>Lab</a>
+      <a href="#methode" data-scramble>Méthode</a>
+      <a href="#questions" data-scramble>Questions</a>
+    </nav>
+    <div class="nav-act">
+      <button class="theme-tgl" id="themeToggle" type="button" aria-label="Changer de thème" data-cursor="Thème">
+        <span class="tgl-track"><span class="tgl-knob">
+          <svg class="ic-moon" viewBox="0 0 20 20" width="11" height="11" aria-hidden="true"><path d="M16 11.5A6.5 6.5 0 0 1 8.5 4a6.5 6.5 0 1 0 7.5 7.5Z" fill="currentColor"/></svg>
+          <svg class="ic-sun" viewBox="0 0 20 20" width="12" height="12" aria-hidden="true"><circle cx="10" cy="10" r="3.6" fill="currentColor"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M10 1.6v2M10 16.4v2M1.6 10h2M16.4 10h2M4 4l1.4 1.4M14.6 14.6 16 16M16 4l-1.4 1.4M5.4 14.6 4 16"/></g></svg>
+        </span></span>
+      </button>
+      <a href="#commander" class="btn btn-sm magnet" data-cursor="Fiverr">Commander sur Fiverr</a>
+      <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu-bg"></div>
+  <nav class="menu-list" aria-label="Menu mobile">
+    <a href="#services"><span>Prestations</span><i>01</i></a>
+    <a href="#travaux"><span>Travaux</span><i>02</i></a>
+    <a href="#savoirfaire"><span>Savoir-faire</span><i>03</i></a>
+    <a href="#lab"><span>Lab</span><i>04</i></a>
+    <a href="#methode"><span>Méthode</span><i>05</i></a>
+    <a href="#questions"><span>Questions</span><i>06</i></a>
+    <a href="#commander"><span>Commander</span><i>07</i></a>
+  </nav>
+  <div class="menu-foot"><span>Disponible pour de nouveaux projets</span><span>À distance</span></div>
+</div>
+
+<main id="main">
+
+<section class="hero" id="hero">
+  <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-aura a1" aria-hidden="true"></div>
+  <div class="hero-aura a2" aria-hidden="true"></div>
+  <div class="hero-veil" aria-hidden="true"></div>
+
+  <div class="hero-in">
+    <p class="eyebrow fx-fade" data-d="1"><i class="dot"></i>Landing pages &middot; Intégration Figma &middot; Motion</p>
+
+    <h1 class="hero-ttl">
+      <span class="line" data-split>N'importe qui sait</span>
+      <span class="line" data-split>glisser un template.</span>
+      <span class="line accent" data-split>J'écris le mouvement.</span>
+    </h1>
+
+    <p class="hero-sub fx-fade" data-d="7">
+      Des pages écrites à la main, avec des animations qui guident l'œil au lieu de l'encombrer.
+      Aucun constructeur de pages, aucun thème, aucune librairie d'animation de 90&nbsp;ko.
+      <strong>Cette page est le portfolio</strong> — chaque pixel est codé.
+    </p>
+
+    <div class="hero-cta fx-fade" data-d="8">
+      <a href="#travaux" class="btn magnet" data-cursor="Voir">Voir les travaux</a>
+      <a href="#commander" class="btn ghost magnet" data-cursor="Fiverr">Démarrer un projet</a>
+    </div>
+
+    <ul class="hero-stats fx-fade" data-d="9">
+      <li><b class="cnt" data-to="60" data-suffix=" fps">0</b><span>mesurés au défilement de cette page</span></li>
+      <li><b class="cnt" data-to="0" data-suffix=" ko">0</b><span>de librairie d'animation</span></li>
+      <li><b class="cnt" data-to="29" data-suffix=" ko">0</b><span>de code compressé, zéro image</span></li>
+    </ul>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hs-txt">Défilez</span>
+    <span class="hs-line"><i></i></span>
+  </div>
+</section>
+
+<div class="ticker" id="ticker" aria-hidden="true">
+  <div class="ticker-row" data-dir="1">
+    <div class="ticker-track">
+      <span>Landing pages<i>✦</i></span><span>Intégration Figma<i>✦</i></span><span>Animations au scroll<i>✦</i></span>
+      <span>Micro-interactions<i>✦</i></span><span>One-pagers<i>✦</i></span><span>Pages d'attente<i>✦</i></span>
+      <span>Pages de lancement<i>✦</i></span><span>Portfolios<i>✦</i></span><span>Design systems<i>✦</i></span>
+      <span>Sans WordPress<i>✦</i></span><span>Sans constructeur<i>✦</i></span><span>Accessible par défaut<i>✦</i></span>
+    </div>
+  </div>
+</div>
+
+<section class="sec manifesto" id="pourquoi">
+  <div class="wrap">
+    <header class="shead rv">
+      <p class="eyebrow"><i class="dot"></i>Pourquoi coder à la main</p>
+      <h2 class="shead-h">Le mouvement n'est pas un décor.<br><em>C'est de l'information.</em></h2>
+    </header>
+
+    <p class="mani-text" data-words>
+      Une animation réussie ne se remarque pas. Elle indique à l'œil où aller ensuite, hiérarchise
+      ce qui compte, et confirme que quelque chose vient de se passer. Je dessine d'abord le rythme
+      — ce qui entre, ce qui attend, ce qui disparaît — puis je l'écris, image par image. Le
+      résultat tient en une phrase&nbsp;: une page qu'on traverse sans jamais hésiter.
+    </p>
+
+    <div class="mani-grid">
+      <article class="mani-card rv" data-tilt>
+        <span class="mc-n">01</span>
+        <h3>Le rythme avant le style</h3>
+        <p>Courbes d'accélération, décalages, durées&nbsp;: la cadence est décidée avant la première couleur.</p>
+      </article>
+      <article class="mani-card rv" data-tilt>
+        <span class="mc-n">02</span>
+        <h3>Zéro dépendance</h3>
+        <p>Pas de librairie à 90&nbsp;ko pour faire glisser un bloc. Tout est écrit pour votre page, donc léger.</p>
+      </article>
+      <article class="mani-card rv" data-tilt>
+        <span class="mc-n">03</span>
+        <h3>Personne n'est laissé dehors</h3>
+        <p>Clavier, lecteurs d'écran et mode sans animation respectés partout, automatiquement.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec batiment" id="services">
+  <div class="wrap">
+    <header class="shead rv wide">
+      <p class="eyebrow"><i class="dot"></i>Ce que je fais</p>
+      <h2 class="shead-h">Huit choses,<br><em>et rien d'autre.</em></h2>
+      <p class="shead-p">Volontairement étroit. Je préfère être la meilleure option sur quelques travaux qu'une option médiocre sur tous.</p>
+    </header>
+
+    <div class="bat-grid">
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13H11l-1 9 8.5-11H12l1-9Z"/></svg></span>
+        <h3>Landing page animée</h3>
+        <p>Une page, construite de zéro, avec un travail de mouvement qui la rend vivante sans la rendre bruyante.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18-6-6 6-6"/><path d="m15 6 6 6-6 6"/></svg></span>
+        <h3>Intégration Figma</h3>
+        <p>Votre maquette, au pixel près, responsive, écrite à la main. Pas d'Elementor, pas de Divi, pas d'export douteux.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16"/><path d="m7 15 5 5 5-5"/></svg></span>
+        <h3>Animations sur un site existant</h3>
+        <p>Vous avez déjà un site. J'y ajoute animations au scroll et micro-interactions sans toucher à votre stack.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h8"/></svg></span>
+        <h3>Pages d'attente et de lancement</h3>
+        <p>Avant le produit&nbsp;: une page qui récolte des emails et donne l'impression que l'entreprise existe déjà.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m6 15 3.5-4 2.5 3 2.5-3L18 15"/></svg></span>
+        <h3>Sites portfolio</h3>
+        <p>Photographes, studios, architectes — là où le visuel est le produit, pas l'emballage.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+        <h3>One-pagers événementiels</h3>
+        <p>Conférence, festival, sortie de produit. Compte à rebours, programme, lien billetterie — livré avant la date.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3>Audit accessibilité et vitesse</h3>
+        <p>Contrastes, ordre de focus, mouvement réduit, poids des images. Un rapport que vous pouvez transmettre à un client.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+        <h3>Bibliothèques de composants</h3>
+        <p>Réutilisables, thémables, documentées. Le même bouton se comporte pareil sur toutes les pages, pendant des années.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec-h" id="savoirfaire">
+  <div class="hz" id="hz">
+    <div class="hz-stick">
+      <div class="hz-head">
+        <p class="eyebrow"><i class="dot"></i>Savoir-faire</p>
+        <h2 class="shead-h">Six choses<br><em>que je contrôle vraiment.</em></h2>
+        <div class="hz-bar"><span id="hzBar"></span></div>
+      </div>
+
+      <div class="hz-track" id="hzTrack">
+        <article class="skill" data-tilt>
+          <div class="sk-art sk-art-1" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <span class="sk-n">01</span>
+          <h3>Direction artistique</h3>
+          <p>Palette, grille, échelle typographique, ton. Une identité qui tient debout sur un écran comme sur une carte de visite.</p>
+          <ul class="sk-tags"><li>Palette</li><li>Grille</li><li>Typo</li></ul>
+        </article>
+
+        <article class="skill" data-tilt>
+          <div class="sk-art sk-art-2" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span class="sk-n">02</span>
+          <h3>Courbes et timing</h3>
+          <p>Trois points, trois courbes. La plupart des sites livrent celle du navigateur par défaut — c'est pour ça qu'ils font cheap.</p>
+          <ul class="sk-tags"><li>Easing</li><li>Décalage</li><li>Timeline</li></ul>
+        </article>
+
+        <article class="skill" data-tilt>
+          <div class="sk-art sk-art-3" aria-hidden="true"><b></b></div>
+          <span class="sk-n">03</span>
+          <h3>Scroll narratif</h3>
+          <p>Sections épinglées, parallaxe, séquences liées à la position exacte du défilement. La page devient le scénario.</p>
+          <ul class="sk-tags"><li>Épinglage</li><li>Parallaxe</li><li>Séquence</li></ul>
+        </article>
+
+        <article class="skill" data-tilt>
+          <div class="sk-art sk-art-4" aria-hidden="true"><em></em><em></em><em></em><em></em><em></em><em></em><em></em><em></em><em></em></div>
+          <span class="sk-n">04</span>
+          <h3>Micro-interactions</h3>
+          <p>Boutons magnétiques, champs vivants, retour visible à chaque clic. Le détail qui se lit comme « cher ».</p>
+          <ul class="sk-tags"><li>Survol</li><li>Focus</li><li>Retour</li></ul>
+        </article>
+
+        <article class="skill" data-tilt>
+          <div class="sk-art sk-art-5" aria-hidden="true">
+            <svg viewBox="0 0 120 80"><path d="M6 68 C 30 10, 60 74, 114 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <span class="sk-n">05</span>
+          <h3>Performance</h3>
+          <p>Compositing GPU, travail hors écran suspendu, une seule boucle d'animation partagée. Le mouvement ne coûte pas la vitesse.</p>
+          <ul class="sk-tags"><li>GPU</li><li>Différé</li><li>60 fps</li></ul>
+        </article>
+
+        <article class="skill" data-tilt>
+          <div class="sk-art sk-art-6" aria-hidden="true"><u></u><u></u><u></u></div>
+          <span class="sk-n">06</span>
+          <h3>Design systems</h3>
+          <p>Jetons de couleur, échelle typographique, composants. Le site a toujours l'air pensé trois ans plus tard.</p>
+          <ul class="sk-tags"><li>Jetons</li><li>Échelle</li><li>Thèmes</li></ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec works" id="travaux">
+  <div class="wrap">
+    <header class="shead rv wide">
+      <p class="eyebrow"><i class="dot"></i>Travaux</p>
+      <h2 class="shead-h">Six clients,<br><em>six écritures visuelles.</em></h2>
+      <p class="shead-p">Six maquettes de démonstration, faites pour montrer l'écart — un outil développeur ne doit pas ressembler à une marque bien-être. Chaque vignette est dessinée en code, pas exportée d'un fichier de design. Survolez&nbsp;: elle s'anime.</p>
+    </header>
+
+    <div class="works-grid">
+      <article class="work rv" data-tilt data-cursor="Voir">
+        <div class="w-art art-elec" aria-hidden="true">
+          <svg class="ael-net" viewBox="0 0 200 250" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <g class="ael-base" stroke="currentColor" stroke-width="2">
+              <path d="M24 46H84V116H152V206"/><path d="M176 64V134H112V226"/><path d="M24 168H62V214H140"/>
+            </g>
+            <g class="ael-flow" stroke-width="2.6">
+              <path d="M24 46H84V116H152V206"/><path d="M176 64V134H112V226"/><path d="M24 168H62V214H140"/>
+            </g>
+            <g class="ael-nodes" fill="currentColor">
+              <circle cx="84" cy="116" r="4.5"/><circle cx="152" cy="206" r="4.5"/>
+              <circle cx="112" cy="134" r="4.5"/><circle cx="62" cy="214" r="4.5"/>
+            </g>
+          </svg>
+          <div class="ael-ttl">AMPERE<span>OUTIL DEV</span></div>
+        </div>
+        <div class="w-meta"><h3>Ampere</h3><span class="w-tag">Outil développeur · Landing page</span></div>
+        <p class="w-desc">Bleu de terminal, courant qui circule dans les pistes, nœuds qui s'allument au passage.</p>
+      </article>
+
+      <article class="work rv" data-tilt data-cursor="Voir">
+        <div class="w-art art-ancel" aria-hidden="true">
+          <div class="aa-grid"></div>
+          <svg class="aa-pulse" viewBox="0 0 240 80"><path d="M0 40h70l12-26 16 52 14-34 11 8h117" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="aa-ttl">CADENCE</div>
+        </div>
+        <div class="w-meta"><h3>Cadence</h3><span class="w-tag">SaaS analytique · Site vitrine</span></div>
+        <p class="w-desc">Grille clinique, signal qui se redessine en boucle, typographie neutre et largement espacée.</p>
+      </article>
+
+      <article class="work rv" data-tilt data-cursor="Voir">
+        <div class="w-art art-forge" aria-hidden="true">
+          <div class="af-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="af-ttl">HALCYON<br><span>LANCEMENT</span></div>
+          <div class="af-spark"></div>
+        </div>
+        <div class="w-meta"><h3>Halcyon</h3><span class="w-tag">Lancement produit · One-pager</span></div>
+        <p class="w-desc">Brutalisme assumé, barres qui scandent le cadre, étincelle qui le traverse au survol.</p>
+      </article>
+
+      <article class="work rv" data-tilt data-cursor="Voir">
+        <div class="w-art art-lumen" aria-hidden="true">
+          <div class="al-sun"></div>
+          <div class="al-grain"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="al-ttl">SOLACE</div>
+        </div>
+        <div class="w-meta"><h3>Solace</h3><span class="w-tag">Marque bien-être · Identité + site</span></div>
+        <p class="w-desc">Chaleur traduite en dégradé, soleil qui respire, logotype à empattements larges.</p>
+      </article>
+
+      <article class="work rv" data-tilt data-cursor="Voir">
+        <div class="w-art art-thym" aria-hidden="true">
+          <div class="at-blob"></div>
+          <div class="at-blob b2"></div>
+          <div class="at-ttl"><em>Studio</em><br>VERDA</div>
+        </div>
+        <div class="w-meta"><h3>Verda</h3><span class="w-tag">Studio créatif · Portfolio</span></div>
+        <p class="w-desc">Formes organiques qui se déforment en boucle, italique manuscrite sur capitales larges.</p>
+      </article>
+
+      <article class="work rv" data-tilt data-cursor="Voir">
+        <div class="w-art art-toit" aria-hidden="true">
+          <div class="ato-rows"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="ato-ridge"></div>
+          <div class="ato-ttl">STRATA<span>ARCHITECTURE</span></div>
+        </div>
+        <div class="w-meta"><h3>Strata</h3><span class="w-tag">Agence d'architecture · Portfolio</span></div>
+        <p class="w-desc">Ardoise et zinc, strates qui se posent une à une, arête claire en haut du cadre.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec lab" id="lab">
+  <div class="wrap">
+    <header class="shead rv wide">
+      <p class="eyebrow"><i class="dot"></i>Motion lab</p>
+      <h2 class="shead-h">Les briques,<br><em>en marche.</em></h2>
+      <p class="shead-p">Les composants que j'installe dans vos pages. Tous tournent en ce moment même&nbsp;: cliquez, survolez, faites glisser.</p>
+    </header>
+
+    <div class="lab-grid">
+      <div class="lab-card rv">
+        <div class="lab-stage"><button class="liquid" type="button" id="liquidBtn"><span>Appuyez</span><i class="lq-fill"></i></button></div>
+        <div class="lab-meta"><h3>Bouton liquide</h3><p>Se remplit au survol, onde partant du point exact du clic.</p></div>
+      </div>
+
+      <div class="lab-card rv">
+        <div class="lab-stage">
+          <div class="gooey" id="gooey">
+            <button class="goo-main" type="button" aria-label="Ouvrir les actions rapides" aria-expanded="false">+</button>
+            <span class="goo-b" data-i="1"></span><span class="goo-b" data-i="2"></span><span class="goo-b" data-i="3"></span>
+          </div>
+        </div>
+        <div class="lab-meta"><h3>Menu gooey</h3><p>Des formes qui fusionnent par filtre SVG, pas par images.</p></div>
+      </div>
+
+      <div class="lab-card rv">
+        <div class="lab-stage">
+          <div class="dial" id="dial">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="46" fill="none" stroke="currentColor" class="d-track" stroke-width="7"/>
+              <circle cx="60" cy="60" r="46" fill="none" stroke="currentColor" class="d-val" id="dialVal" stroke-width="7" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+            </svg>
+            <span class="d-num" id="dialNum">0</span>
+          </div>
+          <input class="d-range" id="dialRange" type="range" min="1" max="12" step="1" value="5" data-unit="sections" aria-label="Nombre de sections">
+        </div>
+        <div class="lab-meta"><h3>Estimation en direct</h3><p>Le visiteur bouge le curseur, le devis suit sans recharger.</p></div>
+      </div>
+
+      <div class="lab-card rv">
+        <div class="lab-stage"><div class="scramble" id="scrambleBox" data-words="Motion,Figma,Landing,Fluide">Motion</div></div>
+        <div class="lab-meta"><h3>Texte brouillé</h3><p>Se décode lettre par lettre — parfait pour des mots-clés qui tournent.</p></div>
+      </div>
+
+      <div class="lab-card rv">
+        <div class="lab-stage">
+          <div class="stack" id="stack"><i data-k="1"></i><i data-k="2"></i><i data-k="3"></i></div>
+          <button class="mini-btn" type="button" id="stackBtn">Projet suivant</button>
+        </div>
+        <div class="lab-meta"><h3>Pile de projets</h3><p>Les références défilent avec une vraie profondeur, d'un geste.</p></div>
+      </div>
+
+      <div class="lab-card rv">
+        <div class="lab-stage"><div class="morph" id="morph" aria-hidden="true"></div></div>
+        <div class="lab-meta"><h3>Fond vivant</h3><p>Une forme qui ne se répète jamais, derrière votre titre.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec method" id="methode">
+  <div class="wrap">
+    <header class="shead rv wide">
+      <p class="eyebrow"><i class="dot"></i>Méthode</p>
+      <h2 class="shead-h">Cinq étapes,<br><em>aucune surprise.</em></h2>
+    </header>
+
+    <div class="tl" id="timeline">
+      <svg class="tl-line" viewBox="0 0 4 1000" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="2" y1="0" x2="2" y2="1000" class="tl-bg"/>
+        <line x1="2" y1="0" x2="2" y2="1000" class="tl-fg" id="tlFg"/>
+      </svg>
+      <div class="tl-step rv"><span class="tl-dot"></span><div class="tl-body"><span class="tl-n">01 — Jour 1</span><h3>Le brief</h3><p>Votre audience, vos concurrents, et la seule chose qui doit se produire quand quelqu'un ouvre la page. Vingt minutes par écrit suffisent.</p></div></div>
+      <div class="tl-step rv"><span class="tl-dot"></span><div class="tl-body"><span class="tl-n">02 — Jours 2-3</span><h3>La direction</h3><p>Palette, typographie, grille, planche de références. Si vous avez déjà un fichier Figma, on saute directement à l'étape suivante.</p></div></div>
+      <div class="tl-step rv"><span class="tl-dot"></span><div class="tl-body"><span class="tl-n">03 — Jours 4-5</span><h3>La chorégraphie</h3><p>Je dessine les entrées, les transitions et les états. Vous voyez le mouvement sur un lien en direct avant qu'il soit figé.</p></div></div>
+      <div class="tl-step rv"><span class="tl-dot"></span><div class="tl-body"><span class="tl-n">04 — Semaine 2</span><h3>La construction</h3><p>Code écrit à la main, responsive, testé au clavier, mode sans animation géré. Le lien de préversion se met à jour au fil de l'eau.</p></div></div>
+      <div class="tl-step rv"><span class="tl-dot"></span><div class="tl-body"><span class="tl-n">05 — Livraison</span><h3>La remise</h3><p>Fichiers sources, mise en ligne et une prise en main courte. Tout vous appartient — aucun verrou, aucun abonnement.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec figures">
+  <div class="wrap">
+    <div class="fig-grid rv">
+      <div class="fig"><b class="cnt" data-to="10" data-suffix=" j">0</b><span>délai habituel de livraison</span></div>
+      <div class="fig"><b class="cnt" data-to="3" data-suffix="">0</b><span>séries de corrections incluses</span></div>
+      <div class="fig"><b class="cnt" data-to="0" data-suffix="">0</b><span>constructeur de pages utilisé</span></div>
+      <div class="fig"><b class="cnt" data-to="1" data-suffix="">0</b><span>seule personne, du début à la fin</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec quotes">
+  <div class="wrap">
+    <header class="shead rv wide">
+      <p class="eyebrow"><i class="dot"></i>Engagements</p>
+      <h2 class="shead-h">Pas encore d'avis.</h2>
+      <p class="shead-p">Je démarre, et je préfère le dire que d'inventer des témoignages. À la place, voilà ce sur quoi je m'engage — par écrit, avant que vous commandiez.</p>
+    </header>
+  </div>
+  <div class="q-row" aria-label="Mes engagements">
+    <div class="q-track">
+      <figure class="q"><p class="q-txt">Le prix est fixé avant que je commence. C'est celui que vous payez — aucune ligne n'apparaît à la fin.</p><figcaption><b>Prix fixe</b><span>Annoncé, pas estimé</span></figcaption></figure>
+      <figure class="q"><p class="q-txt">Vous parlez à la personne qui écrit le code. Pas de chargé de compte, pas de passage de relais, pas de couche d'agence.</p><figcaption><b>Une seule personne</b><span>Du début à la fin</span></figcaption></figure>
+      <figure class="q"><p class="q-txt">Trois séries de corrections sont comprises. Elles ne reviennent pas en supplément sur la facture.</p><figcaption><b>Corrections incluses</b><span>Trois séries</span></figcaption></figure>
+      <figure class="q"><p class="q-txt">Vous recevez l'intégralité des sources. Aucun compte de constructeur à continuer de payer, aucune licence qui expire.</p><figcaption><b>Tout vous appartient</b><span>Sources comprises</span></figcaption></figure>
+      <figure class="q"><p class="q-txt">Mouvement réduit, navigation au clavier et contrastes sont traités par défaut, pas vendus en option.</p><figcaption><b>Accessible d'office</b><span>Pas un supplément</span></figcaption></figure>
+      <figure class="q"><p class="q-txt">Je réponds sous 24 h les jours ouvrés, pendant le projet comme après la livraison.</p><figcaption><b>Réponse rapide</b><span>Pendant et après</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq" id="questions">
+  <div class="wrap">
+    <header class="shead rv wide">
+      <p class="eyebrow"><i class="dot"></i>Questions fréquentes</p>
+      <h2 class="shead-h">Ce qu'on me demande<br><em>avant de commander.</em></h2>
+    </header>
+
+    <div class="faq-list rv">
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Faut-il que j'aie un fichier Figma&nbsp;?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>Non. Si vous en avez un, je construis directement dessus et on gagne trois jours. Sinon, je dessine d'abord — c'est compris dans le devis, pas facturé en supplément après coup.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Pouvez-vous travailler avec ma stack existante&nbsp;?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>Pour un ajout d'animations, oui&nbsp;: je peux intégrer du mouvement écrit à la main dans un projet React, Next.js, Astro ou HTML classique sans réécrire vos composants. Pour une construction complète, je livre du HTML, CSS et JavaScript statiques, qui se déploient n'importe où.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Vous faites du WordPress, Shopify ou Webflow&nbsp;?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>Non, et c'est délibéré. Ce sont des marchés saturés où le travail consiste à assembler, pas à construire. Ce que je vends est précisément ce qu'un constructeur de pages ne sait pas produire&nbsp;: du mouvement écrit à la main, pour votre page en particulier.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Ça reste rapide avec toutes ces animations&nbsp;?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>C'est tout l'enjeu. Cette page anime une douzaine d'endroits et transporte environ 29&nbsp;ko de HTML, CSS et JavaScript — sans aucune image et sans librairie d'animation. Le travail hors écran est suspendu, chaque propriété animée passe par le GPU, et une seule boucle d'images pilote l'ensemble.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Et les gens qui ne veulent pas d'animation&nbsp;?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>Chaque animation respecte <em>prefers-reduced-motion</em>. Activez l'option dans votre système et cette page se réduit à une mise en page statique propre&nbsp;: la section horizontale épinglée devient une pile verticale, le préchargement et le curseur personnalisé disparaissent entièrement.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Je pourrai modifier le contenu moi-même&nbsp;?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>Pas via une interface d'administration — une page codée à la main n'a pas de CMS, et c'est exactement ce qui la rend rapide et stable. Si vous devez modifier les textes vous-même, dites-le au moment du brief et je branche un CMS léger. Ça change le devis, donc mieux vaut le décider au départ.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Comment travaille-t-on ensemble&nbsp;?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>Entièrement via Fiverr&nbsp;: brief, liens de préversion, corrections, livraison et paiement restent sur la plateforme. C'est la bonne façon de faire — vous conservez la protection acheteur que Fiverr vous garantit.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>De quoi avez-vous besoin pour démarrer&nbsp;?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>Vos textes (même bruts), vos images ou votre logo si vous en avez, et une phrase sur ce qu'un visiteur doit faire sur la page. Si vous avez des références qui vous plaisent, envoyez-en trois&nbsp;: ça économise une série de corrections entière.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="commander">
+  <div class="wrap">
+    <div class="ct-grid">
+      <div class="ct-left rv">
+        <p class="eyebrow"><i class="dot"></i>Démarrer un projet</p>
+        <h2 class="ct-ttl"><span data-split>Envoyez-moi</span><span data-split>le brief.</span><span class="accent" data-split>Je m'occupe</span><span class="accent" data-split>du reste.</span></h2>
+        <ul class="ct-info">
+          <li><span>Où</span><b>Tout passe par Fiverr</b></li>
+          <li><span>Réponse</span><b>Sous 24&nbsp;h les jours ouvrés</b></li>
+          <li><span>Où je suis</span><b>France — à distance, partout</b></li>
+        </ul>
+      </div>
+
+      <div class="order-box rv">
+        <h3>Trois façons de commencer</h3>
+        <ul class="order-list">
+          <li><b>Ajout d'animations</b><span>Animations au scroll et micro-interactions ajoutées à un site que vous avez déjà. Le moyen le plus rapide de voir comment je travaille.</span></li>
+          <li><b>Intégration Figma</b><span>Votre maquette, construite à la main, au pixel près et responsive. Sans constructeur, sans balisage exporté.</span></li>
+          <li><b>Landing page complète</b><span>Conception et construction de zéro, mouvement compris, livrée avec les sources qui vous appartiennent.</span></li>
+        </ul>
+        <a href="https://www.fiverr.com/" class="btn magnet order-btn" rel="noopener" data-cursor="Fiverr">Voir mon profil Fiverr</a>
+        <p class="order-note">Brief, corrections et paiement restent sur Fiverr — c'est là que vit votre protection acheteur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-mark" aria-hidden="true"><span>ARKOVE</span><span>ARKOVE</span><span>ARKOVE</span></div>
+  <div class="wrap foot-in">
+    <div class="foot-col">
+      <a href="#hero" class="brand"><span class="brand-mk"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M3 20 12 4l9 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M7.5 15h9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span><span class="brand-txt">Arkove<i>Studio</i></span></a>
+      <p class="foot-p">Pages web animées, écrites à la main. Une seule personne, aucune couche d'agence, aucun constructeur de pages.</p>
+    </div>
+    <div class="foot-col">
+      <span class="foot-k">Naviguer</span>
+      <a href="#services">Prestations</a><a href="#travaux">Travaux</a><a href="#lab">Lab</a><a href="#questions">Questions</a>
+      <a href="../en/">English version</a>
+      <a href="../mentions-legales.html">Mentions légales</a>
+    </div>
+    <div class="foot-col">
+      <span class="foot-k">Heure locale</span>
+      <b class="clock" id="clock">--:--:--</b>
+      <span class="foot-k">Disponibilité</span>
+      <b class="avail"><i></i>Ouvert aux projets</b>
+    </div>
+  </div>
+  <div class="wrap foot-bot">
+    <span>© <span id="year">2026</span> Arkove</span>
+    <button class="top magnet" type="button" id="toTop" data-cursor="Haut">Revenir en haut ↑</button>
+  </div>
+</footer>
+
+<div class="callbar" id="callbar">
+  <a href="https://www.fiverr.com/" class="cb-main" rel="noopener">Voir mon profil Fiverr</a>
+</div>
+
+<svg class="svg-defs" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/><feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="g"/><feBlend in="SourceGraphic" in2="g"/></filter>
+  </defs>
+</svg>
+
+<script src="../studio/script.js"></script>
+</body>
+</html>
