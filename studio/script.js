@@ -376,7 +376,9 @@
       var v = +dialRange.value, lo = +dialRange.min || 0, hi = +dialRange.max || 100;
       var p = (v - lo) / (hi - lo || 1);
       dialVal.style.strokeDashoffset = 289 - 289 * p;
-      dialNum.innerHTML = v + '<i>m²</i>';
+      var unit = dialRange.dataset.unit || '';
+      dialNum.textContent = v;
+      if (unit) dialNum.insertAdjacentHTML('beforeend', '<i>' + unit + '</i>');
     };
     dialRange.addEventListener('input', setDial);
     setDial();

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arkove — Hand-coded animated landing pages</title>
+<meta name="description" content="Hand-coded landing pages with real motion design. No page builder, no template, no 90 kB animation library. Figma to code, scroll animations, micro-interactions.">
+<meta name="theme-color" content="#0B0A09">
+<meta property="og:title" content="Arkove — Hand-coded animated landing pages">
+<meta property="og:description" content="Hand-coded landing pages with real motion design. No page builder, no template, no animation library.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B0A09'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='18' fill='%23CE9B4C' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../studio/style.css">
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-mark">
+      <svg viewBox="0 0 120 120" width="88" height="88" aria-hidden="true">
+        <circle class="lo-track" cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="1" opacity=".18"/>
+        <circle class="lo-arc" id="loArc" cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+        <text x="60" y="67" text-anchor="middle" class="lo-a">A</text>
+      </svg>
+    </div>
+    <div class="loader-meta">
+      <span class="loader-label">Arkove</span>
+      <span class="loader-num"><span id="loNum">0</span><i>%</i></span>
+    </div>
+  </div>
+  <div class="loader-bars"><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cur-dot"></span><span class="cur-ring"></span><span class="cur-label"></span></div>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a href="#hero" class="brand" data-cursor="Top">
+      <span class="brand-mk"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M3 20 12 4l9 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M7.5 15h9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+      <span class="brand-txt">Arkove<i>Studio</i></span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#services" data-scramble>Services</a>
+      <a href="#work" data-scramble>Work</a>
+      <a href="#craft" data-scramble>Craft</a>
+      <a href="#lab" data-scramble>Lab</a>
+      <a href="#process" data-scramble>Process</a>
+      <a href="#faq" data-scramble>FAQ</a>
+    </nav>
+    <div class="nav-act">
+      <button class="theme-tgl" id="themeToggle" type="button" aria-label="Switch theme" data-cursor="Theme">
+        <span class="tgl-track"><span class="tgl-knob">
+          <svg class="ic-moon" viewBox="0 0 20 20" width="11" height="11" aria-hidden="true"><path d="M16 11.5A6.5 6.5 0 0 1 8.5 4a6.5 6.5 0 1 0 7.5 7.5Z" fill="currentColor"/></svg>
+          <svg class="ic-sun" viewBox="0 0 20 20" width="12" height="12" aria-hidden="true"><circle cx="10" cy="10" r="3.6" fill="currentColor"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M10 1.6v2M10 16.4v2M1.6 10h2M16.4 10h2M4 4l1.4 1.4M14.6 14.6 16 16M16 4l-1.4 1.4M5.4 14.6 4 16"/></g></svg>
+        </span></span>
+      </button>
+      <a href="#order" class="btn btn-sm magnet" data-cursor="Order">Order on Fiverr</a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu-bg"></div>
+  <nav class="menu-list" aria-label="Mobile menu">
+    <a href="#services"><span>Services</span><i>01</i></a>
+    <a href="#work"><span>Work</span><i>02</i></a>
+    <a href="#craft"><span>Craft</span><i>03</i></a>
+    <a href="#lab"><span>Lab</span><i>04</i></a>
+    <a href="#process"><span>Process</span><i>05</i></a>
+    <a href="#faq"><span>FAQ</span><i>06</i></a>
+    <a href="#order"><span>Order</span><i>07</i></a>
+  </nav>
+  <div class="menu-foot"><span>Available for new projects</span><span>Remote · Europe</span></div>
+</div>
+
+<main id="main">
+
+<section class="hero" id="hero">
+  <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-aura a1" aria-hidden="true"></div>
+  <div class="hero-aura a2" aria-hidden="true"></div>
+  <div class="hero-veil" aria-hidden="true"></div>
+
+  <div class="hero-in">
+    <p class="eyebrow fx-fade" data-d="1"><i class="dot"></i>Landing pages &middot; Figma to code &middot; Motion</p>
+
+    <h1 class="hero-ttl">
+      <span class="line" data-split>Anyone can drag</span>
+      <span class="line" data-split>a template around.</span>
+      <span class="line accent" data-split>I write the motion.</span>
+    </h1>
+
+    <p class="hero-sub fx-fade" data-d="7">
+      Hand-coded landing pages with animation that actually guides the eye. No page builder,
+      no theme, no 90&nbsp;kB animation library. <strong>This page is the portfolio</strong> — every
+      pixel of it is written by hand.
+    </p>
+
+    <div class="hero-cta fx-fade" data-d="8">
+      <a href="#work" class="btn magnet" data-cursor="Look">See the work</a>
+      <a href="#order" class="btn ghost magnet" data-cursor="Order">Start a project</a>
+    </div>
+
+    <ul class="hero-stats fx-fade" data-d="9">
+      <li><b class="cnt" data-to="60" data-suffix=" fps">0</b><span>measured while scrolling this page</span></li>
+      <li><b class="cnt" data-to="0" data-suffix=" kb">0</b><span>of animation library</span></li>
+      <li><b class="cnt" data-to="29" data-suffix=" kb">0</b><span>of code, gzipped, images: none</span></li>
+    </ul>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hs-txt">Scroll</span>
+    <span class="hs-line"><i></i></span>
+  </div>
+</section>
+
+<div class="ticker" id="ticker" aria-hidden="true">
+  <div class="ticker-row" data-dir="1">
+    <div class="ticker-track">
+      <span>Landing pages<i>✦</i></span><span>Figma to code<i>✦</i></span><span>Scroll animation<i>✦</i></span>
+      <span>Micro-interactions<i>✦</i></span><span>One-pagers<i>✦</i></span><span>Waitlist pages<i>✦</i></span>
+      <span>Launch pages<i>✦</i></span><span>Portfolios<i>✦</i></span><span>Design systems<i>✦</i></span>
+      <span>No WordPress<i>✦</i></span><span>No page builder<i>✦</i></span><span>Accessible by default<i>✦</i></span>
+    </div>
+  </div>
+</div>
+
+<section class="sec manifesto" id="why">
+  <div class="wrap">
+    <header class="shead rv">
+      <p class="eyebrow"><i class="dot"></i>Why hand-coded</p>
+      <h2 class="shead-h">Motion is not decoration.<br><em>It is information.</em></h2>
+    </header>
+
+    <p class="mani-text" data-words>
+      Good animation is invisible. It tells the eye where to go next, ranks what matters, and
+      confirms that something just happened. I design the rhythm first — what enters, what waits,
+      what leaves — and only then write it, frame by frame. The result is a page people move
+      through without ever hesitating.
+    </p>
+
+    <div class="mani-grid">
+      <article class="mani-card rv" data-tilt>
+        <span class="mc-n">01</span>
+        <h3>Rhythm before style</h3>
+        <p>Easing curves, offsets and durations are decided before the first colour is picked.</p>
+      </article>
+      <article class="mani-card rv" data-tilt>
+        <span class="mc-n">02</span>
+        <h3>Zero dependencies</h3>
+        <p>No 90&nbsp;kB library to slide one block. Everything is written for your page, so it stays light.</p>
+      </article>
+      <article class="mani-card rv" data-tilt>
+        <span class="mc-n">03</span>
+        <h3>Nobody left outside</h3>
+        <p>Keyboard, screen readers, and a reduced-motion mode respected everywhere, automatically.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec batiment" id="services">
+  <div class="wrap">
+    <header class="shead rv wide">
+      <p class="eyebrow"><i class="dot"></i>What I build</p>
+      <h2 class="shead-h">Eight things<br><em>I do well.</em></h2>
+      <p class="shead-p">Narrow on purpose. I'd rather be the best option for a few jobs than a mediocre one for all of them.</p>
+    </header>
+
+    <div class="bat-grid">
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13H11l-1 9 8.5-11H12l1-9Z"/></svg></span>
+        <h3>Animated landing page</h3>
+        <p>One page, built from scratch, with a motion pass that makes it feel alive instead of busy.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18-6-6 6-6"/><path d="m15 6 6 6-6 6"/></svg></span>
+        <h3>Figma to code</h3>
+        <p>Pixel-accurate, responsive, hand-written. No Elementor, no Divi, no exported soup.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16"/><path d="m7 15 5 5 5-5"/></svg></span>
+        <h3>Motion pass on your site</h3>
+        <p>You already have a site. I add scroll animation and micro-interactions without touching your stack.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h8"/></svg></span>
+        <h3>Waitlist &amp; launch pages</h3>
+        <p>Pre-product credibility: a page that collects emails and looks like the company already exists.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m6 15 3.5-4 2.5 3 2.5-3L18 15"/></svg></span>
+        <h3>Portfolio sites</h3>
+        <p>For photographers, studios and architects — where the visual is the product, not the wrapper.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+        <h3>Event one-pagers</h3>
+        <p>Conference, festival, product drop. Countdown, schedule, ticket link — shipped before the date.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3>Accessibility &amp; speed pass</h3>
+        <p>Contrast, focus order, reduced motion, image weight. An audit you can hand to a client.</p>
+      </article>
+      <article class="bat rv">
+        <span class="bat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+        <h3>Component libraries</h3>
+        <p>Reusable, themeable, documented. The same button behaves the same on every page, for years.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec-h" id="craft">
+  <div class="hz" id="hz">
+    <div class="hz-stick">
+      <div class="hz-head">
+        <p class="eyebrow"><i class="dot"></i>Craft</p>
+        <h2 class="shead-h">Six things<br><em>I actually control.</em></h2>
+        <div class="hz-bar"><span id="hzBar"></span></div>
+      </div>
+
+      <div class="hz-track" id="hzTrack">
+        <article class="skill" data-tilt>
+          <div class="sk-art sk-art-1" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <span class="sk-n">01</span>
+          <h3>Art direction</h3>
+          <p>Palette, grid, type scale, tone. An identity that holds up on a screen and on a business card.</p>
+          <ul class="sk-tags"><li>Palette</li><li>Grid</li><li>Type</li></ul>
+        </article>
+
+        <article class="skill" data-tilt>
+          <div class="sk-art sk-art-2" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span class="sk-n">02</span>
+          <h3>Easing &amp; timing</h3>
+          <p>Three dots, three curves. Most sites ship the browser default — that is why they feel cheap.</p>
+          <ul class="sk-tags"><li>Easing</li><li>Stagger</li><li>Timeline</li></ul>
+        </article>
+
+        <article class="skill" data-tilt>
+          <div class="sk-art sk-art-3" aria-hidden="true"><b></b></div>
+          <span class="sk-n">03</span>
+          <h3>Scroll storytelling</h3>
+          <p>Pinned sections, parallax, sequences bound to the exact scroll position. The page becomes the script.</p>
+          <ul class="sk-tags"><li>Pin</li><li>Parallax</li><li>Sequence</li></ul>
+        </article>
+
+        <article class="skill" data-tilt>
+          <div class="sk-art sk-art-4" aria-hidden="true"><em></em><em></em><em></em><em></em><em></em><em></em><em></em><em></em><em></em></div>
+          <span class="sk-n">04</span>
+          <h3>Micro-interactions</h3>
+          <p>Magnetic buttons, living fields, feedback on every click. The detail that reads as "expensive".</p>
+          <ul class="sk-tags"><li>Hover</li><li>Focus</li><li>Feedback</li></ul>
+        </article>
+
+        <article class="skill" data-tilt>
+          <div class="sk-art sk-art-5" aria-hidden="true">
+            <svg viewBox="0 0 120 80"><path d="M6 68 C 30 10, 60 74, 114 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <span class="sk-n">05</span>
+          <h3>Performance</h3>
+          <p>GPU compositing, off-screen work paused, one shared rAF loop. Motion that does not cost speed.</p>
+          <ul class="sk-tags"><li>GPU</li><li>Lazy</li><li>60 fps</li></ul>
+        </article>
+
+        <article class="skill" data-tilt>
+          <div class="sk-art sk-art-6" aria-hidden="true"><u></u><u></u><u></u></div>
+          <span class="sk-n">06</span>
+          <h3>Design systems</h3>
+          <p>Colour tokens, type scale, components. The site still looks deliberate three years later.</p>
+          <ul class="sk-tags"><li>Tokens</li><li>Scale</li><li>Themes</li></ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec works" id="work">
+  <div class="wrap">
+    <header class="shead rv wide">
+      <p class="eyebrow"><i class="dot"></i>Work</p>
+      <h2 class="shead-h">Six clients,<br><em>six visual languages.</em></h2>
+      <p class="shead-p">Concept pieces, built to show range — a dev tool should not look like a wellness brand. Every thumbnail is drawn in code, not exported from a design file. Hover and it moves.</p>
+    </header>
+
+    <div class="works-grid">
+      <article class="work rv" data-tilt data-cursor="Open">
+        <div class="w-art art-elec" aria-hidden="true">
+          <svg class="ael-net" viewBox="0 0 200 250" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <g class="ael-base" stroke="currentColor" stroke-width="2">
+              <path d="M24 46H84V116H152V206"/><path d="M176 64V134H112V226"/><path d="M24 168H62V214H140"/>
+            </g>
+            <g class="ael-flow" stroke-width="2.6">
+              <path d="M24 46H84V116H152V206"/><path d="M176 64V134H112V226"/><path d="M24 168H62V214H140"/>
+            </g>
+            <g class="ael-nodes" fill="currentColor">
+              <circle cx="84" cy="116" r="4.5"/><circle cx="152" cy="206" r="4.5"/>
+              <circle cx="112" cy="134" r="4.5"/><circle cx="62" cy="214" r="4.5"/>
+            </g>
+          </svg>
+          <div class="ael-ttl">AMPERE<span>DEV TOOL</span></div>
+        </div>
+        <div class="w-meta"><h3>Ampere</h3><span class="w-tag">Developer tool · Landing page</span></div>
+        <p class="w-desc">Terminal navy, current running through the traces, nodes firing as it passes.</p>
+      </article>
+
+      <article class="work rv" data-tilt data-cursor="Open">
+        <div class="w-art art-ancel" aria-hidden="true">
+          <div class="aa-grid"></div>
+          <svg class="aa-pulse" viewBox="0 0 240 80"><path d="M0 40h70l12-26 16 52 14-34 11 8h117" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="aa-ttl">CADENCE</div>
+        </div>
+        <div class="w-meta"><h3>Cadence</h3><span class="w-tag">Analytics SaaS · Marketing site</span></div>
+        <p class="w-desc">Clinical grid, a live signal drawing itself on loop, neutral wide-tracked type.</p>
+      </article>
+
+      <article class="work rv" data-tilt data-cursor="Open">
+        <div class="w-art art-forge" aria-hidden="true">
+          <div class="af-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="af-ttl">HALCYON<br><span>LAUNCH</span></div>
+          <div class="af-spark"></div>
+        </div>
+        <div class="w-meta"><h3>Halcyon</h3><span class="w-tag">Hardware launch · One-pager</span></div>
+        <p class="w-desc">Unapologetic brutalism, bars scoring the frame, a spark crossing it on hover.</p>
+      </article>
+
+      <article class="work rv" data-tilt data-cursor="Open">
+        <div class="w-art art-lumen" aria-hidden="true">
+          <div class="al-sun"></div>
+          <div class="al-grain"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="al-ttl">SOLACE</div>
+        </div>
+        <div class="w-meta"><h3>Solace</h3><span class="w-tag">Wellness brand · Identity + site</span></div>
+        <p class="w-desc">Warmth translated into gradient, a breathing sun, wide-serif wordmark.</p>
+      </article>
+
+      <article class="work rv" data-tilt data-cursor="Open">
+        <div class="w-art art-thym" aria-hidden="true">
+          <div class="at-blob"></div>
+          <div class="at-blob b2"></div>
+          <div class="at-ttl"><em>Studio</em><br>VERDA</div>
+        </div>
+        <div class="w-meta"><h3>Verda</h3><span class="w-tag">Creative studio · Portfolio</span></div>
+        <p class="w-desc">Organic shapes morphing on loop, handwritten italic over wide capitals.</p>
+      </article>
+
+      <article class="work rv" data-tilt data-cursor="Open">
+        <div class="w-art art-toit" aria-hidden="true">
+          <div class="ato-rows"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="ato-ridge"></div>
+          <div class="ato-ttl">STRATA<span>ARCHITECTURE</span></div>
+        </div>
+        <div class="w-meta"><h3>Strata</h3><span class="w-tag">Architecture studio · Portfolio</span></div>
+        <p class="w-desc">Slate and zinc, layered courses settling into place, a bright ridge across the top.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec lab" id="lab">
+  <div class="wrap">
+    <header class="shead rv wide">
+      <p class="eyebrow"><i class="dot"></i>Motion lab</p>
+      <h2 class="shead-h">The parts,<br><em>live.</em></h2>
+      <p class="shead-p">Components I drop into client pages. All of them are running right now — click, hover, drag.</p>
+    </header>
+
+    <div class="lab-grid">
+      <div class="lab-card rv">
+        <div class="lab-stage"><button class="liquid" type="button" id="liquidBtn"><span>Press me</span><i class="lq-fill"></i></button></div>
+        <div class="lab-meta"><h3>Liquid button</h3><p>Fills on hover, ripples from the exact click point.</p></div>
+      </div>
+
+      <div class="lab-card rv">
+        <div class="lab-stage">
+          <div class="gooey" id="gooey">
+            <button class="goo-main" type="button" aria-label="Open quick actions" aria-expanded="false">+</button>
+            <span class="goo-b" data-i="1"></span><span class="goo-b" data-i="2"></span><span class="goo-b" data-i="3"></span>
+          </div>
+        </div>
+        <div class="lab-meta"><h3>Gooey menu</h3><p>Shapes merging through an SVG filter, not images.</p></div>
+      </div>
+
+      <div class="lab-card rv">
+        <div class="lab-stage">
+          <div class="dial" id="dial">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="46" fill="none" stroke="currentColor" class="d-track" stroke-width="7"/>
+              <circle cx="60" cy="60" r="46" fill="none" stroke="currentColor" class="d-val" id="dialVal" stroke-width="7" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+            </svg>
+            <span class="d-num" id="dialNum">0</span>
+          </div>
+          <input class="d-range" id="dialRange" type="range" min="1" max="12" step="1" value="5" data-unit="sections" aria-label="Number of sections">
+        </div>
+        <div class="lab-meta"><h3>Live estimator</h3><p>Visitor moves the slider, the quote updates with no reload.</p></div>
+      </div>
+
+      <div class="lab-card rv">
+        <div class="lab-stage"><div class="scramble" id="scrambleBox" data-words="Motion,Figma,Landing,Fluid">Motion</div></div>
+        <div class="lab-meta"><h3>Scrambled text</h3><p>Decodes letter by letter — good for rotating keywords.</p></div>
+      </div>
+
+      <div class="lab-card rv">
+        <div class="lab-stage">
+          <div class="stack" id="stack"><i data-k="1"></i><i data-k="2"></i><i data-k="3"></i></div>
+          <button class="mini-btn" type="button" id="stackBtn">Next case</button>
+        </div>
+        <div class="lab-meta"><h3>Card stack</h3><p>Case studies cycling with real depth, one gesture each.</p></div>
+      </div>
+
+      <div class="lab-card rv">
+        <div class="lab-stage"><div class="morph" id="morph" aria-hidden="true"></div></div>
+        <div class="lab-meta"><h3>Living background</h3><p>A shape that never repeats, behind your headline.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec method" id="process">
+  <div class="wrap">
+    <header class="shead rv wide">
+      <p class="eyebrow"><i class="dot"></i>Process</p>
+      <h2 class="shead-h">Five steps,<br><em>no surprises.</em></h2>
+    </header>
+
+    <div class="tl" id="timeline">
+      <svg class="tl-line" viewBox="0 0 4 1000" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="2" y1="0" x2="2" y2="1000" class="tl-bg"/>
+        <line x1="2" y1="0" x2="2" y2="1000" class="tl-fg" id="tlFg"/>
+      </svg>
+      <div class="tl-step rv"><span class="tl-dot"></span><div class="tl-body"><span class="tl-n">01 — Day 1</span><h3>Brief</h3><p>Your audience, your competitors, and the one thing that must happen when someone opens the page. Twenty minutes in writing is enough.</p></div></div>
+      <div class="tl-step rv"><span class="tl-dot"></span><div class="tl-body"><span class="tl-n">02 — Days 2-3</span><h3>Direction</h3><p>Palette, type, grid, reference board. If you already have a Figma file, we skip straight to the next step.</p></div></div>
+      <div class="tl-step rv"><span class="tl-dot"></span><div class="tl-body"><span class="tl-n">03 — Days 4-5</span><h3>Choreography</h3><p>I map entrances, transitions and states. You see the motion on a live link before it is locked.</p></div></div>
+      <div class="tl-step rv"><span class="tl-dot"></span><div class="tl-body"><span class="tl-n">04 — Week 2</span><h3>Build</h3><p>Hand-written code, responsive, keyboard-tested, reduced-motion aware. The preview link updates as I go.</p></div></div>
+      <div class="tl-step rv"><span class="tl-dot"></span><div class="tl-body"><span class="tl-n">05 — Delivery</span><h3>Handover</h3><p>Source files, deployment, and a short walkthrough. You own everything — no lock-in, no subscription.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec figures">
+  <div class="wrap">
+    <div class="fig-grid rv">
+      <div class="fig"><b class="cnt" data-to="10" data-suffix=" d">0</b><span>typical delivery time</span></div>
+      <div class="fig"><b class="cnt" data-to="3" data-suffix="">0</b><span>revision rounds included</span></div>
+      <div class="fig"><b class="cnt" data-to="0" data-suffix="">0</b><span>page builders involved</span></div>
+      <div class="fig"><b class="cnt" data-to="1" data-suffix="">0</b><span>person, start to finish</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec quotes">
+  <div class="wrap">
+    <header class="shead rv wide">
+      <p class="eyebrow"><i class="dot"></i>Commitments</p>
+      <h2 class="shead-h">No reviews yet.</h2>
+      <p class="shead-p">I'm starting out, and I would rather say so than invent testimonials. Here is what I commit to instead — in writing, before you order.</p>
+    </header>
+  </div>
+  <div class="q-row" aria-label="My commitments">
+    <div class="q-track">
+      <figure class="q"><p class="q-txt">The price is agreed before I start. That is the one you pay — no line appears at the end.</p><figcaption><b>Fixed price</b><span>Quoted, not estimated</span></figcaption></figure>
+      <figure class="q"><p class="q-txt">You talk to the person writing the code. No account manager, no handover, no agency layer.</p><figcaption><b>One person</b><span>Start to finish</span></figcaption></figure>
+      <figure class="q"><p class="q-txt">Three rounds of revisions are included. They do not come back as an extra on the invoice.</p><figcaption><b>Revisions included</b><span>Three rounds</span></figcaption></figure>
+      <figure class="q"><p class="q-txt">You get the full source. No builder account to keep paying for, no licence that expires.</p><figcaption><b>You own it</b><span>Source included</span></figcaption></figure>
+      <figure class="q"><p class="q-txt">Reduced-motion, keyboard navigation and colour contrast are handled by default, not as an upsell.</p><figcaption><b>Accessible by default</b><span>Not an add-on</span></figcaption></figure>
+      <figure class="q"><p class="q-txt">I answer within 24 hours on working days, during the project and after delivery.</p><figcaption><b>Fast replies</b><span>During and after</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq" id="faq">
+  <div class="wrap">
+    <header class="shead rv wide">
+      <p class="eyebrow"><i class="dot"></i>FAQ</p>
+      <h2 class="shead-h">What people ask<br><em>before ordering.</em></h2>
+    </header>
+
+    <div class="faq-list rv">
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Do I need a Figma file?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>No. If you have one, I build straight from it and we save three days. If you don't, I design it first — that is part of the quote, not a surprise extra.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Can you work with my existing stack?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>For a motion pass, yes — I can drop hand-written animation into a React, Next.js, Astro or plain HTML project without rewriting your components. For a full build, I ship static HTML, CSS and JavaScript, which deploys anywhere.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Do you do WordPress, Shopify or Webflow?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>No, and that is deliberate. Those are crowded markets where the work is assembly, not craft. What I sell is the thing a page builder cannot produce: motion written by hand, for your page specifically.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Will it still be fast with all that animation?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>That is the point. This page animates in a dozen places and ships about 29&nbsp;kB of HTML, CSS and JavaScript over the wire — with no images at all and no animation library. Off-screen work is paused, every animated property is GPU-composited, and one shared frame loop drives the lot.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>What about users who don't want motion?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>Every animation respects <em>prefers-reduced-motion</em>. Turn it on in your OS and this page degrades to a clean static layout — the pinned horizontal section becomes a vertical stack, the loader and custom cursor disappear entirely.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Can I update the content myself afterwards?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>Not through an admin panel — a hand-coded page has no CMS, which is exactly why it is fast and why nothing breaks on update day. If you need to edit copy yourself, say so at the brief stage and I will wire a lightweight headless CMS in. It changes the quote, so it is better decided up front.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>How do we work together?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>Entirely through Fiverr — brief, preview links, revisions, delivery and payment all stay on the platform. That is how it should be: you keep the protection Fiverr gives buyers.</p></div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q" type="button" aria-expanded="false"><span>What do you need from me to start?</span><i class="faq-p" aria-hidden="true"></i></button>
+        <div class="faq-a"><div><p>Your copy (rough is fine), any images or logo you have, and one sentence on what a visitor should do on the page. If you have references you like, send three — it saves a whole revision round.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="order">
+  <div class="wrap">
+    <div class="ct-grid">
+      <div class="ct-left rv">
+        <p class="eyebrow"><i class="dot"></i>Start a project</p>
+        <h2 class="ct-ttl"><span data-split>Send me</span><span data-split>the brief.</span><span class="accent" data-split>I'll handle</span><span class="accent" data-split>the rest.</span></h2>
+        <ul class="ct-info">
+          <li><span>Where</span><b>Everything runs through Fiverr</b></li>
+          <li><span>Reply</span><b>Within 24&nbsp;h on working days</b></li>
+          <li><span>Based</span><b>Europe — remote, worldwide</b></li>
+        </ul>
+      </div>
+
+      <div class="order-box rv">
+        <h3>Three ways to start</h3>
+        <ul class="order-list">
+          <li><b>Motion pass</b><span>Scroll animation and micro-interactions added to a site you already have. The quickest way to see how I work.</span></li>
+          <li><b>Figma to code</b><span>Your design, built by hand, pixel-accurate and responsive. No builder, no exported markup.</span></li>
+          <li><b>Full landing page</b><span>Design and build from scratch, motion included, delivered as source you own.</span></li>
+        </ul>
+        <a href="https://www.fiverr.com/" class="btn magnet order-btn" rel="noopener" data-cursor="Fiverr">Open my Fiverr page</a>
+        <p class="order-note">Briefs, revisions and payment all stay on Fiverr — that is where your buyer protection lives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-mark" aria-hidden="true"><span>ARKOVE</span><span>ARKOVE</span><span>ARKOVE</span></div>
+  <div class="wrap foot-in">
+    <div class="foot-col">
+      <a href="#hero" class="brand"><span class="brand-mk"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M3 20 12 4l9 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M7.5 15h9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span><span class="brand-txt">Arkove<i>Studio</i></span></a>
+      <p class="foot-p">Hand-coded landing pages with real motion design. One person, no agency layer, no page builder.</p>
+    </div>
+    <div class="foot-col">
+      <span class="foot-k">Navigate</span>
+      <a href="#services">Services</a><a href="#work">Work</a><a href="#lab">Lab</a><a href="#faq">FAQ</a>
+      <a href="../studio/">Version française</a>
+    </div>
+    <div class="foot-col">
+      <span class="foot-k">Local time</span>
+      <b class="clock" id="clock">--:--:--</b>
+      <span class="foot-k">Availability</span>
+      <b class="avail"><i></i>Open to new projects</b>
+    </div>
+  </div>
+  <div class="wrap foot-bot">
+    <span>© <span id="year">2026</span> Arkove</span>
+    <button class="top magnet" type="button" id="toTop" data-cursor="Top">Back to top ↑</button>
+  </div>
+</footer>
+
+<div class="callbar" id="callbar">
+  <a href="https://www.fiverr.com/" class="cb-main" rel="noopener">Open my Fiverr page</a>
+</div>
+
+<svg class="svg-defs" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/><feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="g"/><feBlend in="SourceGraphic" in2="g"/></filter>
+  </defs>
+</svg>
+
+<script src="../studio/script.js"></script>
+</body>
+</html>
