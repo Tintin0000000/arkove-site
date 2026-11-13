@@ -128,6 +128,19 @@
   addEventListener('scroll', onScrollUI, { passive: true });
   onScrollUI();
 
+  /* ───────── 5 bis. BARRE D'APPEL MOBILE ───────── */
+  var callbar = $('#callbar'), contactSec = $('#contact');
+  if (callbar) {
+    var contactVisible = false;
+    if (contactSec) {
+      new IntersectionObserver(function (e) { contactVisible = e[0].isIntersecting; }, { threshold: 0.12 })
+        .observe(contactSec);
+    }
+    addEventListener('scroll', function () {
+      callbar.classList.toggle('show', scrollY > innerHeight * 0.75 && !contactVisible);
+    }, { passive: true });
+  }
+
   /* ───────── 6. MENU MOBILE ───────── */
   var burger = $('#burger'), menu = $('#menu');
   if (burger && menu) {
@@ -158,9 +171,9 @@
     }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
 
     // décalage en cascade au sein d'une même grille
-    ['.mani-grid', '.works-grid', '.lab-grid'].forEach(function (sel) {
-      $$(sel).forEach(function (grid) {
-        $$('.rv', grid).forEach(function (el, i) { el.style.transitionDelay = (i % 3) * 0.09 + 's'; });
+    [['.mani-grid', 3], ['.works-grid', 3], ['.lab-grid', 3], ['.bat-grid', 4]].forEach(function (pair) {
+      $$(pair[0]).forEach(function (grid) {
+        $$('.rv', grid).forEach(function (el, i) { el.style.transitionDelay = (i % pair[1]) * 0.08 + 's'; });
       });
     });
     revealables.forEach(function (el) { io.observe(el); });
@@ -360,9 +373,10 @@
   var dialRange = $('#dialRange'), dialVal = $('#dialVal'), dialNum = $('#dialNum');
   if (dialRange && dialVal) {
     var setDial = function () {
-      var v = +dialRange.value;
-      dialVal.style.strokeDashoffset = 289 - (289 * v) / 100;
-      dialNum.textContent = v;
+      var v = +dialRange.value, lo = +dialRange.min || 0, hi = +dialRange.max || 100;
+      var p = (v - lo) / (hi - lo || 1);
+      dialVal.style.strokeDashoffset = 289 - 289 * p;
+      dialNum.innerHTML = v + '<i>m²</i>';
     };
     dialRange.addEventListener('input', setDial);
     setDial();
