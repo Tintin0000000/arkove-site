@@ -1,0 +1,224 @@
+/* ===== Argent Maîtrisé — feuille de style livre ===== */
+:root{
+  --ink:#17140F;
+  --ink-soft:#3D372E;
+  --ink-mute:#6B6354;
+  --gold:#A8762C;
+  --gold-soft:#C9A978;
+  --paper:#FFFFFF;
+  --tint:#F7F4EE;
+  --tint-warm:#FBF3E4;
+  --tint-alert:#FCF0EA;
+  --rule:#DED7CA;
+}
+@page{ size:6in 9in; margin:0.66in 0.64in 0.76in 0.64in; }
+
+*{ box-sizing:border-box; }
+html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Bitstream Charter","Charter","Liberation Serif",Georgia,serif;
+  font-size:10.1pt; line-height:1.54; text-align:justify;
+  hyphens:auto; -webkit-hyphens:auto;
+  orphans:2; widows:2;
+}
+p{ margin:0 0 0.62em; }
+p+p{ text-indent:0; }
+strong{ font-weight:700; color:var(--ink); }
+em{ font-style:italic; }
+a{ color:var(--ink); text-decoration:none; }
+
+/* ---------- Titres ---------- */
+h1,h2,h3,h4{
+  font-family:"Inter Display","Inter","Liberation Sans",sans-serif;
+  text-align:left; hyphens:none; color:var(--ink);
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* Ouverture de partie : pleine page */
+h1{
+  break-before:page; page-break-before:always;
+  font-size:27pt; line-height:1.1; font-weight:800; letter-spacing:-0.025em;
+  margin:0.5in 0 0.45em; padding-bottom:0.36em;
+  border-bottom:2.5px solid var(--gold);
+}
+/* Chapitre : nouvelle page */
+h2{
+  break-before:auto; page-break-before:auto; break-inside:avoid;
+  font-size:16pt; line-height:1.2; font-weight:750; letter-spacing:-0.018em;
+  margin:1.9em 0 0.75em; padding-top:0;
+}
+h2::before{
+  content:""; display:block; width:40px; height:3px;
+  background:var(--gold); margin-bottom:0.62em;
+}
+h3{
+  font-size:11.1pt; font-weight:700; letter-spacing:-0.005em;
+  margin:1.25em 0 0.42em; color:var(--ink);
+}
+h4{ font-size:10.4pt; font-weight:700; margin:1.2em 0 0.4em; }
+
+/* Chapô de partie (citation sous h1) */
+h1 + blockquote{
+  margin:0 0 1.6em; padding:0 0 0 0; border:0;
+  font-family:"Inter","Liberation Sans",sans-serif;
+  font-size:9.9pt; line-height:1.56; color:var(--ink-soft);
+  text-align:left; hyphens:none;
+}
+h1 + blockquote p{ margin:0 0 0.6em; }
+
+blockquote{
+  margin:1.1em 0; padding:0 0 0 0.95em;
+  border-left:2px solid var(--gold-soft);
+  color:var(--ink-soft); font-style:italic;
+}
+blockquote p:last-child{ margin-bottom:0; }
+
+/* ---------- Listes ---------- */
+ul,ol{ margin:0.5em 0 0.9em; padding-left:1.25em; }
+li{ margin-bottom:0.3em; }
+li>p{ margin-bottom:0.35em; }
+
+/* Cases à cocher */
+ul.task-list{ list-style:none; padding-left:0.1em; }
+ul.task-list li{ position:relative; padding-left:1.45em; margin-bottom:0.42em; }
+ul.task-list input[type=checkbox]{ display:none; }
+ul.task-list li::before{
+  content:""; position:absolute; left:0; top:0.26em;
+  width:0.72em; height:0.72em; border:1.3px solid var(--gold);
+  border-radius:2px; background:#fff;
+}
+
+/* ---------- Tableaux ---------- */
+table{
+  width:100%; border-collapse:collapse; margin:0.9em 0 1.05em;
+  font-family:"Inter","Liberation Sans",sans-serif;
+  font-size:8.2pt; line-height:1.38; text-align:left; hyphens:none;
+  break-inside:auto; page-break-inside:auto;
+}
+tr{ break-inside:avoid; page-break-inside:avoid; }
+thead{ display:table-header-group; }
+th{
+  background:var(--ink); color:#fff; font-weight:650;
+  padding:0.42em 0.55em; text-align:left; vertical-align:bottom;
+  border:0;
+}
+td{
+  padding:0.38em 0.55em; border-bottom:0.8px solid var(--rule);
+  vertical-align:top; color:var(--ink-soft);
+}
+tbody tr:nth-child(even) td{ background:var(--tint); }
+td strong{ color:var(--ink); }
+
+/* ---------- Encadrés ---------- */
+div.encadre,div.alerte,div.action,div.exemple,div.formule{
+  break-inside:avoid; page-break-inside:avoid;
+  margin:1.05em 0; padding:0.72em 0.9em;
+  font-size:9.2pt; line-height:1.5;
+  text-align:left; hyphens:none;
+}
+div.encadre p:last-child,div.alerte p:last-child,
+div.action p:last-child,div.exemple p:last-child{ margin-bottom:0; }
+div.encadre ul,div.alerte ul,div.action ul,div.action ol{ margin-bottom:0; }
+
+/* L'essentiel */
+div.encadre{
+  background:var(--tint); border-left:3px solid var(--ink);
+  border-radius:0 3px 3px 0;
+}
+div.encadre>p:first-child>strong:first-child{
+  font-family:"Inter Display","Inter",sans-serif; font-size:8.6pt;
+  text-transform:uppercase; letter-spacing:0.1em; color:var(--gold);
+}
+div.encadre ul{ padding-left:1.05em; }
+div.encadre li{ margin-bottom:0.22em; }
+
+/* Alerte / vigilance */
+div.alerte{
+  background:var(--tint-alert); border-left:3px solid #B5472A;
+  border-radius:0 3px 3px 0;
+}
+div.alerte>p:first-child>strong:first-child{
+  font-family:"Inter Display","Inter",sans-serif; font-size:8.6pt;
+  text-transform:uppercase; letter-spacing:0.09em; color:#A03D22;
+}
+
+/* Action */
+div.action{
+  background:var(--tint-warm); border-left:3px solid var(--gold);
+  border-radius:0 3px 3px 0;
+}
+div.action>p:first-child>strong:first-child{
+  font-family:"Inter Display","Inter",sans-serif; font-size:8.6pt;
+  text-transform:uppercase; letter-spacing:0.09em; color:var(--gold);
+}
+div.action blockquote{
+  border-left:1.5px solid var(--gold-soft); font-style:italic;
+  font-size:9.3pt; margin:0.7em 0;
+}
+
+/* Exemple chiffré */
+div.exemple{
+  background:#fff; border:0.9px solid var(--rule);
+  border-left:3px solid var(--ink-mute); border-radius:0 3px 3px 0;
+}
+div.exemple>p:first-child>strong:first-child{
+  font-family:"Inter Display","Inter",sans-serif; font-size:8.6pt;
+  text-transform:uppercase; letter-spacing:0.09em; color:var(--ink-mute);
+}
+
+/* Formules */
+div.formule{
+  background:var(--ink); color:#F2EDE4; border-radius:4px;
+  font-family:"JetBrains Mono","Liberation Mono",monospace;
+  font-size:9.6pt; text-align:center; padding:0.8em 0.7em;
+  margin:0.9em 0 1.1em;
+}
+div.formule p{ margin:0; }
+
+/* ---------- Page de titre ---------- */
+.titlepage{ break-after:page; page-break-after:always; text-align:center; padding-top:1.3in; }
+.titlepage .tp-mark{
+  font-family:"Inter Display",sans-serif; font-size:8.5pt; letter-spacing:0.3em;
+  text-transform:uppercase; color:var(--gold); margin-bottom:0.9in;
+}
+.titlepage h1.tp-title{
+  border:0; break-before:auto; page-break-before:auto;
+  font-size:30pt; margin:0 0 0.3em; text-align:center; letter-spacing:-0.03em;
+}
+.titlepage .tp-sub{
+  font-family:"Inter",sans-serif; font-size:10pt; line-height:1.5;
+  color:var(--ink-soft); text-align:center; max-width:4.1in; margin:0 auto 1.3in;
+}
+.titlepage .tp-meta{
+  font-family:"Inter",sans-serif; font-size:8.6pt; color:var(--ink-mute);
+  text-align:center; line-height:1.7;
+}
+
+/* ---------- Sommaire ---------- */
+nav#TOC{ break-after:page; page-break-after:always; }
+nav#TOC::before{
+  content:"Sommaire"; display:block;
+  font-family:"Inter Display",sans-serif; font-size:21pt; font-weight:800;
+  letter-spacing:-0.02em; padding-bottom:0.4em; margin-bottom:1em;
+  border-bottom:2.5px solid var(--gold);
+}
+nav#TOC ul{ list-style:none; padding-left:0; margin:0; }
+nav#TOC>ul>li{
+  font-family:"Inter Display",sans-serif; font-weight:700; font-size:10.4pt;
+  margin:1.05em 0 0.3em; color:var(--ink); letter-spacing:-0.01em;
+}
+nav#TOC>ul>li>ul{ margin:0.35em 0 0; }
+nav#TOC>ul>li>ul>li{
+  font-family:"Inter",sans-serif; font-weight:400; font-size:9.1pt;
+  color:var(--ink-soft); margin:0.2em 0; padding-left:0.9em;
+  border-left:1px solid var(--rule);
+}
+nav#TOC a{ color:inherit; }
+
+/* ---------- Divers ---------- */
+hr{ border:0; border-top:0.9px solid var(--rule); margin:1.6em 0; }
+section.level1,section.level2{ break-before:auto; }
+
+/* Simulateurs : web uniquement */
+div.widget{ display:none !important; }

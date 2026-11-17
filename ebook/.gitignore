@@ -6,3 +6,8 @@ build/part-cover.pdf
 build/part-body.pdf
 build/cover.html
 build/*.png
+build/book-court.md
+build/body-court.html
+build/cover-court.html
+build/part-cover-court.pdf
+build/part-body-court.pdf
