@@ -1,0 +1,8 @@
+# Fichiers intermédiaires régénérés par la chaîne de build
+build/book.md
+build/body.html
+build/fragment.html
+build/part-cover.pdf
+build/part-body.pdf
+build/cover.html
+build/*.png
