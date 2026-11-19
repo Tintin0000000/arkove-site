@@ -2,7 +2,7 @@
 
 > L'optimisation vient **après** la structure, jamais avant. Un patrimoine mal alloué mais fiscalement optimisé reste mal alloué.
 
-## 25. La fiscalité comme levier
+## 25. La fiscalité comme levier de performance
 
 Réduire l'impôt est un gain **certain**, contrairement au rendement qui est espéré. Mais une règle prime sur tout : **l'avantage fiscal ne doit jamais déterminer le choix de l'investissement.** L'histoire des dispositifs de défiscalisation immobilière est pleine de contribuables ayant économisé quelques milliers d'euros d'impôt en achetant un bien surpayé de plusieurs dizaines de milliers.
 
@@ -60,7 +60,7 @@ Quatre paramètres font la différence. **Le rendement brut d'entrée** : en des
 
 Ce dernier point mérite une attention particulière : les exigences énergétiques applicables à la location se durcissent progressivement, et un bien mal classé peut devenir non louable sans travaux parfois lourds. **Faites chiffrer ce risque avant l'achat.**
 
-## 27. Indépendants, artisans et dirigeants
+## 27. Pour les indépendants, artisans et dirigeants
 
 Un salarié a un revenu régulier, une couverture sociale correcte et une retraite constituée automatiquement. Vous n'avez aucun des trois. Les mêmes principes s'appliquent, mais les priorités changent d'ordre.
 
@@ -78,7 +78,7 @@ Un salarié a un revenu régulier, une couverture sociale correcte et une retrai
 
 **7. Préparer la cession tôt.** La valeur d'une entreprise cédée se prépare plusieurs années à l'avance : qualité des comptes, dépendance au dirigeant, contrats récurrents, propriété de la marque. Des régimes d'abattement importants existent sous conditions d'engagement de conservation — ils exigent anticipation et accompagnement spécialisé.
 
-## 28. Protéger
+## 28. Protéger : le volet que tout le monde reporte
 
 Interrogés sur le principal risque pesant sur leur patrimoine, la plupart des épargnants citent une baisse des marchés. Statistiquement, le risque dominant est **l'incapacité de travail durable**. Un portefeuille se remet d'une baisse de 40 % ; un foyer qui perd 60 % de ses revenus pendant trois ans ne s'en remet pas sans protection.
 
@@ -100,7 +100,7 @@ Un **testament** devient utile dès qu'il existe une situation non standard : co
 
 Enfin, laissez un document unique listant banques, contrats et assureurs, crédits, coordonnées du notaire, emplacement des documents importants. **Sans mots de passe en clair** : indiquez seulement où les trouver, et informez une personne de confiance de son existence.
 
-## 29. Transmission
+## 29. Transmission : les bases à connaître tôt
 
 C'est le seul domaine patrimonial où **l'anticipation produit mécaniquement de la valeur** : les abattements applicables aux donations se renouvellent par périodes pluriannuelles. Une transmission étalée sur vingt ou trente ans utilise donc plusieurs fois le même abattement, ce qu'une transmission au décès ne permet pas. Traiter le sujet à 55 ans ouvre des options qui n'existent plus à 80 ans.
 

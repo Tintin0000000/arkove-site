@@ -443,17 +443,17 @@ Reprenons 300 € par mois pendant 30 ans, avec un rendement brut de 6 % :
 
 | Frais annuels totaux | Rendement net | Capital final | Coût des frais |
 |---|---|---|---|
-| 0,3 % (ETF sur PEA) | 5,7 % | ≈ 287 000 € | — |
-| 1,5 % (contrat et fonds classiques) | 4,5 % | ≈ 227 800 € | ≈ 59 000 € |
-| 2,5 % (contrat chargé, gestion pilotée coûteuse) | 3,5 % | ≈ 191 000 € | ≈ 96 000 € |
+| 0,3 % (ETF sur PEA) | 5,7 % | ≈ 284 600 € | — |
+| 1,5 % (contrat et fonds classiques) | 4,5 % | ≈ 227 800 € | ≈ 56 800 € |
+| 2,5 % (contrat chargé, gestion pilotée coûteuse) | 3,5 % | ≈ 190 600 € | ≈ 94 000 € |
 
 <figure class="figure">
-<svg viewBox="0 0 600 160" role="img" aria-label="Capital final selon le niveau de frais annuels"><text x="0" y="31" font-size="11" fill="var(--ink)">0,3 % — ETF sur PEA</text><rect x="210" y="18" width="344.4" height="22" rx="3" fill="var(--gold)"/><text x="560.4" y="34" font-size="11" font-weight="700" fill="var(--ink)">287 000 €</text><text x="0" y="79" font-size="11" fill="var(--ink)">1,5 % — contrat classique</text><rect x="210" y="66" width="273.4" height="22" rx="3" fill="var(--gold-soft, var(--gold-2, #7FB9AC))"/><text x="489.4" y="82" font-size="11" font-weight="700" fill="var(--ink)">227 000 €</text><text x="0" y="127" font-size="11" fill="var(--ink)">2,5 % — contrat chargé</text><rect x="210" y="114" width="229.2" height="22" rx="3" fill="var(--ink-mute, var(--ink-3, #6B7A86))"/><text x="445.2" y="130" font-size="11" font-weight="700" fill="var(--ink)">191 000 €</text></svg>
-<figcaption><strong>Même versement, même rendement brut, trente ans.</strong> Deux points de frais annuels coûtent près de 100 000 € — soit presque l’équivalent de tout ce que vous avez versé.</figcaption>
+<svg viewBox="0 0 600 160" role="img" aria-label="Capital final selon le niveau de frais annuels"><text x="0" y="31" font-size="11" fill="var(--ink)">0,3 % — ETF sur PEA</text><rect x="210" y="18" width="341.6" height="22" rx="3" fill="var(--gold)"/><text x="557.6" y="34" font-size="11" font-weight="700" fill="var(--ink)">284 600 €</text><text x="0" y="79" font-size="11" fill="var(--ink)">1,5 % — contrat classique</text><rect x="210" y="66" width="273.4" height="22" rx="3" fill="var(--gold-soft, var(--gold-2, #7FB9AC))"/><text x="489.4" y="82" font-size="11" font-weight="700" fill="var(--ink)">227 800 €</text><text x="0" y="127" font-size="11" fill="var(--ink)">2,5 % — contrat chargé</text><rect x="210" y="114" width="228.7" height="22" rx="3" fill="var(--ink-mute, var(--ink-3, #6B7A86))"/><text x="444.7" y="130" font-size="11" font-weight="700" fill="var(--ink)">190 600 €</text></svg>
+<figcaption><strong>Même versement, même rendement brut, trente ans.</strong> Un écart de 2,2 points de frais annuels coûte 94 000 € — soit 87 % de tout ce que vous avez versé.</figcaption>
 </figure>
 
 
-Deux points de frais annuels coûtent près de **100 000 €** sur trente ans — soit presque l'intégralité de ce que vous avez versé. Et contrairement au rendement, les frais sont **certains** : vous les payez les bonnes comme les mauvaises années.
+Un écart de 2,2 points de frais annuels coûte **94 000 €** sur trente ans — soit 87 % de tout ce que vous avez versé. Et contrairement au rendement, les frais sont **certains** : vous les payez les bonnes comme les mauvaises années.
 
 Les quatre couches de frais à identifier systématiquement :
 

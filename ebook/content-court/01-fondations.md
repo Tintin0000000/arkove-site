@@ -67,7 +67,7 @@ Un solde négatif n'est pas un échec, c'est une information : l'étape suivante
 Notez votre solde mensuel et votre taux d'épargne (solde ÷ entrées). Ces deux chiffres servent au chapitre 2 pour vos ratios, au chapitre 3 pour calibrer votre virement automatique, et au chapitre 4 pour votre épargne de précaution — qui se calcule sur vos **dépenses**, soit le total que vous venez d'établir.
 :::
 
-## 2. Savoir où vous en êtes
+## 2. Savoir où vous en êtes : le bilan en une page
 
 La plupart des gens connaissent leur salaire et ignorent leur patrimoine net. C'est l'inverse de ce qu'il faudrait : le salaire est un flux que vous subissez en partie, le patrimoine net est un stock que vous pilotez.
 
@@ -92,7 +92,7 @@ Faites le calcul aujourd'hui, en vingt minutes, avec des chiffres approximatifs.
 
 Reportez votre patrimoine net une fois par trimestre, toujours le même jour. Deux ans plus tard, vous aurez la seule donnée qui permette de piloter : **la pente**. Une pente positive avec un patrimoine modeste est une bonne nouvelle ; un patrimoine confortable avec une pente plate est un signal d'alerte.
 
-## 3. Le budget qui tient
+## 3. Le budget qui tient : la méthode des trois enveloppes
 
 Les budgets échouent parce qu'ils reposent sur un effort de volonté répété. Un budget qui tient repose sur l'idée inverse : **l'argent est réparti automatiquement avant que vous puissiez le dépenser.**
 
@@ -116,7 +116,7 @@ La règle populaire 50/30/20 est un repère de départ, pas un outil de pilotage
 Une augmentation de 200 € absorbée par le niveau de vie disparaît en deux mois. Dirigée à 50 % vers l'épargne, elle vous laisse 100 € de plus par mois sans aucune privation ressentie. Appliquez-la à chaque augmentation, prime, fin de crédit ou baisse de charge. **La fin d'un crédit auto à 180 € est une augmentation d'épargne de 180 €, pas une permission de dépenser.**
 :::
 
-## 4. L'épargne de précaution
+## 4. L'épargne de précaution : combien, où, pourquoi
 
 Sa fonction n'est pas de rapporter : c'est de **vous empêcher de vendre vos investissements au pire moment**, ou de recourir à un crédit à 8 % parce que la chaudière a lâché. C'est une assurance que vous vous payez.
 
@@ -143,7 +143,7 @@ Laisser dormir plus d'un mois de dépenses sur un compte courant est une perte s
 Continuer d'empiler sur le livret A une fois la cible atteinte en est une autre. Un livret rempli à 22 950 € quand votre cible était 9 000 €, ce sont 14 000 € qui subissent l'inflation au lieu de travailler. **Cible atteinte = on arrête d'alimenter et on bascule vers l'investissement.**
 :::
 
-## 5. Éteindre les dettes coûteuses
+## 5. Éteindre les dettes coûteuses d'abord
 
 Rembourser une dette à 7 % équivaut à un placement qui rapporterait 7 % **net, garanti, sans volatilité**. Ça n'existe pas sur le marché. C'est pourquoi c'est presque toujours le meilleur investissement disponible.
 
@@ -160,7 +160,7 @@ Avec plusieurs crédits, deux méthodes : concentrer le surplus sur **le taux le
 
 Le crédit immobilier obéit à une autre logique : taux bas, il finance un actif, et surtout **l'inflation travaille pour l'emprunteur** — votre mensualité est fixe en euros, sa valeur réelle diminue chaque année. La question du remboursement anticipé se pose ainsi : votre argent est-il mieux employé à annuler un coût de 1,5 % ou à viser 5 à 7 % ? À taux bas, la réponse est claire.
 
-## 6. Les trois forces
+## 6. Les trois forces qui font — ou défont — votre patrimoine
 
 ### Les intérêts composés
 
@@ -209,17 +209,17 @@ Les frais se composent comme les rendements, mais en votre défaveur. **300 € 
 
 | Frais annuels | Capital final | Coût des frais |
 |---|---|---|
-| 0,3 % (ETF sur PEA) | ≈ 287 000 € | — |
-| 1,5 % (contrat classique) | ≈ 227 800 € | ≈ 59 000 € |
-| 2,5 % (contrat chargé) | ≈ 191 000 € | ≈ 96 000 € |
+| 0,3 % (ETF sur PEA) | ≈ 284 600 € | — |
+| 1,5 % (contrat classique) | ≈ 227 800 € | ≈ 56 800 € |
+| 2,5 % (contrat chargé) | ≈ 190 600 € | ≈ 94 000 € |
 
 <figure class="figure">
-<svg viewBox="0 0 600 160" role="img" aria-label="Capital final selon le niveau de frais annuels"><text x="0" y="31" font-size="11" fill="var(--ink)">0,3 % — ETF sur PEA</text><rect x="210" y="18" width="344.4" height="22" rx="3" fill="var(--gold)"/><text x="560.4" y="34" font-size="11" font-weight="700" fill="var(--ink)">287 000 €</text><text x="0" y="79" font-size="11" fill="var(--ink)">1,5 % — contrat classique</text><rect x="210" y="66" width="273.4" height="22" rx="3" fill="var(--gold-soft, var(--gold-2, #7FB9AC))"/><text x="489.4" y="82" font-size="11" font-weight="700" fill="var(--ink)">227 000 €</text><text x="0" y="127" font-size="11" fill="var(--ink)">2,5 % — contrat chargé</text><rect x="210" y="114" width="229.2" height="22" rx="3" fill="var(--ink-mute, var(--ink-3, #6B7A86))"/><text x="445.2" y="130" font-size="11" font-weight="700" fill="var(--ink)">191 000 €</text></svg>
-<figcaption><strong>Même versement, même rendement brut, trente ans.</strong> Deux points de frais annuels coûtent près de 100 000 € — soit presque l’équivalent de tout ce que vous avez versé.</figcaption>
+<svg viewBox="0 0 600 160" role="img" aria-label="Capital final selon le niveau de frais annuels"><text x="0" y="31" font-size="11" fill="var(--ink)">0,3 % — ETF sur PEA</text><rect x="210" y="18" width="341.6" height="22" rx="3" fill="var(--gold)"/><text x="557.6" y="34" font-size="11" font-weight="700" fill="var(--ink)">284 600 €</text><text x="0" y="79" font-size="11" fill="var(--ink)">1,5 % — contrat classique</text><rect x="210" y="66" width="273.4" height="22" rx="3" fill="var(--gold-soft, var(--gold-2, #7FB9AC))"/><text x="489.4" y="82" font-size="11" font-weight="700" fill="var(--ink)">227 800 €</text><text x="0" y="127" font-size="11" fill="var(--ink)">2,5 % — contrat chargé</text><rect x="210" y="114" width="228.7" height="22" rx="3" fill="var(--ink-mute, var(--ink-3, #6B7A86))"/><text x="444.7" y="130" font-size="11" font-weight="700" fill="var(--ink)">190 600 €</text></svg>
+<figcaption><strong>Même versement, même rendement brut, trente ans.</strong> Un écart de 2,2 points de frais annuels coûte 94 000 € — soit 87 % de tout ce que vous avez versé.</figcaption>
 </figure>
 
 
-Deux points de frais coûtent près de 100 000 € sur trente ans, soit presque tout ce que vous avez versé. Et contrairement au rendement, **les frais sont certains** : vous les payez les bonnes comme les mauvaises années.
+Un écart de 2,2 points de frais coûte 94 000 € sur trente ans, soit 87 % de tout ce que vous avez versé. Et contrairement au rendement, **les frais sont certains** : vous les payez les bonnes comme les mauvaises années.
 
 Quatre couches à identifier : frais **sur versement** (doivent être à 0 %), frais de **gestion de l'enveloppe** (0,5 à 0,8 % en assurance-vie, 0 à 0,2 % en PEA en ligne), frais **internes des supports** (0,05 à 0,30 % pour un ETF large, 1,5 à 2,5 % pour un fonds actif), frais **d'arbitrage ou de courtage**.
 

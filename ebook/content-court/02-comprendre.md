@@ -2,7 +2,7 @@
 
 > Quatre notions sans lesquelles tout conseil d'investissement est inapplicable : ce qu'est vraiment un rendement, ce qu'est vraiment un risque, ce que font les classes d'actifs, et pourquoi la simplicité bat la sophistication.
 
-## 7. Rendement et risque
+## 7. Rendement et risque : ce que les mots cachent
 
 Un rendement annoncé est toujours brut. **Rendement net = brut − frais − fiscalité − inflation.** Un placement à 5 % brut avec 1,5 % de frais, 17,2 % de prélèvements sociaux et 2 % d'inflation délivre environ **0,9 % réel**. Le même actif à 0,2 % de frais dans un PEA mature délivre environ **2,2 % réel** — plus du double, pour un actif identique. L'emballage compte autant que le contenu.
 
@@ -37,7 +37,7 @@ D'où la règle la plus importante du guide : **n'investissez en actions que l'a
 
 Presque toutes les catastrophes patrimoniales individuelles viennent de la violation de ce tableau.
 
-## 8. Les classes d'actifs
+## 8. Les classes d'actifs, expliquées simplement
 
 **Les actions** — vous possédez des entreprises. Rendement issu des bénéfices distribués et de la hausse de valeur. Historiquement la classe la plus performante sur longue période : de l'ordre de **7 à 8 % par an nominal**, soit 5 à 6 % réels, avec une dispersion énorme — des décennies à près de 0 % ont existé. Horizon : 8 à 10 ans minimum. Rôle : moteur de performance.
 
@@ -64,7 +64,7 @@ Presque toutes les catastrophes patrimoniales individuelles viennent de la viola
 | Cryptoactifs | Non estimable | Extrême | — | Variable |
 | Private equity | 4 à 8 % | Peu visible | 8-10 ans | Très faible |
 
-## 9. Pourquoi l'ETF indiciel gagne
+## 9. Pourquoi l'ETF indiciel bat la plupart des gérants
 
 La **gestion active** sélectionne des titres pour battre le marché, et facture 1,5 à 2,5 % par an. La **gestion passive** achète le marché entier dans ses proportions, et facture 0,05 à 0,30 %.
 

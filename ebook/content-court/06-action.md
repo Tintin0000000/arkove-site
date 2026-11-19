@@ -59,7 +59,7 @@ Peu de tâches par semaine, volontairement : un plan surchargé est un plan aban
 3. **Faire l'audit de frais.** Le seul gain à la fois immédiat, certain et récurrent.
 :::
 
-## 31. La revue annuelle
+## 31. La revue annuelle : une heure par an
 
 Une fois le système en place, le pilotage demande très peu de temps. L'excès de suivi est contre-productif : il multiplie les occasions d'intervenir à mauvais escient.
 
@@ -80,7 +80,7 @@ Une fois le système en place, le pilotage demande très peu de temps. L'excès 
 Dans la grande majorité des années, la réponse est non — et c'est le signe d'un système bien construit. Un patrimoine qui exige des interventions constantes est mal structuré.
 :::
 
-## 32. Rester à jour
+## 32. Pour aller plus loin, et rester à jour
 
 | Besoin | Source officielle |
 |---|---|

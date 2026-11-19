@@ -25,6 +25,8 @@ La finance personnelle a une particularité : les règles qui comptent sont peu 
 
 Chaque partie se termine par un encadré **L'essentiel**. Relus seuls, ces six encadrés vous remettent en selle en dix minutes.
 
+Le **classeur de calcul** fourni avec ce guide reprend les six outils des chapitres 1, 2, 19, 26 et 30, formules déjà écrites : entrées et sorties, bilan patrimonial, suivi trimestriel, allocation, cash-flow locatif et plan 90 jours.
+
 ## Deux types de chiffres
 
 Les **chiffres de structure** — mécanique des intérêts composés, effet des frais, logique de la diversification — ne bougent pas.

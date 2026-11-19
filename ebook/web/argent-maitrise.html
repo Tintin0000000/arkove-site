@@ -465,7 +465,7 @@ figure.figure figcaption{
 <p>Chaque chapitre se termine par un encadré <strong>L’essentiel</strong> : trois à cinq lignes qui résument ce qu’il faut en retenir. Si vous relisez le guide dans six mois, ces encadrés seuls vous remettront en selle en vingt minutes.</p>
 <div class="action">
 <p><strong>Les outils à côté du texte</strong></p>
-<p>Plusieurs chapitres s’appuient sur des tableaux à remplir : bilan patrimonial, suivi mensuel, calcul de cash-flow locatif. Les modèles vierges sont rassemblés en <strong>Annexe E</strong>. Imprimez-les ou recopiez-les dans un tableur — un guide lu sans être appliqué ne vaut rien.</p>
+<p>Plusieurs chapitres s’appuient sur des tableaux à remplir : entrées et sorties, bilan patrimonial, suivi trimestriel, allocation, cash-flow locatif. Les modèles vierges sont rassemblés en <strong>Annexe E</strong>, et le <strong>classeur de calcul</strong> fourni avec ce guide en reprend chacun avec les formules déjà écrites — un guide lu sans être appliqué ne vaut rien.</p>
 </div>
 </section>
 <section id="les-chiffres-de-ce-guide-et-ce-quil-faut-en-faire" class="level2">
@@ -1193,32 +1193,32 @@ figure.figure figcaption{
 <tr class="odd">
 <td>0,3 % (ETF sur PEA)</td>
 <td>5,7 %</td>
-<td>≈ 287 000 €</td>
+<td>≈ 284 600 €</td>
 <td>—</td>
 </tr>
 <tr class="even">
 <td>1,5 % (contrat et fonds classiques)</td>
 <td>4,5 %</td>
 <td>≈ 227 800 €</td>
-<td>≈ 59 000 €</td>
+<td>≈ 56 800 €</td>
 </tr>
 <tr class="odd">
 <td>2,5 % (contrat chargé, gestion pilotée coûteuse)</td>
 <td>3,5 %</td>
-<td>≈ 191 000 €</td>
-<td>≈ 96 000 €</td>
+<td>≈ 190 600 €</td>
+<td>≈ 94 000 €</td>
 </tr>
 </tbody>
 </table>
 <figure class="figure">
 <svg viewBox="0 0 600 160" role="img" aria-label="Capital final selon le niveau de frais annuels">
-<text x="0" y="31" font-size="11" fill="var(--ink)">0,3 % — ETF sur PEA</text><rect x="210" y="18" width="344.4" height="22" rx="3" fill="var(--gold)"/><text x="560.4" y="34" font-size="11" font-weight="700" fill="var(--ink)">287 000 €</text><text x="0" y="79" font-size="11" fill="var(--ink)">1,5 % — contrat classique</text><rect x="210" y="66" width="273.4" height="22" rx="3" fill="var(--gold-soft, var(--gold-2, #7FB9AC))"/><text x="489.4" y="82" font-size="11" font-weight="700" fill="var(--ink)">227 000 €</text><text x="0" y="127" font-size="11" fill="var(--ink)">2,5 % — contrat chargé</text><rect x="210" y="114" width="229.2" height="22" rx="3" fill="var(--ink-mute, var(--ink-3, #6B7A86))"/><text x="445.2" y="130" font-size="11" font-weight="700" fill="var(--ink)">191 000 €</text>
+<text x="0" y="31" font-size="11" fill="var(--ink)">0,3 % — ETF sur PEA</text><rect x="210" y="18" width="341.6" height="22" rx="3" fill="var(--gold)"/><text x="557.6" y="34" font-size="11" font-weight="700" fill="var(--ink)">284 600 €</text><text x="0" y="79" font-size="11" fill="var(--ink)">1,5 % — contrat classique</text><rect x="210" y="66" width="273.4" height="22" rx="3" fill="var(--gold-soft, var(--gold-2, #7FB9AC))"/><text x="489.4" y="82" font-size="11" font-weight="700" fill="var(--ink)">227 800 €</text><text x="0" y="127" font-size="11" fill="var(--ink)">2,5 % — contrat chargé</text><rect x="210" y="114" width="228.7" height="22" rx="3" fill="var(--ink-mute, var(--ink-3, #6B7A86))"/><text x="444.7" y="130" font-size="11" font-weight="700" fill="var(--ink)">190 600 €</text>
 </svg>
 <figcaption>
-<strong>Même versement, même rendement brut, trente ans.</strong> Deux points de frais annuels coûtent près de 100 000 € — soit presque l’équivalent de tout ce que vous avez versé.
+<strong>Même versement, même rendement brut, trente ans.</strong> Un écart de 2,2 points de frais annuels coûte 94 000 € — soit 87 % de tout ce que vous avez versé.
 </figcaption>
 </figure>
-<p>Deux points de frais annuels coûtent près de <strong>100 000 €</strong> sur trente ans — soit presque l’intégralité de ce que vous avez versé. Et contrairement au rendement, les frais sont <strong>certains</strong> : vous les payez les bonnes comme les mauvaises années.</p>
+<p>Un écart de 2,2 points de frais annuels coûte <strong>94 000 €</strong> sur trente ans — soit 87 % de tout ce que vous avez versé. Et contrairement au rendement, les frais sont <strong>certains</strong> : vous les payez les bonnes comme les mauvaises années.</p>
 <p>Les quatre couches de frais à identifier systématiquement :</p>
 <ol type="1">
 <li><strong>Frais sur versement</strong> — prélevés à l’entrée. Doivent être de 0 %. Ils sont négociables et de nombreux contrats en ligne les suppriment entièrement.</li>
@@ -3898,7 +3898,7 @@ figure.figure figcaption{
       { k: 'Reste à épargner', id: 'reste' },
       { k: 'Délai', id: 'delai', sub: 1 }
     ]);
-    var s1 = slider({ id: 'pr-dep', label: 'Dépenses mensuelles', min: 500, max: 6000, step: 50, value: 1900, fmt: eur, on: run });
+    var s1 = slider({ id: 'pr-dep', label: 'Dépenses mensuelles', min: 500, max: 6000, step: 50, value: 2300, fmt: eur, on: run });
     var s2 = select({
       id: 'pr-prof', label: 'Votre situation', index: 1, on: run, options: [
         { v: 3, t: 'CDI stable, sans personne à charge — 3 mois' },
@@ -4017,7 +4017,7 @@ figure.figure figcaption{
     var s2 = slider({ id: 'fr-duree', label: 'Durée', min: 5, max: 40, step: 1, value: 30, fmt: function (v) { return v + ' ans'; }, on: run });
     var s3 = slider({ id: 'fr-brut', label: 'Rendement brut annuel', min: 2, max: 10, step: 0.25, value: 6, fmt: function (v) { return pct(v, 2); }, on: run });
     var s4 = slider({ id: 'fr-a', label: 'Contrat à frais faibles', min: 0, max: 1.5, step: 0.05, value: 0.3, fmt: function (v) { return pct(v, 2); }, on: run });
-    var s5 = slider({ id: 'fr-b', label: 'Contrat à frais élevés', min: 0.2, max: 3.5, step: 0.05, value: 1.8, fmt: function (v) { return pct(v, 2); }, on: run });
+    var s5 = slider({ id: 'fr-b', label: 'Contrat à frais élevés', min: 0.2, max: 3.5, step: 0.05, value: 1.5, fmt: function (v) { return pct(v, 2); }, on: run });
     var g1 = document.createElement('div'); g1.className = 'grid2'; g1.appendChild(s1.el); g1.appendChild(s2.el);
     var g2 = document.createElement('div'); g2.className = 'grid2'; g2.appendChild(s4.el); g2.appendChild(s5.el);
     var out = cells([
@@ -4081,16 +4081,18 @@ figure.figure figcaption{
     var pctf = function (v) { return pct(v, 1); };
     var g1 = document.createElement('div'); g1.className = 'grid2';
     g1.appendChild(mk('prix', 'Prix d’achat', 30000, 600000, 5000, 150000, eur));
-    g1.appendChild(mk('trav', 'Travaux', 0, 120000, 1000, 8500, eur));
+    g1.appendChild(mk('trav', 'Travaux', 0, 120000, 500, 8500, eur));
     var g2 = document.createElement('div'); g2.className = 'grid2';
-    g2.appendChild(mk('notaire', 'Frais de notaire', 2, 9, 0.5, 7.5, pctf));
+    g2.appendChild(mk('notaire', 'Frais de notaire', 2, 9, 0.1, 7.7, pctf));
     g2.appendChild(mk('loyer', 'Loyer mensuel hors charges', 200, 3000, 25, 750, eur));
     var g3 = document.createElement('div'); g3.className = 'grid2';
-    g3.appendChild(mk('taux', 'Taux du crédit (assurance incluse)', 1, 7, 0.1, 3.8, pctf));
+    g3.appendChild(mk('taux', 'Taux du crédit (hors assurance)', 1, 7, 0.1, 3.5, pctf));
     g3.appendChild(mk('duree', 'Durée du crédit', 10, 25, 1, 20, function (v) { return v + ' ans'; }));
     var g4 = document.createElement('div'); g4.className = 'grid2';
-    g4.appendChild(mk('charges', 'Charges annuelles fixes (taxe foncière, copro, PNO)', 0, 6000, 50, 1650, eur));
-    g4.appendChild(mk('gestion', 'Gestion + provision travaux', 0, 30, 1, 15, function (v) { return v + ' % des loyers'; }));
+    g4.appendChild(mk('assur', 'Assurance emprunteur (par an)', 0, 1, 0.05, 0.3, pctf));
+    g4.appendChild(mk('charges', 'Charges fixes annuelles (foncier, copro, PNO, comptable)', 0, 6000, 50, 2050, eur));
+    var g5 = document.createElement('div'); g5.className = 'grid2';
+    g5.appendChild(mk('gestion', 'Gestion + provision travaux', 0, 30, 1, 15, function (v) { return v + ' % des loyers'; }));
     var out = cells([
       { k: 'Coût total', id: 'cout' },
       { k: 'Mensualité', id: 'mens' },
@@ -4099,7 +4101,8 @@ figure.figure figcaption{
       { k: 'Rendement net de charges', id: 'rn' }
     ]);
     var note = document.createElement('div'); note.className = 'simnote';
-    b.appendChild(g1); b.appendChild(g2); b.appendChild(g3); b.appendChild(g4); b.appendChild(out); b.appendChild(note);
+    b.appendChild(g1); b.appendChild(g2); b.appendChild(g3); b.appendChild(g4); b.appendChild(g5);
+    b.appendChild(out); b.appendChild(note);
 
     function run() {
       var prix = s.prix.get(), trav = s.trav.get();
@@ -4108,7 +4111,7 @@ figure.figure figcaption{
       var loyerReel = loyerAn * 0.96;                       /* provision de vacance : 4 % */
       var chAn = s.charges.get() + loyerAn * s.gestion.get() / 100;
       var net = loyerReel - chAn;
-      var m = pmt(cout, s.taux.get(), s.duree.get());
+      var m = pmt(cout, s.taux.get(), s.duree.get()) + cout * s.assur.get() / 100 / 12;
       var cf = net / 12 - m;
       $('[data-o=cout]', out).textContent = eur(cout);
       $('[data-o=mens]', out).textContent = eur(m);

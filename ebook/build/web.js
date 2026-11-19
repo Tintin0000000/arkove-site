@@ -72,7 +72,7 @@
       { k: 'Reste à épargner', id: 'reste' },
       { k: 'Délai', id: 'delai', sub: 1 }
     ]);
-    var s1 = slider({ id: 'pr-dep', label: 'Dépenses mensuelles', min: 500, max: 6000, step: 50, value: 1900, fmt: eur, on: run });
+    var s1 = slider({ id: 'pr-dep', label: 'Dépenses mensuelles', min: 500, max: 6000, step: 50, value: 2300, fmt: eur, on: run });
     var s2 = select({
       id: 'pr-prof', label: 'Votre situation', index: 1, on: run, options: [
         { v: 3, t: 'CDI stable, sans personne à charge — 3 mois' },
@@ -191,7 +191,7 @@
     var s2 = slider({ id: 'fr-duree', label: 'Durée', min: 5, max: 40, step: 1, value: 30, fmt: function (v) { return v + ' ans'; }, on: run });
     var s3 = slider({ id: 'fr-brut', label: 'Rendement brut annuel', min: 2, max: 10, step: 0.25, value: 6, fmt: function (v) { return pct(v, 2); }, on: run });
     var s4 = slider({ id: 'fr-a', label: 'Contrat à frais faibles', min: 0, max: 1.5, step: 0.05, value: 0.3, fmt: function (v) { return pct(v, 2); }, on: run });
-    var s5 = slider({ id: 'fr-b', label: 'Contrat à frais élevés', min: 0.2, max: 3.5, step: 0.05, value: 1.8, fmt: function (v) { return pct(v, 2); }, on: run });
+    var s5 = slider({ id: 'fr-b', label: 'Contrat à frais élevés', min: 0.2, max: 3.5, step: 0.05, value: 1.5, fmt: function (v) { return pct(v, 2); }, on: run });
     var g1 = document.createElement('div'); g1.className = 'grid2'; g1.appendChild(s1.el); g1.appendChild(s2.el);
     var g2 = document.createElement('div'); g2.className = 'grid2'; g2.appendChild(s4.el); g2.appendChild(s5.el);
     var out = cells([
@@ -255,16 +255,18 @@
     var pctf = function (v) { return pct(v, 1); };
     var g1 = document.createElement('div'); g1.className = 'grid2';
     g1.appendChild(mk('prix', 'Prix d’achat', 30000, 600000, 5000, 150000, eur));
-    g1.appendChild(mk('trav', 'Travaux', 0, 120000, 1000, 8500, eur));
+    g1.appendChild(mk('trav', 'Travaux', 0, 120000, 500, 8500, eur));
     var g2 = document.createElement('div'); g2.className = 'grid2';
-    g2.appendChild(mk('notaire', 'Frais de notaire', 2, 9, 0.5, 7.5, pctf));
+    g2.appendChild(mk('notaire', 'Frais de notaire', 2, 9, 0.1, 7.7, pctf));
     g2.appendChild(mk('loyer', 'Loyer mensuel hors charges', 200, 3000, 25, 750, eur));
     var g3 = document.createElement('div'); g3.className = 'grid2';
-    g3.appendChild(mk('taux', 'Taux du crédit (assurance incluse)', 1, 7, 0.1, 3.8, pctf));
+    g3.appendChild(mk('taux', 'Taux du crédit (hors assurance)', 1, 7, 0.1, 3.5, pctf));
     g3.appendChild(mk('duree', 'Durée du crédit', 10, 25, 1, 20, function (v) { return v + ' ans'; }));
     var g4 = document.createElement('div'); g4.className = 'grid2';
-    g4.appendChild(mk('charges', 'Charges annuelles fixes (taxe foncière, copro, PNO)', 0, 6000, 50, 1650, eur));
-    g4.appendChild(mk('gestion', 'Gestion + provision travaux', 0, 30, 1, 15, function (v) { return v + ' % des loyers'; }));
+    g4.appendChild(mk('assur', 'Assurance emprunteur (par an)', 0, 1, 0.05, 0.3, pctf));
+    g4.appendChild(mk('charges', 'Charges fixes annuelles (foncier, copro, PNO, comptable)', 0, 6000, 50, 2050, eur));
+    var g5 = document.createElement('div'); g5.className = 'grid2';
+    g5.appendChild(mk('gestion', 'Gestion + provision travaux', 0, 30, 1, 15, function (v) { return v + ' % des loyers'; }));
     var out = cells([
       { k: 'Coût total', id: 'cout' },
       { k: 'Mensualité', id: 'mens' },
@@ -273,7 +275,8 @@
       { k: 'Rendement net de charges', id: 'rn' }
     ]);
     var note = document.createElement('div'); note.className = 'simnote';
-    b.appendChild(g1); b.appendChild(g2); b.appendChild(g3); b.appendChild(g4); b.appendChild(out); b.appendChild(note);
+    b.appendChild(g1); b.appendChild(g2); b.appendChild(g3); b.appendChild(g4); b.appendChild(g5);
+    b.appendChild(out); b.appendChild(note);
 
     function run() {
       var prix = s.prix.get(), trav = s.trav.get();
@@ -282,7 +285,7 @@
       var loyerReel = loyerAn * 0.96;                       /* provision de vacance : 4 % */
       var chAn = s.charges.get() + loyerAn * s.gestion.get() / 100;
       var net = loyerReel - chAn;
-      var m = pmt(cout, s.taux.get(), s.duree.get());
+      var m = pmt(cout, s.taux.get(), s.duree.get()) + cout * s.assur.get() / 100 / 12;
       var cf = net / 12 - m;
       $('[data-o=cout]', out).textContent = eur(cout);
       $('[data-o=mens]', out).textContent = eur(m);

@@ -35,7 +35,7 @@ Chaque chapitre se termine par un encadré **L'essentiel** : trois à cinq ligne
 ::: {.action}
 **Les outils à côté du texte**
 
-Plusieurs chapitres s'appuient sur des tableaux à remplir : bilan patrimonial, suivi mensuel, calcul de cash-flow locatif. Les modèles vierges sont rassemblés en **Annexe E**. Imprimez-les ou recopiez-les dans un tableur — un guide lu sans être appliqué ne vaut rien.
+Plusieurs chapitres s'appuient sur des tableaux à remplir : entrées et sorties, bilan patrimonial, suivi trimestriel, allocation, cash-flow locatif. Les modèles vierges sont rassemblés en **Annexe E**, et le **classeur de calcul** fourni avec ce guide en reprend chacun avec les formules déjà écrites — un guide lu sans être appliqué ne vaut rien.
 :::
 
 ## Les chiffres de ce guide, et ce qu'il faut en faire

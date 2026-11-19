@@ -5,8 +5,8 @@ Guide de finances personnelles (français), niveaux débutant et intermédiaire.
 
 | Édition | Source | Sortie | Volume |
 |---|---|---|---|
-| **Essentielle** (PDF vendu) | `content-court/` | `Argent-Maitrise-essentiel.pdf` | 66 p., 15 200 mots |
-| **Complète** (PDF long) | `content/` | `Argent-Maitrise-ebook.pdf` | 145 p., 25 500 mots |
+| **Essentielle** (PDF vendu) | `content-court/` | `Argent-Maitrise-essentiel.pdf` | 66 p., 15 350 mots |
+| **Complète** (PDF long) | `content/` | `Argent-Maitrise-ebook.pdf` | 145 p., 25 330 mots |
 | **Web interactive** | `content/` | `web/argent-maitrise.html` | texte long + 5 simulateurs |
 | **Page de vente** | écrite à la main | `web/vente.html` | page autonome à déposer sur le domaine |
 | **Classeur compagnon** | `classeur/build_classeur.py` | `classeur/Argent-Maitrise-classeur.xlsx` | 7 feuilles, 97 formules |
@@ -49,6 +49,25 @@ Conventions de balisage, en plus du Markdown standard :
   deux formats. Les couleurs viennent des tokens avec repli
   (`var(--gold-soft, var(--gold-2, …))`), car les feuilles print et web ne
   nomment pas les nuances secondaires de la même façon.
+
+## Audit de cohérence
+
+Les trois éditions, le classeur et la page de vente doivent raconter la même
+chose. Un script le vérifie :
+
+```bash
+python3 build/audit.py
+```
+
+Il contrôle la numérotation des chapitres, l'identité des titres entre les deux
+éditions, la validité des renvois internes, le nombre de figures et de
+simulateurs, les décomptes annoncés dans les gabarits et la page de vente, la
+conformité du sommaire commercial aux titres réels, le nombre de pages du PDF
+vendu, et la non-réapparition des chiffres déjà corrigés. Il sort en erreur
+si quoi que ce soit diverge.
+
+**Les titres de chapitres sont ceux de `content/`** : l'édition essentielle les
+reprend à l'identique. Ne les raccourcissez pas d'un côté seulement.
 
 ## Règle de pagination
 

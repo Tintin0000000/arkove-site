@@ -4,7 +4,7 @@
 >
 > **Tous les plafonds, taux et seuils de cette partie sont indicatifs et rassemblés en Annexe B. Vérifiez-les à leur source officielle le jour où vous agissez.**
 
-## 11. Deux décisions à ne pas confondre
+## 11. Carte des enveloppes : quelle enveloppe pour quel objectif
 
 L'erreur la plus répandue est de mélanger deux questions indépendantes : **dans quoi j'investis** (actions, obligations, immobilier — Partie IV) et **où je le loge** (PEA, assurance-vie, PER, CTO — cette partie). Vous pouvez détenir le même ETF dans trois enveloppes ; ce qui change, ce sont les frais, la fiscalité, les conditions de sortie et le traitement au décès.
 
@@ -20,7 +20,7 @@ L'erreur la plus répandue est de mélanger deux questions indépendantes : **da
 
 Trois questions avant d'ouvrir quoi que ce soit : **quand en aurai-je besoin ?** **Ai-je besoin d'y accéder sans contrainte ?** **Quel est mon taux marginal d'imposition ?** Cette dernière commande tout l'arbitrage du PER.
 
-## 12. Le PEA
+## 12. Le PEA : le meilleur outil pour les actions
 
 Le principe fiscal est remarquablement simple : **tant que l'argent reste dans le plan, vous ne payez aucun impôt**, quels que soient vos achats, ventes et dividendes. Vous pouvez arbitrer pendant vingt ans sans déclencher une seule imposition. Après **5 ans**, les gains sortent **exonérés d'impôt sur le revenu** ; seuls les prélèvements sociaux de 17,2 % restent dus.
 
@@ -45,7 +45,7 @@ Les frais sont plafonnés par la réglementation, mais les écarts restent consi
 
 Limites : plafond de versement, univers restreint, et **aucun avantage successoral** — le PEA est clôturé au décès. C'est le rôle de l'assurance-vie.
 
-## 13. L'assurance-vie
+## 13. L'assurance-vie : la boîte à outils polyvalente
 
 Ce n'est pas un produit mais une enveloppe qui peut contenir presque tout : fonds euros garanti, ETF, fonds actions et obligataires, SCPI, parfois private equity. **Aucun plafond**, disponible à tout moment, et un régime successoral sans équivalent.
 
@@ -72,7 +72,7 @@ Relisez vos clauses tous les trois ans et à chaque événement familial. Pour u
 
 **Deux règles d'or.** Ne fermez **jamais** un vieux contrat : l'antériorité est attachée au contrat, pas à vous — laissez-y un montant symbolique et ouvrez-en un meilleur à côté. Et ouvrez-en un tôt, même avec 500 €, pour démarrer le compteur des 8 ans.
 
-## 14. Le PER
+## 14. Le PER : avantage fiscal aujourd'hui, contrainte demain
 
 Vous versez, vous **déduisez ce versement de votre revenu imposable**, et vous récupérez le capital à la retraite où il sera imposé. Ce n'est donc pas un cadeau fiscal : c'est un **report d'imposition**, gagnant si votre taux d'imposition à la retraite est inférieur à celui d'aujourd'hui.
 
@@ -93,7 +93,7 @@ La contrepartie est réelle : **l'argent est bloqué jusqu'à la retraite**, sau
 
 Quatre erreurs classiques : ouvrir un PER avec un TMI de 11 % ; oublier l'imposition de sortie ; choisir un PER chargé en frais — un avantage de 30 % détruit par 2 % de frais annuels sur vingt-cinq ans n'est plus un avantage ; ignorer l'option de non-déduction à l'entrée, qui rend la sortie plus favorable.
 
-## 15. Le compte-titres ordinaire
+## 15. Le compte-titres ordinaire : quand il devient utile
 
 **Aucun avantage fiscal, aucune limite.** Accès à l'intégralité des marchés mondiaux : actions américaines en direct, obligations, ETF non éligibles au PEA, matières premières.
 
@@ -103,7 +103,7 @@ Mécanisme utile : les **moins-values s'imputent** sur les plus-values de même 
 
 Le CTO vient **après** les enveloppes fiscales, sauf besoin spécifique : à actif identique, un ETF dans un PEA de plus de cinq ans échappe à l'impôt sur le revenu, là où le CTO subit 30 %.
 
-## 16. L'immobilier
+## 16. L'immobilier : trois usages, trois logiques
 
 **La résidence principale.** En faveur : suppression du loyer à terme, protection contre la hausse des loyers, épargne forcée, **exonération totale de plus-value à la revente**, accès au crédit le plus long et le moins cher. En défaveur : frais d'acquisition de **7 à 8 % dans l'ancien** (2 à 3 % dans le neuf), perte de mobilité, capital immobilisé, charges de propriétaire. Règle pratique : **en dessous de cinq ans de détention prévue, la location est généralement plus avantageuse** ; au-delà de huit à dix ans, l'achat prend l'avantage.
 
@@ -126,7 +126,7 @@ Ne construisez aucun projet locatif sur un chiffre lu dans un guide, y compris c
 
 **Les SCPI.** Immobilier professionnel sans gestion, à partir de quelques milliers d'euros. Quatre points à comprendre : **frais d'entrée de 8 à 12 %**, qui imposent huit à dix ans de détention ; **prix de part non garanti** — plusieurs SCPI ont dévalorisé de 10 à 17 % en 2023-2024 ; **liquidité limitée**, la revente dépendant de la capacité de la société de gestion à trouver un acquéreur ; **fiscalité lourde en direct**, les revenus étant imposés comme des revenus fonciers au barème **plus** prélèvements sociaux. Les loger dans une assurance-vie adoucit sensiblement cette fiscalité, au prix d'une offre plus restreinte.
 
-## 17. L'ordre de remplissage
+## 17. L'ordre de remplissage : la séquence par défaut
 
 À capacité d'épargne donnée, l'ordre change le résultat final de plusieurs dizaines de milliers d'euros. La séquence se classe par **rendement certain décroissant**.
 
