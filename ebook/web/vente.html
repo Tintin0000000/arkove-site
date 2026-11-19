@@ -1,0 +1,477 @@
+<title>Argent Maîtrisé</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Page de vente — bandes alternées, colonne de lecture étroite, un seul accent vert */
+:root{
+  --paper:#FBFCFB; --surface:#FFFFFF; --surface-2:#F1F5F4; --deep:#16202A;
+  --ink:#16202A; --ink-2:#3A4A57; --ink-3:#6B7A86;
+  --gold:#0E6B5C; --gold-2:#7FB9AC; --gold-tint:#E9F4F0;
+  --line:#DDE4E6; --warn:#C0392B;
+  --shadow:0 1px 2px rgba(22,32,42,.05), 0 10px 30px -14px rgba(22,32,42,.18);
+  --font-d:"Bricolage Grotesque","Inter",system-ui,sans-serif;
+  --font-b:"Source Serif 4",Charter,Georgia,serif;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --paper:#0E161C; --surface:#16212A; --surface-2:#1C2932; --deep:#0A1116;
+  --ink:#EDF4F2; --ink-2:#A8BAB7; --ink-3:#7A8C8A;
+  --gold:#3FA38F; --gold-2:#2A6659; --gold-tint:#12282A;
+  --line:#243039; --warn:#E27A66;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --paper:#0E161C; --surface:#16212A; --surface-2:#1C2932; --deep:#0A1116;
+  --ink:#EDF4F2; --ink-2:#A8BAB7; --ink-3:#7A8C8A;
+  --gold:#3FA38F; --gold-2:#2A6659; --gold-tint:#12282A;
+  --line:#243039; --warn:#E27A66;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+  color-scheme:dark;
+}
+*{ box-sizing:border-box; }
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--font-b); font-size:17px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{
+  max-width:46rem; margin:0 auto;
+  padding-left:max(16px, env(safe-area-inset-left,0px));
+  padding-right:max(16px, env(safe-area-inset-right,0px));
+}
+section{ padding-block:64px; }
+section.tint{ background:var(--surface-2); }
+h2{
+  font-family:var(--font-d); font-size:clamp(26px,4.6vw,34px); line-height:1.12;
+  font-weight:800; letter-spacing:-.028em; margin:0 0 10px; text-wrap:balance;
+}
+h3{ font-family:var(--font-d); font-size:18px; font-weight:700; margin:0 0 8px; letter-spacing:-.012em; }
+p{ margin:0 0 1em; }
+.lede{ font-size:18.5px; color:var(--ink-2); margin-bottom:30px; max-width:36rem; }
+.eyebrow{
+  font-family:var(--font-d); font-size:11px; font-weight:700; letter-spacing:.17em;
+  text-transform:uppercase; color:var(--gold); margin:0 0 12px;
+}
+
+/* ---- Barre ---- */
+#bar{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:30;
+  background:color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter:saturate(1.6) blur(12px); border-bottom:1px solid var(--line);
+}
+body::before{ content:""; position:fixed; inset:0 0 auto; z-index:31;
+  height:env(safe-area-inset-top,0px); background:var(--paper); }
+#bar .wrap{ display:flex; align-items:center; gap:14px; padding-block:12px; }
+.logo{ font-family:var(--font-d); font-weight:800; font-size:17px; letter-spacing:-.02em; flex:1 1 auto; }
+.logo em{ font-style:normal; color:var(--gold); }
+.btn{
+  display:inline-block; font-family:var(--font-d); font-weight:700; font-size:15px;
+  background:var(--gold); color:#FFFFFF; border:0; border-radius:9px;
+  padding:12px 20px; text-decoration:none; cursor:pointer; white-space:nowrap;
+}
+.btn:hover{ filter:brightness(1.08); }
+.btn.sm{ padding:9px 15px; font-size:14px; }
+.btn.ghost{ background:transparent; color:var(--gold); border:1.5px solid var(--gold); }
+
+/* ---- Hero ---- */
+.hero{ padding-block:56px 50px; }
+.hero h1{
+  font-family:var(--font-d); font-size:clamp(36px,7.2vw,56px); line-height:1.0;
+  font-weight:800; letter-spacing:-.038em; margin:0 0 20px; text-wrap:balance;
+}
+.hero h1 em{ font-style:normal; color:var(--gold); }
+.hero .sub{ font-size:19.5px; line-height:1.55; color:var(--ink-2); max-width:34rem; margin:0 0 28px; }
+.cta-row{ display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-bottom:16px; }
+.price-inline{ font-family:var(--font-d); font-size:14.5px; color:var(--ink-3); }
+.price-inline b{ color:var(--ink); font-size:17px; }
+.price-inline s{ color:var(--ink-3); }
+.trust{ font-family:var(--font-d); font-size:13px; color:var(--ink-3); margin:0; }
+
+/* ---- Grilles ---- */
+.cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:26px; }
+.card{
+  background:var(--surface); border:1px solid var(--line); border-radius:13px;
+  padding:20px; box-shadow:var(--shadow);
+}
+.card .n{
+  font-family:var(--font-d); font-size:11px; font-weight:700; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--gold); margin-bottom:8px;
+}
+.card p{ font-size:15.5px; line-height:1.55; color:var(--ink-2); margin:0; }
+.stats{ display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:18px; margin:30px 0 0; }
+.stat .v{
+  font-family:var(--font-d); font-size:34px; font-weight:800; letter-spacing:-.03em;
+  color:var(--gold); line-height:1; font-variant-numeric:tabular-nums;
+}
+.stat .k{ font-family:var(--font-d); font-size:13px; color:var(--ink-3); margin-top:6px; }
+
+/* ---- Listes oui / non ---- */
+.two{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; margin-top:24px; }
+.lst{ list-style:none; padding:0; margin:0; }
+.lst li{ position:relative; padding-left:28px; margin-bottom:10px; font-size:16px; color:var(--ink-2); }
+.lst li::before{
+  content:""; position:absolute; left:0; top:.52em; width:14px; height:3px;
+  border-radius:2px; background:var(--gold);
+}
+.lst.no li::before{ background:var(--ink-3); opacity:.5; }
+
+/* ---- Sommaire ---- */
+.toc{ margin-top:22px; }
+.toc details{
+  border:1px solid var(--line); border-radius:11px; background:var(--surface);
+  margin-bottom:10px; overflow:hidden;
+}
+.toc summary{
+  cursor:pointer; list-style:none; padding:14px 18px;
+  font-family:var(--font-d); font-weight:700; font-size:15.5px; color:var(--ink);
+  display:flex; justify-content:space-between; gap:12px; align-items:center;
+}
+.toc summary::-webkit-details-marker{ display:none; }
+.toc summary span{ font-family:var(--font-d); font-weight:500; font-size:13px; color:var(--ink-3); }
+.toc ol{ margin:0; padding:0 18px 16px 40px; color:var(--ink-2); font-size:15.5px; }
+.toc li{ margin-bottom:5px; }
+.toc li::marker{ color:var(--gold); font-family:var(--font-d); font-size:13px; }
+
+/* ---- Démo ---- */
+.demo{
+  background:var(--surface); border:1px solid var(--gold-2); border-radius:14px;
+  padding:22px; box-shadow:var(--shadow); margin-top:26px;
+}
+.demo .ctl{ margin-bottom:16px; }
+.demo .lab{
+  display:flex; justify-content:space-between; align-items:baseline; gap:12px;
+  font-family:var(--font-d); font-size:13.5px; font-weight:550; color:var(--ink-2); margin-bottom:7px;
+}
+.demo .lab b{ font-size:15px; color:var(--ink); font-variant-numeric:tabular-nums; }
+.demo input[type=range]{ width:100%; margin:0; accent-color:var(--gold); height:22px; cursor:pointer; }
+.demo .out{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:14px;
+  padding-top:16px; margin-top:4px; border-top:1px solid var(--line);
+}
+.demo .out .k{
+  font-family:var(--font-d); font-size:10.5px; font-weight:650; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--ink-3); margin-bottom:3px;
+}
+.demo .out .v{
+  font-family:var(--font-d); font-size:23px; font-weight:800; letter-spacing:-.025em;
+  color:var(--ink); font-variant-numeric:tabular-nums; line-height:1.1;
+}
+.demo .out .v.g{ color:var(--gold); }
+.demo .note{ font-family:var(--font-d); font-size:13.5px; color:var(--ink-3); margin:14px 0 0; }
+
+/* ---- Offre ---- */
+.offer{
+  background:var(--deep); color:#EDF4F2; border-radius:16px; padding:34px 28px;
+  margin-top:26px;
+}
+.offer h3{ color:#FFFFFF; font-size:22px; margin-bottom:16px; }
+.offer .price{ display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; margin-bottom:6px; }
+.offer .price .now{ font-family:var(--font-d); font-size:46px; font-weight:800; letter-spacing:-.04em; color:#FFFFFF; }
+.offer .price .was{ font-family:var(--font-d); font-size:20px; color:#8FA8A2; text-decoration:line-through; }
+.offer .price .tag{
+  font-family:var(--font-d); font-size:12px; font-weight:700; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--deep); background:#5FC9B2; border-radius:999px; padding:5px 11px;
+}
+.offer .inc{ list-style:none; padding:0; margin:20px 0 24px; }
+.offer .inc li{ position:relative; padding-left:26px; margin-bottom:9px; font-size:16px; color:#D3E3DF; }
+.offer .inc li::before{
+  content:""; position:absolute; left:0; top:.5em; width:13px; height:3px;
+  border-radius:2px; background:#5FC9B2;
+}
+.offer .btn{ background:#5FC9B2; color:var(--deep); font-size:16.5px; padding:14px 26px; }
+.offer .fine{ font-family:var(--font-d); font-size:12.5px; color:#8FA8A2; margin:14px 0 0; }
+
+/* ---- FAQ ---- */
+.faq details{ border-bottom:1px solid var(--line); padding:4px 0; }
+.faq summary{
+  cursor:pointer; list-style:none; padding:15px 0;
+  font-family:var(--font-d); font-weight:650; font-size:16.5px; color:var(--ink);
+  display:flex; justify-content:space-between; gap:14px;
+}
+.faq summary::-webkit-details-marker{ display:none; }
+.faq summary::after{ content:"+"; color:var(--gold); font-weight:700; flex:0 0 auto; }
+.faq details[open] summary::after{ content:"–"; }
+.faq .a{ padding:0 0 16px; color:var(--ink-2); font-size:16px; }
+.faq .a p:last-child{ margin-bottom:0; }
+
+/* ---- Placeholders à compléter ---- */
+.todo{
+  background:#FFF4D6; color:#6B4E00; border:1px dashed #C9A227; border-radius:4px;
+  padding:1px 7px; font-family:var(--font-d); font-size:.86em; font-weight:650;
+  font-style:normal; white-space:normal;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .todo{
+  background:#3A2F0A; color:#F0D98A; border-color:#8A7320; }}
+:root[data-theme="dark"] .todo{ background:#3A2F0A; color:#F0D98A; border-color:#8A7320; }
+
+/* ---- Pied ---- */
+footer{ background:var(--deep); color:#8FA8A2; padding-block:40px; }
+footer .wrap{ font-family:var(--font-d); font-size:13px; line-height:1.7; }
+footer a{ color:#B9CFC9; }
+footer .legal{ margin-top:16px; padding-top:16px; border-top:1px solid #24323A; font-size:12px; color:#7A918C; }
+
+@media (max-width:560px){
+  body{ font-size:16.5px; }
+  section{ padding-block:48px; }
+  .offer{ padding:26px 20px; }
+}
+@media (prefers-reduced-motion:reduce){ *{ animation:none!important; transition:none!important; } }
+</style>
+
+<div id="bar"><div class="wrap">
+  <div class="logo">Argent<em>Maîtrisé</em></div>
+  <span class="price-inline"><b>17 €</b> <s>24 €</s></span>
+  <a class="btn sm" href="#offre">Obtenir le guide</a>
+</div></div>
+
+<section class="hero"><div class="wrap">
+  <p class="eyebrow">Guide pratique · Débutant et intermédiaire</p>
+  <h1>Reprenez la main sur votre argent, <em>en 90 jours</em>.</h1>
+  <p class="sub">Un guide de 66 pages qui va de votre premier relevé bancaire à un portefeuille qui travaille pour vous. Sans jargon, sans placement miracle, sans promesse de rendement. Une méthode, des chiffres, et un calendrier.</p>
+  <div class="cta-row">
+    <a class="btn" href="#offre">Obtenir le guide — 17 €</a>
+    <a class="btn ghost" href="#sommaire">Voir le sommaire</a>
+  </div>
+  <p class="trust">Paiement sécurisé · Téléchargement immédiat · Accès à la version web interactive incluse</p>
+  <div class="stats">
+    <div class="stat"><div class="v">32</div><div class="k">chapitres</div></div>
+    <div class="stat"><div class="v">5</div><div class="k">simulateurs</div></div>
+    <div class="stat"><div class="v">66</div><div class="k">pages</div></div>
+    <div class="stat"><div class="v">90</div><div class="k">jours de plan</div></div>
+  </div>
+</div></section>
+
+<section class="tint"><div class="wrap">
+  <p class="eyebrow">Le constat</p>
+  <h2>Le problème n'est presque jamais l'information.</h2>
+  <p class="lede">Les règles qui comptent en finance personnelle sont peu nombreuses et connues de tous. Ce qui manque, c'est un ordre, des chiffres à soi, et un système qui tourne sans y penser.</p>
+  <div class="cards">
+    <div class="card"><div class="n">Ce qui bloque</div><p>Vous ne savez pas combien vous épargnez réellement. Le solde de fin de mois n'est pas une capacité d'épargne : c'est ce qui a survécu.</p></div>
+    <div class="card"><div class="n">Ce qui coûte</div><p>Dix ans d'attente peuvent représenter la moitié du capital final. Et deux points de frais annuels, l'équivalent de tous vos versements sur trente ans.</p></div>
+    <div class="card"><div class="n">Ce qui fatigue</div><p>PEA, assurance-vie, PER, SCPI, ETF : chaque source dit l'inverse de la précédente, et aucune ne dit par quoi commencer.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="eyebrow">Honnêteté d'abord</p>
+  <h2>Pour qui ce guide est fait — et pour qui il ne l'est pas.</h2>
+  <div class="two">
+    <div>
+      <h3>Il est fait pour vous si…</h3>
+      <ul class="lst">
+        <li>Vous avez un revenu et l'impression que votre argent dort.</li>
+        <li>Vous avez déjà un PEA ou une assurance-vie, mais sans stratégie d'ensemble.</li>
+        <li>Vous voulez comprendre ce que vous faites, pas suivre des consignes.</li>
+        <li>Vous êtes prêt à consacrer une heure à relever vos trois derniers relevés.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Passez votre chemin si…</h3>
+      <ul class="lst no">
+        <li>Vous cherchez un rendement rapide ou un placement « garanti » à deux chiffres.</li>
+        <li>Vous voulez qu'on vous nomme des produits précis à acheter : ce guide n'en recommande aucun.</li>
+        <li>Vous attendez du conseil personnalisé — c'est le métier d'un conseiller réglementé, pas d'un livre.</li>
+        <li>Vous avez déjà une allocation cible écrite et une revue annuelle en place.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="tint"><div class="wrap">
+  <p class="eyebrow">Le contenu</p>
+  <h2>Six parties, de la première ligne de budget à la transmission.</h2>
+  <p class="lede">Chaque partie se termine par un encadré « L'essentiel ». Relus seuls, ils vous remettent en selle en dix minutes.</p>
+  <div class="toc" id="sommaire">
+    <details open><summary>Partie I — Les fondations <span>6 chapitres</span></summary><ol>
+      <li>Faire le point sur vos entrées et vos sorties</li>
+      <li>Savoir où vous en êtes : le bilan en une page</li>
+      <li>Le budget qui tient : la méthode des trois enveloppes</li>
+      <li>L'épargne de précaution : combien, où, pourquoi</li>
+      <li>Éteindre les dettes coûteuses d'abord</li>
+      <li>Les trois forces : intérêts composés, inflation, frais</li>
+    </ol></details>
+    <details><summary>Partie II — Comprendre avant d'investir <span>4 chapitres</span></summary><ol start="7">
+      <li>Rendement et risque : ce que les mots cachent</li>
+      <li>Les classes d'actifs, expliquées simplement</li>
+      <li>Pourquoi l'ETF indiciel bat la plupart des gérants</li>
+      <li>Les erreurs qui coûtent le plus cher — dont les arnaques</li>
+    </ol></details>
+    <details><summary>Partie III — Les enveloppes françaises <span>7 chapitres</span></summary><ol start="11">
+      <li>Deux décisions à ne pas confondre</li>
+      <li>Le PEA : le meilleur outil pour les actions</li>
+      <li>L'assurance-vie : la boîte à outils polyvalente</li>
+      <li>Le PER : avantage aujourd'hui, contrainte demain</li>
+      <li>Le compte-titres ordinaire : quand il devient utile</li>
+      <li>L'immobilier : trois usages, trois logiques</li>
+      <li>L'ordre de remplissage : la séquence par défaut</li>
+    </ol></details>
+    <details><summary>Partie IV — Construire son portefeuille <span>7 chapitres</span></summary><ol start="18">
+      <li>Définir ses objectifs : la grille préalable</li>
+      <li>L'allocation d'actifs : la seule décision qui compte</li>
+      <li>Trois portefeuilles modèles, expliqués</li>
+      <li>Choisir ses ETF : les sept critères</li>
+      <li>Versement unique ou programmé</li>
+      <li>Rééquilibrer : la discipline qui remplace la prévision</li>
+      <li>Quand tout baisse de 30 %</li>
+    </ol></details>
+    <details><summary>Partie V — Optimiser <span>5 chapitres</span></summary><ol start="25">
+      <li>La fiscalité comme levier de performance</li>
+      <li>L'immobilier à crédit : calculer avant d'acheter</li>
+      <li>Indépendants, artisans et dirigeants</li>
+      <li>Protéger : le volet que tout le monde reporte</li>
+      <li>Transmission : les bases à connaître tôt</li>
+    </ol></details>
+    <details><summary>Partie VI — Passer à l'action <span>3 chapitres + annexes</span></summary><ol start="30">
+      <li>Votre plan en 90 jours, semaine par semaine</li>
+      <li>La revue annuelle : une heure par an</li>
+      <li>Rester à jour : les sources officielles</li>
+    </ol>
+    <p style="padding:0 18px 4px 18px;font-size:15px;color:var(--ink-3)">Plus cinq annexes : lexique, tableaux de référence, checklists, formules de calcul, mentions légales.</p>
+    </details>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="eyebrow">Ce qui n'existe pas ailleurs</p>
+  <h2>Cinq simulateurs, pour appliquer le guide à vos propres chiffres.</h2>
+  <p class="lede">La version web incluse transforme les chapitres en outils. Voici l'un d'eux, en entier, utilisable tout de suite.</p>
+
+  <div class="demo">
+    <div class="ctl">
+      <div class="lab"><span>Versement mensuel</span><b id="d-m">300 €</b></div>
+      <input type="range" id="r-m" min="25" max="1500" step="25" value="300">
+    </div>
+    <div class="ctl">
+      <div class="lab"><span>Durée</span><b id="d-y">30 ans</b></div>
+      <input type="range" id="r-y" min="5" max="40" step="1" value="30">
+    </div>
+    <div class="out">
+      <div><div class="k">Capital final</div><div class="v g" id="o-t">—</div></div>
+      <div><div class="k">Total versé</div><div class="v" id="o-v">—</div></div>
+      <div><div class="k">Gains</div><div class="v" id="o-g">—</div></div>
+      <div><div class="k">Part des gains</div><div class="v" id="o-p">—</div></div>
+    </div>
+    <p class="note" id="o-n"></p>
+  </div>
+
+  <div class="cards">
+    <div class="card"><div class="n">Inclus</div><p>Épargne de précaution : votre cible et le délai pour l'atteindre.</p></div>
+    <div class="card"><div class="n">Inclus</div><p>Impact des frais : ce que deux points de frais coûtent réellement.</p></div>
+    <div class="card"><div class="n">Inclus</div><p>Part actions, convertie en euros de perte potentielle.</p></div>
+    <div class="card"><div class="n">Inclus</div><p>Cash-flow locatif : coût total, charges, mensualité, effort d'épargne.</p></div>
+  </div>
+</div></section>
+
+<section class="tint"><div class="wrap">
+  <p class="eyebrow">L'auteur</p>
+  <h2><span class="todo">[Votre nom]</span></h2>
+  <p class="lede"><span class="todo">[Deux ou trois phrases : qui vous êtes, pourquoi vous avez écrit ce guide, et ce qui vous rend légitime pour le faire. L'acheteur veut savoir qui parle — c'est le bloc qui fait le plus pour la confiance.]</span></p>
+  <p style="font-size:15.5px;color:var(--ink-2)">Ce guide ne recommande aucun produit, ne nomme aucun établissement, et ne perçoit aucune commission. Il n'a rien à vous vendre d'autre que lui-même.</p>
+</div></section>
+
+<section id="offre"><div class="wrap">
+  <p class="eyebrow">L'offre</p>
+  <h2>Le guide complet, PDF et version web.</h2>
+  <div class="offer">
+    <div class="price">
+      <span class="now">17 €</span>
+      <span class="was">24 €</span>
+      <span class="tag">Prix de lancement</span>
+    </div>
+    <p style="color:#8FA8A2;font-family:var(--font-d);font-size:13.5px;margin:0 0 4px">Paiement unique. Pas d'abonnement.</p>
+    <ul class="inc">
+      <li><strong style="color:#fff">Le PDF de 66 pages</strong> — 32 chapitres, 5 annexes, sommaire cliquable, prêt à imprimer.</li>
+      <li><strong style="color:#fff">La version web interactive</strong> — le texte intégral, plus long que le PDF, avec les 5 simulateurs et les checklists cochables.</li>
+      <li><strong style="color:#fff">Les 5 illustrations</strong> et les tableaux de référence des plafonds et barèmes.</li>
+      <li><strong style="color:#fff">Les mises à jour</strong> — les chiffres fiscaux changent chaque année ; vous recevez les révisions.</li>
+    </ul>
+    <a class="btn" href="#" id="buy">Obtenir le guide — 17 €</a>
+    <p class="fine"><span class="todo">[Lien à remplacer par votre page de paiement]</span></p>
+    <p class="fine">Téléchargement immédiat après paiement. <span class="todo">[Si vous offrez une garantie : « Remboursé sur simple demande sous 30 jours. »]</span></p>
+  </div>
+</div></section>
+
+<section class="tint"><div class="wrap">
+  <p class="eyebrow">Questions</p>
+  <h2>Ce qu'on nous demande avant d'acheter.</h2>
+  <div class="faq">
+    <details><summary>Est-ce du conseil en investissement ?</summary><div class="a">
+      <p>Non, et c'est volontaire. Ce guide est un document pédagogique et informatif. Il ne constitue pas un conseil en investissement personnalisé, ni un conseil fiscal ou juridique adapté à votre situation. Il n'y a aucune recommandation de produit ni d'établissement.</p>
+      <p>Pour une opération engageante — arbitrage important, achat immobilier, montage de société, transmission — le guide vous dit explicitement d'aller voir un professionnel réglementé, et lequel.</p>
+    </div></details>
+    <details><summary>Je suis débutant complet. C'est trop technique ?</summary><div class="a">
+      <p>Non. Le guide démarre au chapitre 1 par un relevé de vos entrées et de vos sorties, avec un exemple chiffré ligne par ligne. Les parties I à III suffisent à vous placer devant la majorité des épargnants français. Les chapitres plus techniques sont signalés : vous pouvez les sauter et y revenir.</p>
+    </div></details>
+    <details><summary>J'investis déjà. Qu'est-ce que ça m'apporte ?</summary><div class="a">
+      <p>Les parties IV et V sont écrites pour vous : grille objectif / horizon / perte tolérée, allocation d'actifs, portefeuilles modèles, sept critères de sélection d'ETF, rééquilibrage, fiscalité, calcul complet d'un cash-flow locatif, prévoyance et transmission.</p>
+      <p>L'audit de frais du chapitre 6 rembourse souvent le prix du guide plusieurs centaines de fois.</p>
+    </div></details>
+    <details><summary>Les chiffres fiscaux seront-ils encore bons dans un an ?</summary><div class="a">
+      <p>Les taux, plafonds et barèmes changent, parfois en cours d'année. C'est pourquoi ils sont tous regroupés dans une seule annexe, avec un avertissement et la liste des sources officielles où les vérifier. Vous recevez les mises à jour.</p>
+      <p>Le reste du guide — mécanique des intérêts composés, logique des enveloppes, construction d'un portefeuille — ne bouge pas.</p>
+    </div></details>
+    <details><summary>C'est valable hors de France ?</summary><div class="a">
+      <p>Les parties I, II et IV sont universelles. Les parties III et V portent sur les enveloppes et la fiscalité françaises : PEA, assurance-vie, PER, LMNP, droits de donation. Si vous n'êtes pas résident fiscal français, environ la moitié du guide ne s'appliquera pas directement.</p>
+    </div></details>
+    <details><summary>Quel format, et puis-je l'imprimer ?</summary><div class="a">
+      <p>Un PDF au format 6 × 9 pouces, mis en page pour la lecture à l'écran comme pour l'impression, avec sommaire cliquable et signets. Plus un accès web qui fonctionne sur téléphone, tablette et ordinateur.</p>
+    </div></details>
+  </div>
+</div></section>
+
+<section><div class="wrap" style="text-align:center">
+  <h2>Le meilleur moment pour commencer était il y a dix ans.</h2>
+  <p class="lede" style="margin-left:auto;margin-right:auto">Le deuxième meilleur moment, c'est aujourd'hui. Dix ans de retard peuvent représenter la moitié du capital final — et ça, c'est la seule erreur qui ne se rattrape pas.</p>
+  <a class="btn" href="#offre" style="font-size:17px;padding:15px 30px">Obtenir le guide — 17 €</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div><strong style="color:#D3E3DF">Argent Maîtrisé</strong> — guide de finances personnelles.</div>
+  <div style="margin-top:8px">
+    <a href="#"><span class="todo">[Mentions légales]</span></a> ·
+    <a href="#"><span class="todo">[CGV]</span></a> ·
+    <a href="#"><span class="todo">[Politique de confidentialité]</span></a> ·
+    <a href="#"><span class="todo">[contact@votredomaine.fr]</span></a>
+  </div>
+  <div class="legal">
+    Document pédagogique et informatif. Ne constitue ni un conseil en investissement personnalisé, ni un conseil fiscal ou juridique adapté à une situation individuelle. Tout investissement en actifs non garantis comporte un risque de perte en capital. Les performances passées ne préjugent pas des performances futures. Les taux, plafonds et barèmes cités sont susceptibles de modification : vérifiez-les à leur source officielle avant toute décision.
+    <br><br><span class="todo">[Éditeur : nom, statut, SIRET, adresse — obligatoire pour toute vente en ligne]</span>
+  </div>
+</div></footer>
+
+<script>
+(function () {
+  var nf = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  var eur = function (n) { return nf.format(Math.round(n)); };
+  var rm = document.getElementById('r-m'), ry = document.getElementById('r-y');
+
+  function run() {
+    var m = +rm.value, y = +ry.value, i = 0.06 / 12, n = y * 12;
+    var total = m * (Math.pow(1 + i, n) - 1) / i;
+    var versed = m * n, gains = total - versed;
+    document.getElementById('d-m').textContent = eur(m);
+    document.getElementById('d-y').textContent = y + ' ans';
+    document.getElementById('o-t').textContent = eur(total);
+    document.getElementById('o-v').textContent = eur(versed);
+    document.getElementById('o-g').textContent = eur(gains);
+    document.getElementById('o-p').textContent = Math.round(gains / total * 100) + ' %';
+    var late = y > 10 ? m * (Math.pow(1 + i, (y - 10) * 12) - 1) / i : 0;
+    document.getElementById('o-n').textContent = y > 10
+      ? 'En commençant dix ans plus tard, vous obtiendriez ' + eur(late) + ' — soit ' + eur(total - late) + ' de moins.'
+      : 'Hypothèse : 6 % de rendement annuel moyen. Allongez la durée pour voir le coût du report.';
+  }
+  rm.addEventListener('input', run);
+  ry.addEventListener('input', run);
+  run();
+
+  document.getElementById('buy').addEventListener('click', function (e) {
+    e.preventDefault();
+    this.textContent = 'Branchez ici votre lien de paiement';
+    setTimeout(function () {
+      document.getElementById('buy').textContent = 'Obtenir le guide — 17 €';
+    }, 2200);
+  });
+})();
+</script>

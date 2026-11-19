@@ -8,6 +8,7 @@ Guide de finances personnelles (français), niveaux débutant et intermédiaire.
 | **Essentielle** (PDF vendu) | `content-court/` | `Argent-Maitrise-essentiel.pdf` | 66 p., 15 200 mots |
 | **Complète** (PDF long) | `content/` | `Argent-Maitrise-ebook.pdf` | 145 p., 25 500 mots |
 | **Web interactive** | `content/` | `web/argent-maitrise.html` | texte long + 5 simulateurs |
+| **Page de vente** | écrite à la main | `web/vente.html` | page autonome à déposer sur le domaine |
 
 L'édition essentielle couvre les mêmes 32 chapitres, resserrés : développements
 coupés, moins d'exemples, un encadré « L'essentiel » par partie au lieu d'un par
@@ -130,4 +131,9 @@ Bricolage Grotesque + Source Serif 4 pour le web. Aucun serif didone, pour
 2. **La mention d'auteur** : les couvertures et pages de titre n'en portent
    aucune. À ajouter dans `build/assemble.py` et `build/assemble-court.py`
    (variables en haut de chaque fichier).
-3. **Les mentions légales** (Annexe F) : à faire relire si l'e-book est vendu.
+3. **Les mentions légales** (dernière annexe) : à faire relire si l'e-book est vendu.
+4. **Les neuf placeholders de `web/vente.html`** — repérables à leur fond jaune
+   dans la page, et en cherchant `class="todo"` dans le fichier : nom et bio de
+   l'auteur, lien de paiement, garantie éventuelle, mentions légales, CGV,
+   politique de confidentialité, adresse de contact, et le bloc éditeur avec le
+   SIRET. **La page ne doit pas être mise en ligne tant qu'il en reste un.**
