@@ -1,15 +1,15 @@
 /* ===== Argent Maîtrisé — feuille de style livre ===== */
 :root{
-  --ink:#17140F;
-  --ink-soft:#3D372E;
-  --ink-mute:#6B6354;
-  --gold:#A8762C;
-  --gold-soft:#C9A978;
+  --ink:#16202A;
+  --ink-soft:#3A4A57;
+  --ink-mute:#6B7A86;
+  --gold:#0E6B5C;
+  --gold-soft:#7FB9AC;
   --paper:#FFFFFF;
-  --tint:#F7F4EE;
-  --tint-warm:#FBF3E4;
-  --tint-alert:#FCF0EA;
-  --rule:#DED7CA;
+  --tint:#F1F5F4;
+  --tint-warm:#E9F4F0;
+  --tint-alert:#FBEFEC;
+  --rule:#D9E0E3;
 }
 @page{ size:6in 9in; margin:0.78in 0.72in 0.86in 0.72in; }
 
@@ -134,12 +134,12 @@ div.encadre li{ margin-bottom:0.22em; }
 
 /* Alerte / vigilance */
 div.alerte{
-  background:var(--tint-alert); border-left:3px solid #B5472A;
+  background:var(--tint-alert); border-left:3px solid #C0392B;
   border-radius:0 3px 3px 0;
 }
 div.alerte>p:first-child>strong:first-child{
   font-family:"Inter Display","Inter",sans-serif; font-size:8.6pt;
-  text-transform:uppercase; letter-spacing:0.09em; color:#A03D22;
+  text-transform:uppercase; letter-spacing:0.09em; color:#A32E22;
 }
 
 /* Action */
@@ -168,7 +168,7 @@ div.exemple>p:first-child>strong:first-child{
 
 /* Formules */
 div.formule{
-  background:var(--ink); color:#F2EDE4; border-radius:4px;
+  background:var(--ink); color:#EDF4F2; border-radius:4px;
   font-family:"JetBrains Mono","Liberation Mono",monospace;
   font-size:9.6pt; text-align:center; padding:0.8em 0.7em;
   margin:0.9em 0 1.1em;

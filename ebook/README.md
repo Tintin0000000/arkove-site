@@ -75,6 +75,26 @@ python3 build/webbuild.py
 
 Dépendances : `pandoc`, `python3` + `pypdf`, `node` + `playwright` (Chromium).
 
+## Identité visuelle — distincte d'Arkove
+
+Ce produit ne porte **pas** la charte d'Arkove et ne doit pas la reprendre.
+Arkove est sombre et doré (`#141210` / `#CE9B4C`, titres Didot) ; « Argent
+Maîtrisé » est clair et vert sapin. Les deux marques doivent rester
+reconnaissables séparément.
+
+| | Valeur | Rôle |
+|---|---|---|
+| Encre | `#16202A` | Texte, titres, en-têtes de tableaux |
+| Accent | `#0E6B5C` | Filets, étiquettes, chiffres mis en avant |
+| Accent clair | `#7FB9AC` | Bordures, états secondaires |
+| Fond couverture | `#F7F8F6` | Couverture claire, bandeau vert en tête |
+| Teinte « action » | `#E9F4F0` | Encadrés d'action |
+| Alerte | `#C0392B` | Avertissements et points de vigilance |
+
+Typographie : Inter Display (titres) + Bitstream Charter (corps) pour le PDF,
+Bricolage Grotesque + Source Serif 4 pour le web. Aucun serif didone, pour
+éviter l'écho avec Arkove.
+
 ## Fichiers de mise en forme
 
 - `build/book.css` — style d'impression, édition complète (format 6×9 pouces)

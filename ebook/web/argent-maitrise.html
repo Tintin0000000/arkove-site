@@ -6,31 +6,31 @@
 <style>
 /* Layout : rail de navigation fixe + colonne de lecture ; tokens ink/laiton */
 :root{
-  --paper:#FFFDFA; --surface:#FFFFFF; --surface-2:#F7F3EB;
-  --ink:#17140F; --ink-2:#4A4338; --ink-3:#7A7263;
-  --gold:#A8762C; --gold-2:#C9A978; --gold-tint:#FBF2E1;
-  --line:#E6DFD2; --line-2:#F0EAE0;
-  --warn:#B5472A; --warn-tint:#FCF0EA;
-  --shadow:0 1px 2px rgba(23,20,15,.05), 0 8px 24px -12px rgba(23,20,15,.14);
+  --paper:#FBFCFB; --surface:#FFFFFF; --surface-2:#F1F5F4;
+  --ink:#16202A; --ink-2:#3A4A57; --ink-3:#6B7A86;
+  --gold:#0E6B5C; --gold-2:#7FB9AC; --gold-tint:#E9F4F0;
+  --line:#DDE4E6; --line-2:#EDF2F2;
+  --warn:#C0392B; --warn-tint:#FBEFEC;
+  --shadow:0 1px 2px rgba(22,32,42,.05), 0 8px 24px -12px rgba(22,32,42,.14);
   --font-d:"Bricolage Grotesque","Inter",system-ui,sans-serif;
   --font-b:"Source Serif 4",Charter,Georgia,serif;
   --rail:296px;
 }
 @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
-  --paper:#121110; --surface:#1A1816; --surface-2:#211E1A;
-  --ink:#F2EDE4; --ink-2:#C4BBAC; --ink-3:#8D8475;
-  --gold:#D9A852; --gold-2:#8C6C38; --gold-tint:#241E12;
-  --line:#2E2A25; --line-2:#242018;
-  --warn:#E07F62; --warn-tint:#2A1A14;
+  --paper:#0E161C; --surface:#16212A; --surface-2:#1C2932;
+  --ink:#EDF4F2; --ink-2:#A8BAB7; --ink-3:#7A8C8A;
+  --gold:#3FA38F; --gold-2:#2A6659; --gold-tint:#12282A;
+  --line:#243039; --line-2:#1C262E;
+  --warn:#E27A66; --warn-tint:#2B1A17;
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
   color-scheme:dark;
 }}
 :root[data-theme="dark"]{
-  --paper:#121110; --surface:#1A1816; --surface-2:#211E1A;
-  --ink:#F2EDE4; --ink-2:#C4BBAC; --ink-3:#8D8475;
-  --gold:#D9A852; --gold-2:#8C6C38; --gold-tint:#241E12;
-  --line:#2E2A25; --line-2:#242018;
-  --warn:#E07F62; --warn-tint:#2A1A14;
+  --paper:#0E161C; --surface:#16212A; --surface-2:#1C2932;
+  --ink:#EDF4F2; --ink-2:#A8BAB7; --ink-3:#7A8C8A;
+  --gold:#3FA38F; --gold-2:#2A6659; --gold-tint:#12282A;
+  --line:#243039; --line-2:#1C262E;
+  --warn:#E27A66; --warn-tint:#2B1A17;
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
   color-scheme:dark;
 }
@@ -116,7 +116,7 @@ body::before{
 .iconbtn:active{ background:var(--surface-2); }
 #scrim{
   display:none; position:fixed; inset:0; z-index:45;
-  background:rgba(10,8,6,.44); backdrop-filter:blur(2px);
+  background:rgba(10,18,24,.44); backdrop-filter:blur(2px);
 }
 
 /* ---------- Colonne de lecture ---------- */

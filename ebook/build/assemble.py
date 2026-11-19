@@ -45,40 +45,34 @@ cover = f"""<!DOCTYPE html>
   @page {{ size:6in 9in; margin:0; }}
   html,body {{ margin:0; padding:0; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
   .cover {{
-    width:6in; height:9in; background:#17140F; color:#F6F1E7;
+    width:6in; height:9in; background:#F7F8F6; color:#16202A;
     display:flex; flex-direction:column; justify-content:space-between;
     padding:0.95in 0.8in; position:relative; overflow:hidden;
     font-family:"Inter Display","Inter","Liberation Sans",sans-serif;
   }}
-  .glow {{
-    position:absolute; width:9in; height:9in; border-radius:50%;
-    background:radial-gradient(circle, rgba(168,118,44,0.30) 0%, rgba(168,118,44,0.07) 42%, rgba(23,20,15,0) 68%);
-    top:-3.2in; right:-3.6in;
-  }}
-  .grid {{
-    position:absolute; inset:0;
-    background-image:linear-gradient(rgba(201,169,120,0.032) 1px, transparent 1px);
-    background-size:100% 0.42in;
+  .band {{
+    position:absolute; left:0; right:0; top:0; height:0.34in; background:#0E6B5C;
   }}
   .top, .mid, .bot {{ position:relative; z-index:2; }}
-  .mark {{ font-size:9pt; letter-spacing:0.34em; text-transform:uppercase; color:#C9A978; }}
-  .rule {{ width:52px; height:3px; background:#A8762C; margin:0.3in 0 0.34in; }}
+  .mark {{ font-size:9pt; letter-spacing:0.32em; text-transform:uppercase; color:#0E6B5C; }}
+  .rule {{ width:48px; height:3px; background:#0E6B5C; margin:0.28in 0 0.3in; }}
   h1 {{
-    font-size:46pt; line-height:0.97; font-weight:800; letter-spacing:-0.035em;
-    margin:0 0 0.26in; color:#FFFCF6;
+    font-size:47pt; line-height:0.96; font-weight:800; letter-spacing:-0.038em;
+    margin:0 0 0.26in; color:#16202A;
   }}
-  h1 span {{ display:block; color:#C9A978; }}
-  .sub {{ font-size:11.5pt; line-height:1.5; color:#CFC6B5; max-width:4in; font-weight:400; }}
-  .bot {{ font-size:8.6pt; line-height:1.75; color:#8E8472; letter-spacing:0.02em; }}
-  .bot .chips {{ display:flex; gap:0.18in; margin-bottom:0.26in; flex-wrap:wrap; }}
+  h1 span {{ display:block; color:#0E6B5C; }}
+  .sub {{ font-size:11.5pt; line-height:1.5; color:#3A4A57; max-width:3.9in; font-weight:400; }}
+  .bot {{ font-size:8.6pt; line-height:1.75; color:#6B7A86; letter-spacing:0.02em; }}
+  .bot .chips {{ display:flex; gap:0.14in; margin-bottom:0.26in; flex-wrap:wrap; }}
   .chip {{
-    border:1px solid rgba(201,169,120,0.42); border-radius:999px;
-    padding:0.055in 0.16in; font-size:8pt; color:#C9A978; letter-spacing:0.07em;
+    border:1px solid #9FC4BB; border-radius:999px;
+    padding:0.055in 0.15in; font-size:8pt; color:#0E6B5C; letter-spacing:0.07em;
     text-transform:uppercase;
   }}
+  .bot .line {{ height:1px; background:#D9E0E3; margin-bottom:0.2in; }}
 </style></head>
 <body><div class="cover">
-  <div class="grid"></div><div class="glow"></div>
+  <div class="band"></div>
   <div class="top"><div class="mark">Guide pratique</div><div class="rule"></div></div>
   <div class="mid">
     <h1>Argent<span>Maîtrisé</span></h1>
@@ -89,6 +83,7 @@ cover = f"""<!DOCTYPE html>
       <span class="chip">Débutant</span><span class="chip">Intermédiaire</span>
       <span class="chip">31 chapitres</span><span class="chip">Plan 90 jours</span>
     </div>
+    <div class="line"></div>
     Budget · Épargne · Investissement · PEA, assurance-vie, PER · Immobilier · Fiscalité · Transmission
   </div>
 </div></body></html>"""
