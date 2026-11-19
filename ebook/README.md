@@ -10,6 +10,7 @@ Guide de finances personnelles (français), niveaux débutant et intermédiaire.
 | **Web interactive** | `content/` | `web/argent-maitrise.html` | texte long + 5 simulateurs |
 | **Page de vente** | écrite à la main | `web/vente.html` | page autonome à déposer sur le domaine |
 | **Classeur compagnon** | `classeur/build_classeur.py` | `classeur/Argent-Maitrise-classeur.xlsx` | 7 feuilles, 97 formules |
+| **EPUB Kindle** | `content-court/` via `build/epub/` | `Argent-Maitrise-kindle.epub` | pour Amazon KDP |
 
 L'édition essentielle couvre les mêmes 32 chapitres, resserrés : développements
 coupés, moins d'exemples, un encadré « L'essentiel » par partie au lieu d'un par
@@ -49,6 +50,26 @@ Conventions de balisage, en plus du Markdown standard :
   deux formats. Les couleurs viennent des tokens avec repli
   (`var(--gold-soft, var(--gold-2, …))`), car les feuilles print et web ne
   nomment pas les nuances secondaires de la même façon.
+
+## Édition Kindle
+
+```bash
+node build/epub/render.js      # les 5 figures SVG -> PNG
+node build/epub/shotcover.js   # la couverture 1600x2560
+python3 build/epub/build_epub.py
+```
+
+Trois différences volontaires avec le PDF, toutes dans `build_epub.py` :
+
+1. Les simulateurs (`::: {.widget}`) sont retirés — ils n'existent que sur le web.
+2. Le paragraphe qui annonce le classeur est remplacé : **l'acheteur Amazon ne le
+   reçoit pas**, et le guide ne doit rien promettre qu'il ne livre pas. Le script
+   s'arrête si ce paragraphe a changé, pour éviter de publier une promesse fausse.
+3. Les SVG deviennent des PNG : Kindle les rend mal.
+
+Le nom d'auteur est la variable `AUTEUR` en haut de `build_epub.py`. La fiche de
+publication (titre, description, mots-clés, catégories, prix) est dans
+`FICHE-KDP.md`.
 
 ## Audit de cohérence
 

@@ -1,0 +1,31 @@
+/* Argent Maîtrisé — feuille EPUB. Couleurs fixes : les liseuses ne gèrent pas les variables. */
+body{ font-family: serif; line-height:1.5; margin:0 5%; color:#16202A; }
+h1{ font-size:1.7em; line-height:1.15; margin:1.6em 0 .7em; color:#16202A;
+    border-bottom:3px solid #0E6B5C; padding-bottom:.3em; page-break-before:always; }
+h2{ font-size:1.3em; line-height:1.2; margin:1.6em 0 .6em; color:#16202A; }
+h3{ font-size:1.05em; margin:1.3em 0 .4em; color:#0E6B5C; }
+p{ margin:0 0 .8em; text-align:justify; }
+strong{ font-weight:bold; }
+blockquote{ margin:1em 0 1em 1em; padding-left:.9em; border-left:3px solid #7FB9AC;
+            font-style:italic; color:#3A4A57; }
+ul,ol{ margin:.6em 0 1em; padding-left:1.4em; }
+li{ margin-bottom:.35em; }
+hr{ border:0; border-top:1px solid #D9E0E3; margin:1.6em 0; }
+
+table{ width:100%; border-collapse:collapse; margin:1em 0; font-size:.82em; }
+th{ background:#16202A; color:#FFFFFF; text-align:left; padding:.45em .5em; font-weight:bold; }
+td{ padding:.4em .5em; border-bottom:1px solid #D9E0E3; vertical-align:top; color:#3A4A57; }
+
+div.encadre, div.alerte, div.action, div.exemple{
+  margin:1.2em 0; padding:.8em .9em; font-size:.95em; page-break-inside:avoid; }
+div.encadre{ background:#F1F5F4; border-left:4px solid #16202A; }
+div.alerte{ background:#FBEFEC; border-left:4px solid #C0392B; }
+div.action{ background:#E9F4F0; border-left:4px solid #0E6B5C; }
+div.exemple{ background:#FAFBFB; border:1px solid #D9E0E3; border-left:4px solid #6B7A86; }
+div.formule{ background:#16202A; color:#EDF4F2; padding:.7em; text-align:center;
+             font-family:monospace; font-size:.9em; margin:1em 0; }
+div.formule p{ margin:0; text-align:center; }
+
+figure.figure{ margin:1.2em 0; text-align:center; page-break-inside:avoid; }
+figure.figure img{ max-width:100%; }
+figure.figure figcaption{ font-size:.8em; color:#6B7A86; text-align:left; margin-top:.4em; }

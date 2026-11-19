@@ -11,3 +11,7 @@ build/body-court.html
 build/cover-court.html
 build/part-cover-court.pdf
 build/part-body-court.pdf
+build/epub/figs.html
+build/epub/figs.json
+build/epub/amazon.md
+build/epub/metadata.yaml
