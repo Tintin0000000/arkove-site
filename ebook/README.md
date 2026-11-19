@@ -9,6 +9,7 @@ Guide de finances personnelles (français), niveaux débutant et intermédiaire.
 | **Complète** (PDF long) | `content/` | `Argent-Maitrise-ebook.pdf` | 145 p., 25 500 mots |
 | **Web interactive** | `content/` | `web/argent-maitrise.html` | texte long + 5 simulateurs |
 | **Page de vente** | écrite à la main | `web/vente.html` | page autonome à déposer sur le domaine |
+| **Classeur compagnon** | `classeur/build_classeur.py` | `classeur/Argent-Maitrise-classeur.xlsx` | 7 feuilles, 97 formules |
 
 L'édition essentielle couvre les mêmes 32 chapitres, resserrés : développements
 coupés, moins d'exemples, un encadré « L'essentiel » par partie au lieu d'un par
@@ -114,6 +115,26 @@ reconnaissables séparément.
 Typographie : Inter Display (titres) + Bitstream Charter (corps) pour le PDF,
 Bricolage Grotesque + Source Serif 4 pour le web. Aucun serif didone, pour
 éviter l'écho avec Arkove.
+
+## Classeur compagnon
+
+Généré par `classeur/build_classeur.py` (openpyxl). Sept feuilles — mode
+d'emploi, entrées-sorties, bilan, suivi trimestriel, allocation, cash-flow
+locatif, plan 90 jours — pré-remplies avec les exemples chiffrés du guide.
+
+Les valeurs par défaut **doivent rester cohérentes avec le livre** : le lecteur
+compare. Après toute modification :
+
+```bash
+cd classeur
+python3 build_classeur.py
+python3 /root/.claude/skills/.../xlsx/scripts/recalc.py Argent-Maitrise-classeur.xlsx
+```
+
+Le recalcul doit rapporter `"total_errors": 0`. Un recalcul propre prouve que
+les formules s'évaluent, pas qu'elles sont justes : vérifiez aussi que la
+feuille Locatif retombe sur 1 028 € de mensualité et −591 € de cash-flow,
+comme le chapitre 26.
 
 ## Fichiers de mise en forme
 

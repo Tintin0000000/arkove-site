@@ -83,9 +83,9 @@ Le calcul complet, dans l'ordre :
 ::: {.exemple}
 **Exemple complet — un projet réaliste**
 
-Appartement de 150 000 €, frais de notaire 11 500 €, travaux 8 500 €. **Coût total : 170 000 €**, financé intégralement à crédit sur 20 ans à 3,5 %, assurance comprise.
+Appartement de 150 000 €, frais de notaire 11 500 €, travaux 8 500 €. **Coût total : 170 000 €**, financé intégralement à crédit sur 20 ans à 3,5 %, plus une assurance emprunteur de 0,30 % par an.
 
-- Mensualité de crédit, assurance incluse : **≈ 1 028 €**
+- Mensualité de crédit : **986 €**, plus **42 €** d'assurance, soit **≈ 1 028 €**
 - Loyer : 750 € hors charges, soit 9 000 € par an, ramené à **8 640 €** après provision de vacance
 - Charges annuelles : taxe foncière 900 €, copropriété non récupérable 600 €, assurance PNO 150 €, gestion 7 % (630 €), provision travaux 8 % (720 €), comptabilité 400 € → **3 400 €**
 

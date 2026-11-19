@@ -37,9 +37,9 @@ Le calcul complet, dans l'ordre :
 5. **Puis seulement**, l'impact du régime fiscal.
 
 ::: {.exemple}
-**Exemple complet** — Appartement 150 000 €, notaire 11 500 €, travaux 8 500 € → **coût total 170 000 €**, financé sur 20 ans à 3,5 % assurance comprise.
+**Exemple complet** — Appartement 150 000 €, notaire 11 500 €, travaux 8 500 € → **coût total 170 000 €**, financé sur 20 ans à 3,5 %, plus une assurance emprunteur de 0,30 % par an.
 
-Mensualité : **≈ 1 028 €**. Loyer 750 € hors charges, soit 9 000 € par an, ramenés à 8 640 € après vacance. Charges : taxe foncière 900 €, copropriété 600 €, PNO 150 €, gestion 7 % (630 €), provision travaux 8 % (720 €), comptabilité 400 € → **3 400 €**.
+Mensualité : 986 € de crédit plus 42 € d'assurance, soit **≈ 1 028 €**. Loyer 750 € hors charges, soit 9 000 € par an, ramenés à 8 640 € après vacance. Charges : taxe foncière 900 €, copropriété 600 €, PNO 150 €, gestion 7 % (630 €), provision travaux 8 % (720 €), comptabilité 400 € → **3 400 €**.
 
 Revenu net de charges : 5 240 €/an, soit 437 €/mois. **Cash-flow : 437 − 1 028 = −591 € par mois.**
 
