@@ -2,7 +2,7 @@
 
 > Quatre notions sans lesquelles tout conseil d'investissement est inapplicable : ce qu'est vraiment un rendement, ce qu'est vraiment un risque, ce que font les classes d'actifs, et pourquoi la simplicité bat la sophistication.
 
-## 6. Rendement et risque
+## 7. Rendement et risque
 
 Un rendement annoncé est toujours brut. **Rendement net = brut − frais − fiscalité − inflation.** Un placement à 5 % brut avec 1,5 % de frais, 17,2 % de prélèvements sociaux et 2 % d'inflation délivre environ **0,9 % réel**. Le même actif à 0,2 % de frais dans un PEA mature délivre environ **2,2 % réel** — plus du double, pour un actif identique. L'emballage compte autant que le contenu.
 
@@ -29,9 +29,15 @@ D'où la règle la plus importante du guide : **n'investissez en actions que l'a
 | 5 à 10 ans | Allocation équilibrée, part actions significative |
 | Plus de 10 ans | Forte part actions justifiée |
 
+<figure class="figure">
+<svg viewBox="0 0 600 196" role="img" aria-label="Part d’actifs risqués acceptable selon l’horizon"><line x1="8" y1="150" x2="592" y2="150" stroke="var(--rule, var(--line, #D9E0E3))" stroke-width="1"/><rect x="8" y="104.52000000000001" width="132" height="45.48" rx="4" fill="var(--gold)" opacity="0.41"/><text x="74" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">< 2 ans</text><text x="74" y="184" text-anchor="middle" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Livrets, fonds euros</text><rect x="156" y="87.32" width="132" height="62.68" rx="4" fill="var(--gold)" opacity="0.55"/><text x="222" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">2 à 5 ans</text><text x="222" y="184" text-anchor="middle" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Majoritairement sécurisé</text><rect x="304" y="63.239999999999995" width="132" height="86.76" rx="4" fill="var(--gold)" opacity="0.76"/><text x="370" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">5 à 10 ans</text><text x="370" y="184" text-anchor="middle" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Allocation équilibrée</text><rect x="452" y="34.0" width="132" height="116.0" rx="4" fill="var(--gold)" opacity="1.00"/><text x="518" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">> 10 ans</text><text x="518" y="184" text-anchor="middle" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Forte part actions</text></svg>
+<figcaption><strong>La hauteur représente la part d’actifs risqués acceptable.</strong> Faire coïncider l’horizon et le support est la décision la plus structurante de tout le guide.</figcaption>
+</figure>
+
+
 Presque toutes les catastrophes patrimoniales individuelles viennent de la violation de ce tableau.
 
-## 7. Les classes d'actifs
+## 8. Les classes d'actifs
 
 **Les actions** — vous possédez des entreprises. Rendement issu des bénéfices distribués et de la hausse de valeur. Historiquement la classe la plus performante sur longue période : de l'ordre de **7 à 8 % par an nominal**, soit 5 à 6 % réels, avec une dispersion énorme — des décennies à près de 0 % ont existé. Horizon : 8 à 10 ans minimum. Rôle : moteur de performance.
 
@@ -58,7 +64,7 @@ Presque toutes les catastrophes patrimoniales individuelles viennent de la viola
 | Cryptoactifs | Non estimable | Extrême | — | Variable |
 | Private equity | 4 à 8 % | Peu visible | 8-10 ans | Très faible |
 
-## 8. Pourquoi l'ETF indiciel gagne
+## 9. Pourquoi l'ETF indiciel gagne
 
 La **gestion active** sélectionne des titres pour battre le marché, et facture 1,5 à 2,5 % par an. La **gestion passive** achète le marché entier dans ses proportions, et facture 0,05 à 0,30 %.
 
@@ -72,7 +78,7 @@ Trois nuances réelles. **La concentration** : un MSCI World est pondéré par c
 
 La gestion active garde du sens là où l'indice n'existe pas ou se réplique mal : private equity, immobilier non coté, dette privée. Pour la poche actions d'un particulier, **l'indiciel large à bas coût est le choix par défaut rationnel**.
 
-## 9. Les erreurs qui coûtent le plus cher
+## 10. Les erreurs qui coûtent le plus cher
 
 **1. Ne pas commencer.** De très loin la plus coûteuse. L'attente se déguise en prudence — « j'attends d'avoir lu davantage », « j'attends que ça baisse ». Le résultat est le même : du temps perdu, qui ne se rachète pas.
 

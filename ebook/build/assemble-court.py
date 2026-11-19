@@ -81,7 +81,7 @@ cover = f"""<!DOCTYPE html>
   <div class="bot">
     <div class="chips">
       <span class="chip">Débutant</span><span class="chip">Intermédiaire</span>
-      <span class="chip">31 chapitres</span><span class="chip">Plan 90 jours</span>
+      <span class="chip">32 chapitres</span><span class="chip">Plan 90 jours</span>
     </div>
     <div class="line"></div>
     Budget · Épargne · Investissement · PEA, assurance-vie, PER · Immobilier · Fiscalité · Transmission

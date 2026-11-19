@@ -2,7 +2,7 @@
 
 > Cette partie n'enseigne aucun produit. Elle installe les quatre notions sans lesquelles tout conseil d'investissement est inapplicable : ce qu'est réellement un rendement, ce qu'est réellement un risque, ce que font les grandes classes d'actifs, et pourquoi la simplicité bat la sophistication dans la quasi-totalité des cas.
 
-## 6. Rendement et risque : ce que les mots cachent
+## 7. Rendement et risque : ce que les mots cachent
 
 ### Le rendement n'est jamais le chiffre affiché
 
@@ -18,7 +18,7 @@ C'est pourquoi les Parties III et V de ce guide consacrent autant de place aux e
 
 Le mot « risque » sert à désigner quatre choses très différentes, qu'il faut absolument distinguer.
 
-**1. La volatilité.** L'amplitude des variations de valeur. Un portefeuille d'actions mondiales varie typiquement de 15 à 20 % par an autour de sa moyenne. Ce n'est pas une perte : c'est du mouvement. La volatilité n'est un véritable problème que si vous êtes contraint de vendre pendant une baisse — d'où l'épargne de précaution du chapitre 3.
+**1. La volatilité.** L'amplitude des variations de valeur. Un portefeuille d'actions mondiales varie typiquement de 15 à 20 % par an autour de sa moyenne. Ce n'est pas une perte : c'est du mouvement. La volatilité n'est un véritable problème que si vous êtes contraint de vendre pendant une baisse — d'où l'épargne de précaution du chapitre 4.
 
 **2. La perte en capital permanente.** La différence essentielle. Un ETF diversifié sur des milliers d'entreprises baisse puis remonte historiquement ; une action unique peut aller à zéro et ne jamais revenir. La diversification ne supprime pas la volatilité, mais elle élimine l'essentiel du risque de perte définitive.
 
@@ -43,10 +43,16 @@ La conséquence est pratique, pas morale : **n'investissez en actions que l'arge
 | 5 à 10 ans | Allocation équilibrée, part actions significative. |
 | Plus de 10 ans | Forte part actions justifiée ; la volatilité devient secondaire. |
 
+<figure class="figure">
+<svg viewBox="0 0 600 196" role="img" aria-label="Part d’actifs risqués acceptable selon l’horizon"><line x1="8" y1="150" x2="592" y2="150" stroke="var(--rule, var(--line, #D9E0E3))" stroke-width="1"/><rect x="8" y="104.52000000000001" width="132" height="45.48" rx="4" fill="var(--gold)" opacity="0.41"/><text x="74" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">< 2 ans</text><text x="74" y="184" text-anchor="middle" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Livrets, fonds euros</text><rect x="156" y="87.32" width="132" height="62.68" rx="4" fill="var(--gold)" opacity="0.55"/><text x="222" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">2 à 5 ans</text><text x="222" y="184" text-anchor="middle" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Majoritairement sécurisé</text><rect x="304" y="63.239999999999995" width="132" height="86.76" rx="4" fill="var(--gold)" opacity="0.76"/><text x="370" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">5 à 10 ans</text><text x="370" y="184" text-anchor="middle" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Allocation équilibrée</text><rect x="452" y="34.0" width="132" height="116.0" rx="4" fill="var(--gold)" opacity="1.00"/><text x="518" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">> 10 ans</text><text x="518" y="184" text-anchor="middle" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Forte part actions</text></svg>
+<figcaption><strong>La hauteur représente la part d’actifs risqués acceptable.</strong> Faire coïncider l’horizon et le support est la décision la plus structurante de tout le guide.</figcaption>
+</figure>
+
+
 Ce tableau est le plus important du guide. Presque toutes les catastrophes patrimoniales individuelles viennent de sa violation : de l'argent nécessaire à court terme investi en actifs volatils, ou de l'argent de long terme laissé sur un livret.
 
 ::: {.encadre}
-**L'essentiel du chapitre 6**
+**L'essentiel du chapitre 7**
 
 - Seul compte le rendement net de frais, de fiscalité et d'inflation.
 - Volatilité ≠ perte permanente : la diversification élimine l'essentiel de la seconde.
@@ -55,7 +61,7 @@ Ce tableau est le plus important du guide. Presque toutes les catastrophes patri
 - Faire coïncider l'horizon et le support est la décision la plus structurante.
 :::
 
-## 7. Les classes d'actifs, expliquées simplement
+## 8. Les classes d'actifs, expliquées simplement
 
 Chaque classe d'actifs répond à une question : qu'est-ce que je possède, et d'où vient le rendement ?
 
@@ -92,7 +98,7 @@ Trois formes très différentes, qu'il faut cesser de confondre.
 
 La **résidence principale** n'est pas un investissement au sens strict : c'est un logement financé à crédit qui supprime un loyer. Elle protège de la hausse des loyers et constitue une épargne forcée, mais elle immobilise du capital, coûte des frais d'acquisition de l'ordre de 7 à 8 % dans l'ancien, et réduit votre mobilité.
 
-L'**immobilier locatif en direct** offre le seul levier accessible au particulier : la banque finance un actif que le locataire rembourse en partie. C'est aussi un métier, avec de la gestion, de la vacance, des impayés, des travaux, et une fiscalité complexe (chapitre 25).
+L'**immobilier locatif en direct** offre le seul levier accessible au particulier : la banque finance un actif que le locataire rembourse en partie. C'est aussi un métier, avec de la gestion, de la vacance, des impayés, des travaux, et une fiscalité complexe (chapitre 26).
 
 L'**immobilier papier** (SCPI, SCI, foncières cotées) donne une exposition sans gestion. Les SCPI ont distribué de l'ordre de 4 à 5 % par an ces dernières années, mais plusieurs d'entre elles ont **dévalorisé leur prix de part de 10 à 17 % en 2023-2024** à la suite de la remontée des taux. C'est un rappel utile : une SCPI n'est ni garantie, ni sans volatilité — sa volatilité est simplement moins visible, car le prix n'est pas coté en continu. Les frais d'entrée atteignent fréquemment 8 à 12 %, ce qui impose un horizon de détention d'au moins huit à dix ans.
 
@@ -126,7 +132,7 @@ Accessible via des fonds (FCPR, FPCI) ou certains contrats d'assurance-vie. Rend
 | Private equity | 4 à 8 % | Élevée, peu visible | 8-10 ans | Très faible |
 
 ::: {.encadre}
-**L'essentiel du chapitre 7**
+**L'essentiel du chapitre 8**
 
 - Actions = propriété d'entreprises, moteur de performance long terme.
 - Obligations = prêt ; elles baissent quand les taux montent (2022 l'a rappelé).
@@ -135,7 +141,7 @@ Accessible via des fonds (FCPR, FPCI) ou certains contrats d'assurance-vie. Rend
 - Crypto : pari spéculatif, plafonné à un montant perdable intégralement.
 :::
 
-## 8. Pourquoi l'ETF indiciel bat la plupart des gérants
+## 9. Pourquoi l'ETF indiciel bat la plupart des gérants
 
 ### Deux philosophies
 
@@ -151,7 +157,7 @@ Trois raisons mécaniques l'expliquent.
 
 **1. L'arithmétique.** L'ensemble des investisseurs détient l'ensemble du marché. Avant frais, la performance moyenne de tous les gérants est donc égale à celle du marché. Après frais, elle lui est nécessairement inférieure — d'un montant égal aux frais. Ce n'est pas une opinion : c'est une identité comptable.
 
-**2. Les frais composés.** Deux points d'écart annuel sur trente ans, ce sont des dizaines de milliers d'euros (chapitre 5). Le gérant doit battre le marché de 2 % par an, chaque année, uniquement pour rendre son coût neutre.
+**2. Les frais composés.** Deux points d'écart annuel sur trente ans, ce sont des dizaines de milliers d'euros (chapitre 6). Le gérant doit battre le marché de 2 % par an, chaque année, uniquement pour rendre son coût neutre.
 
 **3. La persistance est faible.** Les gérants qui surperforment une période ne sont généralement pas les mêmes à la période suivante. Choisir le bon fonds à l'avance relève davantage du hasard que de l'analyse — et les palmarès de performance passée n'ont presque aucun pouvoir prédictif.
 
@@ -165,7 +171,7 @@ Ses trois avantages décisifs : **frais très faibles**, **diversification insta
 
 L'ETF n'est pas magique, et trois nuances méritent d'être comprises.
 
-**La concentration des indices mondiaux.** Un MSCI World est pondéré par capitalisation : les États-Unis y représentent une part très importante, et les plus grandes capitalisations technologiques y pèsent lourd. Acheter « le monde » n'est donc pas aussi diversifié que le nom le suggère. Le chapitre 20 explique comment corriger cette concentration si vous le souhaitez.
+**La concentration des indices mondiaux.** Un MSCI World est pondéré par capitalisation : les États-Unis y représentent une part très importante, et les plus grandes capitalisations technologiques y pèsent lourd. Acheter « le monde » n'est donc pas aussi diversifié que le nom le suggère. Le chapitre 21 explique comment corriger cette concentration si vous le souhaitez.
 
 **La réplication synthétique.** Certains ETF, notamment ceux qui permettent d'accéder aux actions américaines au sein d'un PEA, ne détiennent pas les titres mais répliquent l'indice via des contrats d'échange avec une banque. C'est une pratique encadrée et courante, mais elle introduit une dépendance à une contrepartie. À connaître, pas à redouter.
 
@@ -175,10 +181,10 @@ L'ETF n'est pas magique, et trois nuances méritent d'être comprises.
 
 Trois cas justifient de sortir de l'indiciel : les classes d'actifs où l'indice n'existe pas ou se réplique mal (private equity, immobilier non coté, dette privée), les marchés très peu efficients et peu couverts, et les contraintes réglementaires ou contractuelles qui limitent l'accès aux ETF.
 
-Pour un portefeuille d'actions de particulier, l'indiciel large à bas coût reste le choix par défaut rationnel, et c'est la base des portefeuilles modèles du chapitre 19.
+Pour un portefeuille d'actions de particulier, l'indiciel large à bas coût reste le choix par défaut rationnel, et c'est la base des portefeuilles modèles du chapitre 20.
 
 ::: {.encadre}
-**L'essentiel du chapitre 8**
+**L'essentiel du chapitre 9**
 
 - Sur dix ans, 80 à 90 % des fonds actifs font moins bien que leur indice, après frais.
 - La cause est arithmétique avant d'être qualitative : les frais sont certains.
@@ -187,13 +193,13 @@ Pour un portefeuille d'actions de particulier, l'indiciel large à bas coût res
 - L'indiciel large à bas coût est le choix par défaut rationnel pour la poche actions.
 :::
 
-## 9. Les erreurs qui coûtent le plus cher
+## 10. Les erreurs qui coûtent le plus cher
 
 Cette liste ne vise pas l'exhaustivité. Elle rassemble les erreurs dont le coût moyen est le plus élevé, par ordre décroissant de dégât constaté.
 
 ### Erreur 1 — Ne pas commencer
 
-C'est, de très loin, la plus coûteuse. Le chapitre 5 l'a chiffrée : dix ans d'attente peuvent représenter la moitié du capital final. L'attente se déguise presque toujours en prudence — « j'attends d'avoir lu davantage », « j'attends que les marchés baissent », « j'attends d'avoir plus d'argent ». Le résultat est identique : du temps perdu, qui ne se rachète pas.
+C'est, de très loin, la plus coûteuse. Le chapitre 6 l'a chiffrée : dix ans d'attente peuvent représenter la moitié du capital final. L'attente se déguise presque toujours en prudence — « j'attends d'avoir lu davantage », « j'attends que les marchés baissent », « j'attends d'avoir plus d'argent ». Le résultat est identique : du temps perdu, qui ne se rachète pas.
 
 ### Erreur 2 — Vendre pendant une baisse
 
@@ -205,13 +211,13 @@ Le coût réel ne s'arrête pas là. Celui qui vend attend ensuite « que ça re
 
 Attendre « le bon point d'entrée » suppose de prévoir les marchés à court terme, ce que personne ne fait de façon fiable et répétée. L'argent qui attend en liquidités en attendant une baisse perd son rendement potentiel pendant toute l'attente — et les marchés passent beaucoup plus de temps à monter qu'à baisser.
 
-La réponse pratique est le versement programmé (chapitre 21) : il supprime la décision, donc l'erreur.
+La réponse pratique est le versement programmé (chapitre 22) : il supprime la décision, donc l'erreur.
 
 ### Erreur 4 — Payer des frais qu'on ne voit pas
 
 Vous ne recevrez jamais de courrier intitulé « vous avez payé 1 800 € de frais cette année ». Ils sont déduits de la performance, silencieusement. Les contrats d'assurance-vie bancaires chargés, les gestions pilotées à frais empilés, les fonds maison à 2 % restent très largement diffusés.
 
-Le chapitre 5 contient l'audit de frais. C'est l'action au meilleur rapport effort/gain de tout ce guide.
+Le chapitre 6 contient l'audit de frais. C'est l'action au meilleur rapport effort/gain de tout ce guide.
 
 ### Erreur 5 — Confondre diversification et accumulation
 
@@ -221,7 +227,7 @@ Détenir quinze fonds actions différents n'est pas de la diversification : c'es
 
 ### Erreur 6 — Investir sans horizon défini
 
-« J'investis pour investir » conduit à paniquer dès la première baisse, parce qu'aucune règle ne dit quand l'argent doit revenir. Chaque poche de capital doit avoir un objectif, une date et une tolérance de perte. C'est le travail du chapitre 17.
+« J'investis pour investir » conduit à paniquer dès la première baisse, parce qu'aucune règle ne dit quand l'argent doit revenir. Chaque poche de capital doit avoir un objectif, une date et une tolérance de perte. C'est le travail du chapitre 18.
 
 ### Erreur 7 — Utiliser l'effet de levier sur des actifs volatils
 
@@ -249,7 +255,7 @@ Si vous avez un doute sur une sollicitation reçue, le dispositif public *AMF É
 :::
 
 ::: {.encadre}
-**L'essentiel du chapitre 9**
+**L'essentiel du chapitre 10**
 
 - L'erreur la plus coûteuse est de ne pas commencer ; la deuxième est de vendre en baisse.
 - Une perte n'est définitive qu'à la vente.

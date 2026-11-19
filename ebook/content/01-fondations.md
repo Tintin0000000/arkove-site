@@ -2,7 +2,128 @@
 
 > Personne ne construit un patrimoine sur un budget qu'il ne connaît pas. Cette partie n'est pas la partie « ennuyeuse » du guide : c'est celle qui détermine combien vous aurez à investir, et donc tout le reste. Un bon investisseur qui épargne 100 € par mois finira derrière un investisseur médiocre qui en épargne 600.
 
-## 1. Savoir où vous en êtes : le bilan en une page
+## 1. Faire le point sur vos entrées et vos sorties
+
+### Commencer par les flux, pas par le stock
+
+Avant de savoir ce que vous possédez, il faut savoir ce qui entre et ce qui sort chaque mois. C'est l'ordre logique, et presque tout le monde l'inverse.
+
+Le patrimoine est une **photo** : il dit où vous en êtes aujourd'hui. Les flux sont le **moteur** : ils disent où vous irez. Un patrimoine modeste avec 400 € de surplus mensuel vaut mieux qu'un patrimoine confortable avec un solde à zéro — le premier grandit, le second s'érode.
+
+Surtout, aucune décision de ce guide n'est possible sans ce chiffre. Combien mettre de côté ? Quelle épargne de précaution viser ? Quel versement programmé ? Tout découle du solde que vous allez calculer ici.
+
+### Étape 1 — Lister ce qui entre
+
+Comptez ce que vous **percevez réellement**, net, sur votre compte. Pas le brut, pas le salaire négocié : ce qui arrive.
+
+Postes à relever : salaires nets, primes et treizième mois (divisés par douze), revenus d'activité indépendante, allocations et prestations, pensions alimentaires perçues, revenus locatifs nets, intérêts et dividendes réguliers.
+
+Pour tout revenu irrégulier — primes, missions, saisonnalité — prenez la **moyenne des douze derniers mois**, pas le meilleur mois. Si vous êtes indépendant avec des revenus très variables, prenez plutôt la moyenne des trois dernières années, ou le niveau bas de votre fourchette habituelle : un budget construit sur un bon mois casse au premier mois creux.
+
+### Étape 2 — Lister ce qui sort, en trois blocs
+
+C'est l'étape qui demande du soin, et celle où se cache l'erreur qui fausse tout.
+
+**Bloc 1 — Les charges fixes.** Elles tombent chaque mois, pour un montant stable : loyer ou mensualité de crédit, charges de copropriété, énergie, eau, internet et mobile, assurances, transports par abonnement, crédits en cours, pensions versées, frais de garde, abonnements divers.
+
+**Bloc 2 — Les dépenses variables.** Elles changent chaque mois : courses, carburant, restaurants et sorties, vêtements, loisirs, achats courants, santé non remboursée. Ne les estimez pas de tête — vous vous tromperez d'un tiers, toujours à la baisse. Relevez-les.
+
+**Bloc 3 — Les dépenses annuelles, ramenées au mois.** C'est le bloc oublié, et c'est lui qui explique pourquoi tant de gens « ne comprennent pas où part l'argent ». Taxe foncière, taxe d'habitation résiduelle, impôt non mensualisé, assurances à échéance annuelle, entretien et contrôle technique du véhicule, vacances, cadeaux et fêtes, rentrée scolaire, mutuelle, cotisations professionnelles.
+
+Faites la somme de ces dépenses **sur douze mois**, divisez par douze, et inscrivez le résultat comme une charge mensuelle. Elles sont certaines : seule leur date est irrégulière.
+
+### Étape 3 — Le solde
+
+**Solde mensuel = total des entrées − total des sorties.**
+
+C'est votre capacité d'épargne réelle. Pas celle que vous imaginez, pas celle des bons mois : celle qui existe douze fois par an.
+
+### Un exemple complet
+
+Camille, 34 ans, salariée. Voici ses deux colonnes, établies à partir de trois mois de relevés.
+
+| Entrées mensuelles | Montant |
+|---|---|
+| Salaire net | 2 310 € |
+| Prime annuelle (1 800 € ÷ 12) | 150 € |
+| **Total des entrées** | **2 460 €** |
+
+| Sorties mensuelles | Montant |
+|---|---|
+| *Charges fixes* | |
+| Mensualité de crédit immobilier | 820 € |
+| Charges de copropriété | 110 € |
+| Électricité et gaz | 95 € |
+| Internet et mobile | 48 € |
+| Assurances habitation et auto | 72 € |
+| Abonnements (streaming, sport) | 39 € |
+| *Dépenses variables* | |
+| Courses | 380 € |
+| Carburant et transports | 145 € |
+| Restaurants et sorties | 190 € |
+| Vêtements et achats divers | 110 € |
+| *Dépenses annuelles ramenées au mois* | |
+| Taxe foncière (980 € ÷ 12) | 82 € |
+| Entretien et contrôle du véhicule (600 € ÷ 12) | 50 € |
+| Vacances (1 500 € ÷ 12) | 125 € |
+| Cadeaux et fêtes (400 € ÷ 12) | 33 € |
+| **Total des sorties** | **2 299 €** |
+
+::: {.exemple}
+**Le résultat, et ce qu'il révèle**
+
+**Solde mensuel : 2 460 − 2 299 = + 161 €.** Taux d'épargne : 6,5 %.
+
+Le chiffre important de cet exemple n'est pas le solde, c'est l'écart. **Sans le troisième bloc, Camille aurait calculé 451 € de solde** — presque trois fois trop. C'est exactement ce qui se produit chaque année : elle épargne 400 € par mois pendant huit mois, puis vide son épargne en mars pour la taxe foncière et en juillet pour les vacances, et ne comprend pas pourquoi son livret stagne.
+:::
+
+### La méthode : trois mois de relevés, une heure
+
+Ne reconstituez pas vos dépenses de mémoire. Ouvrez vos relevés bancaires des **trois derniers mois** et classez chaque ligne dans l'un des trois blocs. Une heure suffit, et le résultat est juste.
+
+Trois conseils d'exécution. **Regroupez largement** : dix postes bien remplis valent mieux que quarante catégories abandonnées au bout d'un mois. **Prenez trois mois, pas un** : un mois isolé est toujours atypique. **N'oubliez pas les prélèvements oubliés** — c'est le moment où l'on découvre les abonnements que l'on ne utilise plus ; résiliez-les immédiatement, c'est le gain le plus rapide de ce guide.
+
+### Ce que votre solde vous dit
+
+| Solde mensuel | Lecture | Priorité immédiate |
+|---|---|---|
+| Négatif | Vous consommez votre épargne ou vous endettez | Réduire les charges fixes, traiter les dettes coûteuses |
+| 0 à 5 % des entrées | Aucune marge de sécurité | Dégager du surplus avant toute autre chose |
+| 5 à 15 % | Situation courante, progression lente | Automatiser et capter les augmentations |
+| 15 à 25 % | Bonne dynamique | Structurer : précaution, puis investissement |
+| Plus de 25 % | Trajectoire d'indépendance | Optimiser l'allocation et la fiscalité |
+
+Un solde négatif n'est pas un échec moral, c'est une information. Elle signifie simplement que l'étape suivante n'est pas d'investir, mais de réduire les charges fixes ou d'augmenter les revenus. Investir avant d'avoir un solde positif revient à remplir un seau percé.
+
+### Les quatre erreurs qui faussent le calcul
+
+**Oublier le bloc annuel.** La plus fréquente, et la plus coûteuse : elle gonfle le solde apparent de 200 à 400 € par mois dans un foyer ordinaire.
+
+**Estimer au lieu de relever.** Les dépenses variables estimées de mémoire sont systématiquement sous-évaluées de 20 à 40 %.
+
+**Confondre le solde et ce qui reste sur le compte.** Ce qui reste en fin de mois n'est pas votre capacité d'épargne : c'est ce qui a survécu. La capacité d'épargne se décide à l'avance, elle ne se constate pas après coup. C'est tout l'objet du chapitre 3.
+
+**Prendre un bon mois pour référence.** Un mois sans imprévu, sans sortie, sans réparation n'existe qu'une fois par an.
+
+::: {.action}
+**À faire avant de poursuivre**
+
+Ouvrez vos trois derniers relevés et remplissez les deux colonnes — entrées, puis sorties en trois blocs. Notez votre solde mensuel et votre taux d'épargne (solde ÷ entrées).
+
+Gardez ces deux chiffres sous la main : ils servent au chapitre 2 pour vos ratios, au chapitre 3 pour calibrer votre virement automatique, et au chapitre 4 pour déterminer votre épargne de précaution — qui se calcule sur vos **dépenses**, c'est-à-dire sur le total que vous venez d'établir.
+:::
+
+::: {.encadre}
+**L'essentiel du chapitre 1**
+
+- Les flux avant le stock : le patrimoine dit où vous en êtes, le solde dit où vous allez.
+- Entrées en net réellement perçu ; revenus irréguliers lissés sur douze mois.
+- Trois blocs de sorties : charges fixes, dépenses variables, et dépenses annuelles divisées par douze.
+- Le bloc annuel oublié fausse le solde de plusieurs centaines d'euros par mois.
+- Trois mois de relevés, une heure : relevez, n'estimez pas.
+:::
+
+## 2. Savoir où vous en êtes : le bilan en une page
 
 ### Pourquoi commencer ici
 
@@ -56,7 +177,7 @@ Les banques plafonnent généralement autour de 35 % assurance comprise. Mais le
 
 **3. Les mois de coussin** = Épargne disponible / Dépenses mensuelles
 
-C'est le nombre de mois que vous tiendriez sans aucun revenu. En dessous de 3, vous êtes exposé. C'est tout l'objet du chapitre 3.
+C'est le nombre de mois que vous tiendriez sans aucun revenu. En dessous de 3, vous êtes exposé. C'est tout l'objet du chapitre 4.
 
 ### La trajectoire compte plus que le niveau
 
@@ -65,7 +186,7 @@ Reportez votre patrimoine net une fois par trimestre, toujours le même jour, da
 Une pente positive avec un patrimoine modeste est une excellente nouvelle. Un patrimoine confortable avec une pente plate est un signal d'alerte — il signifie que vous vivez sur un stock, pas sur un système.
 
 ::: {.encadre}
-**L'essentiel du chapitre 1**
+**L'essentiel du chapitre 2**
 
 - Le patrimoine net (actifs − dettes) est votre indicateur principal, pas votre salaire.
 - Faites le bilan aujourd'hui, même approximatif, et datez-le.
@@ -73,7 +194,7 @@ Une pente positive avec un patrimoine modeste est une excellente nouvelle. Un pa
 - Mesurez tous les trimestres : c'est la pente qui pilote, pas le niveau.
 :::
 
-## 2. Le budget qui tient : la méthode des trois enveloppes
+## 3. Le budget qui tient : la méthode des trois enveloppes
 
 ### Pourquoi la plupart des budgets échouent
 
@@ -123,7 +244,7 @@ Appliquez cette règle à chaque augmentation, prime, fin de crédit ou baisse d
 :::
 
 ::: {.encadre}
-**L'essentiel du chapitre 2**
+**L'essentiel du chapitre 3**
 
 - Un budget qui repose sur la volonté échoue ; un budget automatisé tient.
 - Payez-vous d'abord : l'épargne est prélevée avant les dépenses, pas après.
@@ -132,7 +253,7 @@ Appliquez cette règle à chaque augmentation, prime, fin de crédit ou baisse d
 - Dirigez systématiquement la moitié de chaque augmentation vers l'épargne.
 :::
 
-## 3. L'épargne de précaution : combien, où, pourquoi
+## 4. L'épargne de précaution : combien, où, pourquoi
 
 ### Sa fonction réelle
 
@@ -185,7 +306,7 @@ Dès que votre cible est atteinte, **arrêtez de l'alimenter** et redirigez int�
 Reconstituez-la en priorité après chaque utilisation, avant de reprendre vos versements d'investissement.
 
 ::: {.encadre}
-**L'essentiel du chapitre 3**
+**L'essentiel du chapitre 4**
 
 - 3 à 6 mois de **dépenses** (6 à 12 pour un indépendant), pas de revenus.
 - Trois critères hiérarchisés : disponible, sans risque, puis rémunérée.
@@ -197,7 +318,7 @@ Reconstituez-la en priorité après chaque utilisation, avant de reprendre vos v
 ::: {.widget data-widget="precaution"}
 :::
 
-## 4. Éteindre les dettes coûteuses d'abord
+## 5. Éteindre les dettes coûteuses d'abord
 
 ### L'arbitrage fondamental
 
@@ -239,7 +360,7 @@ D'abord, son taux est généralement bas. Ensuite, il finance un actif. Enfin �
 Une question revient sans cesse : faut-il rembourser par anticipation ? Posez-la autrement : **votre argent est-il mieux employé à annuler un coût de 1,5 % ou à générer un rendement espéré de 5 à 7 % ?** À taux bas, la réponse est claire. À partir de 4 % et selon votre aversion au risque, l'arbitrage devient légitime, et le remboursement anticipé offre un avantage qu'aucun investissement ne procure : une mensualité en moins, donc un budget plus résistant.
 
 ::: {.encadre}
-**L'essentiel du chapitre 4**
+**L'essentiel du chapitre 5**
 
 - Rembourser une dette à X % = un placement garanti à X % net. Imbattable.
 - Au-delà de 6 %, remboursez avant d'investir un seul euro.
@@ -248,7 +369,7 @@ Une question revient sans cesse : faut-il rembourser par anticipation ? Posez-la
 - Avalanche = optimal mathématiquement ; boule de neige = optimal psychologiquement.
 :::
 
-## 5. Les trois forces qui font — ou défont — votre patrimoine
+## 6. Les trois forces qui font — ou défont — votre patrimoine
 
 Tout ce qui suit dans ce guide découle de trois mécanismes. Comprendre leur ampleur réelle est ce qui distingue quelqu'un qui épargne de quelqu'un qui investit.
 
@@ -264,6 +385,20 @@ Voici ce que donnent **300 € investis chaque mois** à un rendement moyen de 6
 | 20 ans | 72 000 € | ≈ 138 600 € | 48 % |
 | 30 ans | 108 000 € | ≈ 301 400 € | 64 % |
 | 40 ans | 144 000 € | ≈ 597 400 € | 76 % |
+
+<figure class="figure">
+<svg viewBox="0 0 600 248" role="img" aria-label="Croissance de 300 euros investis chaque mois à 6 % par an">
+<line x1="60" y1="210" x2="580" y2="210" stroke="var(--rule, var(--line, #D9E0E3))" stroke-width="1"/><text x="52" y="213.5" text-anchor="end" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">0</text><line x1="60" y1="146.7" x2="580" y2="146.7" stroke="var(--rule, var(--line, #D9E0E3))" stroke-width="1"/><text x="52" y="150.2" text-anchor="end" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">200 k€</text><line x1="60" y1="83.3" x2="580" y2="83.3" stroke="var(--rule, var(--line, #D9E0E3))" stroke-width="1"/><text x="52" y="86.8" text-anchor="end" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">400 k€</text><line x1="60" y1="20" x2="580" y2="20" stroke="var(--rule, var(--line, #D9E0E3))" stroke-width="1"/><text x="52" y="23.5" text-anchor="end" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">600 k€</text>
+<polygon points="60,210 125,203.4 190,194.4 255,182.4 320,166.1 385,144.2 450,114.6 515,74.7 580,20.8 580,210" fill="var(--gold)" opacity="0.85"/>
+<polygon points="60,210 125,204.3 190,198.6 255,192.9 320,187.2 385,181.5 450,175.8 515,170.1 580,164.4 580,210" fill="var(--ink-mute, var(--ink-3, #6B7A86))" opacity="0.9"/>
+<polyline points="60,210 125,203.4 190,194.4 255,182.4 320,166.1 385,144.2 450,114.6 515,74.7 580,20.8" fill="none" stroke="var(--gold)" stroke-width="2"/>
+<text x="554" y="42" text-anchor="end" font-size="11" font-weight="700" fill="var(--ink)">597 400 €</text>
+<text x="554" y="156" text-anchor="end" font-size="10" fill="var(--ink)">144 000 € versés</text>
+<text x="60" y="232" text-anchor="middle" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">0 ans</text><text x="190" y="232" text-anchor="middle" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">10 ans</text><text x="320" y="232" text-anchor="middle" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">20 ans</text><text x="450" y="232" text-anchor="middle" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">30 ans</text><text x="580" y="232" text-anchor="middle" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">40 ans</text>
+</svg>
+<figcaption><strong>300 € par mois à 6 % par an.</strong> La zone sombre représente vos versements, la zone verte les gains. À quarante ans, les trois quarts du capital ne viennent plus de vous.</figcaption>
+</figure>
+
 
 Lisez la dernière colonne attentivement. Sur dix ans, vous construisez votre patrimoine. Sur quarante ans, c'est le rendement qui le construit : les trois quarts du capital final ne viennent pas de vos versements.
 
@@ -312,6 +447,12 @@ Reprenons 300 € par mois pendant 30 ans, avec un rendement brut de 6 % :
 | 1,5 % (contrat et fonds classiques) | 4,5 % | ≈ 227 800 € | ≈ 59 000 € |
 | 2,5 % (contrat chargé, gestion pilotée coûteuse) | 3,5 % | ≈ 191 000 € | ≈ 96 000 € |
 
+<figure class="figure">
+<svg viewBox="0 0 600 160" role="img" aria-label="Capital final selon le niveau de frais annuels"><text x="0" y="31" font-size="11" fill="var(--ink)">0,3 % — ETF sur PEA</text><rect x="210" y="18" width="344.4" height="22" rx="3" fill="var(--gold)"/><text x="560.4" y="34" font-size="11" font-weight="700" fill="var(--ink)">287 000 €</text><text x="0" y="79" font-size="11" fill="var(--ink)">1,5 % — contrat classique</text><rect x="210" y="66" width="273.4" height="22" rx="3" fill="var(--gold-soft, var(--gold-2, #7FB9AC))"/><text x="489.4" y="82" font-size="11" font-weight="700" fill="var(--ink)">227 000 €</text><text x="0" y="127" font-size="11" fill="var(--ink)">2,5 % — contrat chargé</text><rect x="210" y="114" width="229.2" height="22" rx="3" fill="var(--ink-mute, var(--ink-3, #6B7A86))"/><text x="445.2" y="130" font-size="11" font-weight="700" fill="var(--ink)">191 000 €</text></svg>
+<figcaption><strong>Même versement, même rendement brut, trente ans.</strong> Deux points de frais annuels coûtent près de 100 000 € — soit presque l’équivalent de tout ce que vous avez versé.</figcaption>
+</figure>
+
+
 Deux points de frais annuels coûtent près de **100 000 €** sur trente ans — soit presque l'intégralité de ce que vous avez versé. Et contrairement au rendement, les frais sont **certains** : vous les payez les bonnes comme les mauvaises années.
 
 Les quatre couches de frais à identifier systématiquement :
@@ -324,11 +465,11 @@ Les quatre couches de frais à identifier systématiquement :
 ::: {.action}
 **L'audit de frais, à faire une fois**
 
-Sortez vos relevés d'assurance-vie, de PER et de PEA. Additionnez, pour chaque enveloppe : frais de gestion du contrat + frais courants des supports détenus. Si le total dépasse 1,2 % par an, vous avez identifié le gain le plus facile de toute votre stratégie patrimoniale — et c'est un gain certain, pas espéré. Les chapitres 11 à 13 expliquent comment en sortir sans perdre vos avantages fiscaux.
+Sortez vos relevés d'assurance-vie, de PER et de PEA. Additionnez, pour chaque enveloppe : frais de gestion du contrat + frais courants des supports détenus. Si le total dépasse 1,2 % par an, vous avez identifié le gain le plus facile de toute votre stratégie patrimoniale — et c'est un gain certain, pas espéré. Les chapitres 12 à 14 expliquent comment en sortir sans perdre vos avantages fiscaux.
 :::
 
 ::: {.encadre}
-**L'essentiel du chapitre 5**
+**L'essentiel du chapitre 6**
 
 - Les intérêts composés font les trois quarts du travail sur quarante ans.
 - Dix ans de retard peuvent coûter la moitié du capital final : commencez petit, mais commencez.

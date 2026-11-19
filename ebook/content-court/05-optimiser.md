@@ -2,13 +2,13 @@
 
 > L'optimisation vient **après** la structure, jamais avant. Un patrimoine mal alloué mais fiscalement optimisé reste mal alloué.
 
-## 24. La fiscalité comme levier
+## 25. La fiscalité comme levier
 
 Réduire l'impôt est un gain **certain**, contrairement au rendement qui est espéré. Mais une règle prime sur tout : **l'avantage fiscal ne doit jamais déterminer le choix de l'investissement.** L'histoire des dispositifs de défiscalisation immobilière est pleine de contribuables ayant économisé quelques milliers d'euros d'impôt en achetant un bien surpayé de plusieurs dizaines de milliers.
 
 **Levier 1 — Connaître son TMI.** Le taux appliqué à l'euro suivant de revenu. Il commande presque toutes vos décisions : pertinence du PER, choix entre PFU et barème, intérêt d'un déficit foncier, arbitrage salaire/dividendes. Il figure sur votre avis d'imposition. Ne raisonnez jamais avec votre taux moyen.
 
-**Levier 2 — Utiliser les enveloppes dans le bon ordre.** Le plus puissant, et entièrement gratuit (chapitre 16). À actif et rendement identiques, l'écart entre un PEA mature et un CTO atteint facilement plusieurs dizaines de milliers d'euros sur vingt ans.
+**Levier 2 — Utiliser les enveloppes dans le bon ordre.** Le plus puissant, et entièrement gratuit (chapitre 17). À actif et rendement identiques, l'écart entre un PEA mature et un CTO atteint facilement plusieurs dizaines de milliers d'euros sur vingt ans.
 
 **Levier 3 — Piloter ses retraits.** Largement pilotable, et presque toujours négligé. En assurance-vie après 8 ans, l'abattement annuel se renouvelle chaque année civile : retirer 60 000 € d'un coup ou en cinq fois sur cinq ans produit des résultats très différents. **Si vous préparez un projet, commencez les retraits plusieurs années à l'avance.** En PEA, patientez jusqu'au cinquième anniversaire du premier versement. Sur CTO, vous choisissez quelles lignes vendre.
 
@@ -24,7 +24,7 @@ L'optimisation consiste à utiliser les dispositifs prévus par la loi : c'est l
 Deux règles en cas de doute : faites valider le montage par un professionnel qui engage sa responsabilité, et **méfiez-vous de tout dispositif dont l'argument principal est l'économie d'impôt plutôt que la qualité de l'actif.**
 :::
 
-## 25. L'immobilier à crédit : calculer avant d'acheter
+## 26. L'immobilier à crédit : calculer avant d'acheter
 
 La plupart des projets locatifs échouent sur un calcul manquant. L'erreur fondatrice est de comparer le loyer à la mensualité, en oubliant les charges — qui représentent couramment **25 à 35 % du loyer**.
 
@@ -60,7 +60,7 @@ Quatre paramètres font la différence. **Le rendement brut d'entrée** : en des
 
 Ce dernier point mérite une attention particulière : les exigences énergétiques applicables à la location se durcissent progressivement, et un bien mal classé peut devenir non louable sans travaux parfois lourds. **Faites chiffrer ce risque avant l'achat.**
 
-## 26. Indépendants, artisans et dirigeants
+## 27. Indépendants, artisans et dirigeants
 
 Un salarié a un revenu régulier, une couverture sociale correcte et une retraite constituée automatiquement. Vous n'avez aucun des trois. Les mêmes principes s'appliquent, mais les priorités changent d'ordre.
 
@@ -78,7 +78,7 @@ Un salarié a un revenu régulier, une couverture sociale correcte et une retrai
 
 **7. Préparer la cession tôt.** La valeur d'une entreprise cédée se prépare plusieurs années à l'avance : qualité des comptes, dépendance au dirigeant, contrats récurrents, propriété de la marque. Des régimes d'abattement importants existent sous conditions d'engagement de conservation — ils exigent anticipation et accompagnement spécialisé.
 
-## 27. Protéger
+## 28. Protéger
 
 Interrogés sur le principal risque pesant sur leur patrimoine, la plupart des épargnants citent une baisse des marchés. Statistiquement, le risque dominant est **l'incapacité de travail durable**. Un portefeuille se remet d'une baisse de 40 % ; un foyer qui perd 60 % de ses revenus pendant trois ans ne s'en remet pas sans protection.
 
@@ -100,7 +100,7 @@ Un **testament** devient utile dès qu'il existe une situation non standard : co
 
 Enfin, laissez un document unique listant banques, contrats et assureurs, crédits, coordonnées du notaire, emplacement des documents importants. **Sans mots de passe en clair** : indiquez seulement où les trouver, et informez une personne de confiance de son existence.
 
-## 28. Transmission
+## 29. Transmission
 
 C'est le seul domaine patrimonial où **l'anticipation produit mécaniquement de la valeur** : les abattements applicables aux donations se renouvellent par périodes pluriannuelles. Une transmission étalée sur vingt ou trente ans utilise donc plusieurs fois le même abattement, ce qu'une transmission au décès ne permet pas. Traiter le sujet à 55 ans ouvre des options qui n'existent plus à 80 ans.
 
@@ -108,7 +108,7 @@ C'est le seul domaine patrimonial où **l'anticipation produit mécaniquement de
 
 **Le don familial de sommes d'argent.** Dispositif distinct et cumulable, sous conditions d'âge du donateur et de majorité du bénéficiaire.
 
-**L'assurance-vie.** L'outil le plus souple (chapitre 12). Il permet notamment de transmettre à des personnes qui ne sont pas des héritiers directs — neveux, filleuls, partenaire — dans des conditions nettement plus favorables que le droit commun.
+**L'assurance-vie.** L'outil le plus souple (chapitre 13). Il permet notamment de transmettre à des personnes qui ne sont pas des héritiers directs — neveux, filleuls, partenaire — dans des conditions nettement plus favorables que le droit commun.
 
 **La donation avec réserve d'usufruit.** Vous donnez la **nue-propriété** tout en conservant l'**usufruit** : vous continuez à occuper le bien ou à en percevoir les loyers. Les droits ne portent que sur la valeur de la nue-propriété, déterminée par un barème officiel lié à votre âge — plus vous donnez tôt, plus la valeur taxable est faible. Au décès, l'usufruit s'éteint et le nu-propriétaire devient plein propriétaire **sans droits supplémentaires**. L'un des mécanismes les plus efficaces du droit français. Acte notarié obligatoire.
 

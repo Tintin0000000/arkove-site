@@ -12,9 +12,9 @@ La finance personnelle a une particularité rare : les règles qui comptent sont
 
 Ce guide couvre deux niveaux, et il est balisé pour que vous sachiez toujours où vous êtes.
 
-**Niveau débutant.** Vous avez un revenu, peut-être un livret A, et l'impression que votre argent dort. Vous ne savez pas combien vous épargnez réellement, ni par où commencer pour investir. Commencez à la Partie I et suivez l'ordre. Les Parties I à III suffisent à vous mettre dans une excellente position — meilleure que la majorité des épargnants français.
+**Niveau débutant.** Vous avez un revenu, peut-être un livret A, et l'impression que votre argent dort. Vous ne savez pas combien vous épargnez réellement — le chapitre 1 répond à cette question avant toute autre. Commencez à la Partie I et suivez l'ordre. Les Parties I à III suffisent à vous mettre dans une excellente position — meilleure que la majorité des épargnants français.
 
-**Niveau intermédiaire.** Vous avez déjà un PEA ou une assurance-vie, quelques ETF, peut-être un bien immobilier. Mais l'ensemble s'est construit par accumulation, sans stratégie d'ensemble : vous ne savez pas dire quelle est votre allocation cible, ni si votre fiscalité est optimisée. Lisez la Partie I en diagonale (le chapitre 1 reste utile : faites le bilan), puis concentrez-vous sur les Parties IV et V.
+**Niveau intermédiaire.** Vous avez déjà un PEA ou une assurance-vie, quelques ETF, peut-être un bien immobilier. Mais l'ensemble s'est construit par accumulation, sans stratégie d'ensemble : vous ne savez pas dire quelle est votre allocation cible, ni si votre fiscalité est optimisée. Lisez la Partie I en diagonale — les chapitres 1 et 2 restent utiles : faites le point sur vos flux, puis votre bilan — et concentrez-vous sur les Parties IV et V.
 
 Les chapitres les plus techniques sont signalés. Si un passage vous dépasse, sautez-le et revenez-y : rien dans la suite n'en dépend de façon bloquante.
 
@@ -22,7 +22,7 @@ Les chapitres les plus techniques sont signalés. Si un passage vous dépasse, s
 
 | Partie | Contenu | Niveau |
 |---|---|---|
-| I. Les fondations | Bilan, budget, épargne de précaution, dettes, les trois forces | Débutant |
+| I. Les fondations | Entrées et sorties, bilan, budget, épargne de précaution, dettes, les trois forces | Débutant |
 | II. Comprendre avant d'investir | Rendement, risque, classes d'actifs, ETF, erreurs classiques | Débutant |
 | III. Les enveloppes françaises | PEA, assurance-vie, PER, CTO, immobilier — et dans quel ordre | Débutant → Intermédiaire |
 | IV. Construire son portefeuille | Objectifs, allocation, portefeuilles modèles, choix des ETF, rééquilibrage | Intermédiaire |
@@ -49,7 +49,7 @@ Deux types de chiffres apparaissent dans ces pages, et ils n'ont pas la même du
 ::: {.alerte}
 **Règle absolue avant toute décision**
 
-Vérifiez le chiffre réglementaire à sa source officielle le jour où vous agissez. Les sources fiables et gratuites sont listées au chapitre 31 : *service-public.fr* et *impots.gouv.fr* pour la fiscalité et les plafonds, *amf-france.org* pour les produits financiers et les mises en garde, *banque-france.fr* pour les taux. Un guide ne remplace pas un barème officiel daté du jour.
+Vérifiez le chiffre réglementaire à sa source officielle le jour où vous agissez. Les sources fiables et gratuites sont listées au chapitre 32 : *service-public.fr* et *impots.gouv.fr* pour la fiscalité et les plafonds, *amf-france.org* pour les produits financiers et les mises en garde, *banque-france.fr* pour les taux. Un guide ne remplace pas un barème officiel daté du jour.
 :::
 
 ## Avertissement
@@ -62,4 +62,4 @@ Tout investissement en actifs non garantis comporte un **risque de perte en capi
 
 Pour toute opération engageante — arbitrage important, achat immobilier, montage de société, rédaction d'une clause bénéficiaire, stratégie de transmission — faites-vous accompagner par un professionnel réglementé : conseiller en investissements financiers (CIF) inscrit à l'ORIAS, notaire, avocat fiscaliste ou expert-comptable selon le sujet. Le coût d'une consultation est presque toujours inférieur au coût d'une erreur structurelle.
 
-Vérifiez systématiquement qu'un interlocuteur qui vous propose un placement est habilité : la liste officielle est consultable sur le site de l'ORIAS et sur *regafi.fr*. L'AMF publie également une liste noire des sites et acteurs non autorisés. Une promesse de rendement élevé garanti est, en pratique, toujours le signal d'une arnaque — le chapitre 9 y revient en détail.
+Vérifiez systématiquement qu'un interlocuteur qui vous propose un placement est habilité : la liste officielle est consultable sur le site de l'ORIAS et sur *regafi.fr*. L'AMF publie également une liste noire des sites et acteurs non autorisés. Une promesse de rendement élevé garanti est, en pratique, toujours le signal d'une arnaque — le chapitre 10 y revient en détail.

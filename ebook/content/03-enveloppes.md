@@ -4,7 +4,7 @@
 >
 > **Rappel permanent** : tous les plafonds, taux et seuils de cette partie sont donnés à titre indicatif et rassemblés en Annexe B. Vérifiez-les à leur source officielle le jour où vous agissez.
 
-## 10. Carte des enveloppes : quelle enveloppe pour quel objectif
+## 11. Carte des enveloppes : quelle enveloppe pour quel objectif
 
 ### Séparez deux décisions
 
@@ -38,14 +38,14 @@ Avant de choisir une enveloppe, répondez à trois questions sur l'argent concer
 **Quel est mon taux marginal d'imposition ?** C'est le facteur décisif pour le PER. À 11 %, il n'apporte presque rien. À 30 % ou plus, il devient un levier puissant.
 
 ::: {.encadre}
-**L'essentiel du chapitre 10**
+**L'essentiel du chapitre 11**
 
 - Deux décisions séparées : dans quoi j'investis, et où je le loge.
 - Le même actif produit des résultats nets très différents selon l'enveloppe.
 - Trois questions préalables : horizon, besoin de liquidité, taux marginal d'imposition.
 :::
 
-## 11. Le PEA : le meilleur outil pour les actions
+## 12. Le PEA : le meilleur outil pour les actions
 
 ### Le mécanisme
 
@@ -75,7 +75,7 @@ C'est l'action la plus rentable par minute investie de tout ce guide. Faites-le 
 
 ### Ce que vous pouvez y mettre
 
-Actions de sociétés européennes, et surtout **ETF éligibles au PEA**. Il existe des ETF éligibles qui répliquent des indices mondiaux ou américains : ils y parviennent par réplication synthétique (chapitre 8). Vous pouvez donc, en pratique, construire une exposition mondiale complète à l'intérieur d'un PEA.
+Actions de sociétés européennes, et surtout **ETF éligibles au PEA**. Il existe des ETF éligibles qui répliquent des indices mondiaux ou américains : ils y parviennent par réplication synthétique (chapitre 9). Vous pouvez donc, en pratique, construire une exposition mondiale complète à l'intérieur d'un PEA.
 
 Ne sont pas éligibles : obligations, la plupart des fonds non européens en détention directe, SCPI, matières premières physiques.
 
@@ -92,7 +92,7 @@ Les frais du PEA sont plafonnés par la réglementation, mais les écarts entre 
 - **Transmission** : le PEA est clôturé au décès et n'offre aucun avantage successoral spécifique. C'est le rôle de l'assurance-vie.
 
 ::: {.encadre}
-**L'essentiel du chapitre 11**
+**L'essentiel du chapitre 12**
 
 - Aucune imposition tant que l'argent reste dans le plan : arbitrages libres.
 - Après 5 ans, gains exonérés d'IR ; seuls les 17,2 % de prélèvements sociaux restent dus.
@@ -101,7 +101,7 @@ Les frais du PEA sont plafonnés par la réglementation, mais les écarts entre 
 - Pas d'obligations, pas de fonds euros, aucun avantage successoral.
 :::
 
-## 12. L'assurance-vie : la boîte à outils polyvalente
+## 13. L'assurance-vie : la boîte à outils polyvalente
 
 ### Pourquoi elle est incontournable
 
@@ -159,7 +159,7 @@ Relisez vos clauses bénéficiaires tous les trois ans et à chaque événement 
 **Ouvrez-en un tôt, même avec 500 €.** Comme pour le PEA, c'est le compteur des 8 ans qui démarre.
 
 ::: {.encadre}
-**L'essentiel du chapitre 12**
+**L'essentiel du chapitre 13**
 
 - Aucun plafond, disponible à tout moment, univers de supports très large.
 - Seuls les gains contenus dans un retrait sont imposés, au prorata.
@@ -168,7 +168,7 @@ Relisez vos clauses bénéficiaires tous les trois ans et à chaque événement 
 - Relisez la clause bénéficiaire tous les 3 ans. Ne fermez jamais un vieux contrat.
 :::
 
-## 13. Le PER : avantage fiscal aujourd'hui, contrainte demain
+## 14. Le PER : avantage fiscal aujourd'hui, contrainte demain
 
 ### Le mécanisme en une phrase
 
@@ -218,7 +218,7 @@ Le déblocage pour achat de la résidence principale est important à connaître
 **Ignorer l'option de non-déduction.** Il est possible de renoncer à la déduction à l'entrée ; la sortie est alors plus favorable. Cette option peut avoir du sens avec un TMI faible, mais dans ce cas l'assurance-vie reste généralement plus souple.
 
 ::: {.encadre}
-**L'essentiel du chapitre 13**
+**L'essentiel du chapitre 14**
 
 - Le PER est un report d'imposition, pas une exonération.
 - Pertinent à partir d'un TMI de 30 % ; peu intéressant à 11 %, inutile à 0 %.
@@ -227,7 +227,7 @@ Le déblocage pour achat de la résidence principale est important à connaître
 - Exigez les mêmes frais faibles que sur une bonne assurance-vie.
 :::
 
-## 14. Le compte-titres ordinaire : quand il devient utile
+## 15. Le compte-titres ordinaire : quand il devient utile
 
 ### Ce qu'il apporte
 
@@ -251,7 +251,7 @@ Un mécanisme utile : les **moins-values sont imputables** sur les plus-values d
 Le CTO vient **après** les enveloppes fiscales, sauf besoin spécifique. Le même ETF mondial logé dans un PEA de plus de cinq ans échappe à l'impôt sur le revenu ; dans un CTO, il subit 30 % sur les gains. À actif identique, l'écart est considérable sur vingt ans.
 
 ::: {.encadre}
-**L'essentiel du chapitre 14**
+**L'essentiel du chapitre 15**
 
 - Aucune limite, aucun avantage fiscal : 30 % sur les gains, à la vente.
 - Accès à tout : obligations, titres US en direct, ETF non éligibles au PEA.
@@ -259,7 +259,7 @@ Le CTO vient **après** les enveloppes fiscales, sauf besoin spécifique. Le mê
 - À utiliser après saturation des enveloppes fiscales, ou pour un besoin précis.
 :::
 
-## 15. L'immobilier : trois usages, trois logiques
+## 16. L'immobilier : trois usages, trois logiques
 
 ### La résidence principale
 
@@ -273,7 +273,7 @@ La règle pratique : **en dessous de cinq ans de détention prévue, la location
 
 ### L'immobilier locatif
 
-C'est le seul investissement où une banque vous prête massivement pour acheter un actif qu'un tiers contribue à rembourser. C'est aussi le plus exigeant en travail et en compétence. Le chapitre 25 traite le calcul complet ; retenez ici les régimes fiscaux.
+C'est le seul investissement où une banque vous prête massivement pour acheter un actif qu'un tiers contribue à rembourser. C'est aussi le plus exigeant en travail et en compétence. Le chapitre 26 traite le calcul complet ; retenez ici les régimes fiscaux.
 
 | Régime | Principe | Pour qui |
 |---|---|---|
@@ -303,7 +303,7 @@ Les SCPI permettent d'investir dans l'immobilier professionnel sans gestion, à 
 - **La fiscalité en détention directe est lourde** : les revenus sont imposés comme des revenus fonciers, au barème de l'impôt sur le revenu **plus** les prélèvements sociaux. Pour un TMI de 30 %, le rendement net chute considérablement. Les détenir **à l'intérieur d'une assurance-vie** adoucit sensiblement cette fiscalité, au prix d'une offre plus restreinte et de frais supplémentaires.
 
 ::: {.encadre}
-**L'essentiel du chapitre 15**
+**L'essentiel du chapitre 16**
 
 - Résidence principale : arbitrage de vie ; en dessous de 5 ans, la location gagne souvent.
 - Locatif : seul accès au levier bancaire, mais c'est un métier. Le LMNP au réel est souvent le régime le plus efficace.
@@ -311,7 +311,7 @@ Les SCPI permettent d'investir dans l'immobilier professionnel sans gestion, à 
 - SCPI : frais d'entrée de 8 à 12 %, prix de part non garanti, liquidité limitée, fiscalité lourde en direct.
 :::
 
-## 16. L'ordre de remplissage : la séquence par défaut
+## 17. L'ordre de remplissage : la séquence par défaut
 
 ### Pourquoi un ordre
 
@@ -323,7 +323,7 @@ Les SCPI permettent d'investir dans l'immobilier professionnel sans gestion, à 
 
 **Étape 2 — Les dettes à plus de 6 %.** Crédit renouvelable, découvert, crédits conso coûteux. *Rendement : certain, égal au taux de la dette.*
 
-**Étape 3 — L'abondement de l'employeur.** Si votre entreprise abonde votre PEE ou votre PER collectif, versez au moins le montant qui déclenche l'abondement maximal. Un abondement de 100 % est un rendement immédiat de 100 % : rien d'autre dans ce guide n'en approche. *Attention : ne laissez pas cette épargne concentrée en titres de votre employeur (chapitre 9).*
+**Étape 3 — L'abondement de l'employeur.** Si votre entreprise abonde votre PEE ou votre PER collectif, versez au moins le montant qui déclenche l'abondement maximal. Un abondement de 100 % est un rendement immédiat de 100 % : rien d'autre dans ce guide n'en approche. *Attention : ne laissez pas cette épargne concentrée en titres de votre employeur (chapitre 10).*
 
 **Étape 4 — Ouvrir un PEA et une assurance-vie, même avec 100 €.** Pour démarrer les compteurs de 5 et 8 ans. *Coût : nul. Valeur : élevée.*
 
@@ -336,6 +336,12 @@ Les SCPI permettent d'investir dans l'immobilier professionnel sans gestion, à 
 **Étape 8 — Le CTO, au-delà.** Pour les plafonds atteints et les actifs inéligibles.
 
 **En parallèle, et non à la place** — l'immobilier, dès lors que le projet est mûr, que l'épargne de précaution est constituée et que votre taux d'endettement le permet.
+
+<figure class="figure">
+<svg viewBox="0 0 600 262" role="img" aria-label="Ordre de remplissage des enveloppes"><circle cx="14" cy="22" r="11" fill="var(--gold)"/><text x="14" y="26" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">1</text><text x="34" y="26" font-size="11.5" fill="var(--ink)">Épargne de précaution</text><rect x="258" y="13" width="330" height="18" rx="3" fill="var(--gold)" opacity="0.82"/><circle cx="14" cy="53" r="11" fill="var(--gold)"/><text x="14" y="57" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">2</text><text x="34" y="57" font-size="11.5" fill="var(--ink)">Dettes à plus de 6 %</text><rect x="258" y="44" width="310" height="18" rx="3" fill="var(--gold)" opacity="0.78"/><circle cx="14" cy="84" r="11" fill="var(--gold)"/><text x="14" y="88" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">3</text><text x="34" y="88" font-size="11.5" fill="var(--ink)">Abondement employeur</text><rect x="258" y="75" width="290" height="18" rx="3" fill="var(--gold)" opacity="0.75"/><circle cx="14" cy="115" r="11" fill="var(--gold)"/><text x="14" y="119" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">4</text><text x="34" y="119" font-size="11.5" fill="var(--ink)">Ouvrir PEA et assurance-vie</text><rect x="258" y="106" width="251" height="18" rx="3" fill="var(--gold)" opacity="0.68"/><circle cx="14" cy="146" r="11" fill="var(--gold)"/><text x="14" y="150" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">5</text><text x="34" y="150" font-size="11.5" fill="var(--ink)">Saturer le PEA</text><rect x="258" y="137" width="218" height="18" rx="3" fill="var(--gold)" opacity="0.62"/><circle cx="14" cy="177" r="11" fill="var(--gold)"/><text x="14" y="181" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">6</text><text x="34" y="181" font-size="11.5" fill="var(--ink)">PER si TMI ≥ 30 %</text><rect x="258" y="168" width="182" height="18" rx="3" fill="var(--gold)" opacity="0.55"/><circle cx="14" cy="208" r="11" fill="var(--gold)"/><text x="14" y="212" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">7</text><text x="34" y="212" font-size="11.5" fill="var(--ink)">Assurance-vie</text><rect x="258" y="199" width="152" height="18" rx="3" fill="var(--gold)" opacity="0.50"/><circle cx="14" cy="239" r="11" fill="var(--gold)"/><text x="14" y="243" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">8</text><text x="34" y="243" font-size="11.5" fill="var(--ink)">Compte-titres ordinaire</text><rect x="258" y="230" width="119" height="18" rx="3" fill="var(--gold)" opacity="0.44"/><text x="258" y="258" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Rendement certain décroissant</text></svg>
+<figcaption><strong>La séquence se classe par rendement certain décroissant.</strong> La longueur des barres figure la certitude du gain, pas son montant.</figcaption>
+</figure>
+
 
 ### Tableau comparatif de synthèse
 
@@ -356,7 +362,7 @@ Reprenez les huit étapes et notez, pour chacune : *fait*, *en cours*, ou *à fa
 :::
 
 ::: {.encadre}
-**L'essentiel du chapitre 16**
+**L'essentiel du chapitre 17**
 
 - L'ordre se classe par rendement certain décroissant : précaution, dettes chères, abondement.
 - Ouvrez PEA et assurance-vie immédiatement, même avec 100 €, pour la prise de date.

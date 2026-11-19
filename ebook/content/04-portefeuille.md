@@ -2,7 +2,7 @@
 
 > Niveau intermédiaire. Cette partie suppose acquises les Parties I à III : épargne de précaution constituée, dettes coûteuses éteintes, enveloppes ouvertes. Son objet est la seule décision qui explique l'essentiel de votre résultat — la répartition entre classes d'actifs — puis sa mise en œuvre concrète.
 
-## 17. Définir ses objectifs : la grille préalable
+## 18. Définir ses objectifs : la grille préalable
 
 ### Pourquoi aucun portefeuille ne peut être « bon » dans l'absolu
 
@@ -42,7 +42,7 @@ Sarah n'a pas « un portefeuille ». Elle en a trois, et c'est précisément ce 
 :::
 
 ::: {.encadre}
-**L'essentiel du chapitre 17**
+**L'essentiel du chapitre 18**
 
 - Un portefeuille n'est jamais bon dans l'absolu : il est adapté à un objectif daté.
 - Trois attributs obligatoires par euro : objectif, horizon, perte maximale tolérée.
@@ -50,7 +50,7 @@ Sarah n'a pas « un portefeuille ». Elle en a trois, et c'est précisément ce 
 - Découpez votre patrimoine en poches étanches, avec une allocation propre à chacune.
 :::
 
-## 18. L'allocation d'actifs : la seule décision qui compte vraiment
+## 19. L'allocation d'actifs : la seule décision qui compte vraiment
 
 ### Ce que montrent les travaux académiques
 
@@ -100,7 +100,7 @@ Une fois la part actions fixée, trois sous-décisions.
 **La poche sécurisée.** Fonds euros et monétaire. Elle garantit votre capacité à faire face sans toucher au reste.
 
 ::: {.encadre}
-**L'essentiel du chapitre 18**
+**L'essentiel du chapitre 19**
 
 - L'allocation entre classes d'actifs explique l'essentiel du résultat : concentrez-vous là.
 - La part actions se décide par l'horizon, puis la tolérance réelle, puis la capacité d'encaissement.
@@ -112,7 +112,7 @@ Une fois la part actions fixée, trois sous-décisions.
 ::: {.widget data-widget="risk"}
 :::
 
-## 19. Trois portefeuilles modèles, expliqués ligne par ligne
+## 20. Trois portefeuilles modèles, expliqués ligne par ligne
 
 ::: {.alerte}
 **Ce que ces portefeuilles sont et ne sont pas**
@@ -163,18 +163,24 @@ Ce sont des **illustrations pédagogiques** de la logique d'allocation, construi
 - Perte temporaire envisageable en crise : de l'ordre de **−38 à −45 %**.
 - Enveloppe adaptée : PEA en priorité, saturé avant tout autre support.
 
+<figure class="figure">
+<svg viewBox="0 0 600 190" role="img" aria-label="Part actions des trois portefeuilles modèles"><text x="0" y="34" font-size="12" font-weight="700" fill="var(--ink)">Prudent</text><rect x="110" y="20" width="380" height="22" rx="3" fill="var(--ink-mute, var(--ink-3, #6B7A86))" opacity="0.35"/><rect x="110" y="20" width="95" height="22" rx="3" fill="var(--gold)"/><text x="211" y="36" font-size="11" font-weight="700" fill="var(--ink)">25 %</text><text x="0" y="86" font-size="12" font-weight="700" fill="var(--ink)">Équilibré</text><rect x="110" y="72" width="380" height="22" rx="3" fill="var(--ink-mute, var(--ink-3, #6B7A86))" opacity="0.35"/><rect x="110" y="72" width="209" height="22" rx="3" fill="var(--gold)"/><text x="325" y="88" font-size="11" font-weight="700" fill="var(--ink)">55 %</text><text x="0" y="138" font-size="12" font-weight="700" fill="var(--ink)">Dynamique</text><rect x="110" y="124" width="380" height="22" rx="3" fill="var(--ink-mute, var(--ink-3, #6B7A86))" opacity="0.35"/><rect x="110" y="124" width="323" height="22" rx="3" fill="var(--gold)"/><text x="439" y="140" font-size="11" font-weight="700" fill="var(--ink)">85 %</text><rect x="110" y="172" width="11" height="11" rx="2" fill="var(--gold)"/><text x="128" y="182" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Actions</text><rect x="196" y="172" width="11" height="11" rx="2" fill="var(--ink-mute, var(--ink-3, #6B7A86))" opacity="0.35"/><text x="214" y="182" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Obligations, fonds euros et monétaire</text></svg>
+<figcaption><strong>La seule question qui compte vraiment.</strong> Tout le reste — géographie, choix des supports, moment d’entrée — pèse bien moins que ce curseur.</figcaption>
+</figure>
+
+
 ### Lecture transversale
 
 Trois remarques valent plus que les trois tableaux.
 
 **La simplicité est une qualité, pas un aveu.** Un portefeuille de deux à quatre lignes est plus facile à comprendre, à rééquilibrer et à tenir qu'un portefeuille de quinze lignes — et il n'est pas moins performant. L'ajout de lignes satisfait souvent le besoin d'agir, pas celui de diversifier.
 
-**La poche sécurisée a une seconde fonction.** Au-delà de la sécurité, elle constitue votre **munition de rééquilibrage** : c'est l'argent avec lequel vous rachèterez des actions quand elles auront baissé, mécaniquement, sans avoir à prédire quoi que ce soit (chapitre 22).
+**La poche sécurisée a une seconde fonction.** Au-delà de la sécurité, elle constitue votre **munition de rééquilibrage** : c'est l'argent avec lequel vous rachèterez des actions quand elles auront baissé, mécaniquement, sans avoir à prédire quoi que ce soit (chapitre 23).
 
 **Ne changez pas de portefeuille modèle en cours de route.** Passer du dynamique à l'équilibré après une baisse de 25 % est exactement l'erreur que ces modèles servent à éviter. Choisissez celui que vous tiendrez dans le pire scénario, pas celui qui vous plaît dans un marché haussier.
 
 ::: {.encadre}
-**L'essentiel du chapitre 19**
+**L'essentiel du chapitre 20**
 
 - Trois archétypes selon l'horizon : prudent (3-6 ans), équilibré (8-15 ans), dynamique (15 ans +).
 - Deux à quatre lignes suffisent ; la complexité n'améliore pas la performance.
@@ -182,7 +188,7 @@ Trois remarques valent plus que les trois tableaux.
 - Choisissez le modèle que vous tiendrez dans le pire scénario, et ne changez pas en cours de crise.
 :::
 
-## 20. Choisir ses ETF : les sept critères
+## 21. Choisir ses ETF : les sept critères
 
 Une fois l'allocation décidée, la sélection des supports est un travail technique et fini. Sept critères suffisent.
 
@@ -240,7 +246,7 @@ Le **spread** (écart entre prix d'achat et de vente) et les frais de courtage c
 :::
 
 ::: {.encadre}
-**L'essentiel du chapitre 20**
+**L'essentiel du chapitre 21**
 
 - L'indice est 90 % de la décision ; les frais ne se comparent qu'à indice égal.
 - Visez 0,05 à 0,30 % de frais courants, un encours élevé, une ancienneté réelle.
@@ -249,7 +255,7 @@ Le **spread** (écart entre prix d'achat et de vente) et les frais de courtage c
 - Vérifiez l'écart de suivi : il valide tous les autres critères.
 :::
 
-## 21. Investir en pratique : versement unique ou programmé
+## 22. Investir en pratique : versement unique ou programmé
 
 ### Ce que disent les données
 
@@ -279,7 +285,7 @@ Si vous hésitez, retenez ce critère : **choisissez l'option que vous ne regret
 **Pas d'interruption en période de baisse.** C'est la règle la plus importante et la plus difficile. Les versements effectués pendant les baisses sont ceux qui achètent le plus de parts — ils produisent, avec le recul, les meilleures performances de tout votre historique.
 
 ::: {.encadre}
-**L'essentiel du chapitre 21**
+**L'essentiel du chapitre 22**
 
 - Flux mensuel : versement programmé automatique, à date fixe. Point final.
 - Somme importante : tout de suite (optimal) ou étalé sur 6-12 mois (plus tenable).
@@ -287,7 +293,7 @@ Si vous hésitez, retenez ce critère : **choisissez l'option que vous ne regret
 - Automatisez tout, consultez peu, et n'interrompez jamais les versements en baisse.
 :::
 
-## 22. Rééquilibrer : la discipline qui remplace la prévision
+## 23. Rééquilibrer : la discipline qui remplace la prévision
 
 ### Pourquoi c'est nécessaire
 
@@ -322,7 +328,7 @@ Par ordre de préférence :
 **Rééquilibrer « sauf cette fois ».** Suspendre la règle parce que « le contexte est particulier » revient à abandonner la méthode. Le contexte est toujours particulier.
 
 ::: {.encadre}
-**L'essentiel du chapitre 22**
+**L'essentiel du chapitre 23**
 
 - Sans rééquilibrage, votre risque dérive à la hausse et culmine avant les corrections.
 - Méthode par défaut : vérification annuelle, action au-delà de 5 points d'écart.
@@ -330,7 +336,7 @@ Par ordre de préférence :
 - Le rééquilibrage le plus rentable est celui qui suit une forte baisse.
 :::
 
-## 23. Que faire quand tout baisse de 30 %
+## 24. Que faire quand tout baisse de 30 %
 
 ### Ce qui va se passer
 
@@ -378,7 +384,7 @@ Il existe : lorsque votre **situation personnelle** a changé — perte d'emploi
 La distinction est nette : **vous réagissez à votre vie, pas aux marchés.**
 
 ::: {.encadre}
-**L'essentiel du chapitre 23**
+**L'essentiel du chapitre 24**
 
 - Des baisses de 20 à 40 % se produiront : c'est une certitude, pas un risque.
 - Décidez à froid ce que vous ferez à chaud, et écrivez-le.

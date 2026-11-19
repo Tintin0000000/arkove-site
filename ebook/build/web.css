@@ -339,3 +339,15 @@ ul.task-list input[type=checkbox]:disabled{ opacity:1; cursor:pointer; }
 @media (prefers-reduced-motion:reduce){
   *{ animation:none !important; transition:none !important; }
 }
+
+/* ---------- Figures ---------- */
+figure.figure{
+  margin:30px 0; padding:18px 18px 14px;
+  border:1px solid var(--line); border-radius:12px;
+  background:var(--surface); box-shadow:var(--shadow);
+}
+figure.figure svg{ width:100%; height:auto; display:block; }
+figure.figure figcaption{
+  font-family:var(--font-d); font-size:13px; line-height:1.5;
+  color:var(--ink-3); margin-top:12px;
+}

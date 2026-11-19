@@ -2,13 +2,13 @@
 
 > Un guide lu ne change rien. Un guide appliqué change une trajectoire. Cette partie ne contient aucune notion nouvelle : seulement un calendrier, une routine, et les sources pour rester à jour.
 
-## 29. Votre plan en 90 jours
+## 30. Votre plan en 90 jours
 
-Le découpage ci-dessous respecte l'ordre de priorité du chapitre 16. Chaque semaine comporte peu de tâches, volontairement : un plan surchargé est un plan abandonné.
+Le découpage ci-dessous respecte l'ordre de priorité du chapitre 17. Chaque semaine comporte peu de tâches, volontairement : un plan surchargé est un plan abandonné.
 
 ### Semaines 1 à 2 — Voir clair
 
-- [ ] Remplir le **bilan patrimonial** du chapitre 1 (Annexe E). Le dater et le conserver.
+- [ ] Remplir le **bilan patrimonial** du chapitre 2 (Annexe E). Le dater et le conserver.
 - [ ] Calculer vos trois ratios : taux d'épargne, taux d'endettement, mois de coussin.
 - [ ] Relever vos **dépenses des trois derniers mois** depuis vos relevés bancaires, regroupées en grandes masses. Pas de catégorisation fine : l'objectif est d'obtenir le montant mensuel réel de vos dépenses.
 - [ ] Lister toutes vos dettes avec leur **taux** et leur capital restant dû.
@@ -31,21 +31,21 @@ Le découpage ci-dessous respecte l'ordre de priorité du chapitre 16. Chaque se
 
 - [ ] **Ouvrir un PEA** chez un courtier à frais faibles et y verser 100 €. Le compteur des 5 ans démarre.
 - [ ] **Ouvrir une assurance-vie** sans frais sur versement, avec des ETF disponibles. Y verser 500 € ou moins. Le compteur des 8 ans démarre.
-- [ ] Réaliser l'**audit de frais** du chapitre 5 sur tous vos contrats existants. Noter le total annuel en pourcentage et en euros.
+- [ ] Réaliser l'**audit de frais** du chapitre 6 sur tous vos contrats existants. Noter le total annuel en pourcentage et en euros.
 - [ ] Vérifier si votre employeur propose un **abondement** sur un PEE ou un PER collectif, et à quelles conditions.
 
 ### Semaines 9 à 10 — Décider l'allocation
 
-- [ ] Remplir la **grille objectif / horizon / perte tolérée** du chapitre 17 pour chaque poche de capital.
-- [ ] Choisir votre **part actions** avec le tableau de perte maximale du chapitre 18, converti en euros.
-- [ ] Choisir un **portefeuille modèle** du chapitre 19 et l'adapter à votre situation.
-- [ ] Sélectionner vos supports avec les sept critères du chapitre 20. Écrire la liste finale.
+- [ ] Remplir la **grille objectif / horizon / perte tolérée** du chapitre 18 pour chaque poche de capital.
+- [ ] Choisir votre **part actions** avec le tableau de perte maximale du chapitre 19, converti en euros.
+- [ ] Choisir un **portefeuille modèle** du chapitre 20 et l'adapter à votre situation.
+- [ ] Sélectionner vos supports avec les sept critères du chapitre 21. Écrire la liste finale.
 
 ### Semaines 11 à 12 — Exécuter et protéger
 
 - [ ] Mettre en place le **versement programmé** vers vos enveloppes d'investissement, à date fixe.
 - [ ] Effectuer le premier investissement selon l'allocation décidée.
-- [ ] Rédiger et signer votre **règle de conduite en cas de baisse** (chapitre 23).
+- [ ] Rédiger et signer votre **règle de conduite en cas de baisse** (chapitre 24).
 - [ ] Vérifier vos **clauses bénéficiaires** d'assurance-vie et les mettre à jour si nécessaire.
 - [ ] Relire votre contrat de **prévoyance** : délai de carence, barème d'invalidité, exclusions. Si vous êtes indépendant et sans contrat, prendre rendez-vous.
 - [ ] Si vous êtes pacsé sans testament : prendre rendez-vous chez un notaire.
@@ -61,7 +61,7 @@ Dans l'ordre, par rapport gain/effort décroissant :
 3. **Faire l'audit de frais.** C'est le seul gain à la fois immédiat, certain et récurrent.
 :::
 
-## 30. La revue annuelle : une heure par an
+## 31. La revue annuelle : une heure par an
 
 Une fois le système en place, le pilotage demande très peu de temps. L'excès de suivi est contre-productif : il multiplie les occasions d'intervenir à mauvais escient.
 
@@ -78,11 +78,11 @@ Une fois le système en place, le pilotage demande très peu de temps. L'excès 
 
 **1. Le bilan.** Recalculer le patrimoine net et le reporter dans votre tableau historique. Observer la pente sur plusieurs années.
 
-**2. La capacité d'épargne.** Vos revenus ont-ils augmenté ? Si oui, avez-vous appliqué la règle du chapitre 2 — diriger la moitié de l'augmentation vers l'épargne ? Si non, c'est le moment : relevez le montant de votre virement automatique.
+**2. La capacité d'épargne.** Vos revenus ont-ils augmenté ? Si oui, avez-vous appliqué la règle du chapitre 3 — diriger la moitié de l'augmentation vers l'épargne ? Si non, c'est le moment : relevez le montant de votre virement automatique.
 
 **3. L'épargne de précaution.** Est-elle au niveau cible ? Vos dépenses ont-elles augmenté, ce qui relèverait la cible ? L'avez-vous entamée sans la reconstituer ?
 
-**4. L'allocation.** Comparer l'allocation réelle à la cible. Agir si un écart dépasse 5 points, de préférence avec les versements à venir (chapitre 22).
+**4. L'allocation.** Comparer l'allocation réelle à la cible. Agir si un écart dépasse 5 points, de préférence avec les versements à venir (chapitre 23).
 
 **5. Les frais.** Vérifier les frais réels prélevés sur l'année écoulée. Les offres évoluent : ce qui était compétitif il y a cinq ans ne l'est plus nécessairement.
 
@@ -100,7 +100,7 @@ Une fois le système en place, le pilotage demande très peu de temps. L'excès 
 Dans la grande majorité des années, la réponse est non — et c'est précisément le signe d'un système bien construit. Un patrimoine qui exige des interventions constantes est mal structuré.
 :::
 
-## 31. Pour aller plus loin, et rester à jour
+## 32. Pour aller plus loin, et rester à jour
 
 ### Les sources officielles à utiliser systématiquement
 

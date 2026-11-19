@@ -85,7 +85,7 @@ page = f"""<title>Argent Maîtrisé</title>
       <h1>Argent<em>Maîtrisé</em></h1>
       <p class="sub">Du premier euro épargné au patrimoine qui travaille pour vous. Budget, épargne, investissement, enveloppes françaises, immobilier, fiscalité et transmission — avec les simulateurs pour appliquer chaque chapitre à vos propres chiffres.</p>
       <div class="chips">
-        <span class="chip">31 chapitres</span>
+        <span class="chip">32 chapitres</span>
         <span class="chip">5 simulateurs</span>
         <span class="chip">Plan 90 jours</span>
         <span class="chip">6 annexes</span>

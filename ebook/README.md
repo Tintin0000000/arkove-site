@@ -1,15 +1,15 @@
 # Argent Maîtrisé — e-book
 
 Guide de finances personnelles (français), niveaux débutant et intermédiaire.
-31 chapitres, décliné en trois éditions.
+32 chapitres, décliné en trois éditions.
 
 | Édition | Source | Sortie | Volume |
 |---|---|---|---|
-| **Essentielle** (PDF vendu) | `content-court/` | `Argent-Maitrise-essentiel.pdf` | 60 p., 14 300 mots |
-| **Complète** (PDF long) | `content/` | `Argent-Maitrise-ebook.pdf` | 135 p., 24 000 mots |
+| **Essentielle** (PDF vendu) | `content-court/` | `Argent-Maitrise-essentiel.pdf` | 66 p., 15 200 mots |
+| **Complète** (PDF long) | `content/` | `Argent-Maitrise-ebook.pdf` | 145 p., 25 500 mots |
 | **Web interactive** | `content/` | `web/argent-maitrise.html` | texte long + 5 simulateurs |
 
-L'édition essentielle couvre les mêmes 31 chapitres, resserrés : développements
+L'édition essentielle couvre les mêmes 32 chapitres, resserrés : développements
 coupés, moins d'exemples, un encadré « L'essentiel » par partie au lieu d'un par
 chapitre, annexes allégées. La mise en page est aussi plus dense — pas de saut de
 page à chaque chapitre, marges et interligne réduits, tableaux sécables.
@@ -43,6 +43,25 @@ Conventions de balisage, en plus du Markdown standard :
 - `::: {.formule}` — formule de calcul
 - `::: {.widget data-widget="xxx"}` — simulateur : **invisible dans le PDF**,
   rendu en interactif sur le web (`precaution`, `compound`, `fees`, `risk`, `cashflow`)
+- `<figure class="figure">` — illustration SVG en HTML brut, rendue dans les
+  deux formats. Les couleurs viennent des tokens avec repli
+  (`var(--gold-soft, var(--gold-2, …))`), car les feuilles print et web ne
+  nomment pas les nuances secondaires de la même façon.
+
+## Règle de pagination
+
+**Aucun tableau, encadré ou figure ne doit se couper entre deux pages.** Tous
+sont en `break-inside: avoid`, ce qui ne suffit pas si un élément dépasse la
+hauteur utile d'une page : le navigateur le coupe quand même. Après toute
+modification de contenu, vérifiez avec :
+
+```bash
+node build/checktables.js       # édition essentielle
+node build/checktables-long.js  # édition complète
+```
+
+Le tableau `over` doit rester vide. S'il ne l'est pas, scindez l'élément — c'est
+ainsi que l'exemple du chapitre 1 a été sorti de son encadré.
 
 ## Régénérer
 

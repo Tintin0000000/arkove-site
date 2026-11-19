@@ -10,13 +10,13 @@ La finance personnelle a une particularité : les règles qui comptent sont peu 
 
 ## Les deux parcours
 
-**Débutant.** Vous avez un revenu, peut-être un livret A, et l'impression que votre argent dort. Suivez l'ordre. Les Parties I à III suffisent à vous placer devant la majorité des épargnants français.
+**Débutant.** Vous avez un revenu, peut-être un livret A, et l'impression que votre argent dort. Commencez au chapitre 1 et suivez l'ordre. Les Parties I à III suffisent à vous placer devant la majorité des épargnants français.
 
-**Intermédiaire.** Vous avez déjà un PEA ou une assurance-vie, mais l'ensemble s'est construit par accumulation, sans stratégie. Lisez la Partie I en diagonale — faites quand même le bilan du chapitre 1 — puis concentrez-vous sur les Parties IV et V.
+**Intermédiaire.** Vous avez déjà un PEA ou une assurance-vie, mais l'ensemble s'est construit par accumulation, sans stratégie. Lisez la Partie I en diagonale — faites quand même le bilan du chapitre 2 — puis concentrez-vous sur les Parties IV et V.
 
 | Partie | Contenu | Niveau |
 |---|---|---|
-| I. Fondations | Bilan, budget, épargne de précaution, dettes, les trois forces | Débutant |
+| I. Fondations | Entrées et sorties, bilan, budget, précaution, dettes, les trois forces | Débutant |
 | II. Comprendre | Rendement, risque, classes d'actifs, ETF, erreurs | Débutant |
 | III. Enveloppes | PEA, assurance-vie, PER, CTO, immobilier, ordre de remplissage | Déb. → Interm. |
 | IV. Portefeuille | Objectifs, allocation, portefeuilles modèles, ETF, rééquilibrage | Intermédiaire |

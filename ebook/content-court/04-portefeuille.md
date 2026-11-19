@@ -2,7 +2,7 @@
 
 > Niveau intermédiaire. Cette partie suppose les Parties I à III en place : précaution constituée, dettes chères éteintes, enveloppes ouvertes.
 
-## 17. Définir ses objectifs
+## 18. Définir ses objectifs
 
 « Quel est le meilleur portefeuille ? » n'a pas de réponse : un portefeuille n'est pas bon dans l'absolu, il est **adapté ou inadapté à un objectif**. Le même portefeuille à 90 % d'actions est excellent pour une retraite à trente ans et catastrophique pour un apport immobilier à deux ans.
 
@@ -25,7 +25,7 @@ Cessez donc de penser « mon patrimoine » comme un bloc, et découpez-le en poc
 **Exemple** — Sarah, 38 ans, 95 000 €. **Précaution** : 14 000 € sur livrets, 0 % de risque. **Apport immobilier dans 3 ans** : 30 000 € en fonds euros et monétaire, son horizon interdit la volatilité. **Retraite dans 25 ans** : 51 000 € à 85 % actions, logés en priorité dans le PEA. Sarah n'a pas « un portefeuille », elle en a trois — et c'est ce qui la rend capable de tenir le troisième.
 :::
 
-## 18. L'allocation d'actifs
+## 19. L'allocation d'actifs
 
 L'un des résultats les plus solides de la recherche en finance : la **répartition entre grandes classes d'actifs** explique l'essentiel de la variabilité du rendement d'un portefeuille diversifié, bien plus que le choix des titres ou le moment des opérations. C'est libérateur : vous pouvez cesser de chercher les bons titres et vous concentrer sur une seule question — **quelle part en actions ?**
 
@@ -46,7 +46,7 @@ Choisissez la ligne dont le pourcentage, **converti en euros sur votre capital r
 
 Trois sous-décisions ensuite. **La géographie** : un ETF mondial pondéré par capitalisation est très concentré sur les États-Unis ; trois positions sont défendables — accepter cette pondération, surpondérer l'Europe pour réduire le risque de change face à vos dépenses futures en euros, ou ajouter 5 à 15 % de marchés émergents. Aucune n'est objectivement supérieure ; l'essentiel est de choisir et de s'y tenir. **La poche obligataire** sert à amortir : évitez de la transformer en recherche de rendement, une poche à haut rendement se comporte en crise comme des actions et perd sa fonction. **La poche sécurisée** garantit votre capacité à faire face sans toucher au reste.
 
-## 19. Trois portefeuilles modèles
+## 20. Trois portefeuilles modèles
 
 ::: {.alerte}
 **Ce que ces portefeuilles sont et ne sont pas**
@@ -66,9 +66,15 @@ Rendement réel espéré : **3 à 4 % par an**. Perte temporaire envisageable : 
 70 % actions mondiales · 15 % actions émergentes · 15 % obligations et fonds euros.
 Rendement réel espéré : **4,5 à 6 % par an**. Perte temporaire envisageable : **−38 à −45 %**.
 
+<figure class="figure">
+<svg viewBox="0 0 600 190" role="img" aria-label="Part actions des trois portefeuilles modèles"><text x="0" y="34" font-size="12" font-weight="700" fill="var(--ink)">Prudent</text><rect x="110" y="20" width="380" height="22" rx="3" fill="var(--ink-mute, var(--ink-3, #6B7A86))" opacity="0.35"/><rect x="110" y="20" width="95" height="22" rx="3" fill="var(--gold)"/><text x="211" y="36" font-size="11" font-weight="700" fill="var(--ink)">25 %</text><text x="0" y="86" font-size="12" font-weight="700" fill="var(--ink)">Équilibré</text><rect x="110" y="72" width="380" height="22" rx="3" fill="var(--ink-mute, var(--ink-3, #6B7A86))" opacity="0.35"/><rect x="110" y="72" width="209" height="22" rx="3" fill="var(--gold)"/><text x="325" y="88" font-size="11" font-weight="700" fill="var(--ink)">55 %</text><text x="0" y="138" font-size="12" font-weight="700" fill="var(--ink)">Dynamique</text><rect x="110" y="124" width="380" height="22" rx="3" fill="var(--ink-mute, var(--ink-3, #6B7A86))" opacity="0.35"/><rect x="110" y="124" width="323" height="22" rx="3" fill="var(--gold)"/><text x="439" y="140" font-size="11" font-weight="700" fill="var(--ink)">85 %</text><rect x="110" y="172" width="11" height="11" rx="2" fill="var(--gold)"/><text x="128" y="182" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Actions</text><rect x="196" y="172" width="11" height="11" rx="2" fill="var(--ink-mute, var(--ink-3, #6B7A86))" opacity="0.35"/><text x="214" y="182" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Obligations, fonds euros et monétaire</text></svg>
+<figcaption><strong>La seule question qui compte vraiment.</strong> Tout le reste — géographie, choix des supports, moment d’entrée — pèse bien moins que ce curseur.</figcaption>
+</figure>
+
+
 Trois remarques valent plus que les trois listes. **La simplicité est une qualité** : deux à quatre lignes se comprennent, se rééquilibrent et se tiennent mieux qu'un portefeuille de quinze lignes — et ne performent pas moins ; l'ajout de lignes satisfait souvent le besoin d'agir, pas celui de diversifier. **La poche sécurisée est aussi votre munition de rééquilibrage** : c'est l'argent avec lequel vous rachèterez des actions quand elles auront baissé, mécaniquement, sans prévision. **Ne changez pas de modèle en cours de route** : passer du dynamique à l'équilibré après une baisse de 25 % est exactement l'erreur que ces modèles servent à éviter. Choisissez celui que vous tiendrez dans le pire scénario, pas celui qui vous plaît dans un marché haussier.
 
-## 20. Choisir ses ETF : sept critères
+## 21. Choisir ses ETF : sept critères
 
 **1. L'indice répliqué.** C'est 90 % de la décision, et le critère qu'on regarde le moins. Deux ETF sur le même indice se ressemblent ; deux ETF sur des indices différents n'ont rien à voir. Vérifiez le nombre de lignes et la concentration : certains indices « monde » consacrent une part considérable de leur poids à une dizaine d'entreprises.
 
@@ -90,7 +96,7 @@ Trois remarques valent plus que les trois listes. **La simplicité est une quali
 Décidez l'indice. Listez les ETF éligibles à votre enveloppe sur cet indice. Éliminez ceux à frais élevés, encours faible ou écart de suivi médiocre. Dans ce qui reste, prenez le capitalisant le moins cher. **La décision est prise ; ne la rejugez pas chaque trimestre.**
 :::
 
-## 21. Versement unique ou programmé
+## 22. Versement unique ou programmé
 
 Quand on dispose d'une somme importante, l'investissement **en une fois** a historiquement fait mieux qu'un étalement dans environ deux cas sur trois : les marchés montent plus souvent qu'ils ne baissent, donc attendre coûte en moyenne du rendement. Mais dans le tiers restant, celui qui a tout placé juste avant une forte baisse subit un choc qui peut le faire sortir définitivement — et sortir coûte bien plus que les quelques points perdus par l'étalement.
 
@@ -102,7 +108,7 @@ Si vous hésitez : **choisissez l'option que vous ne regretterez pas dans le pir
 
 Quatre règles d'exécution : **date fixe** (le 5 du mois, quoi qu'il arrive, pas « quand le marché semble bas ») ; **automatisation complète**, chaque décision manuelle étant une occasion d'erreur ; **pas de consultation quotidienne**, un point mensuel suffit ; et surtout **pas d'interruption en période de baisse** — les versements effectués pendant les baisses achètent le plus de parts et produisent, avec le recul, les meilleures performances de tout votre historique.
 
-## 22. Rééquilibrer
+## 23. Rééquilibrer
 
 Avec le temps, les poches qui performent prennent du poids : un portefeuille cible 60/40 devient 75/25 sans que vous ayez rien décidé. Votre risque augmente à votre insu, et il atteint son maximum juste avant les corrections.
 
@@ -114,7 +120,7 @@ Le rééquilibrage maintient votre niveau de risque **et** vous fait mécaniquem
 
 Trois erreurs : rééquilibrer trop souvent (frais et fiscalité pour un gain nul) ; ne pas rééquilibrer après une forte baisse, alors que c'est le rééquilibrage le plus profitable — et le plus difficile, puisqu'il demande de renforcer ce qui vient de faire mal ; et rééquilibrer « sauf cette fois », car le contexte est toujours particulier.
 
-## 23. Quand tout baisse de 30 %
+## 24. Quand tout baisse de 30 %
 
 Vous connaîtrez plusieurs baisses de 20 % et au moins une de 40 % ou plus. Ce n'est pas un risque à écarter, c'est une certitude à préparer.
 

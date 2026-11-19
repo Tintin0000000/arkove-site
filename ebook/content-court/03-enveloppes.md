@@ -4,7 +4,7 @@
 >
 > **Tous les plafonds, taux et seuils de cette partie sont indicatifs et rassemblés en Annexe B. Vérifiez-les à leur source officielle le jour où vous agissez.**
 
-## 10. Deux décisions à ne pas confondre
+## 11. Deux décisions à ne pas confondre
 
 L'erreur la plus répandue est de mélanger deux questions indépendantes : **dans quoi j'investis** (actions, obligations, immobilier — Partie IV) et **où je le loge** (PEA, assurance-vie, PER, CTO — cette partie). Vous pouvez détenir le même ETF dans trois enveloppes ; ce qui change, ce sont les frais, la fiscalité, les conditions de sortie et le traitement au décès.
 
@@ -20,7 +20,7 @@ L'erreur la plus répandue est de mélanger deux questions indépendantes : **da
 
 Trois questions avant d'ouvrir quoi que ce soit : **quand en aurai-je besoin ?** **Ai-je besoin d'y accéder sans contrainte ?** **Quel est mon taux marginal d'imposition ?** Cette dernière commande tout l'arbitrage du PER.
 
-## 11. Le PEA
+## 12. Le PEA
 
 Le principe fiscal est remarquablement simple : **tant que l'argent reste dans le plan, vous ne payez aucun impôt**, quels que soient vos achats, ventes et dividendes. Vous pouvez arbitrer pendant vingt ans sans déclencher une seule imposition. Après **5 ans**, les gains sortent **exonérés d'impôt sur le revenu** ; seuls les prélèvements sociaux de 17,2 % restent dus.
 
@@ -45,7 +45,7 @@ Les frais sont plafonnés par la réglementation, mais les écarts restent consi
 
 Limites : plafond de versement, univers restreint, et **aucun avantage successoral** — le PEA est clôturé au décès. C'est le rôle de l'assurance-vie.
 
-## 12. L'assurance-vie
+## 13. L'assurance-vie
 
 Ce n'est pas un produit mais une enveloppe qui peut contenir presque tout : fonds euros garanti, ETF, fonds actions et obligataires, SCPI, parfois private equity. **Aucun plafond**, disponible à tout moment, et un régime successoral sans équivalent.
 
@@ -72,7 +72,7 @@ Relisez vos clauses tous les trois ans et à chaque événement familial. Pour u
 
 **Deux règles d'or.** Ne fermez **jamais** un vieux contrat : l'antériorité est attachée au contrat, pas à vous — laissez-y un montant symbolique et ouvrez-en un meilleur à côté. Et ouvrez-en un tôt, même avec 500 €, pour démarrer le compteur des 8 ans.
 
-## 13. Le PER
+## 14. Le PER
 
 Vous versez, vous **déduisez ce versement de votre revenu imposable**, et vous récupérez le capital à la retraite où il sera imposé. Ce n'est donc pas un cadeau fiscal : c'est un **report d'imposition**, gagnant si votre taux d'imposition à la retraite est inférieur à celui d'aujourd'hui.
 
@@ -93,7 +93,7 @@ La contrepartie est réelle : **l'argent est bloqué jusqu'à la retraite**, sau
 
 Quatre erreurs classiques : ouvrir un PER avec un TMI de 11 % ; oublier l'imposition de sortie ; choisir un PER chargé en frais — un avantage de 30 % détruit par 2 % de frais annuels sur vingt-cinq ans n'est plus un avantage ; ignorer l'option de non-déduction à l'entrée, qui rend la sortie plus favorable.
 
-## 14. Le compte-titres ordinaire
+## 15. Le compte-titres ordinaire
 
 **Aucun avantage fiscal, aucune limite.** Accès à l'intégralité des marchés mondiaux : actions américaines en direct, obligations, ETF non éligibles au PEA, matières premières.
 
@@ -103,11 +103,11 @@ Mécanisme utile : les **moins-values s'imputent** sur les plus-values de même 
 
 Le CTO vient **après** les enveloppes fiscales, sauf besoin spécifique : à actif identique, un ETF dans un PEA de plus de cinq ans échappe à l'impôt sur le revenu, là où le CTO subit 30 %.
 
-## 15. L'immobilier
+## 16. L'immobilier
 
 **La résidence principale.** En faveur : suppression du loyer à terme, protection contre la hausse des loyers, épargne forcée, **exonération totale de plus-value à la revente**, accès au crédit le plus long et le moins cher. En défaveur : frais d'acquisition de **7 à 8 % dans l'ancien** (2 à 3 % dans le neuf), perte de mobilité, capital immobilisé, charges de propriétaire. Règle pratique : **en dessous de cinq ans de détention prévue, la location est généralement plus avantageuse** ; au-delà de huit à dix ans, l'achat prend l'avantage.
 
-**Le locatif.** Le seul investissement où une banque vous prête massivement pour acheter un actif qu'un tiers contribue à rembourser. C'est aussi un métier (chapitre 25 pour le calcul complet).
+**Le locatif.** Le seul investissement où une banque vous prête massivement pour acheter un actif qu'un tiers contribue à rembourser. C'est aussi un métier (chapitre 26 pour le calcul complet).
 
 | Régime | Principe |
 |---|---|
@@ -126,7 +126,7 @@ Ne construisez aucun projet locatif sur un chiffre lu dans un guide, y compris c
 
 **Les SCPI.** Immobilier professionnel sans gestion, à partir de quelques milliers d'euros. Quatre points à comprendre : **frais d'entrée de 8 à 12 %**, qui imposent huit à dix ans de détention ; **prix de part non garanti** — plusieurs SCPI ont dévalorisé de 10 à 17 % en 2023-2024 ; **liquidité limitée**, la revente dépendant de la capacité de la société de gestion à trouver un acquéreur ; **fiscalité lourde en direct**, les revenus étant imposés comme des revenus fonciers au barème **plus** prélèvements sociaux. Les loger dans une assurance-vie adoucit sensiblement cette fiscalité, au prix d'une offre plus restreinte.
 
-## 16. L'ordre de remplissage
+## 17. L'ordre de remplissage
 
 À capacité d'épargne donnée, l'ordre change le résultat final de plusieurs dizaines de milliers d'euros. La séquence se classe par **rendement certain décroissant**.
 
@@ -140,6 +140,12 @@ Ne construisez aucun projet locatif sur un chiffre lu dans un guide, y compris c
 8. **Le CTO**, au-delà.
 
 **En parallèle, et non à la place** : l'immobilier, dès lors que le projet est mûr, que la précaution est constituée et que votre taux d'endettement le permet.
+
+<figure class="figure">
+<svg viewBox="0 0 600 262" role="img" aria-label="Ordre de remplissage des enveloppes"><circle cx="14" cy="22" r="11" fill="var(--gold)"/><text x="14" y="26" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">1</text><text x="34" y="26" font-size="11.5" fill="var(--ink)">Épargne de précaution</text><rect x="258" y="13" width="330" height="18" rx="3" fill="var(--gold)" opacity="0.82"/><circle cx="14" cy="53" r="11" fill="var(--gold)"/><text x="14" y="57" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">2</text><text x="34" y="57" font-size="11.5" fill="var(--ink)">Dettes à plus de 6 %</text><rect x="258" y="44" width="310" height="18" rx="3" fill="var(--gold)" opacity="0.78"/><circle cx="14" cy="84" r="11" fill="var(--gold)"/><text x="14" y="88" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">3</text><text x="34" y="88" font-size="11.5" fill="var(--ink)">Abondement employeur</text><rect x="258" y="75" width="290" height="18" rx="3" fill="var(--gold)" opacity="0.75"/><circle cx="14" cy="115" r="11" fill="var(--gold)"/><text x="14" y="119" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">4</text><text x="34" y="119" font-size="11.5" fill="var(--ink)">Ouvrir PEA et assurance-vie</text><rect x="258" y="106" width="251" height="18" rx="3" fill="var(--gold)" opacity="0.68"/><circle cx="14" cy="146" r="11" fill="var(--gold)"/><text x="14" y="150" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">5</text><text x="34" y="150" font-size="11.5" fill="var(--ink)">Saturer le PEA</text><rect x="258" y="137" width="218" height="18" rx="3" fill="var(--gold)" opacity="0.62"/><circle cx="14" cy="177" r="11" fill="var(--gold)"/><text x="14" y="181" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">6</text><text x="34" y="181" font-size="11.5" fill="var(--ink)">PER si TMI ≥ 30 %</text><rect x="258" y="168" width="182" height="18" rx="3" fill="var(--gold)" opacity="0.55"/><circle cx="14" cy="208" r="11" fill="var(--gold)"/><text x="14" y="212" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">7</text><text x="34" y="212" font-size="11.5" fill="var(--ink)">Assurance-vie</text><rect x="258" y="199" width="152" height="18" rx="3" fill="var(--gold)" opacity="0.50"/><circle cx="14" cy="239" r="11" fill="var(--gold)"/><text x="14" y="243" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">8</text><text x="34" y="243" font-size="11.5" fill="var(--ink)">Compte-titres ordinaire</text><rect x="258" y="230" width="119" height="18" rx="3" fill="var(--gold)" opacity="0.44"/><text x="258" y="258" font-size="10" fill="var(--ink-mute, var(--ink-3, #6B7A86))">Rendement certain décroissant</text></svg>
+<figcaption><strong>La séquence se classe par rendement certain décroissant.</strong> La longueur des barres figure la certitude du gain, pas son montant.</figcaption>
+</figure>
+
 
 | | PEA | Assurance-vie | PER | CTO |
 |---|---|---|---|---|

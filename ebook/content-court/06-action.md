@@ -2,13 +2,13 @@
 
 > Un guide lu ne change rien. Un guide appliqué change une trajectoire. Aucune notion nouvelle ici : un calendrier, une routine, et les sources pour rester à jour.
 
-## 29. Votre plan en 90 jours
+## 30. Votre plan en 90 jours
 
 Peu de tâches par semaine, volontairement : un plan surchargé est un plan abandonné.
 
 **Semaines 1-2 — Voir clair**
 
-- [ ] Remplir le bilan patrimonial du chapitre 1, le dater, le conserver
+- [ ] Remplir le bilan patrimonial du chapitre 2, le dater, le conserver
 - [ ] Calculer les trois ratios : taux d'épargne, taux d'endettement, mois de coussin
 - [ ] Relever les dépenses des trois derniers mois par grandes masses, pour obtenir le montant mensuel réel
 - [ ] Lister toutes les dettes avec leur **taux** et leur capital restant dû
@@ -59,7 +59,7 @@ Peu de tâches par semaine, volontairement : un plan surchargé est un plan aban
 3. **Faire l'audit de frais.** Le seul gain à la fois immédiat, certain et récurrent.
 :::
 
-## 30. La revue annuelle
+## 31. La revue annuelle
 
 Une fois le système en place, le pilotage demande très peu de temps. L'excès de suivi est contre-productif : il multiplie les occasions d'intervenir à mauvais escient.
 
@@ -80,7 +80,7 @@ Une fois le système en place, le pilotage demande très peu de temps. L'excès 
 Dans la grande majorité des années, la réponse est non — et c'est le signe d'un système bien construit. Un patrimoine qui exige des interventions constantes est mal structuré.
 :::
 
-## 31. Rester à jour
+## 32. Rester à jour
 
 | Besoin | Source officielle |
 |---|---|

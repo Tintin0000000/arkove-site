@@ -2,7 +2,7 @@
 
 > Niveau intermédiaire à avancé. L'optimisation vient **après** la structure, jamais avant. Un patrimoine mal alloué mais fiscalement optimisé reste mal alloué. Les chapitres qui suivent supposent que les Parties I à IV sont en place.
 
-## 24. La fiscalité comme levier de performance
+## 25. La fiscalité comme levier de performance
 
 ### Le principe
 
@@ -18,7 +18,7 @@ Il figure sur votre avis d'imposition. Ne raisonnez jamais avec votre taux moyen
 
 ### Levier 2 — Utiliser les enveloppes dans le bon ordre
 
-C'est le levier le plus puissant et il est entièrement gratuit. Le chapitre 16 en donne la séquence. À actif identique et rendement identique, un ETF mondial dans un PEA mature échappe à l'impôt sur le revenu ; le même ETF sur compte-titres subit 30 % sur les gains. Sur vingt ans et un capital significatif, l'écart atteint facilement plusieurs dizaines de milliers d'euros.
+C'est le levier le plus puissant et il est entièrement gratuit. Le chapitre 17 en donne la séquence. À actif identique et rendement identique, un ETF mondial dans un PEA mature échappe à l'impôt sur le revenu ; le même ETF sur compte-titres subit 30 % sur les gains. Sur vingt ans et un capital significatif, l'écart atteint facilement plusieurs dizaines de milliers d'euros.
 
 ### Levier 3 — Piloter ses retraits
 
@@ -53,7 +53,7 @@ En cas de doute sur un montage, deux règles : faites-le valider par un professi
 :::
 
 ::: {.encadre}
-**L'essentiel du chapitre 24**
+**L'essentiel du chapitre 25**
 
 - L'économie d'impôt est un gain certain, contrairement au rendement.
 - Mais un mauvais investissement défiscalisé reste un mauvais investissement.
@@ -62,7 +62,7 @@ En cas de doute sur un montage, deux règles : faites-le valider par un professi
 - Tenez le registre de vos moins-values reportables : personne ne le fera pour vous.
 :::
 
-## 25. L'immobilier à crédit : calculer avant d'acheter
+## 26. L'immobilier à crédit : calculer avant d'acheter
 
 ### Le seul calcul qui compte
 
@@ -120,7 +120,7 @@ Autrement dit, ce projet exige un **effort d'épargne de près de 600 € par mo
 Le dernier point mérite une attention particulière : les exigences de performance énergétique applicables à la location se durcissent progressivement, et un bien mal classé peut devenir non louable sans travaux parfois lourds. **Faites chiffrer ce risque avant l'achat, pas après.**
 
 ::: {.encadre}
-**L'essentiel du chapitre 25**
+**L'essentiel du chapitre 26**
 
 - Comparer le loyer à la mensualité est l'erreur fondatrice : les charges pèsent 25 à 35 % du loyer.
 - Calculez le coût total, le revenu net de vacance, les charges réelles, puis le cash-flow.
@@ -132,7 +132,7 @@ Le dernier point mérite une attention particulière : les exigences de performa
 ::: {.widget data-widget="cashflow"}
 :::
 
-## 26. Pour les indépendants, artisans et dirigeants
+## 27. Pour les indépendants, artisans et dirigeants
 
 ### Pourquoi votre situation est différente
 
@@ -156,7 +156,7 @@ Ces sommes ne sont pas une épargne : ce sont des dettes en attente d'échéance
 
 C'est la priorité la plus souvent ignorée. Les indemnités journalières des régimes de base des indépendants sont faibles, parfois assorties de délais de carence significatifs, et l'invalidité est mal couverte.
 
-Un arrêt de travail de six mois sans prévoyance adaptée peut détruire en quelques mois ce que dix ans d'épargne ont construit. **Un contrat de prévoyance correctement dimensionné — incapacité temporaire, invalidité, décès — passe avant le premier euro investi.** Le chapitre 27 détaille les critères.
+Un arrêt de travail de six mois sans prévoyance adaptée peut détruire en quelques mois ce que dix ans d'épargne ont construit. **Un contrat de prévoyance correctement dimensionné — incapacité temporaire, invalidité, décès — passe avant le premier euro investi.** Le chapitre 28 détaille les critères.
 
 ### Règle 4 — Arbitrer rémunération et dividendes avec méthode
 
@@ -184,7 +184,7 @@ Pour la trésorerie excédentaire durable de la société, des solutions existen
 La valeur d'une entreprise cédée se prépare plusieurs années à l'avance : qualité des comptes, dépendance au dirigeant, contrats récurrents, propriété de la marque et des actifs clés. Des dispositifs significatifs existent pour la transmission d'entreprise, dont des régimes d'abattement importants sous conditions d'engagement de conservation. Ils exigent une anticipation de plusieurs années et un accompagnement spécialisé.
 
 ::: {.encadre}
-**L'essentiel du chapitre 26**
+**L'essentiel du chapitre 27**
 
 - Séparez les flux et provisionnez cotisations, impôt et TVA : ce ne sont pas vos économies.
 - 6 à 12 mois de coussin personnel, plus une trésorerie d'entreprise distincte.
@@ -193,7 +193,7 @@ La valeur d'une entreprise cédée se prépare plusieurs années à l'avance : q
 - Sortez régulièrement de la valeur de l'entreprise vers des actifs non corrélés à elle.
 :::
 
-## 27. Protéger : le volet que tout le monde reporte
+## 28. Protéger : le volet que tout le monde reporte
 
 ### Le risque mal classé
 
@@ -246,7 +246,7 @@ Un patrimoine que vos proches ne peuvent pas retrouver leur crée des difficult�
 Ce document ne doit pas contenir de mots de passe en clair. Indiquez simplement où les trouver, et informez une personne de confiance de son existence.
 
 ::: {.encadre}
-**L'essentiel du chapitre 27**
+**L'essentiel du chapitre 28**
 
 - Le risque dominant n'est pas le marché, c'est l'incapacité de travail durable.
 - En prévoyance, vérifiez le barème d'invalidité : fonctionnelle ou professionnelle ?
@@ -255,7 +255,7 @@ Ce document ne doit pas contenir de mots de passe en clair. Indiquez simplement 
 - Laissez un document d'organisation : comptes, contrats, notaire, sans mots de passe.
 :::
 
-## 28. Transmission : les bases à connaître tôt
+## 29. Transmission : les bases à connaître tôt
 
 ### Pourquoi « tôt » est le mot clé
 
@@ -269,7 +269,7 @@ Traiter le sujet à 55 ans ouvre des options qui n'existent plus à 80 ans.
 
 **Le don familial de sommes d'argent.** Un dispositif distinct et cumulable avec l'abattement précédent permet de donner une somme d'argent en franchise de droits, sous conditions d'âge du donateur et de majorité du bénéficiaire.
 
-**L'assurance-vie.** Le régime du chapitre 12, avec son abattement par bénéficiaire pour les primes versées avant 70 ans, en fait l'outil de transmission le plus souple. Il permet notamment de transmettre à des personnes qui ne sont pas des héritiers directs — neveux, filleuls, partenaire — dans des conditions nettement plus favorables que le droit commun des successions.
+**L'assurance-vie.** Le régime du chapitre 13, avec son abattement par bénéficiaire pour les primes versées avant 70 ans, en fait l'outil de transmission le plus souple. Il permet notamment de transmettre à des personnes qui ne sont pas des héritiers directs — neveux, filleuls, partenaire — dans des conditions nettement plus favorables que le droit commun des successions.
 
 **La donation avec réserve d'usufruit.** Vous donnez la **nue-propriété** d'un bien tout en conservant l'**usufruit** : vous continuez à l'occuper ou à percevoir les loyers. Les droits de donation ne portent que sur la valeur de la nue-propriété, déterminée par un barème officiel qui dépend de votre âge — plus vous donnez tôt, plus la valeur taxable est faible. Au décès, l'usufruit s'éteint et le nu-propriétaire devient plein propriétaire **sans droits supplémentaires**.
 
@@ -287,7 +287,7 @@ C'est l'un des mécanismes les plus efficaces du droit français, et il exige un
 
 **Négliger l'équité entre héritiers.** Les transmissions inégales non préparées sont la première cause de conflits familiaux durables. La donation-partage permet de figer les valeurs et de prévenir les contestations ultérieures.
 
-**Oublier les clauses bénéficiaires.** Le meilleur plan de transmission est annulé par une clause bénéficiaire obsolète (chapitre 12).
+**Oublier les clauses bénéficiaires.** Le meilleur plan de transmission est annulé par une clause bénéficiaire obsolète (chapitre 13).
 
 ::: {.alerte}
 **Le passage obligé par le notaire**
@@ -298,7 +298,7 @@ Une transmission bien construite se prépare avec un notaire, sur plusieurs rend
 :::
 
 ::: {.encadre}
-**L'essentiel du chapitre 28**
+**L'essentiel du chapitre 29**
 
 - Les abattements de donation se renouvellent : anticiper crée mécaniquement de la valeur.
 - Assurance-vie : l'outil le plus souple, surtout hors ligne directe.
