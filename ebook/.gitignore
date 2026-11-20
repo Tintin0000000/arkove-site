@@ -15,3 +15,8 @@ build/epub/figs.html
 build/epub/figs.json
 build/epub/amazon.md
 build/epub/metadata.yaml
+build/book-mobile.md
+build/body-mobile.html
+build/cover-mobile.html
+build/part-cover-mobile.pdf
+build/part-body-mobile.pdf

@@ -11,6 +11,7 @@ Guide de finances personnelles (français), niveaux débutant et intermédiaire.
 | **Page de vente** | écrite à la main | `web/vente.html` | page autonome à déposer sur le domaine |
 | **Classeur compagnon** | `classeur/build_classeur.py` | `classeur/Argent-Maitrise-classeur.xlsx` | 7 feuilles, 97 formules |
 | **EPUB Kindle** | `content-court/` via `build/epub/` | `Argent-Maitrise-kindle.epub` | pour Amazon KDP |
+| **Mobile** (vente TikTok) | `content-court/` | `Argent-Maitrise-mobile.pdf` | 94 p., format 4,5 × 8 po |
 
 L'édition essentielle couvre les mêmes 32 chapitres, resserrés : développements
 coupés, moins d'exemples, un encadré « L'essentiel » par partie au lieu d'un par
@@ -70,6 +71,21 @@ Trois différences volontaires avec le PDF, toutes dans `build_epub.py` :
 Le nom d'auteur est la variable `AUTEUR` en haut de `build_epub.py`. La fiche de
 publication (titre, description, mots-clés, catégories, prix) est dans
 `FICHE-KDP.md`.
+
+## Édition mobile
+
+Destinée à la vente via TikTok, où l'acheteur lit sur téléphone. Page de
+4,5 × 8 pouces (ratio 1,78), une page par écran, corps à 11,6 pt.
+
+```bash
+python3 build/assemble-mobile.py
+node build/topdf-mobile.js
+node build/checkmobile.js     # débordements en largeur ET en hauteur
+```
+
+`checkmobile.js` compare `scrollWidth` à `clientWidth` de chaque tableau et
+formule : sur une page étroite, un tableau peut déborder horizontalement sans
+dépasser en hauteur. Les deux listes doivent rester vides.
 
 ## Audit de cohérence
 
