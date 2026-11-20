@@ -87,6 +87,28 @@ node build/checkmobile.js     # débordements en largeur ET en hauteur
 formule : sur une page étroite, un tableau peut déborder horizontalement sans
 dépasser en hauteur. Les deux listes doivent rester vides.
 
+## Vidéos TikTok
+
+Animations 9:16 rendues en HTML/Canvas, capturées image par image par Chromium,
+encodées en H.264 par ffmpeg. Aucune dépendance externe.
+
+```bash
+cd video
+node capture.js <dossier-images>     # 648 images à 24 i/s sur 27 s
+ffmpeg -framerate 24 -i <dossier>/%04d.jpg -c:v libx264 -preset medium \
+  -crf 20 -pix_fmt yuv420p -movflags +faststart sortie.mp4
+```
+
+`scene1.html` expose `window.render(t)` : l'animation est pilotée par le temps
+en secondes, pas par une horloge CSS, donc le rendu est **déterministe** — deux
+captures successives donnent exactement les mêmes images.
+
+Contraintes de cadrage : TikTok recouvre environ les 300 derniers pixels du bas
+et 200 pixels à droite. La zone de contenu s'arrête avant.
+
+Les vidéos sont **muettes**. La voix et le visage sont à ajouter au montage :
+c'est ce qui convertit sur un compte finance.
+
 ## Audit de cohérence
 
 Les trois éditions, le classeur et la page de vente doivent raconter la même

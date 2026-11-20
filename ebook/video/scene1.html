@@ -1,0 +1,114 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap">
+<style>
+  :root{--ink:#16202A;--green:#0E6B5C;--paper:#F7F8F6;--mute:#6B7A86;--soft:#9FC4BB;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{width:1080px;height:1920px;background:var(--paper);color:var(--ink);
+       font-family:"Bricolage Grotesque",sans-serif;overflow:hidden;position:relative;}
+  .band{position:absolute;top:0;left:0;right:0;height:14px;background:var(--green);}
+  /* zone sûre : TikTok masque le bas et la droite */
+  .stage{position:absolute;left:80px;right:200px;top:260px;bottom:330px;}
+  .l{position:absolute;left:0;right:0;opacity:0;}
+  .kick{font-size:34px;letter-spacing:.22em;text-transform:uppercase;color:var(--green);font-weight:700;}
+  .big{font-size:108px;line-height:.95;font-weight:800;letter-spacing:-.04em;}
+  .huge{font-size:150px;line-height:.9;font-weight:800;letter-spacing:-.05em;color:var(--green);
+        font-variant-numeric:tabular-nums;}
+  .sub{font-size:40px;line-height:1.3;color:var(--mute);font-weight:500;}
+  .card{position:absolute;width:390px;border-radius:22px;padding:34px 30px;background:#fff;
+        border:3px solid #E3E9EA;}
+  .card .n{font-size:30px;color:var(--mute);font-weight:600;}
+  .card .v{font-size:62px;font-weight:800;letter-spacing:-.03em;margin-top:8px;
+           font-variant-numeric:tabular-nums;}
+  #cv{position:absolute;left:0;top:0;}
+  .foot{position:absolute;left:80px;right:200px;bottom:250px;opacity:0;}
+  .foot .r{font-size:48px;font-weight:800;line-height:1.15;letter-spacing:-.02em;}
+  .foot .c{margin-top:22px;font-size:34px;color:var(--green);font-weight:700;}
+</style></head>
+<body>
+<div class="band"></div>
+<div class="stage">
+  <div class="l" id="a" style="top:0"><div class="kick">Le coût d'attendre</div></div>
+  <div class="l" id="b" style="top:70px"><div class="big">Attendre 10 ans<br>pour investir</div></div>
+  <div class="l" id="c" style="top:330px"><div class="sub">ça coûte</div></div>
+  <div class="l" id="d" style="top:390px"><div class="huge" id="cnt">0 €</div></div>
+
+  <div class="l card" id="p1" style="top:90px;left:0"><div class="n">Commence à 25 ans</div><div class="v" id="v1">—</div></div>
+  <div class="l card" id="p2" style="top:90px;left:410px"><div class="n">Commence à 35 ans</div><div class="v" id="v2">—</div></div>
+  <canvas id="cv" width="800" height="700" style="top:300px"></canvas>
+</div>
+<div class="l" id="hyp" style="top:180px;left:80px;right:200px"><div class="kick">300 €/mois · 6 % par an</div></div>
+<div class="foot" id="f">
+  <div class="r">Le temps perdu<br>ne se rachète pas.</div>
+  <div class="c">Le guide complet en bio ↓</div>
+</div>
+<script>
+const E=id=>document.getElementById(id);
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const ease=t=>t<0?0:t>1?1:1-Math.pow(1-t,3);
+const seg=(t,s,d)=>ease((t-s)/d);
+const eur=n=>new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(Math.round(n));
+const fv=(m,r,y)=>{const i=r/12,n=y*12;return m*(Math.pow(1+i,n)-1)/i;};
+const A=fv(300,0.06,40), B=fv(300,0.06,30);
+
+function chart(p, showGap){
+  const c=E('cv'), x=c.getContext('2d');
+  x.clearRect(0,0,800,700);
+  const P=34, W=800-P*2, H=700-P*2, max=A*1.06;
+  const X=y=>P+(y/40)*W, Y=v=>P+H-(v/max)*H;
+  x.strokeStyle='#E3E9EA'; x.lineWidth=2;
+  for(let k=1;k<=3;k++){const yy=P+H-(k/4)*H; x.beginPath();x.moveTo(P,yy);x.lineTo(P+W,yy);x.stroke();}
+  // Anaïs : 25 -> 65 ans, courbe sur 40 ans
+  // Bruno : 35 -> 65 ans, donc décalée de 10 ans sur l'axe
+  const trace=(x0,span,col,lw)=>{
+    x.beginPath(); let first=true;
+    const end=span*p;
+    for(let y=0;y<=end;y+=0.25){
+      const px=X(x0+y), py=Y(fv(300,0.06,y));
+      if(first){x.moveTo(px,py);first=false;} else x.lineTo(px,py);
+    }
+    x.strokeStyle=col; x.lineWidth=lw; x.lineJoin='round'; x.lineCap='round'; x.stroke();
+    return end;
+  };
+  trace(10,30,'#B4CFC8',9);
+  trace(0,40,'#0E6B5C',11);
+  if(p>.98){
+    x.fillStyle='#0E6B5C'; x.beginPath(); x.arc(X(40),Y(A),11,0,7); x.fill();
+    x.fillStyle='#8FB3AB'; x.beginPath(); x.arc(X(40),Y(B),11,0,7); x.fill();
+  }
+  if(showGap>0){
+    const xg=X(40)+22, y1=Y(A), y2=Y(B);
+    x.globalAlpha=showGap;
+    x.strokeStyle='#0E6B5C'; x.lineWidth=4;
+    x.beginPath(); x.moveTo(xg,y1); x.lineTo(xg,y2); x.stroke();
+    x.beginPath(); x.moveTo(xg-12,y1); x.lineTo(xg+12,y1); x.stroke();
+    x.beginPath(); x.moveTo(xg-12,y2); x.lineTo(xg+12,y2); x.stroke();
+    x.globalAlpha=1;
+  }
+  // axe des âges
+  x.fillStyle='#6B7A86'; x.font='500 26px "Bricolage Grotesque",sans-serif';
+  [[0,'25 ans','left'],[20,'45 ans','center'],[40,'65 ans','right']].forEach(([y,l,a])=>{
+    x.textAlign=a; x.fillText(l,X(y),700-6);
+  });
+}
+
+window.render=function(t){
+  const S=(id,v)=>E(id).style.opacity=v;
+  // 0 - 4,2 s : accroche
+  S('a',seg(t,.1,.4)*(1-seg(t,4.0,.4)));
+  S('b',seg(t,.5,.5)*(1-seg(t,4.0,.4)));
+  S('c',seg(t,1.4,.4)*(1-seg(t,4.0,.4)));
+  S('d',seg(t,1.6,.4)*(1-seg(t,4.0,.4)));
+  E('cnt').textContent=eur(296000*seg(t,1.6,1.6));
+  // 4,2 - 20 s : démonstration
+  const on=seg(t,4.3,.5)*(1-seg(t,21.5,.5));
+  S('p1',on); S('p2',on); S('hyp',on); E('cv').style.opacity=on;
+  const p=clamp(seg(t,5.2,8.5),0,1);
+  E('v1').textContent=p>0?eur(fv(300,0.06,40*p)):'—';
+  E('v2').textContent=p>0?eur(fv(300,0.06,30*p)):'—';
+  E('v1').style.color='#0E6B5C'; E('v2').style.color='#16202A';
+  chart(p, seg(t,14.5,1.2)*(1-seg(t,21.5,.5)));
+  // 21,5 - 27 s : la règle et l'appel
+  S('f',seg(t,21.8,.6));
+};
+document.fonts.ready.then(()=>{window.render(0);window.__ready=true;});
+</script></body></html>
